@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6cad0809-1f24-4814-b57e-6e675c91de40",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018745",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.5,
+                            17.25,
+                            477.25,
+                            74.75
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=-5 x+7$에서 $\\frac{f(3)-f(2)}{2-f(2)}$의 값을 구하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.75,
+                            116,
+                            117.25,
+                            139.75
+                        ]
+                    ],
+                    "text_description" : "② -1"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.75,
+                            86,
+                            103.5,
+                            107.25
+                        ]
+                    ],
+                    "text_description" : "① 1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            149.75,
+                            118.5,
+                            233.5
+                        ]
+                    ],
+                    "text_description" : "③ 0 ④ 2 ⑤ -2"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.5,
+                            294.75,
+                            366,
+                            422.25
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(3)=-5 \\times 3+7=-8 \\\\ f(2)=-5 \\times 2+7=-3 \\\\ \\frac{f(3)-f(2)}{2-f(2)}=\\frac{-8-(-3)}{2-(-3)}=\\frac{-5}{5}=-1\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

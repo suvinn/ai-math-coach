@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a5992e6b-2c05-468f-ae82-98ae25855083",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001760",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.5,
+                            20,
+                            348.5,
+                            161
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $a x-b y-c=0$의 그래프가 오른쪽 그림과 같을 때, 다음 중 일차방정식 $c x-a y+b=0$의 그래프로 알맞은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            355.5,
+                            26,
+                            534.5,
+                            199
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $a x-b y-c=0$의 그래프가 $xy$좌표명면에 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.5,
+                            374,
+                            186.5,
+                            519
+                        ]
+                    ],
+                    "text_description" : "③ 일차방정식 $a x-b y-c=0$의 그래프 $xy$좌표명면에 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.5,
+                            691,
+                            304.5,
+                            879
+                        ]
+                    ],
+                    "text_description" : "$a x-b y-c=0$을 $y$에 대하여 풀면 $y=\\frac{a}{b} x-\\frac{c}{b}$ $\\frac{a}{b}<0, -\\frac{c}{b}>0$ 이므로 $a>0, b<0, c>0$ 또는 $a<0, b>0, c<0$ $c x-m y+b=0$을 $y$에 대하여 풀면 $y=\\frac{c}{a} x+\\frac{b}{a}$ $\\frac{c}{a}>0$ 이고 $y$0 이므로 일차방정식 $y$1의 그래프로 알맞은 것은 ③이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.5,
+                            205,
+                            413.5,
+                            360
+                        ]
+                    ],
+                    "text_description" : "①이 이미지에는 좌표 평면이 나타나 있으며, $x$축과 $y$축이 있으며 제 $4$사분면을 지나지 않는 직선이 그려져 있습니다. ② 이 이미지는 $2$차원 좌표 평면에 그려진 직선을 보여줍니다. $x$축과 $y$축이 있으며, $y$축은 위쪽으로, $x$축은 오른쪽으로 향해 있습니다. 직선은 $y$축에서 아래쪽으로 기울어져 있습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            239.5,
+                            371,
+                            424.5,
+                            526
+                        ]
+                    ],
+                    "text_description" : "④이 이미지는 좌표 평면을 나타내고 있으며, $x$축과 $y$축이 있습니다. 제$1$사분면을 지나지 않는 직선입니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.5,
+                            525,
+                            203.5,
+                            672
+                        ]
+                    ],
+                    "text_description" : "⑤이 이미지는 $xy$좌표평면이며, $x$축과 $y$축이 교차하는 점 $O$가 있으며, $y$축은 위쪽으로, $x$축은 오른쪽으로 향하고 있습니다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f1376eea-b3f6-4303-9e0f-f7247974818c",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003912",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.5,
+                            21.42,
+                            359.5,
+                            162.42
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림에서 직선 $\\frac{x}{4}+\\frac{y}{5}=1$과 $x$축, $y$축으로 둘러싸인 $\\triangle \\mathrm{OAB}$의 넓이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            373.5,
+                            36,
+                            569.5,
+                            236
+                        ]
+                    ],
+                    "text_description" : "좌표 평면에서 직선 \\(\\frac{x}{4} + \\frac{y}{5} = 1 \\)이 그려져 있음. x축은 A, y축은 B로 표시됨. 원점은 O로 나타냄."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            263.5,
+                            204,
+                            332.5,
+                            236
+                        ]
+                    ],
+                    "text_description" : "⑤ 10"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.5,
+                            167,
+                            207.5,
+                            238
+                        ]
+                    ],
+                    "text_description" : "① 2 ② 4 ③ 6 ④ 8"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.5,
+                            274,
+                            332.5,
+                            347
+                        ]
+                    ],
+                    "text_description" : "직선 $\\frac{x}{4}+\\frac{y}{5}=1$의 $x$ 절편은 $4, y$절편은 5이므로 $\\triangle \\mathrm{OAB}$의 넓이는 $\\frac{1}{2} \\times 4\\times 5=10$"
+                }
+            ]
+        }
+    ]
+}

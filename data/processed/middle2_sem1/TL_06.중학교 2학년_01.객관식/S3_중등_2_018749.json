@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4c53a466-8f2c-4e6f-98ec-de9f42ee60e6",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018749",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.09,
+                            17,
+                            594.09,
+                            60
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=\\frac{2}{3} x+2$의 그래프가 다음과 같을 때, $\\triangle \\mathrm{AOB}$의 넓이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.09,
+                            75,
+                            248.09,
+                            239
+                        ]
+                    ],
+                    "text_description" : "$xy$ 좌표평면 위에 직선이 점 $A$, $B$를 지나고 $x$축, $y$축을 둘러싸는 삼각형 모양이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.09,
+                            390,
+                            105.09,
+                            411
+                        ]
+                    ],
+                    "text_description" : "④ $3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.09,
+                            248,
+                            119.09,
+                            380
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{3}{2}$ ② $2$ ③ $\\frac{5}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.09,
+                            425,
+                            116.09,
+                            469
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\frac{7}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.09,
+                            525.45,
+                            354.09,
+                            827.45
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} x \\text { 절편은 } y=0 \\text { 일 때 } x \\text { 의 값이므로 } \\\\ 0=\\frac{2}{3} x+2, \\frac{2}{3} x=-2 \\quad \\therefore \\quad x=-3 \\\\ \\therefore \\quad \\mathrm{~A}(-3, 0) \\end{array} \\] $y$ 절편은 $x=0$ 일 때 $y$의 값이므로 \\[ \\begin{array}{l} y=\\frac{2}{3} \\times 0+2=2 \\\\ \\therefore \\quad B(0, 2) \\\\ \\therefore \\quad \\triangle \\mathrm{AOB}=\\frac{1}{2} \\times 3 \\times 2=3 \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

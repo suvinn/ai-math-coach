@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8b351459-13ab-4d57-a970-33b9ca4ce66c",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001527",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.27,
+                            5.74,
+                            598.27,
+                            32.74
+                        ]
+                    ],
+                    "text_description" : "다음을 계산한 식이 $a x^{2}+b x+c$ 일 때, $a-b+c$의 값은? (단, $a, b, c$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            196.46,
+                            58,
+                            497.9,
+                            100.24
+                        ]
+                    ],
+                    "text_description" : "$3 x(2-x)-4\\left\\{2\\left(x^{2}+3 x-1\\right)-\\frac{3}{4} x\\right\\}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            241.27,
+                            150.28,
+                            298.27,
+                            180.28
+                        ]
+                    ],
+                    "text_description" : "⑤ $12$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            32.27,
+                            119.28,
+                            485.27,
+                            153.28
+                        ]
+                    ],
+                    "text_description" : "① -4 ② -16 ③ 6"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.27,
+                            151.28,
+                            90.27,
+                            182.28
+                        ]
+                    ],
+                    "text_description" : "④ 11"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.27,
+                            197.28,
+                            366.27,
+                            307.28
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}3 x(2-x)-4\\left\\{2\\left(x^{2}+3 x-1\\right)-\\frac{3}{4} x\\right\\} \\\\ =3 x(2-x)-4\\left(2 x^{2}+6 x-2-\\frac{3}{4} x\\right)=3 x(2-x)-4\\left(2 x^{2}+\\frac{21}{4} x-2\\right) \\\\ =6 x-3 x^{2}-8 x^{2}-21 x+8=-11 x^{2}-15 x+8=a x^{2}+b x+c \\\\ \\text { 에서 } a=-11, b=-15, c=8 \\\\ \\text { 따라서 } a-b+c=-11-(-15)+8=12 \\text { 이다. }\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

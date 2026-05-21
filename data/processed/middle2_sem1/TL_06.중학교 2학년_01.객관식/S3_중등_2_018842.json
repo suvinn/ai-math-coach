@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b7c76bce-3008-482d-b3b9-1550c2eb3ff2",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018842",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.77,
+                            18.82,
+                            765.53,
+                            40.13
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프가 제$1$사분면과 제$3$사분면을 지나지 않을 때, 다음 중 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            74.21,
+                            178.07,
+                            198.55,
+                            196.6
+                        ]
+                    ],
+                    "text_description" : "⑤ $a<0, \\quad b=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            74.56,
+                            52.43,
+                            197.25,
+                            165.35
+                        ]
+                    ],
+                    "text_description" : "① $a > 0, \\quad b > 0$ ② $a > 0, \\quad b < 0$ ③ $a < 0, \\quad b > 0$ ④ $a < 0, \\quad b < 0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.05,
+                            265.82,
+                            441.08,
+                            319.46
+                        ]
+                    ],
+                    "text_description" : "$y=a x+b$의 그래프가 다음 그림과 같아야 하므로 [ 기 울 기 ] $=a<0$, [ $y$절 편 ] $=b=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71.31,
+                            331.27,
+                            195.29,
+                            444.49
+                        ]
+                    ],
+                    "text_description" : "$xy$좌표 평면이며 직선이 중심 $O$점을 지나는 형태이다."
+                }
+            ]
+        }
+    ]
+}

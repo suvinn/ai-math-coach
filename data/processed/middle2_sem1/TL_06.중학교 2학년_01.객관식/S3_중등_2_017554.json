@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c9cfaf5d-39ed-4d8f-9505-829390fa6a7d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017554",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.2,
+                            9.14,
+                            516,
+                            44.34
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=19-5 x$ 일 때, $f(3)$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.8,
+                            65.14,
+                            57.6,
+                            89.94
+                        ]
+                    ],
+                    "text_description" : "① 4"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.4,
+                            108.8,
+                            66.4,
+                            296.8
+                        ]
+                    ],
+                    "text_description" : "② 3 ③ 2 ④ -1 ⑤ 0"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.8,
+                            400.8,
+                            250.4,
+                            439.2
+                        ]
+                    ],
+                    "text_description" : "따라서 정답은 ①입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.2,
+                            311.2,
+                            160.8,
+                            392
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(3)=19-15 \\\\ f(3)=4\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "86b74143-b402-4f38-ac99-896a82a1a4fe",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018791",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.2,
+                            12.8,
+                            688.8,
+                            38.4
+                        ]
+                    ],
+                    "text_description" : "다음 중 $x$의 값이 6만큼 증가할 때, $y$의 값이 3만큼 증가하는 일차함수의 그래프는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70,
+                            354.4,
+                            226.4,
+                            503.2
+                        ]
+                    ],
+                    "text_description" : "③ 점(-2, 0)과 점(0, 1)을 지나는 직선"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.5,
+                            875.75,
+                            1401.25,
+                            1200
+                        ]
+                    ],
+                    "text_description" : "$x$의 값이 6만큼 증가할 때, $y$의 값이 3만큼 증가하므로 구하는 일차함수의 그래프의 기울기는 $\\frac{(y \\text { 의 } \\quad \\text { 값의 } \\quad \\text { 증가 량 })}{(x \\text { 의 } \\quad \\text { 값의 } \\quad \\text { 증가 량 })}=\\frac{3}{6}=\\frac{1}{2}$ 이다. 즉, 기울기가 $\\frac{1}{2}$ 인 그래프를 찾으면 된다. ① $($ 기울기 $)=\\frac{3}{2}$ ② $($ 기울기 $)=-1$ ③ $($ 기울기 $)=\\frac{1}{2}$ ④ $($ 기울기 $)=-1$ ⑤ $($ 기울기 $y$3 따라서 기울기가 $\\frac{1}{2}$ 인 그래프는 ③이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.6,
+                            47.2,
+                            228,
+                            350.8
+                        ]
+                    ],
+                    "text_description" : "①점(2, 0)과 점(0, -3)을 지나는 직선 ②점(-1, 0)과 점(0, -1)을 지나는 직선"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.4,
+                            508.8,
+                            224.8,
+                            812.8
+                        ]
+                    ],
+                    "text_description" : "④점(3, 0)과 점(0, 3)을 지나는 직선 ⑤점 (0, 6)을 지나는 x축과 평행한 직선"
+                }
+            ]
+        }
+    ]
+}

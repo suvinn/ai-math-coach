@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "aa97d687-5637-4776-b86c-9ab4a07f3397",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001547",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.5,
+                            6.92,
+                            252.5,
+                            33.92
+                        ]
+                    ],
+                    "text_description" : "다음 중 부등식이 아닌 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.5,
+                            112.5,
+                            246.5,
+                            130.5
+                        ]
+                    ],
+                    "text_description" : "부등식이 아닌 것은 부등호가 없는 (5이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            267.0,
+                            79.0,
+                            356.0,
+                            101.0
+                        ]
+                    ],
+                    "text_description" : "$2x+y=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.5,
+                            48.5,
+                            545.5,
+                            73.5
+                        ]
+                    ],
+                    "text_description" : "① $2 x-1>x-1$ ② $x<3$ ③ $5-x \\geq 0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.5,
+                            75.5,
+                            128.5,
+                            102.5
+                        ]
+                    ],
+                    "text_description" : "④ $-3 \\leq 5$"
+                }
+            ]
+        }
+    ]
+}

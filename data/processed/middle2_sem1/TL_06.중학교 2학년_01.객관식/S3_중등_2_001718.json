@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2ca2b910-6764-46e5-96a2-3f89d6671e60",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001718",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52,
+                            98,
+                            448,
+                            151
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프의 $x$ 절편이 $1, y$ 절편이 -4 일 때, 다음 중 일차함수 $y=b x+a$의 그래프는?"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            326,
+                            156,
+                            446,
+                            183
+                        ]
+                    ],
+                    "text_description" : "(단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51,
+                            329.42,
+                            202,
+                            454.42
+                        ]
+                    ],
+                    "text_description" : "③ $(1, 4)$를 지나는 임의의 일차함수이며 함수의 기울기는 음의 값이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49,
+                            6,
+                            449,
+                            79
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프의 $y$ 절편이 -4 이므로 $b=-4$ $y=a x-4$에서 $x$ 절편이 1 이므로 $y=a x-4$에 점 $(1, 0)$을 대입하면 $0=a-4, a=4$ 따라서 $y=b x+c$는 $y=-4 x+4$ 이므로 $y=-4 x+4$의 그래프를 찾으면 ③이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51,
+                            194.42,
+                            397,
+                            323.42
+                        ]
+                    ],
+                    "text_description" : "① $(-4, 1)$를 지나는 임의의 일차함수이며 함수의 기울기는 양의 값이다. ② $(-1, 4)$를 지나는 임의의 일차함수이며 함수의 기울기는 양의 값이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            242,
+                            331,
+                            398,
+                            455
+                        ]
+                    ],
+                    "text_description" : "④ $(4, 1)$를 지나는 임의의 일차함수이며 함수의 기울기는 음의 값이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50,
+                            462,
+                            202,
+                            586
+                        ]
+                    ],
+                    "text_description" : "④ $(4, 1)$를 지나는 임의의 일차함수이며 함수의 기울기는 음의 값이다."
+                }
+            ]
+        }
+    ]
+}

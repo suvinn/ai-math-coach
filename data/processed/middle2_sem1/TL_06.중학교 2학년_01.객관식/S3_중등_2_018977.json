@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d1724b6c-7508-43a1-9cae-5a141926bc2d",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018977",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59,
+                            13.92,
+                            738,
+                            39.92
+                        ]
+                    ],
+                    "text_description" : "다음 그래프는 $x-y+2=0$의 해를 나타낸 그래프이다. $a, b$에 알맞은 수를 각각 구하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60,
+                            45.5,
+                            308,
+                            250.5
+                        ]
+                    ],
+                    "text_description" : "직선 \\(x-y + 2 = 0 \\)은 기울기가 1이고 y절편은 -2이다. 직선은 원점을 지나지 않으며, x축과 y축에 대한 교차점 \\(a \\)와 \\(b \\)가 존재한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68,
+                            314.92,
+                            216,
+                            339.92
+                        ]
+                    ],
+                    "text_description" : "③ $a=-2, b=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            347.5,
+                            228,
+                            402.5
+                        ]
+                    ],
+                    "text_description" : "④ $a=-2, b=1$ ⑤ $a=-4, \\quad b=-4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68,
+                            253.5,
+                            213,
+                            308.5
+                        ]
+                    ],
+                    "text_description" : "① $a=-4, b=2$ ② $a=3, b=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60,
+                            467.5,
+                            781,
+                            551.5
+                        ]
+                    ],
+                    "text_description" : "$x$에 관한 식으로 나타내면 $y=x+2$ 이므로 그래프는 기울기가 1 이고, $y$ 절편이 2 인 직선이 된다. 한편, $y=0$ 일 때 $0=x+2, x=-2$ 이므로 $x$ 절편은 -2 이다. 따라서 $a=-2, b=2$ 이다."
+                }
+            ]
+        }
+    ]
+}

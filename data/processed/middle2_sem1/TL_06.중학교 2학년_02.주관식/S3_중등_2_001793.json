@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "dad7a5d0-ca55-406f-b31d-252e0759044a",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001793",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.5,
+                            30.92,
+                            536.5,
+                            164.92
+                        ]
+                    ],
+                    "text_description" : "두께가 $0. 2$ $mm$인 신문이 있다. 이때 아래의 그림과 같이 신문을 계속 포개어 접어서 두께를 $102. 4$ $mm$가 되도록 하려면 몇 번 접어야 하는지 구하시오. (단, 접은 신문 사이의 공간은 생기지 않는다.)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.43,
+                            185.01,
+                            523.51,
+                            331.98
+                        ]
+                    ],
+                    "text_description" : "직사각형의 형태의 도형이 중앙에 점선이 그려져 있으며 $1$번, $2$번 접는 과정을 보여주고 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.9,
+                            462.17,
+                            52.26,
+                            481.34
+                        ]
+                    ],
+                    "text_description" : "$9$번"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.5,
+                            372.5,
+                            389.5,
+                            453.5
+                        ]
+                    ],
+                    "text_description" : "신문을 $n$ 번 접는다고 하면 $0. 2 \\times 2^{n}=102. 4$ 이므로 \\[ 2 \\times 2^{n}=1024, 2^{n+1}=2^{10}, n+1=10 \\] 따라서 $n=9$ 이다."
+                }
+            ]
+        }
+    ]
+}

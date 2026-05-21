@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5ea27b23-7f16-4775-8392-fffafef206e3",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016045",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.9,
+                            67.18,
+                            497.9,
+                            99.98
+                        ]
+                    ],
+                    "text_description" : "다음 부등식 $6(x+2)>3 x+12$의 해는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            30.9,
+                            111.18,
+                            133.9,
+                            139.98
+                        ]
+                    ],
+                    "text_description" : "① $x>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.9,
+                            155.18,
+                            156.9,
+                            307.98
+                        ]
+                    ],
+                    "text_description" : "② $x<0$ ③ $x>-2$ ④ $x<-2$ ⑤ $x=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.3,
+                            329.9,
+                            244.1,
+                            526.9
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} 6 x+12>3 x+12 \\\\ 6 x-3 x>12-12 \\\\ 3 x>0 \\end{array} \\] 양변을 3으로 나누기 \\[ x>0 \\]"
+                }
+            ]
+        }
+    ]
+}

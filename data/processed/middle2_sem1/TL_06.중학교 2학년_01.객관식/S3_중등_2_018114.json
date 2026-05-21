@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4d442cce-c12f-4045-9cf2-c7718dbc4fdb",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018114",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.37,
+                            12.03,
+                            613.12,
+                            48.03
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=3 x-8$에 대하여 $f(2)$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.62,
+                            72.03,
+                            80.12,
+                            99.53
+                        ]
+                    ],
+                    "text_description" : "① -2"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.119999999999997,
+                            114.25,
+                            76.12,
+                            269.25
+                        ]
+                    ],
+                    "text_description" : "② -1 ③ 0 ④ 1 ⑤ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.87,
+                            292.75,
+                            391.87,
+                            329.5
+                        ]
+                    ],
+                    "text_description" : "$f(2)=3(2)-8=6-8=-2$"
+                }
+            ]
+        }
+    ]
+}

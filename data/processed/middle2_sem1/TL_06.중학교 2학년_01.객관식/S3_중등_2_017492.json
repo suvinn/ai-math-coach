@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6a679bfc-7293-41db-a87c-4134f95e8d33",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017492",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.07,
+                            5.59,
+                            279.44,
+                            91.53
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오. \\[ 4 x(5 y-2 x+3) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.32,
+                            103.69,
+                            288.82,
+                            139.62
+                        ]
+                    ],
+                    "text_description" : "① $20 x y-8 x^{2}+12 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.5,
+                            146,
+                            313.5,
+                            310
+                        ]
+                    ],
+                    "text_description" : "② $20 x y+8 x^{2}-12 x$ ③ $20 x y+8 x^{2}+12 x$ ④ $-20 x y-8 x^{2}+12 x$ ⑤ $20 x y-8 x^{2}-12 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.5,
+                            336,
+                            660.5,
+                            436
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}4 x(5 y-2 x+3)=4 x \\times 5 y+4 x \\times(-2 x)+4 x \\times 3 \\\\ = \\\\ =20 x y-8 x^{2}+12 x\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

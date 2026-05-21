@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "eada7c50-fc87-42ef-a9b1-ec4f106cd45e",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017450",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.48,
+                            8.76,
+                            300.27,
+                            40.5
+                        ]
+                    ],
+                    "text_description" : "$3(2 x+4)$를 계산하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.480000000000004,
+                            62.24,
+                            157.32,
+                            94.12
+                        ]
+                    ],
+                    "text_description" : "$6 x+12$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.53,
+                            105.43,
+                            155.26,
+                            259.7
+                        ]
+                    ],
+                    "text_description" : "② $6 x-12$ ③ $6 x+4$ ④ $3 x+4$ ⑤ $9 x+12$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.28,
+                            291.18,
+                            489.5,
+                            324.09
+                        ]
+                    ],
+                    "text_description" : "$3(2 x+4)=3 \\times 2 x+3 \\times 4=6 x+12$"
+                }
+            ]
+        }
+    ]
+}

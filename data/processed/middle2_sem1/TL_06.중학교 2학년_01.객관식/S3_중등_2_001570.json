@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "70b10166-51f2-4287-95f7-b07a9c993793",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001570",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58,
+                            18.47,
+                            456.85,
+                            73.25
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차부등식 $1. 4 x-2 \\leq 0. 6 x+1. 2$의 해를 수직선 위에 바르게 나타낸 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            258.19,
+                            146.23,
+                            402.58,
+                            202.04
+                        ]
+                    ],
+                    "text_description" : "④ $x \\leq 4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.54,
+                            264.5,
+                            289.43,
+                            298.81
+                        ]
+                    ],
+                    "text_description" : "$1. 4 x-2 \\leq 0. 6 x+1. 2$의 잉변에 10을 곱하면 $14 x-20 \\leq 6 x+12, 8 x \\leq 32$ 이므로 $x \\leq 4$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.03,
+                            84.79,
+                            212.11,
+                            259.89
+                        ]
+                    ],
+                    "text_description" : "① $x \\geq 1$ ③ $x \\leq 1$ ⑤ $x < 4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            253.59,
+                            82.74,
+                            404.11,
+                            145.72
+                        ]
+                    ],
+                    "text_description" : "② $x \\geq 4$"
+                }
+            ]
+        }
+    ]
+}

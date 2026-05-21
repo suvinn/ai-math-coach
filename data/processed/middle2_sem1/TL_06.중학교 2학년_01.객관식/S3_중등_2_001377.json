@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "94c8c13f-c0ee-4241-859c-fc2cd4c0dfb7",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001377",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.95,
+                            6.24,
+                            574.51,
+                            88.16
+                        ]
+                    ],
+                    "text_description" : "$x=0. 4 \\dot{7}\\dot{1}$을 분수로 나타내려고 한다. 다음 중 필요한 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.46,
+                            218.49,
+                            457.26,
+                            287.1
+                        ]
+                    ],
+                    "text_description" : "소수점이 4 뒤로, 471 뒤로 가도록 $x$에 각각 10, 1000을 곱하면 $10 x=4. 7171 \\cdots, 1000 x=471. 7171 \\cdots$ 이다. 따라서 $1000 x-10 x$이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.0,
+                            101.0,
+                            469.0,
+                            175.0
+                        ]
+                    ],
+                    "text_description" : "① $10 x-x$ ② $100 x-x$ ③ $100 x-10 x$ ④ $1000 x-x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            95.0,
+                            181.0,
+                            239.0,
+                            209.0
+                        ]
+                    ],
+                    "text_description" : "$1000 x-10 x$"
+                }
+            ]
+        }
+    ]
+}

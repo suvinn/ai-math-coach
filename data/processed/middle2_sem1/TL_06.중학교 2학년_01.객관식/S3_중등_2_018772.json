@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d9efda79-e6f9-4e4e-8c18-5f5a95e88d22",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018772",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.49,
+                            13.31,
+                            514.05,
+                            35.84
+                        ]
+                    ],
+                    "text_description" : "다음 일차함수 중 그 그래프의 $x$ 절편과 $y$ 절편이 같은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.61,
+                            80.36,
+                            172.03,
+                            101.38
+                        ]
+                    ],
+                    "text_description" : "② $y=-x+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.07,
+                            48.1,
+                            159.23,
+                            69.12
+                        ]
+                    ],
+                    "text_description" : "① $y=x+2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.58,
+                            111.59,
+                            182.27,
+                            217.6
+                        ]
+                    ],
+                    "text_description" : "③ $y=2 x-1$ ④ $y=2 x+1$ ⑤ $y=\\frac{1}{2} x+2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.49,
+                            412.88,
+                            425.98,
+                            435.4
+                        ]
+                    ],
+                    "text_description" : "따라서 $x$ 절편과 $y$ 절편이 같은 것은 ②이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.49,
+                            282.32,
+                            408.58,
+                            410.83
+                        ]
+                    ],
+                    "text_description" : "<div class=\"table_tabular \" style=\"text-align: center\"> <div class=\"inline-tabular\"><table id=\"tabular\"> <tbody> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \" class=\"_empty\"></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $①$</span></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $②$</span></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $③$</span></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">④</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">⑤</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $x$</span> 절편</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">$-2$</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">$5$</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $\\frac{1}{2}$</span></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $-\\frac{1}{2}$</span></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">$-4$</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $y$</span> 절편</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">$②$0</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">$5$</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">$②$2</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">$②$3</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">$②$0</td> </tr> </tbody> </table> </div></div>"
+                }
+            ]
+        }
+    ]
+}

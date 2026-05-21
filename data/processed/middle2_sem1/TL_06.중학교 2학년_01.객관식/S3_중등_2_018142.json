@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c528505e-25e7-4544-bb5a-7a5109ba37e2",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018142",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.73,
+                            8.46,
+                            1054.28,
+                            82.5
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b(a \\neq 0)$의 그래프가 일차함수 $y=4 x+3$의 그래프를 $y$ 축의 방향으로 6 만 큼 평행이동한 것일 때, 상수 $a$와 $b$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            37.94,
+                            106.58,
+                            196.27,
+                            138.34
+                        ]
+                    ],
+                    "text_description" : "$a=4, b=9$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.73,
+                            149.4,
+                            192.59,
+                            301.04
+                        ]
+                    ],
+                    "text_description" : "② $a=4, b=6$ ③ $a=4, b=3$ ④ $a=4, b=1$ ⑤ $a=4, b=7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.54,
+                            314.97,
+                            215.78,
+                            345.3
+                        ]
+                    ],
+                    "text_description" : "평행이동 후 함수:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.32,
+                            401.5,
+                            263.95,
+                            433.61
+                        ]
+                    ],
+                    "text_description" : "따라서, $a=4, b=9$."
+                }
+            ]
+        }
+    ]
+}

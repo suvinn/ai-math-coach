@@ -1,0 +1,149 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e5ca0d23-d4d7-4459-ba90-8d07701bac4d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018198",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            95.36,
+                            12.3,
+                            827.46,
+                            49.41
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=2 x-3$에 대하여 $f(c)=5$ 일 때, $c$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.51,
+                            69.39,
+                            112.31,
+                            97.93
+                        ]
+                    ],
+                    "text_description" : "① $c=4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.51,
+                            113.99,
+                            114.09,
+                            267.41
+                        ]
+                    ],
+                    "text_description" : "② $c=2$ ③ $c=3$ ④ $c=5$ ⑤ $c=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : "5",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.62,
+                            281.34,
+                            304.98,
+                            319.7
+                        ]
+                    ],
+                    "text_description" : "$f(c)=5, f(c)=2 c-3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.51,
+                            338.43,
+                            146.2,
+                            367.87
+                        ]
+                    ],
+                    "text_description" : "$2 c-3=5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.51,
+                            391.06,
+                            144.42,
+                            423.17
+                        ]
+                    ],
+                    "text_description" : "$2 c=5+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.4,
+                            446.36,
+                            95.36,
+                            479.37
+                        ]
+                    ],
+                    "text_description" : "$2 c=8$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.4,
+                            498.88,
+                            139.07,
+                            536.46
+                        ]
+                    ],
+                    "text_description" : "$c=\\frac{8}{2}=4$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "35c12ee9-a10c-4358-b17c-5295cbc216e4",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018931",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.69,
+                            9.59,
+                            1562.38,
+                            40.97
+                        ]
+                    ],
+                    "text_description" : "다음 그림의 직사각형 ABCD에서 $\\overline{\\mathrm{AB}}=5 \\mathrm{~cm}, \\overline{\\mathrm{AD}}=8 \\mathrm{~cm}$ 이다. 점 P가 B를 출발하여 C까지 움직일 때, 움직인 거리를 $x \\mathrm{~cm}$, 이때의 $\\triangle \\mathrm{ABP}$의 넓이를 $y \\mathrm{~cm}^{2}$라고 하자. $x, y$ 사이의 관계식을 구하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            43,
+                            330,
+                            230
+                        ]
+                    ],
+                    "text_description" : "이미지에는 직사각형 ABCD가 있고, AB는 5cm, AD는 8cm이다. 삼각형 ABP는 ABCD의 왼쪽 위 모서리에서 오른쪽 아래로 수정된 직각삼각형이다. BP의 길이는 xcm이고, 삼각형 ABP의 넓이는 y cm²로 표시되어 있다. P는 BC의 연장선상에 있으며, BC는 직사각형의 면과 수평이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67,
+                            269,
+                            157,
+                            313
+                        ]
+                    ],
+                    "text_description" : "② $y=\\frac{5}{2} x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            321,
+                            194,
+                            434
+                        ]
+                    ],
+                    "text_description" : "③ $y=5 x+30$ ④ $y=30-5 x$ ⑤ $y=30-\\frac{5}{2} x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            232,
+                            146,
+                            261
+                        ]
+                    ],
+                    "text_description" : "① $y=5 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            502,
+                            345,
+                            549
+                        ]
+                    ],
+                    "text_description" : "$y=\\frac{1}{2} \\times x \\times 5 \\quad \\therefore \\quad y=\\frac{5}{2} x$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "df527a7f-7c1e-4a18-853b-9c3acd1c2261",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017755",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.78,
+                            16,
+                            658.78,
+                            108.16
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식을 만족하는 $x$의 범위를 구하세요. \\[ 2 x-3 \\geq 4 x+5 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.14,
+                            143.36,
+                            148.06,
+                            173.44
+                        ]
+                    ],
+                    "text_description" : "① $x \\leq-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.78,
+                            183.68,
+                            148.06,
+                            339.84
+                        ]
+                    ],
+                    "text_description" : "② $x \\geq-4$ ③ $x \\leq 4$ ④ $x \\geq 4$ ⑤ $x=-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.58,
+                            367.36,
+                            224.22,
+                            581.76
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}2 x-3 \\geq 4 x+5 \\\\ 2 x-4 x \\geq 5+3 \\\\ -2 x \\geq 8 \\\\ x \\leq-4\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

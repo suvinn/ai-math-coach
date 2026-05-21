@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b120661c-6f04-4587-bbc0-502a4ea8eba8",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016042",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : "1",
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10,
+                            68.42,
+                            453,
+                            105.42
+                        ]
+                    ],
+                    "text_description" : "다음 부등식 $2(x-1)>x+3$의 해는?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12,
+                            115.42,
+                            121,
+                            141.42
+                        ]
+                    ],
+                    "text_description" : "① $x>5$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11,
+                            153,
+                            141,
+                            311
+                        ]
+                    ],
+                    "text_description" : "② $x<5$ ③ $x=5$ ④ $x>-5$ ⑤ $x<-5$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.45,
+                            329.34,
+                            207.45,
+                            450.34
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}2 x-2>x+3 \\\\ 2 x-x>3+2 \\\\ x>5\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

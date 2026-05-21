@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4b629488-6274-4b82-91d9-c3eadc00f7d6",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017716",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.02,
+                            13.75,
+                            854.76,
+                            45.86
+                        ]
+                    ],
+                    "text_description" : "'어떤 수 $x$에서 $8$을 뺀 것은 $12$보다 크거나 같다. '를 부등식으로 나타내시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            37.480000000000004,
+                            129.71,
+                            165.23,
+                            160.04
+                        ]
+                    ],
+                    "text_description" : "$x-8 \\geq 12$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.37,
+                            70.84,
+                            166.12,
+                            102.06
+                        ]
+                    ],
+                    "text_description" : "① $x-8 \\leq 12$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.04,
+                            188.23,
+                            165.23,
+                            332.74
+                        ]
+                    ],
+                    "text_description" : "③ $x+8 \\geq 12$ ④ $x+8 \\leq 12$ ⑤ $x-8=12$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.02,
+                            362.18,
+                            613.91,
+                            395.18
+                        ]
+                    ],
+                    "text_description" : "주어진 문장을 부등식으로 나타내면 다음과 같습니다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6446aec1-4fea-43da-bce6-c1ecd61ae8e6",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016040",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.71,
+                            69.46,
+                            140.2,
+                            100.07
+                        ]
+                    ],
+                    "text_description" : "다음 부등식"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            351.52,
+                            72.4,
+                            440.99,
+                            100.66
+                        ]
+                    ],
+                    "text_description" : "의 해는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            147.27,
+                            70.05,
+                            350.93,
+                            99.48
+                        ]
+                    ],
+                    "text_description" : "$7 x-4>3 x+8$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.71,
+                            156.57,
+                            119.6,
+                            186.01
+                        ]
+                    ],
+                    "text_description" : "② $x>3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.94,
+                            113.02,
+                            119.6,
+                            143.04
+                        ]
+                    ],
+                    "text_description" : "① $x<3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.12,
+                            198.96,
+                            139.61,
+                            311.38
+                        ]
+                    ],
+                    "text_description" : "③ $x=3$ ④ $x<-3$ ⑤ $x>-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.29,
+                            335.52,
+                            227.32,
+                            506.22
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} 7 x-3 x>8+4 \\\\ 4 x>12 \\end{array} \\] 양변을 4로 나누기: \\[ x>3 \\]"
+                }
+            ]
+        }
+    ]
+}

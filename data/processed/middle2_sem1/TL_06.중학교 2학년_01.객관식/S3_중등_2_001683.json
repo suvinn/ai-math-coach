@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ee10075a-8913-4e6a-bc9a-d0706d93dc5b",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001683",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            31.42,
+                            415,
+                            57.42
+                        ]
+                    ],
+                    "text_description" : "$m, ~n$이 자연수일 때, 다음 중 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67,
+                            112.42,
+                            224,
+                            138.42
+                        ]
+                    ],
+                    "text_description" : "③ $\\left(a^{m}\\right)^{n}=\\left(a^{n}\\right)^{m}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            78,
+                            230,
+                            103
+                        ]
+                    ],
+                    "text_description" : "① $a^{m} \\times a^{n}=a^{m \\times n}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            300,
+                            78,
+                            481,
+                            139
+                        ]
+                    ],
+                    "text_description" : "② $a^{m} \\div a^{n}=a^{m \\div n}$ ④ $(a b)^{m}=a^{m}+b^{m}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            146,
+                            347,
+                            194
+                        ]
+                    ],
+                    "text_description" : "⑤$\\left(\\frac{a}{b}\\right)^{m}=a^{m}-b^{m}($ 단, $b \\neq 0)$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.4,
+                            201.77,
+                            247.72,
+                            300.61
+                        ]
+                    ],
+                    "text_description" : "① $a^{m} \\times a^{n}=a^{m+n}$  \n② $a^{m} \\div a^{n}=a^{m-n}$  \n④ $(a b)^{m}=a^{m} \\times b^{m}$  \n⑤ $\\left(\\frac{a}{b}\\right)^{m}=a^{m} \\div b^{m} \\text{ (단, $b \\neq 0$)}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "392380e3-d00b-4d53-a85d-64781e66fad0",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018904",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.3,
+                            12.14,
+                            665.3,
+                            40.14
+                        ]
+                    ],
+                    "text_description" : "다음 중 $x$ 절편이 $5, y$ 절편이 4 인 직선을 그래프로 하는 일차함수의 식을 구하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            92.7,
+                            81.74,
+                            200.5,
+                            127.34
+                        ]
+                    ],
+                    "text_description" : "$y=-\\frac{4}{5} x+4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.3,
+                            335,
+                            438.9,
+                            472.6
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { 두 점 }(5, 0), (0, 4) \\text { 를 지나는 일차함수의 그래프는 } \\\\ \\begin{array}{l}\\text { 기울기 })=\\frac{4-0}{0-5}=-\\frac{4}{5}, \\quad(y \\text { 절편 })=4 \\\\ \\therefore \\quad y=-\\frac{4}{5} x+4\\end{array}\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.5,
+                            138,
+                            200.5,
+                            273.4
+                        ]
+                    ],
+                    "text_description" : "③ $y=-\\frac{4}{5} x-4$ ④ $y=4 x-5$ ⑤ $y=\\frac{4}{5} x-4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.5,
+                            46.2,
+                            162.1,
+                            71.8
+                        ]
+                    ],
+                    "text_description" : "① $y=x+9$"
+                }
+            ]
+        }
+    ]
+}

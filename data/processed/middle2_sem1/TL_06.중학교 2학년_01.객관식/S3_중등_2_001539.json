@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "06a3b264-01fa-462a-bfed-065d2a221910",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001539",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.18,
+                            15.68,
+                            312.5,
+                            37.52
+                        ]
+                    ],
+                    "text_description" : "$a=-2, b=3$일 때, 다음 식의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.18,
+                            55.16,
+                            441.14,
+                            114.6
+                        ]
+                    ],
+                    "text_description" : "$\\left(12 a^{2} b-4 a b^{2}\\right) \\div(2 b)-(2 a-10 b) \\times \\frac{1}{2} a$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            178.1,
+                            132.24,
+                            212.66,
+                            153.36
+                        ]
+                    ],
+                    "text_description" : "② 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.54,
+                            132.88,
+                            112.18,
+                            181.52
+                        ]
+                    ],
+                    "text_description" : "① -22 ④ 42"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            178.1,
+                            161.04,
+                            222.26,
+                            181.52
+                        ]
+                    ],
+                    "text_description" : "⑤ 62"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            307.74,
+                            132.88,
+                            352.82,
+                            153.36
+                        ]
+                    ],
+                    "text_description" : "③ 22"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.82,
+                            191.48,
+                            312.5,
+                            251.92
+                        ]
+                    ],
+                    "text_description" : "\\[ \\left(12 a^{2} b-4 a b^{2}\\right) \\div 2 b-(2 a-10 b) \\times \\frac{1}{2} a=5 a^{2}+3 a b \\] $5 a+3 a b$에 $a=-2, b=3$을 대입하면 \\[ 5 a^{2}+3 a b=5 \\times(-2)^{2}+3 \\times(-2) \\times 3=20-18=2 \\]"
+                }
+            ]
+        }
+    ]
+}

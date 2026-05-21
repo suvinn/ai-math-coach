@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c73ada28-8a51-4765-a5b6-23f26e5e32d3",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001808",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.82,
+                            25.79,
+                            535.62,
+                            95.39
+                        ]
+                    ],
+                    "text_description" : "$x, y$가 자연수일 때, 일차방정식 $2 x+y=11$의 해를 다음과 같이 표로 나타내었다. 이때 $a, b$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.22,
+                            108.62,
+                            541.22,
+                            194.22
+                        ]
+                    ],
+                    "text_description" : "$x, y$가 자연수일 때, 일차방정식 $2 x+y=11$의 해를 나타낸 표."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            34.82,
+                            360.82,
+                            143.62,
+                            387.82
+                        ]
+                    ],
+                    "text_description" : "$a=7, b=3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.82,
+                            209.42,
+                            374.82,
+                            338.22
+                        ]
+                    ],
+                    "text_description" : "$x=2, y=a$를 $2 x+y=11$에 대입하면 $4+a=11, a=7$ $x=4, y=b$를 $2 x+y=11$에 대입하면 $8+b=11, b=3$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1fc70851-f7fe-45dd-baba-df17404cd73a",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018892",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.25,
+                            16.25,
+                            1230,
+                            45
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x-2$의 그래프 위에 두 점 $\\mathrm{A}(-4, 2), \\mathrm{B}(-3, b)$가 있다. $x$ 축 위에 $\\overline{\\mathrm{AP}}+\\overline{\\mathrm{BP}}$가 최소가 되는 점 P를 잡을 때, P의 좌표는? (단, $a$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.5,
+                            48.75,
+                            196.25,
+                            107.5
+                        ]
+                    ],
+                    "text_description" : "① $\\left(-\\frac{10}{3}, 0\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.75,
+                            111.25,
+                            187.5,
+                            301.25
+                        ]
+                    ],
+                    "text_description" : "② $(-2, 0)$ ③ $\\left(-\\frac{2}{3}, 0\\right)$ ④ $\\left(\\frac{1}{2}, 0\\right)$ ⑤ $(1, 0)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.25,
+                            356.25,
+                            341.25,
+                            503.75
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { 점 }(-4, 2) \\text { 가 } y=a x-2 \\text { 위에 있으므로 } \\\\ 2=-4 a-2, 4 a=-4 \\\\ \\therefore a=-1 \\\\ y=-x-2 \\text { 위에 점 }(-3, b) \\text { 가 있으므로 } \\\\ b=3-2=1\\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.75,
+                            698.75,
+                            886.25,
+                            1086.25
+                        ]
+                    ],
+                    "text_description" : "$\\overline{\\mathrm{AP}}+\\overline{\\mathrm{BP}}$가 최소가 되기 위해서는 B를 $x$ 축에 대하여 대칭인 점 $\\mathrm{B}^{\\prime}$과 점 A를 이은 직선 위에 P가 있을 때이다. 직선 $\\mathrm{AB}^{\\prime}$에서 $\\mathrm{A}(-4, 2), \\mathrm{B}^{\\prime}(-3, -1)$ 이므로 $($ 기울기 $)=\\frac{2+1}{-4+3}=\\frac{3}{-1}=-3$ $y=-3 x+c$로 놓고 점 $(-4, 2)$를 대입하면 \\[ \\begin{array}{l} 2=12+c, c=-10 \\\\ \\therefore y=-3 x-10 \\end{array} \\] 점 P는 $x$ 축 위에 있으므로 $x$0을 대입하면 \\[ \\begin{array}{l} 0=-3 x-10, 3 x=-10 \\\\ \\therefore x=-\\frac{10}{3} \\end{array} \\] 따라서 점 P의 좌표는 $x$1 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.25,
+                            513.75,
+                            277.5,
+                            697.5
+                        ]
+                    ],
+                    "text_description" : "도형 정보: 좌표 평면 상에 직선이 있는 그래프. 직선의 방정식: \\(y = -x - 2\\). 점 A, B, B'와 원점 O의 위치 표시. 점 B는 y=1에서 직선과의 교차점. 점 A는 직선 상의 특정 위치. 점 B'는 y=-3에서 직선과의 교차점. 축은 x축과 y축이며, 각각 가로와 세로로 표시."
+                }
+            ]
+        }
+    ]
+}

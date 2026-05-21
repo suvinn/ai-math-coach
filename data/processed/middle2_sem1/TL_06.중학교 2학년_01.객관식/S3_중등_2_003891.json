@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "515e65ea-f6da-4eb5-ac9c-42b35d5e29ab",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003891",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            85.06,
+                            17.37,
+                            607.83,
+                            54.77
+                        ]
+                    ],
+                    "text_description" : "식 $a(2 a-3)-3 a(a+1)$을 간단히 하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            262.12,
+                            123.79,
+                            431.19,
+                            158.21
+                        ]
+                    ],
+                    "text_description" : "⑤ $-a^{2}-6 a$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            30.16,
+                            71.95,
+                            198.05,
+                            158.68
+                        ]
+                    ],
+                    "text_description" : "① $-a^{2}+6 a$ ④ $a^{2}-6 a$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            262.3,
+                            71.36,
+                            575.21,
+                            106.96
+                        ]
+                    ],
+                    "text_description" : "② $a^{2}+6 a$ ③ $6 a$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.26,
+                            208.83,
+                            396.98,
+                            267.69
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} & a(2 a-3)-3 a(a+1) \\\\ = & 2 a^{2}-3 a-3 a^{2}-3 a=-a^{2}-6 a\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

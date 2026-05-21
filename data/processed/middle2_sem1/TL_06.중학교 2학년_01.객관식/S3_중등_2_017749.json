@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c73604c9-c1da-4cd8-8306-5ebe9425a065",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017749",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.19,
+                            11.06,
+                            552.96,
+                            41.03
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식을 만족하는 $x$의 범위를 구하세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            436.64,
+                            72.43,
+                            644.31,
+                            106.68
+                        ]
+                    ],
+                    "text_description" : "$3 x-5 \\geq 2 x+6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            37.62,
+                            183.75,
+                            122.65,
+                            214.73
+                        ]
+                    ],
+                    "text_description" : "$x \\geq 11$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.19,
+                            142.1,
+                            147.63,
+                            170.64
+                        ]
+                    ],
+                    "text_description" : "① $x \\geq-11$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.05,
+                            225.59,
+                            134.07,
+                            338.34
+                        ]
+                    ],
+                    "text_description" : "③ $x \\geq 5$ ④ $x \\geq-5$ ⑤ $x \\geq 0$"
+                }
+            ]
+        },
+        {
+            "class_num" : "3",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.75,
+                            371.17,
+                            229.7,
+                            404.71
+                        ]
+                    ],
+                    "text_description" : "$3 x-5 \\geq 2 x+6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.17,
+                            431.83,
+                            229.7,
+                            461.8
+                        ]
+                    ],
+                    "text_description" : "$3 x-2 x \\geq 6+5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            79.84,
+                            494.63,
+                            171.18,
+                            526.02
+                        ]
+                    ],
+                    "text_description" : "$x \\geq 11$"
+                }
+            ]
+        }
+    ]
+}

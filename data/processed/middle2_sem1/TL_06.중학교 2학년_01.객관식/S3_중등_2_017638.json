@@ -1,0 +1,167 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a0366672-4a4d-4769-8329-8ed2767bb1a2",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017638",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.16,
+                            1.85,
+                            1040.63,
+                            83.54
+                        ]
+                    ],
+                    "text_description" : "$(x, y)$에 대한 일차방정식 $a x+b y-8=0$의 그래프와 일차함수 $y=\\frac{3}{4} x-2$의 그래프가 일치할 때, $a+b$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.96,
+                            163.62,
+                            73.83,
+                            195.65
+                        ]
+                    ],
+                    "text_description" : "② -1"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.18,
+                            105.93,
+                            75.85,
+                            140.79
+                        ]
+                    ],
+                    "text_description" : "① -2"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.18,
+                            217.67,
+                            64.58,
+                            372.45
+                        ]
+                    ],
+                    "text_description" : "③ 0 ④ 1 ⑤ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.57,
+                            389.1,
+                            410.18,
+                            430.1
+                        ]
+                    ],
+                    "text_description" : "일차방정식을 $y$에 대해 정리합니다:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.29,
+                            438.79,
+                            680.54,
+                            487.61
+                        ]
+                    ],
+                    "text_description" : "주어진 일차함수와 비교하여 $-\\frac{a}{b}=\\frac{3}{4}$와 $\\frac{8}{b}=-2$를 얻습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.85,
+                            494.17,
+                            564.51,
+                            532.45
+                        ]
+                    ],
+                    "text_description" : "두 식을 풀어 $a$와 $b$를 구하고, $a+b$를 계산합니다:"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            412.03,
+                            384.41,
+                            573.19,
+                            433.23
+                        ]
+                    ],
+                    "text_description" : "$y=-\\frac{a}{b} x+\\frac{8}{b}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            569.07,
+                            499.3,
+                            899.65,
+                            527.89
+                        ]
+                    ],
+                    "text_description" : "$a=3, b=-4, a+b=-1$."
+                }
+            ]
+        }
+    ]
+}

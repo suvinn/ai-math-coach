@@ -1,0 +1,95 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5d450e0b-a9fb-420e-98ce-9da11ed7819c",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001487",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.28,
+                            11.24,
+                            286.28,
+                            38.24
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.28,
+                            48.77,
+                            333.28,
+                            74.77
+                        ]
+                    ],
+                    "text_description" : "② $\\left(3 x^{2}+x-4\\right)+\\left(2 x^{2}-3 x+2\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.28,
+                            122.77,
+                            96.28,
+                            142.77
+                        ]
+                    ],
+                    "text_description" : "$5 x^{2}-2 x-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.28,
+                            78.77,
+                            467.28,
+                            119.77
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}\\left(3 x^{2}+x-4\\right)+\\left(2 x^{2}-3 x+2\\right) & =3 x^{2}+x-4+2 x^{2}-3 x+2 \\\\ & =3 x^{2}+2 x^{2}+x-3 x-4+2=5 x^{2}-2 x-2\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

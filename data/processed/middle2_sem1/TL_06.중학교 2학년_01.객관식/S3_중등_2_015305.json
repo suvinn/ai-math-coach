@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2ed80799-7ee6-4d30-ad8b-1c861d1ff067",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015305",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.7,
+                            51.3,
+                            247.2,
+                            75.06
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하십시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.08,
+                            82.61,
+                            246.12,
+                            113.93
+                        ]
+                    ],
+                    "text_description" : "$(6)\\left(-8 y^{3} z^{2}\\right) \\div\\left(-4 y^{2} z\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.16,
+                            246.22,
+                            72.79,
+                            268.9
+                        ]
+                    ],
+                    "text_description" : "④ $2 y z$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.16,
+                            140.93,
+                            99.25,
+                            235.97
+                        ]
+                    ],
+                    "text_description" : "① $2 y^{2} z^{2}$ ② $2 y$ ③ $-2 y^{3} z$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.16,
+                            275.92,
+                            90.61,
+                            303.46
+                        ]
+                    ],
+                    "text_description" : "⑤ $2 y^{3} z^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            208.87,
+                            414.15,
+                            660.82,
+                            463.83
+                        ]
+                    ],
+                    "text_description" : "$\\left(-8 y^{3} z^{2}\\right) \\div\\left(-4 y^{2} z\\right)=\\frac{-8}{-4} \\cdot y^{3-2} \\cdot z^{2-1}=2 y z$"
+                }
+            ]
+        }
+    ]
+}

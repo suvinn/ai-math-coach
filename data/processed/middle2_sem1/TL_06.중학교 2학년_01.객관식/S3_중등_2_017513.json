@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fa0994de-2c3e-4383-969f-d80e8ed589fa",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017513",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.09,
+                            13.31,
+                            727.94,
+                            106.5
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산했을 때, $x$의 계수와 상수항의 합은? \\[ (7 x-2 y+8)-5(x-3 y+4) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.559999999999999,
+                            143.87,
+                            77.7,
+                            169.47
+                        ]
+                    ],
+                    "text_description" : "① -10"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.04,
+                            185.86,
+                            64.9,
+                            338.43
+                        ]
+                    ],
+                    "text_description" : "② -2 ③ 2 ④ -1 ⑤ 3"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.240000000000002,
+                            369.66,
+                            408.45,
+                            584.19
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}(7 x-2 y+8)-5(x-3 y+4) \\\\ =7 x-2 y+8-5 x+15 y-20 \\\\ =2 x+13 y-12 \\\\ 2+(-12)=-10\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

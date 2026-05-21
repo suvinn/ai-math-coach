@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3d3c3a09-deae-427d-bf20-f7a9084b97ea",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018843",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.24,
+                            9.28,
+                            814.49,
+                            41.78
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프가 제 1 사분면을 지나지 않을 때, 다음 중 옳은 것은? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.74,
+                            140.53,
+                            200.74,
+                            165.78
+                        ]
+                    ],
+                    "text_description" : "④ $a<0, b \\leq 0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.63,
+                            173.06,
+                            200.19,
+                            195.07
+                        ]
+                    ],
+                    "text_description" : "⑤ $a>0, \\quad b=0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.61,
+                            46.08,
+                            198.66,
+                            134.14
+                        ]
+                    ],
+                    "text_description" : "① $a>0, \\quad b>0$ ② $a>0, b<0$ ③ $a<0, \\quad b \\geq 0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.93,
+                            260.66,
+                            438.27,
+                            316.93
+                        ]
+                    ],
+                    "text_description" : "$y=a x+b$의 그래프가 다음 그림과 같아야 하므로 [기 울 기]$=a<0, \\quad[y$ 절 편 $]=b \\leq 0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.95,
+                            323.58,
+                            236.47,
+                            494.59
+                        ]
+                    ],
+                    "text_description" : "좌표평면도의 직선이 제 2, 3, 4 사분면을 지난다."
+                }
+            ]
+        }
+    ]
+}

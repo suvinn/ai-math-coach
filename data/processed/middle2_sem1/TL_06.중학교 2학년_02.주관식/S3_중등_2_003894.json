@@ -1,0 +1,83 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b2ba39eb-11e1-446d-92f2-e48e0dc5f901",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003894",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.4,
+                            24.03,
+                            683,
+                            145.03
+                        ]
+                    ],
+                    "text_description" : "식 $\\frac{4 x^{2}-8 x y}{2 x}-\\frac{9 x y+3 y^{2}}{3 y}$를 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.4,
+                            328.23,
+                            143.4,
+                            354.63
+                        ]
+                    ],
+                    "text_description" : "$-x-5 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.8,
+                            191.5,
+                            342.6,
+                            301.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\frac{2 x(2 x-4 y)}{2 x}-\\frac{3 y(3 x+y)}{3 y} \\\\ =2 x-4 y-(3 x+y) \\\\ =-x-5 y\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

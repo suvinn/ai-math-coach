@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a2fa0c56-035f-4286-ad9f-27191696067b",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017693",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.1,
+                            8.67,
+                            1013.37,
+                            80.03
+                        ]
+                    ],
+                    "text_description" : "어떤 학교에서 학생 $150$명이 체육대회에 참여한다. 이 학생들은 매일 $20$명씩 추가로 참여한다고 할 때, 총 학생 수가 $300$명이 되려면 최소 몇 일이 지나야 합니다?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.99,
+                            139.79,
+                            80.32,
+                            170.12
+                        ]
+                    ],
+                    "text_description" : "② $8$일"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.77,
+                            100.54,
+                            81.21,
+                            128.2
+                        ]
+                    ],
+                    "text_description" : "① $7$일"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.77,
+                            178.7,
+                            94.59,
+                            289.31
+                        ]
+                    ],
+                    "text_description" : "③ $9$일 ④ $10$일 ⑤ $11$일"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.07,
+                            312.5,
+                            997.32,
+                            382.08
+                        ]
+                    ],
+                    "text_description" : "처음 $150$명이 참여하고, 매일 $20$명씩 추가로 참여하므로 참여하는 학생 수는 $150+20 \\times x$로 표현됩니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.18,
+                            603.3,
+                            360.42,
+                            636.3
+                        ]
+                    ],
+                    "text_description" : "따라서, 최소 $8$일이 지나야 합니다."
+                }
+            ]
+        }
+    ]
+}

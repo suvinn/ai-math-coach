@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0f2f15b1-46e8-4665-9141-ff1cdcf77364",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016118",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.6,
+                            56.74,
+                            453,
+                            83.14
+                        ]
+                    ],
+                    "text_description" : "일차함수 $f(x)=5 x-1$에서 $f(4)-f(2)$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.8,
+                            240.74,
+                            61.8,
+                            259.14
+                        ]
+                    ],
+                    "text_description" : "④ 10"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.8,
+                            106.8,
+                            54.6,
+                            214.8
+                        ]
+                    ],
+                    "text_description" : "① 6 ② 8 ③ 9"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.8,
+                            286,
+                            61,
+                            302.4
+                        ]
+                    ],
+                    "text_description" : "⑤ 12"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.2,
+                            324.6,
+                            289.8,
+                            429.2
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(4)=5(4)-1=20-1=19 \\\\ f(2)=5(2)-1=10-1=9 \\\\ f(4)-f(2)=19-9=10\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

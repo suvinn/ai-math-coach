@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "983953ef-f994-402d-b019-bc906e5cc555",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001494",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.7,
+                            15.79,
+                            285.35,
+                            44.52
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.32,
+                            59.14,
+                            295.24,
+                            84.74
+                        ]
+                    ],
+                    "text_description" : "① $6 x-\\{4 x-y-(5 x-3 y)\\}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.4,
+                            135.94,
+                            85.32,
+                            153.22
+                        ]
+                    ],
+                    "text_description" : "① $7 x-2 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.04,
+                            89.74,
+                            458.33,
+                            128.64
+                        ]
+                    ],
+                    "text_description" : "① $6 x-{4 x-y-(5 x-3 y)} =6 x-(4 x-y-5 x+3 y)=6 x-(-x+2 y) =6 x+x-2 y=7 x-2 y$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d3646e7d-5b79-411b-a4a1-c924c74bd727",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018753",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.7,
+                            12.34,
+                            607.1,
+                            38.74
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=2 x+4$의 그래프와 $x$ 축, $y$ 축으로 둘러싸인 부분의 넓이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.7,
+                            77.94,
+                            109.5,
+                            101.94
+                        ]
+                    ],
+                    "text_description" : "② 4"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.7,
+                            106.4,
+                            117.5,
+                            196.8
+                        ]
+                    ],
+                    "text_description" : "③ 6 ④ 8 ⑤ 10"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.1,
+                            46.4,
+                            108.7,
+                            68.8
+                        ]
+                    ],
+                    "text_description" : "① 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.1,
+                            256.8,
+                            405.5,
+                            282.4
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=2 x+4$의 그래프는 다음과 같다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.3,
+                            478,
+                            623.9,
+                            524
+                        ]
+                    ],
+                    "text_description" : "따라서 그래프와 $x$ 축, $y$ 축으로 둘러싸인 부분의 넓이는 $\\frac{1}{2} \\times 2 \\times 4=4$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.1,
+                            292.2,
+                            250.5,
+                            473.6
+                        ]
+                    ],
+                    "text_description" : "도형은 삼각형이며, 기울기가 양수인 직선으로 경계가 형성되고, 한 변은 x축에 평행하다. 삼각형의 한 꼭짓점은 원점 O(0, 0)이고, 다른 두 꼭짓점은 (-2, 0) 및 (-2, 4)이다. 이 도형의 면적은 직사각형의 면적의 절반이다."
+                }
+            ]
+        }
+    ]
+}

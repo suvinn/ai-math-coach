@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "57d83c2f-b4e6-4c4c-af41-6adb44840a31",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001563",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            40.5,
+                            11.4,
+                            593.5,
+                            34.4
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차부등식 $4 x+1>2 x-3$의 해를 수직선 위에 바르게 나타낸 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.02,
+                            51.7,
+                            204.94,
+                            105.38
+                        ]
+                    ],
+                    "text_description" : "① $x>2$가 수직선 위에 나타냈다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.38,
+                            175.14,
+                            419.34,
+                            230.18
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} 4 x+1>2 x-3 \\text { 을 풀면 } \\\\ 4 x-2 x>-3-1. 2 x>-4, x>-2 \\end{array} \\] 따라서 부등식의 해가 $x>-2$ 이므로 수직선 위에 나타내면 오른쪽 그림과 같다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            422.12,
+                            208.62,
+                            520.32,
+                            236.02
+                        ]
+                    ],
+                    "text_description" : "$x>2$가 수직선 위에 나타냈다."
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            244.95,
+                            52.69,
+                            405.91,
+                            165.01
+                        ]
+                    ],
+                    "text_description" : "② $x<-2$가 수직선 위에 나타냈다. ⑤ $x \\geq -2$가 수직선 위에 나타냈다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            446.67,
+                            52.33,
+                            608.87,
+                            104.41
+                        ]
+                    ],
+                    "text_description" : "③ $x>-1$가 수직선 위에 나타냈다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.63,
+                            112.21,
+                            230.07,
+                            164.65
+                        ]
+                    ],
+                    "text_description" : "④ $x<-1$가 수직선 위에 나타냈다."
+                }
+            ]
+        }
+    ]
+}

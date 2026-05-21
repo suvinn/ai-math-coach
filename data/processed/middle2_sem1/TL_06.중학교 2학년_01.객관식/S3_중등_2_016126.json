@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "735010a0-eea4-4649-924e-46de838a9acd",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016126",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.5,
+                            55.49,
+                            724.44,
+                            92.99
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차방정식 $-x+4 y+8=0$의 그래프와 같은 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.38,
+                            99.24,
+                            149.44,
+                            147.68
+                        ]
+                    ],
+                    "text_description" : "① $y=\\frac{1}{4} x-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.38,
+                            155.4,
+                            179.13,
+                            350.15
+                        ]
+                    ],
+                    "text_description" : "② $y=-\\frac{1}{4} x+2$ ③ $y=-4 x+2$ ④ $y=4 x-2$ ⑤ $y=-\\frac{1}{4} x-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16,
+                            362,
+                            349,
+                            399
+                        ]
+                    ],
+                    "text_description" : "일차방정식을 $y$에 대해 정리하면:"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            252,
+                            429,
+                            702,
+                            489
+                        ]
+                    ],
+                    "text_description" : "$-x+4 y+8=0 \\rightarrow 4 y=x-8 \\rightarrow y=\\frac{1}{4} x-2$"
+                }
+            ]
+        }
+    ]
+}

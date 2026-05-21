@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9426d85a-ff1d-42ba-a7ff-f729430f2974",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016041",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.87,
+                            58.18,
+                            487.18,
+                            97.24
+                        ]
+                    ],
+                    "text_description" : "다음 부등식 $5 x+7 \\leq 4 x+10$을 풀어라."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.31,
+                            103.49,
+                            127.56,
+                            139.43
+                        ]
+                    ],
+                    "text_description" : "① $x \\leq 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.5,
+                            145.6,
+                            154.3,
+                            308.8
+                        ]
+                    ],
+                    "text_description" : "② $x \\geq 3$ ③ $x=3$ ④ $x \\geq-3$ ⑤ $x=-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.7,
+                            330.4,
+                            232.7,
+                            412.8
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}5 x-4 x \\leq 10-7 \\\\ x \\leq 3\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

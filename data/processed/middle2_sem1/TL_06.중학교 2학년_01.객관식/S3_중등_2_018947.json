@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ed5e6de7-3985-402b-a513-20259bdeb415",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018947",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58,
+                            11.42,
+                            556,
+                            36.42
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $x+y-2=0$의 그래프에 대한 다음 설명 중 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            170.42,
+                            280,
+                            194.42
+                        ]
+                    ],
+                    "text_description" : "⑤ 제1, 2, 4사분면을 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            45,
+                            298,
+                            167
+                        ]
+                    ],
+                    "text_description" : "① 기울기는 1 이다. ② $x$ 절편은 - 2 이다. ③ $y$ 절편은 - 2 이다. ④ $y=x$의 그래프와 평행하다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.25,
+                            263.75,
+                            1089,
+                            318.75
+                        ]
+                    ],
+                    "text_description" : "① $y=-x+2$ 이므로 기울기는 -1 이다. ②, ③ $x+y-2=0$의 $x$ 절편은 $y=0$을 대입하면 $x=2, y$ 절편은 $x=0$을 대입하면 $y=2$ 이다. 따라서 그래프는 다음 그림과 같다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59,
+                            468.75,
+                            307.75,
+                            525
+                        ]
+                    ],
+                    "text_description" : "④ $y=-x$의 그래프와 평행하다. ⑤ 제 $1, 2, 4$ 사분면을 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.52000000000001,
+                            327.76,
+                            227.2,
+                            467.2
+                        ]
+                    ],
+                    "text_description" : "좌표평면도에 점 (0, 2)와 (2, 0)이 직선으로 이어져 있다."
+                }
+            ]
+        }
+    ]
+}

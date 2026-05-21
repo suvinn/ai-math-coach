@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "773835e4-dd53-4151-8d78-764f28449b2c",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001770",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.87,
+                            24.3,
+                            449.67,
+                            79.59
+                        ]
+                    ],
+                    "text_description" : "어떤 식에 $-x^{2}+2 x-4$를 더해야 할 것을 잘못하여 빼 었더니 $6 x^{2}+3 x-1$이 되었다. 바르게 계산한 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.9,
+                            123.11,
+                            175.24,
+                            146.66
+                        ]
+                    ],
+                    "text_description" : "① $4 x^{2}+7 x-9$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.87,
+                            209.42,
+                            256.14,
+                            363.54
+                        ]
+                    ],
+                    "text_description" : "어떤 식을 $A$라고 하면 \\[ \\begin{array}{l} A-\\left(-x^{2}+2 x-4\\right)=6 x^{2}+3 x-1 \\text { 에서 } \\\\ \\begin{aligned} A & =6 x^{2}+3 x-1+\\left(-x^{2}+2 x-4\\right) \\\\ & =6 x^{2}+3 x-1-x^{2}+2 x-4 \\\\ & =5 x^{2}+5 x-5 \\end{aligned} \\end{array} \\] 따라서 바르게 계산한 식은 \\[ \\begin{array}{l} 5 x^{2}+5 x-5+\\left(-x^{2}+2 x-4\\right) \\\\ =5 x^{2}+5 x-5-x^{2}+2 x-4 \\\\ =4 x^{2}+7 x-9 \\end{array} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            248.97,
+                            120.34,
+                            372.87,
+                            174.1
+                        ]
+                    ],
+                    "text_description" : "② $4 x^{2}+7 x+9$ ④ $4 x^{2}-7 x+9$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.41,
+                            150.54,
+                            195.21,
+                            205.33
+                        ]
+                    ],
+                    "text_description" : "③ $4 x^{2}-7 x-9$ ⑤ $-4 x^{2}+7 x-9$"
+                }
+            ]
+        }
+    ]
+}

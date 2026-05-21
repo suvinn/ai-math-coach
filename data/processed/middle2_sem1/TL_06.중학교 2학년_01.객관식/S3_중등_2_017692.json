@@ -1,0 +1,149 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "27656ee2-dd90-4343-8b2b-1a07d0c0ab1d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017692",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.6,
+                            7.17,
+                            1021.6,
+                            117.17
+                        ]
+                    ],
+                    "text_description" : "어떤 학교에는 학생 200명이 있다. 이 학생들이 각각 한 개의 운동기구를 사용하는데, 매일 운동기구를 사용하는 학생 수가 30명씩 증가한다고 한다. 처음에 운동기구를 사용하는 학생 수가 50명이 었을 때, 이 학생들의 운동기구 사용자가 200명이 되려면 최소 몇 일이 지나야 합니다?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.1,
+                            139.09,
+                            84.1,
+                            170.34
+                        ]
+                    ],
+                    "text_description" : "① 5일"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.35,
+                            694.09,
+                            77.85,
+                            724.09
+                        ]
+                    ],
+                    "text_description" : "① 5일"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.35,
+                            180.09,
+                            85.1,
+                            331.59
+                        ]
+                    ],
+                    "text_description" : "② 6일 ③ 7일 ④ 8일 ⑤ 9일"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.85,
+                            345.34,
+                            411.6,
+                            415.34
+                        ]
+                    ],
+                    "text_description" : "학생 수는 $50+30 \\times x$로 표현됩니다. 이 학생 수가 200명이 되어야 합니다,"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.1,
+                            645.34,
+                            367.85,
+                            675.34
+                        ]
+                    ],
+                    "text_description" : "따라서, 최소 5 일이 지나야 합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.35,
+                            436.59,
+                            202.85,
+                            611.59
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}50+30 x \\geq 200 \\\\ 30 x \\geq 150 \\\\ x \\geq \\frac{150}{30}=5\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1e140222-34e7-436c-b8f7-b287115b7418",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018860",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            15,
+                            629.5,
+                            38
+                        ]
+                    ],
+                    "text_description" : "$a+b<0, a b>0$ 일 때, 일차함수 $y=a x+b$의 그래프로 가장 적당한 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.5,
+                            50,
+                            198.5,
+                            704
+                        ]
+                    ],
+                    "text_description" : "① 양의 기울기를 가진 직선, y축 아래에서 x축 오른쪽을 지남. ② 음의 기울기를 가진 직선, y축 위에서 x축 오른쪽을 지남. ③ 양의 기울기를 가진 직선, x축 왼쪽에서 y축 위를 지남. ④ 음의 기울기를 가진 직선, x축 왼쪽에서 y축 아래를 지남. ⑤ 기울기가 0인 수평선."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.5,
+                            722,
+                            82.5,
+                            743
+                        ]
+                    ],
+                    "text_description" : "④"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.5,
+                            764,
+                            995.5,
+                            821
+                        ]
+                    ],
+                    "text_description" : "$a b>0$에서 $a, b$의 부호가 같으면서 $a+b<0$ 이므로 $a$와 $b$는 모두 음수이다. 따라서 $($ 기울기 $)=a<0$ 이므로 오른쪽 아래로 향하는 직선이고, $y$ 절편이 음수이므로 $y$ 축과 만나는 점이 원점보다 아래에 있다."
+                }
+            ]
+        }
+    ]
+}

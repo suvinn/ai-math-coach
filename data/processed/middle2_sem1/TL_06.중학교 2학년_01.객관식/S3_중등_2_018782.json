@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "21c5f145-3bc0-41c1-ad33-c5c8e85ee62c",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018782",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.5,
+                            13.9,
+                            396.5,
+                            32.9
+                        ]
+                    ],
+                    "text_description" : "다음 일차함수의 그래프의 기울기를 구하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.5,
+                            48.9,
+                            266.5,
+                            247.9
+                        ]
+                    ],
+                    "text_description" : "xy좌표평면 위에 점 (-2, 2)를 지나는 직선이 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.5,
+                            313.9,
+                            109.5,
+                            332.9
+                        ]
+                    ],
+                    "text_description" : "③ $1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.5,
+                            250.9,
+                            125.5,
+                            302.9
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{ll}\\text { ① } & -2 \\\\ \\text { ② } & -1\\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.5,
+                            345.9,
+                            109.5,
+                            395.9
+                        ]
+                    ],
+                    "text_description" : "④ $2$ ⑤ $3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71.5,
+                            463.9,
+                            389.5,
+                            587.9
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} {[\\text { 기 울기 }] } & =\\frac{(y \\text { 의 값의 증가 량 }]}{[x \\text { 의 값의 증가 량 }]} \\\\ & =\\frac{2-0}{0-[-2]}=\\frac{2}{2}=1\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

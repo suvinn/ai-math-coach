@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4e2a0e16-ba9d-4c45-a7ee-d770020c0943",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016031",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.84,
+                            66.83,
+                            539.84,
+                            93.83
+                        ]
+                    ],
+                    "text_description" : "다음 중 부등식 $5 x-2 \\leq 3 x+6$의 해가 아닌 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.77,
+                            322.07,
+                            61.37,
+                            349.27
+                        ]
+                    ],
+                    "text_description" : "⑤ 5"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.17,
+                            170.87,
+                            62.17,
+                            310.07
+                        ]
+                    ],
+                    "text_description" : "① 2 ② 3 ③ 4 ④ 1"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            30.97,
+                            386.56,
+                            272.57,
+                            412.16
+                        ]
+                    ],
+                    "text_description" : "1. 부등식을 정리합니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            30.17,
+                            469.76,
+                            860.57,
+                            496.16
+                        ]
+                    ],
+                    "text_description" : "2. $x \\leq 4$ 이므로 $x=1, 2, 3, 4$는 부등식을 만족합니다. $x=5$는 만족하지 않습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            287.77,
+                            421.56,
+                            760.57,
+                            448.16
+                        ]
+                    ],
+                    "text_description" : "$5 x-2 \\leq 3 x+6 \\Longrightarrow 2 x \\leq 8 \\Longrightarrow x \\leq 4$"
+                }
+            ]
+        }
+    ]
+}

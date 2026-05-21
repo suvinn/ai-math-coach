@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3141390d-a38c-4a3c-8e40-93e794829c1d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018107",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.05,
+                            10.04,
+                            629.85,
+                            50.4
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=x^{2}+4 x$에 대하여 $f(1)$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.57,
+                            116.06,
+                            72.39,
+                            142.76
+                        ]
+                    ],
+                    "text_description" : "② 5"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.74,
+                            294.06,
+                            406.12,
+                            331.9
+                        ]
+                    ],
+                    "text_description" : "$f(1)=(1)^{2}+4(1)=1+4=5$"
+                }
+            ]
+        },
+        {
+            "class_num" : "2",
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.42,
+                            157.58,
+                            73.97,
+                            268.47
+                        ]
+                    ],
+                    "text_description" : "③ 6\n④ 7\n⑤ 8"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.31,
+                            75.07,
+                            68.72,
+                            98.82
+                        ]
+                    ],
+                    "text_description" : "① 4"
+                }
+            ]
+        }
+    ]
+}

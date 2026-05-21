@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e29a542c-9565-4e2c-b31c-4fc72ab456d3",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001807",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.27,
+                            24,
+                            439.47,
+                            59.2
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식 중 해가 무수히 많은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            291.47,
+                            148.65,
+                            465.87,
+                            206.25
+                        ]
+                    ],
+                    "text_description" : "④ $\\left\\{\\begin{array}{l}x+y=5 \\\\ 3 x=15-3 y\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.67,
+                            81.45,
+                            237.07,
+                            205.45
+                        ]
+                    ],
+                    "text_description" : "① $\\left\\{\\begin{array}{l}x+3 y=0 \\\\ x+2 y=0\\end{array}\\right. $ ③ $\\left\\{\\begin{array}{l}x-2 y=3 \\\\ 2 x+3 y=-1\\end{array}\\right. $"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.07,
+                            209.45,
+                            305.07,
+                            244.65
+                        ]
+                    ],
+                    "text_description" : "⑤ $2 x+3 y=6 x-3 y=12$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            291.47,
+                            83.05,
+                            472.27,
+                            138.25
+                        ]
+                    ],
+                    "text_description" : "② $\\left\\{\\begin{array}{l}x-3 y=6 \\\\ 3 x+y=-12\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.07,
+                            279.85,
+                            517.87,
+                            584.65
+                        ]
+                    ],
+                    "text_description" : "각 연립방정식의 해는 ① $x=0, y=0$ ② $x=-3, y=-3$ ③ $x=1, y=-1$ ④ $\\left\\{\\begin{array}{l}x+y=5 \\\\ 3 x=15-3 y\\end{array}\\right. $, 즉 $\\left\\{\\begin{array}{l}x+y=5 \\\\ 3 x+3 y=15\\end{array}\\right. $ ㉠ $\\times 3$을 하면 $3 x+3 y=15$ 이므로 ㉡과 같은 식이다. 따라서 주어진 연립방정식의 해는 무수히 많다. ⑤ $x=3, y=2$"
+                }
+            ]
+        }
+    ]
+}

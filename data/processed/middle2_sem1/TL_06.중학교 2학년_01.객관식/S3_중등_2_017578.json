@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fe055ed3-9034-401d-8f8e-bbabcdb1f186",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017578",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.32,
+                            11.24,
+                            690.21,
+                            41.47
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-x+5$의 그래프의 $x$ 절편과 $y$ 절편을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.32,
+                            65.54,
+                            322.6,
+                            95.7
+                        ]
+                    ],
+                    "text_description" : "① $x$ 절편: $(5, 0), y$ 절편: $(0, 5)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.81,
+                            107.52,
+                            342.56,
+                            262.66
+                        ]
+                    ],
+                    "text_description" : "② $x$ 절편: $(-5, 0), y$ 절편: $(0, 5)$ ③ $x$ 절편: $(5, 0), y$ 절편: $(0, -5)$ ④ $x$ 절편: $(-5, 0), y$ 절편: $(0, -5)$ ⑤ $x$ 절편: $(-5, 0), y$0 절편: $(-5, 0), y$1"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.42,
+                            551.47,
+                            649.25,
+                            582.66
+                        ]
+                    ],
+                    "text_description" : "- $x$ 절편을 구하려면 $y=0$ 일 때 $x$의 값을 구해야 합니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.86,
+                            714.7,
+                            648.74,
+                            799.23
+                        ]
+                    ],
+                    "text_description" : "따라서, $x$ 절편은 $(5, 0)$. - $y$ 절편을 구하려면 $x=0$ 일 때 $y$의 값을 구해야 합니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.72,
+                            932.35,
+                            303.14,
+                            964.1
+                        ]
+                    ],
+                    "text_description" : "따라서, $y$ 절 편은 $(0, 5)$."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            489,
+                            613.38,
+                            633.38,
+                            674.82
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}0=-x+5 \\\\ x=5\\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            478.76,
+                            829.9,
+                            643.62,
+                            897.54
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}y=-(0)+5 \\\\ y=5\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

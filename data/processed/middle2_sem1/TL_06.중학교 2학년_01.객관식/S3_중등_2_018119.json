@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e790ceaf-2fc0-4e88-9196-8b9a53c37f11",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018119",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.7,
+                            13.74,
+                            690.5,
+                            47.34
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=2 x^{2}+5 x+3$에 대하여 $f(1)$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.9,
+                            156.94,
+                            81.7,
+                            181.74
+                        ]
+                    ],
+                    "text_description" : "③ $10$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.1,
+                            72.8,
+                            68.1,
+                            140.6
+                        ]
+                    ],
+                    "text_description" : "① $6$ ② $8$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.1,
+                            198.2,
+                            80.9,
+                            266.2
+                        ]
+                    ],
+                    "text_description" : "④ $12$ ⑤ $14$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.9,
+                            287.4,
+                            544.1,
+                            324.6
+                        ]
+                    ],
+                    "text_description" : "$f(1)=2(1)^{2}+5(1)+3=2+5+3=10$"
+                }
+            ]
+        }
+    ]
+}

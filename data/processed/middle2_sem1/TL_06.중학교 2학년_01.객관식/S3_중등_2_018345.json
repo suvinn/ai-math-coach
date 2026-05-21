@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fc64da33-819d-46e4-a7ec-ba58297c02b7",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018345",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.6,
+                            10.98,
+                            1070.68,
+                            79.38
+                        ]
+                    ],
+                    "text_description" : "\"책의 무게 $x \\mathrm{~kg}$에 추가 장난감의 무게 6kg을 더하면 15kg보다 가볍다. \"를 부등식으로 나타낸 것 중 옳은 것을 고르세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.6,
+                            109.46,
+                            184.28,
+                            135.7
+                        ]
+                    ],
+                    "text_description" : "① $x+6<15$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.6,
+                            149.7,
+                            184.28,
+                            304.66
+                        ]
+                    ],
+                    "text_description" : "② $x+6>15$ ③ $x+6=15$ ④ $x+6 \\leq 15$ ⑤ $x+6 \\geq 15$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.68,
+                            333.88,
+                            1066.2,
+                            403.64
+                        ]
+                    ],
+                    "text_description" : "책의 무게와 추가 장난감의 무게를 합친 값이 15kg보다 가볍다는 조건을 부등식으로 나타내면 다 음과 같습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            478.04,
+                            438.84,
+                            615.64,
+                            465.72
+                        ]
+                    ],
+                    "text_description" : "$x+6<15$"
+                }
+            ]
+        }
+    ]
+}

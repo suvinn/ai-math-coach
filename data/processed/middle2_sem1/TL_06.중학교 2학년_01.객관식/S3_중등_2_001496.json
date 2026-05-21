@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f06af3ab-9de8-4363-92e1-25c9ffd07bda",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001496",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.8,
+                            10.27,
+                            224.76,
+                            40.99
+                        ]
+                    ],
+                    "text_description" : "다음 중 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.8,
+                            198.1,
+                            403.96,
+                            223.06
+                        ]
+                    ],
+                    "text_description" : "⑤ $-(-3 x+1)+(4 x+2)=7 x+1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.16,
+                            56.08,
+                            416.12,
+                            188.56
+                        ]
+                    ],
+                    "text_description" : "① $(3 x+4 y)+(2 x-y)=5 x+3$ ② $(2 x-3 y)-(4 x-2 y)=-2 x-5 y$ ③ $-(4 x-2)+(x+5)=-3 x+3$ ④ $(4 x-1)-(2 x+5)=-2 x+6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.8,
+                            234.58,
+                            329.72,
+                            333.78
+                        ]
+                    ],
+                    "text_description" : "① (주어진 식) $=5x+3y$ ② (주어진 식) $=2x-3y-4x+2y=-2x-y$ ③ (주어진 식)$=-4x+2+x+5=-3x+7$ ④ (주어진 식)$=4x-1-2x-5=2x-6$ ⑤ (주어진 식)$=3x-1+4x+2=7x+1$"
+                }
+            ]
+        }
+    ]
+}

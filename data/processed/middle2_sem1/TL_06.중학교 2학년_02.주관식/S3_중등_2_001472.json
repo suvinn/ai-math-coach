@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "358e3516-632c-4ab7-a50c-3c3d629602ef",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001472",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.92,
+                            17.32,
+                            378.58,
+                            54.19
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.32,
+                            61.35,
+                            407.25,
+                            99.29
+                        ]
+                    ],
+                    "text_description" : "② $(-3 x+4 y)-(-5 x-2 y)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.9,
+                            171.58,
+                            90.58,
+                            193.34
+                        ]
+                    ],
+                    "text_description" : "② $2 x+6 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.93,
+                            105.36,
+                            520.92,
+                            160.17
+                        ]
+                    ],
+                    "text_description" : "② $\\begin{aligned}(-3 x+4 y)-(-5 x-2 y) & =-3 x+4 y+5 x+2 y \\\\ & =-3 x+5 x+4 y+2 y=2 x+6 y\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

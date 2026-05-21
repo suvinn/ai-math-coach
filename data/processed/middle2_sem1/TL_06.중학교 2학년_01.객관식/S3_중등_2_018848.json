@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5494d0d8-9d6f-4e65-973e-a89435ba74c8",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018848",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58,
+                            22.42,
+                            643,
+                            64.42
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=\\frac{a}{b} x+b$의 그래프가 다음 그림과 같을 때, 상수 $a, b$의 부호는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55,
+                            75.42,
+                            272,
+                            285.42
+                        ]
+                    ],
+                    "text_description" : "좌표평면도에 제 2, 3, 4 사분면이 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62,
+                            319,
+                            194,
+                            346
+                        ]
+                    ],
+                    "text_description" : "② $a>0, \\quad b<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            350,
+                            193,
+                            440
+                        ]
+                    ],
+                    "text_description" : "③ $a<0, \\quad b>0$ ④ $a<0, b<0$ ⑤ $a>0, \\quad b=0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63,
+                            287,
+                            192,
+                            314
+                        ]
+                    ],
+                    "text_description" : "① $a>0, \\quad b>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54,
+                            501,
+                            444,
+                            617
+                        ]
+                    ],
+                    "text_description" : "$y$ 축과 만나는 점이 원점보다 아래에 있으므로 $b<0$ 직선이 오른쪽 아래로 향하므로 $\\frac{a}{b}<0$ 이때, $b<0$ 이므로 $a>0$"
+                }
+            ]
+        }
+    ]
+}

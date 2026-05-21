@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6cdf5595-c8bd-4195-ba1e-54ae7311c781",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001633",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.31,
+                            11.26,
+                            226.51,
+                            148.48
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같은 직사각형 $ABCD$에서 $\\overline{\\mathrm{AB}}$ 위의 점 $P$에 대하여 \\[ \\overline{\\mathrm{PB}}=x \\mathrm{~cm} \\text { 일 때, } \\] $\\triangle \\mathrm{APD}$의 넓이를 $y \\mathrm{~cm}^{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.77,
+                            156.14,
+                            438.99,
+                            205.82
+                        ]
+                    ],
+                    "text_description" : "라고 하자. 다음 중 $x$와 $y$ 사이의 관계를 그래프로 나타낸것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            245.24,
+                            13.65,
+                            438.74,
+                            120.9
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 직사각형 $\\mathrm{ABCD}$를 나타내고 있으며, 변 $\\overline{\\mathrm{PB}}$의 길이는 $x cm$, 변 $\\overline{\\mathrm{AD}}$의 길이는 $16cm$, 변 $\\overline{\\mathrm{CD}}$의 길이는 $10cm$입니다. 삼각형 $\\mathrm{APD}$가 직사각형 내의 한 부분을 차지하고 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            241.24,
+                            344.87,
+                            403.99,
+                            457.12
+                        ]
+                    ],
+                    "text_description" : "④이 이미지는 x축과 y축이 있는 그래프를 나타냅니다. y축에는 80이라는 값이 표시되어 있고, x축은 0에서 10까지의 범위를 가지고 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : "2",
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.24,
+                            223.12,
+                            211.74,
+                            582.12
+                        ]
+                    ],
+                    "text_description" : "①이 이미지는 좌표 평면을 나타내고 있으며, x축과 y축이 표시되어 있습니다. y축의 값이 10까지, x축의 값이 80까지 있습니다. 그래프에서 특정한 점을 나타내고 있는 선이 있습니다.\n③이 이미지는 xy 평면에 그래프를 나타내고 있습니다. x축은 160을, y축은 10을 표시하고 있습니다. O는 원점입니다.\n⑤이 이미지는 좌표 평면을 나타내고 있으며, y축과 x축이 있습니다. y축은 10까지 눈금이 표시되어 있고, x축은 0에서 80까지의 눈금이 있습니다. x축과 y축이 만나는 점은 원점(0,0)입니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            234.49,
+                            216.62,
+                            406.99,
+                            344.87
+                        ]
+                    ],
+                    "text_description" : "②이 이미지는 좌표 평면을 나타내고 있습니다. x축과 y축이 있으며, y축의 값이 80이고, x축의 값이 10인 점이 표시되어 있습니다. 이 점을 연결하는 선이 나타나 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            254.99,
+                            465.12,
+                            386.24,
+                            555.87
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} \\overline{\\mathrm{AP}}=10-x(\\mathrm{~cm}) \\text { 이므로 } \\\\ \\triangle \\mathrm{APD}=\\frac{1}{2} \\times \\overline{\\mathrm{AP}} \\times \\overline{\\mathrm{AD}} \\\\ y=\\frac{1}{2} \\times(10-x) \\times 16 \\end{array} \\] 따라서 $y=80-8 x$"
+                }
+            ]
+        }
+    ]
+}

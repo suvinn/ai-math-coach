@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3b6233ce-140f-4f90-8d0e-253a89898e10",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003916",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.84,
+                            21.83,
+                            272.84,
+                            280.83
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림에서 두 점 $\\mathrm{A}, \\mathrm{D}$는 각각 일차함 수 $y=3 x, y=-x+11$의 그래프 위에 있다. $\\overline{\\mathrm{AB}}=2 \\overline{\\mathrm{BC}}$ 일 때, 사각형 ABCD의 넓이틀 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            283.84,
+                            22.83,
+                            553.84,
+                            266.83
+                        ]
+                    ],
+                    "text_description" : "일차함수 그래프에서 ABCD직사각형이 색칠되어있고, A점과 O점의 이어진 선분이 Y=3X, D에 맞닿아있는 선분은 Y=-X+11의 일차함수를 가지고 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.84,
+                            525.44,
+                            46.84,
+                            544.44
+                        ]
+                    ],
+                    "text_description" : "$18$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.84,
+                            310.44,
+                            331.84,
+                            509.44
+                        ]
+                    ],
+                    "text_description" : "12 두 점 $\\mathrm{A}, \\mathrm{D}$는 각각 일차함수 $y=3 x$, 일차 함수 $y=-x+11$의 그래프 위에 있으므로 $\\mathrm{A}(a, 3 a), \\mathrm{B}(a, 0), \\mathrm{C}(b, 0), \\mathrm{D}(b, -b+11)$ 이다. $\\overline{\\mathrm{AB}}=2 \\overline{\\mathrm{BC}}$ 이므로 $3 a=2(b-a), 5 a=2 b$ 또 $\\overline{\\mathrm{AB}}=\\overline{\\mathrm{CD}}$ 이므로 $3 a=-b+11, 5 a=2 b$ 두 식을 연립하여 풀면 $a=2, b=5$ $\\mathrm{A}(2, 6), \\mathrm{B}(2, 0), \\mathrm{C}(5, 0), \\mathrm{D}(5, 6)$ 이다. 따라서 사각형 ABCD의 넓이는 $y=3 x$0"
+                }
+            ]
+        }
+    ]
+}

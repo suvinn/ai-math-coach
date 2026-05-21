@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7637dbca-7f69-4b39-a1b4-f62bcb1beb81",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018734",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.16,
+                            8.02,
+                            548.16,
+                            34.27
+                        ]
+                    ],
+                    "text_description" : "다음 중 $y$를 $x$에 관한 식으로 나타낼 때, 일차함수가 아닌 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.91,
+                            169.27,
+                            605.66,
+                            194.27
+                        ]
+                    ],
+                    "text_description" : "밑변의 길이가 $x \\mathrm{~cm}$, 높이가 $y \\mathrm{~cm}$인 삼각형의 넓이는 $10 \\mathrm{~cm}^{2}$이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.66,
+                            40.52,
+                            705.66,
+                            159.27
+                        ]
+                    ],
+                    "text_description" : "① 하루 중 낮의 길이가 $x$ 시간일 때 밤의 길이는 $y$ 시간이다. ② 반지름의 길이가 $x \\mathrm{~cm}$ 인 원의 둘레의 길이는 $y \\mathrm{~cm}$ 이다. ③ 가로의 길이가 $x \\mathrm{~cm}$ 세로의 길이가 $y \\mathrm{~cm}$ 인 직사각형의 둘레의 길이는 $12cm$ 이다. ④ 시속 $60km$로 달리는 자동차가 $x$ 시간 동안 달린 거리는 $y \\mathrm{~cm}$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.41,
+                            258.81,
+                            345.66,
+                            495.06
+                        ]
+                    ],
+                    "text_description" : "$x$와 $y$ 사이의 관계식을 구해 보자. ① $x + y = 24 \\quad \\therefore \\quad y = -x + 24$ ② $y = 2 \\pi x$ ③ $2(x + y) = 12 \\quad \\therefore \\quad y = -x + 6$ ④ $y = 60x$ ⑤ $\\frac{1}{2} xy = 10 \\quad \\therefore \\quad xy = 20$ 따라서 일차함수가 아닌 것은 ⑤."
+                }
+            ]
+        }
+    ]
+}

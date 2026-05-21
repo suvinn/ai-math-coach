@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e9021271-4058-4a3f-afce-53aa3884b6aa",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018778",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.42,
+                            14.28,
+                            532.92,
+                            76.78
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수 $f(x)=-3 x+6$에서 $\\frac{f(2)-f(-1)}{2-[-1)}$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.67,
+                            113.03,
+                            115.42,
+                            140.53
+                        ]
+                    ],
+                    "text_description" : "② $-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.67,
+                            80.53,
+                            116.67,
+                            110.53
+                        ]
+                    ],
+                    "text_description" : "① $-4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.67,
+                            150.07,
+                            107.92,
+                            235.07
+                        ]
+                    ],
+                    "text_description" : "③ $0$ ④ $3$ ⑤ $4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.17,
+                            297.57,
+                            810.42,
+                            428.82
+                        ]
+                    ],
+                    "text_description" : "$\\frac{f(2) - f(-1)}{2 - (-1)}$은 $x$의 값이 -1에서 2까지 증가할 때, $\\frac{(y \\text{의 값의 증가량})}{(x \\text{의 값의 증가량})}$이므로 기울기이다 \\[ \\therefore \\quad (\\text{기울기}) = \\frac{f② - f(-1)}{2 - (-1)} = -3 \\]"
+                }
+            ]
+        }
+    ]
+}

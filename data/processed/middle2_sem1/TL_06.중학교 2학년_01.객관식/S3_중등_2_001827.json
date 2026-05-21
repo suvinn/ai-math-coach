@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "092de3ad-517e-4a28-94fb-b74ecc905ba8",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001827",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.5,
+                            40.42,
+                            325.5,
+                            269.42
+                        ]
+                    ],
+                    "text_description" : "연립방정식 \\[ \\left\\{\\begin{array}{l} -x+y=3 \\\\ x-2 y=a \\end{array}\\right. \\]의 해를 구하기 위하여 두 일차방정식의 그래프를 각각 그렸더니 오른쪽 그림과 같았다. 이때 상수 $a$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            341.5,
+                            48,
+                            539.5,
+                            207
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 $-x+y=3$, $x-2$ $y=a$을 표기한 두 개의 직선이 그려진 좌표 평면을 보여줍니다. $x$축과 $y$축이 있으며, $x$축의 $-2$, $0$ 위치에 점이 표시되어 있습니다. $y$축에는 $1$의 값도 표시되어 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            225.5,
+                            293,
+                            290.5,
+                            316
+                        ]
+                    ],
+                    "text_description" : "② $-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.5,
+                            292,
+                            132.5,
+                            351
+                        ]
+                    ],
+                    "text_description" : "① $ -5$ ④ $-2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            225.5,
+                            328,
+                            287.5,
+                            351
+                        ]
+                    ],
+                    "text_description" : "⑤ $-1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            381.5,
+                            292,
+                            444.5,
+                            315
+                        ]
+                    ],
+                    "text_description" : "③ $-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.5,
+                            402,
+                            522.5,
+                            496
+                        ]
+                    ],
+                    "text_description" : "연립방정식의 해는 두 직선의 교점이므로 $(-2, 1)$이다. 따라서 $x-2 y=a$에 $x=-2, y=1$을 대입하면 $-2-2=a$, 즉 $a=-4$이다."
+                }
+            ]
+        }
+    ]
+}

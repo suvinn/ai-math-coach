@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3db808b2-947e-4b53-b84b-1cff59902261",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003881",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            80.5,
+                            17.92,
+                            617.5,
+                            54.92
+                        ]
+                    ],
+                    "text_description" : "$12 x^{6} y^{5} \\div 4 x y \\div\\left(-3 y^{2}\\right)$을 간단히 하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            263.5,
+                            76.5,
+                            638.5,
+                            173.5
+                        ]
+                    ],
+                    "text_description" : "② $13 x^{6} y^{3}$ ③ $-x^{3} y^{2}$ ⑤ $x^{3} y^{4}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.5,
+                            133.5,
+                            137.5,
+                            176.5
+                        ]
+                    ],
+                    "text_description" : "④ $x^{6} y^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.5,
+                            75.5,
+                            156.5,
+                            123.5
+                        ]
+                    ],
+                    "text_description" : "① $-x^{5} y^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73.5,
+                            220.5,
+                            661.5,
+                            402.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} 12 x^{6} y^{5} \\div 4 x y \\div\\left(-3 y^{2}\\right) & =\\frac{12 x^{6} y^{5}}{4 x y} \\div\\left(-3 y^{2}\\right) \\\\ & =\\frac{3 x^{5} y^{4}}{-3 y^{2}}=-x^{5} y^{2}\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "aec500eb-c92e-4abe-9fa5-b25d25e2c9cd",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017745",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.9,
+                            8.18,
+                            560.98,
+                            41.03
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식을 만족하는 $x$의 범위를 구하세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            443.56,
+                            66.49,
+                            654.6,
+                            104.26
+                        ]
+                    ],
+                    "text_description" : "$2 x-5 \\geq 4 x+3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.9,
+                            178.17,
+                            123.3,
+                            215.12
+                        ]
+                    ],
+                    "text_description" : "② $x \\geq 4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.19,
+                            220.87,
+                            153.68,
+                            345.69
+                        ]
+                    ],
+                    "text_description" : "③ $x \\leq-\\frac{4}{3}$ ④ $x \\geq \\frac{4}{3}$ ⑤ $x \\leq-3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.72,
+                            134.36,
+                            147.11,
+                            171.31
+                        ]
+                    ],
+                    "text_description" : "① $x \\leq-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.72,
+                            376.6,
+                            225.94,
+                            597.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}2 x-5 \\geq 4 x+3 \\\\ 2 x-4 x \\geq 3+5 \\\\ -2 x \\geq 8 \\\\ x \\leq-4\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

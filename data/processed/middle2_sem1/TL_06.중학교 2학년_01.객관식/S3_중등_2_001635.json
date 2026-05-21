@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3bee4ac8-dd91-4726-8672-4f351ba58b4f",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001635",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53,
+                            22.62,
+                            285,
+                            100.62
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림은 직선의 방정식 $a x-b y+1=0$의 그래프이다. 이때 상수 $a, b$의 부호는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            305.2,
+                            26.22,
+                            444,
+                            165.22
+                        ]
+                    ],
+                    "text_description" : "직선의 방정식 $a x-b y+1=0$의 그래프가 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53,
+                            146.22,
+                            168.2,
+                            170.22
+                        ]
+                    ],
+                    "text_description" : "② $a<0, b>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53,
+                            118.22,
+                            167.4,
+                            140.62
+                        ]
+                    ],
+                    "text_description" : "① $a<0, b<0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53,
+                            175.82,
+                            168.2,
+                            255.02
+                        ]
+                    ],
+                    "text_description" : "③ $a<0, b=0$ ④ $a>0, b<0$ ⑤ $a>0, b>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53,
+                            258.62,
+                            426.6,
+                            311.82
+                        ]
+                    ],
+                    "text_description" : "\\[ a x-b y+1=0, b y=a x+1, y=\\frac{a}{b} x+\\frac{1}{b} \\] 따라서 주어진 그래프에서 기울기 $\\frac{a}{b}<0, y$ 절편 $\\frac{1}{b}>0$ 이므로 $a<0, b>0$ 이다."
+                }
+            ]
+        }
+    ]
+}

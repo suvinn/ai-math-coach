@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "36b0b730-6645-4c54-8dde-e3362aeb33c1",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018385",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.5,
+                            9.42,
+                            542.5,
+                            37.42
+                        ]
+                    ],
+                    "text_description" : "$z>5$ 일 때, $4 z-8$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.5,
+                            61.42,
+                            205.5,
+                            93.42
+                        ]
+                    ],
+                    "text_description" : "① $4 z-8>12$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.5,
+                            103,
+                            203.5,
+                            262
+                        ]
+                    ],
+                    "text_description" : "② $4 z-8 \\geq 12$ ③ $4 z-8 \\leq 12$ ④ $4 z-8>9$ ⑤ $4 z-8<12$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.5,
+                            300,
+                            230.5,
+                            451
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}z>5 \\\\ 4 z-8>4(5)-8 \\\\ 4 z-8>12\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

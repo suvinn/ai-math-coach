@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "da03d42c-6896-4081-aee7-c356b6276d6e",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017399",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.09,
+                            11.46,
+                            256.86,
+                            42.31
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.21,
+                            51.57,
+                            282.57,
+                            88.59
+                        ]
+                    ],
+                    "text_description" : "$(6 a+3 b)+(5 a-4 b)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.15,
+                            108.13,
+                            148.88,
+                            137.96
+                        ]
+                    ],
+                    "text_description" : "$11 a-b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.15,
+                            153,
+                            160.19,
+                            305.21
+                        ]
+                    ],
+                    "text_description" : "② $11 a+7 b$ ③ $1 a-b$ ④ $11 a-7 b$ ⑤ $5 a+7 b$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.07,
+                            341.21,
+                            714.52,
+                            374.12
+                        ]
+                    ],
+                    "text_description" : "$(6 a+3 b)+(5 a-4 b)=(6 a+5 a)+(3 b-4 b)=11 a-b$"
+                }
+            ]
+        }
+    ]
+}

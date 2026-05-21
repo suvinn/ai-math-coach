@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5b31e93e-1be0-4a13-9470-ff75228f5321",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017504",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.18,
+                            9.26,
+                            721.1,
+                            103.98
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산한 후, 결과를 고르시오. \\[ \\left(20 x^{4} y^{2}-10 x^{3} y^{3}\\right) \\div\\left(5 x^{2} y\\right) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.1,
+                            134.06,
+                            200.78,
+                            169.26
+                        ]
+                    ],
+                    "text_description" : "① $4 x^{2} y-2 x y^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.1,
+                            176.3,
+                            201.42,
+                            336.94
+                        ]
+                    ],
+                    "text_description" : "② $4 x^{2} y^{2}-2 x y$ ③ $4 x^{2} y^{3}-2 x y$ ④ $4 x^{3} y^{2}-2 x y$ ⑤ $4 x^{3} y-2 x y^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.42,
+                            384.68,
+                            620.34,
+                            515.28
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}\\left(20 x^{4} y^{2}-10 x^{3} y^{3}\\right) \\div\\left(5 x^{2} y\\right)=\\frac{20 x^{4} y^{2}}{5 x^{2} y}-\\frac{10 x^{3} y^{3}}{5 x^{2} y} \\\\ =4 x^{2} y-2 x y^{2}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

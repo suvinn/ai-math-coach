@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "10fe8565-b2e1-483c-9b7b-af20fd3085bf",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001456",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72,
+                            19.42,
+                            348,
+                            54.42
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.82,
+                            63.1,
+                            301.82,
+                            135.1
+                        ]
+                    ],
+                    "text_description" : "$\\left(-25 a^{3} b\\right) \\div\\left(-\\frac{10}{3} a^{2} b^{3}\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.82,
+                            135.1,
+                            44.82,
+                            180.1
+                        ]
+                    ],
+                    "text_description" : "$\\frac{15 a}{2 b^{2}}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12,
+                            186,
+                            811,
+                            232
+                        ]
+                    ],
+                    "text_description" : "④ $\\left(-25 a^{3} b\\right) \\div\\left(-\\frac{10}{3} a^{2} b^{3}\\right)=\\left(-25 a^{3} b\\right) \\times\\left(-\\frac{3}{10 a^{2} b^{3}}\\right)=(-25) \\times\\left(-\\frac{3}{10}\\right) \\times a^{3} \\times \\frac{1}{a^{2}} \\times b \\times \\frac{1}{b^{3}}=\\frac{15 a}{2 b^{2}}$"
+                }
+            ]
+        }
+    ]
+}

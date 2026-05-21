@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "88f4331d-a095-43fb-ba4b-32cfb589de45",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018282",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.28,
+                            17.74,
+                            334.28,
+                            46.74
+                        ]
+                    ],
+                    "text_description" : "다음 부등식의 해를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.28,
+                            75.28,
+                            146.28,
+                            101.28
+                        ]
+                    ],
+                    "text_description" : "$2 x+5>13$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.28,
+                            186.28,
+                            105.28,
+                            210.28
+                        ]
+                    ],
+                    "text_description" : "① $x>4$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.28,
+                            563.28,
+                            96.28,
+                            588.28
+                        ]
+                    ],
+                    "text_description" : "① $x>4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.28,
+                            221.28,
+                            107.28,
+                            356.28
+                        ]
+                    ],
+                    "text_description" : "② $x \\geq 4$ ③ $x<4$ ④ $x \\leq 4$ ⑤ $x>5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.28,
+                            400.28,
+                            154.28,
+                            531.28
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}2 x+5>13 \\\\ 2 x>8 \\\\ x>4\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

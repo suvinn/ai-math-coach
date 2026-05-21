@@ -1,0 +1,95 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6cfb894a-e6f0-4ff8-9793-c448da790626",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001468",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71,
+                            21.42,
+                            374,
+                            55.42
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.0,
+                            67.0,
+                            375.0,
+                            107.0
+                        ]
+                    ],
+                    "text_description" : "② (2 x-4 y)+(-6 x+7 y)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            33.0,
+                            116.0,
+                            569.0,
+                            169.0
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}(2 x-4 y)+(-6 x+7 y) & =2 x-4 y-6 x+7 y=2 x-6 x-4 y+7 y \\\\ & =-4 x+3 y\\end{aligned}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.0,
+                            181.0,
+                            116.0,
+                            206.0
+                        ]
+                    ],
+                    "text_description" : "② $-4 x+3 y$"
+                }
+            ]
+        }
+    ]
+}

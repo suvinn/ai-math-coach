@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ad38a0a9-a03a-4512-a34c-fd925a61c92f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015302",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.88,
+                            39.3,
+                            261.13,
+                            105.55
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하십시오. $6 a^{3} \\div(3 a)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.13,
+                            166.8,
+                            79.88,
+                            195.55
+                        ]
+                    ],
+                    "text_description" : "② $2 a^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.13,
+                            132.25,
+                            79.88,
+                            161.25
+                        ]
+                    ],
+                    "text_description" : "① $2 a^{3}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.379999999999999,
+                            200,
+                            78.63,
+                            298.75
+                        ]
+                    ],
+                    "text_description" : "③ $6 a^{3}$ ④ $3 a^{2}$ ⑤ $2 a$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.63,
+                            390,
+                            289.88,
+                            415.75
+                        ]
+                    ],
+                    "text_description" : "주어진 식을 나눗셈으로 풉니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            318.13,
+                            433.5,
+                            566.13,
+                            492.5
+                        ]
+                    ],
+                    "text_description" : "$6 a^{3} \\div 3 a=\\frac{6}{3} a^{3-1}=2 a^{2}$"
+                }
+            ]
+        }
+    ]
+}

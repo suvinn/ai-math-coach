@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0aaed9fd-67e1-4db1-9df7-e3e5b1d6d13b",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001767",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.99,
+                            21.95,
+                            232.03,
+                            53.31
+                        ]
+                    ],
+                    "text_description" : "다음 중 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            301.59,
+                            72.81,
+                            435.83,
+                            98.49
+                        ]
+                    ],
+                    "text_description" : "② $x^{3} \\times x^{4}=x^{7}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.99,
+                            71.45,
+                            211.39,
+                            228.85
+                        ]
+                    ],
+                    "text_description" : "① $\\left(2 x^{2}\\right)^{3}=8 x^{5}$ ③ $\\frac{x^{6}}{x^{3}}=x^{2}$ ⑤ $\\left(\\frac{x}{y^{3}}\\right)^{3}=\\frac{x^{3}}{y^{6}}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            300.59,
+                            118.09,
+                            465.27,
+                            147.13
+                        ]
+                    ],
+                    "text_description" : "④ $\\left(x^{2}\\right)^{4} \\div x^{2}=x^{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.14,
+                            236.26,
+                            228.95,
+                            357.6
+                        ]
+                    ],
+                    "text_description" : "① $ \\left(2 x^{2}\\right)^{3}=8 x^{6} $ ③ $ \\frac{x^{6}}{x^{3}}=x^{3} $ ④ $ \\left(x^{2}\\right)^{4} \\div x^{2}=x^{8} \\div x^{2}=x^{6} $ ⑤ $ \\left(\\frac{x}{y^{3}}\\right)^{3}=\\frac{x^{3}}{y^{9}} $"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3635218b-a5fe-4e59-ab68-2301ed0d165f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017484",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.2,
+                            10.88,
+                            260.64,
+                            85.76
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오. \\[ 5 x(2 y+3 x-7) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.92,
+                            104.96,
+                            290.72,
+                            137.6
+                        ]
+                    ],
+                    "text_description" : "① $10 x y+15 x^{2}-35 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.92,
+                            147.48,
+                            313.12,
+                            304.64
+                        ]
+                    ],
+                    "text_description" : "② $10 x y-15 x^{2}+35 x$ ③ $-10 x y+15 x^{2}-35 x$ ④ $10 x y+15 x^{2}+35 x$ ⑤ $-10 x y-15 x^{2}+35 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.28,
+                            335.78,
+                            651.04,
+                            430.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} 5 x(2 y+3 x-7) & =5 x \\times 2 y+5 x \\times 3 x+5 x \\times(-7) \\\\ = & 10 x y+15 x^{2}-35 x\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "caf40906-d0ef-47f3-85a9-bf2d5e8b4cbe",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018301",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.71,
+                            20.89,
+                            331.24,
+                            108.54
+                        ]
+                    ],
+                    "text_description" : "다음 부등식의 해를 구하시오. \\[ 2 x+8 \\leq 18 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.49,
+                            193,
+                            108.01,
+                            217.4
+                        ]
+                    ],
+                    "text_description" : "① $x \\leq 5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.72,
+                            229.04,
+                            108.83,
+                            364.03
+                        ]
+                    ],
+                    "text_description" : "② $x \\geq 5$ ③ $x>5$ ④ $x \\leq 4$ ⑤ $x<4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.91,
+                            418.1,
+                            159.21,
+                            549.58
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} 2 x+8 & \\leq 18 \\\\ 2 x & \\leq 10 \\\\ x & \\leq 5\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

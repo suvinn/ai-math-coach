@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "746d520f-f5ca-4b53-bfe5-75452cba403c",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001518",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            13.75,
+                            367.25,
+                            236.25
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같이 직사각형의 넓이가 $12 a^{2} b-6 ab$이고 세로의 길이가 $2 a$일 때, 가 로의 길이를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            372.25,
+                            7.5,
+                            689.75,
+                            206.25
+                        ]
+                    ],
+                    "text_description" : "넓이가 $12 a^{2} b-6 ab$이고 세로의 길이가 $2 a$인 직사각형 평면도형"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            88.5,
+                            351.25,
+                            166,
+                            377.5
+                        ]
+                    ],
+                    "text_description" : "$6 a b-3 b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.75,
+                            243.75,
+                            452,
+                            353.25
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}(\\text { 가로의 길이 }) & =(\\text { 직사각형의 넓이 }) \\div(\\text { 세로의 길이 }) \\\\ & =\\left(12 a^{2} b-6 a b\\right) \\div(2 a) \\\\ & =\\frac{12 a^{2} b-6 a b}{2 a}=6 a b-3 b\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

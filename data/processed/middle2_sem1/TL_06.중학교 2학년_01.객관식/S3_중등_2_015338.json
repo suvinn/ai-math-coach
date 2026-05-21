@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e5e8a0e2-8c13-45c2-8de1-bc4bf322ee98",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015338",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.99,
+                            50.69,
+                            246.27,
+                            75.78
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            330.24,
+                            98.3,
+                            588.29,
+                            131.58
+                        ]
+                    ],
+                    "text_description" : "$3 x+(4 x-y)-(2 x+y)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.48,
+                            230.91,
+                            129.54,
+                            258.05
+                        ]
+                    ],
+                    "text_description" : "③ $7 x-2 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.48,
+                            161.79,
+                            130.56,
+                            220.72
+                        ]
+                    ],
+                    "text_description" : "① $5 x-2 y$ ② $5 x+2 y$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.99,
+                            266.7,
+                            118.78,
+                            326.66
+                        ]
+                    ],
+                    "text_description" : "④ $5 x-y$ ⑤ $7 x+y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.9,
+                            431,
+                            940.3,
+                            458.2
+                        ]
+                    ],
+                    "text_description" : "$3 x+(4 x-y)-(2 x+y)=3 x+4 x-y-2 x-y=(3 x+4 x-2 x)+(-y-y)=7 x-2 y$"
+                }
+            ]
+        }
+    ]
+}

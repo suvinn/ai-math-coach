@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "53001397-9e9b-4bbf-aff7-ed8c27d6d395",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017586",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.18,
+                            16.9,
+                            586.96,
+                            43.52
+                        ]
+                    ],
+                    "text_description" : "세 점 $(1, -4), (4, 2), (6, k)$가 한 직선 위에 있을 때, $k$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.62,
+                            267.24,
+                            53.97,
+                            287.23
+                        ]
+                    ],
+                    "text_description" : "⑤ 6"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.13,
+                            70.66,
+                            61.65,
+                            238.08
+                        ]
+                    ],
+                    "text_description" : "① -2 ② 0 ③ 2 ④ 4"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.26,
+                            314.88,
+                            237.24,
+                            406.02
+                        ]
+                    ],
+                    "text_description" : "기울기 $m=\\frac{6}{3}=2$ 직선 방정식: $y=2 x-6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.77,
+                            427.9,
+                            109.78,
+                            491.9
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}k=12-6 \\\\ k=6\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

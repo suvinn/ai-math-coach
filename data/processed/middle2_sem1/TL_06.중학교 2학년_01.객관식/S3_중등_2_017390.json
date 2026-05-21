@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e0df8549-658d-447e-849e-f5360a5a540c",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017390",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.5,
+                            10.92,
+                            293.5,
+                            80.92
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오. \\[ n^{5} \\times n^{2} \\div n^{3} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.5,
+                            105.5,
+                            79.5,
+                            142.5
+                        ]
+                    ],
+                    "text_description" : "① $n^{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.5,
+                            148.5,
+                            80.5,
+                            309.5
+                        ]
+                    ],
+                    "text_description" : "② $n^{5}$ ③ $n^{3}$ ④ $n^{6}$ ⑤ $n^{7}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.5,
+                            326.5,
+                            273.5,
+                            407.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}n^{5} \\times n^{2}=n^{5+2}=n^{7} \\\\ n^{7} \\div n^{3}=n^{7-3}=n^{4}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

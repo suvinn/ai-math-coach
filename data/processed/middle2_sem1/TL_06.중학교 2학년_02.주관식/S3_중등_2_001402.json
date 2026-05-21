@@ -1,0 +1,95 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d156f060-c3b3-47a2-87c3-6f0380964355",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001402",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            74.57,
+                            31.33,
+                            374.09,
+                            68.45
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.800000000000001,
+                            80.4,
+                            192.48,
+                            114.32
+                        ]
+                    ],
+                    "text_description" : "③ $x^{9} \\div x^{2} \\div x^{7}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.04,
+                            160.4,
+                            36.96,
+                            180.24
+                        ]
+                    ],
+                    "text_description" : "③ $1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.16,
+                            124.56,
+                            224.48,
+                            146.32
+                        ]
+                    ],
+                    "text_description" : "③ $x^{9} \\div x^{2} \\div x^{7}=x^{7} \\div x^{7}=1$"
+                }
+            ]
+        }
+    ]
+}

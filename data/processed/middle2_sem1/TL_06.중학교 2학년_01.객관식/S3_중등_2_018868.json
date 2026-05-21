@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "10bb8028-5763-4d85-992e-f21d501eeeb2",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018868",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            9.42,
+                            1079.5,
+                            41.42
+                        ]
+                    ],
+                    "text_description" : "다음 그림에서 그래프 $A, B$를 나타내는 식은 각각 $y=-2 x, y=2 x$ 이다. $-2<a<-1$ 일 때, 일차함수 $y=a x$의 그래프는? (단, $a$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.5,
+                            49,
+                            352.5,
+                            330
+                        ]
+                    ],
+                    "text_description" : "도형은 5개의 선이 원점 O에서 방사형으로 뻗어 있으며, x축과 y축이 표시되어 있다. ①, ②, ③, ④, ⑤는 각 선의 위치를 나타낸다. A는 두 번째 선을, B는 세 번째 선을 가리킨다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            342,
+                            87.5,
+                            369
+                        ]
+                    ],
+                    "text_description" : "①"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.5,
+                            388,
+                            538.5,
+                            560
+                        ]
+                    ],
+                    "text_description" : "① $-2<a<0$ ② $a<-2$ ③ $a>2$ ④ $0<a<2$ ⑤ 그래프가 원점을 지나지 않으므로 $y=a x$의 꼴이 될 수 없다. 따라서 구하는 그래프는 ①이다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "bcf94cb7-c2cb-4b9e-8642-a5a64da0e734",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003870",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.2,
+                            14.54,
+                            288.2,
+                            48.14
+                        ]
+                    ],
+                    "text_description" : "다음 중 순환소수는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.4,
+                            60.14,
+                            540.4,
+                            136.14
+                        ]
+                    ],
+                    "text_description" : "ㄱ. 0. 125 ㄴ. $1. 333 \\cdots$ ㄷ. $0. 010010001 \\cdots$ ᄅ. $4. 232323 \\cdots$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            383.4,
+                            145.4,
+                            488.2,
+                            176.6
+                        ]
+                    ],
+                    "text_description" : "③ ᄂ ㄴ, ᄅ"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21,
+                            147,
+                            347.4,
+                            214.2
+                        ]
+                    ],
+                    "text_description" : "① ㄱ, ㄴ ② ㄴ, ㄷ ④ ㄷ, ᄅ ⑤ ᄂ, ᄃ, ᄅ"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.6,
+                            239.8,
+                            529,
+                            273.4
+                        ]
+                    ],
+                    "text_description" : "ㄱ은 유한소수, ㄷ은 순환하지 않는 무한소수"
+                }
+            ]
+        }
+    ]
+}

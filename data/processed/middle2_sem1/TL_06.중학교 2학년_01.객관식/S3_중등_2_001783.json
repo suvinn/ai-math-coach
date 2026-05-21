@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f6a9a785-f59c-42cd-8aa9-d6508cb2928f",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001783",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57,
+                            24.92,
+                            535,
+                            87.92
+                        ]
+                    ],
+                    "text_description" : "다음 분수 중 소수로 고쳤을 때, 유한소수로 나타낼 수 있는 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            215,
+                            111.5,
+                            291,
+                            162.5
+                        ]
+                    ],
+                    "text_description" : "② $\\frac{12}{375}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            29,
+                            247.5,
+                            447,
+                            402.5
+                        ]
+                    ],
+                    "text_description" : "기약분수의 분모의 소인수가 2 나 5 뿐이면 그 분수는 유한소수로 나타낼 수 있다. ① $\\frac{5^{2}}{2^{4} \\times 3}$ ② $\\frac{12}{375}=\\frac{4}{125}=\\frac{2^{2}}{5^{3}}$ ③ $\\frac{7}{3 \\times 5^{2}}$ ④ $\\frac{1}{2 \\times 7}$ ⑤ $\\frac{1}{2^{3} \\times 3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56,
+                            110.5,
+                            122,
+                            164.5
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{25}{48}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            368,
+                            110.5,
+                            499,
+                            167.5
+                        ]
+                    ],
+                    "text_description" : "③ $\\frac{14}{2 \\times 3 \\times 5^{2}}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60,
+                            172.5,
+                            349,
+                            227.5
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{10}{2^{2} \\times 5 \\times 7}$ ⑤ $\\frac{3 \\times 5}{2^{3} \\times 3^{2} \\times 5}$"
+                }
+            ]
+        }
+    ]
+}

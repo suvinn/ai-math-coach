@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0afab363-9c1f-45c8-b4f4-719d0cbf2156",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001460",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.28,
+                            14.69,
+                            274.28,
+                            44.69
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.28,
+                            55.22,
+                            279.28,
+                            102.22
+                        ]
+                    ],
+                    "text_description" : "③ $24 a^{2} b^{3} \\div\\left(-3 a b^{3}\\right)^{2} \\times \\frac{3}{2} a^{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.38,
+                            151.17,
+                            45.44,
+                            187.01
+                        ]
+                    ],
+                    "text_description" : "$=\\frac{4 a^{4}}{b^{2}}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.28,
+                            106.22,
+                            363.28,
+                            146.22
+                        ]
+                    ],
+                    "text_description" : "③ $24 a^{2} b^{3} \\div\\left(-3 a b^{3}\\right)^{2} \\times \\frac{3}{2} a^{4}=24 a^{2} b^{3} \\times \\frac{1}{9 a^{2} b^{5}} \\times \\frac{3}{2} a^{4}=\\frac{4 a^{4}}{b^{3}}$"
+                }
+            ]
+        }
+    ]
+}

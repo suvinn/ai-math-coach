@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2dc7d494-bf43-421c-b485-52e940196349",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018275",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.08,
+                            14.08,
+                            905.68,
+                            73.6
+                        ]
+                    ],
+                    "text_description" : "두 일차방정식 $x=-2$와 $y=3$의 그래프와 $x$ 축, $y$ 축으로 둘러싸인 사각형의 넓이를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.52,
+                            200.32,
+                            78.8,
+                            222.72
+                        ]
+                    ],
+                    "text_description" : "③ $6 \\mathrm{~cm}^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.8,
+                            101.12,
+                            78.8,
+                            172.8
+                        ]
+                    ],
+                    "text_description" : "① $4 \\mathrm{~cm}^{2}$ ② $5 \\mathrm{~cm}^{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.8,
+                            250.72,
+                            77.52,
+                            322.4
+                        ]
+                    ],
+                    "text_description" : "④ $8 \\mathrm{~cm}^{2}$ ⑤ $9 \\mathrm{~cm}^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.72,
+                            351.2,
+                            926.8,
+                            788.32
+                        ]
+                    ],
+                    "text_description" : "두 직선 $x=-2$와 $y=3$, 그리고 $x$ 축과 $y$ 축으로 둘러싸인 사각형의 각 꼭짓점의 좌표를 구해봅시다. - $x=-2$과 $y$ 축의 교점: $(-2, 0)$ - $y=3$와 $x$ 축의 교점: $(0, 3)$ - 두 직선의 교점: $y=3$0 - 원점: $y=3$1이 네 개의 꼭짓점을 연결하여 직사각형을 만들면, 각 변의 길이는 다음과 같습니다: - 세로 변의 길이: $y=3$2 - 가로 변의 길이: $y=3$3 넓이는 다음과 같습니다:"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            379.68,
+                            827.72,
+                            570.32,
+                            853.6
+                        ]
+                    ],
+                    "text_description" : "넓이 $=3 \\times 2=6 \\mathrm{~cm}^{2}$"
+                }
+            ]
+        }
+    ]
+}

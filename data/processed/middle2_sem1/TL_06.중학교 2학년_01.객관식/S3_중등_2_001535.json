@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b5ad8ee5-3dc3-4db3-b53f-35e340326a5e",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001535",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51,
+                            16.92,
+                            401,
+                            42.92
+                        ]
+                    ],
+                    "text_description" : "$\\left(8 a^{2}+3 a-4\\right)-\\left(5 a^{2}-4 a+2\\right)$를 간단히 하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.0,
+                            146.5,
+                            211.0,
+                            197.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\left(8 a^{2}+3 a-4\\right)-\\left(5 a^{2}-4 a+2\\right) \\\\ =8 a^{2}+3 a-4-5 a^{2}+4 a-2 \\\\ =3 a^{2}+7 a-6\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.0,
+                            87.5,
+                            173.0,
+                            140.5
+                        ]
+                    ],
+                    "text_description" : "③ $3 a^{2}-a-2$ ⑤ $13 a^{2}+a+2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.0,
+                            59.5,
+                            387.0,
+                            82.5
+                        ]
+                    ],
+                    "text_description" : "① $-13 a^{2}-a-2$ ② $-3 a^{2}-7 a+6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            245.0,
+                            91.0,
+                            372.0,
+                            110.0
+                        ]
+                    ],
+                    "text_description" : "④ $3 a^{2}+7 a-6$"
+                }
+            ]
+        }
+    ]
+}

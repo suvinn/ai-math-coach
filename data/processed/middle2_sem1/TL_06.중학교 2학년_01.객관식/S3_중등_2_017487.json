@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4d850b8b-227c-4b8e-87fb-a3e6c217b5d7",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017487",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.11,
+                            11.05,
+                            265.96,
+                            36.8
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.16,
+                            101.44,
+                            288.03,
+                            141.38
+                        ]
+                    ],
+                    "text_description" : "① $20 a b-12 a^{2}+28 a$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20,
+                            333.57,
+                            647.51,
+                            431.85
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}4 a(5 b-3 a+7)=4 a \\times 5 b+4 a \\times(-3 a)+4 a \\times 7 \\\\ =20 a b-12 a^{2}+28 a\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.05,
+                            146.79,
+                            309.74,
+                            305.88
+                        ]
+                    ],
+                    "text_description" : "② $-20 a b+12 a^{2}-28 a$ ③ $20 a b+12 a^{2}+28 a$ ④ $20 a b-12 a^{2}-28 a$ ⑤ $-20 a b-12 a^{2}+28 a$"
+                }
+            ]
+        }
+    ]
+}

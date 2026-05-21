@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5beddb8f-a942-4fa2-aa49-cd6b6ab263f4",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001623",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.52,
+                            14.33,
+                            535.04,
+                            81.53
+                        ]
+                    ],
+                    "text_description" : "다음 그림과 같은 직선의 방정식을 $a x+b y+c=0$ 꼴로 나타내시오. (단, $a, b, c$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.0,
+                            93.0,
+                            207.0,
+                            247.0
+                        ]
+                    ],
+                    "text_description" : "xy좌표에 (3,3)을 지나고 x축에 평행하는 직선이 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.92,
+                            249.58,
+                            348.16,
+                            268.14
+                        ]
+                    ],
+                    "text_description" : "② $x$ 축에 평행하고 점 $(3, 3)$을 지나므로 $y=3$, 즉 $y-3=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.64,
+                            269.42,
+                            75.52,
+                            289.26
+                        ]
+                    ],
+                    "text_description" : "② $y-3=0$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "bef2cfaf-919b-44b4-b957-ac2ad75189b7",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001531",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.7,
+                            18.04,
+                            288.5,
+                            52.44
+                        ]
+                    ],
+                    "text_description" : "다음 $\\square$ 안에 알맞은 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.5,
+                            70.62,
+                            529.7,
+                            145.22
+                        ]
+                    ],
+                    "text_description" : "$6 a^{2} b \\div\\left(\\frac{2}{3} a b\\right) \\times \\square=18 a b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            210.1,
+                            164.02,
+                            274.1,
+                            192.02
+                        ]
+                    ],
+                    "text_description" : "② $ b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.7,
+                            164.1,
+                            114.9,
+                            196.1
+                        ]
+                    ],
+                    "text_description" : "① $2 a$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            369.3,
+                            161.7,
+                            444.5,
+                            196.1
+                        ]
+                    ],
+                    "text_description" : "③ $2 a b$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.1,
+                            197.7,
+                            277.3,
+                            227.3
+                        ]
+                    ],
+                    "text_description" : "④ $4 a b$ ⑤ $4 b^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.7,
+                            228.9,
+                            278.1,
+                            357.7
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}6 a^{2} b \\div\\left(\\frac{2}{3} a b\\right) \\times \\square=18 a b \\text { 에서 } \\\\ 6 a^{2} b \\times \\frac{3}{2 a b} \\times \\square=18 a b \\\\ 9 a \\times \\square=18 a b \\\\ \\square=18 a b \\div(9 a)=\\frac{18 a b}{9 a}=2 b\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

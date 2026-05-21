@@ -1,0 +1,95 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8bba9dec-e32b-44ed-8298-b409e9196526",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001508",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            79.43,
+                            19.39,
+                            383.76,
+                            54.62
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.25,
+                            66.32,
+                            383.76,
+                            104.37
+                        ]
+                    ],
+                    "text_description" : "② $7 x(2 x-2)-4 x(2 x+3)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.32,
+                            139,
+                            109.33,
+                            161.52
+                        ]
+                    ],
+                    "text_description" : "$6 x^{2}-26 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.82,
+                            109.74,
+                            552.93,
+                            134.73
+                        ]
+                    ],
+                    "text_description" : "$7 x(2 x-2)-4 x(2 x+3)=14 x^{2}-14 x-8 x^{2}-12 x=6 x^{2}-26 x$"
+                }
+            ]
+        }
+    ]
+}

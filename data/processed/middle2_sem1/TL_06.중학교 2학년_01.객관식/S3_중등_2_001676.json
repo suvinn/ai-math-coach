@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "474ff917-1c86-444d-9cc8-cede0c0d75ac",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001676",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.5,
+                            24.92,
+                            271.5,
+                            50.92
+                        ]
+                    ],
+                    "text_description" : "다음 중 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.48,
+                            138.21,
+                            417.83,
+                            186.87
+                        ]
+                    ],
+                    "text_description" : "③ $\\left(12 x^{2}-21 x^{3}\\right) \\div\\left(\\frac{3}{2} x\\right)=8 x^{2}-14 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.5,
+                            69.5,
+                            417.5,
+                            131.5
+                        ]
+                    ],
+                    "text_description" : "① $\\left(4 a b-5 b^{2}\\right) \\div b=4 a-5 b$ ② $\\left(8 x^{2}+6 x y\\right) \\div(-2 x)=-4 x-3 y$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            191.5,
+                            440.5,
+                            275.5
+                        ]
+                    ],
+                    "text_description" : "④ $\\left(-9 x y^{2}+3 x y\\right) \\div(3 x)=-3 y^{2}+y$ ⑤$\\left(2 x^{3}-4 x^{2}\\right) \\div\\left(-\\frac{1}{4} x\\right)=-8 x^{2}+16 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            79.5,
+                            275.94,
+                            220.83,
+                            369.61
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\left(12 x^{2}-21 x^{3}\\right) \\div\\left(\\frac{3}{2} x\\right) \\\\ =\\left(12 x^{2}-21 x^{3}\\right) \\times \\frac{2}{3 x} \\\\ =8 x-14 x^{2}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

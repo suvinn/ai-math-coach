@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7944eff3-ca19-43c4-a54b-cacce24e49fa",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017725",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.84,
+                            11.91,
+                            873.9,
+                            52.54
+                        ]
+                    ],
+                    "text_description" : "‘어떤 수 $x$에서 17을 뺀 것은 25보다 크거나 같다'를 부등식으로 나타내시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.4,
+                            122.85,
+                            181.71,
+                            171.29
+                        ]
+                    ],
+                    "text_description" : "② $x-17 \\geq 25$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.4,
+                            69.5,
+                            184,
+                            113.5
+                        ]
+                    ],
+                    "text_description" : "① $x-17 \\leq 25$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.2,
+                            182.5,
+                            188.8,
+                            343.1
+                        ]
+                    ],
+                    "text_description" : "③ $x+17 \\geq 25$ ④ $x+17 \\leq 25$ ⑤ $x-17=25$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.2,
+                            357.5,
+                            614.4,
+                            404.7
+                        ]
+                    ],
+                    "text_description" : "주어진 문장을 부등식으로 나타내면 다음과 같습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.62,
+                            421.25,
+                            149.37,
+                            461.25
+                        ]
+                    ],
+                    "text_description" : "$x-17 \\geq 25$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "742339f3-5b4f-418a-9012-8a07413f7e1d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018312",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.5,
+                            20.84,
+                            335.5,
+                            130.44
+                        ]
+                    ],
+                    "text_description" : "다음 부등식의 해를 구하시오. \\[ 3 x+4 \\geq 13 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.7,
+                            208.5,
+                            108.3,
+                            242.1
+                        ]
+                    ],
+                    "text_description" : "① $x \\geq 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.9,
+                            244.5,
+                            109.1,
+                            394.1
+                        ]
+                    ],
+                    "text_description" : "② $x \\geq 4$ ③ $x>3$ ④ $x>4$ ⑤ $x \\leq 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.9,
+                            432.5,
+                            172.3,
+                            582.9
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}3 x+4 \\geq 13 \\\\ 3 x \\geq 9 \\\\ x \\geq 3\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

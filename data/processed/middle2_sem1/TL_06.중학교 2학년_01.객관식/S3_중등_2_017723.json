@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d67ef70f-3d71-4838-95f2-68ea56ae3a00",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017723",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.88,
+                            13.52,
+                            796.13,
+                            48.52
+                        ]
+                    ],
+                    "text_description" : "‘어떤 수 $x$에서 15를 뺀 것은 22보다 크거나 같다. '를 부등식으로 나타내시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.38,
+                            118.52,
+                            171.13,
+                            153.52
+                        ]
+                    ],
+                    "text_description" : "② $x-15 \\geq 22$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.129999999999999,
+                            67.24000000000001,
+                            166.63,
+                            98.74
+                        ]
+                    ],
+                    "text_description" : "① $x-15 \\leq 22$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.63,
+                            169.49,
+                            168.63,
+                            310.74
+                        ]
+                    ],
+                    "text_description" : "③ $x+15 \\geq 22$ ④ $x+15 \\leq 22$ ⑤ $x-15=22$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.38,
+                            334.49,
+                            618.63,
+                            378.24
+                        ]
+                    ],
+                    "text_description" : "주어진 문장을 부등식으로 나타내면 다음과 같습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.6299999999999999,
+                            394.49,
+                            138.63,
+                            426.99
+                        ]
+                    ],
+                    "text_description" : "$x-15 \\geq 22$"
+                }
+            ]
+        }
+    ]
+}

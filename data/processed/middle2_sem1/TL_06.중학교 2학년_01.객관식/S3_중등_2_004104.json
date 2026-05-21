@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "22ad47a3-8e9b-4013-b0c8-5906dbbe8d16",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004104",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.59,
+                            8.64,
+                            504.17,
+                            40.55
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=4 x$에 대하여 $x=3$ 일 때의 함숫값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            321.35,
+                            51.61,
+                            376.62,
+                            74.56
+                        ]
+                    ],
+                    "text_description" : "③ 12"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            39.89,
+                            51.26,
+                            224.41,
+                            75.07
+                        ]
+                    ],
+                    "text_description" : "① 4 ② 8"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            462.51,
+                            51.26,
+                            658.08,
+                            75.07
+                        ]
+                    ],
+                    "text_description" : "④ 16 ⑤ 20"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            39.04,
+                            114.18,
+                            169.99,
+                            136.29
+                        ]
+                    ],
+                    "text_description" : "$f(3)=4 \\times 3=12$"
+                }
+            ]
+        }
+    ]
+}

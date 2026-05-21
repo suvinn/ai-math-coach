@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b72ba0e1-99f2-4edc-8789-19cdd00c5797",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004097",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71.92,
+                            19.89,
+                            444.04,
+                            52.95
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.95,
+                            77.99,
+                            211.61,
+                            165.41
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{c}x=1-y \\\\ 2 x+3 y=9\\end{array}\\right.$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.82,
+                            322.7,
+                            127.43,
+                            346.38
+                        ]
+                    ],
+                    "text_description" : "$x=-6, \\quad y=7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            34.46,
+                            176.35,
+                            204.21,
+                            223.19
+                        ]
+                    ],
+                    "text_description" : "① $\\left\\{\\begin{array}{cc}x=1-y & \\cdots \\text { ① } \\\\ 2 x+3 y=9 & \\cdots \\text { ② }\\end{array}\\right. $"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.01,
+                            234.49,
+                            393.79,
+                            317.4
+                        ]
+                    ],
+                    "text_description" : "①을 ②에 대입하면 $2(1-y)+3 y=9, y=7$ $y=7$을 ①에 대입하면 $x=-6$ 따라서 구하는 해는 $x=-6, y=7$"
+                }
+            ]
+        }
+    ]
+}

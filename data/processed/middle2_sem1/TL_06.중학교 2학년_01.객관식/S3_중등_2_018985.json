@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3eae23ff-1e7b-4995-8692-37d63ab8afa7",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018985",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.08,
+                            14.43,
+                            641.92,
+                            38.75
+                        ]
+                    ],
+                    "text_description" : "네 방정식 $x=1, x=-3, y=0, y=4$의 그래프로 둘러싸인 부분의 넓이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.56,
+                            141.15,
+                            115.84,
+                            165.47
+                        ]
+                    ],
+                    "text_description" : "④ 16"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.56,
+                            48.08,
+                            115.2,
+                            133.84
+                        ]
+                    ],
+                    "text_description" : "① 8 ② 10 ③ 12"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.92,
+                            173.52,
+                            117.76,
+                            196.56
+                        ]
+                    ],
+                    "text_description" : "⑤ 20"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60,
+                            257,
+                            861,
+                            313
+                        ]
+                    ],
+                    "text_description" : "주어진 방정식의 그래프는 다음 그림과 같고, 이들 그래프로 둘러싸인 부분은 직사각형이므로 구하는 넓이는 \\[ 4 \\times 4=16 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            75,
+                            319,
+                            311,
+                            494
+                        ]
+                    ],
+                    "text_description" : "사각형의 꼭짓점은 (-3, 0), (-3, 4), (1, 0), (1, 4)이다. 이 사각형의 넓이는 12이다."
+                }
+            ]
+        }
+    ]
+}

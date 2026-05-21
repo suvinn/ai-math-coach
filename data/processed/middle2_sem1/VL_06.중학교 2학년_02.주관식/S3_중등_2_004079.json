@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a219fc69-9d48-4dc3-b260-284788869c81",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004079",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.52,
+                            17.310000000000002,
+                            337.72,
+                            41.44
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.95,
+                            60.83,
+                            275.46,
+                            87.68
+                        ]
+                    ],
+                    "text_description" : "① $2(x-3)-5 x \\geq 6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.5900000000000001,
+                            163.49,
+                            85.78,
+                            181.29
+                        ]
+                    ],
+                    "text_description" : "① $x \\leq-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.56,
+                            103.43,
+                            409.88,
+                            150.87
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { (1) } 2(x-3)-5 x \\geq 6, 2 x-6-5 x \\geq 6, -3 x \\geq 12, \\\\ x \\leq-4\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

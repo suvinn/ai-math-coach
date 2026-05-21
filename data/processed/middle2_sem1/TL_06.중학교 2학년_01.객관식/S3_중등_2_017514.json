@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "dd6c87ed-2539-4fdd-b049-69189f73641e",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017514",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.43,
+                            5.03,
+                            742.68,
+                            103.47
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산했을 때, $x$의 계수와 상수항의 합은? \\[ (5 x-2 y+3)-(x-4 y+2) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.3,
+                            127.56,
+                            67.55,
+                            167.19
+                        ]
+                    ],
+                    "text_description" : "① 5"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.55,
+                            171.87,
+                            69.24,
+                            339.06
+                        ]
+                    ],
+                    "text_description" : "② 6 ③ 4 ④ 3 ⑤ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.3,
+                            348.44,
+                            380.18,
+                            570.31
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}(5 x-2 y+3)-(x-4 y+2) \\\\ =5 x-2 y+3-x+4 y-2 \\\\ =4 x+2 y+1 \\\\ 4+1=5\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

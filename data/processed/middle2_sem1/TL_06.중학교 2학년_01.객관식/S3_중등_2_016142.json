@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6603a3c9-5f43-4e0a-b9c4-3bf02cc1974e",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016142",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.44,
+                            76.8,
+                            802.88,
+                            105.68
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차방정식 $4 x+2 y-7=0$의 그래프와 같은 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.2,
+                            432.4,
+                            804,
+                            563.6
+                        ]
+                    ],
+                    "text_description" : "일차방정식을 $y$에 대해 정리하면: \\[ 4 x+2 y-7=0 \\rightarrow 2 y=-4 x+7 \\rightarrow y=-2 x+\\frac{7}{2} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.6,
+                            187.34,
+                            192.0,
+                            402.54
+                        ]
+                    ],
+                    "text_description" : "② $y=\\frac{2}{4} x+7$ ③ $y=\\frac{2}{4} x-7$ ④ $y=-2 x-\\frac{7}{2}$ ⑤ $y=\\frac{4}{2} x+7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.0,
+                            124.0,
+                            196.0,
+                            168.0
+                        ]
+                    ],
+                    "text_description" : "$y=-2 x+\\frac{7}{2}$"
+                }
+            ]
+        }
+    ]
+}

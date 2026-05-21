@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a101559e-52d5-4082-8fd2-61110beba372",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001530",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.21,
+                            3.42,
+                            290.92,
+                            42.48
+                        ]
+                    ],
+                    "text_description" : "다음 중 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.26,
+                            112.79,
+                            458.89,
+                            155.76
+                        ]
+                    ],
+                    "text_description" : "② $\\left(-12 x^{3} y\\right) \\div(3 x y)=-4 x^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.36,
+                            67.87,
+                            343.65,
+                            106.93
+                        ]
+                    ],
+                    "text_description" : "① $3 x^{2} \\times 6 x y=18 x^{3} y^{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.26,
+                            161.62,
+                            496,
+                            319.82
+                        ]
+                    ],
+                    "text_description" : "③ $\\left(-2 x^{2} y\\right)^{2} \\times\\left(-3 x y^{2}\\right)=12 x^{5} y^{4}$ ④ $9 a^{2} b^{5} \\div\\left(\\frac{3}{4} a b\\right)=12 a^{3} b^{6}$ ⑤ $2 x \\times(-3 y)^{3}=54 x y^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.26,
+                            327.64,
+                            531.15,
+                            464.36
+                        ]
+                    ],
+                    "text_description" : "① $3 x^{2} \\times 6 x y=18 x^{3} y$ ③ $\\left(-2 x^{2} y\\right)^{2} \\times\\left(-3 x y^{2}\\right)=4 x^{4} y^{2} \\times\\left(-3 x y^{2}\\right)=-12 x^{5} y^{4}$ ④ $9 a^{2} b^{5} \\div\\left(\\frac{3}{4} a b\\right)=9 a^{2} b^{5} \\times \\frac{4}{3 a b}=12 a b^{4}$ ⑤ $2 x \\times(-3 y)^{3}=2 x \\times\\left(-27 y^{3}\\right)=-54 x y^{3}$"
+                }
+            ]
+        }
+    ]
+}

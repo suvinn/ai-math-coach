@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e78536aa-18fa-43d7-9bc0-a9ce3c706f1a",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018258",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            97.18,
+                            10.24,
+                            695.2,
+                            38.91
+                        ]
+                    ],
+                    "text_description" : "두 점 $(0, -3), (3, 3)$을 지나는 직선의 방정식을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.68,
+                            67.58,
+                            180.64,
+                            95.74
+                        ]
+                    ],
+                    "text_description" : "① $y=2 x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.19,
+                            109.06,
+                            204.19,
+                            263.68
+                        ]
+                    ],
+                    "text_description" : "② $y=-2 x-3$ ③ $y=x-3$ ④ $y=3 x-3$ ⑤ $y=x+3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.51,
+                            288.64,
+                            554.4,
+                            316.8
+                        ]
+                    ],
+                    "text_description" : "기울기 $m$은 두 점 $(0, -3), (3, 3)$에 대해 계산합니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.66,
+                            432.98,
+                            837.02,
+                            461.7
+                        ]
+                    ],
+                    "text_description" : "이제 $y$ 절편을 구합니다. 직선 방정식 $y=m x+b$에 점 $(0, -3)$을 대입합니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.1,
+                            559.44,
+                            488.35,
+                            588.67
+                        ]
+                    ],
+                    "text_description" : "따라서 직선의 방정식은 $y=2 x-3$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            327.98,
+                            345.06,
+                            623.52,
+                            411.52
+                        ]
+                    ],
+                    "text_description" : "$m=\\frac{3-(-3)}{3-0}=\\frac{6}{3}=2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            371.62,
+                            493.46,
+                            716.7,
+                            525.18
+                        ]
+                    ],
+                    "text_description" : "$-3=2(0)+b \\Longrightarrow b=-3$"
+                }
+            ]
+        }
+    ]
+}

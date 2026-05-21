@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f66db37c-079f-4559-8f55-b19f9ca60283",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018771",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.28,
+                            15.24,
+                            727.28,
+                            40.24
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=p x+3 p$의 그래프가 점 $(-2, 5)$를 지날 때, 이 그래프의 $y$ 절편을 구하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.28,
+                            175.78,
+                            117.28,
+                            196.78
+                        ]
+                    ],
+                    "text_description" : "⑤ 15"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.28,
+                            49.78,
+                            123.28,
+                            165.78
+                        ]
+                    ],
+                    "text_description" : "① -2 ② 2 ③ 3 ④ 5"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.28,
+                            262.78,
+                            449.28,
+                            396.78
+                        ]
+                    ],
+                    "text_description" : "주어진 식 $y=p x+3 p$에 $x=-2, y=5$를 대입하면 \\[ \\begin{array}{l} 5=-2 p+3 p \\\\ \\therefore \\quad p=5 \\\\ \\therefore \\quad y=5 x+15 \\end{array} \\] 따라서 $y=5 x+15$의 그래프의 $y$ 절편은 15 이다."
+                }
+            ]
+        }
+    ]
+}

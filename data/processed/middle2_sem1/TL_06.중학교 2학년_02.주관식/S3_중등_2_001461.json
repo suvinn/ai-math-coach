@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "daa98917-8492-4d1c-9bb3-e8a0fd4a3ab1",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001461",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.5,
+                            13.92,
+                            275.5,
+                            40.92
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -0.23,
+                            61.27,
+                            328.77,
+                            113.27
+                        ]
+                    ],
+                    "text_description" : "④ $\\left(-a^{3} b^{2}\\right) \\times\\left(\\frac{2}{3} a b\\right)^{2} \\div\\left(-\\frac{8}{9} a^{4} b\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -0.23,
+                            163.27,
+                            49.77,
+                            198.27
+                        ]
+                    ],
+                    "text_description" : "$=\\frac{1}{2} a b^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.5,
+                            118.5,
+                            473.5,
+                            157.5
+                        ]
+                    ],
+                    "text_description" : "④ $\\left(-a^{3} b^{3}\\right) \\times\\left(\\frac{2}{3} a b\\right)^{2} \\div\\left(-\\frac{8}{9} a^{4} b\\right)=\\left(-a^{3} b^{2}\\right) \\times \\frac{4}{9} a^{2} b^{2} \\times\\left(-\\frac{9}{8 a^{4} b}\\right)=\\frac{1}{2} a b^{3}$"
+                }
+            ]
+        }
+    ]
+}

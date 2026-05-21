@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6641395d-30dc-4a3a-8f0d-e507d7d57df3",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016052",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            101.69,
+                            3.46,
+                            775.19,
+                            32.1
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-x+g$의 그래프가 점 $(3, 2)$를 지날 때, $g$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.72,
+                            157.52,
+                            64.16,
+                            197.02
+                        ]
+                    ],
+                    "text_description" : "③ 5"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.72,
+                            58.76,
+                            74.03,
+                            140.73
+                        ]
+                    ],
+                    "text_description" : "① -1 ② 1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.79,
+                            213.81,
+                            63.099999999999994,
+                            295.67
+                        ]
+                    ],
+                    "text_description" : "④ 3 ⑤ 0"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.79,
+                            315.25,
+                            148.09,
+                            422.78
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}2=-3+g \\\\ g=5\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

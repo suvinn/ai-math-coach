@@ -1,0 +1,167 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "50bcaf89-6702-48dc-a594-40d356d0939e",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003907",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19,
+                            4.5,
+                            543,
+                            95.5
+                        ]
+                    ],
+                    "text_description" : "연립방정식 $\\left\\{\\begin{array}{c}x-y=a \\\\ 2 x-3 y=a+1\\end{array}\\right. $의 해가 $x=3 y$의 관계를 만족할 때, $a$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            202.16,
+                            140.88,
+                            256.43,
+                            170.15
+                        ]
+                    ],
+                    "text_description" : "⑤ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.37,
+                            103.68,
+                            274.51,
+                            135.34
+                        ]
+                    ],
+                    "text_description" : "① -2 ② -1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            386.33,
+                            106.11,
+                            438.17,
+                            132.95
+                        ]
+                    ],
+                    "text_description" : "③ 0"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.2,
+                            140.27,
+                            69.21,
+                            170.76
+                        ]
+                    ],
+                    "text_description" : "④ 1"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16,
+                            195.5,
+                            507,
+                            285.5
+                        ]
+                    ],
+                    "text_description" : "$4 x=3 y$를 연립방정식 $\\left\\{\\begin{array}{l}x-y=a \\\\ 2 x-3 y=a+1\\end{array}\\right. $에 대 입하여 정리하면 다음과 같다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16,
+                            292.5,
+                            431,
+                            348.5
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}3 y-y=a \\\\ 6 y-3 y=a+1\\end{array} \\Rightarrow\\left\\{\\begin{array}{ll}2 y=a & \\ldots \\ldots. ① \\\\ 3 y=a+1 & \\ldots \\ldots. ②\\end{array}\\right. \\right. $"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14,
+                            354.5,
+                            259,
+                            454.5
+                        ]
+                    ],
+                    "text_description" : "①의 $a$를 ②에 대입하면 \\[ \\begin{array}{l} 3 y=2 y+1, y=1 \\\\ \\text { 따라서 } a=2 \\end{array} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13,
+                            459.5,
+                            206,
+                            540.5
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}0. 5 x+0. 3 y=2. 5 \\\\ \\frac{x}{2}+\\frac{2}{5} y=3\\end{array}\\right. $"
+                }
+            ]
+        }
+    ]
+}

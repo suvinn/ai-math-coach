@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f1bc0d3f-1a05-4eb4-bd53-e46e2214a601",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017516",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.18,
+                            22.42,
+                            637.2,
+                            158.44
+                        ]
+                    ],
+                    "text_description" : "\\[ \\left(\\frac{3 x^{a}}{y}\\right)^{3}=\\frac{b x^{12}}{y^{c}} \\] 일 때, $a+b+c$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4,
+                            232.5,
+                            64,
+                            257.5
+                        ]
+                    ],
+                    "text_description" : "② $34$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3,
+                            190.5,
+                            64,
+                            215.5
+                        ]
+                    ],
+                    "text_description" : "① $32$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3,
+                            274.5,
+                            64,
+                            384.5
+                        ]
+                    ],
+                    "text_description" : "③ $36$ ④ $38$ ⑤ $40$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13,
+                            410.5,
+                            361,
+                            755.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}\\left(\\frac{3 x^{a}}{y}\\right)^{3}=\\frac{\\left(3^{3}\\right) x^{3 a}}{y^{3}}=\\frac{27 x^{3 a}}{y^{3}} \\\\ \\frac{b x^{12}}{y^{c}} \\\\ b=27, \\quad 3 a=12, \\quad c=3 \\\\ a+b+c=4+27+3=34\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e75bca86-2587-4793-bafe-ad0fa236390a",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001656",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.26,
+                            24.04,
+                            449.47,
+                            102.91
+                        ]
+                    ],
+                    "text_description" : "다음 그림과 같이 세로의 길이가 $(-2 x y)^{2}$ 인 직사각 형의 넓이가 $\\left(4 x^{3} y\\right)^{3}$ 일 때, 이 직사각형의 가로의 길이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            132.03,
+                            119.3,
+                            366.02,
+                            220.67
+                        ]
+                    ],
+                    "text_description" : "세로의 길이가 $(-2 x y)^{2}$ 인 직사각형의 넓이가 $\\left(4 x^{2} y\\right)^{3}$로 표기되어 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.77,
+                            269.82,
+                            127.94,
+                            292.86
+                        ]
+                    ],
+                    "text_description" : "④ $16 x^{4} y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.79,
+                            242.15,
+                            378.28,
+                            264.7
+                        ]
+                    ],
+                    "text_description" : "① $4 x^{4}$ ② $16 x^{4}$ ③ $3 x^{4} y$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            187.33,
+                            269.82,
+                            272.32,
+                            292.86
+                        ]
+                    ],
+                    "text_description" : "⑤ $256 x^{8} y^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.26,
+                            298.5,
+                            404.93,
+                            348.16
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} (\\text { 가로의 길이 })=(\\text { 직사각형의 넓이 }) \\div(\\text { 세로의 길이 })=\\left(4 x^{2} y\\right)^{3} \\div(-2 x y)^{2} \\\\ =64 x^{6} y^{3} \\div\\left(4 x^{2} y^{2}\\right)=\\frac{64 x^{6} y^{3}}{4 x^{2} y^{2}}=16 x^{4} y \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

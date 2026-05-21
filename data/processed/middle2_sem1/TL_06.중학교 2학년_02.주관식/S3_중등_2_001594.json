@@ -1,0 +1,167 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c6d57a07-2044-4056-aca6-78bf0bef6405",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001594",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 3,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.5,
+                            14.12,
+                            522.7,
+                            75.72
+                        ]
+                    ],
+                    "text_description" : "$x$와 $y$ 사이의 관계가 다음과 같을 때, 주어진 표를 완성하고, $y$가 $x$의 함수인지 아닌지 말하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.7,
+                            94.92,
+                            524.3,
+                            157.32
+                        ]
+                    ],
+                    "text_description" : "① 사탕 20 개가 들어 있는 사탕 한 봉지에서 사탕 $x$ 개를 먹었을 때 남은 사탕 $y$ 개"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.1,
+                            250.12,
+                            353.9,
+                            278.12
+                        ]
+                    ],
+                    "text_description" : "② 자연수 $x$보다 작은 자연수 $y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            80.3,
+                            166.92,
+                            525.1,
+                            241.32
+                        ]
+                    ],
+                    "text_description" : "<div class=\"table_tabular \" style=\"text-align: center\"> <div class=\"inline-tabular\"><table id=\"tabular\"> <tbody> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $x$</span> (개)</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">1</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">2</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">3</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">4</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $y$</span> (개)</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \" class=\"_empty\"></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \" class=\"_empty\"></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \" class=\"_empty\"></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \" class=\"_empty\"></td> </tr> </tbody> </table> </div></div>"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            80.3,
+                            284.52,
+                            525.9,
+                            361.32
+                        ]
+                    ],
+                    "text_description" : "<div class=\"table_tabular \" style=\"text-align: center\"> <div class=\"inline-tabular\"><table id=\"tabular\"> <tbody> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $x$</span></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">1</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">2</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">3</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">4</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $y$</span></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \" class=\"_empty\"></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \" class=\"_empty\"></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \" class=\"_empty\"></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \" class=\"_empty\"></td> </tr> </tbody> </table> </div></div>"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.1,
+                            460.52,
+                            249.1,
+                            478.12
+                        ]
+                    ],
+                    "text_description" : "① 함수이다. ② 함수가 아니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.3,
+                            418.92,
+                            524.3,
+                            458.92
+                        ]
+                    ],
+                    "text_description" : "$x$의 값이 하나 정해짐에 따라 $y$의 값도 단 하나 정해지는 식이 함수이므로 ①은 함수이고 ②는 함수가 아니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.7,
+                            367.72,
+                            273.9,
+                            417.32
+                        ]
+                    ],
+                    "text_description" : "<div>①</div> <div class=\"table_tabular \" style=\"text-align: center\"> <div class=\"inline-tabular\"><table id=\"tabular\"> <tbody> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left: none !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $x$</span> (개)</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">1</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">2</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">3</td> <td style=\"text-align: center; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">4</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left: none !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $y$</span> (개)</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">19</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">18</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">17</td> <td style=\"text-align: center; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">16</td> </tr> </tbody> </table> </div></div>"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            285.9,
+                            368.92,
+                            508.3,
+                            417.32
+                        ]
+                    ],
+                    "text_description" : "<div>② <div class=\"inline-tabular\"><table id=\"tabular\"> <tbody> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: center; border-left: none !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $x$</span></td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">1</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">2</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">3</td> <td style=\"text-align: center; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">4</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: center; border-left: none !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $y$</span></td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">없음</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">1</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">1, 2</td> <td style=\"text-align: center; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $1, 2, 3$</span></td> </tr> </tbody> </table> </div></div>"
+                }
+            ]
+        }
+    ]
+}

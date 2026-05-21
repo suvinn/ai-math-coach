@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fc4dc688-466f-4519-9e14-09aff5744483",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018396",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.5,
+                            9.1,
+                            1069.5,
+                            80.78
+                        ]
+                    ],
+                    "text_description" : "가격이 4000 원인 상자에 한 개에 600 원인 과자 5 개와 한 개에 800 원인 초콜릿 몇 개를 담아 상자 가격을 포함하여 12000원 이하의 선물을 만들려고 한다. 초콜릿은 최대 몇 개까지 담을 수 있는가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.5,
+                            107.66,
+                            81.98,
+                            136.46
+                        ]
+                    ],
+                    "text_description" : "① 6개"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.5,
+                            149.26,
+                            95.42,
+                            303.5
+                        ]
+                    ],
+                    "text_description" : "② 7개 ③ 8개 ④ 9개 ⑤ 10개"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.14,
+                            330.8,
+                            737.98,
+                            414
+                        ]
+                    ],
+                    "text_description" : "상자 가격은 4000 원, 과자 5 개의 가격은 $5 \\times 600=3000$ 원입니다. 초콜릿의 가격은 800 원이고, 개수를 $x$로 두고 부등식을 세웁니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.58,
+                            501.68,
+                            170.3,
+                            527.92
+                        ]
+                    ],
+                    "text_description" : "부등식을 풀면:"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            341.18,
+                            447.28,
+                            702.78,
+                            478
+                        ]
+                    ],
+                    "text_description" : "$4000+3000+800 x \\leq 12000$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            286.58,
+                            532.88,
+                            757.82,
+                            596.4
+                        ]
+                    ],
+                    "text_description" : "$800 x \\leq 5000 \\quad \\Rightarrow \\quad x \\leq \\frac{5000}{800}=6. 25$"
+                }
+            ]
+        }
+    ]
+}

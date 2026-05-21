@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8e2ba678-cf65-48a9-b174-82dc3a8df567",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003926",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.99,
+                            10.64,
+                            720.74,
+                            111.89
+                        ]
+                    ],
+                    "text_description" : "두 직선 $x+y=4, 3 x-2 y=3$과 $x$ 축으로 둘러싸인 삼각형의 넓이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.49,
+                            211.37,
+                            130.74,
+                            290.12
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{27}{10}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.24,
+                            122.62,
+                            598.24,
+                            200.12
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{7}{2}$ ② $\\frac{9}{5}$ ③ $\\frac{9}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            268.24,
+                            213.87,
+                            371.99,
+                            288.87
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\frac{35}{10}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.74,
+                            328.87,
+                            203.24,
+                            505.12
+                        ]
+                    ],
+                    "text_description" : "두 직선 $x+y=4$, $3 x-2 y=3$과 $x$ 축을 그래프로 나타내면 오른쪽 그림과 같다. 또 두 직선의 교점은 $\\left(\\frac{11}{5}, \\frac{9}{5}\\right)$ 이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.99,
+                            505.12,
+                            330.74,
+                            573.87
+                        ]
+                    ],
+                    "text_description" : "따라서 두 그래프로 둘러싸인 도형의 넓이는 $\\frac{1}{2} \\times 3 \\times \\frac{9}{5}=\\frac{27}{10}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            208.24,
+                            328.87,
+                            380.74,
+                            502.62
+                        ]
+                    ],
+                    "text_description" : "좌표평면에 y축에 $\\frac{9}{5}$와 x축에 $\\frac{11}{5}$가 교차하는 지점에 2개의 직선이 있으며 하나의 직선은 $3 x - 2 y = 3$로 1에서 상승한다. 또 다른 하나의 직선은 $x+y=4$로 x축의 4에서 y축의 4로 상승한다. 시작점 O가 있다."
+                }
+            ]
+        }
+    ]
+}

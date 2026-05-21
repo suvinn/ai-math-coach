@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e03d1c49-270c-4a6a-98aa-a0694cb383b5",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001823",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.25,
+                            25.15,
+                            263.5,
+                            132.9
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그래프와 평행하고 점 $(-1, 2)$를 지나는 직선을 그래프로 하는 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            272.5,
+                            28.869999999999997,
+                            438.5,
+                            185.87
+                        ]
+                    ],
+                    "text_description" : "이미지에는 좌표 평면이 나타나 있습니다. \\(y \\) 축과 \\(x \\) 축이 교차하는 원점 \\(O \\)에서, 기울어진 직선이 지나가고 있습니다. 이 직선은 \\(x \\)축과 교차하는 지점이 \\(x = -4 \\)이며, \\(y \\)축과는 \\(y = -2 \\)에서 교차합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.5,
+                            151.62,
+                            189.75,
+                            191.62
+                        ]
+                    ],
+                    "text_description" : "① $y=-\\frac{1}{2} x+\\frac{3}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.25,
+                            196.62,
+                            172,
+                            322.62
+                        ]
+                    ],
+                    "text_description" : "② $y=\\frac{1}{2} x+\\frac{3}{2}$ ③ $y=-2 x$ ④ $y=-2 x-4$ ⑤ $y=2 x+4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.25,
+                            395.37,
+                            534.75,
+                            687.87
+                        ]
+                    ],
+                    "text_description" : "주어진 그래프의 $($ 기울기 $)=\\frac{0-(-2)}{-4-0}=-\\frac{1}{2}$ 이므로 구하는 일차함수의 식을 $y=-\\frac{1}{2} x+b$라고 하자. 일차함수 $y=-\\frac{1}{2} x+b$의 그래프가 점 $(-1, 2)$를 지나므로 $2=-\\frac{1}{2} \\times(-1)+b$에서 $b=\\frac{3}{2}$ 따라서 구하는 일차함수의 식은 $y=-\\frac{1}{2} x+\\frac{3}{2}$ 이다."
+                }
+            ]
+        }
+    ]
+}

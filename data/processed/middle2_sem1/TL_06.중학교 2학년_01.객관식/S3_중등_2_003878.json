@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4f27421a-a188-4055-bfa7-bdf4153690bd",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003878",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            94.4,
+                            28.04,
+                            509.4,
+                            63.239999999999995
+                        ]
+                    ],
+                    "text_description" : "다음 중 옳은 것은(단, $a \\neq 0$)?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            36.6,
+                            77.84,
+                            252,
+                            122.44
+                        ]
+                    ],
+                    "text_description" : "① $a^{3} \\times a^{4}=a^{7}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            399,
+                            83.3,
+                            600.2,
+                            174.1
+                        ]
+                    ],
+                    "text_description" : "② $a^{2}+a^{2}=a^{4}$ ④ $a^{6} \\div a^{3}=a^{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            37.2,
+                            135.9,
+                            243,
+                            228.5
+                        ]
+                    ],
+                    "text_description" : "③ $ a^{4}-a^{3}=a$ ⑤ $\\left(a^{2}\\right)^{3}=a^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20,
+                            299.22,
+                            571,
+                            453.22
+                        ]
+                    ],
+                    "text_description" : "① $a^{3} \\times a^{4}=a^{3+4}=a^{7}$ ② $a^{2}+a^{2}=2 a^{2}$, ④ $a^{6} \\div a^{3}=a^{6-3}=a^{3}$ ⑤ $\\left(a^{2}\\right)^{3}=a^{2 \\times 3}=a^{6}$"
+                }
+            ]
+        }
+    ]
+}

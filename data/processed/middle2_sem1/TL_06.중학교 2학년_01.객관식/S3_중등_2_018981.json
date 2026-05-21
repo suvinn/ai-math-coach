@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f13af6a9-8790-4885-ad5c-6b2db7b56d24",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018981",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.5,
+                            12.92,
+                            344.5,
+                            37.92
+                        ]
+                    ],
+                    "text_description" : "직선 $4-3 x=1$ 위의 점이 아닌 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.5,
+                            75.92,
+                            135.5,
+                            102.92
+                        ]
+                    ],
+                    "text_description" : "② $(0, 1)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.5,
+                            108.5,
+                            137.5,
+                            197.5
+                        ]
+                    ],
+                    "text_description" : "③ $(1, 3)$ ④ $(1, -1)$ ⑤ $(1, 1)$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.5,
+                            45.5,
+                            135.5,
+                            70.5
+                        ]
+                    ],
+                    "text_description" : "① $(1, 0)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.5,
+                            256.5,
+                            673.5,
+                            345.5
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} 4-3 x=1, \\quad-3 x=-3 \\\\ \\therefore x=1 \\end{array} \\] 직선 $x=1$ 위의 모든 점들은 $x$의 값이 항상 1 이므로 그래프를 그리면 다음과 같다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.5,
+                            532.5,
+                            473.5,
+                            557.5
+                        ]
+                    ],
+                    "text_description" : "따라서 보기 중에서 ② $(0, 1)$은 $x=1$ 위의 점이 아니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.5,
+                            351.5,
+                            242.5,
+                            529.5
+                        ]
+                    ],
+                    "text_description" : "이미지는 좌표 평면을 나타내고 있어. X축과 Y축이 있으며, 각 축에 대한 점들이 표시되어 있어. O는 원점(0, 0)을 나타내고, 점 (0, 1)은 Y축에 위치하고 있어. 점 (1, 3)은 Y축에서 Y값이 3인 위치에, 점 (1, 1)은 Y값이 1인 위치, 점 (1, -1)은 Y값이 -1인 위치에 있어. X축은 오른쪽으로 갈수록 증가하고, Y축은 위쪽으로 갈수록 증가해. 배경은 연한 색으로 처리되어 있어."
+                }
+            ]
+        }
+    ]
+}

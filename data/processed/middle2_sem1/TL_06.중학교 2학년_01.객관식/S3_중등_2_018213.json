@@ -1,0 +1,149 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9b59d2c1-e270-4a71-b5fb-003edbecc6d3",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018213",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            105.68,
+                            11.15,
+                            838.02,
+                            45.94
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=4 x-3$에 대하여 $f(a)=5$ 일 때, $a$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.93,
+                            67.35,
+                            127.08,
+                            96.79
+                        ]
+                    ],
+                    "text_description" : "① $a=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.04,
+                            112.84,
+                            126.19,
+                            266.27
+                        ]
+                    ],
+                    "text_description" : "② $a=1$ ③ $a=3$ ④ $a=4$ ⑤ $a=5$"
+                }
+            ]
+        },
+        {
+            "class_num" : "5",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.69,
+                            291.79,
+                            315.3,
+                            329.26
+                        ]
+                    ],
+                    "text_description" : "$f(a)=5, f(a)=4 a-3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.12,
+                            345.31,
+                            152.95,
+                            378.32
+                        ]
+                    ],
+                    "text_description" : "$4 a-3=5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.12,
+                            401.51,
+                            152.95,
+                            432.73
+                        ]
+                    ],
+                    "text_description" : "$4 a=5+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.12,
+                            455.92,
+                            101.22,
+                            486.25
+                        ]
+                    ],
+                    "text_description" : "$4 a=8$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.12,
+                            504.99,
+                            145.82,
+                            548.69
+                        ]
+                    ],
+                    "text_description" : "$a=\\frac{8}{4}=2$"
+                }
+            ]
+        }
+    ]
+}

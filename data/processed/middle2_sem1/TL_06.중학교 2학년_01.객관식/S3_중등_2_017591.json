@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "cc815d78-10a8-44b2-87a7-7c2ba203fde1",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017591",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.88,
+                            12.74,
+                            605.6,
+                            42.18
+                        ]
+                    ],
+                    "text_description" : "세 점 $(3, -1), (5, 5), (7, k)$가 한 직선 위에 있을 때, $k$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.6,
+                            275.78,
+                            55.84,
+                            298.18
+                        ]
+                    ],
+                    "text_description" : "⑤ 11"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.6,
+                            69.7,
+                            61.6,
+                            245.7
+                        ]
+                    ],
+                    "text_description" : "① 7 ② 8 ③ 9 ④ 10"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.52,
+                            333.84,
+                            285.6,
+                            501.48
+                        ]
+                    ],
+                    "text_description" : "\\[ \\text { 기울기 } m=\\frac{5-(-1)}{5-3}=\\frac{6}{2}=3 \\] 직선 방정식: $y=3 x-10$ \\[ \\begin{array}{l} k=21-10 \\\\ k=11 \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

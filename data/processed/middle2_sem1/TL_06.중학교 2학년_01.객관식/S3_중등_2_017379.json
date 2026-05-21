@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "59c8e905-fb7a-470a-b8a0-a89945407ed0",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017379",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.66,
+                            3.16,
+                            290.97,
+                            30.28
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.09,
+                            40.27,
+                            161.09,
+                            74.52
+                        ]
+                    ],
+                    "text_description" : "$b^{8} \\div b^{3} \\times b^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.380000000000003,
+                            94.5,
+                            75.46,
+                            130.9
+                        ]
+                    ],
+                    "text_description" : "① $b^{7}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.94,
+                            137.77,
+                            79.03,
+                            298.33
+                        ]
+                    ],
+                    "text_description" : "② $b^{6}$ ③ $b^{5}$ ④ $b^{4}$ ⑤ $b^{8}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "2",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.09,
+                            323.31,
+                            248.87,
+                            356.13
+                        ]
+                    ],
+                    "text_description" : "$b^{8} \\div b^{3}=b^{8-3}=b^{5}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.23,
+                            363.98,
+                            248.87,
+                            397.52
+                        ]
+                    ],
+                    "text_description" : "$b^{5} \\times b^{2}=b^{5+2}=b^{7}$"
+                }
+            ]
+        }
+    ]
+}

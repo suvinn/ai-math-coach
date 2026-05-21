@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0e76050d-201a-42be-8fb2-7cad202b1e45",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004056",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.55,
+                            7.31,
+                            306.17,
+                            38.56
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.84,
+                            44.69,
+                            196.49,
+                            86.97
+                        ]
+                    ],
+                    "text_description" : "⑧ $x^{3} y \\times\\left(2 x y^{2}\\right)^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.1,
+                            170.04,
+                            88.04,
+                            198.84
+                        ]
+                    ],
+                    "text_description" : "⑧ $4 x^{5} y^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.9400000000000004,
+                            105.7,
+                            279.82,
+                            163.3
+                        ]
+                    ],
+                    "text_description" : "⑧ $\\begin{aligned} & x^{3} y \\times\\left(2 x y^{2}\\right)^{2}=x^{3} y \\times 4 x^{2} y^{4} \\\\ = & 4 \\times x^{3} \\times x^{2} \\times y \\times y^{4}=4 x^{5} y^{5}\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "74117ae9-7f6f-4363-8ff6-92a3b7840976",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001478",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            81.5,
+                            20.42,
+                            384.5,
+                            55.42
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.5,
+                            67.9,
+                            389.5,
+                            133.9
+                        ]
+                    ],
+                    "text_description" : "④ $\\left(\\frac{1}{3} a-b\\right)-\\left(-\\frac{2}{7} a+\\frac{2}{3} b\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.75,
+                            234.38,
+                            112.39,
+                            274.39
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{13}{21} a-\\frac{5}{3} b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.5,
+                            140,
+                            527.5,
+                            231
+                        ]
+                    ],
+                    "text_description" : "④ $\\begin{aligned}\\left(\\frac{1}{3} a-b\\right)-\\left(-\\frac{2}{7} a+\\frac{2}{3} b\\right) & =\\frac{1}{3} a-b+\\frac{2}{7} a-\\frac{2}{3} b \\\\ & =\\frac{1}{3} a+\\frac{2}{7} a-b-\\frac{2}{3} b=\\frac{13}{21} a-\\frac{5}{3} b\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

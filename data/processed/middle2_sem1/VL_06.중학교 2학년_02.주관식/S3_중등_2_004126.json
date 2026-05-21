@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c9b5668a-96f2-471b-890d-f1ed43007b5e",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004126",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.51,
+                            8.4,
+                            478.01,
+                            198.4
+                        ]
+                    ],
+                    "text_description" : "집에서 10km 떨어진 공원을 가는데 동생은 자전거를 타고 가고, 형은 동생이 출발한 지 30분 후에 오토바이를 타고 갔다. 오른쪽 그래프는 동생이 출발한 지 $x$ 분 후에 동생과 형이 간 거리 $y \\mathrm{~km}$를 각각 나타낸 것이다. 형과 동생이 만난 시간을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            490.51,
+                            10.37,
+                            738.01,
+                            190.37
+                        ]
+                    ],
+                    "text_description" : "y축은 km, x축에는 분이 표시된 그래프로 30분에서 시작해 10km와 50분이 만나는 지점에 형을 나타내는 선이 있고 10km와 60분이 만나는 지점에는 동생을 나타내는 선이 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.01,
+                            664.12,
+                            104.26,
+                            694.12
+                        ]
+                    ],
+                    "text_description" : "45분 후"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.26,
+                            221.62,
+                            493.01,
+                            650.37
+                        ]
+                    ],
+                    "text_description" : "동생이 움직인 거리를 나타내는 함수의 그래프는 점 $(0, 0)$을 지나고 기울기가 $\\frac{10}{60}=\\frac{1}{6}$ 이므로 $y=\\frac{1}{6} x$ 형이 움직인 거리를 나타내는 함수의 그래프는 기울기가 $\\frac{10}{20}=\\frac{1}{2}$ 이므로 $y=\\frac{1}{2} x+b$로 나타낼 수 있다. 점 $(30, 0)$을 지나므로 대입하면 $0=\\frac{1}{2} \\times 30+b$, $b=-15$ 따라서 $y=\\frac{1}{2} x-15$에서 형과 동생이 만날 때, 움직인 거리가 같으므로 $\\frac{1}{6} x=\\frac{1}{2} x-15$ $\\frac{10}{60}=\\frac{1}{6}$0 (분)"
+                }
+            ]
+        }
+    ]
+}

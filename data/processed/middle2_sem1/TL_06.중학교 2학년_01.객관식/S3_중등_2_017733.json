@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b6f312e4-7741-44ce-a5ee-a8f68491e3b6",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017733",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.62,
+                            7.77,
+                            877.62,
+                            46.52
+                        ]
+                    ],
+                    "text_description" : "‘어떤 수 $x$에서 25를 뺀 것은 36보다 크거나 같다'를 부등식으로 나타내시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.12,
+                            125.53,
+                            183.87,
+                            163.03
+                        ]
+                    ],
+                    "text_description" : "② $x-25 \\geq 36$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.87,
+                            70,
+                            187.62,
+                            105
+                        ]
+                    ],
+                    "text_description" : "① $x-25 \\leq 36$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.62,
+                            182.5,
+                            188.87,
+                            332.5
+                        ]
+                    ],
+                    "text_description" : "③ $x+25 \\geq 36$ ④ $x+25 \\leq 36$ ⑤ $x-25=36$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.87,
+                            361.25,
+                            613.12,
+                            398.5
+                        ]
+                    ],
+                    "text_description" : "주어진 문장을 부등식으로 나타내면 다음과 같습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.37,
+                            406.25,
+                            151.37,
+                            443.75
+                        ]
+                    ],
+                    "text_description" : "$x-25 \\geq 36$"
+                }
+            ]
+        }
+    ]
+}

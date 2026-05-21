@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c6ad2dcb-1a0a-49b2-a3d0-781c9913b24b",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016036",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.44,
+                            68,
+                            485.88,
+                            96.64
+                        ]
+                    ],
+                    "text_description" : "다음 부등식 $-2 x+4 \\leq 3 x-6$을 풀어라"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.88,
+                            109.88,
+                            124.92,
+                            138.88
+                        ]
+                    ],
+                    "text_description" : "① $x \\geq 2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.52,
+                            151.04,
+                            147.32,
+                            302.72
+                        ]
+                    ],
+                    "text_description" : "② $x \\leq 2$ ③ $x \\geq-2$ ④ $x \\leq-2$ ⑤ $x=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.92,
+                            318.44,
+                            373.24,
+                            524.8
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} -2 x+4 \\leq 3 x-6 \\text { 에서 } x \\text { 정리: } \\\\ -2 x-3 x \\leq-6-4 \\\\ -5 x \\leq-10 \\end{array} \\] 양변을 -5로 나누며 부등호 반전: \\[ x \\geq 2 \\]"
+                }
+            ]
+        }
+    ]
+}

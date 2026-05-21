@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f91c4719-cab8-401a-a48b-7e179dde9093",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004073",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            40.93,
+                            8.809999999999999,
+                            496.93,
+                            38.78
+                        ]
+                    ],
+                    "text_description" : "$\\left(5 x^{2}+3 x y\\right) \\div x-\\left(12 x y-6 y^{2}\\right) \\div 3 y$를 간단히 하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            603.27,
+                            50.24,
+                            690.69,
+                            81.56
+                        ]
+                    ],
+                    "text_description" : "⑤ $x+5 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            36.36,
+                            105.97,
+                            318.84,
+                            179.03
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\left(5 x^{2}+3 x y\\right) \\div x-\\left(12 x y-6 y^{2}\\right) \\div 3 y \\\\ =(5 x+3 y)-(4 x-2 y) \\\\ =5 x+3 y-4 x+2 y=x+5 y\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.97,
+                            51.55,
+                            552.38,
+                            80.9
+                        ]
+                    ],
+                    "text_description" : "① $x$ ② $x-y$ ③ $-x+2 y$ ④ $x+3 y$"
+                }
+            ]
+        }
+    ]
+}

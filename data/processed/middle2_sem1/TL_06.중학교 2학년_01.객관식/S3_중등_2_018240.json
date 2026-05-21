@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e313f056-0990-4584-a9c5-07e034512c4f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018240",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.74,
+                            7.68,
+                            1072.3,
+                            78.08
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=5 x+2$의 그래프의 $y$ 절편과 일차함수 $y=-x+e$의 x절편이 서로 같을 때, $e$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.82,
+                            276.2,
+                            59.82,
+                            302.72
+                        ]
+                    ],
+                    "text_description" : "⑤ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.82,
+                            107.52,
+                            69.42,
+                            259.84
+                        ]
+                    ],
+                    "text_description" : "① 5 ② 4 ③ -2 ④ -4"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.38,
+                            323.12,
+                            685.1,
+                            392.8
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=5 x+2$의 $y$ 절편은 $x=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.18,
+                            448.48,
+                            689.58,
+                            572
+                        ]
+                    ],
+                    "text_description" : "따라서, y절편은 2입니다. 일차함수 $y=-x+e$의 x 절편은 $y=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.82,
+                            671.2,
+                            307.22,
+                            751.84
+                        ]
+                    ],
+                    "text_description" : "따라서, $x$ 절편은 $e$ 입니다. 두 절편이 같으므로, $e=2$."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.54,
+                            406.6,
+                            227.5,
+                            438.24
+                        ]
+                    ],
+                    "text_description" : "$y=5(0)+2=2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.54,
+                            588,
+                            160.3,
+                            655.2
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}0=-x+e \\\\ x=e\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

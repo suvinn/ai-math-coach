@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e6d733da-fab9-4c88-955f-22495fb3d1b4",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001748",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.1,
+                            12.14,
+                            436.7,
+                            73.74
+                        ]
+                    ],
+                    "text_description" : "$a=0, b>0, c<0$ 일 때, 다음 중 일차방정식 $a x-b y+c=0$의 그래프로 알맞은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            363.1,
+                            78.2,
+                            528.7,
+                            110.2
+                        ]
+                    ],
+                    "text_description" : "(단, $a, b, c$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.7,
+                            290.2,
+                            235.9,
+                            439.8
+                        ]
+                    ],
+                    "text_description" : "③ 6$x$ 플러스 쪽으로 $y$ 축과 평행한 직선 그림"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            249.5,
+                            489.4,
+                            470.3,
+                            579
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} a=0 \\text { 이므로 }-b y+c=0 \\text { 에서 } y=\\frac{c}{b} \\\\ b>0, c<0 \\text { 이므로 } \\frac{c}{b}<0 \\end{array} \\] 따라서 그래프로 알맞은 것은 ②이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.7,
+                            126.2,
+                            469.5,
+                            274.2
+                        ]
+                    ],
+                    "text_description" : "① $y$ 플러스 쪽으로 $x$ 축과 평행한 직선 그림 ② $y$ 마이너스 쪽으로 $x$ 축과 평행한 직선 그림"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            290.3,
+                            290.2,
+                            470.3,
+                            439.8
+                        ]
+                    ],
+                    "text_description" : "④ $x$ 마이너스 쪽으로 $y$ 축과 평행한 직선 그림"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.1,
+                            451.8,
+                            235.9,
+                            605.4
+                        ]
+                    ],
+                    "text_description" : "⑤ $x$축 플러스 값과 $y$축 마이너스 값을 지나가는 직선 그림"
+                }
+            ]
+        }
+    ]
+}

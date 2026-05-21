@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d39c3948-b105-4c5d-9d22-377f8d828ada",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017476",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.5,
+                            2.72,
+                            267.5,
+                            84.72
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오. \\[ -3 x(2 x-4 y+6) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.5,
+                            98.5,
+                            303.5,
+                            137.5
+                        ]
+                    ],
+                    "text_description" : "① $-6 x^{2}+12 x y-18 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.5,
+                            140.5,
+                            302.5,
+                            317.5
+                        ]
+                    ],
+                    "text_description" : "② $6 x^{2}-12 x y+18 x$ ③ $-6 x^{2}-12 x y+18 x$ ④ $6 x^{2}+12 x y-18 x$ ⑤ $-6 x^{2}+12 x y+18 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.5,
+                            333.5,
+                            744.5,
+                            430.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}-3 x(2 x-4 y+6) & =-3 x \\times 2 x+-3 x \\times(-4 y)+-3 x \\times 6 \\\\ & =-6 x^{2}+12 x y-18 x\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

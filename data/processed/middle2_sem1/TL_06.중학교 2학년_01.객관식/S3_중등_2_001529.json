@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b5197eb8-7356-49fd-a785-31062ab30813",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001529",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            88.5,
+                            30.92,
+                            629.5,
+                            81.92
+                        ]
+                    ],
+                    "text_description" : "다음 중 $x^{10} \\div x^{5} \\div x^{3}$과 계산 결과가 같은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            91.5,
+                            143.5,
+                            303.5,
+                            191.5
+                        ]
+                    ],
+                    "text_description" : "③ $x^{10} \\div\\left(x^{5} \\times x^{3}\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            86.5,
+                            95.5,
+                            620.5,
+                            142.5
+                        ]
+                    ],
+                    "text_description" : "① $x^{10} \\div x^{5} \\times x^{3}$ ② $x^{10} \\div\\left(x^{5} \\div x^{3}\\right)$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            400.5,
+                            144.5,
+                            591.5,
+                            189.5
+                        ]
+                    ],
+                    "text_description" : "④ $x^{10} \\times x^{5} \\div x^{3}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            88.5,
+                            191.5,
+                            303.5,
+                            236.5
+                        ]
+                    ],
+                    "text_description" : "⑤ $x^{10} \\times\\left(x^{5} \\div x^{3}\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            86.5,
+                            239.5,
+                            511.5,
+                            408.5
+                        ]
+                    ],
+                    "text_description" : "\\[ x^{10} \\div x^{5} \\div x^{3}=x^{10-5} \\div x^{3}=x^{5} \\div x^{3}=x^{5-3}=x^{2} \\] ① $x^{10} \\div x^{5} \\times x^{3}=x^{10-5} \\times x^{3}=x^{5} \\times x^{3}=x^{5+3}=x^{8}$ ② $x^{10} \\div\\left(x^{5} \\div x^{3}\\right)=x^{10} \\div x^{5-3}=x^{10} \\div x^{2}=x^{10-2}=x^{8}$ ③ $x^{10} \\div\\left(x^{5} \\times x^{3}\\right)=x^{10} \\div x^{5+3}=x^{10} \\div x^{8}=x^{10-8}=x^{2}$ ④ $x^{10} \\div x^{5} \\div x^{3}=x^{10+5} \\div x^{3}=x^{15} \\div x^{3}=x^{15-3}=x^{12}$ ⑤ $x^{10} \\times\\left(x^{5} \\div x^{3}\\right)=x^{10} \\times x^{5-3}=x^{10} \\times x^{2}=x^{10+2}=x^{12}$"
+                }
+            ]
+        }
+    ]
+}

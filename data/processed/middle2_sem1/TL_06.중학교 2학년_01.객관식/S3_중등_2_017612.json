@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "495deb7e-b6d0-4d90-97df-e15c0ae5a800",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017612",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.77,
+                            10.530000000000001,
+                            734.71,
+                            43.77
+                        ]
+                    ],
+                    "text_description" : "기울기가 -3이고 점 $(2, 3)$을 지나는 일차함수의 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.379999999999995,
+                            238.37,
+                            211.77,
+                            279.01
+                        ]
+                    ],
+                    "text_description" : "$y=-3 x+9$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.57,
+                            66.64,
+                            211.77,
+                            218
+                        ]
+                    ],
+                    "text_description" : "① $y=-3 x+1$ ② $y=-3 x-3$ ③ $y=-3 x+6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.37,
+                            292.48,
+                            213.37,
+                            334.12
+                        ]
+                    ],
+                    "text_description" : "⑤ $y=-3 x+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.77,
+                            346.93,
+                            1051.04,
+                            425.42
+                        ]
+                    ],
+                    "text_description" : "기울기가 -3 이므로 일차함수의 식을 $y=-3 x+b$로 놓을 수 있습니다. 이 직선이 점 $(2, 3)$을 지납니다:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.76,
+                            737.74,
+                            608.98,
+                            779.38
+                        ]
+                    ],
+                    "text_description" : "따라서 구하는 일차함수의 식은 $y=-3 x+9$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.36,
+                            449.44,
+                            198.96,
+                            720.12
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}3=-3 \\cdot 2+b \\\\ 3=-6+b \\\\ b=3+6 \\\\ b=9\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9d24d2dd-1d0f-4a8a-8406-a4f4446b7f6d",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001565",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56,
+                            12.42,
+                            285,
+                            38.42
+                        ]
+                    ],
+                    "text_description" : "다음 중 부등식을 모두 고르면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            188.52,
+                            55.29,
+                            304.36,
+                            77.69
+                        ]
+                    ],
+                    "text_description" : "② $-x+3<0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.32,
+                            83.18,
+                            142.44,
+                            106.86
+                        ]
+                    ],
+                    "text_description" : "④ $2<100$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.68,
+                            112.62,
+                            202.6,
+                            200.94
+                        ]
+                    ],
+                    "text_description" : "① $3 x+1$은 다형식이다. ② $-x+3<0$은 부등식이다. ③ $4-2 x=4$는 방정식이다. ④ $2<100$은 부등식이다. ⑤ $x-1=x-5$는 등식이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.96,
+                            53.74,
+                            133.48,
+                            76.78
+                        ]
+                    ],
+                    "text_description" : "① $3 x+1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            186.6,
+                            83.18,
+                            315.88,
+                            106.86
+                        ]
+                    ],
+                    "text_description" : "⑤ $x-1=x-5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            316.52,
+                            55.02,
+                            425.32,
+                            76.78
+                        ]
+                    ],
+                    "text_description" : "③ $4-2 x=4$"
+                }
+            ]
+        }
+    ]
+}

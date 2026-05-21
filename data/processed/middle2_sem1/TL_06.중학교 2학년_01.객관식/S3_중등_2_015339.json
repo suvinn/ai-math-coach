@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ad52c814-7c1d-4882-abe4-d7780b874f03",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015339",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.99,
+                            63.05,
+                            685.74,
+                            160.55
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오. \\[ \\left(-4 x^{3} y\\right) \\div\\left(2 x y^{2}\\right)=? \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.99,
+                            193.75,
+                            133.24,
+                            230
+                        ]
+                    ],
+                    "text_description" : "① $-2 x^{2} y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.74,
+                            235,
+                            141.99,
+                            398.75
+                        ]
+                    ],
+                    "text_description" : "② $-2 x^{2} y^{2}$ ③ $-2 x y$ ④ $2 x^{2} y$ ⑤ $2 x^{3} y^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            326.44,
+                            554.4,
+                            758.44,
+                            627.2
+                        ]
+                    ],
+                    "text_description" : "$\\frac{-4 x^{3} y}{2 x y^{2}}=\\frac{-4}{2} \\times \\frac{x^{3}}{x} \\times \\frac{y}{y^{2}}=-2 x^{2} y$"
+                }
+            ]
+        }
+    ]
+}

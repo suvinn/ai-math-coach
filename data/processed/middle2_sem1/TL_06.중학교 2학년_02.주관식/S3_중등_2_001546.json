@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fcc26dfc-a679-4e8e-bce3-9fc7e8d817a8",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001546",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.2,
+                            20.03,
+                            510.52,
+                            46.27
+                        ]
+                    ],
+                    "text_description" : "$-1<x<2$ 일 때, 다음 식의 값의 범위를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.119999999999997,
+                            57.71,
+                            129.36,
+                            78.27
+                        ]
+                    ],
+                    "text_description" : "② $-2 x+3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0,
+                            150.88,
+                            132.92,
+                            168.24
+                        ]
+                    ],
+                    "text_description" : "② $-1<-2 x+3<5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.41,
+                            85.7,
+                            325.97,
+                            142.44
+                        ]
+                    ],
+                    "text_description" : "② $\\begin{aligned}-1 & <x<2 \\text { 의 각 변에 }-2 \\text { 를 곱하면 }-4<-2 x<2 \\\\ -4 & <-2 x<2 \\text { 의 각 변에 } 3 \\text { 을 더하면 } \\\\ -1 & <-2 x+3<5\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

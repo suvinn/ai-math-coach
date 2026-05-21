@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "44ca4863-c231-4162-a271-7f46f766b710",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018399",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.37,
+                            6.02,
+                            1017.62,
+                            43.52
+                        ]
+                    ],
+                    "text_description" : "한 개에 500 원하는 사과와 300 원하는 배를 합쳐서 10 개를 사고 4000 원을 냈다. 배의 개수는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.37,
+                            105.02,
+                            88.87,
+                            138.77
+                        ]
+                    ],
+                    "text_description" : "② 5 개"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.62,
+                            61.99,
+                            88.87,
+                            96.99
+                        ]
+                    ],
+                    "text_description" : "① 4 개"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.87,
+                            145.74,
+                            90.12,
+                            266.99
+                        ]
+                    ],
+                    "text_description" : "③ 6 개 ④ 7 개 ⑤ 8 개"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.87,
+                            274.49,
+                            492.62,
+                            320.49
+                        ]
+                    ],
+                    "text_description" : "사과 개수를 $x$, 배 개수를 $y$라고 가정합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.87,
+                            333.24,
+                            378.87,
+                            865.74
+                        ]
+                    ],
+                    "text_description" : "1. $x+y=10$ \\[ \\begin{array}{l} \\text { 2. } 500 x+300 y=4000 \\\\ \\qquad \\begin{array}{c} y=10-x \\\\ 500 x+300(10-x)=4000 \\\\ 500 x+3000-300 x=4000 \\\\ 200 x+3000=4000 \\\\ 200 x=1000 \\\\ x=5 \\\\ y=10-5=5 \\end{array} \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

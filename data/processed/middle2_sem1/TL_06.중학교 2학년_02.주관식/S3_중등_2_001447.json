@@ -1,0 +1,95 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2c772d8e-18a1-4afc-801a-bd62073ade78",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001447",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.59,
+                            10.7,
+                            361.26,
+                            48.26
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.28,
+                            70.74,
+                            293.68,
+                            103.38
+                        ]
+                    ],
+                    "text_description" : "① $4 x^{3} \\times 3 x^{4} \\div\\left(-6 x^{5}\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            33.84,
+                            167.38,
+                            102.96,
+                            189.78
+                        ]
+                    ],
+                    "text_description" : "① $-2 x^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.32,
+                            109.98,
+                            467.35,
+                            163.1
+                        ]
+                    ],
+                    "text_description" : "① $4 x^{3} \\times 3 x^{4} \\div\\left(-6 x^{5}\\right)=12 x^{7} \\div\\left(-6 x^{5}\\right)=\\frac{12 x}{-6 x^{5}}=-2 x^{2}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "722e4413-e0b3-4cbb-8277-04ebb6ca04a8",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018319",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.5,
+                            19.46,
+                            330.01,
+                            100.86
+                        ]
+                    ],
+                    "text_description" : "다음 부등식의 해를 구하시오. \\[ 7 x+12>5 x+22 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.130000000000003,
+                            241.15,
+                            119.58,
+                            268.8
+                        ]
+                    ],
+                    "text_description" : "② $x>5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.130000000000003,
+                            198.14,
+                            118.56,
+                            226.82
+                        ]
+                    ],
+                    "text_description" : "① $x<5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.64,
+                            283.11,
+                            133.92,
+                            395.78
+                        ]
+                    ],
+                    "text_description" : "③ $x \\geq 5$ ④ $x<10$ ⑤ $x>10$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            36.64,
+                            424.32,
+                            268.06,
+                            632.7
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} 7 x+12 & >5 x+22 \\\\ 7 x-5 x & >22-12 \\\\ 2 x & >10 \\\\ x & >5\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

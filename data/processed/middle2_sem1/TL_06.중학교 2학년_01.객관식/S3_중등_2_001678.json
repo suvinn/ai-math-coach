@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "591992ab-f68f-4ffd-bda2-784d5f5f4f8e",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001678",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.58,
+                            7.34,
+                            368.62,
+                            51.5
+                        ]
+                    ],
+                    "text_description" : "$\\frac{6 a^{2} b+4 a b^{2}}{2 a b}-\\frac{15 a b+18 b^{2}}{3 b}$을 간단히 하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            322.54,
+                            61.1,
+                            426.22,
+                            84.14
+                        ]
+                    ],
+                    "text_description" : "③ $-2 a-4 b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.7,
+                            63.02,
+                            281.58,
+                            116.14
+                        ]
+                    ],
+                    "text_description" : "① $-4 a-2 b$ ② $-4 a+2 b$ ④ $-2 a+4 b$ ⑤ $-4 a+4 b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.62,
+                            120.37,
+                            347.5,
+                            152.37
+                        ]
+                    ],
+                    "text_description" : "$\\frac{6 a^{2}+4 a b^{2}}{2 a b}-\\frac{15 a b+18 b^{2}}{3 b}=3 a+2 b-5 a-6 b=-2 a-4 b$"
+                }
+            ]
+        }
+    ]
+}

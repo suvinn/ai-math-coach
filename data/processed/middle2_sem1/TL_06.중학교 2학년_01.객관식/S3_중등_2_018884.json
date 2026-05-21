@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "467ac7c4-139b-4eeb-9408-30d77f49c8a9",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018884",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.26,
+                            17.4,
+                            824.26,
+                            62.4
+                        ]
+                    ],
+                    "text_description" : "점 $(3, 1)$을 지나고 일차함수 $y=-\\frac{2}{3} x+5$의 그래프에 평행한 직선을 그래프로 하는 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            95.51,
+                            74.9,
+                            203.01,
+                            124.65
+                        ]
+                    ],
+                    "text_description" : "$y = -\\frac{2}{3}x + 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.51,
+                            129.37,
+                            205.51,
+                            303.12
+                        ]
+                    ],
+                    "text_description" : "② $y = 3x + 1$ ③ $y = -\\frac{2}{3}x + 5$ ④ $y = -\\frac{2}{3}x - 2$ ⑤ $y = -3x - 5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.76,
+                            370.62,
+                            556.76,
+                            800.62
+                        ]
+                    ],
+                    "text_description" : "구하는 그래프는 $y=-\\frac{2}{3}x+5$와 평행하므로 기울기는 $-\\frac{2}{3}$이다. 따라서 구하는 일차 함수의 식은 $y=-\\frac{2}{3}x+b \\quad \\cdots \\quad$㉮로 놓을 수 있다. 한편, 점 $(3, 1)$은 ㉮ 위에 있으므로 $x=3$, $y=1$을 ㉮에 대입하면 $1=-\\frac{2}{3} \\times 3+b\\\\ \\therefore \\quad b=3$ 따라서 구하는 일차 함수의 식은 $y=-\\frac{2}{3}x+3$이다."
+                }
+            ]
+        }
+    ]
+}

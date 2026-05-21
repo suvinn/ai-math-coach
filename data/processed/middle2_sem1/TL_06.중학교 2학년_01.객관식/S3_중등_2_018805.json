@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9e36fafc-aef8-4e9b-b1bd-e1ec4a879017",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018805",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.18,
+                            10.77,
+                            647.34,
+                            37.65
+                        ]
+                    ],
+                    "text_description" : "다음 일차함수의 그래프 중 일차함수 $y=2 x-1$의 그래프와 만나지 않는 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            90.86,
+                            189.97,
+                            175.02,
+                            216.85
+                        ]
+                    ],
+                    "text_description" : "$y=2 x+3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.1,
+                            306.82,
+                            694.7,
+                            397.06
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { 두 직선이 만나지 않는 경우는 서로 평행한 경우이다. } \\\\ \\text { 두 직선이 평행이면 기울기가 서로 같고, } y \\text { 절편이 다르다. } \\\\ \\text { 보기 중 } y=2 x-1 \\text { 의 그래프와 기울기는 서로 같고 } y \\text { 절편이 다른 일차함수는 ④이다. }\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            90.86,
+                            47.42,
+                            196.78,
+                            185.22
+                        ]
+                    ],
+                    "text_description" : "$y=-\\frac{1}{2} x+1$ $y=\\frac{1}{2} x+2$ $y=-2 x+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            90.86,
+                            221.06,
+                            178.86,
+                            249.86
+                        ]
+                    ],
+                    "text_description" : "$y=-x+2$"
+                }
+            ]
+        }
+    ]
+}

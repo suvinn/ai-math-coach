@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "bb446c43-c6e8-4a2a-9183-e613113f1aad",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018980",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            10.4,
+                            532.5,
+                            36.4
+                        ]
+                    ],
+                    "text_description" : "다음 중 점 $(3, -1)$을 지나고 $y$ 축에 평행한 직선 위에 있는 점은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.5,
+                            45.4,
+                            137.5,
+                            67.4
+                        ]
+                    ],
+                    "text_description" : "① $(3, 4)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.5,
+                            75.4,
+                            144.5,
+                            192.4
+                        ]
+                    ],
+                    "text_description" : "② $(2, 1)$ ③ $(-1, -1)$ ④ $(0, -1)$ ⑤ $(-1, 3)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            257.4,
+                            410.5,
+                            281.4
+                        ]
+                    ],
+                    "text_description" : "점 $(3, -1)$을 지나고 $y$ 축에 평행한 직선은 $x=3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            475.4,
+                            365.5,
+                            499.4
+                        ]
+                    ],
+                    "text_description" : "따라서, 직선 $x$ 위의 점은 $(3, 4)$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.5,
+                            291.4,
+                            247.5,
+                            473.4
+                        ]
+                    ],
+                    "text_description" : "이미지에는 좌표평면이 그려져 있다. 좌표평면의 수평축은 x축, 수직축은 y축이다. 원점 O는 (0, 0) 위치에 있으며, y축은 -1 지점에서 수평선을 가지고 있다. x축은 3 지점에서 수직선을 가지며, 이 선은 y축과 교차하지 않는다."
+                }
+            ]
+        }
+    ]
+}

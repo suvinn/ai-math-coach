@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "038f0e4b-e339-437c-a93d-d7935c300d53",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018781",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.09,
+                            11,
+                            749.09,
+                            38
+                        ]
+                    ],
+                    "text_description" : "다음 일차함수의 그래프에서 $x$ 절편을 $l, y$ 절편을 $m$, 기울기는 $n$이라고 할 때, $l+m+n$은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.09,
+                            50,
+                            245.09,
+                            230
+                        ]
+                    ],
+                    "text_description" : "- 직선 - 기울기: -\\(\\frac{2}{3}\\) - y절편: 2 - x절편: 3 - 좌표평면에서 1사분면과 2사분면에 위치"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.09,
+                            234,
+                            129.09,
+                            279
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{13}{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.09,
+                            292,
+                            133.09,
+                            507
+                        ]
+                    ],
+                    "text_description" : "② $\\frac{5}{3}$ ③ $-\\frac{1}{3}$ ④ $\\frac{17}{3}$ ⑤ $-\\frac{5}{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.09,
+                            570.09,
+                            498.09,
+                            863.09
+                        ]
+                    ],
+                    "text_description" : "$x$ 절편은 $x$ 축과 만나는 점의 $x$ 좌표이므로 \\[ l=3 \\text { 이다. } \\] $y$ 절편은 $y$ 축과 만나는 점의 $y$ 좌표이므로 \\[ \\begin{array}{l} m=2 \\text { 이다. } \\\\ {[\\text { 기울기 }]=\\frac{(y \\text { 의 } \\text { 값의 증 가량 })}{(x \\text { 의 } \\text { 값의 증가 량 })}=\\frac{0-2}{3-0}=-\\frac{2}{3}} \\\\ \\therefore n=-\\frac{2}{3} \\\\ \\therefore l+m+n=3+2-\\frac{2}{3}=\\frac{13}{3} \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

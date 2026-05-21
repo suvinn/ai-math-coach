@@ -1,0 +1,95 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0fcfc56a-3d84-4c9e-bdf6-4a35301cdb05",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001490",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60,
+                            7.92,
+                            290,
+                            39.92
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.0,
+                            52.0,
+                            322.0,
+                            73.0
+                        ]
+                    ],
+                    "text_description" : "① $5 x^{2}-3 x+7)+(x^{2}-x+3)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.2,
+                            84.2,
+                            446.4,
+                            122.4
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} & \\left. (5 x^{2}-3 x+7\\right)+\\left(x^{2}-x+3\\right) \\\\ = & 5 x^{2}-3 x+7+x^{2}-x+3=5 x^{2}+x^{2}-3 x-x+7+3=6 x^{2}-4 x+10\\end{aligned}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.8,
+                            124.8,
+                            124.0,
+                            144.8
+                        ]
+                    ],
+                    "text_description" : "① $6 x^{2}-4 x+10$"
+                }
+            ]
+        }
+    ]
+}

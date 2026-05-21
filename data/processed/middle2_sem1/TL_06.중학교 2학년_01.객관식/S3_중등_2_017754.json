@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6b19a0b4-41bf-41eb-a7f4-2355d13f92b9",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017754",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.37,
+                            10.02,
+                            568.87,
+                            47.52
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식을 만족하는 $x$의 범위를 구하세요."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            435.12,
+                            70.02,
+                            666.37,
+                            112.52
+                        ]
+                    ],
+                    "text_description" : "$4 x+6 \\leq 3 x+12$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.870000000000001,
+                            224.49,
+                            128.87,
+                            258.24
+                        ]
+                    ],
+                    "text_description" : "③ $x \\leq 6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.37,
+                            136.99,
+                            146.37,
+                            215.74
+                        ]
+                    ],
+                    "text_description" : "① $x \\leq-6$ ② $x \\geq-6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.620000000000001,
+                            264.49,
+                            147.62,
+                            341.99
+                        ]
+                    ],
+                    "text_description" : "④ $x \\geq 6$ ⑤ $x=-6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.12,
+                            376.99,
+                            246.37,
+                            531.99
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}4 x+6 \\leq 3 x+12 \\\\ 4 x-3 x \\leq 12-6 \\\\ x \\leq 6\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

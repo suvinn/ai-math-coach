@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5889484a-8fae-4fe8-b7d4-61cc151b89b1",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017380",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16,
+                            14.92,
+                            290,
+                            85.92
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오. \\[ c^{4} \\div c^{6} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18,
+                            149.5,
+                            92,
+                            184.5
+                        ]
+                    ],
+                    "text_description" : "② $c^{-2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17,
+                            106.5,
+                            79,
+                            143.5
+                        ]
+                    ],
+                    "text_description" : "① $c^{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17,
+                            192.5,
+                            92,
+                            311.5
+                        ]
+                    ],
+                    "text_description" : "③ $c^{1}$ ④ $c^{-1}$ ⑤ $c^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20,
+                            340.5,
+                            420,
+                            368.5
+                        ]
+                    ],
+                    "text_description" : "나눗셈을 계산할 때 지수끼리 뺍니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16,
+                            378.5,
+                            271,
+                            410.5
+                        ]
+                    ],
+                    "text_description" : "$c^{4} \\div c^{6}=c^{4-6}=c^{-2}$"
+                }
+            ]
+        }
+    ]
+}

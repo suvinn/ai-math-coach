@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "40f32fcb-da75-46c3-bf50-893b14e85448",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001821",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.26,
+                            22.66,
+                            264.51,
+                            141.66
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프가 오른쪽 그림과 같을 때, 일차함수 $y=b x-a$의 그래프의 모양은? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            275.51,
+                            28.13,
+                            452.76,
+                            196.88
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 좌표 평면을 나타내고 있습니다. $x$축과 $y$축이 있으며, 제$2$사분면을 지나지 않는 직선이 그려져 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.39,
+                            361.04,
+                            206.31,
+                            502.4
+                        ]
+                    ],
+                    "text_description" : "③ 이 이미지는 좌표 평면에 있는 직선을 나타내고 있습니다. $x$축과 $y$축이 있으며, 직선은 제1사분면을 지나지 않습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.76,
+                            666.13,
+                            535.51,
+                            774.88
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} y=a x+b \\text { 에서 }(\\text { 기울기 })=a>0, (y \\text { 절편 })=b<0 \\text { 이므로 } \\\\ y=b x-a \\text { 에서 }(\\text { 기울기 })=b<0, (y \\text { 절편 })=-a<0 \\end{array} \\] 따라서 일차함수 $y=b x-a$의 그래프의 모양은 ③과 같다."
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.03,
+                            209.15,
+                            405.35,
+                            355.07
+                        ]
+                    ],
+                    "text_description" : "① 이 이미지는 $xy$ 좌표 평면을 나타내고 있습니다. $y$축과 $x$축이 있으며, 제 $4$사분면을 지나지 않는 직선입니다. ② 이 이미지는 $x$축과 $y$축이 있는 좌표평면을 나타내고 있으며, 제 $3$사분면을 지나지 않는 직선입니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            245.35,
+                            362.11,
+                            405.35,
+                            505.47
+                        ]
+                    ],
+                    "text_description" : "④ 이 이미지는 좌표 평면을 나타내고 있습니다. $x$축과 $y$축이 있으며, 제 $2$사분면을 지나지 않는 직선입니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.23,
+                            508.67,
+                            208.87,
+                            652.03
+                        ]
+                    ],
+                    "text_description" : "⑤ 이 이미지는 좌표 평면을 나타냅니다. 직선이 $x$축에 수평으로 그려져 있습니다."
+                }
+            ]
+        }
+    ]
+}

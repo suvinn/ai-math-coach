@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "db224140-a5aa-49ae-b9db-34d5ed80b19a",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001564",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            39.9,
+                            6.01,
+                            311.26,
+                            30.97
+                        ]
+                    ],
+                    "text_description" : "<div>다음 부등식 중|해가 <span class=\"math-inline \"> $x&lt;-1$</span> 인 것은?</div>"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.18,
+                            105.58,
+                            279.26,
+                            209.26
+                        ]
+                    ],
+                    "text_description" : "① $2 x+3<-1$에서 $2 x<-4$ 이므로 $x<-2$ ② $3-3 x<6$에서 $-3 x<3$ 이므로 $x>-1$ ③ $5 x-2<3$에서 $5 x<5$ 이므로 $x<1$ ④ $3 x-1<x-3$에서 $2 x<-4$0 이므로 $2 x<-4$1 ⑤ $2 x<-4$2에서 $2 x<-4$3 이므로 $x>-1$ 따라서 해가 $2 x<-4$1 인 것은 ④이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.0,
+                            78.0,
+                            186.0,
+                            99.0
+                        ]
+                    ],
+                    "text_description" : "$3 x-1<x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.82,
+                            47.34,
+                            551.26,
+                            70.38
+                        ]
+                    ],
+                    "text_description" : "① $2 x+3<-1$ ② $3-3 x<6$ ③ $5 x-2<3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            245.34,
+                            76.78,
+                            391.9,
+                            99.18
+                        ]
+                    ],
+                    "text_description" : "⑤ $2 x-3<6 x+1$"
+                }
+            ]
+        }
+    ]
+}

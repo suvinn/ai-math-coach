@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "62aa2c87-9267-4ab4-bc0b-7e4465369fde",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017538",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.28,
+                            11.19,
+                            417.69,
+                            34.74
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=30-4 x$ 일 때, $f(5)$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.28,
+                            96.69,
+                            54.17,
+                            113.59
+                        ]
+                    ],
+                    "text_description" : "② 10"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.28,
+                            55.22,
+                            52.64,
+                            72.14
+                        ]
+                    ],
+                    "text_description" : "① 12"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.26,
+                            137.65,
+                            49.56,
+                            237.49
+                        ]
+                    ],
+                    "text_description" : "③ 11 ④ 9 ⑤ 8"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.97,
+                            321.28,
+                            198.04,
+                            343.3
+                        ]
+                    ],
+                    "text_description" : "따라서 정답은 ②입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.46,
+                            253.7,
+                            125.85,
+                            309
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(5)=30-20 \\\\ f(5)=10\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

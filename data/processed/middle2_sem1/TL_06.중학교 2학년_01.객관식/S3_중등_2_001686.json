@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c0c7bcb0-2d99-4704-8a30-03f83fbcc395",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001686",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.72,
+                            20.48,
+                            528.6,
+                            121.6
+                        ]
+                    ],
+                    "text_description" : "다음 표에서 가로, 세로에 있는 식의 합이 모두 $3 x^{2}-6 x+6$으로 같을 때, 각 칸에 들어갈 식으로 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.44,
+                            125.44,
+                            529.88,
+                            255.36
+                        ]
+                    ],
+                    "text_description" : "일차방정식과 이차방정식이 한 개씩 들어있는 3X3 9칸의 표"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            286.68,
+                            301.27,
+                            463.96,
+                            330.71
+                        ]
+                    ],
+                    "text_description" : "④ $-3 x^{2}+2 x+6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.08,
+                            266.07,
+                            207.96,
+                            366.55
+                        ]
+                    ],
+                    "text_description" : "① $5 x^{2}+6 x-2$ ③ $4 x^{2}-5 x+3$ ⑤ $2 x^{2}-3 x-2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            285.4,
+                            265.43,
+                            439.64,
+                            298.07
+                        ]
+                    ],
+                    "text_description" : "② $3 x^{2}-4 x-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55,
+                            369.11,
+                            506.84,
+                            475.35
+                        ]
+                    ],
+                    "text_description" : "(①) $=\\left(3 x^{2}-6 x+6\\right)-(-x+5)-\\left(-2 x^{2}+x+3\\right)=5 x^{2}-6 x-2$ (③) $=\\left(3 x^{2}-6 x+6\\right)-(-x+5)-\\left(-x^{2}\\right)=4 x^{2}-5 x+1$ (④) $=\\left(3 x^{2}-6 x+6\\right)-\\left(5 x^{2}-6 x-2\\right)-\\left(x^{2}-2 x+2\\right)=-3 x^{2}+2 x+6$ (②) $=\\left(3 x^{2}-6 x+6\\right)-\\left(-x^{2}\\right)-\\left(x^{2}-2 x+2\\right)=3 x^{2}-4 x+4$ (⑤) $=\\left(3 x^{2}-6 x+6\\right)-\\left(4 x^{2}-5 x+1\\right)-\\left(-3 x^{2}+2 x+6\\right)=2 x^{2}-3 x-1$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "595a461c-300b-49e9-b536-34d7a48bf9ba",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018972",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.77,
+                            10.23,
+                            620.77,
+                            34.23
+                        ]
+                    ],
+                    "text_description" : "다음 그림은 일차방정식 $a x+b y+c=0$의 그래프이다. 다음 중 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.77,
+                            40.77,
+                            301.77,
+                            251.77
+                        ]
+                    ],
+                    "text_description" : "이미지는 좌표평면을 나타내고 있다. x축은 수평으로 오른쪽으로 확장되며, y축은 수직으로 위쪽으로 확장된다. 두 축은 원점 O에서 교차하며, 직선이 아래쪽에서 오른쪽 위 방향으로 기울어져 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.77,
+                            348.77,
+                            255.77,
+                            369.77
+                        ]
+                    ],
+                    "text_description" : "④ $a<0, \\quad b>0, \\quad c>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.77,
+                            253.77,
+                            255.77,
+                            336.77
+                        ]
+                    ],
+                    "text_description" : "① $a>0, \\quad b>0, \\quad c>0$ ② $a>0, \\quad b<0, \\quad c>0$ ③ $a<0, \\quad b<0, \\quad c<0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.77,
+                            378.77,
+                            255.77,
+                            400.77
+                        ]
+                    ],
+                    "text_description" : "⑤ $a<0, \\quad b>0, \\quad c<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.77,
+                            474.77,
+                            522.77,
+                            660.77
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} a x+b y+c=0 \\Rightarrow y=-\\frac{a}{b} x-\\frac{c}{b} \\text { 에서 } \\\\ \\text { (기울기) }=-\\frac{a}{b}>0, \\quad(y \\text { 절편 })=-\\frac{c}{b}<0 \\\\ \\therefore \\quad-\\frac{a}{b}>0, \\frac{c}{b}>0 \\end{array} \\] 따라서 $a, b$는 서로 다른 부호이고, $b, c$는 같은 부호이다."
+                }
+            ]
+        }
+    ]
+}

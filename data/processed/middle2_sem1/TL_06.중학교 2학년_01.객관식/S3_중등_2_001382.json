@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e8950f01-e7c1-4c4f-970f-9a42184cde65",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001382",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.6,
+                            22.42,
+                            411.76,
+                            49.3
+                        ]
+                    ],
+                    "text_description" : "다음 중 유한소수로 나타낼 수 있는 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.24,
+                            75.34,
+                            125.04,
+                            119.06
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{3}{15}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            217.28,
+                            74.54,
+                            456.56,
+                            120.98
+                        ]
+                    ],
+                    "text_description" : "② $\\frac{4}{35}$ ③ $\\frac{8}{2^{2} \\times 7}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.32,
+                            124.82,
+                            278,
+                            175.18
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{2^{3} \\times 3}{2^{2} \\times 3^{3}}$ ⑤ $\\frac{3}{44}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.68,
+                            189.46,
+                            456.56,
+                            257.94
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{3}{15}=\\frac{1}{5}$ ② $\\frac{4}{35}=\\frac{4}{5 \\times 7}$ ③ $\\frac{8}{2^{2} \\times 7}=\\frac{2}{7}$ ④ $\\frac{2^{3} \\times 3}{2^{2} \\times 3^{3}}=\\frac{2}{3^{2}}$ ⑤ $\\frac{3}{44}=\\frac{3}{2^{2} \\times 11}$"
+                }
+            ]
+        }
+    ]
+}

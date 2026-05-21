@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "24d39dc1-3c31-4747-8696-11162e07a240",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001730",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.07,
+                            6.62,
+                            526.87,
+                            66.62
+                        ]
+                    ],
+                    "text_description" : "주어진 일차함수의 그래프와 평행하고, 지나는 한 점의 좌표가 다음과 같은 일차함수의 식을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.27,
+                            69.82,
+                            234.07,
+                            98.62
+                        ]
+                    ],
+                    "text_description" : "① $y=5 x+1, (1, -2)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.07,
+                            182.62,
+                            69.27,
+                            200.22
+                        ]
+                    ],
+                    "text_description" : "$y=5 x-7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.07,
+                            114.31,
+                            476.47,
+                            177.51
+                        ]
+                    ],
+                    "text_description" : "① 직선 $y=5 x+1$과 평행하므로 구하는 식을 $y=5 x+b$로 놓으면 그래프가 점 $(1, -2)$를 지나므로 $-2=5 \\times 1+b$에서 $b=-7$따라서 구하는 식은 $y=5 x-7$ 이다."
+                }
+            ]
+        }
+    ]
+}

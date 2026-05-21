@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3ee76625-4545-4e1f-a50a-d98bb4654ead",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018948",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.59,
+                            11,
+                            791.59,
+                            36
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $a x+b y+1=0$의 그래프가 그림과 같을 때, 다음 중 일차함수 $y=a x+b$의 그래프는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.59,
+                            46,
+                            191.59,
+                            159
+                        ]
+                    ],
+                    "text_description" : "일차방정식 그래프이며 제$3$사분면을 지나지 않는다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.59,
+                            167.91,
+                            218.59,
+                            761.91
+                        ]
+                    ],
+                    "text_description" : "① 일차방정식 그래프이며 제$4$사분면을 지나지 않는다. ② 일차 방정식 그래프이며 제$2$사분면을 지나지 않는다. ③ 일차 방정식 그래프이며 제1$사분면을 지나지 않는다. ④ 일차 방정식 그래프이며 제3사분면을 지나지 않는다. ⑤ 일차 방정식 그래프이며 원점을 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.59,
+                            783.55,
+                            85.59,
+                            804.55
+                        ]
+                    ],
+                    "text_description" : "③"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.59,
+                            830.55,
+                            1097.59,
+                            1147.55
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} a x+b y+1=0, \\quadby=-a x-1 \\\\ \\therefore \\quad y=-\\frac{a}{b} x-\\frac{1}{b} \\end{array} \\] 오른쪽 아래로 향하는 직선이므로 $-\\frac{a}{b}<0$ 그래프가 $y$ 축과 원점 위에서 만나므로 \\[ \\begin{array}{lrrr} -\\frac{1}{b}>0 & \\therefore & b<0 & \\\\ -\\frac{a}{b}<0, & -a>0 & & \\therefore \\quad a<0 \\end{array} \\] 따라서 $y=a x+b$에서 [기 울 기 $]=a<0, [y$ 절 편 $]=b<0$ 이므로 오른쪽 아래로 향하고, $y$ 축과 원점 아래에서 만나는 그래프는 ③이다."
+                }
+            ]
+        }
+    ]
+}

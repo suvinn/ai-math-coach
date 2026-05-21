@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "bd2ac96e-39cc-4ced-a98a-ec44f3c7d0da",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018908",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.5,
+                            10.53,
+                            721,
+                            38.03
+                        ]
+                    ],
+                    "text_description" : "다음 그림은 일차함수 $y=a x+b$의 그래프이다. 이때, 상수 $a, b$에 대하여 $a b$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.5,
+                            45.53,
+                            247.75,
+                            229.78
+                        ]
+                    ],
+                    "text_description" : "점(1, 0)과 점 (0, -2) 직선으로 연결되어 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            233.75,
+                            114.75,
+                            258.75
+                        ]
+                    ],
+                    "text_description" : "① -4"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.92,
+                            263.68,
+                            113.2,
+                            384
+                        ]
+                    ],
+                    "text_description" : "② -2 ③ 0 ④ 2 ⑤ 4"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.6,
+                            444.16,
+                            381.36,
+                            560.64
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}x \\text { 절편이 } 1, y \\text { 절편은 }-2 \\text { 이므로 } b=-2 \\text { 이고 } \\\\ y=a x-2 \\text { 에 } x=1, \\quad y=0 \\text { 을 대입하면 } \\\\ 0=a-2 \\quad \\therefore \\quad a=2 \\\\ \\therefore \\quad a b=2 \\times(-2)=-4\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

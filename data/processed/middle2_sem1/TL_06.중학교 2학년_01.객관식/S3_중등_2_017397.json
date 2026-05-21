@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b4e8a1a6-1f09-466b-9cbb-199059500a79",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017397",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.77,
+                            12.74,
+                            246.77,
+                            38.74
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.77,
+                            51.28,
+                            280.77,
+                            87.28
+                        ]
+                    ],
+                    "text_description" : "$(3 x-4 y)+(5 x+2 y)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.77,
+                            108.28,
+                            139.77,
+                            138.28
+                        ]
+                    ],
+                    "text_description" : "① $8 x-2 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.77,
+                            392.28,
+                            133.77,
+                            424.28
+                        ]
+                    ],
+                    "text_description" : "① $8 x-2 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.77,
+                            149.28,
+                            153.77,
+                            302.28
+                        ]
+                    ],
+                    "text_description" : "② $8 x-6 y$ ③ $2 x-6 y$ ④ $8 x+6 y$ ⑤ $10 x-2 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.77,
+                            330.28,
+                            748.77,
+                            366.28
+                        ]
+                    ],
+                    "text_description" : "$(3 x-4 y)+(5 x+2 y)=(3 x+5 x)+(-4 y+2 y)=8 x-2 y$"
+                }
+            ]
+        }
+    ]
+}

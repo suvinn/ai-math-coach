@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "50d67aa6-2fd1-4e22-8f55-5bedbe3729fc",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001575",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.78,
+                            8.53,
+                            339.02,
+                            32.85
+                        ]
+                    ],
+                    "text_description" : "다음 중 미지수가 2개인 일차방정식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            260.3,
+                            48.21,
+                            339.02,
+                            71.89
+                        ]
+                    ],
+                    "text_description" : "② $x=2 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.22,
+                            107.46,
+                            385.1,
+                            194.5
+                        ]
+                    ],
+                    "text_description" : "① $x+y^{2}-2=0$은 일차방정식이 아니다. ③ $x(y+1)=5$를 전개하면 $x y+x=5$ 이므로 일차방정식이 아니다. ④ $x+3=0$은 미지수가 2 개가 아니다. ⑤ $2(x+y)=2 x+3$을 전개하면 $2 x+2 y=2 x+3$ 즉, $2 y=3$ 이므로 미자수가 2 개가 아니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.42,
+                            48.58,
+                            191.18,
+                            97.86
+                        ]
+                    ],
+                    "text_description" : "① $x+y^{2}-2=0$ ④ $x+3=0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            260.3,
+                            75.46,
+                            426.06,
+                            101.7
+                        ]
+                    ],
+                    "text_description" : "⑤ $2(x+y)=2 x+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            460.62,
+                            47.74,
+                            587.98,
+                            71.62
+                        ]
+                    ],
+                    "text_description" : "③ $x(y+1)=5$"
+                }
+            ]
+        }
+    ]
+}

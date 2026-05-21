@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1075c900-4fb0-44eb-aa87-86e4a3e4bfb5",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018887",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.9,
+                            14.04,
+                            851.5,
+                            39.64
+                        ]
+                    ],
+                    "text_description" : "점 $(2, 3)$을 지나고 일차함수 $y=3 x+4$의 그래프와 평행한 직선을 그래프로 하는 일차함수의 식을 구하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            88.5,
+                            114.84,
+                            173.1,
+                            138.44
+                        ]
+                    ],
+                    "text_description" : "$y = 3x - 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.1,
+                            49.7,
+                            161.9,
+                            106.5
+                        ]
+                    ],
+                    "text_description" : "① $y = x - 3$ ② $y = x + 3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.1,
+                            144.9,
+                            192.3,
+                            199.3
+                        ]
+                    ],
+                    "text_description" : "④ $y = 3x + 3$ ⑤ $y = -3x + 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.3,
+                            262.5,
+                            549.1,
+                            341.7
+                        ]
+                    ],
+                    "text_description" : "직선 $y=3 x+4$와 평행하므로 $y=3 x+b$에 점 $(2, 3)$을 대입하면 $\\\\$ $3=3 \\times 2+b, \\quad b=-3$ $\\\\$ $\\therefore \\quad y=3 x-3$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a795f604-4e78-4d2f-afae-92121749c080",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016148",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.89,
+                            51.64,
+                            931.76,
+                            86.79
+                        ]
+                    ],
+                    "text_description" : "두 일차방정식 $2 x+5 y=10, a x-15 y=30$의 그래프가 서로 평행할 때, 상수 $a$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.93,
+                            90.75,
+                            82.97,
+                            122.85
+                        ]
+                    ],
+                    "text_description" : "① -6"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13,
+                            133,
+                            85,
+                            275
+                        ]
+                    ],
+                    "text_description" : "② -4 ③ 4 ④ 6 ⑤ 10"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4,
+                            292,
+                            646,
+                            627
+                        ]
+                    ],
+                    "text_description" : "두 직선이 평행하려면 기울기가 같아야 합니다. - 첫 번째 직선 $2 x+5 y=10$를 $y=m x+c$ 형태로 변환: \\[ 5 y=-2 x+10 \\Longrightarrow y=-\\frac{2}{5} x+2 \\] 따라서 첫 번째 직선의 기울기 $m_{1}=-\\frac{2}{5}$. - 두 번째 직선 $a x-15 y=30$를 $y=m x+c$ 형태로 변환: \\[ 15 y=a x-30 \\Longrightarrow y=\\frac{a}{15} x-2 \\] 따라서 두 번째 직선의 기울기 $m_{2}=\\frac{a}{15}$. 두 직선의 기울기가 같아야 하므로:"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5,
+                            633,
+                            110,
+                            711
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}-\\frac{2}{5}=\\frac{a}{15} \\\\ a=-6\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

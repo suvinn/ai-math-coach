@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e2344a53-fe19-4ebc-932b-b96f2faef099",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018933",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.18,
+                            7.88,
+                            1521.24,
+                            40.82
+                        ]
+                    ],
+                    "text_description" : "다음 그림과 같이 $\\angle \\mathrm{C}=90^{\\circ}$ 인 삼각형 $ABC$에서 점 $P$가 $B$에서 $C$까지 움직이고 있다. $\\overline{\\mathrm{BP}}$의 길이가 $x \\mathrm{~cm}$일 때, $\\Delta \\mathrm{APC}$의 넓이를 $y \\mathrm{~cm}^{2}$라 하자. 이때, $x$와 $ABC$0 사이의 관계식으로 옳은 것은?"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63,
+                            43.92,
+                            301,
+                            203.92
+                        ]
+                    ],
+                    "text_description" : "삼각형 $ABC$의 높이: $6cm$, 삼각형 $ABC$의 밑변 $BC$: $10cm$, 삼각형 $APC$의 넓이: $y \\, \\text{cm}^2$, $BP$의 길이: $x \\, \\text{cm}$, $BC$의 길이: $6cm$0"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            88,
+                            238.5,
+                            187,
+                            264.5
+                        ]
+                    ],
+                    "text_description" : "$y = 30 - 3x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68,
+                            208.5,
+                            150,
+                            230.5
+                        ]
+                    ],
+                    "text_description" : "① $y = 3x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69,
+                            271.5,
+                            188,
+                            359.5
+                        ]
+                    ],
+                    "text_description" : "③ $y=3x-30$ ④ $y=3x-60$ ⑤ $y=30-6x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62,
+                            426.5,
+                            655,
+                            470.5
+                        ]
+                    ],
+                    "text_description" : "$\\triangle \\mathrm{APC}$의 넓이 $y=\\frac{1}{2} \\times \\overline{\\mathrm{PC}} \\times \\overline{\\mathrm{AC}}=\\frac{1}{2} \\times(10-x) \\times 6=3(10-x)=30-3 x$"
+                }
+            ]
+        }
+    ]
+}

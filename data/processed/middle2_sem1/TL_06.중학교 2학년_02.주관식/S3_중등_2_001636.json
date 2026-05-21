@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e2eff139-299e-4e53-80af-05abe563c774",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001636",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.5,
+                            22.42,
+                            261.5,
+                            133.42
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $a x+b y=1$의 그래프가 오른쪽 그림과 같을 때, 상수 $a, b$의 값을 구하 시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            277.0,
+                            21.0,
+                            445.0,
+                            190.0
+                        ]
+                    ],
+                    "text_description" : "점(-3,0)을 지나고 y축에 평행되는 직선이 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.5,
+                            137,
+                            260.5,
+                            245
+                        ]
+                    ],
+                    "text_description" : "점 $(-3, 0)$을 지나고 $y$ 축어 평형한 직선의 방정식은 $x=-3$ 이다. 이 식을 변형하면 $x+0 \\cdot y=-3$, \\[ -\\frac{1}{3} x-0 \\cdot y=1 \\] 따라서 $a=-\\frac{1}{3}, b=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            247.0,
+                            145.5,
+                            272.0
+                        ]
+                    ],
+                    "text_description" : "$a=-\\frac{1}{3}, b=0$"
+                }
+            ]
+        }
+    ]
+}

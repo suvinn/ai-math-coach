@@ -1,0 +1,161 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c5c1bab2-82bd-48c2-b3e0-41507ce8996c",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001680",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.83,
+                            2.83,
+                            526.83,
+                            119.83
+                        ]
+                    ],
+                    "text_description" : "\\[ -2 y(x+5)+\\left(9 x^{3}-18 x^{2} y+27 x^{2}\\right) \\div\\left(-\\frac{3}{2} x\\right)^{2} \\text { 을 } \\] 간단히 한 결과에 대한 설명 중 옳은 것을 보기에서 모 두 고르면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.83,
+                            125.44,
+                            529.83,
+                            313.44
+                        ]
+                    ],
+                    "text_description" : "보기 ᄀ. $x$의 계수는 4 이다. ᄂ. $y$의 계수는 18 이다. ᄃ. $x y$의 계수는 2 이다. ㄹ. 상수항은 12 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            205.83,
+                            326.44,
+                            293.83,
+                            352.44
+                        ]
+                    ],
+                    "text_description" : "② ᄀ, ᄅ"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.83,
+                            323.44,
+                            135.83,
+                            388.44
+                        ]
+                    ],
+                    "text_description" : "① ᄀ, ᄂ ④ ᄂ, ᄅ"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            206.83,
+                            361.44,
+                            294.83,
+                            388.44
+                        ]
+                    ],
+                    "text_description" : "⑤ ᄃ, ᄅ"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            364.83,
+                            326.44,
+                            451.83,
+                            352.44
+                        ]
+                    ],
+                    "text_description" : "③ ᄂ, ᄃ"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.83,
+                            536.44,
+                            487.83,
+                            581.44
+                        ]
+                    ],
+                    "text_description" : "ᄀ. $x$의 계수는 4 이다. (참) ㄴ. $y$의 계수는 -18 이다. (거짓) ㄷ. $x y$의 계수는 -2 이다. (거짓) ㄹ. 상수항은 12 이다. (참)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.83,
+                            389.44,
+                            356.83,
+                            536.44
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}-2 y(x+5)+\\left(9 x^{3}-18 x^{2} y+27 x^{2}\\right) \\div\\left(-\\frac{3}{2} x\\right)^{2} \\\\ =-2 y(x+5)+\\left(9 x^{3}-18 x^{2} y+27 x^{2}\\right) \\div\\left(\\frac{9}{4} x^{2}\\right) \\\\ =-2 y(x+5)+\\left(9 x^{3}-18 x^{2} y+27 x^{2}\\right) \\times \\frac{4}{9 x^{2}} \\\\ =-2 x y-10 y+4 x-8 y+12 \\\\ =4 x-2 x y-18 y+12\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

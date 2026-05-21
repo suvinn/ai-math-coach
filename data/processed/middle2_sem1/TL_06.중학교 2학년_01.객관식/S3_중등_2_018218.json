@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "192eac10-afd9-4a24-8c96-d2c9118c1fb5",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018218",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            101.2,
+                            14.14,
+                            846.8,
+                            46.14
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=7 x-4$에 대하여 $f(a)=10$일 때, $a$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.8,
+                            70.94,
+                            118.6,
+                            97.34
+                        ]
+                    ],
+                    "text_description" : "① $a=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.38,
+                            112.18,
+                            118.78,
+                            264.19
+                        ]
+                    ],
+                    "text_description" : "② $a=1$ ③ $a=3$ ④ $a=4$ ⑤ $a=5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.88,
+                            289.28,
+                            324.56,
+                            540.8
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(a)=10, f(a)=7 a-4 \\\\ 7 a-4=10 \\\\ 7 a=10+4 \\\\ 7 a=14 \\\\ a=\\frac{14}{7}=2\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

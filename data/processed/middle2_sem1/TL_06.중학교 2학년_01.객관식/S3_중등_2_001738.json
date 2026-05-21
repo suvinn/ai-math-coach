@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a875e7e1-bc37-4fe7-846e-5f28bd2060b8",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001738",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.5,
+                            8.4,
+                            339.75,
+                            142.15
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같이 일차함수 $y=2 x-8$의 그래프와 $x$축, $y$축과의 교점을 각각 $\\mathrm{A}, \\mathrm{B}$라고 할 때, $\\triangle \\mathrm{AOB}$의 넓이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            343.5,
+                            9.12,
+                            526.75,
+                            196.62
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=2 x-8$의 그래프와 $x$축, $y$축과의 교점을 각각 $\\mathrm{A}, \\mathrm{B}$라고 지정했다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            202.25,
+                            160.37,
+                            258.5,
+                            191.62
+                        ]
+                    ],
+                    "text_description" : "② 16"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.75,
+                            160.37,
+                            107.25,
+                            260.37
+                        ]
+                    ],
+                    "text_description" : "① 12 ③ 18 ⑤ 32"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            199.75,
+                            195.37,
+                            258.5,
+                            227.87
+                        ]
+                    ],
+                    "text_description" : "④ 24"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.75,
+                            262.87,
+                            349.5,
+                            365.12
+                        ]
+                    ],
+                    "text_description" : "$y=2 x-8$에서 $y$ 절편이 -8 이므로 $\\mathrm{B}(0, -8)$ 이다. $y=2 x-8$에 $y=0$을 대입하면 $0=2 x-8, x=4$ 즉, $x$ 절편이 4이므로 $\\mathrm{A}(4, 0)$이다. 따라서 $\\triangle \\mathrm{AOB}=\\frac{1}{2} \\times 4 \\times 8=16$"
+                }
+            ]
+        }
+    ]
+}

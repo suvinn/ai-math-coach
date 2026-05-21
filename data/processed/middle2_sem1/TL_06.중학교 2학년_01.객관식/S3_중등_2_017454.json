@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c9d8fd6e-2ffd-4e26-a23f-15152d0c526e",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017454",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22,
+                            12.42,
+                            542,
+                            89.42
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개한 결과로 올바른 식을 고르시오. \\[ 4 z(3 z-2) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25,
+                            107,
+                            184,
+                            141
+                        ]
+                    ],
+                    "text_description" : "① $12 z^{2}-8 z$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23,
+                            148,
+                            187,
+                            309
+                        ]
+                    ],
+                    "text_description" : "② $12 z^{2}+8 z$ ③ $12 z^{2}-6 z$ ④ $8 z^{2}-6 z$ ⑤ $12 z^{2}-6 z$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10,
+                            339,
+                            554,
+                            373
+                        ]
+                    ],
+                    "text_description" : "$4 z(3 z-2)=4 z \\times 3 z-4 z \\times 2=12 z^{2}-8 z$"
+                }
+            ]
+        }
+    ]
+}

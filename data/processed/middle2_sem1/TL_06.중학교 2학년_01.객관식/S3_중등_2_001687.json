@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5c6b8f46-22b5-4b00-b197-6837b4e6b267",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001687",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56,
+                            11.42,
+                            530,
+                            75.42
+                        ]
+                    ],
+                    "text_description" : "어떤 식에서 $3 x^{2}-x-2$를 빼어야 할 것을 잘못하여 더하였더니 $2 x^{2}+5 x$가 되었다. 이때 바르게 계산한 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            287,
+                            126.42,
+                            462,
+                            159.42
+                        ]
+                    ],
+                    "text_description" : "④ $-4 x^{2}+7 x+4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51,
+                            195,
+                            525,
+                            304
+                        ]
+                    ],
+                    "text_description" : "어떤 식을 $A$라고 하면 \\[ \\begin{array}{l} A+\\left(3 x^{2}-x-2\\right)=2 x^{2}+5 x \\text { 에서 } \\\\ A=\\left(2 x^{2}+5 x\\right)-\\left(3 x^{2}-x-2\\right)=2 x^{2}+5 x-3 x^{2}+x+2=-x^{2}+6 x+2 \\end{array} \\] 따라서 바르게 계산한 식은 \\[ -x^{2}+6 x+2-\\left(3 x^{2}-x-2\\right)=-x^{2}+6 x+2-3 x^{2}+x+2=-4 x^{2}+7 x+4 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54,
+                            91,
+                            228,
+                            191
+                        ]
+                    ],
+                    "text_description" : "① $4 x^{2}-7 x+4$ ③ $-4 x^{2}-7 x+4$ ⑤ $-4 x^{2}-7 x-4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            287,
+                            90,
+                            438,
+                            124
+                        ]
+                    ],
+                    "text_description" : "② $4 x^{2}+7 x+4$"
+                }
+            ]
+        }
+    ]
+}

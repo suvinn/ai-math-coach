@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4e876352-6c62-48ed-b989-4dc8087fac9f",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001781",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.38,
+                            13.68,
+                            243.7,
+                            112.88
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그래프가 나타내는 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            261.62,
+                            18.16,
+                            534.9,
+                            209.52
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 2차원 좌표 평면을 보여주고 있으며, x축과 y축이 표시되어 있습니다. 빨간색 선은 아래로 기울어져 있는 직선 형태입니다. y축에서 2의 위치와 x축에서 4의 위치가 표시되어 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.38,
+                            187.32,
+                            216.18,
+                            237.24
+                        ]
+                    ],
+                    "text_description" : "② $y=-\\frac{1}{4} x+2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.62,
+                            129.72,
+                            214.26,
+                            182.2
+                        ]
+                    ],
+                    "text_description" : "① $y=-\\frac{1}{4} x-2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.54,
+                            239.36,
+                            212.98,
+                            398.52
+                        ]
+                    ],
+                    "text_description" : "③ $y=\\frac{1}{4} x+2$ ④ $y=-\\frac{1}{4} x+1$ ⑤ $y=\\frac{1}{4} x+1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.34,
+                            401.72,
+                            385.14,
+                            533.56
+                        ]
+                    ],
+                    "text_description" : "그래프의 식을 $y=a x+b$로 놓으면 $y$ 절편이 2 이므로 $b=2$가 되어 $y=a x+2$ 이다. 또 일차함수 $y=a x+2$의 그래프가 점 $(4, 1)$을 지나므로 $1=4 a+2$에서 $a=-\\frac{1}{4}$ 이다. 따라서 구하는 일차함수의 식은 $y=-\\frac{1}{4} x+2$ 이다."
+                }
+            ]
+        }
+    ]
+}

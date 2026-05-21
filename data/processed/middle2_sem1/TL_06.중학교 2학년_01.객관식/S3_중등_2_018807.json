@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b701efe5-a519-4c07-9dbb-dfd1005112c9",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018807",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.77,
+                            10.24,
+                            510.77,
+                            35.24
+                        ]
+                    ],
+                    "text_description" : "다음 중 아래 그림과 같은 일차함수의 그래프와 평행한 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.77000000000001,
+                            45.78,
+                            272.77,
+                            253.78
+                        ]
+                    ],
+                    "text_description" : "이미지에는 그래프가 나타나고 있다. 좌표축은 x축과 y축으로 구성되어 있으며, x축과 y축은 각각 수평과 수직 방향으로 표시되어 있다. y축에는 0과 2의 값이 나타나고, x축에도 0과 2의 값이 표시되어 있다. 그래프는 대각선으로 기울어져 있으며, 왼쪽 위에서 오른쪽 아래로 내려가는 선형 방정식을 나타낸다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.77,
+                            322.78,
+                            171.77,
+                            346.78
+                        ]
+                    ],
+                    "text_description" : "③ $y=-x-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.77,
+                            259.78,
+                            169.77,
+                            315.78
+                        ]
+                    ],
+                    "text_description" : "① $y=2 x+1$ ② $y=x-1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.77,
+                            354.78,
+                            194.77,
+                            432.78
+                        ]
+                    ],
+                    "text_description" : "④ $y=-2 x+2$ ⑤ $y=\\frac{1}{2} x+\\frac{1}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.77,
+                            498.78,
+                            600.77,
+                            586.78
+                        ]
+                    ],
+                    "text_description" : "그래프의 기울기는 $\\frac{[y \\text { 의 } \\text { 값의 증가 량 }]}{[x \\text { 의 } \\text { 값의 증가 량 }]}=\\frac{-2}{2}=-1$ 이다. 따라서이 그래프와 평행한 그래프는 기울기가 $-1$이어야 하므로 ③번이다."
+                }
+            ]
+        }
+    ]
+}

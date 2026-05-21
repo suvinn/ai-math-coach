@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "688f2008-c654-4c53-b0e5-765d09a1da00",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001753",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            33.25,
+                            15.15,
+                            511.25,
+                            78.4
+                        ]
+                    ],
+                    "text_description" : "다음 보기의 연립방정식 중 해가 오직 한 쌍 존재하는 것을 모두 고르시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            31.25,
+                            85.12,
+                            508.5,
+                            260.87
+                        ]
+                    ],
+                    "text_description" : "보기상자에 다음과 같은 내용이 들어 있다.  ᄀ. $\\left\\{\\begin{array}{l}3 x+2 y=-5 \\\\ 2 x-3 y=1\\end{array}\\right. $ ᄂ. $\\left\\{\\begin{array}{l}x-3 y=-2 \\\\ -3 x+9 y=6\\end{array}\\right. $ ᄃ. $\\left\\{\\begin{array}{l}y=2 x+1 \\\\ 2 x-y-1=0\\end{array}\\right. $ ᄅ. $\\left\\{\\begin{array}{l}x+y=3 \\\\ x-2 y=-3\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.5,
+                            426.87,
+                            88.5,
+                            444.37
+                        ]
+                    ],
+                    "text_description" : "ㄱ, ᄅ"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            31,
+                            269.37,
+                            381,
+                            425.62
+                        ]
+                    ],
+                    "text_description" : "ᄀ. $\\frac{3}{2} \\neq \\frac{2}{-3}$ 이므로 해가 오직 한 쌍 존재한다. ㄴ. $\\frac{1}{-3}=\\frac{-3}{9}=\\frac{-2}{6}$ 이므로 해가 무수히 많다. ㄷ. $\\left\\{\\begin{array}{l}2 x-y=-1 \\\\ 2 x-y=1\\end{array}\\right. $에서 $\\frac{2}{2}=\\frac{-1}{-1} \\neq \\frac{-1}{1}$ 이므로 해가 없다. ㄹ. $\\frac{1}{1} \\neq \\frac{1}{-2}$ 이므로 해가 오직 한 쌍 존재한다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "da10de4e-0091-4e61-8a8b-09bdf81ebb31",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018929",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.77,
+                            12.74,
+                            423.77,
+                            42.74
+                        ]
+                    ],
+                    "text_description" : "다음 그림에서 점 P가 $\\overline{\\mathrm{AB}}$ 위를 움직이고 있다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.77,
+                            200.28,
+                            488.77,
+                            224.28
+                        ]
+                    ],
+                    "text_description" : "$\\overline{\\mathrm{AP}}=x, \\triangle \\mathrm{PBD}=y$ 라 하면 $y=32$ 일 때, $x$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.77,
+                            44.28,
+                            340.77,
+                            195.28
+                        ]
+                    ],
+                    "text_description" : "도형은 직사각형 ABCD와 삼각형 PBD로 구성되어 있다. 직사각형의 높이는 4, 길이는 20이며, P와 B를 연결하는 선은 높이가 8인 삼각형을 형성한다. 각 P는 x로 표시된 각도를 포함하고 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.77,
+                            298.28,
+                            112.77,
+                            319.28
+                        ]
+                    ],
+                    "text_description" : "③ 12"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.77,
+                            235.28,
+                            112.77,
+                            290.28
+                        ]
+                    ],
+                    "text_description" : "① 10 ② 11"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.77,
+                            329.28,
+                            112.77,
+                            384.28
+                        ]
+                    ],
+                    "text_description" : "④ 13 ⑤ 14"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.77,
+                            444.28,
+                            427.77,
+                            688.28
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\overline{\\mathrm{PB}}=\\overline{\\mathrm{AB}}-\\overline{\\mathrm{AP}}=20-x, \\quad \\overline{\\mathrm{BD}}=8 \\text { 이므로 } \\\\ \\triangle \\mathrm{PBD}=y=\\frac{1}{2} \\times(20-x) \\times 8 \\\\ \\therefore \\quad y=-4 x+80 \\\\ y=32 \\text { 일 때 } x \\text { 의 값은 } \\\\ 32=-4 x+80 \\\\ 4 x=48 \\\\ \\therefore \\quad x=12\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

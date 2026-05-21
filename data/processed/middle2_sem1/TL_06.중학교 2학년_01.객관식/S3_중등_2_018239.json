@@ -1,0 +1,167 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "afe9fb30-e04a-48d4-b413-a6a39d437bd5",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018239",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.78,
+                            1.71,
+                            1089.53,
+                            81.4
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=3 x+4$의 그래프의 y 절편과 일차함수 $y=x+b$의 $x$ 절편이 서로 같을 때, $b$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.09,
+                            98.58,
+                            83.28,
+                            137.65
+                        ]
+                    ],
+                    "text_description" : "① -4"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.09,
+                            143.55,
+                            92.65,
+                            307.62
+                        ]
+                    ],
+                    "text_description" : "② -3 ③ -2 ④ 0 ⑤ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.96,
+                            313.87,
+                            689.53,
+                            393.55
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=3 x+4$의 y 절편은 $x=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10,
+                            441.37,
+                            672.5,
+                            572.62
+                        ]
+                    ],
+                    "text_description" : "따라서, y절편은 4입니다. 일차함수 $y=x+b$의 $x$ 절편은 $y=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5,
+                            658.87,
+                            411.25,
+                            751.37
+                        ]
+                    ],
+                    "text_description" : "따라서, x절편은 $-b$ 입니다. 두 절편이 같으므로, $-b=4$ 이므로,"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.15,
+                            398.37,
+                            233.28,
+                            435.3
+                        ]
+                    ],
+                    "text_description" : "$y=3(0)+4=4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5,
+                            578.87,
+                            142.5,
+                            653.87
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}0=x+b \\\\ x=-b. \\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.5,
+                            757.62,
+                            113.75,
+                            795.12
+                        ]
+                    ],
+                    "text_description" : "$b=-4$."
+                }
+            ]
+        }
+    ]
+}

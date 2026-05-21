@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c75e3d96-f19b-469c-af9f-1214e8477b20",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001813",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 3,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.74,
+                            31.009999999999998,
+                            333.38,
+                            55.41
+                        ]
+                    ],
+                    "text_description" : "$x, y$가 자연수일 때, 일차방정식"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            450.5,
+                            29.81,
+                            533.06,
+                            57.97
+                        ]
+                    ],
+                    "text_description" : "을 만족시"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.38,
+                            62.45,
+                            393.54,
+                            95.73
+                        ]
+                    ],
+                    "text_description" : "키는 순서쌍 $(x, y)$는 모두 몇 개인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            338.5,
+                            32.37,
+                            449.86,
+                            55.41
+                        ]
+                    ],
+                    "text_description" : "$2 x+3 y=10$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.83,
+                            112.33,
+                            124.83,
+                            137.33
+                        ]
+                    ],
+                    "text_description" : "① 1 개"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            219.83,
+                            111.94,
+                            435.83,
+                            171.94
+                        ]
+                    ],
+                    "text_description" : "② 2 개 ③ 3 개 ⑤ 5 개"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.83,
+                            146.94,
+                            124.83,
+                            172.94
+                        ]
+                    ],
+                    "text_description" : "④ 4 개"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.83,
+                            221.94,
+                            590.83,
+                            255.94
+                        ]
+                    ],
+                    "text_description" : "만족시키는 순서쌍 $(x, y)$는 $(2, 2)$로 1 개이다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "931c1aad-9f91-4a00-9128-7e84abc99314",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001579",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44,
+                            -1.1,
+                            444,
+                            82.9
+                        ]
+                    ],
+                    "text_description" : "연립방정식 $\\left\\{\\begin{array}{ll}3 x+4 y=7 & \\cdots \\cdots \\text { ㉠ } \\\\ 2 x-3 y=-8 & \\cdots \\cdots \\text { ㉡ }\\end{array}\\right. $을 $x$를 없애서 풀려고 할 때, 그 과정으로 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43,
+                            94.9,
+                            196,
+                            122.9
+                        ]
+                    ],
+                    "text_description" : "① ㉠ $\\times 2-$ ㉡ $\\times 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            240,
+                            94.9,
+                            391,
+                            149.9
+                        ]
+                    ],
+                    "text_description" : "② ㉠ $\\times 2+$ ㉡ $\\times 3$ ④ ㉠ $\\times 3+$ ㉡ $\\times 2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47,
+                            123.9,
+                            195,
+                            179.9
+                        ]
+                    ],
+                    "text_description" : "③ ㉠ $\\times 3-$ ㉡ $\\times 2$ ⑤ ㉠ $\\times 3+$ ㉡ $\\times 4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44,
+                            182.9,
+                            292,
+                            204.9
+                        ]
+                    ],
+                    "text_description" : "$x$의 계수의 절댓값을 6으로 같게 한 후 $x$를 없앤다."
+                }
+            ]
+        }
+    ]
+}

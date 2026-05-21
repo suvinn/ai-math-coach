@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "10ff2373-c9f5-4c9a-9f5c-bdb884b1eddc",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018763",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.26,
+                            15.02,
+                            313.01,
+                            48.77
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수 $y=\\frac{3}{2} x-3$의 그래프는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.76,
+                            183.68,
+                            180.48,
+                            302.08
+                        ]
+                    ],
+                    "text_description" : "②점 (2, 0)과 (0, -3)을 지나는 직선"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47,
+                            715,
+                            975,
+                            756
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=\\frac{3}{2} x-3$은 $y$ 절편이 -3 이므로 $(0, -3)$을 지나고, 기울기가 $\\frac{3}{2}$ 이므로 $x$의 값이 2만큼 증가할 때, $y$의 값은 3만큼 증가한다. 즉 $(2, 0)$을 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.36,
+                            60.24,
+                            177.28,
+                            178.56
+                        ]
+                    ],
+                    "text_description" : "① 점 (0, -3)와 점(-2, 0)을 지나는 직선"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.84,
+                            305.28,
+                            181.76,
+                            672
+                        ]
+                    ],
+                    "text_description" : "③점 (0, -3)와 점($\\frac{3}{2}$, 0)을 지나는 직선 ④점 (0, 2)와 점(-3, 0)을 지나는 직선 ⑤점 (0, 3)와 점(2, 0)을 지나는 직선"
+                }
+            ]
+        }
+    ]
+}

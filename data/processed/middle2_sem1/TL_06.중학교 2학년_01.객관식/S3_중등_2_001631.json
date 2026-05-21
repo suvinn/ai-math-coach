@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7fe5289a-cc39-448f-8df8-a6a5f0625e89",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001631",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.16,
+                            0.8799999999999999,
+                            448.96,
+                            76.56
+                        ]
+                    ],
+                    "text_description" : "$x, y$에 대한 연립방정식 $\\left\\{\\begin{array}{l}2 x-y=a \\\\ b x+y=5\\end{array}\\right. $의 그래프가 오른쪽 그림과 같을 때, 상수 $a, b$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            479.88,
+                            5.86,
+                            654,
+                            183.7
+                        ]
+                    ],
+                    "text_description" : "$x, y$에 대한 연립방정식 $\\left\\{\\begin{array}{l}2 x-y=a \\\\ b x+y=5\\end{array}\\right. $의 직선 그래프를 $xy$ 좌표평면 위에 그려져있고 점 $(3, 2)$를 교차한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            243.08,
+                            117.86,
+                            364.68,
+                            143.46
+                        ]
+                    ],
+                    "text_description" : "④ $a=4, b=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            40.84,
+                            88.42,
+                            166.92,
+                            171.62
+                        ]
+                    ],
+                    "text_description" : "① $a=1, b=4$ ③ $a=3, b=2$ ⑤ $a=2, b=5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            243.08,
+                            87.78,
+                            364.68,
+                            112.74
+                        ]
+                    ],
+                    "text_description" : "② $a=2, b=3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.76,
+                            183.14,
+                            271.24,
+                            238.18
+                        ]
+                    ],
+                    "text_description" : "주어진 연립방정식의 해가 $x=3, y=2$ 이므로 $x=3, y=2$를 각 방정식에 대입하면 \\[ 6-2=a \\text { 에서 } a=4, 3 b+2=5 \\text { 에서 } b=1 \\text { 이다. } \\]"
+                }
+            ]
+        }
+    ]
+}

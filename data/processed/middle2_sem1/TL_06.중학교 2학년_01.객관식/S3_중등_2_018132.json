@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f3022653-2215-4f2f-91b2-4fa2060b84a7",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018132",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.74,
+                            15.01,
+                            688.54,
+                            47.65
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=2 x^{2}+3 x-1$에 대하여 $f(0)$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.1,
+                            159.01,
+                            63.26,
+                            183.33
+                        ]
+                    ],
+                    "text_description" : "③ $1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.74,
+                            73.62,
+                            73.5,
+                            140.82
+                        ]
+                    ],
+                    "text_description" : "① $-1$ ② $0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.82,
+                            200.98,
+                            64.54,
+                            266.9
+                        ]
+                    ],
+                    "text_description" : "④ $2$ ⑤ $3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.34,
+                            288.22,
+                            535.58,
+                            322.98
+                        ]
+                    ],
+                    "text_description" : "$f(0)=2(0)^{2}+3(0)-1=0+0-1=-1$"
+                }
+            ]
+        }
+    ]
+}

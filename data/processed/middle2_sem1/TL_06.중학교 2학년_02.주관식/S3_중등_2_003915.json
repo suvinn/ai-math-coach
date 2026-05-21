@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f9a686b8-0649-4b64-85a6-825827962130",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003915",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.99,
+                            21.66,
+                            334.49,
+                            281.66
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같이 일차 함수 $y=a x+b(a \\neq 0)$의 그래프는 점 $(-2, 0)$을 지나고 일차함수의 그래프 ①과 $x$ 축 사이를 지나는 직선이다. 이 때 두 상수 $a, b$의 값의 범위를 구하시오"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            346.99,
+                            24.88,
+                            559.49,
+                            287.38
+                        ]
+                    ],
+                    "text_description" : "두 개의 직선이 있는 그래프로 시작점 O을 기준으로 -2에서 y축 4로 상승하며이 직선은 ①이고 x축에는 -2에서 x축으로 상승하는데이 값을 $y=ax+b$이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.99,
+                            443.63,
+                            166.99,
+                            467.38
+                        ]
+                    ],
+                    "text_description" : "$0<a<2, 0<b<4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.49,
+                            306.13,
+                            334.49,
+                            434.88
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b(a \\neq 0)$의 그래프는 점 $(-2, 0)$을 지나므로 $0=-2 a+b, b=2 a$ 또 일차함수의 그래프 ①과 $x$ 축 사이를 지나야 하므로 기울기는 $0<a<2$ 이다. $y$ 절편은 $0<b=2 a<4$ 이다."
+                }
+            ]
+        }
+    ]
+}

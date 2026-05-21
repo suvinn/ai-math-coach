@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f36550d5-4d98-4232-a6b2-58cb630b9e7a",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001459",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.1,
+                            17.42,
+                            271.5,
+                            41.82
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.7,
+                            56.22,
+                            276.3,
+                            102.62
+                        ]
+                    ],
+                    "text_description" : "② $8 x^{6} y^{7} \\div\\left(-x^{3}\\right) \\div\\left(\\frac{2}{3} x^{3} y^{5}\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.32,
+                            144.53,
+                            59.31,
+                            163.53
+                        ]
+                    ],
+                    "text_description" : "$-12 y^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.9,
+                            103.22,
+                            379.7,
+                            136.82
+                        ]
+                    ],
+                    "text_description" : "$8 x^{6} y^{7} \\div\\left(-x^{3}\\right) \\div\\left(\\frac{2}{3} x^{3} y^{5}\\right)=8 x^{6} y^{7} \\times\\left(-\\frac{1}{x^{3}}\\right) \\times \\frac{3}{2 x^{3} y^{5}}=-12 y^{2}$"
+                }
+            ]
+        }
+    ]
+}

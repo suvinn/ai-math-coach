@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1f768438-4afe-4af4-9714-9dc06b0a2749",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017456",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.1,
+                            6.07,
+                            538.7,
+                            88.47
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개한 결과로 올바른 식을 고르시오. \\[ 4 a(5 a-3) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.3,
+                            100.3,
+                            194.7,
+                            139.5
+                        ]
+                    ],
+                    "text_description" : "① $20 a^{2}-12 a$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.5,
+                            144.3,
+                            195.5,
+                            305.9
+                        ]
+                    ],
+                    "text_description" : "② $20 a^{2}+12 a$ ③ $5 a^{2}-12 a$ ④ $20 a^{2}-3 a$ ⑤ $15 a^{2}+12 a$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.9,
+                            338.3,
+                            573.3,
+                            380.3
+                        ]
+                    ],
+                    "text_description" : "$4 a(5 a-3)=4 a \\times 5 a-4 a \\times 3=20 a^{2}-12 a$"
+                }
+            ]
+        }
+    ]
+}

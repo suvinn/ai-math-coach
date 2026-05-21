@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d68af9f3-f3f2-4ccd-8c2e-45fd19cc672d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016024",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.46,
+                            37.91,
+                            245.71,
+                            63.66
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 풀어라."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            374.96,
+                            81.58,
+                            505.71,
+                            159.33
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}x-y=2 \\\\ 2 x+y=7\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.96,
+                            179.83,
+                            164.21,
+                            206.83
+                        ]
+                    ],
+                    "text_description" : "① $x=3, y=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.21,
+                            739.33,
+                            218.21,
+                            766.83
+                        ]
+                    ],
+                    "text_description" : "① $x=3, y=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.96,
+                            214.33,
+                            183.21,
+                            341.83
+                        ]
+                    ],
+                    "text_description" : "② $x=4, y=2$ ③ $x=5, y=-1$ ④ $x=2, y=0$ ⑤ $x=3, y=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.46,
+                            355.58,
+                            631.96,
+                            713.08
+                        ]
+                    ],
+                    "text_description" : "첫 번째 방정식에서 $x-y=2$로부터 $y=x-2$를 얻을 수 있다. 이 값을 두 번째 방정식에 대입한다. \\[ \\begin{array}{c} 2 x+(x-2)=7 \\\\ 3 x-2=7 \\\\ 3 x=9 \\\\ x=3 \\end{array} \\]이 값을 첫 번째 방정식에 대입하여 $y$ 값을 구한다."
+                }
+            ]
+        }
+    ]
+}

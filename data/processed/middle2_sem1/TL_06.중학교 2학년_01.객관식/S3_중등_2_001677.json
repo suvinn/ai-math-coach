@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6ef3abf0-1168-433e-9fdd-c3c527e4dcb6",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001677",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62,
+                            93.92,
+                            536,
+                            167.92
+                        ]
+                    ],
+                    "text_description" : "어떤 다항식에 $\\frac{3}{2} x y$를 곱하였더니 $3 x^{3} y+12 x y^{2}-6 x y$가 되었다. 어떤 다항식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            6.5,
+                            566,
+                            69.5
+                        ]
+                    ],
+                    "text_description" : "어떤 다항식을 $A$라고 하면 $A \\times \\frac{3}{2} x y=3 x^{2} y+12 x y^{2}-6 x y$ \\[ A=\\left(3 x^{3} y+12 x y^{2}-6 x y\\right) \\div\\left(\\frac{3}{2} x y\\right)=\\left(3 x^{3} y+12 x y^{2}-6 x y\\right) \\times \\frac{2}{3 x y}=2 x^{2}+8 y-4 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.0,
+                            182.5,
+                            223.0,
+                            289.5
+                        ]
+                    ],
+                    "text_description" : "① $x^{2}+8 y-4$ ③ $2 x^{2}+12 y-6$ ⑤ $2 x^{2}+8 y^{2}-4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            296.0,
+                            218.5,
+                            454.0,
+                            256.5
+                        ]
+                    ],
+                    "text_description" : "④ $2 x^{2}+8 x y-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            329.0,
+                            188.0,
+                            441.0,
+                            216.0
+                        ]
+                    ],
+                    "text_description" : "$2 x^{2}+8 y-4 $"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5ad9f09b-9f7b-4e82-83b9-04b31b8451ab",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001726",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73.5,
+                            24.16,
+                            489.75,
+                            209.16
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x-b$의 그래프가 오른쪽 그림과 같을 때, 다음 중 $a, b$의 부호로 옳은 것은? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            506,
+                            33.379999999999995,
+                            727,
+                            245.63
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x-b$의 그래프가 $xy$좌표평면에 그려져 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            79.75,
+                            272.38,
+                            261,
+                            313.63
+                        ]
+                    ],
+                    "text_description" : "② $a>0, b<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            76,
+                            228.63,
+                            264.75,
+                            268.63
+                        ]
+                    ],
+                    "text_description" : "① $a>0, b>0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            78.5,
+                            318.63,
+                            264.75,
+                            453.63
+                        ]
+                    ],
+                    "text_description" : "③ $a<0, b>0$ ④ $a<0, b<0$ ⑤ $a>0, b=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            79.5,
+                            462.13,
+                            367.25,
+                            516.88
+                        ]
+                    ],
+                    "text_description" : "그림에서 (기울기) $>0$ 이므로 $a>0$ $(y$ 절편 $)>0$ 이므로 $-b>0$에서 $b<0$"
+                }
+            ]
+        }
+    ]
+}

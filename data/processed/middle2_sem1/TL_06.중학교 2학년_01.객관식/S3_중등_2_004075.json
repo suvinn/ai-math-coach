@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "974c6033-47af-4e70-9f8d-46b904ae65e7",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004075",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.46,
+                            16.78,
+                            133.58,
+                            40.94
+                        ]
+                    ],
+                    "text_description" : "다음 중"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            202.78,
+                            12.14,
+                            569.86,
+                            44.42
+                        ]
+                    ],
+                    "text_description" : "일 때 참인 부등식을 모두 고르면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.44,
+                            97.7,
+                            504.42,
+                            122.89
+                        ]
+                    ],
+                    "text_description" : "③ $4 x-7 \\geq 1$ ④ $-x<4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.11,
+                            59.94,
+                            532.29,
+                            87.8
+                        ]
+                    ],
+                    "text_description" : "① $x-1<0$ ② $x<4 x-9$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.1,
+                            133.91,
+                            192.36,
+                            159.75
+                        ]
+                    ],
+                    "text_description" : "⑤ $3 x-9>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            34.84,
+                            191.27,
+                            291.53,
+                            376.32
+                        ]
+                    ],
+                    "text_description" : "$x$ 에 2를 대입하면\n① $2-1=1<0$ (거짓)\n② $2<4 \\times 2-9=-1$ (거짓)\n③ $4 \\times 2-7=1 \\geq 1$ (참)\n④ $-2<4$ (참)\n⑤ $3 \\times 2-9=-3>0$ (거짓)"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "09824879-5ac2-438a-b116-00fdcad7e7fb",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018161",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.77,
+                            11.24,
+                            1076.77,
+                            83.24
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b(a \\neq 0)$의 그래프가 일차함수 $y=-6 x+3$의 그래프를 $y$축의 방향으로 10만큼 평행이동한 것일 때, 상수 $a$와 $b$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.77,
+                            110.78,
+                            235.77,
+                            140.78
+                        ]
+                    ],
+                    "text_description" : "① $a=-6, b=13$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.77,
+                            458.78,
+                            224.77,
+                            489.78
+                        ]
+                    ],
+                    "text_description" : "① $a=-6, b=13$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.77,
+                            152.78,
+                            237.77,
+                            308.78
+                        ]
+                    ],
+                    "text_description" : "② $a=-6, b=7$ ③ $a=-6, b=10$ ④ $a=-6, b=15$ ⑤ $a=-6, b=12$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.77,
+                            331.78,
+                            209.77,
+                            359.78
+                        ]
+                    ],
+                    "text_description" : "평행이동 후 함수:"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.77,
+                            374.78,
+                            419.77,
+                            444.78
+                        ]
+                    ],
+                    "text_description" : "\\[ y=-6 x+(3+10)=-6 x+13 \\] 따라서, $a=-6, b=13$."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1d6cd60d-787f-46e3-adbc-bd0ea820e968",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001497",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.5,
+                            12.92,
+                            303.5,
+                            44.92
+                        ]
+                    ],
+                    "text_description" : "다음 중 이차식이 아닌 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.93,
+                            206.26,
+                            561.91,
+                            288.18
+                        ]
+                    ],
+                    "text_description" : "이차식은 다항식에서 차수가 가장 높은 항의 차수가 2 인 다항식이다. ① $x^{3}+x^{2}-2 x-x^{3}=x^{2}-2 x$ 이므로 이차식이다. ② $\\frac{x^{2}-2 x}{2}=\\frac{1}{2} x^{2}-x$ 이므로 이차식이다. ③ $2\\left(x^{2}-x-1\\right)=2 x^{2}-2 x-2$ 이므로 이차식이다. ④ $3-x^{2}$은 이차식이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.44,
+                            290.22,
+                            291.58,
+                            324.53
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\frac{2}{x^{2}+2}$는 다항식이 아니므로 이차식이 아니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.5,
+                            48.5,
+                            483.5,
+                            144.5
+                        ]
+                    ],
+                    "text_description" : "(1) $x^{3}+x^{2}-2 x-x^{3}$\n(2) $\\frac{x^{2}-2 x}{2}$\n(3) $2\\left(x^{2}-x-1\\right)$\n(4) $3-x^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.0,
+                            151.0,
+                            117.0,
+                            201.0
+                        ]
+                    ],
+                    "text_description" : "$\\frac{2}{x^{2}+2}$"
+                }
+            ]
+        }
+    ]
+}

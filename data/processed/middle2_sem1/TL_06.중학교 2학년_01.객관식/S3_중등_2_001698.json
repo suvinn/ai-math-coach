@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8c08d119-7731-43f1-9e3b-fea3d7811ad2",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001698",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            77.99,
+                            31.74,
+                            559.66,
+                            68.58
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식 중 해가 $x<-1$ 인 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            389.7,
+                            79.34,
+                            575.3,
+                            114.54
+                        ]
+                    ],
+                    "text_description" : "② $4 x+2<2 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.32,
+                            215.62,
+                            460.32,
+                            498.02
+                        ]
+                    ],
+                    "text_description" : "① $-x+5>-3 x+3$에서 $-x+3 x>3-5$ $2 x>-2$, 즉 $x>-1$ 이다. ② $4 x+2<2 x$에서 $4 x-2 x<-2, 2 x<-2$ 따라서 $x<-1$ 이다. ③ $3 x+2>6 x-1$에서 $3 x-6 x>-1-2$ $-3 x>-3$, 즉 $-x+3 x>3-5$0 이다. ④ $-x+3 x>3-5$1에서 $-x+3 x>3-5$2 $-x+3 x>3-5$3, 즉 $-x+3 x>3-5$4 이다. ⑤ $-x+3 x>3-5$5에서 $-x+3 x>3-5$6 $-x+3 x>3-5$7, 즉 $x>-1$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            76.1,
+                            78.2,
+                            366.5,
+                            207
+                        ]
+                    ],
+                    "text_description" : "① $-x+5>-3 x+3$ ③ $3 x+2>6 x-1$ ⑤ $-5 x+7<-x+11$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            390.5,
+                            123.8,
+                            636.1,
+                            159.8
+                        ]
+                    ],
+                    "text_description" : "④ $-2 x+1<x-2$"
+                }
+            ]
+        }
+    ]
+}

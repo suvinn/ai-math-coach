@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1f7a56d5-2879-4da5-8b79-34d5b1278eb0",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001721",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.84,
+                            22,
+                            326.47,
+                            91.82
+                        ]
+                    ],
+                    "text_description" : "오른쪽 일차함수의 그래프에서 기울기는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            360.62,
+                            26.96,
+                            542,
+                            210.62
+                        ]
+                    ],
+                    "text_description" : "일차 함수 그래프에 $x$축은 -6, $y$축은 -4이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.05,
+                            157.49,
+                            145.08,
+                            211.38
+                        ]
+                    ],
+                    "text_description" : "③ $-\\frac{2}{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.57,
+                            102.09,
+                            288.52,
+                            153.7
+                        ]
+                    ],
+                    "text_description" : "① $-\\frac{3}{2}$ ② -1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            216.42,
+                            158.25,
+                            297.63,
+                            208.34
+                        ]
+                    ],
+                    "text_description" : "④ $-\\frac{1}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.05,
+                            215.93,
+                            122.32,
+                            262.23
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\frac{3}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.08,
+                            265.26,
+                            204.28,
+                            307
+                        ]
+                    ],
+                    "text_description" : "$($ 기울기 $)=\\frac{-4}{6}=-\\frac{2}{3}$"
+                }
+            ]
+        }
+    ]
+}

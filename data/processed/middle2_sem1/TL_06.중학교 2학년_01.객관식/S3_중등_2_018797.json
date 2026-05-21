@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8f19f4c5-f344-423f-b859-c803e551db2f",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018797",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.59,
+                            20.79,
+                            1128.88,
+                            68.58
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x-2$의 그래프는 일차함수 $y=-\\frac{2}{5} x+2$의 그래프와 평행하고, 점 $(1, b)$를 지난다. 이때, 상수 $a, b$에 대하여 $b \\div a$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.9,
+                            76.63,
+                            108.32,
+                            101.05
+                        ]
+                    ],
+                    "text_description" : "① $6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.9,
+                            109.55,
+                            117.88,
+                            278.4
+                        ]
+                    ],
+                    "text_description" : "② $\\frac{6}{5}$ ③ $2$ ④ $\\frac{2}{5}$ ⑤ $4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.72,
+                            346.37,
+                            609.57,
+                            461.06
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { 두 일차함수의 그래프가 평행하려면 기울기가 같고, } y \\text { 절편이 달라야 한다. } \\\\ y=-\\frac{2}{5} x+2 \\text { 의 기울기는 }-\\frac{2}{5}, y \\text { 절편은 } 2 \\text { 이다. } \\\\ y=a x-2 \\text { 의 기울기는 } a, y \\text { 절편은 }-2 \\text { 이다. }\\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.72,
+                            525.84,
+                            441.78,
+                            692.57
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}y=-\\frac{2}{5} x-2 \\text { 의 그래프가 점 }\\left(\\begin{array}{ll}1, & b\\end{array}\\right) \\text { 를 지나므로 } \\\\ b=-\\frac{2}{5}-2 \\quad \\therefore \\quad b=-\\frac{12}{5} \\\\ \\therefore \\quad b \\div a=\\left(-\\frac{12}{5}\\right) \\div\\left(-\\frac{2}{5}\\right)=6\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.84,
+                            467.43,
+                            168.85,
+                            514.16
+                        ]
+                    ],
+                    "text_description" : "$\\therefore \\quad a=-\\frac{2}{5}$"
+                }
+            ]
+        }
+    ]
+}

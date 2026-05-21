@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ffdabcd8-bfd8-47c4-99bf-b2ab8bb631bb",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001642",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.01,
+                            28.9,
+                            418.01,
+                            53.4
+                        ]
+                    ],
+                    "text_description" : "다음 중 순환소수로 나타내어지는 분수는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            213.76,
+                            132.65,
+                            344.51,
+                            182.15
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\frac{21}{3 \\times 5^{2} \\times 7^{2}}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.51,
+                            75.87,
+                            446.01,
+                            122.12
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{3}{15}$ ② $\\frac{18}{120}$ ③ $\\frac{63}{180}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.26,
+                            132.12,
+                            194.76,
+                            182.87
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{33}{2^{3} \\times 3 \\times 11}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.83,
+                            189.79,
+                            353.26,
+                            223.59
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{1}{5}$ ② $\\frac{3}{2^{2} \\times 5}$ ③ $\\frac{7}{2^{2} \\times 5}$ ④ $\\frac{1}{2^{3}}$ ⑤ $\\frac{1}{5^{2} \\times 7}$"
+                }
+            ]
+        }
+    ]
+}

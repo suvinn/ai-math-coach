@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "dd8b31a6-79ab-4f1d-afc5-6bbea8dcb137",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003922",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14,
+                            11.66,
+                            292.75,
+                            251.66
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림은 연립방정식 $\\left\\{\\begin{array}{l}a x+y=6 \\\\ 2 x-3 y=2\\end{array}\\right. $ $(a \\neq 0)$의 해를 구하기 위하여 두 방정식의 그래프를 그린 것이다. 이때 상수 $a$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            297.75,
+                            24.88,
+                            552.75,
+                            239.88
+                        ]
+                    ],
+                    "text_description" : "그래프의 x축과 y축이 있고 y값이 2인 점에서 수평으로 점선이 그려져 있고 초록색 선과 보라색 선이 2에서 교차한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.5,
+                            297.38,
+                            72.75,
+                            334.88
+                        ]
+                    ],
+                    "text_description" : "④ 1"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.5,
+                            258.63,
+                            460.25,
+                            293.63
+                        ]
+                    ],
+                    "text_description" : "① -3 ② -2 ③ -1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            197.75,
+                            299.88,
+                            256.5,
+                            336.13
+                        ]
+                    ],
+                    "text_description" : "⑤ 3"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.25,
+                            348.63,
+                            520.25,
+                            506.13
+                        ]
+                    ],
+                    "text_description" : "연립방정식 $\\left\\{\\begin{array}{l}a x+y=6 \\\\ 2 x-3 y=2\\end{array}(a \\neq 0)\\right. $의 해의 $y$ 좌표가 2 이므로 $y$에 2을 대입하면 $\\left\\{\\begin{array}{c}a x+2=6 \\\\ 2 x-3 \\times 2=2\\end{array}\\right. $ 이므로 $x=4, x$에 4를 대입하면 $a=1$"
+                }
+            ]
+        }
+    ]
+}

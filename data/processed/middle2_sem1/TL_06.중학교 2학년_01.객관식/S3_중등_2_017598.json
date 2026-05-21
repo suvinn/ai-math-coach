@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3f2f0e84-0e89-4f9c-bcdf-300ab518bb11",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017598",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.82,
+                            10.7,
+                            725.5,
+                            38.91
+                        ]
+                    ],
+                    "text_description" : "기울기가 -4이고 점 $(2, -1)$을 지나는 일차함수의 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.8,
+                            70.66,
+                            189.95,
+                            97.28
+                        ]
+                    ],
+                    "text_description" : "① $y=-4 x+7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.31,
+                            128.51,
+                            189.95,
+                            325.63
+                        ]
+                    ],
+                    "text_description" : "② $y=-4 x+3$ ③ $y=-4 x-1$ ④ $y=-4 x-5$ ⑤ $y=-4 x+8$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.3,
+                            360,
+                            1044.18,
+                            427.2
+                        ]
+                    ],
+                    "text_description" : "기울기가 -4이므로 일차함수의 식을 $y=-4 x+b$로 놓을 수 있습니다. 이 직선이 점 $(2, -1)$을 지납니다:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.14,
+                            740.52,
+                            605.78,
+                            772.8
+                        ]
+                    ],
+                    "text_description" : "따라서 구하는 일차함수의 식은 $y=-4 x+7$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.82,
+                            457.64,
+                            208.34,
+                            713.92
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}-1=-4 \\cdot 2+b \\\\ -1=-8+b \\\\ b=-1+8 \\\\ b=7\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

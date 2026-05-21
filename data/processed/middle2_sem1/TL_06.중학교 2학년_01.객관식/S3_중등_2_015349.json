@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c4bf50d4-9b10-4f12-9061-b8c8f9d76432",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015349",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.93,
+                            65.19,
+                            272.57,
+                            92.41
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            420.47,
+                            115.13,
+                            607.68,
+                            185.06
+                        ]
+                    ],
+                    "text_description" : "$\\frac{9 x^{4} y^{2}}{3 x^{2} y} \\times\\left(6 x^{2} y^{3}\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.09,
+                            214.7,
+                            127.99000000000001,
+                            247.14
+                        ]
+                    ],
+                    "text_description" : "① $18 x^{4} y^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.24,
+                            254.51,
+                            127.30000000000001,
+                            401.69
+                        ]
+                    ],
+                    "text_description" : "② $18 x^{3} y^{5}$ ③ $6 x^{4} y^{5}$ ④ $6 x^{3} y^{4}$ ⑤ $6 x^{4} y^{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            277.26,
+                            559.46,
+                            743.82,
+                            636.24
+                        ]
+                    ],
+                    "text_description" : "$\\frac{9 x^{4} y^{2}}{3 x^{2} y}=3 x^{2} y, \\quad 3 x^{2} y \\times 6 x^{2} y^{3}=18 x^{4} y^{5}$"
+                }
+            ]
+        }
+    ]
+}

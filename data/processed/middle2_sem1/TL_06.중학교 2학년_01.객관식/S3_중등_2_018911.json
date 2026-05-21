@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2b738b75-aedb-45e6-8845-9e97bf6da4de",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018911",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.24,
+                            4.02,
+                            1393.24,
+                            31.52
+                        ]
+                    ],
+                    "text_description" : "길이가 20mm 인 용수철의 아래 끝에 추를 매달아 용수철의 길이를 재었더니 다음과 같았다. 추의 무게를 $x \\mathrm{~g}$, 용수철의 길이를 $y \\mathrm{~mm}$라고 할 때, $y$를 $x$에 관한 식으로 나타낸 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.13,
+                            39.32,
+                            450.97,
+                            109.36
+                        ]
+                    ],
+                    "text_description" : "<div class=\"table_tabular \" style=\"text-align: center\"> <div class=\"inline-tabular\"><table id=\"tabular\"> <tbody> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">추의 무게(g)</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">0</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">10</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">20</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">50</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">80</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">100</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">용수철의 길이(mm)</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">20</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">24</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">28</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">40</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">52</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">60</td> </tr> </tbody> </table> </div></div>"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.31,
+                            110.18,
+                            175.72,
+                            273.61
+                        ]
+                    ],
+                    "text_description" : "용수철의 아래 끝에 추를 매달아은 용수철"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68,
+                            275.5,
+                            209,
+                            301.5
+                        ]
+                    ],
+                    "text_description" : "① $y=0. 4x+20$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            304.5,
+                            206,
+                            428.5
+                        ]
+                    ],
+                    "text_description" : "② $y=4 x+20$ ③ $y=60-0. 4 x$ ④ $y=60-4 x$ ⑤ $y=60-8 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56,
+                            484.5,
+                            351,
+                            601.5
+                        ]
+                    ],
+                    "text_description" : "구하는 식을 $y=a x+b$라고 놓으면 $x=0$ 일 때, $y=20$ 이므로 $y=a x+20$ $x=10, y=24$를 대입하면 $a=0. 4$ $\\therefore \\quad y=0. 4 x+20$"
+                }
+            ]
+        }
+    ]
+}

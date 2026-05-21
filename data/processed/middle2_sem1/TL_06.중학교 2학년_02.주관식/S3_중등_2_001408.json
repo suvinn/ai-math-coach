@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5f5b8a8c-c6e2-4dbc-90b8-feedc11b890c",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001408",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73.91,
+                            28.61,
+                            395.32,
+                            67.52
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.62,
+                            86.92,
+                            140.4,
+                            158.11
+                        ]
+                    ],
+                    "text_description" : "③ $\\left(\\frac{y^{3}}{x^{4}}\\right)^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.4,
+                            227.07,
+                            62.3,
+                            275.68
+                        ]
+                    ],
+                    "text_description" : "③ $\\frac{y^{15}}{x^{20}}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -0.31,
+                            168.4,
+                            203.19,
+                            220.47
+                        ]
+                    ],
+                    "text_description" : "③ $\\left(\\frac{y^{3}}{x^{4}}\\right)^{5}=\\frac{y^{3 \\times 5}}{x^{4 \\times 5}}=\\frac{y^{15}}{x^{20}}$"
+                }
+            ]
+        }
+    ]
+}

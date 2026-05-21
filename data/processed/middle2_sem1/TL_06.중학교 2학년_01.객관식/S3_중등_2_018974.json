@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "bce7fdcb-e880-449c-b698-0343e3788e1d",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018974",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.8,
+                            11,
+                            528.8,
+                            36
+                        ]
+                    ],
+                    "text_description" : "다음 그림은 $a x-b y+c=0$의 그래프이다. 다음 중 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.8,
+                            48,
+                            221.8,
+                            187
+                        ]
+                    ],
+                    "text_description" : "이미지는 직교 좌표계(데카르트 평면)이다. X축과 Y축이 서로 수직으로 교차하며, 교차하는 지점은 원점 O이다. X축은 오른쪽으로, Y축은 위쪽으로 향해 있다. 대각선으로 상승하는 직선이 하나 그려져 있으며, 기울기가 양수인 것으로 보인다. 이 직선은 원점을 지나가며, X축과 Y축의 방향으로 확장된다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.8,
+                            253,
+                            231.8,
+                            274
+                        ]
+                    ],
+                    "text_description" : "③ $a>0, b>0, c<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.8,
+                            190,
+                            232.8,
+                            243
+                        ]
+                    ],
+                    "text_description" : "① $a>0, b>0, c>0$ ② $a<0, b<0, c<0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.8,
+                            284,
+                            231.8,
+                            337
+                        ]
+                    ],
+                    "text_description" : "④ $a>0, b<0, c<0$ ⑤ $a<0, b>0, c>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.8,
+                            412,
+                            421.8,
+                            657
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}a x-b y+c=0 \\Rightarrow y=\\frac{a}{b} x+\\frac{c}{b} \\\\ \\frac{a}{b}>0 \\text { 이므로 } \\\\ a>0, b>0 \\text { 또는 } a<0, b<0 \\\\ \\frac{c}{b}<0 \\text { 이므로 } \\\\ b<0, c>0 \\text { 또는 } b>0, c<0 \\\\ \\therefore \\quad a>0, b>0, c<0 \\text { 또는 } a<0, b<0, c>0\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

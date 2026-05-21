@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "49226dc8-3aea-493d-8485-903134361485",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017395",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.47,
+                            9.06,
+                            241.41,
+                            36.92
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.85,
+                            45.85,
+                            267.26,
+                            80.17
+                        ]
+                    ],
+                    "text_description" : "$(8 p-5 q)+(2 p+3 q)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17,
+                            140.98,
+                            150.49,
+                            167.25
+                        ]
+                    ],
+                    "text_description" : "② $10 p-2 q$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.9,
+                            180.92,
+                            153.64,
+                            288.66
+                        ]
+                    ],
+                    "text_description" : "③ $6 p-2 q$ ④ $10 p+2 q$ ⑤ $6 p+8 q$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.47,
+                            100.34,
+                            148.91,
+                            128.19
+                        ]
+                    ],
+                    "text_description" : "① $10 p-8 q$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.59,
+                            315.81,
+                            710.73,
+                            347.35
+                        ]
+                    ],
+                    "text_description" : "$(8 p-5 q)+(2 p+3 q)=(8 p+2 p)+(-5 q+3 q)=10 p-2 q$"
+                }
+            ]
+        }
+    ]
+}

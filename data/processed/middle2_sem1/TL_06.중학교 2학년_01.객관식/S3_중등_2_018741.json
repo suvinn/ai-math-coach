@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "396bc74c-6243-49e8-8c08-592155d1856f",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018741",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.27,
+                            10.23,
+                            580.27,
+                            37.23
+                        ]
+                    ],
+                    "text_description" : "$f(x)=a x+1$ 일 때, $f(f(f(f(f(f(1))))))$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            96.27,
+                            179.77,
+                            339.27,
+                            205.77
+                        ]
+                    ],
+                    "text_description" : "$ a^{6}+a^{5}+a^{4}+a^{3}+a^{2}+a+1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.27,
+                            270.77,
+                            349.27,
+                            637.77
+                        ]
+                    ],
+                    "text_description" : "$f(1) = a + 1$ $f(f(1)) = f(a+1) \\\\ = a(a+1) + 1 = a^2 + a + 1$ $f(f(f(1))) = f(a^2 + a + 1) \\\\ = a(a^2 + a + 1) + 1 \\\\ = a^3 + a^2 + a + 1$ $\\cdots$ $f(f(f(f(f(f(1)))))) \\\\ = a^6 + a^5 + a^4 + a^3 + a^2 + a + 1$ ```"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.27,
+                            47.77,
+                            297.27,
+                            172.77
+                        ]
+                    ],
+                    "text_description" : "① $1$ ② $a^{2}+a+1$ ③ $a^{4}+a^{3}+a^{2}+a+1$ ④ $a^{5}+a^{4}+a^{3}+a^{2}+a+1$"
+                }
+            ]
+        }
+    ]
+}

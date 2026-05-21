@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f662ce19-8d63-451b-90b9-a896425665a7",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016022",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.73,
+                            6.94,
+                            459.2,
+                            30.64
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 만족시키는 $x$와 $y$를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            388.93,
+                            51.19,
+                            529.51,
+                            127.82
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}y=x-1 \\\\ 2 x+y=11\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.31,
+                            188.65,
+                            104.47,
+                            217.09
+                        ]
+                    ],
+                    "text_description" : "① $(4, 3)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.31,
+                            221.83,
+                            107.63,
+                            356.93
+                        ]
+                    ],
+                    "text_description" : "② $(3, 2)$ ③ $(5, 4)$ ④ $(6, 5)$ ⑤ $(7, 6)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.99,
+                            377.99,
+                            926.9,
+                            551.79
+                        ]
+                    ],
+                    "text_description" : "1. 첫 번째 식에서 $y=x-1$. 이를 두 번째 식에 대입: \\[ 2 x+(x-1)=11 \\Longrightarrow 2 x+x-1=11 \\Longrightarrow 3 x-1=11 \\Longrightarrow 3 x=12 \\Longrightarrow x=4. \\] 2. $x=4$를 첫 번째 식에 대입하여 $y$를 구함: \\[ y=4-1 \\Longrightarrow y=3 \\]"
+                }
+            ]
+        }
+    ]
+}

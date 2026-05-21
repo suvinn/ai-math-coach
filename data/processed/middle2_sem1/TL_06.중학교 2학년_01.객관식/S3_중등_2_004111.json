@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ac10fd97-cfdd-47ac-bd6e-23e5b091447c",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004111",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -0.51,
+                            11.91,
+                            743.24,
+                            81.41
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=4x$의 그래프를 $y$축의 방향으로 -3만큼 평행이동한 그래프의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.49,
+                            84.63,
+                            130.74,
+                            114.63
+                        ]
+                    ],
+                    "text_description" : "① $y=4x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            248.24,
+                            84.63,
+                            631.99,
+                            144.63
+                        ]
+                    ],
+                    "text_description" : "② $y=4 x+3$ ③ $y=4(x-3)$ ⑤ $y=4 x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.74,
+                            115.88,
+                            144.49,
+                            145.88
+                        ]
+                    ],
+                    "text_description" : "④ $y=4(x+3)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.24,
+                            169.63,
+                            125.74,
+                            200.88
+                        ]
+                    ],
+                    "text_description" : "$y=4x-3$"
+                }
+            ]
+        }
+    ]
+}

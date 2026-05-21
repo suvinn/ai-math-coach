@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5cd1f092-0f5c-4843-82bc-a5e757599237",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018770",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.28,
+                            15.24,
+                            1208.28,
+                            41.24
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+2$의 그래프가 점 $(2, 3)$을 지날 때, 이 일차함수의 그래프의 $y$ 절편은 $q$ 이고 점 $(r, 4)$를 지난다. 이때, $a q r$의 값은? (단, $a$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.28,
+                            171.77,
+                            107.28,
+                            194.77
+                        ]
+                    ],
+                    "text_description" : "$④$ $4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.28,
+                            54.77,
+                            121.28,
+                            163.77
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{1}{2}$ ② $1$ ③ $2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.28,
+                            203.77,
+                            109.28,
+                            224.77
+                        ]
+                    ],
+                    "text_description" : "⑤ 8"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.28,
+                            292.77,
+                            354.28,
+                            374.77
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}y=a x+2 \\text { 에 } x=2, y=3 \\text { 을 대입하면 } \\\\ 3=2 a+2 \\quad \\therefore \\quad a=\\frac{1}{2}\\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.28,
+                            434.77,
+                            364.28,
+                            572.77
+                        ]
+                    ],
+                    "text_description" : "$y$ 절편 $q=2$ $y=\\frac{1}{2} x+2$에 $x=r, y=4$를 대입하면 $4=\\frac{1}{2} r+2 \\quad \\therefore \\quad r=4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.28,
+                            381.77,
+                            198.28,
+                            428.77
+                        ]
+                    ],
+                    "text_description" : "$\\therefore \\quad y=\\frac{1}{2} x+2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.28,
+                            582.77,
+                            257.28,
+                            630.77
+                        ]
+                    ],
+                    "text_description" : "$\\therefore \\quad a q r=\\frac{1}{2} \\times 2 \\times 4=4$"
+                }
+            ]
+        }
+    ]
+}

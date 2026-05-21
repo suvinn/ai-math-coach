@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1eed7386-ad5b-443c-ac49-9f1134e3e093",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018297",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.03,
+                            19.5,
+                            332.3,
+                            50.9
+                        ]
+                    ],
+                    "text_description" : "다음 부등식의 해를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.46,
+                            78.73,
+                            152.47,
+                            108.71
+                        ]
+                    ],
+                    "text_description" : "$3 x+7>16$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.6,
+                            190.06,
+                            110.37,
+                            215.75
+                        ]
+                    ],
+                    "text_description" : "① $x>3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.6,
+                            225.46,
+                            111.08,
+                            362.47
+                        ]
+                    ],
+                    "text_description" : "② $x \\geq 3$ ③ $x<3$ ④ $x \\leq 3$ ⑤ $x>2$"
+                }
+            ]
+        },
+        {
+            "class_num" : "3",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.45,
+                            401.01,
+                            158.89,
+                            428.84
+                        ]
+                    ],
+                    "text_description" : "$3 x+7>16$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.56,
+                            456.67,
+                            132.78,
+                            482.36
+                        ]
+                    ],
+                    "text_description" : "$3 x>9$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.14,
+                            510.19,
+                            123.93,
+                            535.17
+                        ]
+                    ],
+                    "text_description" : "$x>3$"
+                }
+            ]
+        }
+    ]
+}

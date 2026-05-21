@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "769155eb-9e4c-4e3a-a2c6-a08aa17a2600",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016027",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.5,
+                            55.92,
+                            596.5,
+                            153.92
+                        ]
+                    ],
+                    "text_description" : "다음 중 부등식 $4 x-7>2 x+1$의 해가 되는 것은? 보기"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.5,
+                            175.92,
+                            68.5,
+                            210.92
+                        ]
+                    ],
+                    "text_description" : "① 5"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.5,
+                            218.5,
+                            70.5,
+                            384.5
+                        ]
+                    ],
+                    "text_description" : "② 4 ③ 3 ④ 2 ⑤ 1"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.5,
+                            426.5,
+                            226.5,
+                            467.5
+                        ]
+                    ],
+                    "text_description" : "1. 부등식을 정리:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.5,
+                            521.5,
+                            851.5,
+                            550.5
+                        ]
+                    ],
+                    "text_description" : "2. $x>4$ 이므로 $x=5$는 부등식을 만족하며, 나머지 값들은 만족하지 않음."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            305.5,
+                            460.5,
+                            841.5,
+                            505.5
+                        ]
+                    ],
+                    "text_description" : "$4 x-7>2 x+1 \\Longrightarrow 2 x>8 \\Longrightarrow x>4$"
+                }
+            ]
+        }
+    ]
+}

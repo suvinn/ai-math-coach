@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f52f7b48-986d-4114-954e-b5d447d8ed28",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016006",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.06,
+                            0,
+                            434.56,
+                            22.75
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 풀고 $x$와 $y$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            367.44,
+                            42.66,
+                            523.29,
+                            119.45
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}5 x+2 y=18 \\\\ x+y=6\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.92,
+                            140.5,
+                            166.65,
+                            166.09
+                        ]
+                    ],
+                    "text_description" : "① $x=2, y=4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.92,
+                            174.62,
+                            167.79,
+                            299.76
+                        ]
+                    ],
+                    "text_description" : "② $x=3, y=3$ ③ $x=4, y=2$ ④ $x=5, y=1$ ⑤ $x=6, y=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.76,
+                            313.41,
+                            669.48,
+                            618.86
+                        ]
+                    ],
+                    "text_description" : "1. 두 번째 방정식 $x+y=6$에서 $y=6-x$로 나타냅니다. 2. 첫 번째 방정식에 $y=6-x$를 대입합니다: \\[ \\begin{aligned} 5 x+2(6-x) & =18 \\\\ 5 x+12-2 x & =18 \\\\ 3 x+12=18 \\quad \\Rightarrow \\quad 3 x & =6 \\quad \\Rightarrow \\quad x=2 \\end{aligned} \\] 3. $x=2$를 $x+y=6$에 대입하여 $y$를 구합니다: \\[ 2+y=6 \\quad \\Rightarrow \\quad y=4 \\]"
+                }
+            ]
+        }
+    ]
+}

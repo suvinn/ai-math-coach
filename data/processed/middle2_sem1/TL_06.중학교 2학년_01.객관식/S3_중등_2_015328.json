@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "609df27c-9229-4ace-8f79-a22cba3637cd",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015328",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19,
+                            49.44,
+                            606,
+                            134.44
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오. \\[ 3 a-\\{4 a-(5 b-3 a)\\} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20,
+                            275,
+                            132,
+                            302
+                        ]
+                    ],
+                    "text_description" : "④ $2 a-5 b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20,
+                            166,
+                            132,
+                            265
+                        ]
+                    ],
+                    "text_description" : "① $6 a+5 b$ ② $6 a-5 b$ ③ $2 a+5 b$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21,
+                            313,
+                            132,
+                            338
+                        ]
+                    ],
+                    "text_description" : "⑤ $6 a+8 b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.25,
+                            437.75,
+                            347.5,
+                            466.5
+                        ]
+                    ],
+                    "text_description" : "괄호를 풀고 동류항을 정리합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.25,
+                            492.75,
+                            992.5,
+                            524
+                        ]
+                    ],
+                    "text_description" : "$3 a-\\{4 a-(5 b-3 a)\\}=3 a-(4 a-5 b+3 a)=3 a-4 a+5 b-3 a=-4 a+5 b=2 a-5 b$"
+                }
+            ]
+        }
+    ]
+}

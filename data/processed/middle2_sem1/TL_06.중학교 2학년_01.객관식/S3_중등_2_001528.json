@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "bd8f1716-1213-47df-8ccb-2cf43c90c408",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001528",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            75.28,
+                            30.23,
+                            617.28,
+                            69.23
+                        ]
+                    ],
+                    "text_description" : "다음 중 계산 결과가 나머지 넷과 다른 하나는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            83.28,
+                            179.77,
+                            241.28,
+                            225.77
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\left(2^{6}\\right)^{2} \\div 2^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            78.28,
+                            90.77,
+                            516.28,
+                            177.77
+                        ]
+                    ],
+                    "text_description" : "① $4^{2}+4^{2}+4^{2}+4^{2}$ ② $2^{2} \\times 2^{4}$ ③ $\\left(2^{3}\\right)^{2}$ ④ $4^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            80.28,
+                            230.77,
+                            491.28,
+                            369.77
+                        ]
+                    ],
+                    "text_description" : "① $4^{2}+4^{2}+4^{2}+4^{2}=4 \\times 4^{2}=2^{2} \\times\\left(2^{2}\\right)^{2}=2^{2} \\times 2^{4}=2^{6}$ ② $2^{2} \\times 2^{4}=2^{2+4}=2^{6}$ ③ $\\left(2^{3}\\right)^{2}=2^{3 \\times 2}=2^{6}$ ④ $4^{3}=\\left(2^{2}\\right)^{3}=2^{2 \\times 3}=2^{6}$ ⑤ $\\left(2^{6}\\right)^{2} \\div 2^{2}=2^{12} \\div 2^{2}=2^{12-2}=2^{10}$"
+                }
+            ]
+        }
+    ]
+}

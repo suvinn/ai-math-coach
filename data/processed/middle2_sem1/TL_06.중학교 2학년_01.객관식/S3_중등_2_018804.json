@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e810e767-8b00-458d-8cc4-5c4420097b08",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018804",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.77,
+                            13.23,
+                            492.77,
+                            37.23
+                        ]
+                    ],
+                    "text_description" : "다음 일차함수의 그래프 중에서 서로 평행하지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.23,
+                            259.3,
+                            503.5,
+                            278.6
+                        ]
+                    ],
+                    "text_description" : "①, ③, ④, ⑤ 모두 기울기가 $2$인 직선이므로 서로 평행하다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            74.0,
+                            48.0,
+                            175.0,
+                            67.0
+                        ]
+                    ],
+                    "text_description" : "① $y=2 x+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71.0,
+                            109.0,
+                            179.0,
+                            194.0
+                        ]
+                    ],
+                    "text_description" : "③ $y=2 x+1$ ④ $y=2 x+6$ ⑤ $y=2 x+2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            94.0,
+                            80.0,
+                            182.0,
+                            99.0
+                        ]
+                    ],
+                    "text_description" : "$y=-3 x-2$"
+                }
+            ]
+        }
+    ]
+}

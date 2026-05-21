@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "18a910c0-131d-4a93-a097-08603b15cbcb",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017455",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            34.88,
+                            13.54,
+                            548.42,
+                            87.78
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개한 결과로 올바른 식을 고르시오. \\[ 2 x(3 x+4) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            35.9,
+                            107.75,
+                            177.22,
+                            138.47
+                        ]
+                    ],
+                    "text_description" : "① $6 x^{2}+8 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            35.9,
+                            149.27,
+                            192.06,
+                            305.89
+                        ]
+                    ],
+                    "text_description" : "② $6 x^{2}-8 x$ ③ $6 x^{2}+4 x$ ④ $2 x^{2}+8 x$ ⑤ $6 x^{2}+10 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.03,
+                            350.28,
+                            556.1,
+                            385.08
+                        ]
+                    ],
+                    "text_description" : "$2 x(3 x+4)=2 x \\times 3 x+2 x \\times 4=6 x^{2}+8 x$"
+                }
+            ]
+        }
+    ]
+}

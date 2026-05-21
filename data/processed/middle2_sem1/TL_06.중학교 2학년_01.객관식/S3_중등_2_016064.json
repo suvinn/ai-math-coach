@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4289462b-eb69-494d-93be-b8d7b649f7d4",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016064",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.5,
+                            58.42,
+                            675.5,
+                            101.42
+                        ]
+                    ],
+                    "text_description" : "두 점 $(3, 7)$과 $(6, 4)$를 지나는 직선의 기울기는 얼마인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.5,
+                            177.42,
+                            75.5,
+                            211.42
+                        ]
+                    ],
+                    "text_description" : "② -1"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.5,
+                            119,
+                            60.5,
+                            154
+                        ]
+                    ],
+                    "text_description" : "① 1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.5,
+                            221,
+                            75.5,
+                            393
+                        ]
+                    ],
+                    "text_description" : "③ $\\frac{2}{3}$ ④ -2 ⑤ $\\frac{3}{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.5,
+                            424,
+                            303.5,
+                            459
+                        ]
+                    ],
+                    "text_description" : "기울기는 다음과 같습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            305.5,
+                            419,
+                            588.5,
+                            472
+                        ]
+                    ],
+                    "text_description" : "$\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{4-7}{6-3}=\\frac{-3}{3}=-1$"
+                }
+            ]
+        }
+    ]
+}

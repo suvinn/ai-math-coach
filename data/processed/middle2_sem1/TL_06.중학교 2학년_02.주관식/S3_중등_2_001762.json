@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "94b4cd88-2c71-45db-992c-6a5ff3e4e8bc",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001762",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.72,
+                            146.82,
+                            296.84,
+                            274.54
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같이 세 직선 $3 x-4 y+7=0, x=3$, $y=1$로 둘러싸인 도형의 넓이를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            314.76,
+                            150.1,
+                            537.48,
+                            322.82
+                        ]
+                    ],
+                    "text_description" : "- 좌표축: $x$축, $y$축 - 수평선: $y=1$ - 수직선: $x=3$ - 선: $3x - 4y + 7 = 0$ - 포인트: $A$, $B$, $C$, $O$ (원점) - 음영으로 표시된 삼각형: $ABC$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            82.44,
+                            121.86,
+                            94.6,
+                            137.22
+                        ]
+                    ],
+                    "text_description" : "$6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.44,
+                            24.58,
+                            399.88,
+                            118.02
+                        ]
+                    ],
+                    "text_description" : "점 $A$는 $3x-4y+7=0$과 $y=1$의 교점이므로 $\\mathrm{A}(-1, 1)$ 점 $B$는 $x=3$과 $y=1$의 교점이므로 $\\mathrm{B}(3, 1)$ 점 $C$는 $3x-4y+7=0$과 $x=3$의 교점이므로 $3x-4y+7=0$1 따라서 도형의 넓이는 $3x-4y+7=0$2."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            404.44,
+                            26.58,
+                            534.56,
+                            136.58
+                        ]
+                    ],
+                    "text_description" : "- 좌표 평면 - 수직선: \\(y \\)축, \\(x = 3 \\) - 수평선: \\(y \\) = 1, \\(y = 4 \\) - 직선: \\(3x - 4y + 7 = 0 \\) - 점: \\(O(0, 0) \\), \\(A(1, 0) \\), \\(B(3, 1) \\), \\(C(3, 4) \\) - 음수 축: \\(-1 \\) 표시 - 음영 처리된 삼각형 ABC"
+                }
+            ]
+        }
+    ]
+}

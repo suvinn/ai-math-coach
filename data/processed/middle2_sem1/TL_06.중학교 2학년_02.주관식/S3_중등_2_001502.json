@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9bca02fa-4479-466a-b3f9-179e1514c878",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001502",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            76.5,
+                            15.92,
+                            346.5,
+                            53.92
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.039999999999999,
+                            59.79,
+                            289.05,
+                            118.19
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{4}{3} x(3 x-12 y+9)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.25,
+                            244.72,
+                            170.12,
+                            267.76
+                        ]
+                    ],
+                    "text_description" : "④ $4 x^{2}-16 x y+12 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.86,
+                            122.36,
+                            367.75,
+                            234.48
+                        ]
+                    ],
+                    "text_description" : "④ $\\begin{aligned} & \\frac{4}{3} x(3 x-12 y+9) \\\\ & =\\frac{4}{3} x \\times 3 x+\\frac{4}{3} x \\times(-12 y) \\times+\\frac{4}{3} x \\times 9 \\\\ & =4 x^{2}-16 x y+12 x\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

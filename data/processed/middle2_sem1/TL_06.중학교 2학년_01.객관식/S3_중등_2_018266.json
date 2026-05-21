@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "27538d33-0d72-41d8-bb69-7d29710394fa",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018266",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.22,
+                            6.4,
+                            608.7,
+                            35.48
+                        ]
+                    ],
+                    "text_description" : "두 점 (3, -2), (5, 6)을 지나는 직선의 방정식을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            40.94,
+                            62.14,
+                            193.98,
+                            96.22
+                        ]
+                    ],
+                    "text_description" : "$y=4 x-14$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.94,
+                            105.24,
+                            193.98,
+                            260.76
+                        ]
+                    ],
+                    "text_description" : "② $y=4 x-10$ ③ $y=4 x+2$ ④ $y=4 x+6$ ⑤ $y=2 x+4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.02,
+                            282.38,
+                            525.5,
+                            405.82
+                        ]
+                    ],
+                    "text_description" : "기울기 $m=\\frac{6-(-2)}{5-3}=\\frac{8}{2}=4$. 직선의 방정식은 $y-(-2)=4(x-3)$ 입니다. 따라서 $y=4 x-14$ 입니다."
+                }
+            ]
+        }
+    ]
+}

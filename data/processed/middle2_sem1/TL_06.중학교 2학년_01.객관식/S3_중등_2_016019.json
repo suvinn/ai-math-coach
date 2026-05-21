@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e57d3e6f-bcaa-4747-8e75-e5dd70b67e69",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016019",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22,
+                            51.92,
+                            430,
+                            78.92
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 풀어 $x$와 $y$를 구하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22,
+                            174.5,
+                            78,
+                            206.5
+                        ]
+                    ],
+                    "text_description" : "보기"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            360,
+                            95.92,
+                            592,
+                            158.92
+                        ]
+                    ],
+                    "text_description" : "$\\frac{x+y}{3}=\\frac{2 x-y}{6}=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25,
+                            218.5,
+                            190,
+                            252.5
+                        ]
+                    ],
+                    "text_description" : "① $x=3, y=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25,
+                            256.5,
+                            204,
+                            396.5
+                        ]
+                    ],
+                    "text_description" : "② $x=4, y=-1$ ③ $x=2, y=1$ ④ $x=1, y=2$ ⑤ $x=0, y=3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.87,
+                            413.84,
+                            930.37,
+                            688.84
+                        ]
+                    ],
+                    "text_description" : "1. 첫 번째 방정식: $\\frac{x+y}{3}=1 \\rightarrow x+y=3$. 2. 두 번째 방정식: $\\frac{2 x-y}{6}=1 \\rightarrow 2 x-y=6$. 3. 첫 번째 식에서 $y=3-x$. 이를 두 번째 식에 대입: \\[ 2 x-(3-x)=6 \\Longrightarrow 2 x-3+x=6 \\Longrightarrow 3 x-3=6 \\Longrightarrow 3 x=9 \\Longrightarrow x=3. \\] 4. $x=3$를 첫 번째 식에 대입하여 $y$를 구함: \\[ 3+y=3 \\Longrightarrow y=0 \\]"
+                }
+            ]
+        }
+    ]
+}

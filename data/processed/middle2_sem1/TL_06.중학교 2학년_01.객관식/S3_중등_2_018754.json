@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "72250ec7-2601-4658-820a-6a75174c6e9e",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018754",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.97,
+                            18.6,
+                            614.57,
+                            61.4
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=\\frac{2}{3} x-4$의 그래프와 $x$ 축, $y$ 축으로 둘러싸인 부분의 넓이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.77,
+                            138.8,
+                            111.77,
+                            158.4
+                        ]
+                    ],
+                    "text_description" : "③ $12$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.17,
+                            75.2,
+                            106.17,
+                            125.6
+                        ]
+                    ],
+                    "text_description" : "① $4$ ② $6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.37,
+                            169.6,
+                            117.37,
+                            220
+                        ]
+                    ],
+                    "text_description" : "④ $20$ ⑤ $24$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.17,
+                            293.16,
+                            735.77,
+                            333.96
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=\\frac{2}{3} x-4$의 $x$ 절편은 $6, y$ 절편은 $- 4$ 이므로 그래프를 그리면 다음 그림과 같다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.17,
+                            558.96,
+                            587.77,
+                            599.56
+                        ]
+                    ],
+                    "text_description" : "구하는 부분의 넓이는 색칠한 직각삼각형의 넓이이므로 $\\frac{1}{2} \\times 6 \\times 4=12$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.77,
+                            348.56,
+                            289.37,
+                            548.36
+                        ]
+                    ],
+                    "text_description" : "$xy$좌표평면 위에 점 $(6, -4)$를 지나는 직선이 있으며 $x$축, $ y$축으로 둘러싸인 부분이 삼각형 모양으로 색칠되어있다."
+                }
+            ]
+        }
+    ]
+}

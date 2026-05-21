@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fde9cb7a-5003-45d8-b8d5-66b008f963c0",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018281",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.28,
+                            19.73,
+                            333.28,
+                            46.73
+                        ]
+                    ],
+                    "text_description" : "다음 부등식의 해를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.28,
+                            81.27,
+                            139.28,
+                            107.27
+                        ]
+                    ],
+                    "text_description" : "$6 x+4 \\geq 22$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.28,
+                            181.27,
+                            101.28,
+                            206.27
+                        ]
+                    ],
+                    "text_description" : "① $x \\geq 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.28,
+                            545.27,
+                            84.28,
+                            569.27
+                        ]
+                    ],
+                    "text_description" : "① $x \\geq 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.28,
+                            215.27,
+                            103.28,
+                            337.27
+                        ]
+                    ],
+                    "text_description" : "② $x>3$ ③ $x \\leq 3$ ④ $x \\geq 4$ ⑤ $x>4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            31.28,
+                            383.27,
+                            153.28,
+                            505.27
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} 6 x+4 & \\geq 22 \\\\ 6 x & \\geq 18 \\\\ x & \\geq 3\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

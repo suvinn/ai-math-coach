@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b86bab1d-90e1-4aa6-bb54-60cd509d55ff",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001548",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.5,
+                            8.82,
+                            264.9,
+                            32.02
+                        ]
+                    ],
+                    "text_description" : "다음 보기 중 부등식의 개수는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.9,
+                            38.42,
+                            652.9,
+                            159.22
+                        ]
+                    ],
+                    "text_description" : "보기 ㄱ. $3 x+2$ ㄴ. $-2<-5$ ㄷ. $8 x-1<5 x$ ㄹ. $3 x+14 \\neq 0$ ㅁ. $3(x+4)=3 x+12$ ㅂ. $2 x+1 \\geq 2 x+3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            447.3,
+                            174.42,
+                            481.7,
+                            196.02
+                        ]
+                    ],
+                    "text_description" : "③ 3"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.7,
+                            175.22,
+                            280.1,
+                            224.82
+                        ]
+                    ],
+                    "text_description" : "① 1 ② 2 ④ 4 ⑤ 5"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.5,
+                            233.62,
+                            588.1,
+                            266.42
+                        ]
+                    ],
+                    "text_description" : "부등호를 사용하여 수 또는 식의 대소 관계를 나타낸 것은 ㄴ. $-2<-5$, ㄷ. $8 x-1<5 x$, ㅂ. $2 x+1 \\geq 2 x+3$이다. 따라서 부등식의 개수는 3이다."
+                }
+            ]
+        }
+    ]
+}

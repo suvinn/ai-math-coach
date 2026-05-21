@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "87fce25f-aca0-4394-a6df-3eaba03bb387",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001619",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.75,
+                            4.39,
+                            490.25,
+                            116.89
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같은 $\\triangle \\mathrm{ABC}$의 넓이는 $28 \\mathrm{~cm}^{2}$ 이고, 점 P는 $\\overline{\\mathrm{BC}}$ 위를 움직이는 점이다. $\\overline{\\mathrm{PC}}=x \\mathrm{~cm}$ 일 때, $\\triangle \\mathrm{ABP}$의 넓이를 $y \\mathrm{~cm}^{2}$라고 한다. 이때 $x$와 $y$ 사이의 관계를 식으로 나타내시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            499.75,
+                            10.370000000000001,
+                            657.75,
+                            168.62
+                        ]
+                    ],
+                    "text_description" : "이 도형의 주요 특징과 측정값은 다음과 같습니다: - **도형 유형**: 삼각형 - **꼭짓점**: A, B, C - **선분**: AP - **밑변 BC**:8cm 추가적인 측정값은 주어진 정보에 따라 변경될 수 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.75,
+                            225.12,
+                            142.75,
+                            255.12
+                        ]
+                    ],
+                    "text_description" : "$y=-\\frac{7}{2} x+28$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.5,
+                            121.37,
+                            409,
+                            223.87
+                        ]
+                    ],
+                    "text_description" : "$\\triangle \\mathrm{ABC}$의 넓이가 $28 \\mathrm{~cm}^{2}$ 이므로 \\[ \\begin{array}{l} \\triangle \\mathrm{ABC}=\\frac{1}{2} \\times \\overline{\\mathrm{BC}} \\times\\left(\\text { (높이) }, 28=\\frac{1}{2} \\times 8 \\times(\\text { (높이) }, (\\text { 높이 })=7(\\mathrm{~cm})\\right. \\\\ \\triangle \\mathrm{ABP}=\\frac{1}{2} \\times \\overline{\\mathrm{BP}} \\times(\\text { 높이 }) \\text { 이고 } \\overline{\\mathrm{PC}}=x \\mathrm{~cm} \\text { 이므로 } y=\\frac{1}{2} \\times(8-x) \\times 7 \\end{array} \\] 따라서 $y=-\\frac{7}{2} x+28$ 이다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "bd32f1b9-1238-49cd-9e2b-4398900d9af3",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018743",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.34,
+                            11.42,
+                            508.09,
+                            42.17
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수 $f(x)=3 x-2$의 함숫값을 잘못 구한 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            80.84,
+                            269.09,
+                            282.09,
+                            427.84
+                        ]
+                    ],
+                    "text_description" : "$f(-1)=3 \\times(-1)-2=-5$  $f(0)=3 \\times 0-2=-2$  $f(1)=3 \\times 1-2=1$  $f(2)=3 \\times 2-2=4$  $f(3)=3 \\times 5-2=13$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.09,
+                            181.59,
+                            165.84,
+                            206.59
+                        ]
+                    ],
+                    "text_description" : "⑤ $f(5)=13$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.09,
+                            50.34,
+                            179.59,
+                            137.84
+                        ]
+                    ],
+                    "text_description" : "① $f(-1)=-5$ ② $f(0)=-2$ ③ $f(1)=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.84,
+                            144.84,
+                            151.34,
+                            175.34
+                        ]
+                    ],
+                    "text_description" : "④ $f(2)=5$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b88825b7-49f4-47f0-8935-ad85049320e5",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001566",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.65,
+                            21.63,
+                            309.31,
+                            49.28
+                        ]
+                    ],
+                    "text_description" : "$a>b$ 일 때, 다음 중 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            243.77,
+                            100.48,
+                            368.19,
+                            121.99
+                        ]
+                    ],
+                    "text_description" : "④ $-2 a>-2 b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.16,
+                            165.32,
+                            420.41,
+                            183.75
+                        ]
+                    ],
+                    "text_description" : "④ $a>b$의 양변에 -2를 곱하면 부등호의 방형이 바뀌므로 $-2 a<-2 b$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.14,
+                            64.2,
+                            172.09,
+                            158.85
+                        ]
+                    ],
+                    "text_description" : "① $a+3>b+3$ ③ $\\frac{a}{4}>\\frac{b}{4}$ ⑤ $3-a<3-b$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            244.28,
+                            65.48,
+                            330.3,
+                            84.42
+                        ]
+                    ],
+                    "text_description" : "② $3 a>3 b$"
+                }
+            ]
+        }
+    ]
+}

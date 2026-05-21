@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "30c3c941-bdb6-4480-ad2a-004d08483565",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001610",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.04,
+                            10.24,
+                            443.64,
+                            64
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수 $y=-2 x$의 그래프를 평행이동하여 일차함수 $y=-2 x+3$의 그래프를 옳게 그린 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.04,
+                            497.92,
+                            442.36,
+                            533.12
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-2 x+3$의 그래프는 일치함수 $y=-2 x$의 그래프를 $y$ 축의 앙의 방 항으로 3만큼 평행이동한 것이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.04,
+                            221.92,
+                            239.36,
+                            350.12
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-2 x+3$의 그래프는 일치함수 $y=-2 x$의 그래프를 $y$ 축의 앙의 방 항으로 3만큼 평행이동한 것이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 4,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.48,
+                            72.32,
+                            227.96,
+                            212.48
+                        ]
+                    ],
+                    "text_description" : "① 일차함수 $y=-2 x$의 그래프가 x축으로 3 이동하여 $y=-2x+3$이 되었다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            242.68,
+                            75.52,
+                            446.84,
+                            213.12
+                        ]
+                    ],
+                    "text_description" : "② 일차함수 $y=-2 x$의 그래프가 x축으로 -3 이동하여 $y=-2x+3$이 되었다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            244.6,
+                            215.68,
+                            430.84,
+                            354.56
+                        ]
+                    ],
+                    "text_description" : "④ 일차함수 $y=-2 x$의 그래프가 y축으로 -3 이동하여 $y=-2x+3$이 되었다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.4,
+                            357.12,
+                            222.2,
+                            493.44
+                        ]
+                    ],
+                    "text_description" : "⑤ 일차함수 $y=-2 x$의 그래프가 y축으로 3 이동하여 $y=-2x+3$이 되었다."
+                }
+            ]
+        }
+    ]
+}

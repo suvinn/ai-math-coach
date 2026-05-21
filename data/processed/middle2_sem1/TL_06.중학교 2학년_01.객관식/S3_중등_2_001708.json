@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "801a2013-c79e-492c-b406-13ffbec44d22",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001708",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.74,
+                            88,
+                            523.14,
+                            252
+                        ]
+                    ],
+                    "text_description" : "은영이는 집에서 $3km$ 떨어진 학교에 가는 데, 아침 $7$시 반에 나와서 시속 $4km$로 걷다가 도중에 시속 $6km$로 달려서 $8$시 $10$분에 학교에 도착하였다. 걸어간 거리를 $x km$, 달려간 거리를 $y km$라고 할 때, 걸어간 거리와 달려간 거리를 구하기 위한 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            287.14,
+                            356.8,
+                            440.74,
+                            428.8
+                        ]
+                    ],
+                    "text_description" : "④ $\\left\\{\\begin{array}{l}x+y=3 \\\\ \\frac{x}{4}+\\frac{y}{6}=\\frac{2}{3}\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.14,
+                            272.4,
+                            445.54,
+                            345.6
+                        ]
+                    ],
+                    "text_description" : "① $\\left\\{\\begin{array}{l}x+y=3 \\\\ 4 x+6 y=40\\end{array}\\right. $ ② $\\left\\{\\begin{array}{l}x+y=3 \\\\ 4 x+6 y=\\frac{2}{3}\\end{array}\\right. $"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.34,
+                            355.2,
+                            215.14,
+                            512.8
+                        ]
+                    ],
+                    "text_description" : "③ $\\left\\{\\begin{array}{l}x+y=3 \\\\ \\frac{x}{4}+\\frac{y}{6}=40\\end{array}\\right. $ ⑤ $\\left\\{\\begin{array}{l}x+y=3 \\\\ \\frac{x}{4}+\\frac{y}{6}=0. 4\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.34,
+                            0.8,
+                            250.94,
+                            56.8
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}x+y=3 \\\\ \\frac{x}{4}+\\frac{y}{6}=\\frac{40}{60}\\end{array}\\right. $, 즉 $\\left\\{\\begin{array}{l}x+y=3 \\\\ \\frac{x}{4}+\\frac{y}{6}=\\frac{2}{3}\\end{array}\\right. $"
+                }
+            ]
+        }
+    ]
+}

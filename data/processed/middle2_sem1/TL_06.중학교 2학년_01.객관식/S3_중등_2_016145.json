@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "dab5759f-47e1-442f-bc0f-1121878b4887",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016145",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14,
+                            69.24,
+                            891.6,
+                            94.64
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $5 x+y-10=0$의 그래프와 일치하는 일차함수 $y=a x+b$에서 $b-a$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.4,
+                            322.64,
+                            59.6,
+                            341.84
+                        ]
+                    ],
+                    "text_description" : "⑤ 15"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.4,
+                            123.1,
+                            77.2,
+                            292.7
+                        ]
+                    ],
+                    "text_description" : "① -15 ② -10 ③ -5 ④ 5"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14,
+                            379.1,
+                            636.4,
+                            527.9
+                        ]
+                    ],
+                    "text_description" : "일차방정식을 $y$에 대해 정리하면: \\[ 5 x+y-10=0 \\Rightarrow y=-5 x+10 \\] 따라서 $a=-5$ 이고 $b=10$ 이므로 $b-a=10-(-5)=15$"
+                }
+            ]
+        }
+    ]
+}

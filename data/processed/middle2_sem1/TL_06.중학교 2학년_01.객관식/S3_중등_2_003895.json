@@ -1,0 +1,167 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6d86e1bb-0738-45c1-89de-78457f4ec302",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003895",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19,
+                            18,
+                            661,
+                            101
+                        ]
+                    ],
+                    "text_description" : "다음 부등식 중 해가 나머지 넷과 다른 하나는?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.05,
+                            159.52,
+                            277.39,
+                            193.4
+                        ]
+                    ],
+                    "text_description" : "③ $-5 x>-3 x-18$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.64,
+                            114.35,
+                            152.45,
+                            148.64
+                        ]
+                    ],
+                    "text_description" : "① $2 x<6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            356.38,
+                            113.64,
+                            609.84,
+                            192.81
+                        ]
+                    ],
+                    "text_description" : "② $x-2 x>-3$ ④ $-3 x+5>x-7$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.75,
+                            202.58,
+                            259.04,
+                            238.58
+                        ]
+                    ],
+                    "text_description" : "⑤ $3 x+1<4+2 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.81,
+                            513.15,
+                            463.73,
+                            544.92
+                        ]
+                    ],
+                    "text_description" : "따라서 부등식의 해가 다른 것은 ③이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26,
+                            288,
+                            466,
+                            470
+                        ]
+                    ],
+                    "text_description" : "① $2x<6, x<3$ ② $x-2x>-3, -x>-3, x<3$ ③ $-5x>-3x-18, -2x>-18, x<9$ ④ $-3x+5>x-7, -4x>-12, x<3$ ⑤ $3x+1<4+2x, x<3$"
+                }
+            ]
+        },
+        {
+            "class_num" : "2",
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.69,
+                            290.1,
+                            258.33,
+                            320.46
+                        ]
+                    ],
+                    "text_description" : "① $2 x<6, x<3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            29.63,
+                            331.04,
+                            464.44,
+                            470.1
+                        ]
+                    ],
+                    "text_description" : "② $x-2 x>-3,-x>-3, x<3$\n③ $-5 x>-3 x-18,-2 x>-18, x<9$\n④ $-3 x+5>x-7,-4 x>-12, x<3$\n⑤ $3 x+1<4+2 x, x<3$"
+                }
+            ]
+        }
+    ]
+}

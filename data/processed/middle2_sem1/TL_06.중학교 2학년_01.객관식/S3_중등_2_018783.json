@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "34c09389-5bf3-41cd-acea-e53032f51cb7",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018783",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67,
+                            14.9,
+                            593,
+                            39.9
+                        ]
+                    ],
+                    "text_description" : "다음 그림은 일차함수 $y=a x+b$의 그래프이다. 이 그래프의 기울기는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            52.9,
+                            248,
+                            230.9
+                        ]
+                    ],
+                    "text_description" : "- y-절편: 3 - x-절편: -2 인 일차함수 그래프가 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71,
+                            355.9,
+                            120,
+                            398.9
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{3}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70,
+                            232.9,
+                            120,
+                            342.9
+                        ]
+                    ],
+                    "text_description" : "① 0 ② $\\frac{1}{2}$ ③ 1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71,
+                            410.9,
+                            110,
+                            431.9
+                        ]
+                    ],
+                    "text_description" : "⑤ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70,
+                            500.9,
+                            390,
+                            623.9
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} {[\\text { 기울기 }] }= & \\frac{[y \\text { 의 } \\text { 값의 증가량 }]}{[x \\text { 의 값의 증가량 }]} \\\\ & =\\frac{3-0}{0-[-2]}=\\frac{3}{2}\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1fc6f3ee-daf3-4dcd-abbc-e09871d6796a",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018869",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59,
+                            10.78,
+                            787.75,
+                            37.03
+                        ]
+                    ],
+                    "text_description" : "다음 그림의 점선과 같이 일차함수 $y=-x$의 그래프와 $x$ 축 사이를 지나는 직선이 될 수 있는 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54,
+                            41.03,
+                            315.25,
+                            280.28
+                        ]
+                    ],
+                    "text_description" : "y = -x, 기울기 -1, y절편 0, 원점을 지나고, 모든 사분면에 걸쳐 있음."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.25,
+                            346.5,
+                            166.5,
+                            392.25
+                        ]
+                    ],
+                    "text_description" : "③ $y=-\\frac{1}{2} x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.2,
+                            282.24,
+                            151.68,
+                            336.64
+                        ]
+                    ],
+                    "text_description" : "① $y=x$ ② $y=-2 x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.84,
+                            401.92,
+                            155.52,
+                            486.4
+                        ]
+                    ],
+                    "text_description" : "④ $y=\\frac{1}{2} x$ ⑤ $y=2 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.5,
+                            547.5,
+                            741.5,
+                            571.5
+                        ]
+                    ],
+                    "text_description" : "$y=-x$의 그래프와 $x$ 축 사이를 지나는 일차함수의 그래프를 $y=a x$ 라 하면 $-1<a<0$ 이다."
+                }
+            ]
+        }
+    ]
+}

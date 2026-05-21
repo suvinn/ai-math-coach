@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2a9db025-be42-4234-8ab5-afec8c52a68f",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003899",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.08,
+                            15.57,
+                            593.25,
+                            90.1
+                        ]
+                    ],
+                    "text_description" : "$-2 a-7<-2 b-7$ 일 때, 다음 중 항상 참인 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.01,
+                            218.27,
+                            224.6,
+                            239.16
+                        ]
+                    ],
+                    "text_description" : "$5 a-3>5 b-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.08,
+                            100.3,
+                            442.31,
+                            201.27
+                        ]
+                    ],
+                    "text_description" : "① $a<b$ ② $-2 a>-2 b$ ③ $\\frac{a}{4}<\\frac{b}{4}$ ④ $5-\\frac{a}{3}>5-\\frac{b}{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.27,
+                            294.62,
+                            519.9,
+                            359.78
+                        ]
+                    ],
+                    "text_description" : "$-2 a-7<-2 b-7$에서 $-2 a<-2 b, a>b$ ⑤ $5 a-3>5 b-3, 5 a>5 b, a>b$ 참"
+                }
+            ]
+        }
+    ]
+}

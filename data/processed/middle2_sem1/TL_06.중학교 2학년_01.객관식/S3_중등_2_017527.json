@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "21df7aed-9660-41bd-a0da-1e28e2d5a6b1",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017527",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.68,
+                            9.75,
+                            395.21,
+                            33.3
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=11-5 x$ 일 때, $f(2)$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.68,
+                            92.69,
+                            36.3,
+                            110.1
+                        ]
+                    ],
+                    "text_description" : "② 1"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.21,
+                            53.27,
+                            39.88,
+                            69.65
+                        ]
+                    ],
+                    "text_description" : "② 1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.68,
+                            132.63,
+                            46.54,
+                            228.91
+                        ]
+                    ],
+                    "text_description" : "③ -1 ④ -2 ⑤ -3"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2,
+                            316.77,
+                            189.9,
+                            338.28
+                        ]
+                    ],
+                    "text_description" : "따라서 정답은 ② 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.48,
+                            250.7,
+                            123.34,
+                            303.46
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(2)=11-10 \\\\ f(2)=1\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

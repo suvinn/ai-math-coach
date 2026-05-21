@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "46b39482-2bad-49ad-91b3-f34e4d10525e",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017601",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.12,
+                            1.04,
+                            719.06,
+                            51.82
+                        ]
+                    ],
+                    "text_description" : "기울기가 6 이고 점 $(4, 5)$을 지나는 일차함수의 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.15,
+                            66.6,
+                            185.28,
+                            104.1
+                        ]
+                    ],
+                    "text_description" : "① $y=6 x-19$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.15,
+                            120.95,
+                            179.03,
+                            335.01
+                        ]
+                    ],
+                    "text_description" : "② $y=6 x+11$ ③ $y=6 x-1$ ④ $y=6 x-5$ ⑤ $y=6 x+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.59,
+                            352.2,
+                            1064.97,
+                            428.07
+                        ]
+                    ],
+                    "text_description" : "기울기가 6 이므로 일차함수의 식을 $y=6 x+b$로 놓을 수 있습니다. 이 직선이 점 $(4, 5)$을 지납 니다:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.15,
+                            735.01,
+                            594.65,
+                            777.2
+                        ]
+                    ],
+                    "text_description" : "따라서 구하는 일차함수의 식은 $y=6 x-19$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.97,
+                            449.07,
+                            171.22,
+                            722.51
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}5=6 \\cdot 4+b \\\\ 5=24+b \\\\ b=5-24 \\\\ b=-19\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

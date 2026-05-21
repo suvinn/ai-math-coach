@@ -1,0 +1,179 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "cdcd37a8-c0d6-4fcc-b56f-ebfb807f936a",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018269",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.71,
+                            1.86,
+                            1075.15,
+                            89.36
+                        ]
+                    ],
+                    "text_description" : "연립방정식 $2 x-y=2, 3 x+a y=4$에서 각 방정식의 그래프의 교점이 $x$ 좌표가 2 일 때, 상수 $a$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.4,
+                            189,
+                            65.6,
+                            220.8
+                        ]
+                    ],
+                    "text_description" : "③ -1"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.8,
+                            100.8,
+                            71.2,
+                            177.6
+                        ]
+                    ],
+                    "text_description" : "① -4 ② -2"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4,
+                            230.4,
+                            60.8,
+                            304
+                        ]
+                    ],
+                    "text_description" : "④ 0 ⑤ 1"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9,
+                            311.2,
+                            428.8,
+                            349.2
+                        ]
+                    ],
+                    "text_description" : "첫 번째 방정식에 $x=2$를 대입합니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.6,
+                            492.8,
+                            516,
+                            526.4
+                        ]
+                    ],
+                    "text_description" : "두 번째 방정식에 $x=2$와 $y=2$를 대입합니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.8,
+                            626.4,
+                            304,
+                            667.2
+                        ]
+                    ],
+                    "text_description" : "대입하면 다음과 같습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8,
+                            356.8,
+                            174.4,
+                            479.2
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}2(2)-y=2 \\\\ 4-y=2 \\\\ y=2\\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.4,
+                            533.6,
+                            210.4,
+                            616.8
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}3(2)+a(2)=4 \\\\ 6+2 a=4\\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.2,
+                            673.6,
+                            157.6,
+                            792.8
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}2 a=4-6 \\\\ 2 a=-2 \\\\ a=-1\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

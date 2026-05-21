@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "75e7fb38-f8b5-4961-b7a4-10d93c9d33fb",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003909",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.3,
+                            17.34,
+                            539.5,
+                            89.34
+                        ]
+                    ],
+                    "text_description" : "x, y가 자연수일 때, 일차방정식 $x+2 y=6$의 해를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.3,
+                            392.2,
+                            319.5,
+                            424.2
+                        ]
+                    ],
+                    "text_description" : "순서쌍 $(x, y)$는 $(2, 2), (4, 1)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.5,
+                            118.14,
+                            504.3,
+                            150.14
+                        ]
+                    ],
+                    "text_description" : "$x$에 차례로 $1, 2, 3, \\cdots$을 대입하여 $y$의 값"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.7,
+                            159.4,
+                            269.1,
+                            185
+                        ]
+                    ],
+                    "text_description" : "을 구하면 다음 표와 같디"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.1,
+                            310.6,
+                            503.5,
+                            377.8
+                        ]
+                    ],
+                    "text_description" : "따라서 $x, y$의 값이 자연수이므로 이것을 만족하는 순서쌍 $(x, y)$는 $(2, 2), (4, 1)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            269.9,
+                            160.2,
+                            349.9,
+                            187.4
+                        ]
+                    ],
+                    "text_description" : "$x+2 y=6$."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.1,
+                            194.6,
+                            334.7,
+                            305.8
+                        ]
+                    ],
+                    "text_description" : "<div class=\"table_tabular \" style=\"text-align: center\"> <div class=\"inline-tabular\"><table id=\"tabular\"> <tbody> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: center; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $x$</span></td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">1</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">2</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">3</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">4</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $\\cdots$</span></td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: center; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $y$</span></td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $\\frac{5}{2}$</span></td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">2</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $\\frac{3}{2}$</span></td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">1</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $\\cdots$</span></td> </tr> </tbody> </table> </div></div>"
+                }
+            ]
+        }
+    ]
+}

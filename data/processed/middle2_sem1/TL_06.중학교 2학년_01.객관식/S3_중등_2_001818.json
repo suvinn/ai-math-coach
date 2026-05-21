@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4f12c87f-6d9a-480d-88dd-ab9e8a7e5ff0",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001818",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.27,
+                            17.23,
+                            429.27,
+                            43.23
+                        ]
+                    ],
+                    "text_description" : "다음 보기에서 $y$가 $x$의 함수인 것을 모두 고른 것은?"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.27,
+                            74.77,
+                            431.27,
+                            276.77
+                        ]
+                    ],
+                    "text_description" : "ㄱ. 자연수 $x$의 약수 $y$ ㄴ. 가로의 길이가 3cm, 세로의 길이가 $x \\mathrm{~cm}$인 직사각형의 둘레의 길이 $y \\mathrm{~cm}$ ㄷ. 1 개에 35g인 달걀 $x$개의 무게 $y$ g ㄹ. 수학책 $x$권과 영어책 $y$권의 합 ㅁ. 10초당 20원인 휴대 전화의 통화 시간 $x$분과 전화 요금 $y$원"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            307.27,
+                            297.77,
+                            411.27,
+                            329.77
+                        ]
+                    ],
+                    "text_description" : "③ ㄴ, ㄷ, ㅁ"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.27,
+                            299.77,
+                            283.27,
+                            356.77
+                        ]
+                    ],
+                    "text_description" : "① ㄱ, ㄴ ② ㄱ, ㄴ, ㄷ ④ ㄷ, ㅁ ⑤ ㄴ, ㄷ, ㄹ"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.27,
+                            372.77,
+                            534.27,
+                            578.77
+                        ]
+                    ],
+                    "text_description" : "ㄱ. $x$의 값 하나에 $y$의 값이 여러 개이므로 함수가 아니다. ㄴ. $y=2(x+3)$, 즉 $y=2 x+6$ ㄷ. $y=35 x$ ᄅ. $x+y$ 이므로 함수가 아니다. ㅁ. 1분은 60초이므로 $y=6 \\times 20 \\times x$, 즉 $y=120 x$ 따라서 함수인 것은 ㄴ, ㄷ, ㅁ이다."
+                }
+            ]
+        }
+    ]
+}

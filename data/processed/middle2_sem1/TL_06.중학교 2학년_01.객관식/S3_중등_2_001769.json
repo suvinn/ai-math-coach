@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ae9e768a-4248-4852-ba8c-5dfa2acd99f9",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001769",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.4,
+                            17.92,
+                            272.04,
+                            41.98
+                        ]
+                    ],
+                    "text_description" : "다음 중 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.4,
+                            219.14,
+                            320.68,
+                            242.18
+                        ]
+                    ],
+                    "text_description" : "⑤ $a^{6} b^{8} \\div\\left(-a b^{2}\\right)^{2} \\div\\left(-a^{2} b^{4}\\right)=a^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.44,
+                            247.3,
+                            356.52,
+                            446.98
+                        ]
+                    ],
+                    "text_description" : "① $(-2 a)^{4} \\times \\frac{3}{2} a^{2} b=\\left(-8 a^{2}\\right) \\times \\frac{3}{2} a^{t} b=-12 a^{4} b$ ② $3 a^{2} b \\times\\left(-2 a b^{2}\\right)=-6 a^{2} b^{2}$ ③ $\\frac{3}{4} a^{2} b^{4} \\div\\left(-3 a b^{2}\\right)=\\frac{3}{4} a^{2} b^{4} \\times \\frac{1}{-3 a b^{2}}=-\\frac{1}{4} a^{2} b^{2}$ ④ $\\left(-3 a b^{2}\\right)^{2} \\div\\left(\\frac{1}{2} a b\\right)^{2}=\\left(-27 a^{2} b^{0}\\right) \\div\\left(\\frac{1}{4} a^{2} b^{2}\\right)$ \\[ =\\left(-27 a^{2} b^{6}\\right) \\times \\frac{4}{a^{2} b^{2}}=-108 a b^{4} \\] ⑤ \\[ \\begin{aligned} a^{8} b^{2} \\div\\left(-a b^{2}\\right)^{2} \\div\\left(-a^{2} b^{4}\\right) & =a^{8} b^{8} \\div\\left(a^{2} b^{4}\\right) \\div\\left(-a^{2} b^{4}\\right) \\\\ & =a^{2} b^{8} \\times \\frac{1}{a^{2} b^{4}} \\times \\frac{1}{-a^{2} b^{4}}=-a^{2} \\end{aligned} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.47,
+                            57.510000000000005,
+                            331.44,
+                            216.06
+                        ]
+                    ],
+                    "text_description" : "① $(-2 a)^{3} \\times \\frac{3}{2} a^{2} b=-12 a^{5} b$ ② $3 a^{2} b \\times\\left(-2 a b^{2}\\right)=-6 a^{3} b^{3}$ ③ $\\frac{3}{4} a^{3} b^{4} \\div\\left(-3 a b^{2}\\right)=-\\frac{1}{4} a^{2} b^{2}$ ④ $\\left(-3 a b^{2}\\right)^{3} \\div\\left(\\frac{1}{2} a b\\right)^{2}=-108 a b^{4}$"
+                }
+            ]
+        }
+    ]
+}

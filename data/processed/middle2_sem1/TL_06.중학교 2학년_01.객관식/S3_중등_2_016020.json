@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c98e6625-1be5-493c-9f35-3b8461929fe6",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016020",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.84,
+                            53.18,
+                            431.09,
+                            84.43
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 풀어 $x$와 $y$를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            371.09,
+                            100.1,
+                            607.34,
+                            161.35
+                        ]
+                    ],
+                    "text_description" : "$\\frac{x-2 y}{4}=\\frac{2 x+y}{8}=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.84,
+                            223.85,
+                            188.59,
+                            255.1
+                        ]
+                    ],
+                    "text_description" : "① $x=4, y=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.84,
+                            732.6,
+                            237.34,
+                            762.6
+                        ]
+                    ],
+                    "text_description" : "① $x=4, y=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.84,
+                            260.1,
+                            208.59,
+                            401.35
+                        ]
+                    ],
+                    "text_description" : "② $x=3, y=1$ ③ $x=2, y=2$ ④ $x=6, y=-1$ ⑤ $x=5, y=-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.09,
+                            409.6,
+                            939.84,
+                            692.6
+                        ]
+                    ],
+                    "text_description" : "1. 첫 번째 방정식: $\\frac{x-2 y}{4}=1 \\rightarrow x-2 y=4$. 2. 두 번째 방정식: $\\frac{2 x+y}{8}=1 \\rightarrow 2 x+y=8$. 3. 첫 번째 식에서 $x=4+2 y$. 이를 두 번째 식에 대입: \\[ 2(4+2 y)+y=8 \\Longrightarrow 8+4 y+y=8 \\Longrightarrow 5 y+8=8 \\Longrightarrow 5 y=0 \\Longrightarrow y=0. \\] 4. $y=0$을 첫 번째 식에 대입하여 $x$를 구함: \\[ x-2(0)=4 \\Longrightarrow x=4 \\]"
+                }
+            ]
+        }
+    ]
+}

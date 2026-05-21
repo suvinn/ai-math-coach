@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4ba38403-6eb6-4a6d-88fe-8390ddfa49bc",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001790",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.92,
+                            26.24,
+                            544.2,
+                            122.24
+                        ]
+                    ],
+                    "text_description" : "어떤 다항식에서 $-x^{2}-2 x+4$를 빼어야 할 것을 잘못하여 더하였더니 $4 x^{2}+x-3$이 되었다. 이때 바르게 계산하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.8,
+                            209.28,
+                            221.4,
+                            238.28
+                        ]
+                    ],
+                    "text_description" : "⑤ $6 x^{2}+5 x-11$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.48,
+                            140.8,
+                            445.64,
+                            205.44
+                        ]
+                    ],
+                    "text_description" : "① $2 x^{2}+x-1$ ② $3 x^{2}-x+1$ ③ $4 x^{2}+x-3$ ④ $5 x^{2}+3 x-7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            32,
+                            285.22,
+                            222,
+                            311.22
+                        ]
+                    ],
+                    "text_description" : "어떤 다항식을 $A$라고 하면"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            31,
+                            370.22,
+                            220,
+                            396.22
+                        ]
+                    ],
+                    "text_description" : "따라서 바르게 계산한 답은"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            35,
+                            314.22,
+                            397,
+                            366.22
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}A+\\left(-x^{2}-2 x+4\\right)=4 x^{2}+x-3 \\\\ A=4 x^{2}+x-3-\\left(-x^{2}-2 x+4\\right)=5 x^{2}+3 x-7\\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            35,
+                            400.22,
+                            362,
+                            452.22
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}5 x^{2}+3 x-7-\\left(-x^{2}-2 x+4\\right) \\\\ =5 x^{2}+3 x-7+x^{2}+2 x-4=6 x^{2}+5 x-11\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

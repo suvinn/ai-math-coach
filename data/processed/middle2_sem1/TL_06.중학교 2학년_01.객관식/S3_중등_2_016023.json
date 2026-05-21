@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "594bf492-fc5e-4d4c-99f6-d14d2ced99a0",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016023",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.75,
+                            49.78,
+                            449.75,
+                            75.78
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 만족시키는 $x$와 $y$를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            375.75,
+                            95.28,
+                            511.5,
+                            175.28
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}y=3 x-2 \\\\ x+y=10\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.75,
+                            266.5,
+                            88.25,
+                            297
+                        ]
+                    ],
+                    "text_description" : "② $(3, 7)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.75,
+                            301.5,
+                            102.25,
+                            402.75
+                        ]
+                    ],
+                    "text_description" : "③ $(4, 10)$ ④ $(5, 13)$ ⑤ $(6, 16)$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.75,
+                            230.25,
+                            89.75,
+                            264
+                        ]
+                    ],
+                    "text_description" : "① $(2, 4)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.25,
+                            425.75,
+                            916.75,
+                            602.5
+                        ]
+                    ],
+                    "text_description" : "1. 첫 번째 식에서 $y=3 x-2$. 이를 두 번째 식에 대입: \\[ x+(3 x-2)=10 \\Longrightarrow x+3 x-2=10 \\Longrightarrow 4 x-2=10 \\Longrightarrow 4 x=12 \\Longrightarrow x=3 \\] 2. $x=3$를 첫 번째 식에 대입하여 $y$를 구함: \\[ y=3③-2 \\Longrightarrow y=9-2 \\Longrightarrow y=7 \\]"
+                }
+            ]
+        }
+    ]
+}

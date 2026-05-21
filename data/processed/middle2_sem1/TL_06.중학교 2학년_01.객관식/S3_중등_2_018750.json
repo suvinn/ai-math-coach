@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "be370bfb-1abf-4495-86d8-6d7be7506110",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018750",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.08,
+                            12.1,
+                            960.32,
+                            36.31
+                        ]
+                    ],
+                    "text_description" : "다음 그림과 같은 일차함수 $y=a x+6$의 그래프와 $x$ 축, $y$ 축으로 둘러싸인 삼각형 $AOB$의 넓이가 $9$ 일 때, 음수 $a$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.95,
+                            47.13,
+                            245.22,
+                            227.96
+                        ]
+                    ],
+                    "text_description" : "$x$, $y$ 좌표이다. $y$ 절편 $A$점, $x$ 절편 $B$점."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.28,
+                            324.45,
+                            119.51,
+                            345.25
+                        ]
+                    ],
+                    "text_description" : "③ -2"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.84,
+                            235.48,
+                            131.9,
+                            313.83
+                        ]
+                    ],
+                    "text_description" : "① -3 ② $-\\frac{5}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.84,
+                            356.76,
+                            131.9,
+                            434.22
+                        ]
+                    ],
+                    "text_description" : "④ -1 ⑤ $-\\frac{1}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.85,
+                            490.88,
+                            254.96,
+                            786.56
+                        ]
+                    ],
+                    "text_description" : "$y=a x+6$의 $x$ 절편은 $0=a x+6$에서 $x=-\\frac{6}{a}$ $y$ 절편은 $y=a \\times 0+6=6$ $\\triangle \\mathrm{AOB}$의 넓이는 \\[ \\begin{array}{l} \\frac{1}{2} \\times\\left(-\\frac{6}{a}\\right) \\times 6=9 \\\\ -\\frac{18}{a}=9 \\\\ \\therefore \\quad a=-2 \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

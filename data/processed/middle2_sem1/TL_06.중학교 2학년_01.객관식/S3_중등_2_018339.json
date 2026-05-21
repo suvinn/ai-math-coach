@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "71299c2f-0d51-41ea-a74d-cb8705c6060d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018339",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.91,
+                            2.39,
+                            1091.72,
+                            82.08
+                        ]
+                    ],
+                    "text_description" : "\"책의 무게 $x \\mathrm{~kg}$에 추가 장난감의 무게 10kg을 더하면 20kg보다 가볍다. \"를 부등식으로 나타낸 것 중 옳은 것을 고르세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.35,
+                            103.58,
+                            204.22,
+                            135.89
+                        ]
+                    ],
+                    "text_description" : "① $x+10<20$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.4,
+                            143.4,
+                            204,
+                            307.4
+                        ]
+                    ],
+                    "text_description" : "② $x+10>20$ ③ $x+10=20$ ④ $x+10 \\leq 20$ ⑤ $x+10 \\geq 20$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.04,
+                            325.49,
+                            1080.79,
+                            406.74
+                        ]
+                    ],
+                    "text_description" : "책의 무게와 추가 장난감의 무게를 합친 값이 20kg보다 가볍다는 조건을 부등식으로 나타내면 다 음과 같습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            469.85,
+                            430.18,
+                            638.6,
+                            469.24
+                        ]
+                    ],
+                    "text_description" : "$x+10<20$"
+                }
+            ]
+        }
+    ]
+}

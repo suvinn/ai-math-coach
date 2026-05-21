@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fb7a8091-e256-4bd2-b33c-b9b99b62b4ee",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004130",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.51,
+                            6.16,
+                            499.01,
+                            73.91
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그래프를 이용하여 다음 연립방정식을 푸시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            33.01,
+                            321.63,
+                            173.01,
+                            370.88
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}2 x-y-1=0 \\\\ x-2 y+4=0\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.01,
+                            92.13,
+                            241.76,
+                            319.63
+                        ]
+                    ],
+                    "text_description" : "좌표평면에 그래프가 그려져 있다. 세 개의 직선이 있으며, 각 직선의 방정식은 다음과 같다: \\(y = -x + 2\\), \\(y = 2x - 1\\), \\(y = \\frac{1}{2}x + 2\\). x축과 y축이 존재하고, 격자무늬 배경이 뚜렷하게 보인다. 원점(0, 0)도 확인할 수 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            34.26,
+                            457.13,
+                            94.26,
+                            484.63
+                        ]
+                    ],
+                    "text_description" : "$(2, 3)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            31.76,
+                            374.38,
+                            495.76,
+                            453.38
+                        ]
+                    ],
+                    "text_description" : "$2 x-y-1=0$, 즉 $y=2 x-1$과 $x-2 y+4=0$, 즉 $y=\\frac{1}{2} x+2$의 교점을 구하면 $(2, 3)$ 이다."
+                }
+            ]
+        }
+    ]
+}

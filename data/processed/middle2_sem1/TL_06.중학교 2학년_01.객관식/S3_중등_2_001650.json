@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "48209556-4a57-4cfb-89be-912e057451ac",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001650",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.51,
+                            2.03,
+                            221.13,
+                            25.07
+                        ]
+                    ],
+                    "text_description" : "다음 보기 중 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.34,
+                            58.86,
+                            421.83,
+                            141.3
+                        ]
+                    ],
+                    "text_description" : "ㄱ. 소수는 유한소수와 순환소수로 나눌 수 있다. ㄴ. 모든 순환소수는 분수로 나타낼 수 있다. ㄷ. 유한소수 중에는 유리수가 아닌 것도 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            173.51,
+                            168.24,
+                            217.54,
+                            189.23
+                        ]
+                    ],
+                    "text_description" : "② ㄴ"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.02,
+                            166.71,
+                            91.08,
+                            190.77
+                        ]
+                    ],
+                    "text_description" : "① ㄱ"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            304.58,
+                            167.73,
+                            348.1,
+                            190.77
+                        ]
+                    ],
+                    "text_description" : "③ ㄷ"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.54,
+                            196.4,
+                            246.22,
+                            218.42
+                        ]
+                    ],
+                    "text_description" : "④ ㄱ, ㄴ ⑤ ㄴ, ㄷ"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.14,
+                            247.09,
+                            279.5,
+                            314.67
+                        ]
+                    ],
+                    "text_description" : "ㄱ. 소수는 유한소수와 무한소수로 나눌 수 있다. ㄴ. 모든 순활소수는 유리수이므로 분수로 나타낼 수 있다. ㄷ. 모든 유한소수는 유리수이다. 따라서 옳은 것은 ㄴ이다."
+                }
+            ]
+        }
+    ]
+}

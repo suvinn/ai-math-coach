@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "41ecbc43-1075-404e-89bf-4f8a2aa527af",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004085",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.89,
+                            19.33,
+                            336.2,
+                            49.09
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -0.53,
+                            69.5,
+                            292.84,
+                            123.07
+                        ]
+                    ],
+                    "text_description" : "③ $\\frac{2}{5} x+0. 2(x+3)<-0. 6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.57,
+                            208.61,
+                            87.9,
+                            229.87
+                        ]
+                    ],
+                    "text_description" : "③ $x<-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.12,
+                            133.78,
+                            387.22,
+                            200.96
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { (3) } \\frac{2}{5} x+0. 2(x+3)<-0. 6, 4 x+2(x+3)<-6, \\\\ 4 x+2 x+6<-6, 6 x<-12, x<-2\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

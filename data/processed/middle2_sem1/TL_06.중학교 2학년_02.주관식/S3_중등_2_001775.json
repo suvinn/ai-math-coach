@@ -1,0 +1,95 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "910b6dd7-3728-4092-8f96-0bad872a3a51",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001775",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63,
+                            25.92,
+                            520,
+                            53.92
+                        ]
+                    ],
+                    "text_description" : "다음 문장을 $x, y$에 대한 연립방정식으로 나타내시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            79,
+                            119.92,
+                            524,
+                            219.92
+                        ]
+                    ],
+                    "text_description" : "승훈이는 한 송이에 $500$원 하는 장미 $x $송이와 한 송이에 $900 $원 하는 카네이션 $y $송이를 섞어서 모두 $10$송이를 사고 $7400 $원을 지불하였다$. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            31.72,
+                            328.07,
+                            164.2,
+                            366.47
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}x+y=10 \\\\ 500 x+900 y=7400\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11,
+                            234.5,
+                            267,
+                            321.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { 꽃이 모두 } 10 \\text { 송이이므로 } x+y=10 \\\\ \\text { 가격이 } 7400 \\text { 원이므로 } 500 x+900 y=7400 \\\\ \\left\\{\\begin{array}{l}x+y=10 \\\\ 500 x+900 y=7400\\end{array}\\right. \\end{array}$"
+                }
+            ]
+        }
+    ]
+}

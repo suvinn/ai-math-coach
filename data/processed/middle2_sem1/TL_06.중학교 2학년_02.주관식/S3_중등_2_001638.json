@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6a3f1679-09e2-497c-984c-257f1df7d304",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001638",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.8,
+                            22.34,
+                            248.2,
+                            135.14
+                        ]
+                    ],
+                    "text_description" : "연립방정식을 이루는 두 일차방정식의 그래프가 오른쪽 그림과 같다. 이 연립 방정식의 해를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            263.4,
+                            21.2,
+                            456.2,
+                            194
+                        ]
+                    ],
+                    "text_description" : "2x-y-4=0과 x+y-5=0의 연립방정식을 이루는 그래프. 이 이미지는 좌표평면에 그려진 두 개의 일차방정식 그래프를 보여줍니다. 그래프의 구성: 1. 첫 번째 방정식: 2x-y=4 (파란색 직선) 2. 두 번째 방정식: x+y=5 (빨간색 직선) 주요 특징: - x축과 y축이 표시되어 있음 - 두 직선의 교점이 (3, 2)에 위치 - y축 눈금은 -4에서 5까지 표시 - x축 눈금은 0에서 5까지 표시이 그래프는 연립방정식의 해를 시각적으로 보여주며, 두 직선의 교점 (3, 2)가 바로 연립방정식의 해가 됩니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            74.6,
+                            236.4,
+                            137.8,
+                            253.2
+                        ]
+                    ],
+                    "text_description" : "$x=3, y=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59,
+                            199.2,
+                            323,
+                            234.2
+                        ]
+                    ],
+                    "text_description" : "연립방정식의 해는 두 일차방정식의 그래프의 교점이다. 따라서 $x=3, y=2$ 이다."
+                }
+            ]
+        }
+    ]
+}

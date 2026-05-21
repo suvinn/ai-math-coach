@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2fa24ead-8e34-4d51-b6a3-21fd2fe91bd5",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017438",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.27,
+                            12.23,
+                            254.27,
+                            43.23
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.27,
+                            52.77,
+                            105.27,
+                            88.77
+                        ]
+                    ],
+                    "text_description" : "$\\left(3 x^{2} y\\right)^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.27,
+                            107.77,
+                            131.27,
+                            141.77
+                        ]
+                    ],
+                    "text_description" : "① $27 x^{6} y^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.27,
+                            423.77,
+                            121.27,
+                            457.77
+                        ]
+                    ],
+                    "text_description" : "① $27 x^{6} y^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.27,
+                            148.77,
+                            132.27,
+                            309.77
+                        ]
+                    ],
+                    "text_description" : "② $27 x^{5} y^{3}$ ③ $27 x^{3} y^{2}$ ④ $9 x^{6} y^{3}$ ⑤ $27 x^{6} y^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.27,
+                            343.77,
+                            462.27,
+                            382.77
+                        ]
+                    ],
+                    "text_description" : "$\\left(3 x^{2} y\\right)^{3}=3^{3} \\times\\left(x^{2}\\right)^{3} \\times y^{3}=27 x^{6} y^{3}$"
+                }
+            ]
+        }
+    ]
+}

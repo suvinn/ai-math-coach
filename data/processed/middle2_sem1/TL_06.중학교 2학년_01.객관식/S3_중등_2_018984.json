@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "db30faed-92c4-43f2-9d81-9ede1ba0929f",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018984",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            17.42,
+                            685,
+                            65.42
+                        ]
+                    ],
+                    "text_description" : "방정식 $y=-\\frac{1}{2} x+3, x=-4, x=2, y=0$의 그래프로 둘러싸인 부분의 넓이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69,
+                            199.42,
+                            118,
+                            227.42
+                        ]
+                    ],
+                    "text_description" : "⑤ 21"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            71,
+                            120,
+                            192
+                        ]
+                    ],
+                    "text_description" : "① 8 ② 12 ③ 15 ④ 18"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            283,
+                            450,
+                            309
+                        ]
+                    ],
+                    "text_description" : "주어진 방정식의 그래프를 그리면 다음 그림과 같다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62,
+                            515,
+                            692,
+                            760
+                        ]
+                    ],
+                    "text_description" : "$x=-4$를 $y=-\\frac{1}{2} x+3$에 대입하면 $y=5$ 이므로 A $(-4, 5)$ $x=2$를 $y=-\\frac{1}{2} x+3$에 대입하면 $y=2$ 이므로 D $(2, 2)$ 그래프로 둘러싸인 부분은 사다리꼴이므로 구하는 넓이는 $($ 사다리꼴 ABCD의 넓이 $)=\\frac{1}{2} \\times(\\overline{\\mathrm{AB}}+\\overline{\\mathrm{CD}}) \\times \\overline{\\mathrm{BC}}=\\frac{1}{2} \\times(5+2) \\times 6=21$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67,
+                            317,
+                            505,
+                            503
+                        ]
+                    ],
+                    "text_description" : "직사각형 ABCD는 세로 5, 가로 6의 크기를 가지며, A(-4, 3), B(-4, -4), C(2, -4), D(2, 3)의 좌표를 갖는다. 직사각형 내부에 위치한 O(-4, 0) 점이 존재한다. 직선 y = -\\(\\frac{1}{2}\\)x + 3은 기울기가 -\\(\\frac{1}{2}\\)이며 y절편은 3이다."
+                }
+            ]
+        }
+    ]
+}

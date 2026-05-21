@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d50b4e21-02d8-4c6c-ba6c-6f4ef05f4f4c",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017501",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.46,
+                            6.9,
+                            420.07,
+                            36.67
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산한 후, 결과를 고르시오"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            421.1,
+                            62.33,
+                            673.61,
+                            104.55
+                        ]
+                    ],
+                    "text_description" : "$\\left(12 x^{2}-6 x y\\right) \\div(6 x)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.59,
+                            138.24,
+                            129.58,
+                            169.16
+                        ]
+                    ],
+                    "text_description" : "$2 x-y$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.62,
+                            369.07,
+                            468.32,
+                            499.35
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}\\left(12 x^{2}-6 x y\\right) & \\div(6 x)=\\frac{12 x^{2}}{6 x}-\\frac{6 x y}{6 x} \\\\ & =2 x-y\\end{aligned}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.51,
+                            178.32,
+                            148.06,
+                            335.4
+                        ]
+                    ],
+                    "text_description" : "$2 x+y$ $2 x-2 y$ $3 x-y$ $3 x+y$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "33891195-2412-47e5-956f-07de4d12d36f",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018849",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.27000000000001,
+                            13.73,
+                            671.27,
+                            57.73
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-\\frac{a}{2} x+\\frac{b}{2}$의 그래프가 다음 그림과 같을 때, 상수 $a, b$의 부호는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.27,
+                            70.27,
+                            276.27,
+                            279.27
+                        ]
+                    ],
+                    "text_description" : "이미지에는 x축과 y축이 있는 좌표 평면이 나타나 있다. 중앙에 원점 O가 위치하고 있으며, 오른쪽으로 올라가는 직선이 그려져 있다. 직선은 x축과 y축을 교차하며 존재하고, 전체적으로 1사분면에 위치해 있다. 배경은 연한 색으로 되어 있으며, 축에는 눈금이나 숫자가 보이지 않는다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.27,
+                            381.27,
+                            194.27,
+                            403.27
+                        ]
+                    ],
+                    "text_description" : "④ $a<0, \\quad b<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.27,
+                            285.27,
+                            194.27,
+                            371.27
+                        ]
+                    ],
+                    "text_description" : "① $a>0, \\quad b>0$ ② $a>0, b<0$ ③ $a<0, \\quad b>0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.27,
+                            411.27,
+                            195.27,
+                            434.27
+                        ]
+                    ],
+                    "text_description" : "⑤ $a>0, \\quad b=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.27,
+                            507.27,
+                            684.27,
+                            604.27
+                        ]
+                    ],
+                    "text_description" : "직선이 오른쪽 위로 향하므로 $-\\frac{a}{2}>0$ \\[ \\therefore \\quad a<0 \\] $y$ 축과 만나는 점이 원점보다 아래쪽에 있으므로 $\\frac{b}{2}<0$ \\[ \\therefore \\quad b<0 \\]"
+                }
+            ]
+        }
+    ]
+}

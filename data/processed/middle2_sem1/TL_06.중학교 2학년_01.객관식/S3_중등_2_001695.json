@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ae3d3a58-d9ba-4fc0-8abe-9a989c9612e3",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001695",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.6,
+                            159.3,
+                            486.6,
+                            199.3
+                        ]
+                    ],
+                    "text_description" : "$a<b$ 일 때, 다음 중 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72,
+                            406.9,
+                            356,
+                            473.9
+                        ]
+                    ],
+                    "text_description" : "⑤ $-\\frac{a}{7}+3<-\\frac{b}{7}+3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            74.6,
+                            224.1,
+                            420.2,
+                            403.3
+                        ]
+                    ],
+                    "text_description" : "① $2 a-1<2 b-1$ ② $a \\div(-3)>b \\div(-3)$ ③ $1-a>1-b$ ④ $4 a-(-2)<4 b-(-2)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.2,
+                            0.9,
+                            678.6,
+                            132.9
+                        ]
+                    ],
+                    "text_description" : "⑤ $a<b$의 양변을 -7로 나누면 부등호의 방향이 바뀌므로 $-\\frac{a}{7}>-\\frac{b}{7}$ 이다. 또한 $-\\frac{a}{7}>-\\frac{b}{7}$의 양변에 3을 더하여도 부등호의 방향이 바뀌지 않으므로 $-\\frac{a}{7}+3>-\\frac{b}{7}+3$ 이다."
+                }
+            ]
+        }
+    ]
+}

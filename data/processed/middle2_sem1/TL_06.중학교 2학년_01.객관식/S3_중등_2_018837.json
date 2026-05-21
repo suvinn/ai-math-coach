@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c3d548a3-4f33-4aa1-b2c7-5b18c37195ab",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018837",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.7,
+                            11.8,
+                            747.1,
+                            39
+                        ]
+                    ],
+                    "text_description" : "다음 그림은 일차함수 $y=a x+b$의 그래프이다. 다음 중 옳지 않은 것은? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.9,
+                            49.4,
+                            267.9,
+                            253.4
+                        ]
+                    ],
+                    "text_description" : "좌표평면도에 점 (2, 0)과 점 (0, -2)이 직선으로 연결되어 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.7,
+                            348.5,
+                            163.1,
+                            369.7
+                        ]
+                    ],
+                    "text_description" : "④ $a+b=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.3,
+                            255.1,
+                            188.7,
+                            343.1
+                        ]
+                    ],
+                    "text_description" : "① 기울기는 1 ② $x$ 절편은2 ③ $y$ 절편은 -2"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.9,
+                            381.1,
+                            163.9,
+                            404.1
+                        ]
+                    ],
+                    "text_description" : "⑤ $a-b>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.7,
+                            466.7,
+                            497.1,
+                            645.5
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} y=a x+b \\text { 의 그래프가 점 }(2, \\quad 0), [0, -2] \\text { 를 지나므로 } \\\\ 0=2 a+b, -2=b \\\\ \\therefore \\quad a=1, b=-2 \\end{array} \\] 따라서 $y=x-2$의 그래프이다. \\[ \\therefore \\quad a+b=1+[-2]=-1 \\] 따라서 옳지 않은 것은 ④이다."
+                }
+            ]
+        }
+    ]
+}

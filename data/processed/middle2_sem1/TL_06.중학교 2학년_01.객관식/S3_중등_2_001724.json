@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8c1adfca-a00e-48c5-8ca9-e5d8c6246972",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001724",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.24,
+                            3.49,
+                            343.55,
+                            159.74
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림은 기울기와 $y$ 절편을 이용하여 일차함수 $y=-\\frac{2}{3} x+3$의 그래프를 그린 것이다. 상수 $m, n, b$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            349.8,
+                            2.83,
+                            532.62,
+                            178.64
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 x-y좌표평면에 그려진 직선과 점들을 보여줍니다. 직선은 우하향하며, y축과 만나는 점을 b로 표시했고, x축과 만나는 점을 n으로 표시했습니다. x축 위에 점 m이 있고, 점 b에서 오른쪽으로 향하는 화살표와 함께 \"+6\"이라는 값이 표시되어 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.74,
+                            175.88,
+                            308.24,
+                            234.38
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{cccc} & m & n & b \\\\ \\text { ① } & 6 & -1 & 3\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.38,
+                            244.34,
+                            303.82,
+                            372.98
+                        ]
+                    ],
+                    "text_description" : "m/n/b ② 6, -2, 3 ③ 6, -3, 3 ④ 3, -1, 6 ⑤ 3, -2, 6"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            311.24,
+                            194.13,
+                            540.74,
+                            361.13
+                        ]
+                    ],
+                    "text_description" : "$b$는 $y$ 절편이므로 $b=3$ (기울기) $=-\\frac{2}{3}=\\frac{(y \\text { 의 값의 증가량) }}{6}$, $(y$의 값의 증가량 $)=-4$ 따라서 점 $(0, 3)$에서 $x$ 축의 방향으로 6만큼, $y$ 축의 방향으로 -4만큼 이동하면 점 $(6, -1)$을 지난다. 따라서 $y$0 이다."
+                }
+            ]
+        }
+    ]
+}

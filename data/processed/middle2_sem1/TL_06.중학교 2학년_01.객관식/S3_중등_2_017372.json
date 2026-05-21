@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e3120fc7-5ca7-4165-9cb3-921c222c3d9d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017372",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.7,
+                            13.74,
+                            283.9,
+                            40.14
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.7,
+                            52.14,
+                            161.5,
+                            83.34
+                        ]
+                    ],
+                    "text_description" : "$z^{8} \\div z^{4} \\times z^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.1,
+                            107,
+                            71.1,
+                            138.8
+                        ]
+                    ],
+                    "text_description" : "① $z^{7}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.7,
+                            148.6,
+                            71.9,
+                            306.2
+                        ]
+                    ],
+                    "text_description" : "② $z^{6}$ ③ $z^{5}$ ④ $z^{4}$ ⑤ $z^{8}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.9,
+                            331.2,
+                            251.1,
+                            404.6
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}z^{8} \\div z^{4}=z^{8-4}=z^{4} \\\\ z^{4} \\times z^{3}=z^{4+3}=z^{7}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

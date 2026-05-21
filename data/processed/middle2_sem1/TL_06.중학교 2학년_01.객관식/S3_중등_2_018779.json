@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "54f00d59-c084-4277-8425-d3cabfa13815",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018779",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.18,
+                            13.33,
+                            760.32,
+                            37.66
+                        ]
+                    ],
+                    "text_description" : "다음 일차함수의 그래프 중 $x$의 값이 $-5$에서 $0$까지 증가할 때, $y$의 값이 $5$만큼 감소하는 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.26,
+                            168.09,
+                            173.69,
+                            188.37
+                        ]
+                    ],
+                    "text_description" : "④ $y=-x+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.26,
+                            48.19,
+                            195.32,
+                            158.35
+                        ]
+                    ],
+                    "text_description" : "① $y=-5x+1$ ② $y=-\\frac{1}{5}x+1$ ③ $y=x+5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.58,
+                            199.57,
+                            168.96,
+                            221.88
+                        ]
+                    ],
+                    "text_description" : "⑤ $y=5x-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.53,
+                            286.76,
+                            664.35,
+                            344.88
+                        ]
+                    ],
+                    "text_description" : "$\\frac{(y \\text { 의 값의 증 가량 })}{(x \\text { 의 값의 증 가량 })}=\\frac{-5}{0-[-5)}=-1$ 이므로 기울기가 $-1$ 인 것은 ④이다."
+                }
+            ]
+        }
+    ]
+}

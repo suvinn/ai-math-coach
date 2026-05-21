@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a3b0d483-6f23-43b2-a873-7163f4c13ca8",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018945",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            13.92,
+                            657,
+                            39.92
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차방정식 $-2 x+y+3=0$의 그래프에 대한 설명으로 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            109.92,
+                            211,
+                            134.92
+                        ]
+                    ],
+                    "text_description" : "③ $x$ 절편은 2이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            141.5,
+                            299,
+                            197.5
+                        ]
+                    ],
+                    "text_description" : "④ $y$ 절편은 $-3$이다. ⑤ 제 $2$ 사분면을 지나지 않는다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            47.5,
+                            393,
+                            102.5
+                        ]
+                    ],
+                    "text_description" : "① 기울기는 $2$이다. ② $x$의 값이 증가할 때, $y$의 값도 증가한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59,
+                            259.5,
+                            755,
+                            399.5
+                        ]
+                    ],
+                    "text_description" : "$-2x+y+3=0$ \\[ \\therefore \\quad y=2x-3 \\] $y=2x-3$에서 기울기는 $2$, $y$ 절편은 $-3$, $x$ 절편은 $0=2x-3$ \\[ \\therefore \\quad x=\\frac{3}{2} \\] ② (기울기)=$2$ 이므로 $x$의 값이 증가하면 $y$의 값도 증가한다. ⑤ 일차함수 $y=2x-3$의 그래프를 그리면 다음 그림과 같으므로 제 $2$ 사분면은 지나지 않는다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58,
+                            404.5,
+                            274,
+                            617.5
+                        ]
+                    ],
+                    "text_description" : "점 ($\\frac{3}{2}$, $0$)과 점 $(0, -3)$이 직선으로 연결되어 있고 함수 $y=2x-3$이 표시되어 있다 $. $"
+                }
+            ]
+        }
+    ]
+}

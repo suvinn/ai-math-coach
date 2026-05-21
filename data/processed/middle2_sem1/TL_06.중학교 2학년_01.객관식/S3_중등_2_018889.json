@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d795057c-305d-44b7-9a3a-621ac8315b29",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018889",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            7.42,
+                            1530,
+                            31.42
+                        ]
+                    ],
+                    "text_description" : "다음 그림에서 일차함수 $y=2 x$의 그래프와 평행하고, 일차함수 $y=-x$의 그래프와 $x=3$에서 만나는 직선을 그래프로 하는 일차함수의 식을 $y=a x+b$ 라 할 때, 상수 $a, b$에 대하여 $a+b$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70,
+                            44.12,
+                            308.75,
+                            230.37
+                        ]
+                    ],
+                    "text_description" : "이 도형은 좌표평면 위의 직선들로 이루어져 있어. 1. 직선 방정식 - \\(y = -x \\) - \\(y = 2x \\) - \\(y=ax+b \\) 2. 교점 - \\(y = -x \\)와 \\(y = 2x \\)이 교차하는 점은 원점 \\(O \\). -\\(y = -x \\)와 \\(y=ax+b \\)가 교차하는 점은 (3, -3)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70,
+                            304.12,
+                            113.75,
+                            326.62
+                        ]
+                    ],
+                    "text_description" : "③ -7"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70,
+                            241.62,
+                            117.5,
+                            294.12
+                        ]
+                    ],
+                    "text_description" : "① $-11$ ② $-9$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70,
+                            335.37,
+                            115,
+                            387.87
+                        ]
+                    ],
+                    "text_description" : "④ $-3$ ⑤ $0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.75,
+                            456.62,
+                            937.5,
+                            635.37
+                        ]
+                    ],
+                    "text_description" : "$y=2 x$의 그래프와 평행한 직선의 기울기는 2 이므로 $a=2$ 또 $y=-x$와 $x=3$에서 만나면 그 점은 $y=-x$의 그래프 위의 점이므로 좌표는 $(3, -3)$ 이다. 따라서 구하는 직선은 기울기가 2 이고, 점 $(3, -3)$을 지나는 직선이므로 $y=2 x+b$에 $x=3, y=-3$을 대입하면 \\[ \\begin{array}{l} -3=2 \\times 3+b \\\\ \\therefore b=-9 \\\\ \\therefore a+b=2+[-9]=-7 \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ae981247-1112-4ea8-80b4-39be8d3a6bd2",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001711",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.5,
+                            16.92,
+                            493.5,
+                            44.92
+                        ]
+                    ],
+                    "text_description" : "다음 보기 중 $y$가 $x$의 함수인 것을 모두 고른 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.5,
+                            389.5,
+                            415.5,
+                            451.5
+                        ]
+                    ],
+                    "text_description" : "ㄴ. 2의 배수는 $2, 4, 6, 8, \\cdots$로 무수히 많으므로 함수가 아니다. ㄷ. 5와 서로소인 수는 여러 개이므로 함수가 아니다. ㅁ. 3보다 작은 자연수는 1, 2의 두 개이므로 함수가 아니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.5,
+                            316.5,
+                            333.5,
+                            381.5
+                        ]
+                    ],
+                    "text_description" : "① ㄱ, ㄴ ② ㄴ, ㄹ ④ ㄱ, ㄴ, ㄹ ⑤ ㄴ, ㄷ,"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.5,
+                            47.92,
+                            529.5,
+                            304.92
+                        ]
+                    ],
+                    "text_description" : "보기 상자에 다음과 같은 내용이 들어 있다. ᄀ. $x$와 $y$의 합이 8 ㄴ. 자연수 $x$의 배수 $y$ ㄷ. 재연수 $x$와 서로소인 수 $y$ ㄹ. 자연수 $x$보다 작은 자연수 $y$ ㅁ. 농도가 $x \\%$ 인 소금물 200g 속에 들어 있는 소금의 양이 $y \\mathrm{~g}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            370.0,
+                            321.0,
+                            460.0,
+                            347.0
+                        ]
+                    ],
+                    "text_description" : "③ ㄱ,ㅁ"
+                }
+            ]
+        }
+    ]
+}

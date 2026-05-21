@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "bc5f2693-d68b-4d8c-bb54-979195cea0c9",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003900",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.9,
+                            18.439999999999998,
+                            593.3,
+                            89.64
+                        ]
+                    ],
+                    "text_description" : "일차부등식 $x-(1-x)>3 x+1$의 해를 수직선 위에 바르게 나타낸 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            331.1,
+                            104.44,
+                            528.9,
+                            167.64
+                        ]
+                    ],
+                    "text_description" : "② 수직선 -2를 포함하지 않는 원이 그려져 있고 음의 방향인 왼쪽으로 화살표로 그려져 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.1,
+                            395.9,
+                            508.1,
+                            498.5
+                        ]
+                    ],
+                    "text_description" : "$ x-(1-x)>3 x+1$을 풀면 \\[ x-1+x>3 x+1, -x>2, x<-2 \\] 해틀 수직선 위에 나타내면 다음 그림과 같다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            122.1,
+                            513.9,
+                            270.3,
+                            569.1
+                        ]
+                    ],
+                    "text_description" : "수직선 -2를 포함하지 않는 원이 그려져 있고 음의 방향인 왼쪽으로 화살표로 그려져 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 4,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            76.7,
+                            104.1,
+                            272.9,
+                            167.3
+                        ]
+                    ],
+                    "text_description" : "① 수직선 -2를 포함하지 원이 그려져 있고 양의 방향인 오른쪽으로 화살표로 그려져 있다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            75.9,
+                            191.1,
+                            274.9,
+                            255.5
+                        ]
+                    ],
+                    "text_description" : "③ 수직선 -2를 포함된 원이 그려져 있고 음의 방향인 왼쪽으로 화살표가 그려져 있다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            76.1,
+                            278.3,
+                            274.7,
+                            340.3
+                        ]
+                    ],
+                    "text_description" : "⑤ 수직선 -2를 포함하지 않는 원이 그려져 있고 양의 방향인 오른쪽으로 화살표가 그려져 있다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            330.9,
+                            191.5,
+                            529.5,
+                            256.3
+                        ]
+                    ],
+                    "text_description" : "④ 수직선 -2를 포함하지 않는 원이 그려져 있고 음의 방향인 왼쪽으로 화살표가 그려져 있다."
+                }
+            ]
+        }
+    ]
+}

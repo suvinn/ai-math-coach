@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "43ae5705-1946-419d-adef-4d6954d2216c",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001741",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.74000000000001,
+                            18.82,
+                            694.24,
+                            97.88
+                        ]
+                    ],
+                    "text_description" : "다음 두 조건을 모두 만족하는 상수 $a, b$에 대하여 $a b$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.24000000000001,
+                            127.16,
+                            696.37,
+                            371.91
+                        ]
+                    ],
+                    "text_description" : "㉮ 두 일차함수 $y=-6 x+2$와 $y=3 a x+a$의 그래프는 평행하다. ㉯ 두 일차함수 $y=\\frac{5}{3} x-b+3$과 $y=\\frac{5}{3} x+2 b$의 그래프는 일치한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            92.31,
+                            522.97,
+                            124.49000000000001,
+                            544.53
+                        ]
+                    ],
+                    "text_description" : "$-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.62,
+                            384.78,
+                            566.12,
+                            518.53
+                        ]
+                    ],
+                    "text_description" : "㉮ 평행한 두 일차함수의 그래프의 기울기는 같으므로 \\[ -6=3 a \\text { 에서 } a=-2 \\] ㉯ 일치하는 두 일차함수의 그래프의 기울기와 $y$ 절편은 같으므로 \\[ -b+3=2 b, -3 b=-3 \\text { 에서 } b=1 \\] 따라서 $a=-2, b=1$이므로 $a b=(-2) \\times 1=-2$"
+                }
+            ]
+        }
+    ]
+}

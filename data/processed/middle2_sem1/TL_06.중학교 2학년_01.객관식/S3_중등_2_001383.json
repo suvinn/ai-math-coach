@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "79df6947-63ba-4153-b41d-6554b8749589",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001383",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.5,
+                            17.14,
+                            535.5,
+                            102.14
+                        ]
+                    ],
+                    "text_description" : "분수 $\\frac{21}{2 \\times 5^{2} \\times x}$을 소수로 나타내면 유한소수가 된다고 한다. 다음 중 $x$의 값이 될 수 없는 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            378.5,
+                            121.83,
+                            431.5,
+                            144.83
+                        ]
+                    ],
+                    "text_description" : "③ $18$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.5,
+                            118.83,
+                            279.5,
+                            181.83
+                        ]
+                    ],
+                    "text_description" : "① $6$ ② $14$ ④ $35$ ⑤ $42$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.5,
+                            186.14,
+                            539.5,
+                            228.14
+                        ]
+                    ],
+                    "text_description" : "주어진 분수가 유한소수가 되기 위해서는 기약분수로 고쳤을 때 분모의 소인수가 $2$나 $5$뿐이어야 하므로"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            74.23,
+                            347.96,
+                            301.56,
+                            364.34
+                        ]
+                    ],
+                    "text_description" : "따라서 $x$의 값이 될 수 없는 것은 ③이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73.72,
+                            233.27,
+                            411.64,
+                            341.81
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{21}{2 \\times 5^{2} \\times 6}=\\frac{7}{2^{2} \\times 5^{2}}$ ② $\\frac{21}{2 \\times 5^{2} \\times 14}=\\frac{3}{2^{2} \\times 5^{2}}$ ③ $\\frac{21}{2 \\times 5^{2} \\times 18}=\\frac{7}{2^{2} \\times 3 \\times 5^{2}}$ ④ $\\frac{21}{2 \\times 5^{2} \\times 35}=\\frac{3}{2 \\times 5^{3}}$ ⑤ $\\frac{21}{2 \\times 5^{2} \\times 42}=\\frac{1}{2^{2} \\times 5^{2}}$"
+                }
+            ]
+        }
+    ]
+}

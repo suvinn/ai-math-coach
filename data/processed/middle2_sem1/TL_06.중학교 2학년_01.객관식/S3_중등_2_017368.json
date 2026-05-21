@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e25b7688-78fd-4f8f-b700-a52082eed2d9",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017368",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.72,
+                            18.59,
+                            284.52,
+                            46.59
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.32,
+                            55.82,
+                            165.32,
+                            87.82
+                        ]
+                    ],
+                    "text_description" : "$a^{3} \\times a^{2} \\times a^{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.72,
+                            110.22,
+                            72.52,
+                            143.82
+                        ]
+                    ],
+                    "text_description" : "① $a^{9}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.52,
+                            430.22,
+                            68.52,
+                            463.02
+                        ]
+                    ],
+                    "text_description" : "① $a^{9}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.92,
+                            152.82,
+                            81.32,
+                            312.62
+                        ]
+                    ],
+                    "text_description" : "② $a^{7}$ ③ $a^{6}$ ④ $a^{8}$ ⑤ $a^{12}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.32,
+                            340.22,
+                            619.72,
+                            368.62
+                        ]
+                    ],
+                    "text_description" : "지수법칙에 따라 같은 밑의 수끼리는 지수끼리 더합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.72,
+                            379.22,
+                            345.32,
+                            410.22
+                        ]
+                    ],
+                    "text_description" : "$a^{3} \\times a^{2} \\times a^{4}=a^{3+2+4}=a^{9}$"
+                }
+            ]
+        }
+    ]
+}

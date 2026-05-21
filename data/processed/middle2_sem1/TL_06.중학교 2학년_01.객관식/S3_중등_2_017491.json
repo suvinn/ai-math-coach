@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "baee2041-a7fe-411b-83f1-f0d06da63b74",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017491",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.16,
+                            10.44,
+                            265.36,
+                            82.68
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { 다음 식을 전개하시오. } \\\\ -3 a(2 b-5 a+4)\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.74,
+                            102.16,
+                            296.08,
+                            133.88
+                        ]
+                    ],
+                    "text_description" : "① $-6 a b+15 a^{2}-12 a$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.74,
+                            144.12,
+                            296.08,
+                            302.33
+                        ]
+                    ],
+                    "text_description" : "② $6 a b-15 a^{2}+12 a$ ③ $-6 a b-15 a^{2}+12 a$ ④ $6 a b+15 a^{2}-12 a$ ⑤ $-6 a b-15 a^{2}-12 a$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.62,
+                            334.38,
+                            730.26,
+                            421.96
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}-3 a(2 b-5 a+4) & =-3 a \\times 2 b+-3 a \\times(-5 a)+-3 a \\times 4 \\\\ & =-6 a b+15 a^{2}-12 a\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

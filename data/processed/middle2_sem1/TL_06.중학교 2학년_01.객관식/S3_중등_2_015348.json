@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5d53ced6-8ed1-4fcf-b278-c45ffa64156b",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015348",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            31.03,
+                            66.15,
+                            307.08,
+                            97.87
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            444.7,
+                            123.07,
+                            686.74,
+                            196.46
+                        ]
+                    ],
+                    "text_description" : "$\\frac{10 x^{2} y^{3}}{5 x y} \\times\\left(-2 x^{3} y^{2}\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            30.35,
+                            269.98,
+                            158.59,
+                            306.43
+                        ]
+                    ],
+                    "text_description" : "② $-4 x^{4} y^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            31.03,
+                            229.49,
+                            154.54,
+                            263.91
+                        ]
+                    ],
+                    "text_description" : "① $-4 x^{5} y^{5}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.33,
+                            313.18,
+                            155.89,
+                            432.65
+                        ]
+                    ],
+                    "text_description" : "③ $-4 x^{5} y^{4}$ ④ $-4 x^{3} y^{5}$ ⑤ $-2 x^{5} y^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            262.84,
+                            607.06,
+                            832.88,
+                            682.08
+                        ]
+                    ],
+                    "text_description" : "$\\frac{10 x^{2} y^{3}}{5 x y}=2 x y^{2}, \\quad 2 x y^{2} \\times\\left(-2 x^{3} y^{2}\\right)=-4 x^{4} y^{5}$"
+                }
+            ]
+        }
+    ]
+}

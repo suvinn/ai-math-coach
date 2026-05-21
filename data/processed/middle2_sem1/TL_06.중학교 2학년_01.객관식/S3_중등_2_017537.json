@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "75363775-e46c-4455-9fac-e982da576b77",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017537",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.28,
+                            7.23,
+                            457.28,
+                            35.23
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=25-6 x$ 일 때, $f(3)$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.28,
+                            56.77,
+                            42.28,
+                            77.77
+                        ]
+                    ],
+                    "text_description" : "① 7"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.28,
+                            396.77,
+                            38.28,
+                            416.77
+                        ]
+                    ],
+                    "text_description" : "① 7"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.28,
+                            101.77,
+                            45.28,
+                            259.77
+                        ]
+                    ],
+                    "text_description" : "② 6 ③ 5 ④ 4 ⑤ 3"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.28,
+                            353.77,
+                            219.28,
+                            379.77
+                        ]
+                    ],
+                    "text_description" : "따라서 정답은 ①입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.28,
+                            275.77,
+                            142.28,
+                            340.77
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(3)=25-18 \\\\ f(3)=7\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

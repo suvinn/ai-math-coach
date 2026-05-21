@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "75c88557-9549-4950-8ace-3ac7a9a574c0",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016075",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.25,
+                            64.16,
+                            681.25,
+                            101.66
+                        ]
+                    ],
+                    "text_description" : "두 점 (1, 4)와 $(5, 8)$를 지나는 직선의 기울기는 얼마인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.5,
+                            121.66,
+                            60,
+                            159.16
+                        ]
+                    ],
+                    "text_description" : "① 1"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.5,
+                            177.38,
+                            65,
+                            408.63
+                        ]
+                    ],
+                    "text_description" : "② 2 ③ $\\frac{4}{3}$ ④ $\\frac{5}{3}$ ⑤ $\\frac{3}{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.75,
+                            433.63,
+                            312.5,
+                            469.88
+                        ]
+                    ],
+                    "text_description" : "기울기는 다음과 같습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            313.75,
+                            428.63,
+                            557.5,
+                            484.88
+                        ]
+                    ],
+                    "text_description" : "$\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{8-4}{5-1}=\\frac{4}{4}=1$"
+                }
+            ]
+        }
+    ]
+}

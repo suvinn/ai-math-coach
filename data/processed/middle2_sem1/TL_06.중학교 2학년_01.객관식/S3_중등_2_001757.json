@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "17f2bb3a-41cf-4e9e-ba15-831fa648a396",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001757",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.5,
+                            24,
+                            330.5,
+                            188
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같은 정사각 형 ABCD에서 점 P는 점 A를 출발하여 $\\overline{\\mathrm{AB}}$를 따라 점 B까지 매초 1cm의 속력으로 움직인다. $\\triangle \\mathrm{APD}$의 넓이가"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.5,
+                            193,
+                            534.5,
+                            259
+                        ]
+                    ],
+                    "text_description" : "$24 \\mathrm{~cm}^{2}$가 되는 것은 점 P가 점 A를 출발한 지 몇 초 후인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            338.78,
+                            27.22,
+                            532.78,
+                            168.22
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 사각형 ABCD를 나타내고 있으며, AP가 빨간색으로 채워져 있습니다. AC의 길이는 8cm로 표시되어 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.78,
+                            313.22,
+                            149.78,
+                            339.22
+                        ]
+                    ],
+                    "text_description" : "④ 6초 후"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.78,
+                            278.22,
+                            150.78,
+                            307.22
+                        ]
+                    ],
+                    "text_description" : "① 3초 후"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            215.78,
+                            279.22,
+                            462.78,
+                            338.22
+                        ]
+                    ],
+                    "text_description" : "② 4초 후 ③ 5초 후 ⑤ 8초 후"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.78,
+                            348.22,
+                            531.78,
+                            470.22
+                        ]
+                    ],
+                    "text_description" : "점 P는 점 A를 출발하여 매초 1cm의 속력으로 움직이므로 $x$ 초 후의 $\\overline{\\mathrm{AP}}$의 길이는 $x \\mathrm{~cm}$ 이다. $\\triangle \\mathrm{APD}$의 넓이를 $y \\mathrm{~cm}^{2}$이라고 하면 $y=\\frac{1}{2} \\times x \\times 8$, 즉 $y=4 x$이 식에 $y=24$를 대입하면 $x=6$ 이므로 $\\triangle \\mathrm{APD}$의 넓이가 $\\overline{\\mathrm{AP}}$0가 되는 것은 점 P가 점 A를 출발한 지 6초 후이다."
+                }
+            ]
+        }
+    ]
+}

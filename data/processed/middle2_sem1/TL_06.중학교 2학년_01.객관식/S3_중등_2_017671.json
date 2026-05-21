@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6e7f8bf4-e467-48c2-a233-93fd6e314146",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017671",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.28,
+                            13.45,
+                            255.3,
+                            42.04
+                        ]
+                    ],
+                    "text_description" : "다음 부등식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.96,
+                            52.56,
+                            186.76,
+                            92.92
+                        ]
+                    ],
+                    "text_description" : "$(4 x-3) \\geq 9$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.18,
+                            106.37,
+                            118.65,
+                            141.69
+                        ]
+                    ],
+                    "text_description" : "$x \\geq 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.59,
+                            343.92,
+                            158.17,
+                            639.07
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}4 x-3 \\geq 9 \\\\ 4 x \\geq 12 \\\\ \\\\ x \\geq 3\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.96,
+                            152.2,
+                            121.6,
+                            306.76
+                        ]
+                    ],
+                    "text_description" : "$x \\geq 2$ $x \\leq 3$ $x>3$ $x>2$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "63225222-edcf-4283-a115-d1ff050f553e",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001693",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54,
+                            19.42,
+                            365,
+                            50.42
+                        ]
+                    ],
+                    "text_description" : "다음 중 $x=1$ 일 때 참인 부등식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55,
+                            192,
+                            287,
+                            331
+                        ]
+                    ],
+                    "text_description" : "$x=1$을 주어진부등식에 각각 대입하면 ① $2 \\times 1-5=-3<4$ (거짓) ② $1=1$ (거짓) ③ $3 \\times 1-2=1$ (참) ④ $0. 5 \\times 1+0. 2=0. 7<1$ (거짓) ⑤ $\\frac{1}{3}-\\frac{1}{2}=-\\frac{1}{6}<0$ (거짓)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            84.0,
+                            105.0,
+                            181.0,
+                            127.0
+                        ]
+                    ],
+                    "text_description" : "$3x-2\\leq1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.0,
+                            137.0,
+                            188.0,
+                            185.0
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\frac{x}{3}-\\frac{1}{2}>0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            289.0,
+                            101.0,
+                            454.0,
+                            130.0
+                        ]
+                    ],
+                    "text_description" : "④ $0. 5 x+0. 2 \\geq 1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.0,
+                            66.0,
+                            371.0,
+                            100.0
+                        ]
+                    ],
+                    "text_description" : "① $2 x-5>4$ ② $x<1$"
+                }
+            ]
+        }
+    ]
+}

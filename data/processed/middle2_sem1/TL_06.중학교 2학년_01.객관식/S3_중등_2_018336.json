@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c5dbcd39-48d5-448c-ba4c-02ad4e9a8533",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018336",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.9,
+                            5.54,
+                            1080.5,
+                            74.34
+                        ]
+                    ],
+                    "text_description" : "\"책의 무게 $x \\mathrm{~kg}$에 추가 물건의 무게 $6 \\mathrm{~kg}$을 더하면 $14\\mathrm{~kg}$보다 무겁다. \"를 부등식으로 나타낸 것 중 옳은 것을 고르세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.3,
+                            104.54,
+                            184.5,
+                            131.14
+                        ]
+                    ],
+                    "text_description" : "① $x+6>14$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.9,
+                            145.2,
+                            185.3,
+                            299.2
+                        ]
+                    ],
+                    "text_description" : "② $x+6<14$ ③ $x+6=14$ ④ $x+6 \\leq 14$ ⑤ $x+6 \\geq 14$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.7,
+                            318,
+                            1074.1,
+                            386.8
+                        ]
+                    ],
+                    "text_description" : "책의 무게와 추가 물건의 무게를 합친 값이 $14\\mathrm{~kg}$보다 무겁다는 조건을 부등식으로 나타내면 다음과 같습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            487.7,
+                            423.6,
+                            626.1,
+                            448.4
+                        ]
+                    ],
+                    "text_description" : "$x+6>14$"
+                }
+            ]
+        }
+    ]
+}

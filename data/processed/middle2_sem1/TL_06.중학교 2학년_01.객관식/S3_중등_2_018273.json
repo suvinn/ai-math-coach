@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f65a29b5-de69-4135-b44e-d458d4419aee",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018273",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            88.51,
+                            4.88,
+                            880.51,
+                            32.88
+                        ]
+                    ],
+                    "text_description" : "어떤 환자가 1분에 4mL 씩 들어가는 링거 주사를 맞고 있다. 주사를 25분 동안 맞은 후"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.51,
+                            36.88,
+                            888.51,
+                            99.88
+                        ]
+                    ],
+                    "text_description" : "남아 있는 주사약의 양을 보았더니 300mL 였다. 주사를 $x$ 분 동안 맞았을 때, 병에 남아 있는 주 사약의 양을 $y \\mathrm{~mL}$라고 할 때, $y$를 $x$에 대한 식으로 나타내시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            35.38,
+                            119.26,
+                            167.38,
+                            149.26
+                        ]
+                    ],
+                    "text_description" : "$y=400-4 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.13,
+                            163.01,
+                            168.63,
+                            341.76
+                        ]
+                    ],
+                    "text_description" : "② $y=300-4 x$ ③ $y=400-3 x$ ④ $y=300-3 x$ ⑤ $y=400-5 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.13,
+                            351.76,
+                            882.38,
+                            749.26
+                        ]
+                    ],
+                    "text_description" : "주사 시작 전에 병에 있는 주사약의 양을 $V$라고 합시다. 주사를 25분 동안 맞은 후 남아 있는 주사약의 양이 300mL 였으므로, 초기 주사약의 양 $V$를 구할 수 있습니다. 환자는 1분에 4mL 씩 주사를 맞고 있으므로, 25분 동안 맞은 주사약의 양은 $25 \\times 4=100 \\mathrm{~mL}$ 입니다. 따라서, 초기 주사약의 양 $V$는 다음과 같이 계산할 수 있습니다: \\[ V=300+100=400 \\] 이를 바탕으로, 주사를 $x$ 분 동안 맞았을 때 병에 남아 있는 주사약의 양 $y$는 다음과 같이 나타 낼 수 있습니다: \\[ y=400-4 x \\]"
+                }
+            ]
+        }
+    ]
+}

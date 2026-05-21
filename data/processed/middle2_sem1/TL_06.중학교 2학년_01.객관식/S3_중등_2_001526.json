@@ -1,0 +1,95 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c652cf51-d701-4a97-9574-3df21d047d9d",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001526",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.26,
+                            -0.39,
+                            399.82,
+                            39.65
+                        ]
+                    ],
+                    "text_description" : "$\\frac{6 a^{2}-14 a b}{2 a}-\\frac{18 a b+27 b^{2}-9 b}{3 b}$를 간단히 하면?"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.5,
+                            58.42,
+                            488.3,
+                            136.82
+                        ]
+                    ],
+                    "text_description" : "① $3a + 16b + 3$ ② $-3a + 16b + 3$ ③ $3a - 16b + 3$ ④ $-3a - 16b + 3$ ⑤ $-3a - 16b - 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.98,
+                            202.31,
+                            71.43,
+                            214.43
+                        ]
+                    ],
+                    "text_description" : "④"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.5,
+                            150.42,
+                            545.9,
+                            200.02
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} \\frac{6 a^{2}-14 a b}{2 a}-\\frac{18 a b+27 b^{2}-9 b}{3 b} & =\\frac{6 a^{2}}{2 a}-\\frac{14 a b}{2 a}-\\left(\\frac{18 a b}{3 b}+\\frac{27 b^{2}}{3 b}-\\frac{9 b}{3 b}\\right) \\\\ & =3 a-7 b-(6 a+9 b-3)=3 a-7 b-6 a-9 b+3=-3 a-16 b+3\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

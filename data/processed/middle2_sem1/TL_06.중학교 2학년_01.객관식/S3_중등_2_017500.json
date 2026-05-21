@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7e2d7d72-0ee0-47da-ae55-e3596ca337d8",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017500",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.92,
+                            9.79,
+                            266.92,
+                            37.79
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.12,
+                            50.82,
+                            225.32,
+                            85.42
+                        ]
+                    ],
+                    "text_description" : "$3 y(2 x+4 y-5)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.52,
+                            103.02,
+                            279.92,
+                            138.22
+                        ]
+                    ],
+                    "text_description" : "① $6 x y+12 y^{2}-15 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.92,
+                            464.02,
+                            263.72,
+                            499.02
+                        ]
+                    ],
+                    "text_description" : "① $6 x y+12 y^{2}-15 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.12,
+                            146.22,
+                            299.72,
+                            305.42
+                        ]
+                    ],
+                    "text_description" : "② $6 x y-12 y^{2}+15 y$ ③ $-6 x y+12 y^{2}-15 y$ ④ $6 x y+12 y^{2}+15 y$ ⑤ $6 x y-12 y^{2}-15 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.52,
+                            340.62,
+                            646.92,
+                            433.82
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} 3 y(2 x+4 y-5) & =3 y \\times 2 x+3 y \\times 4 y+3 y \\times(-5) \\\\ & =6 x y+12 y^{2}-15 y\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

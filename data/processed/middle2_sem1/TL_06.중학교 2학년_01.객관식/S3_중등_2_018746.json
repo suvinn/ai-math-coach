@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9d026cbd-fcae-4de5-aff1-52724bacc331",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018746",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.5,
+                            9.4,
+                            448.5,
+                            37.4
+                        ]
+                    ],
+                    "text_description" : "일차함수 $f(x)=2 x+3$에서 $f(3)-f(-3)$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71.5,
+                            172.4,
+                            120.5,
+                            194.4
+                        ]
+                    ],
+                    "text_description" : "⑤ 12"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.5,
+                            46.4,
+                            109.5,
+                            163.4
+                        ]
+                    ],
+                    "text_description" : "① 2 ② 3 ③ 6 ④ 9"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            259.4,
+                            392.5,
+                            383.4
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(x)=2 x+3 \\text { 의 } x \\text { 에 } 3, -3 \\text { 을 각각 대입하면 } \\\\ f(3)=2 \\times 3+3=9 \\\\ f(-3)=2 \\times(-3)+3=-3 \\\\ \\therefore \\quad f(3)-f(-3)=9-(-3)=12\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,149 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c7a21f19-6f06-4505-adf5-249a99a0806e",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016070",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.5,
+                            62.92,
+                            705.5,
+                            105.92
+                        ]
+                    ],
+                    "text_description" : "두 점 $(-1, -2)$와 $(3, 6)$를 지나는 직선의 기울기는 얼마인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            290.5,
+                            407.92,
+                            359.5,
+                            460.92
+                        ]
+                    ],
+                    "text_description" : "$\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.89,
+                            235.95,
+                            60.45,
+                            265.23
+                        ]
+                    ],
+                    "text_description" : "③ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.52,
+                            118.17,
+                            61.09,
+                            220.67
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{3}{2}$ ② $\\frac{4}{3}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.16,
+                            284.33,
+                            61.09,
+                            385.56
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{5}{3}$ ⑤ $\\frac{6}{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.06,
+                            414.21,
+                            289.65,
+                            444.77
+                        ]
+                    ],
+                    "text_description" : "기울기는 다음과 같습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            384.51,
+                            407.84,
+                            557.68,
+                            459.41
+                        ]
+                    ],
+                    "text_description" : "$\\frac{6-(-2)}{3-(-1)}=\\frac{8}{4}=2$"
+                }
+            ]
+        }
+    ]
+}

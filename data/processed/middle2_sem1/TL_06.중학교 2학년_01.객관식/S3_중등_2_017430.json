@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a3dbd277-a231-4f92-8998-77cae76c7d54",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017430",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.36,
+                            14.49,
+                            293.74,
+                            87.25
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오. \\[ (5 x-2 y)+(3 x+4 y) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.87,
+                            111.31,
+                            150.38,
+                            141.01
+                        ]
+                    ],
+                    "text_description" : "① $8 x+2 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.87,
+                            153.83,
+                            150.9,
+                            308.43
+                        ]
+                    ],
+                    "text_description" : "② $8 x+6 y$ ③ $6 x+2 y$ ④ $6 x+6 y$ ⑤ $7 x+2 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.34,
+                            344.6,
+                            762.22,
+                            377.37
+                        ]
+                    ],
+                    "text_description" : "$(5 x-2 y)+(3 x+4 y)=(5 x+3 x)+(-2 y+4 y)=8 x+2 y$"
+                }
+            ]
+        }
+    ]
+}

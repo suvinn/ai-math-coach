@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e707a30f-12d1-4271-b4f4-5a76af72f0e1",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001622",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57,
+                            15.92,
+                            531,
+                            78.92
+                        ]
+                    ],
+                    "text_description" : "다음 그림과 같은 직선의 방정식을 $a x+b y+c=0$ 꼴로 나타내시오. (단, $a, b, c$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            36.55,
+                            93.63,
+                            192.66,
+                            249.79
+                        ]
+                    ],
+                    "text_description" : "좌표평면도에 y축에는 3, x축에는 4가 표시되어 있고 x축에 4는 y축과 평행하게 직선으로 그어져 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.100000000000001,
+                            252.14,
+                            348.85,
+                            272.67
+                        ]
+                    ],
+                    "text_description" : "$y$ 축에 평행하고 점 $(4, 3)$을 지나므로 $x=4$, 즉 $x-4=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.0,
+                            276.0,
+                            95.0,
+                            293.0
+                        ]
+                    ],
+                    "text_description" : "①x-4=0"
+                }
+            ]
+        }
+    ]
+}

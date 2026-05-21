@@ -1,0 +1,179 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0f6da8ab-8fdd-41a4-bebd-f132c86f8046",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018248",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.41,
+                            3.66,
+                            1067.97,
+                            81.79
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-4 x+2$의 그래프의 y 절편과 일차함수 $y=2 x+p$의 x 절편이 서로 같을 때, $p$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.28,
+                            186.47,
+                            80.47,
+                            219.29
+                        ]
+                    ],
+                    "text_description" : "③ -4"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.28,
+                            103,
+                            82.03,
+                            181.13
+                        ]
+                    ],
+                    "text_description" : "① -2 ② 2"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.72,
+                            226.44,
+                            72.66,
+                            306.13
+                        ]
+                    ],
+                    "text_description" : "④ 4 ⑤ 0"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.16,
+                            321.75,
+                            713.28,
+                            398.32
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-4 x+2$의 $y$ 절편은 $x=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.16,
+                            451.44,
+                            688.28,
+                            579.57
+                        ]
+                    ],
+                    "text_description" : "따라서, y절편은 2입니다. 일차함수 $y=2 x+p$의 x절편은 $y=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12,
+                            673.6,
+                            410.4,
+                            763.2
+                        ]
+                    ],
+                    "text_description" : "따라서, x절편은 $-\\frac{p}{2}$ 입니다. 두 절편이 같으므로, $-\\frac{p}{2}=2$ 이므로,"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.03,
+                            407.69,
+                            263.28,
+                            448.32
+                        ]
+                    ],
+                    "text_description" : "$y=-4(0)+2=2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.16,
+                            585.82,
+                            161.72,
+                            668.75
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}0=2 x+p \\\\ x=-\\frac{p}{2}. \\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.8,
+                            769.6,
+                            110.4,
+                            812.8
+                        ]
+                    ],
+                    "text_description" : "$p=-4. $"
+                }
+            ]
+        }
+    ]
+}

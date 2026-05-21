@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d3d9e0ab-0040-484b-b771-d85543c131a6",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001799",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59,
+                            34.42,
+                            334,
+                            131.42
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같은 직사각형 $ABCD$가 있다. $\\triangle \\mathrm{DEF}$의 넓이를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            347,
+                            42.9,
+                            532,
+                            177.9
+                        ]
+                    ],
+                    "text_description" : "직사각형 $ABCD$이 있다. $CD$의 길이는 $x$, $AD$의 길이는 $y$, $BE$의 길이는 $3$, $BF$의 길이는 $2$이다. 사각형 내부에 점 $D$, $CD$0, $CD$1로 하는 삼각형이 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            36.0,
+                            556.9,
+                            139.0,
+                            601.9
+                        ]
+                    ],
+                    "text_description" : "$x+\\frac{3}{2} y-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.0,
+                            202.0,
+                            529.0,
+                            543.0
+                        ]
+                    ],
+                    "text_description" : "$\\triangle \\mathrm{DEF}=($ 사각형 $ABCD$의 넓이) \\[ \\begin{array}{l} \\quad \\quad-(\\triangle \\mathrm{AED}+\\triangle \\mathrm{BFE}+\\triangle \\mathrm{CDF}) \\\\ =x y-\\left\\{\\frac{1}{2} y(x-3)+\\frac{1}{2} \\times 2 \\times 3+\\frac{1}{2} x(y-2)\\right\\} \\\\ =x y-\\left(\\frac{1}{2} x y-\\frac{3}{2} y+3+\\frac{1}{2} x y-x\\right) \\\\ =x y-\\left(x y-x-\\frac{3}{2} y+3\\right) \\\\ =x y-x y+x+\\frac{3}{2} y-3 \\\\ =x+\\frac{3}{2} y-3 \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

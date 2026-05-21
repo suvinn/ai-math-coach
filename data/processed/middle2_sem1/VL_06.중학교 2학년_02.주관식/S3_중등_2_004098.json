@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d5458933-a696-471f-a5d4-0c953e6685fa",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004098",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71.05,
+                            18.27,
+                            445,
+                            52.56
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            81.58,
+                            83.69,
+                            236.06,
+                            164.32
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{c}5 x+2 y=15 \\\\ y=4 x+1\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -0.81,
+                            390.59,
+                            111.05,
+                            411.82
+                        ]
+                    ],
+                    "text_description" : "$x=1, y=5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            40.84,
+                            202.8,
+                            189.44,
+                            254.24
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{c}5 x+2 y=15 \\quad \\ldots\\ldots \\text { ① } \\\\ y=4 x+1 \\quad \\ldots \\ldots \\text { ② }\\end{array}\\right. $"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.09,
+                            261.59,
+                            355.19,
+                            373.45
+                        ]
+                    ],
+                    "text_description" : "②를 ①에 대입하면 $5 x+2(4 x+1)=15$, \\[ 13 x+2=15, x=1 \\] $x=1$을 ②에 대입하면 $y=5$ 따라서 구하는 해는 $x=1, y=5$"
+                }
+            ]
+        }
+    ]
+}

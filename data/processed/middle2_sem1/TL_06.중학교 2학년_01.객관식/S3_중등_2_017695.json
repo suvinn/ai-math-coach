@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9764347a-b163-4786-99f8-f4626f7d81a3",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017695",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.14,
+                            7.72,
+                            935.94,
+                            73.3
+                        ]
+                    ],
+                    "text_description" : "어떤 도서관에서 하루에 $80$권의 책을 대출하고, 매일 $20$권씩 더 대출한다고 한다. 도서관의 대출량이 $600$권을 넘으려면 최소 몇 일이 지나야 하나요?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.03,
+                            129.93,
+                            88.85,
+                            158.47
+                        ]
+                    ],
+                    "text_description" : "② $26$일"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.7,
+                            94.25,
+                            88.85,
+                            121.01
+                        ]
+                    ],
+                    "text_description" : "① $25$일"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.92,
+                            167.94,
+                            90.63,
+                            266.95
+                        ]
+                    ],
+                    "text_description" : "③ $27$일 ④ $28$일 ⑤ $29$일"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.03,
+                            283.9,
+                            874.72,
+                            315.12
+                        ]
+                    ],
+                    "text_description" : "하루에 $80$권씩 대출하고, 매일 $20$권씩 더 대출하므로 대출량은 $80+20 \\times x$로 표현됩니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.35,
+                            521.18,
+                            349.32,
+                            547.05
+                        ]
+                    ],
+                    "text_description" : "따라서, 최소 $26$일이 지나야 합니다."
+                }
+            ]
+        }
+    ]
+}

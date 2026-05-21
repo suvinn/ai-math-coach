@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "73fdd078-08ba-440e-a918-5e8114fd4f8f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015320",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14,
+                            63.44,
+                            695,
+                            155.44
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오. \\[ (-6 a+b)-(-2 a-3 b) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            238,
+                            164,
+                            266
+                        ]
+                    ],
+                    "text_description" : "② $-4 a+4 b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            194,
+                            164,
+                            225
+                        ]
+                    ],
+                    "text_description" : "① $-4 a-2 b$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            281,
+                            163,
+                            392
+                        ]
+                    ],
+                    "text_description" : "③ $-8 a+4 b$ ④ $-8 a-2 b$ ⑤ $-4 a-4 b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9,
+                            528,
+                            376,
+                            554
+                        ]
+                    ],
+                    "text_description" : "괄호를 풀고 동류항을 정리합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            31.38,
+                            588.25,
+                            1059.88,
+                            621.5
+                        ]
+                    ],
+                    "text_description" : "$(-6 a+b)-(-2 a-3 b)=-6 a+b+2 a+3 b=(-6 a+2 a)+(b+3 b)=-4 a+4 b$"
+                }
+            ]
+        }
+    ]
+}

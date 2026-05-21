@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8bd59ecc-3ce2-40af-aa0d-04c1dd42adab",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018890",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.78,
+                            19.23,
+                            619.78,
+                            62.23
+                        ]
+                    ],
+                    "text_description" : "점 $(5, 2)$를 지나고, 기울기가 $\\frac{1}{5}$ 인 직선을 그래프로 하는 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.78,
+                            140.77,
+                            181.78,
+                            183.77
+                        ]
+                    ],
+                    "text_description" : "③ $y=\\frac{1}{5} x+1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.78,
+                            72.77,
+                            170.78,
+                            130.77
+                        ]
+                    ],
+                    "text_description" : "① $y=5 x+1$ ② $y=5 x-1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.78,
+                            197.77,
+                            180.78,
+                            276.77
+                        ]
+                    ],
+                    "text_description" : "④ $y=\\frac{1}{5} x-1$ ⑤ $y=5 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.78,
+                            339.77,
+                            310.78,
+                            557.77
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { 기울기가 } \\frac{1}{5} \\text { 이므로 } y=\\frac{1}{5} x+b \\\\ y=\\frac{1}{5} x+b \\text { 에 }(5, 2) \\text { 를 대입하면, } \\\\ 2=\\frac{1}{5} \\times 5+b, \\quad b=1 \\\\ \\therefore \\quad y=\\frac{1}{5} x+1\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

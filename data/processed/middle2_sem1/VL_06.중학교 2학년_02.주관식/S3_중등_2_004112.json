@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9c0a68dd-3a1c-4dbf-ba75-ca8baf799053",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004112",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            36.18,
+                            18.7,
+                            458.06,
+                            46.83
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그래프에서 $x$절편과 $y$절편을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            528.31,
+                            22.45,
+                            730.18,
+                            226.33
+                        ]
+                    ],
+                    "text_description" : "$x$축과 만나는 점의 좌표가 $(5, 0)$이므로 $x$절편은 5, $y$축과 만나는 점의 좌표가 $(0, 3)$이므로 $y$절편은 3인 일차함수 그래프가 그려져 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.99,
+                            364.92,
+                            198.68,
+                            396.17
+                        ]
+                    ],
+                    "text_description" : "$x$절편: 5, $y$절편: 3"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.93,
+                            254.85,
+                            492.43,
+                            355.54
+                        ]
+                    ],
+                    "text_description" : "$x$축과 만나는 점의 좌표가 $(5, 0)$이므로 $x$절편은 5, $y$축과 만나는 점의 좌표가 $(0, 3)$이므로 $y$절편은 3이다."
+                }
+            ]
+        }
+    ]
+}

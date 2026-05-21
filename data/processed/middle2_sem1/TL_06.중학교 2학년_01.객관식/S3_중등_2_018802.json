@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e49b8268-c8f0-471c-8460-39fbd7274c0f",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018802",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.5,
+                            4.92,
+                            713.5,
+                            32.92
+                        ]
+                    ],
+                    "text_description" : "다음의 일차함수를 그래프로 나타내었을 때, 다른 네 개의 그래프와 평행하지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            88.5,
+                            156.92,
+                            196.5,
+                            204.92
+                        ]
+                    ],
+                    "text_description" : "$y=-\\frac{2}{3} x-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.1,
+                            387.9,
+                            739.9,
+                            433.1
+                        ]
+                    ],
+                    "text_description" : "①, ②, ④, ⑤의 일차함수를 그래프로 나타내면 기울기가 $-\\frac{3}{2}$으로 같으므로 모두 평행하다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.64,
+                            45.06,
+                            196.48,
+                            147.02
+                        ]
+                    ],
+                    "text_description" : "① $y=-\\frac{3}{2} x+1$ ② $y=-\\frac{3}{2} x-3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.56,
+                            214.86,
+                            209.92,
+                            317.9
+                        ]
+                    ],
+                    "text_description" : "④ $y=-\\frac{3}{2} x-\\frac{2}{3}$ ⑤ $y=\\frac{2}{5}-\\frac{3}{2} x$"
+                }
+            ]
+        }
+    ]
+}

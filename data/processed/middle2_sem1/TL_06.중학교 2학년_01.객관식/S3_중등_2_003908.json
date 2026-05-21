@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "14051d4b-9162-480a-ac19-5299f87bb921",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003908",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.5,
+                            15.35,
+                            542.15,
+                            197.25
+                        ]
+                    ],
+                    "text_description" : "민지와 수민이가 계단에서 가위바위보를 하 여, 이기면 3 계단 올라가고, 지면 2 계단 내려 간다. 처음보다 민지와 수민이는 각각 19계단, 9 계단씩 올라가 있을 때, 민지가 이긴 횟수는? (단, 비기는 경우는 없다고 한다.)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            380.35,
+                            203.95,
+                            474.17,
+                            232.67
+                        ]
+                    ],
+                    "text_description" : "③ 15 회"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.46,
+                            204.51,
+                            289.4,
+                            272.48
+                        ]
+                    ],
+                    "text_description" : "① 13 회 ② 14 회 ④ 16 회 ⑤ 17 회"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.84,
+                            303.12,
+                            502.89,
+                            333.75
+                        ]
+                    ],
+                    "text_description" : "민지가 이긴 횟수를 $x$, 진 횟수를 $y$ 라 하면"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.8,
+                            342.37,
+                            444.49,
+                            372.05
+                        ]
+                    ],
+                    "text_description" : "수민이가 이긴 횟수는 $y$, 진 횟수는 $x$ 이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.01,
+                            510.78,
+                            388.01,
+                            577.88
+                        ]
+                    ],
+                    "text_description" : "① $\\times 3+$ ② $\\times 2$를 하면 $5 x=75, x=15$ 따라서 민지가 이긴 횟수는 15회이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.76,
+                            375.88,
+                            220.47,
+                            506.08
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\left\\{\\begin{array}{l}3 x-2 y=19 \\\\ 3 y-2 x=9\\end{array}\\right. \\\\ \\left\\{\\begin{array}{c}3 x-2 y=19 \\quad \\ldots \\ldots① \\\\ -2 x+3 y=9\\quad \\ldots \\ldots②\\end{array}\\right. \\end{array}$"
+                }
+            ]
+        }
+    ]
+}

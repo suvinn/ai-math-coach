@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f86bbbfd-61b5-4de6-a14a-be2b242f07a9",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018381",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.78,
+                            9.24,
+                            535.78,
+                            41.24
+                        ]
+                    ],
+                    "text_description" : "$t \\geq 1$일 때, $5 t-2$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.78,
+                            63.78,
+                            186.78,
+                            94.78
+                        ]
+                    ],
+                    "text_description" : "① $5 t-2 \\geq 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.779999999999999,
+                            467.78,
+                            167.78,
+                            499.78
+                        ]
+                    ],
+                    "text_description" : "① $5 t-2 \\geq 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.78,
+                            104.78,
+                            186.78,
+                            260.78
+                        ]
+                    ],
+                    "text_description" : "② $5 t-2 \\leq 3$ ③ $5 t-2>3$ ④ $5 t-2 \\geq 5$ ⑤ $5 t-2>5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.78,
+                            289.78,
+                            234.78,
+                            441.78
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}t \\geq 1 \\\\ 5 t-2 \\geq 5(1)-2 \\\\ 5 t-2 \\geq 3\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

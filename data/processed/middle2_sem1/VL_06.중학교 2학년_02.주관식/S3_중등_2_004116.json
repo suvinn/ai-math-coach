@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "92168bb9-bac2-4e1c-b65a-f4ee9bbf5243",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004116",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            29.75,
+                            9.39,
+                            494.75,
+                            45.64
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그래프에서 기울기와 $y$ 절편을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            504.75,
+                            10.64,
+                            728.5,
+                            229.39
+                        ]
+                    ],
+                    "text_description" : "좌표 평면이 있으며, x축과 y축이 표시되어 있다. x축과 y축은 -4에서 4까지의 범위를 나타낸다. 원점 O가 표시되어 있고, y축 -2와 x축 2에 위치하고 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.25,
+                            418.87,
+                            224.75,
+                            463.87
+                        ]
+                    ],
+                    "text_description" : "$y$ 절편: -2, 기울기: $\\frac{2}{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1,
+                            242.12,
+                            492.25,
+                            402.62
+                        ]
+                    ],
+                    "text_description" : "$2 y$ 축과 만나는 점의 $y$ 좌표가 -2 이므로 $y$ 절편은 -2 이고 점 $(0, -2)$에서 점 $(3, 0)$으로 이동하므로 기울기는 $\\frac{0-(-2)}{3-0}=\\frac{2}{3}$ 이다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "77212e8d-0b44-43f9-9371-22ac29143763",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018820",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60,
+                            10.02,
+                            928.75,
+                            37.52
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=2 x+b$의 그래프가 점 $(-2, 2)$를 지난다. 점 ($2 k, k)$가이 그래프 위의 점일 때, $k$의 값은? (단, $b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.75,
+                            77.52,
+                            116.25,
+                            101.27
+                        ]
+                    ],
+                    "text_description" : "② -2"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.76,
+                            46.69,
+                            104.45,
+                            69.63
+                        ]
+                    ],
+                    "text_description" : "① 1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.63,
+                            108.95,
+                            115.51,
+                            194.56
+                        ]
+                    ],
+                    "text_description" : "③ 3 ④ -4 ⑤ 5"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.9,
+                            260.1,
+                            401.41,
+                            284.26
+                        ]
+                    ],
+                    "text_description" : "점 $(-2, 2)$를 지나므로 $2=2 \\times(-2)+b$에서 $b=6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.31,
+                            319.08,
+                            351.85,
+                            340.79
+                        ]
+                    ],
+                    "text_description" : "또이 그래프가 점 $(2 k, k)$를 지나므로"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.26,
+                            291.23,
+                            153.6,
+                            313.71
+                        ]
+                    ],
+                    "text_description" : "$\\therefore y=2 x+6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.36,
+                            347.75,
+                            236.75,
+                            373.96
+                        ]
+                    ],
+                    "text_description" : "$k=2 \\times 2 k+6 \\quad \\therefore k=-2$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fcacaac9-dd3f-48af-9de8-43d48b7240a5",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018941",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.25,
+                            10.16,
+                            398.5,
+                            37.66
+                        ]
+                    ],
+                    "text_description" : "다음 중 $2 x-5=y$의 그래프 위에 있는 점은?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.75,
+                            141.41,
+                            152.25,
+                            168.91
+                        ]
+                    ],
+                    "text_description" : "④ $(4,3)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.75,
+                            42.13,
+                            164.75,
+                            138.38
+                        ]
+                    ],
+                    "text_description" : "① $(1, 1)$ ② $(2, -2)$ ③ $(3, -1)$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            173.38,
+                            164.75,
+                            202.13
+                        ]
+                    ],
+                    "text_description" : "⑤ $(5, -5)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.38,
+                            266.3,
+                            661.98,
+                            290.62
+                        ]
+                    ],
+                    "text_description" : "주어진 식 $2 x-5=y$에 점의 좌표를 각각 대입하여 등식이 성립하는 것을 찾는다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ee8c0174-e69f-4a92-9c9a-7a8755908c53",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001715",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.76,
+                            72.66,
+                            533.01,
+                            140.16
+                        ]
+                    ],
+                    "text_description" : "다음 일차함수의 그래프 중 $x$절편이 나머지 넷과 다른 하나는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            291.76,
+                            209.16,
+                            425.26,
+                            248.91
+                        ]
+                    ],
+                    "text_description" : "④ $y=3 x-9$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.76,
+                            155.88,
+                            220.01,
+                            293.88
+                        ]
+                    ],
+                    "text_description" : "① $y=\\frac{3}{2} x-6$ ③ $y=-2 x+8$ ⑤ $y=\\frac{5}{4} x-5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            286.26,
+                            153.38,
+                            457.26,
+                            207.63
+                        ]
+                    ],
+                    "text_description" : "② $y=-\\frac{1}{2} x+2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.26,
+                            3.38,
+                            324.26,
+                            52.13
+                        ]
+                    ],
+                    "text_description" : "각 일차함수의 그래프의 $x$절편은 다음과 같다. $\\begin{array}{lllll}\\text { ① } 4 \\text { ② } 4 \\text { ③ } 4 \\text { ④ } 3 \\text { ⑤ } 4\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

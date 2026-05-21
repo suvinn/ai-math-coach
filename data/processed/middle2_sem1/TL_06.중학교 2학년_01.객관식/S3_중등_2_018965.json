@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "eb8dbd7e-27d7-4caf-8286-494888b2f722",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018965",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.9,
+                            9.8,
+                            610.1,
+                            32
+                        ]
+                    ],
+                    "text_description" : "$a x+b y+c=0$의 그래프가 다음 그림과 같을 때, 다음 중 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.1,
+                            44.2,
+                            222.9,
+                            184
+                        ]
+                    ],
+                    "text_description" : "이미지는 좌표계의 그래프를 보여준다. 수직축은 y축, 수평축은 x축으로 표시되어 있다. 두 축은 원점 O에서 만난다. 그래프는 왼쪽에서 시작하여 오른쪽 위 방향으로 직선이 증가하는 형태이며, 이는 양의 기울기를 가진 선형 함수를 나타낸다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.1,
+                            219,
+                            147.7,
+                            243.2
+                        ]
+                    ],
+                    "text_description" : "② $b c>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.3,
+                            189.6,
+                            142.1,
+                            211.2
+                        ]
+                    ],
+                    "text_description" : "① $a b<0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.1,
+                            250.4,
+                            272.5,
+                            368.8
+                        ]
+                    ],
+                    "text_description" : "③ $a c>0$ ④ $a>0$ 이면 $b<0, \\quad c>0$ ⑤ $\\left(0, -\\frac{c}{b}\\right)$를 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.7,
+                            439.4,
+                            490.1,
+                            653.6
+                        ]
+                    ],
+                    "text_description" : "\\[ a x+b y+c=0 \\text { 에서 } y=-\\frac{a}{b} x-\\frac{c}{b} \\text { 이다. } \\] 그래프에서 기울기는 양수, $y$ 절편도 양수이다. 따라서 $-\\frac{a}{b}>0, -\\frac{c}{b}>0$ 이다. 즉 $a b<0, b c<0$ 이다. 이제 $x$ 절편을 구하기 위해 $y=0$을 대입하면 $x=-\\frac{c}{a}<0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.72,
+                            664.06,
+                            445.72,
+                            778.75
+                        ]
+                    ],
+                    "text_description" : "따라서 $a c>0$ 이다. $a b<0, a c>0$에서 $a>0$ 이면 $b<0, \\quad c>0$ 또 $x=0$ 일 때 $y=-\\frac{c}{b}$ 이므로 $\\left(0, -\\frac{c}{b}\\right)$를 지난다."
+                }
+            ]
+        }
+    ]
+}

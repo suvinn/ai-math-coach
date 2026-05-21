@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6457a6b8-b34a-4fc0-a8d4-0f77e71b1b06",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018332",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.5,
+                            10.74,
+                            1063.7,
+                            78.74
+                        ]
+                    ],
+                    "text_description" : "\"가방의 무게 $x \\mathrm{~kg}$에 짐의 무게 $2 \\mathrm{~kg}$을 더하면 $8 \\mathrm{~kg}$보다 무겁다. \"를 부등식으로 나타낸 것 중 옳은 것을 고르세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.1,
+                            106.74,
+                            166.9,
+                            134.74
+                        ]
+                    ],
+                    "text_description" : "① $x+2>8$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.3,
+                            149.4,
+                            166.7,
+                            303.2
+                        ]
+                    ],
+                    "text_description" : "② $x+2=8$ ③ $x+2 \\geq 8$ ④ $x+2<8$ ⑤ $x+2 \\leq 8$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.7,
+                            328.8,
+                            1077.1,
+                            397.6
+                        ]
+                    ],
+                    "text_description" : "가방의 무게와 짐의 무게를 합친 값이 $8 \\mathrm{~kg}$보다 무겁다는 조건을 부등식으로 나타내면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            486.9,
+                            433.8,
+                            610.1,
+                            459.2
+                        ]
+                    ],
+                    "text_description" : "$x+2>8$"
+                }
+            ]
+        }
+    ]
+}

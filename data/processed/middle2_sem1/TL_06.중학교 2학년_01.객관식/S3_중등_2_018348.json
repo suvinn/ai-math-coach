@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "50ade6a8-3c02-441e-bcd8-7ecd5b783c42",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018348",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.17,
+                            1.28,
+                            527.33,
+                            38.24
+                        ]
+                    ],
+                    "text_description" : "$x<3$ 일 때, $x+4$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.49,
+                            185.23,
+                            178.33,
+                            218.89
+                        ]
+                    ],
+                    "text_description" : "④ $x+4<7$6"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.48,
+                            293.65,
+                            225.96,
+                            445.28
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}x+4<3+4 \\\\ x+4<7\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "2",
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.02,
+                            60.41,
+                            178.33,
+                            176.19
+                        ]
+                    ],
+                    "text_description" : "① $x+4<3$\n② $x+4 \\geq 7$\n③ $x+4>3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.02,
+                            227.11,
+                            192.4,
+                            257.67
+                        ]
+                    ],
+                    "text_description" : "⑤ $x+4>10$"
+                }
+            ]
+        }
+    ]
+}

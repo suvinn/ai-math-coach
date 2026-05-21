@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "aab20643-b177-4275-8896-25a1b8cb0f2e",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004086",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.4,
+                            19.14,
+                            337.8,
+                            49.54
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.4000000000000004,
+                            57.54,
+                            287.4,
+                            113.54
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{x-3}{2}-1>-0. 4 x+2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.8,
+                            200.4,
+                            76.2,
+                            224.4
+                        ]
+                    ],
+                    "text_description" : "④ $x>5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.8,
+                            123.8,
+                            418.2,
+                            195.6
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { ④ } \\frac{x-3}{2}-1>-0. 4 x+2, 5(x-3)-10>-4 x+20, \\\\ 5 x-15-10>-4 x+20, 9 x>45, x>5\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

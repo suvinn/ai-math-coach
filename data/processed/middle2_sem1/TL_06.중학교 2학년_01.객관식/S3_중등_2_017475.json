@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8acae95c-30aa-410e-ab5d-2fd4137dfc9f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017475",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.84,
+                            8.83,
+                            263.68,
+                            84.35
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오. \\[ -2 y(-x+3 y-4) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.04,
+                            102.64,
+                            246.4,
+                            138.48
+                        ]
+                    ],
+                    "text_description" : "① $2 x y-6 y^{2}+8 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.4,
+                            142.96,
+                            270.72,
+                            306.8
+                        ]
+                    ],
+                    "text_description" : "② $2 x y-6 y^{2}-8 y$ ③ $-2 x y+6 y^{2}+8 y$ ④ $-2 x y+6 y^{2}-8 y$ ⑤ $2 x y+6 y^{2}-8 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.12,
+                            341.44,
+                            777.6,
+                            440.56
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}-2 y(-x+3 y-4)= & -2 y \\times(-x)+-2 y \\times 3 y+-2 y \\times(-4) \\\\ & =2 x y-6 y^{2}+8 y\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

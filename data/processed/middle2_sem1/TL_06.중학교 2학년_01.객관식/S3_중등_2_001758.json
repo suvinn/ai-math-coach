@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ffa53fb3-86b9-4db5-b91d-58b6f4f3ed8f",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001758",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.8,
+                            26.11,
+                            378.24,
+                            56.19
+                        ]
+                    ],
+                    "text_description" : "다음 중 직선의 방정식이 아닌 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            177.96,
+                            536.32,
+                            218.4
+                        ]
+                    ],
+                    "text_description" : "직선의 방정식은 $a x+b y+c=0(a \\neq 0$ 또는 $b \\neq 0)$ 꼴로 나타낼 수 있어야 하므로 ⑤ $x y=3$은 직선의 방정식이 아니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.28,
+                            76.34,
+                            432.36,
+                            134.14
+                        ]
+                    ],
+                    "text_description" : "① $3 x-2 y-1=0$ ② $y=-x+3$ ③ $x=5$ ④ $2 y+4=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            90.0,
+                            146.0,
+                            157.0,
+                            169.0
+                        ]
+                    ],
+                    "text_description" : "$x y=3$"
+                }
+            ]
+        }
+    ]
+}

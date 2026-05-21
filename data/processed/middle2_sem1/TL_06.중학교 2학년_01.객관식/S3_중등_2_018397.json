@@ -1,0 +1,179 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "818aacf3-b953-4f0d-93ad-00916190e03c",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018397",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.24,
+                            6.4,
+                            1061.84,
+                            78.08
+                        ]
+                    ],
+                    "text_description" : "현재 언니의 저축액은 20000원, 동생의 저축액은 7000 원이다. 앞으로 매달 언니는 3000원씩, 동생은 5000원씩 저축을 한다면 몇 개월 후부터 동생의 저축액이 언니의 저축액보다 많아지는가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.88,
+                            272.64,
+                            108.24,
+                            301.44
+                        ]
+                    ],
+                    "text_description" : "⑤ 7 개월"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.8,
+                            104.32,
+                            105.68,
+                            259.2
+                        ]
+                    ],
+                    "text_description" : "① 3 개월 ② 4 개월 ③ 5 개월 ④ 6 개월"
+                }
+            ]
+        },
+        {
+            "class_num" : 4,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.04,
+                            323.2,
+                            1062.48,
+                            394.24
+                        ]
+                    ],
+                    "text_description" : "언니의 저축액은 $20000+3000 x$로, 동생의 저축액은 $7000+5000 x$ 입니다. 동생의 저축액이 언 니의 저축액보다 많아지는 시점을 찾기 위해 부등식을 세웁니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.04,
+                            493.44,
+                            421.84,
+                            521.6
+                        ]
+                    ],
+                    "text_description" : "양변에서 $3000 x$를 빼고, 7000을 빼면,"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.04,
+                            619.04,
+                            277.2,
+                            649.12
+                        ]
+                    ],
+                    "text_description" : "양변을 2000으로 나누면,"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.68,
+                            746.4,
+                            816.72,
+                            775.2
+                        ]
+                    ],
+                    "text_description" : "따라서 동생의 저축액이 언니의 저축액을 초과하는 시점은 7개월 후입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            348.24,
+                            428.8,
+                            739.92,
+                            456.32
+                        ]
+                    ],
+                    "text_description" : "$7000+5000 x>20000+3000 x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            448.08,
+                            554.4,
+                            637.52,
+                            583.84
+                        ]
+                    ],
+                    "text_description" : "$2000 x>13000$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            495.88,
+                            682.4,
+                            591.44,
+                            709.28
+                        ]
+                    ],
+                    "text_description" : "$x>6. 5$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d8399996-0020-4b21-ae90-3549c0eb5f87",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018858",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.84,
+                            8.83,
+                            614.84,
+                            37.83
+                        ]
+                    ],
+                    "text_description" : "다음 중 \\(a > 0, b < 0 \\)일 때, 일차 함수 \\(y=ax-b \\)의 그래프로 적당한 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.84,
+                            42.83,
+                            224.84,
+                            163.83
+                        ]
+                    ],
+                    "text_description" : "① 이미지에는 좌표 평면이 그려져 있다. $x$축과 $y$축이 각각 수평과 수직으로 위치하고 있으며, 교차점은 $\\mathrm{O}$로 표시되어 있다. $\\mathrm{O}$는 원점이다. 직선은 원점을 지나지 않으며, 원점의 왼쪽과 위쪽을 통과하고 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.84,
+                            695.44,
+                            849.84,
+                            779.44
+                        ]
+                    ],
+                    "text_description" : "$y = ax - b$의 그래프에서 기울기 $a > 0$이면 $x$가 증가할 때, $y$도 증가하므로 그 직선은 오른쪽 위로 향한다. $\\\\$$b < 0$에서 $-b > 0$이므로 $y$ 절편이 원점보다 위쪽에 있다. $\\\\$ 따라서 $y = ax - b$ 그래프는 ①이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.84,
+                            169.44,
+                            222.84,
+                            649.44
+                        ]
+                    ],
+                    "text_description" : "② 이미지에는 좌표 평면이 그려져 있다. $x$축과 $y$축이 각각 수평과 수직으로 위치하고 있으며, 교차점은 $\\mathrm{O}$로 표시되어 있다. $\\mathrm{O}$는 원점이다. 직선은 원점을 지나지 않으며, 원점의 오른쪽과 위쪽을 통과하고 있다. ③ 이미지에는 좌표 평면이 그려져 있다. $x$축과 $y$축이 각각 수평과 수직으로 위치하고 있으며, 교차점은 $\\mathrm{O}$로 표시되어 있다. $\\mathrm{O}$는 원점이다. 원점을 통과하고 있다. ④ 이미지에는 좌표 평면이 그려져 있다. $x$축과 $y$축이 각각 수평과 수직으로 위치하고 있으며, 교차점은 $\\mathrm{O}$로 표시되어 있다. $\\mathrm{O}$는 원점이다. 원점을 통과하지 않으며 원점의 왼쪽과 아래를 통과하고 있다. ⑤ 이미지에는 좌표 평면이 그려져 있다. $x$축과 $y$축이 각각 수평과 수직으로 위치하고 있으며, 교차점은 $\\mathrm{O}$로 표시되어 있다. $\\mathrm{O}$는 원점이다. 원점을 통과하지 않으며, 원점의 아래와 오른쪽을 통과하고 있다."
+                }
+            ]
+        }
+    ]
+}

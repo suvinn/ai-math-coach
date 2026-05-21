@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e2e292f2-6ed6-4f6f-a129-4d53af0ef05b",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017436",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.42,
+                            16.32,
+                            254.07,
+                            42.6
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.94,
+                            55.21,
+                            102.71,
+                            93.58
+                        ]
+                    ],
+                    "text_description" : "$\\left(2 a^{3} b\\right)^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.99,
+                            107.77,
+                            115.85,
+                            142.46
+                        ]
+                    ],
+                    "text_description" : "$4 a^{6} b^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.79,
+                            344.62,
+                            429.6,
+                            384.56
+                        ]
+                    ],
+                    "text_description" : "$\\left(2 a^{3} b\\right)^{2}=2^{2} \\times\\left(a^{3}\\right)^{2} \\times b^{2}=4 a^{6} b^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.36,
+                            148.24,
+                            128.99,
+                            311.63
+                        ]
+                    ],
+                    "text_description" : "$4 a^{6} b^{3}$ $8 a^{5} b^{2}$ $8 a^{6} b^{3}$ $16 a^{3} b^{2}$"
+                }
+            ]
+        }
+    ]
+}

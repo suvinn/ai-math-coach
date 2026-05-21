@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a790d5c0-978b-4303-b4c5-46b0ccc43b1f",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001598",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.1,
+                            6.23,
+                            448.35,
+                            57.48
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수 $y=\\frac{1}{2} x-2$의 그래프는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            294.35,
+                            225.65,
+                            496.35,
+                            384.65
+                        ]
+                    ],
+                    "text_description" : "④y-절편이 -2, 점 0, -2를 지나는 일차함수 그래프"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.05,
+                            69,
+                            480.92,
+                            223.69
+                        ]
+                    ],
+                    "text_description" : "①y-절편이 -4, 점 0, -2를 지나는 일차함수 그래프 ②y-절편이 -1, x절편이 -2를 지나는 일차함수 그래프"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.67,
+                            228.32,
+                            267.86,
+                            379.32
+                        ]
+                    ],
+                    "text_description" : "③y절편이 3, 점 2, 2를 지나는 일차함수 그래프"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.8,
+                            386.19,
+                            238.73,
+                            542.44
+                        ]
+                    ],
+                    "text_description" : "⑤y절편이 -2, x절편이 1을 지나는 일차함수 그래프"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            244.6,
+                            388.15,
+                            539.1,
+                            512.9
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=\\frac{1}{2} x-2$의 그래프는 $y$ 절편이 -2 이므로 점 $(0, -2)$를 지나고 기울기가 $\\frac{1}{2}$ 이므로 점 $(0, -2)$에서 $x$ 축의 방향으로 2만큼, $y$ 축의 방향으로 1만큼 이동한 점 $(2, -1)$ 도 지나므로 ④이다."
+                }
+            ]
+        }
+    ]
+}

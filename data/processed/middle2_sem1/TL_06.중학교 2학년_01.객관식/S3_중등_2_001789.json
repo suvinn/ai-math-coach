@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9c265b0f-261f-49f7-84a1-5afd47da086c",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001789",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.2,
+                            38.72,
+                            621,
+                            72.32
+                        ]
+                    ],
+                    "text_description" : "$5 a-2 b+\\{-3 a+b-(a-b)\\}$를 간단히 하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            276.2,
+                            103.92,
+                            332.2,
+                            134.72
+                        ]
+                    ],
+                    "text_description" : "② $a$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.6,
+                            103.52,
+                            169.8,
+                            180.32
+                        ]
+                    ],
+                    "text_description" : "① $-a$ ④ $a+b$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            274.6,
+                            149.12,
+                            393,
+                            180.32
+                        ]
+                    ],
+                    "text_description" : "⑤ $2 a-b$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            483,
+                            101.92,
+                            585.8,
+                            133.92
+                        ]
+                    ],
+                    "text_description" : "③ $a-b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.8,
+                            209.92,
+                            271.4,
+                            315.52
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}5 a-2 b+\\{-3 a+b-(a-b)\\} \\\\ =5 a-2 b+(-3 a+b-a+b) \\\\ =5 a-2 b+(-4 a+2 b) \\\\ =5 a-2 b-4 a+2 b=a\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f6b149fe-baab-4f8c-9c5f-57a53f655dd9",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001538",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51,
+                            17.42,
+                            449,
+                            72.42
+                        ]
+                    ],
+                    "text_description" : "다음 직사각형 ABCD에서 색칠한 부분의 넓이를 $x, y$에 대한 식으로 바르게 나타낸 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.0,
+                            280.0,
+                            156.0,
+                            301.0
+                        ]
+                    ],
+                    "text_description" : "③ $3 y^{2}+3 x y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.0,
+                            247.0,
+                            351.0,
+                            273.0
+                        ]
+                    ],
+                    "text_description" : "① $2 y^{2}+2 x y$ ② $2 y^{2}+3 x y$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            248.48,
+                            276.38,
+                            348.96,
+                            306.46
+                        ]
+                    ],
+                    "text_description" : "④ $3 y^{2}+4 x y$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.64,
+                            305.18,
+                            155.68,
+                            332.06
+                        ]
+                    ],
+                    "text_description" : "⑤ $4 y^{2}+4 x y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            146.0,
+                            92.0,
+                            351.0,
+                            234.0
+                        ]
+                    ],
+                    "text_description" : "직사각형 ABC를 AE기준으로 접은 이미지"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.0,
+                            336.0,
+                            347.0,
+                            423.0
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { (색칠한 부분의 넓이) } \\\\ =(\\text { 직사각형 } \\mathrm{ABCD} \\text { 의 넓01) }-\\triangle \\mathrm{ABF}-\\triangle \\mathrm{AED}-\\triangle \\mathrm{FCE} \\\\ =\\left(8 x y+12 y^{2}\\right)-\\left(2 x y+6 y^{2}\\right)-\\left(2 x y+3 y^{2}\\right)-x y \\\\ =8 x y+12 y^{2}-2 x y-6 y^{2}-2 x y-3 y^{2}-x y \\\\ =3 y^{2}+3 x y\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

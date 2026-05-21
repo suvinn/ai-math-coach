@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a6b64c2d-25e4-4750-9281-a9e549677245",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017370",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.88,
+                            17.65,
+                            290.8,
+                            88.05
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오. \\[ x^{7} \\div x^{2} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.72,
+                            110.82,
+                            78.96,
+                            143.46
+                        ]
+                    ],
+                    "text_description" : "① $x^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.8,
+                            152.98,
+                            81.52,
+                            313.06
+                        ]
+                    ],
+                    "text_description" : "② $x^{9}$ ③ $x^{4}$ ④ $x^{3}$ ⑤ $x^{6}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22,
+                            337.38,
+                            504.56,
+                            364.9
+                        ]
+                    ],
+                    "text_description" : "지수법칙에 따라 나눌 때는 지수끼리 뺍니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.36,
+                            375.78,
+                            274.8,
+                            407.78
+                        ]
+                    ],
+                    "text_description" : "$x^{7} \\div x^{2}=x^{7-2}=x^{5}$"
+                }
+            ]
+        }
+    ]
+}

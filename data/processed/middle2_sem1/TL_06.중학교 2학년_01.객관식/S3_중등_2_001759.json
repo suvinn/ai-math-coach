@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4a4b2dab-1612-43f4-be2d-ab0c6bd93c37",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001759",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.07,
+                            13.52,
+                            322.77,
+                            111.82
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림은 일차방정식 $a x+b y+c=0$의 그래프이다. 다음 중 옳은 것은?2"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            338.34,
+                            22.12,
+                            527.16,
+                            190.05
+                        ]
+                    ],
+                    "text_description" : "$x$와 $y$로 이루어진 두 개의 선이 교차하며, 선이 하나 지나가고 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.76,
+                            268.79,
+                            251.5,
+                            292.55
+                        ]
+                    ],
+                    "text_description" : "⑤ $a>0, b>0, c>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.12,
+                            131.98,
+                            253.14,
+                            259.78
+                        ]
+                    ],
+                    "text_description" : "① $a<0, b<0, c>0$ ② $a<0, b>0, c<0$ ③ $a>0, b<0, c<0$ ④ $a>0, b<0, c>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.48,
+                            300.74,
+                            391.58,
+                            383.89
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}a x+b y+c=0 \\text { 에서 } b y=-a x-c \\text { 이므로 } y=-\\frac{a}{b} x-\\frac{c}{b} \\\\ \\text { 따라서 }-\\frac{a}{b}<0, -\\frac{c}{b}<0 \\text { 이므로 } \\frac{a}{b}>0, \\frac{c}{b}>0 \\text { 에서 } \\\\ a<0, b<0, c<0 \\text { 또는 } a>0, b>0, c>0 \\text { 이다. }\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "eca559cd-6903-4ed2-adbb-e628254e04f0",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017696",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.08,
+                            5.27,
+                            1011.65,
+                            42.77
+                        ]
+                    ],
+                    "text_description" : "어떤 자연수를 4 배하여 5를 빼었더니 55보다 작았다고 한다. 이 자연수 중에서 가장 큰 수는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.65,
+                            188.4,
+                            82.65,
+                            220.9
+                        ]
+                    ],
+                    "text_description" : "④ 14"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.65,
+                            59.62,
+                            80.4,
+                            178.37
+                        ]
+                    ],
+                    "text_description" : "① 11 ② 12 ③ 13"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.77,
+                            231.49,
+                            83.52,
+                            261.18
+                        ]
+                    ],
+                    "text_description" : "⑤ 15"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.71,
+                            284.62,
+                            505.4,
+                            323.68
+                        ]
+                    ],
+                    "text_description" : "문제에서 주어진 조건을 부등식으로 나타내면:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.27,
+                            606.49,
+                            699.15,
+                            642.43
+                        ]
+                    ],
+                    "text_description" : "따라서 $x$는 15보다 작은 자연수여야 하므로 $x$는 최대 14 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.58,
+                            339.31,
+                            619.46,
+                            576.81
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}4 x-5<55 \\\\ 4 x<60 \\\\ x<15\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

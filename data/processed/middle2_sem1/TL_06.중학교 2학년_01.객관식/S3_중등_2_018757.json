@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fcc8e9e1-f96c-4705-9efd-9d1f800eff9a",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018757",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            20.92,
+                            754.5,
+                            63.92
+                        ]
+                    ],
+                    "text_description" : "두 일차함수 $y=-x+4, \\quad y=\\frac{3}{2} x-6$의 그래프와 $y$ 축으로 둘러싸인 부분의 넓이를 구하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.5,
+                            170.92,
+                            116.5,
+                            191.92
+                        ]
+                    ],
+                    "text_description" : "④ 20"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.5,
+                            76.5,
+                            113.5,
+                            159.5
+                        ]
+                    ],
+                    "text_description" : "① 12 ② 15 ③ 18"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.5,
+                            203.5,
+                            115.5,
+                            222.5
+                        ]
+                    ],
+                    "text_description" : "⑤ 24"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.5,
+                            287.5,
+                            671.5,
+                            368.5
+                        ]
+                    ],
+                    "text_description" : "두 직선의 $x$ 절편, $y$ 절편을 구하여 그래프를 그린다. 두 직선 $y=-x+4, y=\\frac{3}{2} x-6$의 그래프를 한 좌표평면에 그리면 다음과 같다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.5,
+                            611.5,
+                            695.5,
+                            689.5
+                        ]
+                    ],
+                    "text_description" : "$\\frac{1}{2} \\times 10 \\times 4=20$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.5,
+                            379.5,
+                            226.5,
+                            607.5
+                        ]
+                    ],
+                    "text_description" : "$x$, $y$ 좌표이다. 빨간선은 $(4, 4)$, 파란선은 $(4, -6)$, 두 선이 만나는 점으로 $y$선과 삼각형을 이루고 파랗게 칠해져있다."
+                }
+            ]
+        }
+    ]
+}

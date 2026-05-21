@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4565a892-07c8-4822-a3e2-2b7e8166258b",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018923",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.74,
+                            13.1,
+                            1625.68,
+                            64.22
+                        ]
+                    ],
+                    "text_description" : "재혁이 아버지는 새로 산 저금통에 10000 원을 넣어 주시면서 하루에 500 원씩 저금을 하라고 하셨다. 아버지 말씀대로 재혁이가 $x$ 일 동안 저금을 하면 저금통 속의 돈이 $y$ 원이 된다고 할 때, $x$와 $y$ 사이의 관계식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71,
+                            138.51,
+                            245,
+                            162.51
+                        ]
+                    ],
+                    "text_description" : "③ $y=500 x+10000$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71,
+                            75.51,
+                            243,
+                            130.51
+                        ]
+                    ],
+                    "text_description" : "① $y=5 x+10$ ② $y=500 x-10000$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71,
+                            169.51,
+                            233,
+                            224.51
+                        ]
+                    ],
+                    "text_description" : "④ $y=500 x$ ⑤ $y=1000 x+500$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            286.51,
+                            1277,
+                            311.51
+                        ]
+                    ],
+                    "text_description" : "아버지께서 10000 원을 넣어 주신 것과 재혁이가 $x$ 일 동안 저금한 돈 $500 x$ 원을 더하면 저금통 안의 돈의 액수가 되므로 구하는 관계식은 $y=500 x+10000$ 이다."
+                }
+            ]
+        }
+    ]
+}

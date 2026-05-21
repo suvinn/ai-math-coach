@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b3198f36-f4e7-4dbd-850c-d48023467411",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017588",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.66,
+                            19.56,
+                            654.34,
+                            48
+                        ]
+                    ],
+                    "text_description" : "세 점 $(2, -1), (4, 3), (6, k)$가 한 직선 위에 있을 때, $k$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.74,
+                            189.44,
+                            57.86,
+                            210.56
+                        ]
+                    ],
+                    "text_description" : "③ $7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.1,
+                            79.36,
+                            59.14,
+                            155.52
+                        ]
+                    ],
+                    "text_description" : "① $5$ ② $6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.38,
+                            245.76,
+                            58.5,
+                            320.64
+                        ]
+                    ],
+                    "text_description" : "④ $8$ ⑤ $9$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.7,
+                            350.36,
+                            305.54,
+                            392.96
+                        ]
+                    ],
+                    "text_description" : "기울기 $m=\\frac{3-(-1)}{4-2}=\\frac{4}{2}=2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.02,
+                            419.84,
+                            263.94,
+                            449.28
+                        ]
+                    ],
+                    "text_description" : "직선 방정식: $y=2 x-5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.74,
+                            475.52,
+                            125.06,
+                            543.36
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}k=12-5 \\\\ k=7\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

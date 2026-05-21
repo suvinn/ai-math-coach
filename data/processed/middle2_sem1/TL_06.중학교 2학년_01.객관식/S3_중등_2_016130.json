@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9459e115-6052-4f0a-968e-658510d30c19",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016130",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.25,
+                            68.14,
+                            824,
+                            105.64
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차방정식 $6 x-2 y+1=0$의 그래프와 같은 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.75,
+                            239.39,
+                            171.5,
+                            291.89
+                        ]
+                    ],
+                    "text_description" : "③ $y=3 x-\\frac{1}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.25,
+                            123.87,
+                            197.75,
+                            232.62
+                        ]
+                    ],
+                    "text_description" : "① $y=3 x+\\frac{1}{2}$ ② $y=-3 x-\\frac{1}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.75,
+                            298.37,
+                            198.75,
+                            410.12
+                        ]
+                    ],
+                    "text_description" : "④ $y=-3 x+\\frac{1}{2}$ ⑤ $y=\\frac{1}{3} x+\\frac{1}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9,
+                            437.62,
+                            391.5,
+                            478.87
+                        ]
+                    ],
+                    "text_description" : "일차방정식을 $y$에 대해 정리하면:"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            246.5,
+                            515.12,
+                            825.25,
+                            582.62
+                        ]
+                    ],
+                    "text_description" : "$6 x-2 y+1=0 \\rightarrow-2 y=-6 x+1 \\rightarrow y=3 x-\\frac{1}{2}$"
+                }
+            ]
+        }
+    ]
+}

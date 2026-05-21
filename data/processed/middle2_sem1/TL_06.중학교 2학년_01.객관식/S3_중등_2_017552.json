@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2fcbb89f-1598-49e9-bb8d-9ec20955b9d7",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017552",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.62,
+                            10.04,
+                            405.21,
+                            32.33
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=22-6 x$ 일 때, $f(2)$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.52,
+                            92.03,
+                            50.62,
+                            112.15
+                        ]
+                    ],
+                    "text_description" : "② 10"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.2,
+                            52.09,
+                            52.04,
+                            69.75
+                        ]
+                    ],
+                    "text_description" : "① 12"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.1,
+                            133.23,
+                            44.73,
+                            232.4
+                        ]
+                    ],
+                    "text_description" : "③ 8 ④ 6 ⑤ 4"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.75,
+                            259.81,
+                            126.88,
+                            318.93
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(2)=22-12 \\\\ f(2)=10\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

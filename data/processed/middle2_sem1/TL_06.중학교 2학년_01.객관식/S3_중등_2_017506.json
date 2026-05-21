@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "daaa28f3-65ab-4380-bf3c-4e6e6126ce81",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017506",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.24,
+                            9.19,
+                            691.61,
+                            102.4
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산한 후, 결과를 고르시오. \\[ \\left(24 x^{4}-12 x^{3} y\\right) \\div\\left(6 x^{2}\\right) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.72,
+                            133.27,
+                            171.93,
+                            167.02
+                        ]
+                    ],
+                    "text_description" : "① $4 x^{2}-2 x y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.77,
+                            175.23,
+                            164.76,
+                            334.98
+                        ]
+                    ],
+                    "text_description" : "② $4 x^{2}-2 y$ ③ $4 x^{3}-2 y^{2}$ ④ $4 x^{2}-x y$ ⑤ $4 x^{3}-x y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.89,
+                            363.55,
+                            525.21,
+                            486.02
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}\\left(24 x^{4}-12 x^{3} y\\right) & \\div\\left(6 x^{2}\\right)=\\frac{24 x^{4}}{6 x^{2}}-\\frac{12 x^{3} y}{6 x^{2}} \\\\ = & 4 x^{2}-2 x y\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

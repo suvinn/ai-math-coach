@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "40e88ce8-6378-4c85-bd6d-b2bd650f0b12",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018835",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.77,
+                            10.74,
+                            407.77,
+                            36.74
+                        ]
+                    ],
+                    "text_description" : "다음 그래프에 대한 설명으로 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.77,
+                            36.27,
+                            197.77,
+                            235.27
+                        ]
+                    ],
+                    "text_description" : "직선 그래프가 x축과 y축 위에 그려져 있으며, x축은 2에서, y축은 -4에서 교차한다. 원점 O가 존재한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.77,
+                            298.27,
+                            243.77,
+                            325.27
+                        ]
+                    ],
+                    "text_description" : "③ 점 $(2, -4)$를 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.77,
+                            237.27,
+                            221.77,
+                            292.27
+                        ]
+                    ],
+                    "text_description" : "① $x$ 절편은 2이다. ② $y$ 절편은 -4이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.77,
+                            330.27,
+                            456.77,
+                            387.27
+                        ]
+                    ],
+                    "text_description" : "④ $x$의 값이 증가할 때 $y$의 값도 증가한다. ⑤ 일차함수 $y=2 x+1$을 평행이동하여 얻을 수 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.77,
+                            448.27,
+                            639.77,
+                            566.27
+                        ]
+                    ],
+                    "text_description" : "$x$ 절편이 $2, y$ 절편이 -4이므로 ①, ②는 옳다. ③ $x$ 절편이 2 이므로 점 $(2, 0)$을 지난다. ④ 오른쪽 위로 향하는 직선이므로 $x$의 값이 증가할 때, $y$의 값도 증가한다. ⑤ 주어진 그래프의 기울기가 2이므로 $y=2 x+1$을 평행이동시켜 얻을 수 있다."
+                }
+            ]
+        }
+    ]
+}

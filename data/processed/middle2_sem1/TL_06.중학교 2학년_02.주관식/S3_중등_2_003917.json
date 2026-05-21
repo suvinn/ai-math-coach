@@ -1,0 +1,83 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c381f6a4-f640-4aae-92a9-741688b70db1",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003917",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.43,
+                            14.43,
+                            711.87,
+                            158.18
+                        ]
+                    ],
+                    "text_description" : "좌표평면 위의 세 점 $(1, a), (3, 2), (4, b)$가 한 일차함수의 그래프 위에 있을 때, $b$를 $a$에 대한 식으로 나타내시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.5,
+                            414.88,
+                            86.25,
+                            449.88
+                        ]
+                    ],
+                    "text_description" : "$b=\\frac{6-a}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.75,
+                            183.63,
+                            333.75,
+                            402.38
+                        ]
+                    ],
+                    "text_description" : "세 점 $(1, a), (3, 2), (4, b)$가 한 일차함수의 그래프 위에 있으려면 두 점 $(1, a), (3, 2)$의 기울기와 두 점 $(3, 2), (4, b)$의 기울기가 같으면 된다. \\[ \\begin{array}{l} (\\text { 기 울기 })=\\frac{2-a}{3-1}=\\frac{2-a}{2} \\\\ \\text { (기울기 })=\\frac{b-2}{4-3}=b-2 \\\\ \\frac{2-a}{2}=b-2, b=\\frac{2-a}{2}+2=\\frac{6-a}{2} \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

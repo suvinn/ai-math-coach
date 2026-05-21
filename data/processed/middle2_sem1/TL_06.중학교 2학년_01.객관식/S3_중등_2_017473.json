@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2a7261b8-0410-443d-9b73-84eff27a3211",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017473",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.92,
+                            9.45,
+                            527.41,
+                            83.71
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개한 결과로 올바른 식을 고르시오. \\[ 4 c(2 c+3) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.44,
+                            105.7,
+                            165.94,
+                            136.42
+                        ]
+                    ],
+                    "text_description" : "① $8 c^{2}+12 c$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.41,
+                            146.69,
+                            179.76,
+                            303.85
+                        ]
+                    ],
+                    "text_description" : "② $8 c^{2}-12 c$ ③ $10 c^{2}+12 c$ ④ $10 c^{2}-12 c$ ⑤ $12 c^{2}+10 c$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.72,
+                            338.04,
+                            551.48,
+                            372.28
+                        ]
+                    ],
+                    "text_description" : "$4 c(2 c+3)=4 c \\times 2 c+4 c \\times 3=8 c^{2}+12 c$"
+                }
+            ]
+        }
+    ]
+}

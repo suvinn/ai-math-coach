@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "12870024-9e58-46c9-9ed0-384633faa6be",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018379",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.3,
+                            9.48,
+                            540.48,
+                            48.73
+                        ]
+                    ],
+                    "text_description" : "$y \\geq 4$ 일 때, $3 y-5$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.43,
+                            63,
+                            189.92,
+                            98.68
+                        ]
+                    ],
+                    "text_description" : "① $3 y-5 \\geq 7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.43,
+                            108.49,
+                            191.7,
+                            265.49
+                        ]
+                    ],
+                    "text_description" : "② $3 y-5>7$ ③ $3 y-5 \\leq 7$ ④ $3 y-5 \\geq 5$ ⑤ $3 y-5>5$"
+                }
+            ]
+        },
+        {
+            "class_num" : "3",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            97.15,
+                            301.71,
+                            173.86,
+                            335.61
+                        ]
+                    ],
+                    "text_description" : "$y \\geq 4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24,
+                            361.48,
+                            249.68,
+                            394.48
+                        ]
+                    ],
+                    "text_description" : "$3 y-5 \\geq 3(4)-5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.82,
+                            421.24,
+                            205.97,
+                            454.25
+                        ]
+                    ],
+                    "text_description" : "$3 y-5 \\geq 7$"
+                }
+            ]
+        }
+    ]
+}

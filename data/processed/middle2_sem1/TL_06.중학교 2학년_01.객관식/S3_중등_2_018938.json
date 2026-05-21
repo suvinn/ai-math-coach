@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "66d1f1b0-a5a4-46ce-a97d-abf2bd031141",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018938",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.34,
+                            11.83,
+                            779.34,
+                            38.83
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $3x+y=12$의 그래프를 지나는 점의 $x$ 좌표와 $y$ 좌표가 모두 자연수인 점의 개수는$?$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.33,
+                            418.44,
+                            274.33,
+                            717.44
+                        ]
+                    ],
+                    "text_description" : "기울기: $-3$ $y$ 절편: $12$ $x$ 절편: $4$ 점 $(1, 9)$ 포함 점 $(2, 6)$ 포함 점 $(3, 3)$ 포함"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.34,
+                            140.83,
+                            119.34,
+                            163.83
+                        ]
+                    ],
+                    "text_description" : "④ $3$개"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.34,
+                            45.83,
+                            124.34,
+                            133.83
+                        ]
+                    ],
+                    "text_description" : "① $0$ 개 ② $1$ 개 ③ $2$ 개"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.34,
+                            171.44,
+                            122.34,
+                            198.44
+                        ]
+                    ],
+                    "text_description" : "⑤ $4$개"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.34,
+                            257.44,
+                            538.34,
+                            310.44
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $3 x+y=12$를 $y$에 관하여 풀면 $y=-3 x+12$ 이다. $x=1, 2, 3, \\cdots$을 대입하면"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.34,
+                            317.44,
+                            235.34,
+                            387.44
+                        ]
+                    ],
+                    "text_description" : "<div class=\"table_tabular \" style=\"text-align: center\"> <div class=\"inline-tabular\"><table id=\"tabular\"> <tbody> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: center; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $x$</span></td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">1</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">2</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">3</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">4</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">5</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">6</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $\\cdots$</span></td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: center; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $y$</span></td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">9</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">6</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">3</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">0</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">-3</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">-6</td> <td style=\"text-align: center; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \"><span class=\"math-inline \"> $\\cdots$</span></td> </tr> </tbody> </table> </div></div>"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.33,
+                            388.44,
+                            704.33,
+                            414.44
+                        ]
+                    ],
+                    "text_description" : "따라서 $x$ 좌표와 $y$ 좌표가 모두 자연수인 점은 $(1, 9), (2, 6), (3, 3)$에서 $3$개이다."
+                }
+            ]
+        }
+    ]
+}

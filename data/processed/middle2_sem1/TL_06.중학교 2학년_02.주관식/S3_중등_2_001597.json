@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "74817ce7-f112-4859-8adf-5902b8f406ee",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001597",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.74,
+                            14.39,
+                            518.24,
+                            98.14
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-\\frac{2}{3} x+6$의 그래프와 $x$ 축, $y$ 축으로 둘러싸인 부분의 넓이를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            81.99,
+                            184.87,
+                            104.49,
+                            208.87
+                        ]
+                    ],
+                    "text_description" : "$27$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.99,
+                            98.87,
+                            391.99,
+                            186.12
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-\\frac{2}{3} x+6$의 그래프의 $x$ 절편은 $9, y$ 절편은 6 이므로 그래프를 그리면 오른쪽 그림과 같다. 따라서 구하는 넓이는 $\\frac{1}{2} \\times 9 \\times 6=27$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            407.49,
+                            101.37,
+                            544.49,
+                            212.12
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 좌표 평면에 그려진 선형 그래프를 보여줍니다. 그래프에는 x축과 y축이 있으며, y축은 6까지, x축은 9까지 표시되어 있습니다. 선은 원점(O)에서 시작하여 오른쪽 아래로 기울어져 있습니다. 기울기 아래쪽은 음영 처리가 되어 있습니다."
+                }
+            ]
+        }
+    ]
+}

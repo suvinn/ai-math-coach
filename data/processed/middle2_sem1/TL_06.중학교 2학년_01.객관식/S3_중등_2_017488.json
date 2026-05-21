@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d8de1338-315a-4f59-8d76-87d0ec9cc84a",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017488",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.08,
+                            5.69,
+                            261.89,
+                            32.49
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.61,
+                            45.63,
+                            244.02,
+                            81.89
+                        ]
+                    ],
+                    "text_description" : "$-5 x(3 x-4 y+6)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.03,
+                            98.71,
+                            313.39,
+                            135.97
+                        ]
+                    ],
+                    "text_description" : "$-15 x^{2}+20 x y-30 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.08,
+                            318.73,
+                            740.14,
+                            420.69
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}-5 x(3 x-4 y+6) & =-5 x \\times 3 x+-5 x \\times(-4 y)+-5 x \\times 6 \\\\ & =-15 x^{2}+20 x y-30 x\\end{aligned}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.86,
+                            141.81,
+                            315.65,
+                            299.68
+                        ]
+                    ],
+                    "text_description" : "$15 x^{2}-20 x y+30 x$ $-15 x^{2}-20 x y+30 x$ $15 x^{2}+20 x y-30 x$ $-15 x^{2}-20 x y-30 x$"
+                }
+            ]
+        }
+    ]
+}

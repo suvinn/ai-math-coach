@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a1655951-4b9c-432a-8523-7fe292beb91b",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018838",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.84,
+                            15.36,
+                            552.28,
+                            41.6
+                        ]
+                    ],
+                    "text_description" : "다음 그림은 일차함수 $y=a x+b$의 그래프이다. 잘못 설명한 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.88,
+                            54.92,
+                            263.28,
+                            254
+                        ]
+                    ],
+                    "text_description" : "좌표평면도에 제 1, 2, 4사분면이 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.24,
+                            408.96,
+                            387.16,
+                            431.36
+                        ]
+                    ],
+                    "text_description" : "⑤ $x$의 값이 증가할 때, $y$의 값도 증가한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.16,
+                            256.64,
+                            381.4,
+                            401.28
+                        ]
+                    ],
+                    "text_description" : "① $a<0, b>0$ ② 점 $[0, b]$를 지난다. ③ 일차함수 $y=a x$의 그래프와 평행하다. ④ $x$ 절편은 $-\\frac{b}{a}$ 이고, $y$ 절편은 $b$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.48,
+                            496.64,
+                            405.08,
+                            547.2
+                        ]
+                    ],
+                    "text_description" : "그래프는 오른쪽 아래로 향하는 직선이다. 따라서 $x$의 값이 증가할 때 $y$의 값은 감소한다."
+                }
+            ]
+        }
+    ]
+}

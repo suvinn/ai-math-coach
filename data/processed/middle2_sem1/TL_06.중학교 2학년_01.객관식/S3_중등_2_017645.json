@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ccf539f9-7049-41e1-9499-71a297b95c3a",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017645",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.72,
+                            4.9,
+                            1031.03,
+                            78.03
+                        ]
+                    ],
+                    "text_description" : "한 잔에 1500 원인 커피를 $x$ 잔 구매하려고 한다. 커피의 총 가격을 $y$ 원이라고 할 때, $x$와 $y$의 관계를 나타내는 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            136.42,
+                            178,
+                            169.42
+                        ]
+                    ],
+                    "text_description" : "② $y=1500 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            95,
+                            164,
+                            131
+                        ]
+                    ],
+                    "text_description" : "① $y=150 x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17,
+                            178,
+                            238,
+                            290
+                        ]
+                    ],
+                    "text_description" : "③ $y=1500 x+10$ ④ $y=1500 x-10$ ⑤ $y=15 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7,
+                            309,
+                            592,
+                            343
+                        ]
+                    ],
+                    "text_description" : "커피 한 잔의 가격이 1500 원이므로, 커피의 총 가격 $y$는"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6,
+                            417,
+                            166,
+                            453
+                        ]
+                    ],
+                    "text_description" : "이를 정리하면,"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            422,
+                            373,
+                            582,
+                            400
+                        ]
+                    ],
+                    "text_description" : "$y=1500 \\times x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            439,
+                            478,
+                            568,
+                            511
+                        ]
+                    ],
+                    "text_description" : "$y=1500 x$"
+                }
+            ]
+        }
+    ]
+}

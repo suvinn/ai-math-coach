@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "16104968-5f01-4e2d-9042-846ebecc02f7",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018957",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.5,
+                            13.42,
+                            467.5,
+                            39.42
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차방정식을 일차함수로 바르게 나타낸 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            91.5,
+                            50.42,
+                            350.5,
+                            99.42
+                        ]
+                    ],
+                    "text_description" : "$x-2 y+3=0 \\rightarrow y=\\frac{1}{2} x+\\frac{3}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.5,
+                            285,
+                            378.5,
+                            432
+                        ]
+                    ],
+                    "text_description" : "② $y=4 x+2$ ③ $2 y=4 x-1$ $\\therefore \\quad y=2 x-\\frac{1}{2}$ ④ $y=2 x+3$ ⑤ $y=-2 x+4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.5,
+                            104,
+                            335.5,
+                            224
+                        ]
+                    ],
+                    "text_description" : "② $4 x-y+2=0 \\rightarrow y=4 x-2$ ③ $4 x-2 y-1=0 \\rightarrow y=2 x-1$ ④ $2 x-y+3=0 \\rightarrow y=2 x-3$ ⑤ $2 x+y-4=0 \\rightarrow y=2 x-4$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7b09231e-ca7d-420a-b4f4-aa550440d642",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017662",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            12.4,
+                            215.4,
+                            38
+                        ]
+                    ],
+                    "text_description" : "다음 부등식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.88,
+                            163.74,
+                            105.28,
+                            190.34
+                        ]
+                    ],
+                    "text_description" : "③ $x \\geq 2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.24,
+                            93.26,
+                            101.64,
+                            152.14
+                        ]
+                    ],
+                    "text_description" : "① $x>1$ ② $x \\leq 2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.52,
+                            198.08,
+                            101.64,
+                            256.24
+                        ]
+                    ],
+                    "text_description" : "④ $x>3$ ⑤ $x \\geq 1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.6,
+                            282.48,
+                            127.24,
+                            515.44
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}5 x-7 \\geq 3 \\\\ 5 x \\geq 10 \\\\ \\\\ x \\geq 2\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

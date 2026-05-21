@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e2940338-bf96-4ee6-9198-5e95797138ef",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017644",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.11,
+                            5.12,
+                            1035.74,
+                            74.1
+                        ]
+                    ],
+                    "text_description" : "하나에 900 원인 빵을 $x$ 개 구매하려고 한다. 빵의 총 가격을 $y$ 원이라고 할 때, $x$와 $y$의 관계를 나타 내는 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.11,
+                            101.44,
+                            162.66,
+                            128.63
+                        ]
+                    ],
+                    "text_description" : "① $y=900 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.11,
+                            143.08,
+                            228.36,
+                            290.89
+                        ]
+                    ],
+                    "text_description" : "② $y=90 x$ ③ $y=900 x+5$ ④ $y=900 x-5$ ⑤ $y=900 x+10$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5,
+                            309.72,
+                            567.97,
+                            515.62
+                        ]
+                    ],
+                    "text_description" : "빵 한 개의 가격이 900 원이므로, 빵의 총 가격 $y$는 \\[ y=900 \\times x \\] 이를 정리하면, \\[ y=900 x \\]"
+                }
+            ]
+        }
+    ]
+}

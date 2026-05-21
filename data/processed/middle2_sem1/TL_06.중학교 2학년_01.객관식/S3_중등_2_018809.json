@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a2c8a43b-ac53-4b26-b93c-28925bde5d81",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018809",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.03,
+                            16.38,
+                            645.8,
+                            62.2
+                        ]
+                    ],
+                    "text_description" : "다음 일차함수의 그래프 중에서 일차함수 $y=\\frac{1}{2} x-1$의 그래프와 평행한 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67,
+                            71.17,
+                            321,
+                            323.21
+                        ]
+                    ],
+                    "text_description" : "좌표 그림이다. $1$번 : $(1, -1)$ $2$번 : $(-4, 2)$ $3$번 : $(3, 3)$ $4$번 : $(-2, -3)$ $5$번 : $(3, -2)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.02,
+                            338.73,
+                            82.94,
+                            361.64
+                        ]
+                    ],
+                    "text_description" : "②"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.01,
+                            379.57,
+                            521.27,
+                            786.03
+                        ]
+                    ],
+                    "text_description" : "① $($ 기울기 $)=\\frac{1}{1}=1$ ② $($ 기울기 $)=\\frac{2}{4}=\\frac{1}{2}$ ③ $($ 기울기 $)=\\frac{-3}{3}=-1$ ④ $($ 기울기 $)=\\frac{-3}{2}=-\\frac{3}{2}$ ⑤ $($ 기울기 $)=\\frac{2}{3}$ 따라서 $)=\\frac{1}{1}=1$0과 평행한 그래프는 기울기가 같은 ②이다 $)=\\frac{1}{1}=1$1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "46883a72-7ad5-4b62-8b58-1c340978682d",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003877",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.5,
+                            16.92,
+                            662.5,
+                            48.92
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하여 기약분수로 나타내시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            166.5,
+                            118.92,
+                            520.5,
+                            187.92
+                        ]
+                    ],
+                    "text_description" : "$5+\\frac{7}{10^{2}}+\\frac{7}{10^{4}}+\\frac{7}{10^{6}}+\\cdots$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.5,
+                            434.5,
+                            93.5,
+                            485.5
+                        ]
+                    ],
+                    "text_description" : "$\\frac{502}{99}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.5,
+                            242.5,
+                            440.5,
+                            410.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}(\\text { 주어진 식 })=5. 070707 \\cdots \\\\ x=5. 070707 \\cdots \\text { 이면 } 100 x=507. 0707 \\cdots \\\\ 99 x=507-5=502 \\\\ x=\\frac{502}{99}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

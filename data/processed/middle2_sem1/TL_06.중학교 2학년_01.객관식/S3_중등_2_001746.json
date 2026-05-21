@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "be4ac128-e981-410b-a19d-d7e1a4d397e4",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001746",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.18,
+                            29.21,
+                            470.62,
+                            58.65
+                        ]
+                    ],
+                    "text_description" : "다음 방정식 중 그 그래프가 $x$ 축에 수직인 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            288.22,
+                            75.93,
+                            419.42,
+                            102.81
+                        ]
+                    ],
+                    "text_description" : "② $3 x-4=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.46,
+                            76.3,
+                            172.38,
+                            172.3
+                        ]
+                    ],
+                    "text_description" : "① $x=2 y$ ③ $y+2=0$ ⑤ $y=x-2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            290.14,
+                            109.58,
+                            440.54,
+                            137.1
+                        ]
+                    ],
+                    "text_description" : "④ $x-y+1=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.18,
+                            178.7,
+                            330.46,
+                            232.46
+                        ]
+                    ],
+                    "text_description" : "$x$ 축에 수직인 직선의 방정식은 $x=m$ 꼴이므로 ② $3 x-4=0$에서 $x=\\frac{4}{3}$ 이다."
+                }
+            ]
+        }
+    ]
+}

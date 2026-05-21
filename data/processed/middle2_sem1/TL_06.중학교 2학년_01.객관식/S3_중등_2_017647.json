@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "673655d8-e38d-45ba-bf0a-f1c214c38197",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017647",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.74,
+                            9.96,
+                            913.87,
+                            125.59
+                        ]
+                    ],
+                    "text_description" : "400 개의 알약이 들어 있는 병에서 하루에 알약을 5 개씩 먹는다. $x$ 일 동안 먹었을 때 병에 남은 알약의 개수를 $y$라고 할 때, 다음을 구하시오. $x$와 $y$ 사이의 관계식을 구하세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.74,
+                            142.11,
+                            171.68,
+                            174.93
+                        ]
+                    ],
+                    "text_description" : "① $y=400-5 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.3,
+                            190.55,
+                            171.68,
+                            367.11
+                        ]
+                    ],
+                    "text_description" : "② $y=400+5 x$ ③ $y=400-x$ ④ $y=400+x$ ⑤ $y=400-5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.49,
+                            382.74,
+                            859.18,
+                            528.05
+                        ]
+                    ],
+                    "text_description" : "알약의 초기 개수는 400 개이며, 하루에 5 개씩 먹으므로 $x$ 일 동안 먹은 알약의 개수는 $5 x$ 개입니다. 따라서 병에 남은 알약의 개수 $y$는 초기 개수에서 $x$ 일 동안 먹은 알약의 개수를 뺀 값입니 다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            345.12,
+                            554.61,
+                            490.43,
+                            592.11
+                        ]
+                    ],
+                    "text_description" : "$y=400-5 x$"
+                }
+            ]
+        }
+    ]
+}

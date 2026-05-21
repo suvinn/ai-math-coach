@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d2508536-5271-4fc9-a6e8-1a69b759216f",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001830",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.74,
+                            24.9,
+                            374.49,
+                            296.15
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림은 일차함수 $y=a x+b$의 그래프이다. 이 그래프와 일차방정식 $m x+y=-1$의 그래프가 서로 평행할 때, 상수 $m$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            430.24,
+                            37.620000000000005,
+                            706.99,
+                            304.12
+                        ]
+                    ],
+                    "text_description" : "이 이미지에는 $xy$ 좌표 평면에 그려진 선형 그래프가 포함되어 있습니다. $x$축과 $y$축이 표시되어 있으며, 선은 양의 방향으로 기울어져 있습니다. $y$축의 값이 $2$인 지점과 $x$축의 값이 $4$인 지점을 지납니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            276.99,
+                            320.62,
+                            350.74,
+                            386.87
+                        ]
+                    ],
+                    "text_description" : "② $\\frac{1}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.99,
+                            321.37,
+                            139.49,
+                            435.62
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{1}{3}$ ③ $1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            275.74,
+                            394.37,
+                            550.74,
+                            438.12
+                        ]
+                    ],
+                    "text_description" : "④ $2$ ⑤ $3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            32.489999999999995,
+                            478.12,
+                            365.74,
+                            675.62
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} m x+y=-1 \\text { 에서 } y=-m x-1 \\text { 이므로 } \\\\ \\text { 기울기는 }-m \\text { 이다. } \\end{array} \\] 그런데 주어진 그래프의 기울기가 $-\\frac{1}{2}$ 이므로 \\[ -m=-\\frac{1}{2} \\text { 이다. } \\] 따라서 $m=\\frac{1}{2}$ 이다."
+                }
+            ]
+        }
+    ]
+}

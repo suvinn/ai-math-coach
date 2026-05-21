@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e7051b0f-1913-4dea-a2a4-6fc17965fc03",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001740",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.5,
+                            23.65,
+                            367.75,
+                            163.65
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림은 일차함수 $y=a x+b$의 그래프이다. 다음 중 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            428.51,
+                            35.34,
+                            713.26,
+                            306.53
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 x-y좌표 평면을 나타내며, y축이 위로 향하고 x축이 오른쪽으로 향하고 있습니다. y축의 1과 -1에 대한 값이 표시되어 있습니다. y값이 감소하는 선이 그려져 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.38,
+                            272.34,
+                            224.63,
+                            308.28
+                        ]
+                    ],
+                    "text_description" : "③ $a+b>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.82,
+                            184.9,
+                            184.01,
+                            267.65
+                        ]
+                    ],
+                    "text_description" : "① $a<0$ ② $b>0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71.95,
+                            321.09,
+                            243.38,
+                            401.71
+                        ]
+                    ],
+                    "text_description" : "④ $b-a>0$ ⑤ $2 a+b<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.38,
+                            411.4,
+                            474.63,
+                            552.03
+                        ]
+                    ],
+                    "text_description" : "① 그래프가 오른쪽 아래로 향하는 직선이므로 $a<0$ ② $y$ 절편이 0보다 크므로 $b>0$ ③ $x=1$ 일 때 $y$의 값은 음수이므로 $a+b<0$ ④ $x=-1$ 일 때 $y$의 값은 양수이므로 $b-a>0$ ⑤ $x=2$ 일 때 $y$의 값은 음수이므로 $y$1"
+                }
+            ]
+        }
+    ]
+}

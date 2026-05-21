@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "16915cdc-c946-4bb5-8e17-f48a5299e2dd",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001568",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.5,
+                            23.92,
+                            438.5,
+                            48.92
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식 중 그 해가 나머지 넷과 다른 하나는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.5,
+                            122.5,
+                            291.5,
+                            228.5
+                        ]
+                    ],
+                    "text_description" : "주어진 일차부등식을 풀면 ① $-x<2$에서 $x>-2$ 이다. ② $x+3>1$에서 $x>-2$ 이다. ③ $2 x+2>x$에서 $x>-2$ 이디. ④ $4>-2 x$에서 $2 x>-4$, 즉 $x>-2$ 이다. ⑤ $2 x+3<3 x-1$에서 $x>-2$0, 즉 $x>-2$1 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            203.0,
+                            93.0,
+                            327.0,
+                            117.0
+                        ]
+                    ],
+                    "text_description" : "$2x+3<3x-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.5,
+                            92.5,
+                            147.5,
+                            117.5
+                        ]
+                    ],
+                    "text_description" : "④ $4>-2 x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.5,
+                            63.5,
+                            418.5,
+                            88.5
+                        ]
+                    ],
+                    "text_description" : "① $-x<2$ ② $x+3>1$ ③ $2 x+2>x$"
+                }
+            ]
+        }
+    ]
+}

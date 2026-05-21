@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "253f3034-2d2c-4257-9734-3058c1e62df8",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017477",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.11,
+                            8.72,
+                            258.82,
+                            40.6
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.13,
+                            53.97,
+                            218.71,
+                            84.82
+                        ]
+                    ],
+                    "text_description" : "$4 y(3 x-2 y+1)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.11,
+                            104.45,
+                            259.84,
+                            138.24
+                        ]
+                    ],
+                    "text_description" : "$12 x y-8 y^{2}+4 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.16,
+                            144.23,
+                            281.53,
+                            308.64
+                        ]
+                    ],
+                    "text_description" : "② $12 x y+8 y^{2}+4 y$ ③ $-12 x y-8 y^{2}+4 y$ ④ $-12 x y+8 y^{2}-4 y$ ⑤ $-12 x y+8 y^{2}+4 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : "2",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.91,
+                            336.41,
+                            637.28,
+                            370.34
+                        ]
+                    ],
+                    "text_description" : "$4 y(3 x-2 y+1)=4 y \\times 3 x+4 y \\times(-2 y)+4 y \\times 1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            205.34,
+                            396.06,
+                            442.91,
+                            429.99
+                        ]
+                    ],
+                    "text_description" : "$=12 x y-8 y^{2}+4 y$"
+                }
+            ]
+        }
+    ]
+}

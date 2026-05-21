@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0b36bf89-51bd-4af2-8434-cbf72926286f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018175",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.35,
+                            5.03,
+                            1092.04,
+                            81.59
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b(a \\neq 0)$의 그래프가 일차함수 $y=-x+7$의 그래프를 y 축의 방향으로 10 만 큼 평행이동한 것일 때, 상수 $a$와 $b$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.35,
+                            98.44,
+                            245.17,
+                            139.06
+                        ]
+                    ],
+                    "text_description" : "① $a=-1, b=17$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.4,
+                            148.3,
+                            251.2,
+                            305.1
+                        ]
+                    ],
+                    "text_description" : "② $a=-1, b=10$ ③ $a=-1, b=7$ ④ $a=-1, b=-3$ ⑤ $a=-1, b=20$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.5999999999999996,
+                            312.3,
+                            484.8,
+                            435.5
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} y=-x+7 \\text { 에서 y축으로 10만큼 평행이동 } \\\\ y=-x+17 \\end{array} \\] \\[ \\text { 따라서, } a=-1, b=17 \\text {. } \\]"
+                }
+            ]
+        }
+    ]
+}

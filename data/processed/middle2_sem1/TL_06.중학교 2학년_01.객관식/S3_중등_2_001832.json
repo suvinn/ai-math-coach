@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e01c552b-e9c9-4940-9473-0f9db385541a",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001832",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.84,
+                            24.53,
+                            267.24,
+                            158.47
+                        ]
+                    ],
+                    "text_description" : "연립방정식 \\[ \\left\\{\\begin{array}{l} 2 x-3 y+a=0 \\\\ 4 x+5 y-b=0 \\end{array}\\right. \\]의 해를 구하기 위하여 두 일 차방정식의 그래프를 그렸더"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.8,
+                            162.79,
+                            345.66,
+                            185.96
+                        ]
+                    ],
+                    "text_description" : "니 오른쪽과 같았다. 이때 $\\overline{\\mathrm{AB}}$의 길이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            280.5,
+                            27.92,
+                            448.5,
+                            161.92
+                        ]
+                    ],
+                    "text_description" : "연립방정식 \\[ \\left\\{\\begin{array}{l} 2 x-3 y+a=0 \\\\ 4 x+5 y-b=0 \\end{array}\\right. \\]를 그래프로 그렸을 때 두 개의 선이 점 (-2, 4)에서 교차된다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.5,
+                            234.5,
+                            99.5,
+                            253.5
+                        ]
+                    ],
+                    "text_description" : "④ 11"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.5,
+                            205.5,
+                            348.5,
+                            226.5
+                        ]
+                    ],
+                    "text_description" : "① 3 ② 5 ③ 8"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            183.5,
+                            233.5,
+                            228.5,
+                            254.5
+                        ]
+                    ],
+                    "text_description" : "⑤ 13"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.5,
+                            278.5,
+                            486.5,
+                            538.5
+                        ]
+                    ],
+                    "text_description" : "\\[ \\left\\{\\begin{array}{l} 2 x-3 y+a=0 ㉠\\\\ 4 x+5 y-b=0 ㉡ \\end{array}\\right. \\] ㉠, ㉡에 각각 $x=-2, y=4$를 대입하면 $a=16, b=12$ 이므로 \\[ \\left\\{\\begin{array}{l} 2 x-3 y+16=0 ㉢\\\\ 4 x+5 y-12=0 ㉣ \\end{array}\\right. \\] $x$ 절편을 구하기 위해 $y=0$을 ㉢, ㉣에 각각 대입하면 $x=-8, x=3$ 이므로 $\\mathrm{A}(-8, 0), \\mathrm{B}(3, 0)$ 이다."
+                }
+            ]
+        }
+    ]
+}

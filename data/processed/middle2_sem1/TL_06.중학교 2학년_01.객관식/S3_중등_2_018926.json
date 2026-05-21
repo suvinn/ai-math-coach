@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1f1ffab9-c120-4c7d-96ae-d16256c0e7d3",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018926",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.32,
+                            17.05,
+                            1730.21,
+                            44.56
+                        ]
+                    ],
+                    "text_description" : "지면에서 $10km$ 까지의 기온은 높이가 $1km$ 씩 높아짐에 따라 $6^{\\circ} \\mathrm{C}$ 씩 내려간다고 한다. 지면의 기온이 $20^{\\circ} \\mathrm{C}$ 일 때, 지면에서 높이가 $x \\mathrm{~km}$ 인 곳의 기온을 $y^{\\circ} \\mathrm{C}$라고 하자. 이때, $y$를 $x$에 관한 식으로 나타내면 $?$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            75.33,
+                            58.93,
+                            216.91,
+                            82.45
+                        ]
+                    ],
+                    "text_description" : "① $y=-6 x+20$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            75.33,
+                            93.45,
+                            215.4,
+                            220.02
+                        ]
+                    ],
+                    "text_description" : "② $y=20 x+6$ ③ $y=6 x+20$ ④ $y=6 x-20$ ⑤ $y=-6 x-20$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.32,
+                            288.56,
+                            490.05,
+                            355.6
+                        ]
+                    ],
+                    "text_description" : "$1$ km 씩 높아짐에 따라 기온이 $6^{\\circ} \\mathrm{C}$ 씩 내려가므로 높이가 $x \\mathrm{~km}$ 인 곳은 지면보다 $6x^{\\circ} \\mathrm{C}$만큼 내려간다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73.82,
+                            365.6,
+                            225.42,
+                            390.61
+                        ]
+                    ],
+                    "text_description" : "$\\therefore \\quad y=-6 x+20$"
+                }
+            ]
+        }
+    ]
+}

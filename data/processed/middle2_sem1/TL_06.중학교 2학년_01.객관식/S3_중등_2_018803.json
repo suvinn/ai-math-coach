@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ce2125c1-eb88-4a29-bb75-68512adaf934",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018803",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            12.47,
+                            629,
+                            34.47
+                        ]
+                    ],
+                    "text_description" : "다음 그림의 일차함수의 그래프와 평행한 직선인 것을 보기에서 모두 골라라."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73.6,
+                            277.59,
+                            408.32,
+                            356.95
+                        ]
+                    ],
+                    "text_description" : "㉠ 두 점 $(0, 4), (9, 1)$을 지나는 직선 ㉡ 기울기가 $-3$ 이고 점 $(0, 2)$를 지나는 직선 ㉢ $x$절편이 $-6, y$절편이 $-2$인 직선"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            78,
+                            49,
+                            297,
+                            254
+                        ]
+                    ],
+                    "text_description" : "$xy$좌표평면위에 점 $(6, 2)$를 지나는 직선이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.56,
+                            390.87,
+                            134.4,
+                            409.43
+                        ]
+                    ],
+                    "text_description" : "㉠, ㉢"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.28,
+                            438.81,
+                            666.24,
+                            684.57
+                        ]
+                    ],
+                    "text_description" : "두 점 $(0, 2), (6, 0)$을 지나는 직선의 기울기는 $\\frac{0-2}{6-0}=-\\frac{1}{3}$이고 $y$ 절편은 $2$이다. 각 직선의 기울기와 $y$ 절편은 다음과 같다. ㉠ 기울기 : $\\frac{1-4}{9-0}=-\\frac{1}{3}, y$ 절편 : $4$ ㉡ 기울기 : $-3, y$ 절편 : $2$ ㉢ 기울기 : $\\frac{-2-0}{0-(-6)}=-\\frac{1}{3}, y$ 절편 : $\\frac{0-2}{6-0}=-\\frac{1}{3}$0 따라서 주어진 그래프와 평행한 직선은 ㉠, ㉢이다."
+                }
+            ]
+        }
+    ]
+}

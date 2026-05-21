@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1cc67cfd-f674-40c4-af95-a32208c5da1e",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016122",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.9,
+                            59.8,
+                            635.46,
+                            85.76
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수 $y=2 x-1$의 그래프와 $y$축 위에서 만나는 점은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.1,
+                            109.8,
+                            108.5,
+                            137.4
+                        ]
+                    ],
+                    "text_description" : "① $(0, -1)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.5,
+                            363.0,
+                            891.7,
+                            392.6
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=2 x-1$의 그래프가 $y$ 축과 만나는 점은 $x=0$ 일 때 $y$의 값으로 구할 수 있습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.7,
+                            483.2,
+                            535.7,
+                            513
+                        ]
+                    ],
+                    "text_description" : "따라서 $y=-1$에서 $y$ 축과 만나는 점은 $(0, -1)$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.26,
+                            157.36,
+                            87.54,
+                            336.64
+                        ]
+                    ],
+                    "text_description" : "② $(0,1)$\n③ $(1,0)$\n④ $\\left(\\frac{1}{2}, 0\\right)$\n⑤ $\\left(1, \\frac{1}{2}\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            349.0,
+                            429.0,
+                            553.0,
+                            452.0
+                        ]
+                    ],
+                    "text_description" : "$Y=2(0)-1=-1$"
+                }
+            ]
+        }
+    ]
+}

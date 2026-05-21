@@ -1,0 +1,161 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9f01b588-b86f-4579-aff5-ee7e5ebff233",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018395",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.27,
+                            7.23,
+                            1074.27,
+                            78.23
+                        ]
+                    ],
+                    "text_description" : "가격이 1800 원인 상자에 한 개에 400 원인 과자 7 개와 한 개에 600 원인 초콜릿 몇 개를 담아 상자 가격을 포함하여 10000원 이하의 선물을 만들려고 한다. 초콜릿은 최대 몇 개까지 담을 수 있는가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.27,
+                            263.77,
+                            82.27,
+                            293.77
+                        ]
+                    ],
+                    "text_description" : "⑤ 9개"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.27,
+                            604.77,
+                            83.27,
+                            633.77
+                        ]
+                    ],
+                    "text_description" : "⑤ 9개"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.27,
+                            95.77,
+                            82.27,
+                            251.77
+                        ]
+                    ],
+                    "text_description" : "① 5개 ② 6개 ③ 7개 ④ 8개"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.27,
+                            320.77,
+                            740.27,
+                            402.77
+                        ]
+                    ],
+                    "text_description" : "상자 가격은 1800 원, 과자 7 개의 가격은 $7 \\times 400=2800$ 원입니다. 초콜릿의 가격은 600 원이고, 개수를 $x$로 두고 부등식을 세웁니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.27,
+                            490.77,
+                            172.27,
+                            518.77
+                        ]
+                    ],
+                    "text_description" : "부등식을 풀면:"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            344.27,
+                            436.77,
+                            704.27,
+                            466.77
+                        ]
+                    ],
+                    "text_description" : "$1800+2800+600 x \\leq 10000$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            306.27,
+                            519.77,
+                            742.27,
+                            586.77
+                        ]
+                    ],
+                    "text_description" : "$600 x \\leq 5400 \\quad \\Rightarrow \\quad x \\leq \\frac{5400}{600}=9$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "05588618-66a7-4f40-bb54-b6d5bc513690",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003929",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22,
+                            15.16,
+                            726,
+                            162.66
+                        ]
+                    ],
+                    "text_description" : "두 일차방정식 $4 x-y-1=0, 2 x+3 y=k$의 그래프가 제 4 사분면에서 만날 때, 상수 $k$의 값의 범위는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.25,
+                            345.88,
+                            250.25,
+                            417.38
+                        ]
+                    ],
+                    "text_description" : "⑤ $-3<k<\\frac{1}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.5,
+                            174.38,
+                            576,
+                            329.38
+                        ]
+                    ],
+                    "text_description" : "① $-4<k<0$ ② $-3<k<\\frac{1}{2}$ ③ $-4<k<\\frac{3}{2}$ ④ $-3<k<\\frac{5}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            39.8,
+                            467.2,
+                            143.8,
+                            494.4
+                        ]
+                    ],
+                    "text_description" : "두 일차방정식"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7,
+                            498.4,
+                            207.8,
+                            638.4
+                        ]
+                    ],
+                    "text_description" : "$4 x-y-1=0, \\quad 2 x+3 y=k$의 그래프가 제 4 사분면에 서 만날 때를 나타내면 다 음과 같다. 따라서 점 $\\left(\\frac{1}{4}, 0\\right)$과"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.6,
+                            641.4,
+                            294,
+                            751
+                        ]
+                    ],
+                    "text_description" : "점 $(0, -1)$을 $2 x+3 y=k$에 대입하면 $k=\\frac{1}{2}, k=-3$ 이므로 $k$의 값의 범위는 $-3<k<\\frac{1}{2}$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            209.75,
+                            463.38,
+                            372.25,
+                            634.63
+                        ]
+                    ],
+                    "text_description" : "좌표 평면 위에 두 개의 빨간평행선이 그려져 있고, 하나의 직선이 그 중심을 가로지르고 있음. 직선의 방정식은 \\(4x-y - 1 = 0\\)으로 표시됨. x축과 y축의 좌표가 각각 표시되어 있으며, y축에는 \\(O\\)라는 원점, 아래쪽에는 \\(-1\\)이라는 값이 있음. 직선의 기울기는 \\(\\frac{1}{4}\\)로 나타남."
+                }
+            ]
+        }
+    ]
+}

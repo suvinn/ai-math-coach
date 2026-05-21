@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a30ee384-2ca2-40dc-b2b2-a8ff3e87be8a",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017705",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.37,
+                            47.03,
+                            975.37,
+                            87.03
+                        ]
+                    ],
+                    "text_description" : "어떤 자연수를 7배하여 9를 더했더니 100보다 작다고 한다. 이 자연수 중에서 가장 큰 수는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.619999999999997,
+                            187.53,
+                            82.87,
+                            219.53
+                        ]
+                    ],
+                    "text_description" : "③ 12"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.12,
+                            104.26,
+                            81.62,
+                            178.01
+                        ]
+                    ],
+                    "text_description" : "① 10 ② 11"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.87,
+                            226.76,
+                            84.12,
+                            303.01
+                        ]
+                    ],
+                    "text_description" : "④ 13 ⑤ 14"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.87,
+                            323.01,
+                            181.62,
+                            634.26
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}7 x+9<100 \\\\ 7 x<91 \\\\ \\\\ x<13\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

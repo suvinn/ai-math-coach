@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "104b8fc1-ffb3-48d4-a64c-4ba9d1e0fe03",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001710",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.64,
+                            20.8,
+                            531.84,
+                            148.8
+                        ]
+                    ],
+                    "text_description" : "지영이가 동전 지갑을 열어 보니 100원짜리 동전 $x$개와 50원짜리 동전 $y$개가 있었다. 동전은 모두 25개이고, 그 금액이 2150원이었을 때, 100원짜리 동전과 50원짜리 동전의 개수를 구하는 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.64,
+                            232.72,
+                            278.24,
+                            285.92
+                        ]
+                    ],
+                    "text_description" : "② $\\left\\{\\begin{array}{l}x+y=25 \\\\ 100 x+50 y=2150\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.64,
+                            169.92,
+                            277.44,
+                            222.72
+                        ]
+                    ],
+                    "text_description" : "① $\\left\\{\\begin{array}{l}x+y=25 \\\\ 50 x+100 y=2150\\end{array}\\right. $"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.44,
+                            297.12,
+                            271.84,
+                            498.12
+                        ]
+                    ],
+                    "text_description" : "③ $\\left\\{\\begin{array}{l}x+y=25 \\\\ \\frac{x}{100}+\\frac{y}{50}=2150\\end{array}\\right. $ ④ $\\left\\{\\begin{array}{l}x+y=2150 \\\\ 50 x+100 y=25\\end{array}\\right. $ ⑤ $\\left\\{\\begin{array}{l}x+y=2150 \\\\ 100 x+50 y=25\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.44,
+                            505.92,
+                            185.44,
+                            545.12
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}x+y=25 \\\\ 100 x+50 y=2150\\end{array}\\right. $"
+                }
+            ]
+        }
+    ]
+}

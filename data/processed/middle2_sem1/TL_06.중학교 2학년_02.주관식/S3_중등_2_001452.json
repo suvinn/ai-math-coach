@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f14816f2-0933-41e4-91b0-d4cf9b824722",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001452",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67,
+                            25.92,
+                            457,
+                            59.92
+                        ]
+                    ],
+                    "text_description" : "다음 ㅁ안에 알맞은 식을 쓰시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9,
+                            81.92,
+                            521,
+                            141.92
+                        ]
+                    ],
+                    "text_description" : "② $\\left(-x^{3} y^{2}\\right)^{2} \\div\\left(\\frac{1}{4} x^{2} y^{3}\\right) \\times \\frac{1}{2} x y^{2}=2 x y^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4,
+                            335.32,
+                            76.4,
+                            372.92
+                        ]
+                    ],
+                    "text_description" : "② $\\frac{1}{4} x^{6} y^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.2,
+                            154.52,
+                            410.8,
+                            326.52
+                        ]
+                    ],
+                    "text_description" : "② $\\begin{array}{l}\\left(-x^{3} y^{2}\\right)^{2} \\div \\square \\times \\frac{1}{2} x y^{2}=2 x y^{3} \\\\ x^{6} y^{4} \\times \\frac{1}{\\square} \\times \\frac{1}{2} x y^{2}=2 x y^{3}, \\frac{1}{2} x^{7} y^{6} \\times \\frac{1}{\\square}=2 x y^{3} \\\\ 2 x y^{3} \\times \\square=\\frac{1}{2} x^{7} y^{6} \\\\ \\square=\\frac{1}{2} x^{7} y^{6} \\div\\left(2 x y^{3}\\right)=\\frac{1}{2} x^{7} y^{6} \\times \\frac{1}{2 x y^{3}}=\\frac{1}{4} x^{6} y^{3}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

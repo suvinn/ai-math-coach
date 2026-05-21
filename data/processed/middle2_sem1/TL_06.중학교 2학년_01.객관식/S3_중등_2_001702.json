@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0b926c63-5bcc-46a4-ab48-83d45fd9a58c",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001702",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.02,
+                            124.5,
+                            527.78,
+                            182.38
+                        ]
+                    ],
+                    "text_description" : "$a<b<0<c<d$ 일 때, 다음 $\\square$ 안에 알맞은 것을 차례로 나열한 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.3,
+                            205.78,
+                            529.06,
+                            278.02
+                        ]
+                    ],
+                    "text_description" : "$d-a \\square d-b, \\quad \\frac{c}{b} \\square \\frac{d}{b}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.66,
+                            327.02,
+                            145.7,
+                            354.54
+                        ]
+                    ],
+                    "text_description" : "④ $>, >$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.02,
+                            293.46,
+                            457.38,
+                            318.7
+                        ]
+                    ],
+                    "text_description" : "① $<, <$ ② $<, >$ ③ $>. <$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            215.46,
+                            327.02,
+                            301.22,
+                            353.9
+                        ]
+                    ],
+                    "text_description" : "⑤ $=, >$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.38,
+                            10.94,
+                            503.46,
+                            112.62
+                        ]
+                    ],
+                    "text_description" : "$a<b$의 양변에 -1을 곱하면 부등호의 방향이 바뀌므로 $-a>-b$이다. 또한, $-a>-b$의 양변에 $d$를 더하여도 부등호의 방향이 바뀌지 않으므로 $d-a > d-b$이다. $b<0$이고 $c<d$의 양변을 $b$로 나누면 부등호의 방향이 바뀌므로 $\\frac{c}{b} > \\frac{d}{b}$ 이다."
+                }
+            ]
+        }
+    ]
+}

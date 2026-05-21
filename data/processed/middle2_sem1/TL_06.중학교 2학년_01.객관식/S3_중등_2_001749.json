@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2a86ea90-7ba9-4d73-8206-d2be577ebc38",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001749",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.9,
+                            150.3,
+                            537.3,
+                            216.7
+                        ]
+                    ],
+                    "text_description" : "네 방정식 $x=-4, x-2=0, y=a, y+2 a=0$의 그래프로 둘러싸인 도형의 넓이가 $54$일 때, 양수 $a$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            374.9,
+                            228.7,
+                            418.1,
+                            264.7
+                        ]
+                    ],
+                    "text_description" : "③ $3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.9,
+                            224.7,
+                            273.3,
+                            298.3
+                        ]
+                    ],
+                    "text_description" : "① 1 ② 2 ④ 4 ⑤ 56"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.5,
+                            36.7,
+                            376.1,
+                            122.3
+                        ]
+                    ],
+                    "text_description" : "네 방정식 $x=-4, x=2, y=a, y=-2 a$의 그래프를 그리면 오른쪽 그림과 같다. 네 방정식의 그래프로 둘러싸인 도형은 직사각형이므로\\[6 \\times 3 a=54, 18 a=54 \\text { 에서 } a=3 \\text { 이다. }\\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            380.97,
+                            5.86,
+                            535.97,
+                            145.86
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 좌표평면에서 여러 함수나 방정식을 표현한 그래프입니다: 주요 요소들: 1. x축: -4와 4 지점이 표시됨 2. y축: -6까지 표시된 눈금 3. 표시된 방정식들: - y = -4 (수평선) - y=x (직선) - y = 2x (직선) - y + 2x = 0 (직선) - 3x (x축 위의 점) 특징: - 보라색 배경에 파란색 선으로 그래프가 그려져 있음 - 원점(O)이 표시되어 있음 - 여러 직선들이 교차하는 지점들이 있음 - 좌표평면의 격자가 표시되어 있어 값을 읽기 쉬움"
+                }
+            ]
+        }
+    ]
+}

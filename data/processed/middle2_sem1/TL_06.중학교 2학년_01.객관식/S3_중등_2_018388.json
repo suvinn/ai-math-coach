@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1ec18652-03e0-480b-aaff-8c9c7ec5a4d5",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018388",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.2,
+                            6.85,
+                            572.34,
+                            36.76
+                        ]
+                    ],
+                    "text_description" : "$x \\leq-2$ 일 때, $3 x+4$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.43,
+                            188.54,
+                            218.25,
+                            217.45
+                        ]
+                    ],
+                    "text_description" : "④ $3 x+4<-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.44,
+                            286.62,
+                            262.9,
+                            438.26
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}x \\leq-2 \\\\ 3 x+4 \\leq 3(-2)+4 \\\\ 3 x+4<-2\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "2",
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            29.06,
+                            59.78,
+                            220.22,
+                            176.72
+                        ]
+                    ],
+                    "text_description" : "① $3 x+4 \\leq-2$\n② $3 x+4 \\geq-2$\n③ $3 x+4>-2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.77,
+                            226.64,
+                            200.52,
+                            260.15
+                        ]
+                    ],
+                    "text_description" : "⑤ $3 x+4 \\geq 2$"
+                }
+            ]
+        }
+    ]
+}

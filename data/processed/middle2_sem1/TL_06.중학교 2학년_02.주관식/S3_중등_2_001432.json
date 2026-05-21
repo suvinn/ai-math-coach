@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "bd91bc7c-ac50-42af-ae56-f301a0405734",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001432",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.63,
+                            49.15,
+                            276.07,
+                            231.42
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같이 밑면이 가로의 길이가 $2 a^{2} \\mathrm{~cm}$, 세로의 길이가 $3 b^{3} \\mathrm{~cm} $인 직사각형이고 높이가"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.99,
+                            240.58,
+                            462.85,
+                            269.89
+                        ]
+                    ],
+                    "text_description" : "$a^{2} b \\mathrm{~cm}$ 인 직육면체의 부피를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            301.5,
+                            50.5,
+                            593.5,
+                            217.5
+                        ]
+                    ],
+                    "text_description" : "밑면이 가로의 길이가 $2 a^{2} \\mathrm{~cm}$, 세로의 길이가 $3 b^{3} \\mathrm{~cm}$인 직사각형이고 높이가 $a^{2} b \\mathrm{~cm}$인 직육면체 입체도형이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            88.5,
+                            351.5,
+                            156.5,
+                            371.5
+                        ]
+                    ],
+                    "text_description" : "$6 a^{4} b^{4} \\mathrm{~cm}^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.5,
+                            281.4,
+                            439.5,
+                            347.4
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}(\\text { 직육면체의 부피 }) & =(\\text { 가로의 길이 }) \\times(\\text { 세로의 길이 }) \\times(\\text { 높이 }) \\\\ & =2 a^{2} \\times 3 b^{3} \\times a^{2} b \\\\ & =6 a^{4} b^{4}\\left(\\mathrm{~cm}^{3}\\right)\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

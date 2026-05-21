@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6f22446d-d388-4b2c-920e-42b280649979",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018158",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.82,
+                            9.48,
+                            1069.82,
+                            77.88
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b(a \\neq 0)$의 그래프가 일차함수 $y=7 x-1$의 그래프를 y 축의 방향으로 10만큼 평행이동한 것일 때, 상수 $a$와 $b$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.54,
+                            106.48,
+                            193.02,
+                            133.56
+                        ]
+                    ],
+                    "text_description" : "① $a=7, b=9$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.18,
+                            148.28,
+                            207.1,
+                            303.16
+                        ]
+                    ],
+                    "text_description" : "② $a=7, b=5$ ③ $a=7, b=19$ ④ $a=7, b=11$ ⑤ $a=7, b=10$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.9,
+                            319.58,
+                            204.54,
+                            349.02
+                        ]
+                    ],
+                    "text_description" : "평행이동 후 함수:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.54,
+                            405.34,
+                            252.54,
+                            432.22
+                        ]
+                    ],
+                    "text_description" : "따라서, $a=7, b=9$."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.62,
+                            362.38,
+                            378.62,
+                            395.1
+                        ]
+                    ],
+                    "text_description" : "$y=7 x+(-1+10)=7 x+9$"
+                }
+            ]
+        }
+    ]
+}

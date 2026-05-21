@@ -1,0 +1,95 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "656c79e1-cf55-42cb-8dc3-db8bf6e1fc44",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004039",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71,
+                            22.92,
+                            469,
+                            58.92
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6,
+                            82.92,
+                            334,
+                            129.92
+                        ]
+                    ],
+                    "text_description" : "④ $x^{2} \\times y \\times y \\times x^{3} \\times y^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1,
+                            214.5,
+                            74,
+                            242.5
+                        ]
+                    ],
+                    "text_description" : "④ $x^{5} y^{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9,
+                            141.5,
+                            370,
+                            203.5
+                        ]
+                    ],
+                    "text_description" : "④ $\\begin{array}{l}x^{2} \\times y \\times y \\times x^{3} \\times y^{2}=x^{2} \\times x^{3} \\times y \\times y \\times y^{2} \\\\ =x^{2+3} \\times y^{1+1+2}=x^{5} y^{4}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "93a56252-dcc8-4414-85fb-3faff939da5f",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018913",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.24,
+                            10.5,
+                            1087.74,
+                            36.25
+                        ]
+                    ],
+                    "text_description" : "다음 그래프는 길이가 15cm 인 초에 불을 붙인 후 경과한 시간과 그에 따라 남은 초의 길이를 나타낸 것이다. 초가 타는 속도로 알맞은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            74.75,
+                            45.57,
+                            282.11,
+                            201.22
+                        ]
+                    ],
+                    "text_description" : "주어진 도형은 직선으로, x축과 y축에 대한 방향이 있으며, x는 시간(초)을, y는 길이(센티미터)를 나타낸다. 직선은 왼쪽 위에서 오른쪽 아래로 하향하고, 특정 두 점(0, 15)과 (5, 0)을 통과한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.54,
+                            210.43,
+                            282.62,
+                            235.01
+                        ]
+                    ],
+                    "text_description" : "① 1시간에 3cm씩 줄어든다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.61,
+                            242.69,
+                            289.79,
+                            362.5
+                        ]
+                    ],
+                    "text_description" : "② 1시간에 10cm 씩 줄어든다. ③ 1시간에 12cm 씩 줄어든다. ④ 1시간에 14cm 씩 줄어든다. ⑤ 1시간에 15cm 씩 줄어든다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.36,
+                            430.26,
+                            651.52,
+                            504.22
+                        ]
+                    ],
+                    "text_description" : "5시간 동안 15cm의 초가 다 타므로 1시간 동안에는 $\\frac{15}{5}=3(\\mathrm{~cm})$가 타게 된다. 따라서 1시간에 3cm 씩 줄어든다."
+                }
+            ]
+        }
+    ]
+}

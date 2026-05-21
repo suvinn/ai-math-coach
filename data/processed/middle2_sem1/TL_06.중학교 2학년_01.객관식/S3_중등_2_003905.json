@@ -1,0 +1,121 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3a58cbff-241c-495c-a9e0-2277a61c9e73",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003905",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Polygon",
+                    "Type_value" : [
+                        [
+                            77.76,
+                            17.53
+                        ],
+                        [
+                            78.52,
+                            54.89
+                        ],
+                        [
+                            17.53,
+                            56.41
+                        ],
+                        [
+                            16.01,
+                            93
+                        ],
+                        [
+                            410.13,
+                            98.34
+                        ],
+                        [
+                            409.36,
+                            57.17
+                        ],
+                        [
+                            593.84,
+                            51.84
+                        ],
+                        [
+                            591.56,
+                            19.06
+                        ]
+                    ],
+                    "text_description" : "다음 문장을 미지수가 2개인 일차방정식으로 나타낸 것 중 옳지 않은 것은?"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.13,
+                            99.86,
+                            591.92,
+                            621.29
+                        ]
+                    ],
+                    "text_description" : "① 내 나이 $x$ 살과 동생의 나이 $y$ 살을 합하면 25 살이다. $\\Leftrightarrow x+y=25$ ② 한 장에 100 원 하는 우표 $x$ 장과 150 원 하는 우표 $y$ 장을 사고 그 값으로 1000 원을 내었다. $\\Leftrightarrow 100 x+150 y=1000$ ③ 200원짜리 오이 $x$ 개와 300원짜리 가지 $y$ 개를 사고 그 값으로 2000 원을 내었다. $\\Leftrightarrow$ $200 x+300 y=2000$ ④ 농구시합에서 2점 슛을 $x$ 번 성공시키고, 자유 투를 $y$ 번 성공시켜 모두 15점을 얻었다. $\\Leftrightarrow$ $y$3 ⑤ 두발 자전거 $x$ 대와 세발자전거 $y$ 대의 바퀴 수는 모두 30 개이다. $y$6"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            96.01,
+                            664.74,
+                            210.76,
+                            693.71
+                        ]
+                    ],
+                    "text_description" : "④ $2 x+y=15$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.0,
+                            722.0,
+                            73.0,
+                            745.0
+                        ]
+                    ],
+                    "text_description" : ""
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ef48b96e-ad97-40fd-af86-2a2a5b2c8183",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016010",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.27,
+                            54.74,
+                            507.27,
+                            83.74
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 풀었을 때 $x$와 $y$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            386.27,
+                            101.28,
+                            548.27,
+                            184.28
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}3 x-2 y=10 \\\\ x+y=5\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.27,
+                            248.28,
+                            172.27,
+                            276.28
+                        ]
+                    ],
+                    "text_description" : "① $x=4, y=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.27,
+                            649.28,
+                            162.27,
+                            674.28
+                        ]
+                    ],
+                    "text_description" : "① $x=4, y=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.27,
+                            283.28,
+                            191.27,
+                            417.28
+                        ]
+                    ],
+                    "text_description" : "② $x=3, y=2$ ③ $x=5, y=0$ ④ $x=2, y=3$ ⑤ $x=6, y=-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.27,
+                            439.28,
+                            1008.27,
+                            621.28
+                        ]
+                    ],
+                    "text_description" : "1. 두 번째 식에서 $y=5-x$. 이를 첫 번째 식에 대입: \\[ 3 x-2(5-x)=10 \\Longrightarrow 3 x-10+2 x=10 \\Longrightarrow 5 x-10=10 \\Longrightarrow 5 x=20 \\Longrightarrow x=4 \\] 2. $x=4$를 두 번째 식에 대입: \\[ 4+y=5 \\Longrightarrow y=1 \\]"
+                }
+            ]
+        }
+    ]
+}

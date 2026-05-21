@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fb786d50-2ed2-4158-b87a-438fa12d635f",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001745",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.3,
+                            30.72,
+                            342.1,
+                            128.32
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $x+a y+b=0$의 그래프가 오른쪽 그림과 같을 때, 다음 중 옳은 것은? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            358.5,
+                            37.92,
+                            525.3,
+                            168.32
+                        ]
+                    ],
+                    "text_description" : "좌표평면. $x$축과 $y$축이 있으며, 원점 $O$가 표시됨. 일차방정식 $x+a y+b=0$의 그래프가 존재."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.9,
+                            183.32,
+                            190.9,
+                            209.12
+                        ]
+                    ],
+                    "text_description" : "② $a<0, b>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.7,
+                            149.12,
+                            190.7,
+                            174.72
+                        ]
+                    ],
+                    "text_description" : "① $a<0, b<0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.7,
+                            217.52,
+                            191.9,
+                            312.32
+                        ]
+                    ],
+                    "text_description" : "③ $a<0$, $b=0$ ④ $a>0$, $b<0$ ⑤ $a>0$, $b>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.3,
+                            314.12,
+                            366.9,
+                            400.32
+                        ]
+                    ],
+                    "text_description" : "\\[ x+a y+b=0, a y=-x-b, y=-\\frac{1}{a} x-\\frac{b}{a} \\] 기울기와 $y$ 절편이 모두 양수이므로 $-\\frac{1}{a}>0, -\\frac{b}{a}>0$ 따라서 $a<0, b>0$ 이다."
+                }
+            ]
+        }
+    ]
+}

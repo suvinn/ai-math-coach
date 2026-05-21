@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b09cce9a-e205-4582-a414-c31a46fbbec8",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001785",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            83.34,
+                            23.73,
+                            712.09,
+                            133.73
+                        ]
+                    ],
+                    "text_description" : "분수 $\\frac{x}{2 \\times 3^{2} \\times 5}$가 다음 조건을 모두 만족시킬 때, $x$의 값 중 가장 작은 것은?2"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            84.59,
+                            154.4,
+                            714.59,
+                            409.4
+                        ]
+                    ],
+                    "text_description" : "㉮ $\\frac{x}{2 \\times 3^{2} \\times 5}$를 소수로 나타내면 유한소수가 된다. 3㉯ $x$는 2와 3의 공배수이고 두 자리의 자연수 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            288.34,
+                            426.9,
+                            364.59,
+                            463.15
+                        ]
+                    ],
+                    "text_description" : "② 18"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            79.59,
+                            426.9,
+                            158.34,
+                            505.65
+                        ]
+                    ],
+                    "text_description" : "① 12 ④ 54"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            500.84,
+                            428.15,
+                            573.34,
+                            461.9
+                        ]
+                    ],
+                    "text_description" : "③ 36"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            288.34,
+                            473.15,
+                            362.09,
+                            508.15
+                        ]
+                    ],
+                    "text_description" : "⑤ 72"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            30.84,
+                            534.4,
+                            438.34,
+                            711.9
+                        ]
+                    ],
+                    "text_description" : "조건 ㉮에서 $\\frac{x}{2 \\times 3^{2} \\times 5}$가 유한소수이므로 $x$는 $3^{2}$, 즉 9의 배수가 되어야 한다. 조건 ㉯에서 $x$는 2와 3의 공배수, 즉 6의 배수이고 두 자 리의 자연수이다. 따라서 $x$는 6과 9의 공배수, 즉 18의 배수이고 두 자리의 자연수이므로이 중에서 가장 작은 것은 18 이다."
+                }
+            ]
+        }
+    ]
+}

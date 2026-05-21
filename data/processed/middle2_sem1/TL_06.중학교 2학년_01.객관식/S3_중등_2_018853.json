@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e461ee01-b4ab-4f8b-bcb1-9ae384e47614",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018853",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.28,
+                            11.23,
+                            687.28,
+                            36.23
+                        ]
+                    ],
+                    "text_description" : "다음 그림은 일차함수 $y=a x+b$의 그래프이다. 옳지 않은 것은? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.28,
+                            48.77,
+                            269.28,
+                            250.77
+                        ]
+                    ],
+                    "text_description" : "이미지에는 직선 그래프가 표시되어 있고, y=ax+b의 형태로 주어진다. x축과 y축이 있으며, x축에는 -1, 0, 1의 눈금이 있다. y축의 방향이 위쪽으로 향하고 있으며, 그래프는 내림차순으로 기울어져 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.28,
+                            375.77,
+                            156.28,
+                            402.77
+                        ]
+                    ],
+                    "text_description" : "⑤ $|a|<|b|$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.28,
+                            251.77,
+                            174.28,
+                            368.77
+                        ]
+                    ],
+                    "text_description" : "① $a<0$ ② $b>0$ ③ $-a+b>0$ ④ $a+b<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.28,
+                            467.77,
+                            435.28,
+                            582.77
+                        ]
+                    ],
+                    "text_description" : "①, ② $y=a x+b$에서 $a<0, b>0$ ③ $x=-1$ 일 때, $y=-a+b>0$ ④ $x=1$ 일 때, $y=a+b<0$ ⑤ $a<0, b>0$ 이고 $a+b<0$ 이므로 $|a|>|b|$ 이다."
+                }
+            ]
+        }
+    ]
+}

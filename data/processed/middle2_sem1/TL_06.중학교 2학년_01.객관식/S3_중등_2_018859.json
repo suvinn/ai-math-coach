@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5261da72-5f89-452d-9b79-0bbebb7b9997",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018859",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.1,
+                            11,
+                            988.1,
+                            35
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프가 다음 그림과 같을 때, 일차함수 $y=b x+a$의 그래프로 가장 적당한 것은? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.1,
+                            45,
+                            239.1,
+                            212
+                        ]
+                    ],
+                    "text_description" : "일차함수의 그래프가 있습니다. - 직선형태 - x축과의 교점: y = 0일 때의 x값 - y축과의 교점: x = 0일 때의 y값 - 1차 함수의 일반형: y=ax+b - 우하향, 1, 2, 4사분면을 지남"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.84,
+                            214.49,
+                            209.15,
+                            1078.55
+                        ]
+                    ],
+                    "text_description" : "① x축 왼쪽에서 y축 위로 그어진 직선 ② y축 아래쪽에서 x축 오른쪽으로 그어진 직선 ③ y축 위쪽에서 x축 오른쪽으로 그어진 직선 ④ x축 왼쪽에서 y축 아래로 그어진 직선 ⑤ y축의 평행한 x축 오른쪽에 그어진 직선"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.1,
+                            1094,
+                            83.1,
+                            1115
+                        ]
+                    ],
+                    "text_description" : "②"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.1,
+                            1136,
+                            942.1,
+                            1192
+                        ]
+                    ],
+                    "text_description" : "직선이 오른쪽 아래로 향하므로 $a<0$ 이고, $y$ 축과 만나는 점이 원점보다 위에 있으므로 $b>0$ 이다. 따라서 $y=b x+a$의 그래프는 $b>0$ 이므로 오른쪽 위로 향하고, $a<0$ 이므로 $y$ 축과 만나는 점이 원점보다 아래에 있다."
+                }
+            ]
+        }
+    ]
+}

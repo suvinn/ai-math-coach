@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d7e39d43-6542-42f8-81e1-90e5e02fae59",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001744",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            86.5,
+                            307,
+                            411.5,
+                            528
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같은 직사각 형 ABCD에서 점 P는 점 B를 출발하여 $\\overline{\\mathrm{BC}}$를 따라 점 C까지 매초 2cm의 속력으로 움직인다. 점 P가 점"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            86.5,
+                            538,
+                            716.5,
+                            616
+                        ]
+                    ],
+                    "text_description" : "B를 출발한 지 4초 후의 사다리꼴 ABPD의 넓이를 구 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            419,
+                            315.9,
+                            720.25,
+                            496.9
+                        ]
+                    ],
+                    "text_description" : "직사각형 ABCD에서 점 P는 점 B를 출발하여 $\\overline{\\mathrm{BC}}$를 따라 점 C까지 매초 2cm의 속력으로 움직이고 있다. $\\overline{\\mathrm{AD}}=16cm$이고, $\\overline{\\mathrm{DC}}=10cm$이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            111.25,
+                            271.37,
+                            183,
+                            294.62
+                        ]
+                    ],
+                    "text_description" : "$120 \\mathrm{~cm}^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            86,
+                            14.620000000000001,
+                            716,
+                            266.12
+                        ]
+                    ],
+                    "text_description" : "점 P는 점 B를 출발하여 매초 2cm의 속력으로 움직이므로 $x$ 초 후의 $\\overline{\\mathrm{BP}}$의 길이는 $\\overline{\\mathrm{BP}}=2 x(\\mathrm{~cm})$ 사다리꼴 ABPD의 넓이를 $y \\mathrm{~cm}^{2}$라고 하면 $($ 사각형 ABPD의 넓이 $)=\\frac{1}{2} \\times(\\overline{\\mathrm{AD}}+\\overline{\\mathrm{BP}}) \\times \\overline{\\mathrm{AB}}$ \\[ y=\\frac{1}{2} \\times(16+2 x) \\times 10 \\text { 에서 } y=10 x+80 \\]이 식에 $x=4$를 대입하면 $y=10 \\times 4+80=120$ 따라서 점 P가 점 B를 출발한 지 4초 후의 사다리꼴 ABPD의 넓이는 $120 \\mathrm{~cm}^{2}$ 이다."
+                }
+            ]
+        }
+    ]
+}

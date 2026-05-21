@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "669a60ce-ca9f-49a7-80ef-25835468e960",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018944",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.3,
+                            11.58,
+                            496.98,
+                            37.06
+                        ]
+                    ],
+                    "text_description" : "직선 $3 x+2 y-6=0$에 대한 다음 설명 중 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.7,
+                            108.09,
+                            392.74,
+                            131.25
+                        ]
+                    ],
+                    "text_description" : "③ $x$의 값이 증가할 때, $y$의 값은 감소한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.25,
+                            45.55,
+                            209.76,
+                            100.37
+                        ]
+                    ],
+                    "text_description" : "① $x$ 절편은 2이다. ② $y$ 절편은 3 이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.47,
+                            141.29,
+                            299.32,
+                            194.56
+                        ]
+                    ],
+                    "text_description" : "④ 점 $(2, 3)$을 지난다. ⑤ 제 3 사분면은 지나지 않는다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.61,
+                            263.59,
+                            674.55,
+                            365.19
+                        ]
+                    ],
+                    "text_description" : "\\[ 3 x+2 y-6=0, \\quad 2 y=-3 x+6 \\text {, 즉 } y=-\\frac{3}{2} x+3 \\text { 에서 } \\] 기울기는 $-\\frac{3}{2}, y$ 절편은 $3, x$ 절편은 $0=-\\frac{3}{2} x+3$ \\[ \\therefore \\quad x=2 \\]"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.52,
+                            378.32,
+                            711.61,
+                            538.91
+                        ]
+                    ],
+                    "text_description" : "③ [ 기울기 ] $=-\\frac{3}{2}<0$ 이므로 $x$의 값이 증가하면 $y$의 값은 감소한다. ④ $3 x+2 y-6=0$에 $x=2, y=3$을 대입하면 $3 \\times 2+2 \\times 3-6 \\neq 0$ 따라서 점 $(2, 3)$을 지나지 않는다. ⑤ $y=-\\frac{3}{2} x+3$의 그래프를 그리면 다음 그림과 같으므로 제 3 사분면은 지나지 않는다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.16,
+                            549.72,
+                            278.48,
+                            765.9
+                        ]
+                    ],
+                    "text_description" : "x, y좌표이다. y절편은 3, x절편은 2이다. $y=-\\frac{3}{2} x+3$가 좌표 아래 문단에 적혀져있다."
+                }
+            ]
+        }
+    ]
+}

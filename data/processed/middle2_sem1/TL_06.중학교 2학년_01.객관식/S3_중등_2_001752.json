@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "42ec1407-fd7c-4b3d-9fec-b9c605bb1320",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001752",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.88,
+                            22.77,
+                            529.45,
+                            87.28
+                        ]
+                    ],
+                    "text_description" : "두 직선 $x-3 y=9, 3 x+4 y=1$의 교점을 지나고, 직선 $2 x+y=-1$의 그래프와 평행한 직선의 방정식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.54,
+                            210.82,
+                            445.1,
+                            354.82
+                        ]
+                    ],
+                    "text_description" : "두 직선의 교점이 연립방정식의 해이므로 $\\left\\{\\begin{array}{l}x-3 y=9 \\\\ 3 x+4 y=1\\end{array}\\right. $을 풀면 교점의 좌표는 $(3, -2)$ 이다. $2 x+y=-1$을 $y$에 대하여 풀면 $y=-2 x-1$이 직선과 평행하므로 기울기는 $-2$ 이다. $y=-2 x+b$로 놓고 $y=-2 x+b$에 점 $(3, -2)$를 대입하면 $b=4$ 따라서 구하는 직선의 방정식은 $(3, -2)$0 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.0,
+                            102.0,
+                            204.0,
+                            202.0
+                        ]
+                    ],
+                    "text_description" : "① $y=-2 x-1$  ③ $y=-2 x+7$  ⑤ $y=2 x+1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            293.0,
+                            137.0,
+                            415.0,
+                            168.0
+                        ]
+                    ],
+                    "text_description" : "④ $y=2 x-8$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            320.0,
+                            108.0,
+                            443.0,
+                            134.0
+                        ]
+                    ],
+                    "text_description" : "$y=-2 x+4$"
+                }
+            ]
+        }
+    ]
+}

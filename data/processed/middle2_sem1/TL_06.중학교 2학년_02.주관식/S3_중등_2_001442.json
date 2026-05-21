@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d58dd837-70d6-494c-a242-1b8a2747e645",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001442",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            88,
+                            44.42,
+                            432,
+                            191.42
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같이 밑면의 반지름의 길이가 $2 a$ 인 원기둥의 부피가 $12 \\pi a^{2} b$ 일 때, 이 원기둥의 높이 $h$를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            451.32,
+                            40.77,
+                            614.68,
+                            236.41
+                        ]
+                    ],
+                    "text_description" : "반지름이 2a, 높이가 h인 원기둥이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            106.44,
+                            316.98,
+                            126.92,
+                            336.18
+                        ]
+                    ],
+                    "text_description" : "$3 b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            88.32,
+                            245.66,
+                            336.84,
+                            312.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}(\\text { 밑넓이 })=\\pi \\times(2 a)^{2}=4 \\pi a^{2} \\text { 이므로 } \\\\ h=12 \\pi a^{2} b \\div\\left(4 \\pi a^{2}\\right)=\\frac{12 \\pi a^{2} b}{4 \\pi a^{2}}=3 b\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

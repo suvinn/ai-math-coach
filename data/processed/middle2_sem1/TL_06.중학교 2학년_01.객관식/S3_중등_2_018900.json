@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "41d54311-37f1-4e19-a90b-bcca66e534f2",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018900",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.34,
+                            16.4,
+                            673.34,
+                            39.2
+                        ]
+                    ],
+                    "text_description" : "일차함수의 그래프가 다음과 같을 때, 이 그래프의 기울기와 $y$ 절편의 합을 구하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.34,
+                            44.6,
+                            334.14,
+                            248.8
+                        ]
+                    ],
+                    "text_description" : "$xy$ 좌표 평면 위에 직선이 있고 점 $(4, 3)$과 점 $(-1, 1)$을 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.34,
+                            402.08,
+                            117.34,
+                            443.68
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{3}{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.54,
+                            257.88,
+                            133.34,
+                            387.08
+                        ]
+                    ],
+                    "text_description" : "① $-\\frac{1}{5}$ ② $0$ ③ $\\frac{1}{5}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.34,
+                            456.64,
+                            105.34,
+                            477.44
+                        ]
+                    ],
+                    "text_description" : "⑤ $1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.34,
+                            542.64,
+                            365.34,
+                            769.44
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} y=a x+b \\text { 에 }(4, 3) \\text { 과 }(-1, -1) \\text { 을 대입하면 } \\\\ \\left\\{\\begin{array}{l} 3=4 a+b \\\\ -1=-a+b \\end{array}\\right. \\end{array} \\] 연립하여 풀면 \\[ \\begin{array}{l} a=\\frac{4}{5}, \\quad b=-\\frac{1}{5} \\\\ \\therefore \\quad a+b=\\frac{4}{5}-\\frac{1}{5}=\\frac{3}{5} \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

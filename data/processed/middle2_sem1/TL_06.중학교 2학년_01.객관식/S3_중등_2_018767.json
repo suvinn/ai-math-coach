@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "68b5919a-1358-453d-a0d8-c02c626e45b1",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018767",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.14,
+                            20.24,
+                            1485.76,
+                            67.7
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-2 x+3$의 그래프를 $y$ 축의 방향으로 $a$만큼 평행이동하면 원점을 지나고, $b$만큼 평행이동하면 일차함수 $y=\\frac{1}{2} x+5$의 그래프와 $y$ 축에서 만날 때, $a+b$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73.13,
+                            181.44,
+                            119.38,
+                            205.19
+                        ]
+                    ],
+                    "text_description" : "④ $-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73.13,
+                            80.18,
+                            123.13,
+                            170.81
+                        ]
+                    ],
+                    "text_description" : "① $-4$ ② $-3$ ③ $-2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.5,
+                            218.94,
+                            117.51,
+                            240.81
+                        ]
+                    ],
+                    "text_description" : "⑤ 0"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73.22,
+                            301.97,
+                            1767.42,
+                            486.65
+                        ]
+                    ],
+                    "text_description" : "i) $y=-2 x+3$의 그래프를 $y$ 축의 방향으로 $a$만큼 평행이동한 그래프는 $y=-2 x+3+a$ 이고 원점 $(0, 0)$을 지나므로 $x=0, y=0$을 대입하면 $a=-3$ 이다. ii) $y=-2 x+3$의 그래프를 $y$ 축의 방향으로 $b$만큼 평행이동한 그래프는 $y$0 이고이 그래프가 $y$1의 그래프와 $y$ 축에서 만나므로 $y$ 절편이 같다. 따라서 $y$0의 $y$ 절편도 5가 되 므로, $y$6를 대입하면 \\[ \\begin{array}{l} 5=3+b \\quad \\therefore \\quad b=2 \\\\ \\therefore a+b=-3+2=-1 \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

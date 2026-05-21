@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e2a9acf9-1e6b-498a-baa6-9910b9b16df9",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018819",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.34,
+                            12.68,
+                            844.09,
+                            37.68
+                        ]
+                    ],
+                    "text_description" : "다음 일차함수 중 그 그래프가 $y=-2 x$의 그래프를 $y$ 축의 방향으로 5만큼 평행이동한 그래프와 같은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.09,
+                            107.1,
+                            170.34,
+                            130.85
+                        ]
+                    ],
+                    "text_description" : "③ $y=-2 x+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.84,
+                            258.35,
+                            821.59,
+                            285.85
+                        ]
+                    ],
+                    "text_description" : "$y=-2 x$의 그래프를 $y$ 축의 방향으로 5만큼 평행이동한 그래프는 일차함수 $y=-2 x+5$의 그래프와 같다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.84,
+                            44.6,
+                            166.59,
+                            103.35
+                        ]
+                    ],
+                    "text_description" : "① $y=2 x-5$ ② $y=-2 x-5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.59,
+                            140.85,
+                            180.34,
+                            195.85
+                        ]
+                    ],
+                    "text_description" : "④ $y=2 x+5$ ⑤ $y=-2(x+5)$"
+                }
+            ]
+        }
+    ]
+}

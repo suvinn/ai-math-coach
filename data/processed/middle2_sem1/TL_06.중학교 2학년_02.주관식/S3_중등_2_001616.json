@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "be32e16e-b21a-4ac8-9c9e-b2f2c4db4061",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001616",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            39.5,
+                            27.42,
+                            246.5,
+                            203.42
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같이 두 일차함수 $y=\\frac{3}{4} x+3$, $y=-\\frac{3}{2} x+3$의 그래프와 $x$ 축으로 둘러싸인 도형의 넓이를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            257.5,
+                            33,
+                            450.5,
+                            203
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 두 직선의 그래프와 그것들이 만나는 점을 포함하고 있습니다. 직선의 방정식은 다음과 같습니다: 1. \\(y = -\\frac{3}{2}x + 3 \\) (하강 직선) 2. \\(y = \\frac{3}{4}x + 3 \\) (상승 직선) 또한, 삼각형이 형성되어 있으며, 이 삼각형의 한 꼭짓점은 원점 \\(O \\) (0, 0)이고, 다른 두 꼭짓점은 \\((0, 3) \\)와 두 번째 직선과 x축의 교점입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.5,
+                            287,
+                            69.5,
+                            303
+                        ]
+                    ],
+                    "text_description" : "$9$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            40.5,
+                            205,
+                            295.5,
+                            287
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=\\frac{3}{4} x+3$의 그래프의 $x$ 절편은 -4, 일차함수 $y=-\\frac{3}{2} x+3$의 그래프의 $x$ 절편은 2 이다. 따라서 구하는 도형의 넓이는 $\\frac{1}{2} \\times 6 \\times 3=9$"
+                }
+            ]
+        }
+    ]
+}

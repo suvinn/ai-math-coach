@@ -1,0 +1,149 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8ea50273-bb0d-4f1f-983c-d9b5df37969c",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018930",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.24,
+                            11.9,
+                            1620.74,
+                            66.9
+                        ]
+                    ],
+                    "text_description" : "다음 그림과 같이 $\\overline{\\mathrm{AB}}=6 \\mathrm{~cm}, \\overline{\\mathrm{AD}}=10 \\mathrm{~cm}$ 인 직사각형 ABCD에서 점 P가 $\\overline{\\mathrm{BC}}$를 따라 점 B에서 점 C까지 움직일 때 움직인 거리를 $x \\mathrm{~cm}$, 사다리꼴 ABPD의 넓이를 $y \\mathrm{~mm}$ 라 한다. $y$를 $x$에 관한 식으로 나타내 면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68,
+                            75,
+                            291,
+                            229
+                        ]
+                    ],
+                    "text_description" : "$\\overline{\\mathrm{AB}}=6 \\mathrm{~cm}, \\overline{\\mathrm{AD}}=10 \\mathrm{~cm}$ 인 직사각형 ABCD가 있습니다. 점 P가 $\\overline{\\mathrm{BC}}$를 따라 점 B에서 점 C까지 움직일 때 움직인 거리를 $x \\mathrm{~cm}$, 사다리꼴 ABPD의 넓이를 $y \\mathrm{~mm}$로 표기하고 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69,
+                            268,
+                            184,
+                            293
+                        ]
+                    ],
+                    "text_description" : "② $y=3 x+30$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68,
+                            238,
+                            199,
+                            262
+                        ]
+                    ],
+                    "text_description" : "① $y=-3 x+30$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68,
+                            300,
+                            197,
+                            387
+                        ]
+                    ],
+                    "text_description" : "③ $y=-3 x-30$ ④ $y=3 x-30$ ⑤ $y=x+30$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            451,
+                            470,
+                            595
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { 다음 그림에서 } \\square \\mathrm{ABCD}=\\triangle \\mathrm{ABD}+\\triangle \\mathrm{DBP} \\text { 이므로 } \\\\ \\begin{array}{l} y=\\frac{1}{2} \\times 10 \\times 6+\\frac{1}{2} \\times x \\times 6 \\\\ =30+3 \\\\ =3 x+30\\end{array} \\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69,
+                            604,
+                            292,
+                            757
+                        ]
+                    ],
+                    "text_description" : "이 도형은 직사각형 \\(ABCD\\)와 두 삼각형 \\(ABD\\), \\(DBP\\)로 구성되어 있어. 1. 직사각형 \\(ABCD\\) - \\(AB = 6 \\, \\text{cm}\\) - \\(AD = 10 \\, \\text{cm}\\) 2. 삼각형 \\(ABD\\) - 밑변 \\(AB = 6 \\, \\text{cm}\\) - 높이 \\(AD = 10 \\, \\text{cm}\\) - 면적: \\(\\frac{1}{2} \\times 10 \\times 6\\) 3. 삼각형 \\(DBP\\) - 밑변 \\(BP=x \\, \\text{cm}\\) - 면적: \\(\\frac{1}{2} \\times x \\times 6\\) 4. \\(BP=x \\, \\text{cm}\\) (직사각형의 밑변을 나눔) 두 삼각형의 면적 합이 직사각형의 면적과 일치해."
+                }
+            ]
+        }
+    ]
+}

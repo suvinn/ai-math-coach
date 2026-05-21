@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7564ee7f-bff5-46b6-bd24-d227f9cee740",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018832",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.6,
+                            17.8,
+                            563.2,
+                            57.6
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수 $y=\\frac{3}{2} x-2$의 그래프에 대한 설명으로 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            249.6,
+                            348.8,
+                            270.4
+                        ]
+                    ],
+                    "text_description" : "⑤ 제$2$사분면을 지나지 않는 직선이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.2,
+                            72.2,
+                            447.2,
+                            236
+                        ]
+                    ],
+                    "text_description" : "① $x$가 $3$만큼 증가하면 $y$는 $2$만큼 증가한다. ② $x$절편은 $3$이다. ③ 일차함수 $y=\\frac{3}{2} x$의 그래프와 한 점에서 만난다. ④ $y$절편은 $\\frac{3}{2}$이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.8,
+                            343,
+                            915.8,
+                            615
+                        ]
+                    ],
+                    "text_description" : "① 일차 함수의 기울기는 $\\frac{3}{2}$ 이므로 $x$가 $2$만큼 증가하면 $y$는 $3$만큼 증가한다. ② $x$ 절편은 $y=0$ 일 때의 $x$의 값이므로 $0=\\frac{3}{2} x-2$에서 $x=\\frac{4}{3}$ 이다. ③ $x$0의 그래프와는 기울기는 같고 $y$ 절편이 다르므로 서로 평행하여 만나지 않는다. ④ $y$ 절편은 $x$3 인 경우에 $y$의 값이므로 $x$5에서 $x$6 이다. ⑤ 그래프는 기울기가 $\\frac{3}{2}$ 이고 $y$ 절편은 $x$9 이므로 그림과 같이 제 $2$0 사분면, 제 $3$ 사분면, 제 $2$2 사분면을 지나는 직선이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.8,
+                            628,
+                            271.8,
+                            834
+                        ]
+                    ],
+                    "text_description" : "$xy$좌표평면 위에 일차 함수 \\(y=\\frac{3}{2}x-2\\)의 그래프가 지나가는 이미지이다."
+                }
+            ]
+        }
+    ]
+}

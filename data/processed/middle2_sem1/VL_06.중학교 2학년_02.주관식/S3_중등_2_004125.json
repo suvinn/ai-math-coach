@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ec0c9129-597d-4cec-8b58-f8f17b63a42e",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004125",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.74,
+                            5.64,
+                            565.74,
+                            170.64
+                        ]
+                    ],
+                    "text_description" : "300L의 물이 들어 있는 물통에 물을 넣기 시작한 지 10분 후에 물의 양이 400L가 되었다. 오른쪽 그래프는 물을 일정한 비율로 넣기 시작한 지 $x$ 분 후에 물의 양을 $y \\mathrm{~L}$라고 할 때, $x, y$ 사이의 관계를 그래프로 나타낸 것이다. 다음을 알아보시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.99,
+                            456.37,
+                            738.24,
+                            513.87
+                        ]
+                    ],
+                    "text_description" : "물통의 용량이 1000L 라고 할 때, 물이 가득차는 것은 물을 넣기 시작한 지 몇 분 후인지 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.74,
+                            180.12,
+                            183.24,
+                            455.12
+                        ]
+                    ],
+                    "text_description" : "y축은 $L$, x는 분으로 표시되어 있는 그래프로 300$L$가 20분으로 상승하고 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            29.49,
+                            560.62,
+                            104.49,
+                            586.87
+                        ]
+                    ],
+                    "text_description" : "70분 후"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.99,
+                            522.62,
+                            471.99,
+                            555.12
+                        ]
+                    ],
+                    "text_description" : "$y=1000$을 대입하면 $1000=10 x+300, x=70$ (분)"
+                }
+            ]
+        }
+    ]
+}

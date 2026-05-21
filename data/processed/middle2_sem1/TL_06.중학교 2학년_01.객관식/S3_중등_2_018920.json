@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "08f465fb-0d71-4b47-b6b8-3aa4b1c2d9b1",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018920",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.75,
+                            13.65,
+                            1574.75,
+                            42.4
+                        ]
+                    ],
+                    "text_description" : "두 대의 자동차로 나누어 여행을 하는데, 앞차는 시속 90km로 달리고, 30분 후에 뒷차가 시속 80km로 따라 갔다. 뒷차가 $x$ 시간을 달린 후에 두 차 사이의 거리를 $y \\mathrm{~km}$라고 할 때, $x$와 $y$ 사이의 관계식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.6,
+                            79.4,
+                            195.2,
+                            105
+                        ]
+                    ],
+                    "text_description" : "② $y=10 x+45$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.8,
+                            49.8,
+                            196,
+                            73.8
+                        ]
+                    ],
+                    "text_description" : "① $y=10 x+30$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.8,
+                            114.8,
+                            196.8,
+                            245.4
+                        ]
+                    ],
+                    "text_description" : "③ $y=10 x+\\frac{1}{2}$ ④ $y=45-10 x$ ⑤ $y=10 x-\\frac{1}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.2,
+                            310.6,
+                            826.4,
+                            481.8
+                        ]
+                    ],
+                    "text_description" : "앞차는 1시간 동안 90km를 갈 수 있고, 뒷차는 80km를 갈 수 있다. 즉, 두 차는 1시간 동안에 10km의 거리가 생긴다. 그러므로 $x$ 시간 동안 달리면 $10 x \\mathrm{~km}$의 거리가 생긴다. 그런데 앞차가 30분 전에 출발하였으므로 뒷차가 출발할 때는 이미 $90 \\times \\frac{1}{2}=45(\\mathrm{~km})$를 간 상태이다. 그러므로 $y=10 x+45$"
+                }
+            ]
+        }
+    ]
+}

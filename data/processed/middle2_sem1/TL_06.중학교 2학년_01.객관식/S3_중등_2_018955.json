@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6753eb6a-1db8-4279-bc66-af22e0170d45",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018955",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            13.77,
+                            640,
+                            38.77
+                        ]
+                    ],
+                    "text_description" : "다음은 일차방정식과 일차함수의 관계를 설명한 것이다. $\\square$ 안에 알맞은 식은?"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            76,
+                            51.88,
+                            772,
+                            87.88
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $3 x+y-1=0$의 해를 나타내는 직선은 일차함수 $y=$ $\\square$의 그래프와 같다."
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.16,
+                            45.03,
+                            1644.41,
+                            102.53
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $3 x+y-1=0$ 의 해를 나타내는 직선은 일차함수 $y=$ $\\square$ 의 그래프와 같다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            96,
+                            228.77,
+                            163,
+                            254.77
+                        ]
+                    ],
+                    "text_description" : "$-3x + 1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71,
+                            104.38,
+                            162,
+                            223.38
+                        ]
+                    ],
+                    "text_description" : "① $3x - 1$ ② $3x + 1$ ③ $-x + 1$ ④ $-3x - 1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67,
+                            316.38,
+                            745,
+                            341.38
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $3x + y - 1 = 0$의 해를 나타내는 직선은 일차함수 $y = -3x + 1$의 그래프와 같다."
+                }
+            ]
+        }
+    ]
+}

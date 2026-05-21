@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "91c18bf7-102a-4668-9d72-a40902f050ad",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004109",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.88,
+                            19.63,
+                            344.68,
+                            40.15
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수를 모두 고르면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            293.12,
+                            67.22999999999999,
+                            354.56,
+                            83.03
+                        ]
+                    ],
+                    "text_description" : "$y=-x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48,
+                            105.84,
+                            135.32,
+                            125.44
+                        ]
+                    ],
+                    "text_description" : "$y=4-3 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.58,
+                            158.1,
+                            287.83,
+                            230.72
+                        ]
+                    ],
+                    "text_description" : "$4, x^{2}, \\frac{1}{x}$은 일차식이 아니다. 따라서 일차함수는 ②, ④이다."
+                }
+            ]
+        },
+        {
+            "class_num" : "3",
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.72,
+                            57.96,
+                            93.8,
+                            84.2
+                        ]
+                    ],
+                    "text_description" : "① $y=4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            261.48,
+                            89.96,
+                            349.8,
+                            136.04
+                        ]
+                    ],
+                    "text_description" : "⑤ $y=\\frac{1}{x}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            504.68,
+                            54.76,
+                            591.72,
+                            86.12
+                        ]
+                    ],
+                    "text_description" : "③ $y=x^{2}$"
+                }
+            ]
+        }
+    ]
+}

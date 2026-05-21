@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "167cc0cd-5f69-4f01-84c4-2fecb853591d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015345",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.87,
+                            71.17,
+                            284.67,
+                            99.33
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            423.94,
+                            122.34,
+                            657.38,
+                            195.07
+                        ]
+                    ],
+                    "text_description" : "$\\frac{10 a^{2} b^{3}}{5 a b} \\times\\left(-4 a^{3} b^{2}\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.9,
+                            305.66,
+                            135.17,
+                            339.97
+                        ]
+                    ],
+                    "text_description" : "③ $-8 a^{4} b^{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.9,
+                            224.77,
+                            133.63,
+                            297.47
+                        ]
+                    ],
+                    "text_description" : "① $-8 a^{4} b^{5}$ ② $-8 a^{5} b^{5}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.87,
+                            347.14,
+                            148.48,
+                            421.38
+                        ]
+                    ],
+                    "text_description" : "④ $-10 a^{5} b^{4}$ ⑤ $-8 a^{5} b^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            271,
+                            590.5,
+                            815,
+                            665.5
+                        ]
+                    ],
+                    "text_description" : "$\\frac{10 a^{2} b^{3}}{5 a b}=2 a b^{2}, \\quad 2 a b^{2} \\times\\left(-4 a^{3} b^{2}\\right)=-8 a^{4} b^{4}$"
+                }
+            ]
+        }
+    ]
+}

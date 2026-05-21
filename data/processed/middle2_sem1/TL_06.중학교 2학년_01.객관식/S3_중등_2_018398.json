@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ffeea20f-a2a1-4860-a8ca-e8fe35de33da",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018398",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.8,
+                            7.68,
+                            1045.4,
+                            78.64
+                        ]
+                    ],
+                    "text_description" : "한 개에 500원하는 고구마와 250원하는 감자를 합쳐서 10개를 사고 4000원을 냈다. 감자의 개수는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.08,
+                            147.2,
+                            81.92,
+                            176.64
+                        ]
+                    ],
+                    "text_description" : "② 4개"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.44,
+                            104.24,
+                            82.2,
+                            135.04
+                        ]
+                    ],
+                    "text_description" : "① 3개"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.08,
+                            188.8,
+                            82.2,
+                            302.72
+                        ]
+                    ],
+                    "text_description" : "③ 5개 ④ 6개 ⑤ 7개"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.88,
+                            317.88,
+                            534.04,
+                            350.08
+                        ]
+                    ],
+                    "text_description" : "고구마 개수를 $x$, 감자 개수를 $y$라고 가정합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.12,
+                            374.4,
+                            386.2,
+                            884.48
+                        ]
+                    ],
+                    "text_description" : "1. $x+y=10$ \\[ \\begin{array}{l} \\text { 2. } 500 x+250 y=4000 \\\\ \\qquad \\begin{array}{c} y=10-x \\\\ 500 x+250(10-x)=4000 \\\\ 500 x+2500-250 x=4000 \\\\ 250 x+2500=4000 \\\\ 250 x=1500 \\\\ x=6 \\\\ y=10-6=4 \\end{array} \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1806cd87-8fa1-469a-bea6-4bb93129b456",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018867",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.75,
+                            16.25,
+                            965.25,
+                            60.75
+                        ]
+                    ],
+                    "text_description" : "다음 그림과 같이 일차함수 $y=a x$의 그래프가 일차함수 $y=\\frac{1}{2} x$의 그래프와 $x$ 축 사이에 있을 때, 상수 $a$의 값의 범위는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.75,
+                            76.5,
+                            292.75,
+                            283.25
+                        ]
+                    ],
+                    "text_description" : "$xy$좌표평면 위에 일차함수 $y=a x$의 그래프가 일차함수 $y=\\frac{1}{2} x$의 그래프와 $x$ 축 사이에 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.25,
+                            412.75,
+                            169,
+                            455.75
+                        ]
+                    ],
+                    "text_description" : "③ $0<a<\\frac{1}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.25,
+                            297.25,
+                            184,
+                            399.5
+                        ]
+                    ],
+                    "text_description" : "① $a < -\\frac{1}{2}$ ② $-\\frac{1}{2} < a < 0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.25,
+                            468.25,
+                            169.75,
+                            568.5
+                        ]
+                    ],
+                    "text_description" : "④ $ \\frac{1}{2} < a < 2 $ ⑤ $ a > \\frac{1}{2} $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.25,
+                            631.25,
+                            526.5,
+                            764
+                        ]
+                    ],
+                    "text_description" : "$y=a x$의 그래프는 $a$의 절댓값이 작을수록 $x$ 축에 가까우므로 $a$는 $\\frac{1}{2}$보다 작고 $0$보다 커야 한다. \\[ \\therefore 0<a<\\frac{1}{2} \\]"
+                }
+            ]
+        }
+    ]
+}

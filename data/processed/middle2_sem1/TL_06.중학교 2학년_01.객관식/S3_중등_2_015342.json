@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "88060811-0532-4907-b3ff-2d23016bdd47",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015342",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.3,
+                            60,
+                            271.5,
+                            91.2
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            419.5,
+                            115.2,
+                            596.3,
+                            177.6
+                        ]
+                    ],
+                    "text_description" : "$\\frac{5 a^{4} b^{2}}{a^{2} b} \\times\\left(4 a^{2} b^{3}\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.1,
+                            206.2,
+                            125.9,
+                            236.8
+                        ]
+                    ],
+                    "text_description" : "① $20 a^{4} b^{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.7,
+                            244,
+                            127.30000000000001,
+                            390.4
+                        ]
+                    ],
+                    "text_description" : "② $10 a^{4} b^{4}$ ③ $5 a^{3} b^{3}$ ④ $30 a^{3} b^{4}$ ⑤ $15 a^{2} b^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.5,
+                            470.4,
+                            638.7,
+                            713.6
+                        ]
+                    ],
+                    "text_description" : "1. 첫 번째 항 계산: \\[ \\frac{5 a^{4} b^{2}}{a^{2} b}=5 a^{2} b \\] 2. 두 번째 항 계산: \\[ 5 a^{2} b \\times\\left(4 a^{2} b^{3}\\right)=20 a^{4} b^{4} \\]"
+                }
+            ]
+        }
+    ]
+}

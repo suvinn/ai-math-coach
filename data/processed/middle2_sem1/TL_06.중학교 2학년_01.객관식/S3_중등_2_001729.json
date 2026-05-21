@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9d66cfc1-5e21-4fd4-a4c9-e4983eeddcd9",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001729",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.1,
+                            28.99,
+                            530.7,
+                            87.23
+                        ]
+                    ],
+                    "text_description" : "$x$의 값이 2만큼 증가할 때 $y$의 값이 8만큼 감소하고, $y$ 절편이 3 인 직선을 그래프로 하는 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.38,
+                            116.4,
+                            208.14,
+                            145.84
+                        ]
+                    ],
+                    "text_description" : "① $y=-4 x+3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            288.78,
+                            105.52,
+                            451.34,
+                            154.8
+                        ]
+                    ],
+                    "text_description" : "② $y=-\\frac{1}{4} x+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.1,
+                            158,
+                            416.78,
+                            243.12
+                        ]
+                    ],
+                    "text_description" : "③ $y=\\frac{1}{4} x-3$ ④ $y=3 x-4$ ⑤ $y=4 x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.18,
+                            250.16,
+                            492.3,
+                            289.2
+                        ]
+                    ],
+                    "text_description" : "$($ 기울기 $)=\\frac{-8}{2}=-4$ 이고 $y$ 절편이 3 이므로 구하는 식은 $y=-4 x+3$ 이다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8537c744-06a9-46d6-bea4-0ecd0b6eaeb7",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015310",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.5,
+                            9.940000000000001,
+                            279.5,
+                            36.94
+                        ]
+                    ],
+                    "text_description" : "다음 중 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.5,
+                            163.94,
+                            363.5,
+                            197.94
+                        ]
+                    ],
+                    "text_description" : "③ $(-x y)^{2} \\times 2 x^{3} y=-2 x^{5} y^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.5,
+                            82.5,
+                            297.5,
+                            154.5
+                        ]
+                    ],
+                    "text_description" : "① $4 x \\times 5 y=20 x y$ ② $2 x \\times(-3 x)=-6 x^{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.5,
+                            203.5,
+                            303.5,
+                            287.5
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{4}{5} a^{3} \\div(-2 a)^{3}=-\\frac{1}{10}$ ⑤ $16 x^{5} \\div\\left(8 x^{6}\\right)=\\frac{2}{x}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.5,
+                            403.5,
+                            792.5,
+                            608.5
+                        ]
+                    ],
+                    "text_description" : "① $4 x \\cdot 5 y=20 x y$, 맞음 ② $2 x \\cdot(-3 x)=-6 x^{2}$, 맞음 ③ $(-x y)^{2}=x^{2} y^{2}$, 따라서 $x^{2} y^{2} \\cdot 2 x^{3} y=2 x^{5} y^{3}$, 부호가 잘못되었음. ④ $\\frac{4}{5} a^{3} \\div(-2 a)^{3}=\\frac{4}{5} \\cdot \\frac{1}{-8 a^{3}}=-\\frac{1}{10}$, 맞음 ⑤ $16 x^{5} \\div 8 x^{6}=\\frac{16}{8} x^{5-6}=2 x^{-1}=\\frac{2}{x}$, 맞음"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6e940c1a-7bfb-43a5-a28c-5ebf4c827965",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001670",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            30.5,
+                            0.92,
+                            501.5,
+                            27.92
+                        ]
+                    ],
+                    "text_description" : "$3 a-[2 b-a-\\{4 b-5(a-2 b)\\}-7]$을 간단히 하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.5,
+                            160.5,
+                            243.5,
+                            305.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}3 a-[2 b-a-\\{4 b-5(a-2 b)\\}-7] \\\\ =3 a-\\{2 b-a-(4 b-5 a+10 b)-7\\} \\\\ =3 a-\\{2 b-a-(-5 a+14 b)-7\\} \\\\ =3 a-(2 b-a+5 a-14 b-7) \\\\ =3 a-(4 a-12 b-7) \\\\ =3 a-4 a+12 b+7 \\\\ =-a+12 b+7\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            31.5,
+                            47.5,
+                            412.5,
+                            76.5
+                        ]
+                    ],
+                    "text_description" : "① $a+8 b+9$ ② $-a+8 b+9$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            31.5,
+                            80.5,
+                            180.5,
+                            143.5
+                        ]
+                    ],
+                    "text_description" : "③ $a+12 b+7$ ⑤ $-a+8 b+7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            267.0,
+                            84.0,
+                            431.0,
+                            109.0
+                        ]
+                    ],
+                    "text_description" : "④ $-a+12b+7$"
+                }
+            ]
+        }
+    ]
+}

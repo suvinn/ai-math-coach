@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a9b268c6-d773-4d40-844d-012bf91af6c7",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018934",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.74,
+                            8.530000000000001,
+                            1146.99,
+                            34.53
+                        ]
+                    ],
+                    "text_description" : "가로의 길이가 $x \\mathrm{~cm}$ 인 직사각형의 둘레의 길이가 20cm가 되도록 세로의 길이를 $y \\mathrm{~cm}$로 정한다고 할 때, $x$와 $y$ 사이의 관계식으로 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.6,
+                            106.6,
+                            175.2,
+                            131.4
+                        ]
+                    ],
+                    "text_description" : "③ $y=10-x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.8,
+                            280.2,
+                            600,
+                            391.4
+                        ]
+                    ],
+                    "text_description" : "가로의 길이가 $x \\mathrm{~cm}$, 세로의 길이가 $y \\mathrm{~cm}$ 이므로 $2(x+y)=20$ 이다. \\[ \\begin{array}{l} 2 x+2 y=20 \\\\ 2 y=20-2 x \\\\ \\therefore y=10-x \\end{array} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.2,
+                            137,
+                            196.8,
+                            218.6
+                        ]
+                    ],
+                    "text_description" : "④ $y=10-2 x$ ⑤ $y=10-\\frac{1}{2} x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.8,
+                            44.8,
+                            185.6,
+                            101
+                        ]
+                    ],
+                    "text_description" : "① $y=20-x$ ② $y=20-2 x$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4dbc2a6c-6006-49ce-b85f-3482e29d4ba4",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018777",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.5,
+                            11.42,
+                            833.5,
+                            37.42
+                        ]
+                    ],
+                    "text_description" : "점 $(-1, -3)$을 지나는 일차함수의 그래프가 제 2 사분면을 지나지 않을 때, 이 그래프의 기울기의 최댓값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.5,
+                            110.42,
+                            106.5,
+                            134.42
+                        ]
+                    ],
+                    "text_description" : "③ 3"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.5,
+                            139,
+                            109.5,
+                            195
+                        ]
+                    ],
+                    "text_description" : "④ 4 ⑤ 5"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.5,
+                            46,
+                            107.5,
+                            101
+                        ]
+                    ],
+                    "text_description" : "① 1 ② 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.5,
+                            258,
+                            700.5,
+                            283
+                        ]
+                    ],
+                    "text_description" : "점 $(-1, -3)$을 지나는 일차함수의 그래프가 제2사분면을 지나지 않을 때는 다음과 같다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            476,
+                            457.5,
+                            554
+                        ]
+                    ],
+                    "text_description" : "기울기가 최대인 경우는 $(0, 0)$을 지날 때로 기울기는 \\[ \\frac{-3-0}{-1-0}=3 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.5,
+                            290,
+                            251.5,
+                            473
+                        ]
+                    ],
+                    "text_description" : "직선의 기울기는 각각 1, 2, -1이며, y절편은 -1과 -3이다. 원점 O는 (0, 0)이다."
+                }
+            ]
+        }
+    ]
+}

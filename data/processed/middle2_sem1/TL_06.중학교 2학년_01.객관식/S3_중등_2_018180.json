@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b3f4b53d-96b4-402a-88a0-8d5f9a43c769",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018180",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.3,
+                            10.54,
+                            1063.7,
+                            80.94
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b(a \\neq 0)$의 그래프가 일차함수 $y=2 x+1$의 그래프를 $y$축의 방향으로 $-3$만큼 평행이동한 것일 때, 상수 $a$와 $b$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.7,
+                            108.6,
+                            211.7,
+                            136.6
+                        ]
+                    ],
+                    "text_description" : "① $a=2, b=-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.7,
+                            149.6,
+                            210.9,
+                            306.2
+                        ]
+                    ],
+                    "text_description" : "② $a=2, b=-1$ ③ $a=2, b=-3$ ④ $a=2, b=1$ ⑤ $a=2, b=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.7,
+                            331.2,
+                            474.1,
+                            362.2
+                        ]
+                    ],
+                    "text_description" : "$y=2 x+1$에서 $y$축으로 $-3$만큼 평행이동"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.3,
+                            380.6,
+                            266.7,
+                            453.4
+                        ]
+                    ],
+                    "text_description" : "\\[ y=2 x-2 \\] 따라서, $a=2, b=-2$"
+                }
+            ]
+        }
+    ]
+}

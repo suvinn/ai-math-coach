@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "40ad1655-bcbe-4b58-8b65-ad6159b20dbb",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001583",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            75.54,
+                            21.1,
+                            395.54,
+                            59.5
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.66,
+                            70.09,
+                            307.22,
+                            146.89
+                        ]
+                    ],
+                    "text_description" : "② $\\left\\{\\begin{array}{l}2(x+y)+3 y=32 \\\\ 4 x-3(y-1)=15\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.14,
+                            264.01,
+                            118.42,
+                            283.85
+                        ]
+                    ],
+                    "text_description" : "$x=6, y=4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -0.25,
+                            147.3,
+                            423.55,
+                            258.48
+                        ]
+                    ],
+                    "text_description" : "② $\\left\\{\\begin{array}{l}2(x+y)+3 y=32 \\\\ 4 x-3(y-1)=15\\end{array}\\right. $에서 $\\left\\{\\begin{array}{l}2 x+5 y=32 \\\\ 4 x-3 y=12\\end{array} \\cdots\\right. $ $x$를 없애기 위해 ㉠ $\\times 2-$ ㉡을 하면 $y=4$ $y=4$를 ㉠에 대입하면 $2 x+20=32, 2 x=12, x=6$"
+                }
+            ]
+        }
+    ]
+}

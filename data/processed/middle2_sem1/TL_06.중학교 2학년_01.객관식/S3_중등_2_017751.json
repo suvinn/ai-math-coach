@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ed07694e-3e1a-4010-9bb7-7a5f34e0d762",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017751",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.5,
+                            15.92,
+                            556.5,
+                            43.92
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식을 만족하는 $x$의 범위를 구하세요."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            435.5,
+                            76.92,
+                            653.5,
+                            107.92
+                        ]
+                    ],
+                    "text_description" : "$7 x-5 \\leq 3 x+15$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.5,
+                            144.5,
+                            114.5,
+                            174.5
+                        ]
+                    ],
+                    "text_description" : "① $x \\leq 5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.5,
+                            187.5,
+                            129.5,
+                            340.5
+                        ]
+                    ],
+                    "text_description" : "② $x \\geq 5$ ③ $x \\leq 10$ ④ $x \\geq 10$ ⑤ $x=10$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.5,
+                            370.5,
+                            245.5,
+                            584.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}7 x-5 \\leq 3 x+15 \\\\ 7 x-3 x \\leq 15+5 \\\\ 4 x \\leq 20 \\\\ x \\leq 5\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

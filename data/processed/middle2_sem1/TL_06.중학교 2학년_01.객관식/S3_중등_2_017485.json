@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ab0e27d1-3d61-4f7f-9133-2ccb4dc3c112",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017485",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.43,
+                            7.57,
+                            248.14,
+                            33.32
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.37,
+                            44.88,
+                            229.22,
+                            81.67
+                        ]
+                    ],
+                    "text_description" : "$-6 z(5 z-2 x+3)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.370000000000005,
+                            178,
+                            297.02,
+                            213.06
+                        ]
+                    ],
+                    "text_description" : "$-30 z^{2}-12 z x+18 z$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.48,
+                            308.21,
+                            707.95,
+                            399.46
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}-6 z(5 z-2 x+3) & =-6 z \\times 5 z+-6 z \\times(-2 x)+-6 z \\times 3 \\\\ & =-30 z^{2}+12 z x-18 z\\end{aligned}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.370000000000005,
+                            219.47,
+                            297.02,
+                            291.84
+                        ]
+                    ],
+                    "text_description" : "$-30 z^{2}+12 z x+18 z$ $30 z^{2}-12 z x-18 z$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.480000000000004,
+                            98.84,
+                            293.34,
+                            167.79
+                        ]
+                    ],
+                    "text_description" : "$-30 z^{2}+12 z x-18 z$ $30 z^{2}-12 z x+18 z$"
+                }
+            ]
+        }
+    ]
+}

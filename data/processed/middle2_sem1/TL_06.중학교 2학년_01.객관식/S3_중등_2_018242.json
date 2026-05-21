@@ -1,0 +1,167 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "533dd9dd-ca7c-4f38-898b-c227e856efda",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018242",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.41,
+                            5.83,
+                            1086.16,
+                            88.65
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=6 x-8$의 그래프의 y 절편과 일차함수 $y=-x+e$의 $x$ 절편이 서로 같을 때, $e$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.28,
+                            148.02,
+                            84.59,
+                            179.27
+                        ]
+                    ],
+                    "text_description" : "② -8"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.4,
+                            191.2,
+                            84,
+                            307
+                        ]
+                    ],
+                    "text_description" : "③ 6 ④ -6 ⑤ 0"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.8,
+                            105.6,
+                            73.6,
+                            139.2
+                        ]
+                    ],
+                    "text_description" : "① 8"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.75,
+                            327.13,
+                            695,
+                            402.38
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=6 x-8$의 y 절편은 $x=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.25,
+                            452.88,
+                            701,
+                            580.63
+                        ]
+                    ],
+                    "text_description" : "따라서, y절편은 -8입니다. 일차함수 $y=-x+e$의 x절편은 $y=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14,
+                            671.38,
+                            343.25,
+                            764.38
+                        ]
+                    ],
+                    "text_description" : "따라서, $x$ 절편은 $e$ 입니다. 두 절편이 같으므로, $e=-8$."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.75,
+                            411.13,
+                            259.25,
+                            444.13
+                        ]
+                    ],
+                    "text_description" : "$y=6(0)-8=-8$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            590.88,
+                            171,
+                            663.63
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}0=-x+e, \\\\ x=e\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

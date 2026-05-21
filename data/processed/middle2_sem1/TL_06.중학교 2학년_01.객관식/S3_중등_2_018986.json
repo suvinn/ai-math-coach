@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "991c7f11-dac9-4a8f-8a8b-33d3faaa93dd",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018986",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.83,
+                            15.33,
+                            805.83,
+                            44.33
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $(a+1) x+2 y-b-1=0$의 그래프가 다음과 같을 때, 상수 $a, b$에 대하여 $a b$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.83,
+                            52.33,
+                            253.83,
+                            205.33
+                        ]
+                    ],
+                    "text_description" : "- 좌표평면 - $x$축과 $y$축으로 나누어진 $4$사분면 - $O$($원점$) = $(0, 0)$ - $y$축의 값: $2$ ($수직선$) - $x$축의 값: $O$ ($y$1) - 양의 방향: $x$축 오른쪽, $y$축 위쪽 - 짝수 좌표: $y$4 형태 - $y$5에서의 수평선: 상수 함수"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.83,
+                            244.94,
+                            115.83,
+                            265.94
+                        ]
+                    ],
+                    "text_description" : "② $-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.83,
+                            213.94,
+                            116.83,
+                            233.94
+                        ]
+                    ],
+                    "text_description" : "① $-6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.83,
+                            274.94,
+                            112.83,
+                            363.94
+                        ]
+                    ],
+                    "text_description" : "③ $0$ ④ $3$ ⑤ $6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.83,
+                            423.94,
+                            577.83,
+                            600.94
+                        ]
+                    ],
+                    "text_description" : "$x$ 축에 평행한 그래프는 $y=k$의 꼴이므로 $a+1=0 \\quad \\therefore \\quad a=-1$ \\[ \\begin{array}{l} y=2 \\text { 이므로 } \\\\ y=\\frac{b+1}{2}=2 \\\\ \\therefore \\quad b=3 \\\\ \\therefore \\quadab=(-1) \\times 3=-3 \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

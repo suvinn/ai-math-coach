@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0764a51f-292a-4e23-afb0-a4b41420037d",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001569",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.7,
+                            26.04,
+                            256.1,
+                            133.84
+                        ]
+                    ],
+                    "text_description" : "일차부등식 $a x+3<-5$의 해를 수직선 위에 나타내었더니 오른쪽 그림과 같았다. 이때 $a$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            258.5,
+                            20.7,
+                            442.5,
+                            79.3
+                        ]
+                    ],
+                    "text_description" : "2를 중심으로 한 수직선에 양수 방향으로 분홍색색칠이 되어있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.23,
+                            151.5,
+                            105.03,
+                            173.9
+                        ]
+                    ],
+                    "text_description" : "① -4"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            175.1,
+                            149.5,
+                            362.5,
+                            176.7
+                        ]
+                    ],
+                    "text_description" : "② -2 ③ -1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.7,
+                            177.5,
+                            221.7,
+                            206.3
+                        ]
+                    ],
+                    "text_description" : "④ 2 ⑤ 4"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.7,
+                            207.9,
+                            368.1,
+                            315.9
+                        ]
+                    ],
+                    "text_description" : "수직선 위에 나타난 해는 $x>2$ 이다. $a x+3<-5$를 풀면 $a x<-8$ 이고 수직선에 나타난 해와 일치해야 하므로 $a<0$이 되어 $x>-\\frac{8}{a}$ 이다. 이때 해가 깉아야 하므로 $-\\frac{8}{a}=2$ 이다. 따라서 $a=-4$ 이다."
+                }
+            ]
+        }
+    ]
+}

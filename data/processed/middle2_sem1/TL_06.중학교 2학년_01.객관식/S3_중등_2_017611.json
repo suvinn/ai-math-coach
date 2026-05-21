@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "64a2470a-5c32-46f0-b695-1c3189ea6a07",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017611",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.5,
+                            16,
+                            730.5,
+                            45
+                        ]
+                    ],
+                    "text_description" : "기울기가 $4$이고 점 $(5, -2)$을 지나는 일차함수의 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.5,
+                            134,
+                            184.5,
+                            160
+                        ]
+                    ],
+                    "text_description" : "② $y=4 x-22$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.5,
+                            77,
+                            186.5,
+                            103
+                        ]
+                    ],
+                    "text_description" : "① $y=4 x+10$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.5,
+                            189,
+                            172.5,
+                            332
+                        ]
+                    ],
+                    "text_description" : "③ $y=4 x-5$ ④ $y=4 x-2$ ⑤ $y=4 x+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.5,
+                            366,
+                            1050.5,
+                            434
+                        ]
+                    ],
+                    "text_description" : "기울기가 $4$이므로 일차함수의 식을 $y=4 x+b$로 놓을 수 있습니다. 이 직선이 점 $(5, -2)$을 지 납니다:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.5,
+                            752,
+                            586.5,
+                            781
+                        ]
+                    ],
+                    "text_description" : "따라서 구하는 일차함수의 식은 $y=4 x-22$입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            30.5,
+                            470,
+                            190.5,
+                            726
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}-2=4 \\cdot 5+b \\\\ -2=20+b \\\\ b=-2-20 \\\\ b=-22\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

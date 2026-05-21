@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "18a4005f-389a-4f19-9ec3-dc485fd028ca",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018786",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.91,
+                            13.7,
+                            696.83,
+                            37.66
+                        ]
+                    ],
+                    "text_description" : "다음 그림은 일차함수 $y=a x+b$의 그래프이다. 이때, $a b$의 값은? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.97,
+                            48.72,
+                            330.9,
+                            259.35
+                        ]
+                    ],
+                    "text_description" : "주어진 그래프는 $x$와 $y$ 축이 교차하는 좌표 평면을 나타내며, 직선이 $y$ 절편 $2$에서 시작하여 하향하는 형태로 그려져 있다. $x$ 축은 오른쪽으로 확장되고, $y$ 축은 위쪽으로 확장된다. 직선은 원점을 지나지 않으며, $y$ 좌표가 $1$일 때 $x$ 좌표가 $1$인 점이 표시되어 있다 $y$0"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.71,
+                            270.41,
+                            115.62,
+                            290.23
+                        ]
+                    ],
+                    "text_description" : "① $-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.71,
+                            301.09,
+                            117.04,
+                            417.18
+                        ]
+                    ],
+                    "text_description" : "② $1$ ③ $2$ ④ $-2$ ⑤ $-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.82,
+                            489.84,
+                            1265.59,
+                            588.9
+                        ]
+                    ],
+                    "text_description" : "$x$의 값이 $2$만큼 증가할 때, $y$의 값은 $1$만큼 감소하므로 그래프의 기울기가 $\\frac{-1}{2}=-\\frac{1}{2}$ 이고, $y$ 절편은 $2$ 이므로 일차함수 $y=a x+b$에서 $a=-\\frac{1}{2}, b=2$ 이다. \\[ \\therefore \\quadab=-\\frac{1}{2} \\times 2=-1 \\]"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b10f99d0-7866-42e2-9465-0922eabef91b",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018924",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.59,
+                            14.42,
+                            1411.59,
+                            34.17
+                        ]
+                    ],
+                    "text_description" : "지면에서 $10 \\text{ km}$까지는 높이가 $100 \\text{ m}$씩 증가함에 따라 기온이 $0. 6^{\\circ} \\mathrm{C}$씩 내려간다. 현재 기온이 $20^{\\circ} \\mathrm{C}$일 때, 지면으로부터의 높이에 따른 기온을 표로 나타내면 다음과 같다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            159.24,
+                            490.88,
+                            183.56
+                        ]
+                    ],
+                    "text_description" : "지면으로부터의 높이가 $1. 2 \\, \\text{km}$인 지점의 기온은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            43.52,
+                            551.68,
+                            156.8
+                        ]
+                    ],
+                    "text_description" : "<div class=\"table_tabular \" style=\"text-align: center\"> <div class=\"inline-tabular\"><table id=\"tabular\"> <tbody> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \"><div class=\"inline-tabular sub-table\"><table id=\"tabular\"> <tbody> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left: none !important; border-bottom: none !important; border-top: none !important; width: auto; vertical-align: middle; \">지면으로부터의</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left: none !important; border-bottom: none !important; border-top: none !important; width: auto; vertical-align: middle; \">높이(m)</td> </tr> </tbody> </table> </div></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">0</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">100</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">200</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">300</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top-style: solid !important; border-top-width: 1px !important; width: auto; vertical-align: middle; \">400</td> </tr> <tr style=\"border-top: none !important; border-bottom: none !important;\"> <td style=\"text-align: left; border-left-style: solid !important; border-left-width: 1px !important; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">기온(<span class=\"math-inline \"> $\\left. { }^{\\circ} \\mathrm{C}\\right)$</span></td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">20</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">19. 4</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">18. 8</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">18. 2</td> <td style=\"text-align: left; border-right-style: solid !important; border-right-width: 1px !important; border-bottom-style: solid !important; border-bottom-width: 1px !important; border-top: none !important; width: auto; vertical-align: middle; \">17. 6</td> </tr> </tbody> </table> </div></div>"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.12,
+                            231.85,
+                            148.48,
+                            252.97
+                        ]
+                    ],
+                    "text_description" : "② $12. 88^{\\circ} \\mathrm{C}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.76,
+                            198.29,
+                            146.56,
+                            218.41
+                        ]
+                    ],
+                    "text_description" : "① $12. 2 \\mathrm{C}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.12,
+                            266.13,
+                            148.48,
+                            356.01
+                        ]
+                    ],
+                    "text_description" : "③ $13. 4^{\\circ} \\mathrm{C}$ ④ $14^{\\circ} \\mathrm{C}$ ⑤ $14. 6^{\\circ} \\mathrm{C}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            427.36,
+                            600.96,
+                            611.32
+                        ]
+                    ],
+                    "text_description" : "지면으로부터의 높이가 $x \\mathrm{~m}$ 인 지점의 기온 $y^{\\circ} \\mathrm{C}$의 관계식은 \\[ \\begin{aligned} y & =20-0. 006 x \\\\ x & =1200 \\text { 을 대입하면 } \\\\ y & =20-0. 006 \\times 1200 \\\\ & =20-7. 2 \\\\ & =12. 8\\left({ }^{\\circ} \\mathrm{C}\\right) \\end{aligned} \\]"
+                }
+            ]
+        }
+    ]
+}

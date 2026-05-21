@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "49eca444-ff60-403a-86d1-4c2a6a8ec83f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018212",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            95.48,
+                            3.27,
+                            844.17,
+                            42.33
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=8 x+5$에 대하여 $f(e)=21$ 일 때, $e$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.23,
+                            56.4,
+                            119.17,
+                            98.58
+                        ]
+                    ],
+                    "text_description" : "① $e=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.1,
+                            101.37,
+                            125.42,
+                            266.99
+                        ]
+                    ],
+                    "text_description" : "② $e=3$ ③ $e=4$ ④ $e=5$ ⑤ $e=6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.79,
+                            274.8,
+                            328.54,
+                            534.18
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(e)=21, f(e)=8 e+5 \\\\ 8 e+5=21 \\\\ 8 e=21-5 \\\\ 8 e=16 \\\\ e=\\frac{16}{8}=2\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

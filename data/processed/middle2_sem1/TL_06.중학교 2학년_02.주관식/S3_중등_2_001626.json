@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "845df147-ab02-4973-b528-8496d867f1ae",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001626",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.23,
+                            11.52,
+                            282.11,
+                            175.36
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림은 연립방정식 \\[ \\left\\{\\begin{array}{l} x-2 y=4 \\\\ 3 x+y=5 \\end{array}\\right. \\]를 풀기 위하여 각 방정식을 그래프로 나타낸 것이다. 이 연립방정식의 해를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            302.1,
+                            11.36,
+                            442.27,
+                            164.55
+                        ]
+                    ],
+                    "text_description" : "연립방정식 \\[ \\left\\{\\begin{array}{l} x-2 y=4 \\\\ 3 x+y=5 \\end{array}\\right. \\]를 두 직선그래프로 그렸고 점 $(2, -1)$이 교점으로 나타난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.93,
+                            219.39,
+                            138.34,
+                            233.36
+                        ]
+                    ],
+                    "text_description" : "$x=2, y=-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.59,
+                            181.34,
+                            441.04,
+                            213.98
+                        ]
+                    ],
+                    "text_description" : "연립방정식의 해는 두 그래프의 교점의 좌표와 같고, 두 그래프의 교점이 $(2, -1)$ 이므로이 연립방정식의 해는 $x=2, y=-1$ 이다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6d897311-f3b5-40e0-b61e-62526fc894e0",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017748",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.38,
+                            9.28,
+                            568.63,
+                            50.53
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식을 만족하는 $x$의 범위를 구하세요."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            437.38,
+                            68.03,
+                            654.88,
+                            106.78
+                        ]
+                    ],
+                    "text_description" : "$2 x+4>3 x-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.38,
+                            179,
+                            118.63,
+                            214
+                        ]
+                    ],
+                    "text_description" : "② $x<5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.13,
+                            139,
+                            118.63,
+                            172.75
+                        ]
+                    ],
+                    "text_description" : "① $x>5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.63,
+                            221.5,
+                            122.38,
+                            342.75
+                        ]
+                    ],
+                    "text_description" : "③ $x>3$ ④ $x<3$ ⑤ $x=3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.63,
+                            370.25,
+                            269.88,
+                            589
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} 2 x+4 & >3 x-1 \\\\ 2 x-3 x & >-1-4 \\\\ -x & >-5 \\\\ x & <5\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "dfe37e32-9b11-40dc-801a-33bf6f179a4e",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016141",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10,
+                            70.92,
+                            765,
+                            107.92
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차방정식 $3 x+y-7=0$의 그래프와 같은 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11,
+                            184.92,
+                            183,
+                            214.92
+                        ]
+                    ],
+                    "text_description" : "② $y=-3 x+7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10,
+                            128.5,
+                            157,
+                            162.5
+                        ]
+                    ],
+                    "text_description" : "① $y=3 x+7$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7,
+                            236.5,
+                            183,
+                            388.5
+                        ]
+                    ],
+                    "text_description" : "③ $y=3 x-7$ ④ $y=-3 x-7$ ⑤ $y=\\frac{3}{7} x+7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10,
+                            408.5,
+                            369,
+                            446.5
+                        ]
+                    ],
+                    "text_description" : "일차방정식을 $y$에 대해 정리하면:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            338,
+                            479.5,
+                            678,
+                            508.5
+                        ]
+                    ],
+                    "text_description" : "$3 x+y-7=0 \\rightarrow y=-3 x+7$"
+                }
+            ]
+        }
+    ]
+}

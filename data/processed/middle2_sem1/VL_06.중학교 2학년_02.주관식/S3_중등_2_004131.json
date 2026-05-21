@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "533f240c-046e-4ead-8c77-6540376e7e84",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004131",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            37.5,
+                            5.42,
+                            586.5,
+                            56.42
+                        ]
+                    ],
+                    "text_description" : "그래프를 이용하여 연립방정식 $\\left\\{\\begin{array}{l}x+y=2 \\\\ 2 x+2 y=4\\end{array}\\right. $의 해를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.5,
+                            388,
+                            195.5,
+                            412
+                        ]
+                    ],
+                    "text_description" : "해는 무수히 많다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.5,
+                            75,
+                            488.5,
+                            171
+                        ]
+                    ],
+                    "text_description" : "$ x+y=2$를 정리하면 $y=-x+2$ 이고 $2 x+2 y=4$를 정리하면 $y=-x+2$ 이다. 즉, 두 그래프가 일치하므로 해는 무수히 많다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.5,
+                            176,
+                            206.5,
+                            383
+                        ]
+                    ],
+                    "text_description" : "좌표평면으로 중심인 O를 기준으로 $y$축과 $x$축 4, 2, -2, -4 있으며 $x$축 2, $y$축 2를 지나고 있다."
+                }
+            ]
+        }
+    ]
+}

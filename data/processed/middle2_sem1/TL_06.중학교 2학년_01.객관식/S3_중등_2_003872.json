@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "eaf690f7-495e-47d5-9ab0-e732d6b5ae62",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003872",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.82,
+                            10.22,
+                            534.62,
+                            78.62
+                        ]
+                    ],
+                    "text_description" : "$x=0. 431$을 분수로 나타내는 계산을 간단하게 할 수 있는 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.96,
+                            92.74,
+                            151.84,
+                            114.34
+                        ]
+                    ],
+                    "text_description" : "$1000 x-x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            288.16,
+                            90.12,
+                            449.44,
+                            151.2
+                        ]
+                    ],
+                    "text_description" : "② $1000 x-10 x$ ④ $100 x-x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.32,
+                            126.6,
+                            188.04,
+                            187.68
+                        ]
+                    ],
+                    "text_description" : "③ $1000 x-100 x$ ⑤ $100 x-10 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.16,
+                            236.96,
+                            366.24,
+                            304.8
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} 1000 x & =431. 431431 \\cdots \\text { 이므로 } \\\\ 1000 x-x & =431\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

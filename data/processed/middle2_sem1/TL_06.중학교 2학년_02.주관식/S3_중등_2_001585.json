@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ac3a76b9-03cf-4f9c-a333-faff3a8672fe",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001585",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73.4,
+                            21.9,
+                            395.8,
+                            57.1
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -1,
+                            67.62,
+                            331.75,
+                            331.37
+                        ]
+                    ],
+                    "text_description" : "② $\\left\\{\\begin{array}{l}\\frac{1}{6} x+\\frac{1}{4} y=1 \\\\ \\frac{1}{4} x-\\frac{1}{2} y=5\\end{array}\\right. $ ② $\\left\\{\\begin{array}{l}\\frac{1}{6} x+\\frac{1}{4} y=1 ㉠\\\\ \\frac{1}{4} x-\\frac{1}{2} y=5㉡\\end{array}\\right. $ $\\qquad$ $\\qquad$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.2,
+                            475.5,
+                            151,
+                            498.7
+                        ]
+                    ],
+                    "text_description" : "② $x=12, y=-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.8,
+                            340.3,
+                            368.6,
+                            471.5
+                        ]
+                    ],
+                    "text_description" : "② ㉠의 양변에 12를, ㉡의 양변에 4를 곱하면 \\[ \\left\\{\\begin{array}{l} 2 x+3 y=12 ㉢\\\\ x-2 y=20㉣ \\end{array}\\right. \\] $x$를 없애기 위해 ㉢-㉣ $\\times 2$를 하면 $y=-4$ $y=-4$를 ㉣에 대입하면 $x=12$"
+                }
+            ]
+        }
+    ]
+}

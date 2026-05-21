@@ -1,0 +1,215 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2636f42b-7a11-45f3-8576-b4d1bfdb0a95",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017579",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.64,
+                            10.88,
+                            714.72,
+                            42.04
+                        ]
+                    ],
+                    "text_description" : "두 점 $(-2, 4), (2, 2)$를 지나는 일차함수의 그래프의 기울기를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.64,
+                            96,
+                            76,
+                            130.84
+                        ]
+                    ],
+                    "text_description" : "② $-\\frac{1}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.92,
+                            57.6,
+                            55.52,
+                            94.08
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{1}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.64,
+                            131.84,
+                            76,
+                            238.08
+                        ]
+                    ],
+                    "text_description" : "③ $\\frac{2}{3}$ ④ $-\\frac{2}{3}$ ⑤ 1"
+                }
+            ]
+        },
+        {
+            "class_num" : 5,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.24,
+                            259.12,
+                            705.12,
+                            309.6
+                        ]
+                    ],
+                    "text_description" : "기울기 $m$은 두 점 $\\left(x_{1}, y_{1}\\right)$과 $\\left(x_{2}, y_{2}\\right)$를 지나가는 직선의 기울기로, 아래의 공식을 이용하여 구할 수 있습니다:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.24,
+                            393.44,
+                            711.52,
+                            444.64
+                        ]
+                    ],
+                    "text_description" : "주어진 점들은 $(-2, 4)$과 $(2, 2)$ 입니다. 따라서, $x_{1}=-2, y_{1}=4, x_{2}=2, y_{2}=2$ 입니다. 이를 공식을 대입하면:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.6,
+                            530.04,
+                            704.48,
+                            621.28
+                        ]
+                    ],
+                    "text_description" : "따라서, 기울기는 $-\\frac{1}{2}$ 입니다. 기울기 $m$은 두 점 $\\left(x_{1}, y_{1}\\right)$과 $\\left(x_{2}, y_{2}\\right)$를 지나가는 직선의 기울기로, 아래의 공식을 이용하여 구할 수 있습니다:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.24,
+                            707.04,
+                            711.52,
+                            756.32
+                        ]
+                    ],
+                    "text_description" : "주어진 점들은 $(-2, 4)$과 $(2, 2)$ 입니다. 따라서, $x_{1}=-2, y_{1}=4, x_{2}=2, y_{2}=2$ 입니다. 이를 공식을 대입하면:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.32,
+                            843.64,
+                            221.92,
+                            870.88
+                        ]
+                    ],
+                    "text_description" : "따라서, 기울기는 $-\\frac{1}{2}$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 4,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            304.48,
+                            330,
+                            419.04,
+                            374.88
+                        ]
+                    ],
+                    "text_description" : "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            240.92,
+                            461.2,
+                            484.32,
+                            511.84
+                        ]
+                    ],
+                    "text_description" : "$m=\\frac{2-4}{2-(-2)}=\\frac{-2}{4}=-\\frac{1}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            304.92,
+                            644.04,
+                            419.04,
+                            687.2
+                        ]
+                    ],
+                    "text_description" : "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            240.92,
+                            774.8,
+                            483.68,
+                            824.8
+                        ]
+                    ],
+                    "text_description" : "$m=\\frac{2-4}{2-(-2)}=\\frac{-2}{4}=-\\frac{1}{2}$"
+                }
+            ]
+        }
+    ]
+}

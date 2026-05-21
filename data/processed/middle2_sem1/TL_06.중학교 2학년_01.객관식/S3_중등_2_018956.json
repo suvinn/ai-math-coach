@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "588420ac-50da-429e-95ec-215a55f5501b",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018956",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.12,
+                            10.69,
+                            494.76,
+                            44.61
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $3 x-2 y+4=0$을 $y=a x+b$의 꼴로 고치면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.04,
+                            113.73,
+                            186.92,
+                            158.53
+                        ]
+                    ],
+                    "text_description" : "③ $y=\\frac{3}{2} x+2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.04,
+                            45.62,
+                            187.56,
+                            105.14
+                        ]
+                    ],
+                    "text_description" : "① $y=3 x+4$ ② $y=-3 x-4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.24,
+                            168.5,
+                            199.08,
+                            250.42
+                        ]
+                    ],
+                    "text_description" : "④ $y=-\\frac{3}{2} x-2$ ⑤ $y=3 x+2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.12,
+                            313.14,
+                            196.52,
+                            423.22
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}3 x-2 y+4=0 \\\\ -2 y=-3 x-4 \\\\ \\therefore \\quad y=\\frac{3}{2} x+2\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

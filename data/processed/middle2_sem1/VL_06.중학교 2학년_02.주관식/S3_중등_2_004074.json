@@ -1,0 +1,95 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ea713360-961a-4cea-b4fa-7a3c9366c990",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004074",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            40.46,
+                            13.69,
+                            290.7,
+                            37.37
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            37.9,
+                            50.81,
+                            329.74,
+                            82.17
+                        ]
+                    ],
+                    "text_description" : "$2 a\\left(a^{2}-3 a b\\right)-\\left(5 a^{4} b+2 a^{3} b^{2}\\right) \\div a b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            30.86,
+                            230.38,
+                            133.26,
+                            253.42
+                        ]
+                    ],
+                    "text_description" : "$-3 a^{3}-8 a^{2} b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            32.14,
+                            108.78,
+                            300.94,
+                            213.74
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}2 a\\left(a^{2}-3 a b\\right)-\\left(5 a^{4} b+2 a^{3} b^{2}\\right) \\div a b \\\\ =2 a^{3}-6 a^{2} b-\\left(5 a^{3}+2 a^{2} b\\right) \\\\ =2 a^{3}-6 a^{2} b-5 a^{3}-2 a^{2} b \\\\ =-3 a^{3}-8 a^{2} b\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

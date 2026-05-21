@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "decb9947-7256-4313-a9f2-2781ef623bd2",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017431",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.85,
+                            10.55,
+                            253.56,
+                            38.32
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.88,
+                            46.54,
+                            189.8,
+                            87.68
+                        ]
+                    ],
+                    "text_description" : "$(-a)^{3} \\times(3 a)^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.91,
+                            105.16,
+                            114.72,
+                            137.05
+                        ]
+                    ],
+                    "text_description" : "① $-9 a^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.82,
+                            147.96,
+                            127.06,
+                            307.37
+                        ]
+                    ],
+                    "text_description" : "② $9 a^{5}$ ③ $-3 a^{5}$ ④ $3 a^{5}$ ⑤ $-27 a^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "3",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            178.48,
+                            327.94,
+                            344.06,
+                            365.99
+                        ]
+                    ],
+                    "text_description" : "$(-a)^{3}=-a^{3}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            186.71,
+                            383.47,
+                            334.81,
+                            428.72
+                        ]
+                    ],
+                    "text_description" : "$(3 a)^{2}=9 a^{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.05,
+                            446.21,
+                            507.58,
+                            486.32
+                        ]
+                    ],
+                    "text_description" : "$(-a)^{3} \\times(3 a)^{2}=\\left(-a^{3}\\right) \\times\\left(9 a^{2}\\right)=-9 a^{5}$"
+                }
+            ]
+        }
+    ]
+}

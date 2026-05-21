@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "69493f67-412d-430f-bc46-03f947d3b9c6",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018982",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.89,
+                            19.9,
+                            733.34,
+                            62.84
+                        ]
+                    ],
+                    "text_description" : "네 개의 방정식 $x=2, 3 x+9=0, y=2, \\frac{1}{5} y=1$의 그래프로 둘러싸인 도형의 넓이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.59,
+                            169.88,
+                            113.46,
+                            192.41
+                        ]
+                    ],
+                    "text_description" : "④ $15$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.78,
+                            76.3,
+                            114.72,
+                            161.49
+                        ]
+                    ],
+                    "text_description" : "① $10$ ② $12$ ③ $14$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.59,
+                            202.43,
+                            118.16,
+                            223.15
+                        ]
+                    ],
+                    "text_description" : "⑤ $20$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.34,
+                            289.34,
+                            323.85,
+                            399.12
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}3 x+9=0 \\text { 에서 } x=-3 \\\\ \\frac{1}{5} y=1 \\text { 에서 } y=5\\end{array}$ 네 방정식의 그래프는 다음과 같다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.08,
+                            592.86,
+                            260.56,
+                            716.29
+                        ]
+                    ],
+                    "text_description" : "따라서 직사각형의 넓이는 \\[ \\begin{array}{l} \\{2-[-3]\\} \\times(5-2] \\\\ =5 \\times 3 \\\\ =15 \\end{array} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.27000000000001,
+                            409.96,
+                            247.98,
+                            590.79
+                        ]
+                    ],
+                    "text_description" : "xy좌표평면에 x절편이 2, -3인 직선이 있고 y절편이 5, 2인 직선이 있다. 이 직선들이 만나서 사각형의 모양이 보여진다."
+                }
+            ]
+        }
+    ]
+}

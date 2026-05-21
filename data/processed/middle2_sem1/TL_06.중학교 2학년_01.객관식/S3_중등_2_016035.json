@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9ff82d69-7d65-4e7d-85cf-c72baca908ca",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016035",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.42,
+                            57.05,
+                            451.85,
+                            96.56
+                        ]
+                    ],
+                    "text_description" : "다음 부등식 $4 x+3>7 x-9$의 해는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.41,
+                            101.49,
+                            127.94,
+                            140.02
+                        ]
+                    ],
+                    "text_description" : "$x<4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.329999999999998,
+                            145.93,
+                            149.66,
+                            303.96
+                        ]
+                    ],
+                    "text_description" : "② $x<-4$ ③ $x>4$ ④ $x=4$ ⑤ $x>-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.329999999999998,
+                            322.27,
+                            317.55,
+                            537.64
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} 4 x+3>7 x-9 \\text { 전개: } \\\\ 4 x-7 x>-9-3 \\\\ -3 x>-12 \\end{array} \\] 부등식 양변을 -3으로 나눔 \\[ x<4 \\]"
+                }
+            ]
+        }
+    ]
+}

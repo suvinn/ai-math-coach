@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1233a2e0-b16f-4463-8cd7-6defc3d0443c",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018776",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.75,
+                            15,
+                            705.75,
+                            38.75
+                        ]
+                    ],
+                    "text_description" : "다음 그림은 일차함수 $y=2 x-1$의 그래프이다. $x$ 절편, $y$ 절편을 바르게 짝지은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.5,
+                            47.5,
+                            213.25,
+                            246.25
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 좌표계에서 직선이 그려진 그래프입니다. $y$축과 $x$축이 있으며, 원점과 $y$축 위에 $\\frac{1}{2}$과 $-1$의 값이 표시되어 있습니다. - 기울기: $\\frac{1}{2}$ - $y$-절편: $-1$ - 포함된 점: $(0, -1)$, $(2, 0)$ $x$0"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.75,
+                            291.25,
+                            278,
+                            332.5
+                        ]
+                    ],
+                    "text_description" : "② $x$ 절편 : $\\frac{1}{2}, y$ 절편 : -1"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.75,
+                            256.25,
+                            265.75,
+                            280
+                        ]
+                    ],
+                    "text_description" : "① $x$ 절편 : $2, y$ 절편 : -1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.75,
+                            342.25,
+                            279.5,
+                            457.5
+                        ]
+                    ],
+                    "text_description" : "③ $x$ 절편 : $-1$, $y$ 절편 : $2$ ④ $x$ 절편 : $-1$, $y$ 절편 : $\\frac{1}{2}$ ⑤ $x$ 절편 : $1$, $y$ 절편 : $-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.25,
+                            526.25,
+                            1114.5,
+                            571.25
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=2 x-1$의 그래프가 $x$ 축과 만나는 점의 $x$ 좌표가 $\\frac{1}{2}, y$ 축과 만나는 점의 $y$ 좌표가 -1 이므로 $x$ 절편은 $\\frac{1}{2}, y$ 절편은 -1 이다."
+                }
+            ]
+        }
+    ]
+}

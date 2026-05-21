@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d58d6fdb-8888-49dc-8837-dab7388b7926",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018910",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.09,
+                            19.67,
+                            1308.59,
+                            58.67
+                        ]
+                    ],
+                    "text_description" : "다음 그림은 두 점 $\\mathrm{A}(-3, 0), \\mathrm{B}(0, 2)$를 지나는 일차함수 $y=a x+b$의 그래프이다. 이때, 일차함수 $y=\\frac{a}{b} x-a$의 그래프가 $x$ 축과 만나는 점의 $x$ 좌표는? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.6,
+                            68.8,
+                            227.2,
+                            252
+                        ]
+                    ],
+                    "text_description" : "다음 그림은 두 점 $\\mathrm{A}(-3, 0), \\mathrm{B}(0, 2)$를 지나는 일차함수 $y=a x+b$의 그래프이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.4,
+                            459.93,
+                            106.4,
+                            481.53
+                        ]
+                    ],
+                    "text_description" : "⑤ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67,
+                            259.13,
+                            131.2,
+                            448.73
+                        ]
+                    ],
+                    "text_description" : "① $-\\frac{2}{3}$ ② $\\frac{1}{3}$ ③ 1 ④ $\\frac{2}{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            548.07,
+                            691.2,
+                            854.47
+                        ]
+                    ],
+                    "text_description" : "주어진 그래프가 어떤 일차함수의 그래프인지 구하여 $a, b$의 값을 정한다. 주어진 그래프의 $x$ 절편이 $-3, y$ 절편이 2 이므로 일차함수 $y=\\frac{2}{3} x+2$의 그래프이다. 따라서 $a=\\frac{2}{3}, b=2$ \\[ \\frac{a}{b}=a \\div b=\\frac{2}{3} \\div 2=\\frac{2}{3} \\times \\frac{1}{2}=\\frac{1}{3} \\] 그러므로 $y=\\frac{a}{b} x-a$는 $y=\\frac{1}{3} x-\\frac{2}{3}$이 그래프의 $x$ 절편은 $0=\\frac{1}{3} x-\\frac{2}{3}$ 이므로 $x=2$"
+                }
+            ]
+        }
+    ]
+}

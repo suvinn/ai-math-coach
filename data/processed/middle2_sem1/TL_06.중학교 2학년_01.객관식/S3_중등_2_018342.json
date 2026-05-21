@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7e06fe9a-561c-4345-a9a2-16490b9690fd",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018342",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.8,
+                            13.54,
+                            1086.8,
+                            83.14
+                        ]
+                    ],
+                    "text_description" : "\"책의 무게 $x \\mathrm{~kg}$에 가방의 무게 $6 \\mathrm{~kg}$을 더하면 $15 \\mathrm{~kg}$보다 무겁다. \"를 부등식으로 나타낸 것 중 옳은 것을 고르세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.6,
+                            111.94,
+                            190.8,
+                            138.34
+                        ]
+                    ],
+                    "text_description" : "① $x+6>15$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22,
+                            154.8,
+                            192.4,
+                            306.8
+                        ]
+                    ],
+                    "text_description" : "② $x + 6 > 15$ ③ $x+6=15$ ④ $x+6 \\leq 15$ ⑤ $x+6 \\geq 15$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.8,
+                            336.4,
+                            1070,
+                            406
+                        ]
+                    ],
+                    "text_description" : "책의 무게와 가방의 무게를 합친 값이 $15 \\mathrm{~kg}$보다 무겁다는 조건을 부등식으로 나타내면 다음과 같 습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            483.6,
+                            441.2,
+                            620.4,
+                            466
+                        ]
+                    ],
+                    "text_description" : "$x+6>15$"
+                }
+            ]
+        }
+    ]
+}

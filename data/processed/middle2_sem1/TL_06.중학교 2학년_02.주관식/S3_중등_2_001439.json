@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a5ca2da0-3236-4f4d-8f33-ab0fa944a821",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001439",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.35,
+                            22.42,
+                            314.79,
+                            47.38
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.67,
+                            60.18,
+                            232.23,
+                            122.9
+                        ]
+                    ],
+                    "text_description" : "③ $15 x^{2} y \\div\\left(-\\frac{5}{2} x^{4}\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.73,
+                            228.7,
+                            68.12,
+                            267.03
+                        ]
+                    ],
+                    "text_description" : "③ $-\\frac{6 y}{x^{2}}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.33,
+                            135.06,
+                            477.07,
+                            213.87
+                        ]
+                    ],
+                    "text_description" : "③ $\\begin{aligned} 15 x^{2} y \\div\\left(-\\frac{5}{2} x^{4}\\right) & =15 x^{2} y \\times\\left(-\\frac{2}{5 x^{4}}\\right)=15 \\times\\left(-\\frac{2}{5}\\right) \\times x^{2} \\times \\frac{1}{x^{4}} \\times y \\\\ & =-\\frac{6 y}{x^{2}}\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7363b5b8-4249-417c-8c79-6e47b1bf0e31",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018232",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            96.29,
+                            8.23,
+                            1082.23,
+                            47.29
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=f(x)$에 대하여 $f(6)-f(4)=12$ 일 때, 이 일차함수의 그래프의 기울기를"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.6,
+                            51.98,
+                            125.98,
+                            87.92
+                        ]
+                    ],
+                    "text_description" : "구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.91,
+                            107.89,
+                            74.41,
+                            142.26
+                        ]
+                    ],
+                    "text_description" : "① 6"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13,
+                            151.5,
+                            84,
+                            310.5
+                        ]
+                    ],
+                    "text_description" : "② -6 ③ 3 ④ -3 ⑤ 5"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8,
+                            340.5,
+                            474,
+                            375.5
+                        ]
+                    ],
+                    "text_description" : "일차함수의 일반형은 $y=m x+b$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9,
+                            389.5,
+                            622,
+                            670.5
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} f⑥=6m+b \\\\ f④=4m+b \\end{array} \\] 따라서, $f(6)-f(4)=(6m+b)-(4m+b)=2m$ 주어진 조건에 따라 $f(6)-f(4)=12$ 이므로, \\[ \\begin{array}{l} 2m=12 \\\\ m=\\frac{12}{2}=6 \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

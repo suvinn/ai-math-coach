@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d3c0d58a-030e-4fa8-9820-8e67ab18bd7e",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018973",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.37,
+                            12.71,
+                            546.53,
+                            36.99
+                        ]
+                    ],
+                    "text_description" : "일차함수 $a x+b y+c=0$의 그래프가 다음과 같을 때, 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.41,
+                            47.39,
+                            231.55,
+                            214.42
+                        ]
+                    ],
+                    "text_description" : "1. 직선 2. 기울기: 음수 3. x절편: 양수 4. y절편: 양수 5. 방정식 형태: y=mx+b (m: 기울기, b: y절편)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.41,
+                            256.61,
+                            207.85,
+                            277.42
+                        ]
+                    ],
+                    "text_description" : "② $a b>0, \\quad b c<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.99,
+                            224.82,
+                            206.7,
+                            245.05
+                        ]
+                    ],
+                    "text_description" : "① $a b>0, b c>0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.57,
+                            286.08,
+                            237.91,
+                            372.2
+                        ]
+                    ],
+                    "text_description" : "③ $a b<0, \\quad b c>0$ ④ $a b<0, \\quad b c<0$ ⑤ $a>0, b<0, c<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.37,
+                            440.4,
+                            432.1,
+                            668.69
+                        ]
+                    ],
+                    "text_description" : "$a x+b y+c=0$을 일차함수의 표준형으로 고치면 \\[ b y=-a x-c \\quad \\therefore y=-\\frac{a}{b} x-\\frac{c}{b} \\] 직선의 $($ 기울기 $)<0, \\quad(y$ 절편 $)>0$ 이므로 \\[ \\begin{array}{l} -\\frac{a}{b}<0, \\quad-\\frac{c}{b}>0 \\\\ \\thereforeab>0, \\quadbc<0 \\end{array} \\] 또한 이때 $a>0$ 이면 $b>0, c<0$ 이다."
+                }
+            ]
+        }
+    ]
+}

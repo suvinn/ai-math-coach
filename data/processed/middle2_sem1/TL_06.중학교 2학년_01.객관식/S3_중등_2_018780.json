@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "eb75770e-a780-44c7-b5d0-ae9f4b1d30e3",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018780",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.5,
+                            14,
+                            699.25,
+                            40.25
+                        ]
+                    ],
+                    "text_description" : "다음 그림은 일차함수 $y=a x+b$의 그래프이다. 이때 $a b$의 값은? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            51.25,
+                            249.25,
+                            232.75
+                        ]
+                    ],
+                    "text_description" : "- 좌표평면 - 직선 - 기울기: 양수 - y절편: 1 - x절편: -2 - 1사분면과 2사분면에 위치"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71,
+                            357.25,
+                            120.5,
+                            401.5
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{1}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.5,
+                            235.25,
+                            136.75,
+                            345.25
+                        ]
+                    ],
+                    "text_description" : "① -2 ② $-\\frac{1}{2}$ ③ 1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71.75,
+                            411.5,
+                            110.5,
+                            434
+                        ]
+                    ],
+                    "text_description" : "⑤ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.5,
+                            496.5,
+                            448,
+                            524
+                        ]
+                    ],
+                    "text_description" : "주어진 식의 그래프의 기울기는 $a, y$ 절편은 $b$ 이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.75,
+                            531.5,
+                            515.5,
+                            587.75
+                        ]
+                    ],
+                    "text_description" : "$[$ 기울기 $]=\\frac{[y \\text { 의 } \\text { 값의 증가량 }]}{[x \\text { 의 값의 증가량 }]}=\\frac{1-0}{0-(-2)}=\\frac{1}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.75,
+                            597.75,
+                            415.5,
+                            734
+                        ]
+                    ],
+                    "text_description" : "$y$ 절편은 $y$ 축과의 교점의 $y$ 좌표이므로 1 이다. \\[ \\begin{array}{l} \\therefore \\quad a=\\frac{1}{2}, b=1 \\\\ \\therefore \\quadab=\\frac{1}{2} \\times 1=\\frac{1}{2} \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

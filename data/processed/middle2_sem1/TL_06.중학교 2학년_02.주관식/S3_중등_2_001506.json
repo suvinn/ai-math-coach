@@ -1,0 +1,95 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a0d2fd7b-d375-469d-8617-be23b8c54624",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001506",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            78,
+                            22.42,
+                            345,
+                            60.42
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.44,
+                            85.28,
+                            334.96,
+                            117.36
+                        ]
+                    ],
+                    "text_description" : "④ $(x+2 y-7) \\times(-3 x)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.36,
+                            185.84,
+                            182.36,
+                            208.24
+                        ]
+                    ],
+                    "text_description" : "④ $-3 x^{2}-6 x y+21 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.6,
+                            125.04,
+                            542.04,
+                            173.68
+                        ]
+                    ],
+                    "text_description" : "④ $\\begin{aligned} & x+2 y-7) \\times(-3 x) \\\\ = & x \\times(-3 x)+2 y \\times(-3 x)-7 \\times(-3 x)=-3 x^{2}-6 x y+21 x\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

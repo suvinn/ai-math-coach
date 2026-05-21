@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9eadf9b7-ee04-40d9-abb1-987a1dea295e",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001699",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            81.86,
+                            21.43,
+                            666.18,
+                            59.19
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식 중 해가 나머지 넷과 다른 하나는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            392.26,
+                            131.51,
+                            614.98,
+                            166.71
+                        ]
+                    ],
+                    "text_description" : "④ $4 x+8<x+2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            77.38,
+                            224.68,
+                            479.94,
+                            471.08
+                        ]
+                    ],
+                    "text_description" : "① $3 x+2<8$에서 $3 x<8-2, 3 x<6$ 따라서 $x<2$ 이다. ② $5 x-3 x<4$에서 $2 x<4$, 즉 $x<2$ 이다. ③ $-x>3 x-8$에서 $-x-3 x>-8, -4 x>-8$ 따라서 $x<2$ 이다. ④ $4 x+8<x+2$에서 $3 x<8-2, 3 x<6$0 따라서 $3 x<8-2, 3 x<6$1 이다. ⑤ $3 x<8-2, 3 x<6$2에서 $3 x<8-2, 3 x<6$3 $3 x<8-2, 3 x<6$4, 즉 $x<2$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            80.58,
+                            86.44,
+                            328.26,
+                            210.6
+                        ]
+                    ],
+                    "text_description" : "① $3 x+2<8$ ③ $-x>3 x-8$ ⑤ $-3 x+1>x-7$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            390.34,
+                            87.6,
+                            579.14,
+                            121
+                        ]
+                    ],
+                    "text_description" : "② $5 x-3 x<4$"
+                }
+            ]
+        }
+    ]
+}

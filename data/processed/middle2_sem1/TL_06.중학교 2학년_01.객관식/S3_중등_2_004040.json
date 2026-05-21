@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8f023c56-0ac4-4058-9a25-0cad85831963",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004040",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.71,
+                            13.78,
+                            543.08,
+                            51.17
+                        ]
+                    ],
+                    "text_description" : "$\\left(a^{2}\\right)^{3} \\times\\left(a^{3}\\right)^{5}=a^{\\square}$ 일 때, $\\square$ 안에 알맞은 수는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            394.29,
+                            66.76,
+                            457.15,
+                            93.82
+                        ]
+                    ],
+                    "text_description" : "③ 21"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.53,
+                            66.76,
+                            290.05,
+                            94.61
+                        ]
+                    ],
+                    "text_description" : "① 13 ② 14"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            561.38,
+                            66.76,
+                            796.91,
+                            94.61
+                        ]
+                    ],
+                    "text_description" : "④ 23 ⑤ 25"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            36.23,
+                            124.38,
+                            368.03,
+                            152.23
+                        ]
+                    ],
+                    "text_description" : "$\\left(a^{2}\\right)^{3} \\times\\left(a^{3}\\right)^{5}=a^{2 \\times 3} \\times a^{3 \\times 5}=a^{6+15}=a^{21}$"
+                }
+            ]
+        }
+    ]
+}

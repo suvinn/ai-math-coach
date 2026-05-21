@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "51e312f2-c6a9-4abe-ab8a-85f58fba8843",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017595",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.48,
+                            16.79,
+                            614.4,
+                            43.01
+                        ]
+                    ],
+                    "text_description" : "기울기가 -2이고 점 $(1, 5)$을 지나는 일차함수의 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.25,
+                            167.3,
+                            170.39,
+                            188.42
+                        ]
+                    ],
+                    "text_description" : "③ $y=-2 x+7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.48,
+                            69.63,
+                            169.98,
+                            140.49
+                        ]
+                    ],
+                    "text_description" : "① $y=-2 x+5$ ② $y=-2 x+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.25,
+                            215.04,
+                            169.98,
+                            286.72
+                        ]
+                    ],
+                    "text_description" : "④ $y=-2 x-1$ ⑤ $y=-2 x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.16,
+                            312.7,
+                            880.52,
+                            370.56
+                        ]
+                    ],
+                    "text_description" : "기울기가 -2이므로 일차함수의 식을 $y=-2 x+b$로 놓을 수 있습니다. 이 직선이 점 $(1, 5)$을 지납니다:"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.36,
+                            399.74,
+                            163.72,
+                            618.88
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}5=-2 \\cdot 1+b \\\\ 5=-2+b \\\\ b=5+2 \\\\ b=7\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

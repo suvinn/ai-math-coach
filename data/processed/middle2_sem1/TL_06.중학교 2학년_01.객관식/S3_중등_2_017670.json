@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a5e1b27f-060d-486a-a693-b90e49597750",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017670",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.02,
+                            13.65,
+                            264.08,
+                            44.04
+                        ]
+                    ],
+                    "text_description" : "다음 부등식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.94,
+                            53.89,
+                            198.39,
+                            87.84
+                        ]
+                    ],
+                    "text_description" : "$(6 x+8) \\geq 20$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.3,
+                            109.73,
+                            131.05,
+                            142.58
+                        ]
+                    ],
+                    "text_description" : "① $x \\geq 2$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.48,
+                            336.09,
+                            177.04,
+                            631.71
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l} 6 x+8 \\geq 20 \\\\ 6 x \\geq 12 \\\\ \\\\ x \\geq 2\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.48,
+                            152.43,
+                            129.88,
+                            306.92
+                        ]
+                    ],
+                    "text_description" : "② $x \\geq 3$\n③ $x=3$\n④ $x=2$\n⑤ $x \\leq 3$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a8d21137-1c64-4dae-bcc5-e94d8ddebbd8",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017418",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.46,
+                            15.99,
+                            264.48,
+                            43.84
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.98,
+                            58.61,
+                            299.69,
+                            95.34
+                        ]
+                    ],
+                    "text_description" : "$(4 x-2 y)+(2 x+3 y)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.09,
+                            115.32,
+                            140.87,
+                            145.32
+                        ]
+                    ],
+                    "text_description" : "$6 x+y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.51,
+                            156.83,
+                            160.42,
+                            311.29
+                        ]
+                    ],
+                    "text_description" : "② $6 x-y$ ③ $4 x+y$ ④ $6 x+5 y$ ⑤ $6 x-5 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.1,
+                            349.01,
+                            750.09,
+                            382.65
+                        ]
+                    ],
+                    "text_description" : "$(4 x-2 y)+(2 x+3 y)=(4 x+2 x)+(-2 y+3 y)=6 x+y$"
+                }
+            ]
+        }
+    ]
+}

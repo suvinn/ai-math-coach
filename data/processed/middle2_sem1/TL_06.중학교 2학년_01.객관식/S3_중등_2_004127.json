@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0d48f21b-5c29-4099-a602-8db68077f67b",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004127",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            37.36,
+                            16.05,
+                            541.76,
+                            41.59
+                        ]
+                    ],
+                    "text_description" : "직선의 방정식 $3 x-2 y+4=0$의 그래프 위에 있는 검은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.17,
+                            86.36,
+                            109.98,
+                            110.57
+                        ]
+                    ],
+                    "text_description" : "④ $\\mathrm{D}(2, 5)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.82,
+                            53.58,
+                            596.15,
+                            80.45
+                        ]
+                    ],
+                    "text_description" : "① $\\mathrm{A}(1, 1)$ ② $\\mathrm{B}(2, 4)$ ③ $\\mathrm{C}(1, 3)$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            253.57,
+                            86.09,
+                            353.4,
+                            109.95
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\mathrm{E}(0, 1)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            34.4,
+                            167.62,
+                            238.28,
+                            218.94
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}3 \\times 1-2 \\times 1+4=5 \\neq 0 \\\\ 3 \\times 2-2 \\times 5+4=0\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

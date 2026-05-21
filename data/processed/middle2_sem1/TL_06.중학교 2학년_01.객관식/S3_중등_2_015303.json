@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f0c6d5a3-3772-4ca3-9483-f224e9c8b26f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015303",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10,
+                            49.44,
+                            263,
+                            115.44
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하십시오. $\\left(-6 a b^{2}\\right) \\div\\left(2 a^{2} b\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10,
+                            218.44,
+                            73,
+                            245.44
+                        ]
+                    ],
+                    "text_description" : "③ -3"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10,
+                            148,
+                            91,
+                            210
+                        ]
+                    ],
+                    "text_description" : "① $-3 b$ ② $-3 b^{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10,
+                            255,
+                            97,
+                            316
+                        ]
+                    ],
+                    "text_description" : "④ $-3 a b$ ⑤ $3 b^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            192,
+                            435,
+                            731,
+                            496
+                        ]
+                    ],
+                    "text_description" : "$\\left(-6 a b^{2}\\right) \\div\\left(2 a^{2} b\\right)=\\frac{-6}{2} \\cdot \\frac{a}{a^{2}} \\cdot \\frac{b^{2}}{b}=-3 \\cdot \\frac{1}{a} \\cdot b=-3$"
+                }
+            ]
+        }
+    ]
+}

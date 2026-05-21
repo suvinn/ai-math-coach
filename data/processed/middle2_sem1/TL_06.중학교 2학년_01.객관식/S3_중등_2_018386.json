@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b0d8b438-fce1-44ba-899b-dae39ab61c65",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018386",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.01,
+                            5.87,
+                            550.9,
+                            42.45
+                        ]
+                    ],
+                    "text_description" : "$t \\geq-2$ 일 때, $5 t+3$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.01,
+                            62.88,
+                            202.01,
+                            93.88
+                        ]
+                    ],
+                    "text_description" : "$5 t+3 \\geq-7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.8,
+                            107.56,
+                            205.69,
+                            264.56
+                        ]
+                    ],
+                    "text_description" : "② $5 t+3>-7$ ③ $5 t+3 \\leq-7$ ④ $5 t+3>-4$ ⑤ $5 t+3 \\geq-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : "3",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            89.73,
+                            303.48,
+                            187.85,
+                            336.48
+                        ]
+                    ],
+                    "text_description" : "$t \\geq-2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.26,
+                            363.24,
+                            261.89,
+                            398.03
+                        ]
+                    ],
+                    "text_description" : "$5 t+3 \\geq 5(-2)+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.97,
+                            423.9,
+                            220.86,
+                            462.26
+                        ]
+                    ],
+                    "text_description" : "$5 t+3 \\geq-7$"
+                }
+            ]
+        }
+    ]
+}

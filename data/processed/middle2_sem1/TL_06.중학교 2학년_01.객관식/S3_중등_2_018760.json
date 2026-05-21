@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d232b66f-bfcf-4bbf-8909-c851943b7dbf",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018760",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.37,
+                            12.77,
+                            664.12,
+                            40.27
+                        ]
+                    ],
+                    "text_description" : "$x$ 절편이 -5이고, $y$ 절편이 3 인 직선을 그릴 때, 이 직선이 지나지 않는 사분면은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.37,
+                            141.52,
+                            174.12,
+                            167.77
+                        ]
+                    ],
+                    "text_description" : "④ 제4사분면"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.4,
+                            173.3,
+                            193.92,
+                            194.42
+                        ]
+                    ],
+                    "text_description" : "⑤ 제2, 4사분면"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.84,
+                            46.58,
+                            173.44,
+                            134.9
+                        ]
+                    ],
+                    "text_description" : "① 제 1 사분면 ② 제 2 사분면 ③ 제3사분면"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            260.34,
+                            428.8,
+                            284.66
+                        ]
+                    ],
+                    "text_description" : "$x$ 절편이 $-5, y$ 절편이 3 인 그래프는 다음과 같다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.28,
+                            455.18,
+                            496.64,
+                            477.94
+                        ]
+                    ],
+                    "text_description" : "따라서 위의 직선이 지나지 않는 사분면은 제 4 사분면이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.12,
+                            291.7,
+                            258.56,
+                            454.26
+                        ]
+                    ],
+                    "text_description" : "직선이 점(0, 3)과 점 (-5, 0)을 지난다."
+                }
+            ]
+        }
+    ]
+}

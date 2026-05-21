@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e37c7c5d-8f40-4261-9dc1-fd4c9c6fa81f",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018901",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.24,
+                            8.43,
+                            612.41,
+                            36.32
+                        ]
+                    ],
+                    "text_description" : "$x$ 절편이 $2, y$ 절편이 $-3$인 직선을 그래프로 하는 일차함수의 식을 구하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.05,
+                            167.19,
+                            183.49,
+                            211.35
+                        ]
+                    ],
+                    "text_description" : "④ $y=\\frac{3}{2}x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.09,
+                            44.57,
+                            195.99,
+                            154.2
+                        ]
+                    ],
+                    "text_description" : "① $y=2x-3$ ② $y=-3x+2$ ③ $y=-\\frac{3}{2}x-3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.12,
+                            222.48,
+                            170.03,
+                            247.49
+                        ]
+                    ],
+                    "text_description" : "⑤ $y=3x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.32,
+                            309.04,
+                            378.72,
+                            480.22
+                        ]
+                    ],
+                    "text_description" : "일차함수의 식 $y=ax+b$에서 $y$ 절편이 $-3$ 이므로 구하는 식을 \\[ y=ax-3 \\cdots \\text { ㉮ } \\]으로 놓을 수 있다. $x$ 절편이 $2$ 이므로 점 $(2, 0)$은 ㉮ 위에 있다. $x=2, y=0$을 ㉮에 대입하면 $. $"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.35,
+                            576.39,
+                            257.54,
+                            686.99
+                        ]
+                    ],
+                    "text_description" : "따라서 구하는 일차함수는 $y=\\frac{3}{2} x-3$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.16,
+                            489.84,
+                            158.49,
+                            568.7
+                        ]
+                    ],
+                    "text_description" : "$0=a \\times 2-3 \\\\ \\therefore \\quad a=\\frac{3}{2}$"
+                }
+            ]
+        }
+    ]
+}

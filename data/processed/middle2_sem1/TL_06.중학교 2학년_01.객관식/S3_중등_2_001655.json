@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "abd6fa3b-5a76-4778-9ca0-68a210acfb01",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001655",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48,
+                            19.42,
+                            283,
+                            125.42
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같은 밑면의 반지름의 길이가 $\\frac{3}{4} a b^{2}$ 이고, 높이가 $8 a^{3} b$ 인 원기둥의 부피는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            296,
+                            22,
+                            446,
+                            184
+                        ]
+                    ],
+                    "text_description" : "밑면의 반지름의 길이가 $\\frac{3}{4} a b^{2}$ 이고, 높이가 $8 a^{3} b$ 인 원기둥이 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            178,
+                            179,
+                            267,
+                            228
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{9}{2} \\pi a^{5} b^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46,
+                            137,
+                            136,
+                            249
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{9}{2} \\pi a^{4} b^{3}$ ③ $\\frac{9}{2} \\pi a^{5} b^{4}$ ⑤ $6 \\pi a^{5} b^{5}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            179,
+                            142,
+                            259,
+                            172
+                        ]
+                    ],
+                    "text_description" : "② $6 \\pi a^{4} b^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46,
+                            252,
+                            376,
+                            279
+                        ]
+                    ],
+                    "text_description" : "$($ 원기둥의 부표 $)=($ 밑넓이 $) \\times($ 높이 $\\mid)=\\pi\\left(\\frac{3}{4} a b^{2}\\right)^{2} \\times 8 a^{3} b=\\frac{9}{2} \\pi a^{5} b^{5}$"
+                }
+            ]
+        }
+    ]
+}

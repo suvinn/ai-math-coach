@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "78889188-e7b9-4c0c-a314-5cad80085c8e",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018856",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.16,
+                            16.18,
+                            896.95,
+                            127.61
+                        ]
+                    ],
+                    "text_description" : "일차함수 $\\left\\{\\begin{array}{ll}y=a x+2 b & \\cdots \\cdots \\text { ㉠ } \\\\ y=-\\frac{3}{4} a x+b & \\cdots \\cdots \\text { ㉡ } \\\\ y=-a x-2 b & \\ldots \\ldots \\text { ㉢ }\\end{array}\\right. $의 그래프가 다음 그림과 같을 때, 함수의 그래프가 바르게 짝지어진 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.49000000000001,
+                            139.1,
+                            244.12,
+                            318.98
+                        ]
+                    ],
+                    "text_description" : "$xy$ 좌표 평면 위에 세 개의 직선 $l$, $m$, $n$이 있다. $m$과 $n$의 두 직선에 $l$의 직선이 교차한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.7,
+                            327.01,
+                            248.68,
+                            346.19
+                        ]
+                    ],
+                    "text_description" : "① ㉠ : $l$, ㉡ : $m$, ㉢ : $n$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.05,
+                            358.26,
+                            249.33,
+                            473.83
+                        ]
+                    ],
+                    "text_description" : "② ㉠ $: l$, ㉡ $: n$, ㉢ $: m$ ③ ㉠ $: m$, ㉡ $: l$, ㉢ $: n$ ④ ㉠ : $m$, ㉡ : $n$, ㉢ : $l$ ⑤ ㉠ : $n$, ㉡ : $l$, ㉢ : $m$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.15,
+                            540.44,
+                            687.02,
+                            707.49
+                        ]
+                    ],
+                    "text_description" : "$m, n$의 기울기의 부호가 같고 $l$의 기울기의 부호가 다르므로 ㉠의 그래프는 $l$ 이다. 즉, $a<0, 2 b>0$에서 \\[ a<0, \\quad b>0 \\] $m, n$ 중 $y$절편이 큰 것은 $m$이다. \\[ b>0 \\text { 이므로 } b>-2 b \\] 따라서 ㉡의 그래프는 $m$, ㉢의 그래프는 $n$ 이다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fc3c7ccc-a4f5-44c0-b882-661b8fceae1f",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001375",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50,
+                            11.92,
+                            562,
+                            88.92
+                        ]
+                    ],
+                    "text_description" : "유한소수가 되도록 하는 미지수의 값 구하기 분수 $\\frac{21}{2^{2} \\times x}$을 소수로 나타내면 유한소수가 된다. 다음 중 $x$의 값으로 알맞은 수를 모 두 찾으시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50,
+                            145.5,
+                            401,
+                            189.5
+                        ]
+                    ],
+                    "text_description" : "분모의 소인수가 2 나 5 뿐이면 유한소수가 되므로 $x$는 5가 욀 수 있다. 또 $21=3 \\times 7$ 이므로 익분하여 분모의 소인수가 2 나 5 뿐이게 하는 $x$는 3, 7. 12, 35이다. 따라서 $x$는 3, 5, 7, 12, 35이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.74,
+                            191.57,
+                            125.16,
+                            205.9
+                        ]
+                    ],
+                    "text_description" : "$3, 5, 7, 12, 35$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.0,
+                            99.0,
+                            561.0,
+                            142.0
+                        ]
+                    ],
+                    "text_description" : "초록색 테두리의 네모 상자에 3,5,7,9,12,27,35 숫자가 들어 있다."
+                }
+            ]
+        }
+    ]
+}

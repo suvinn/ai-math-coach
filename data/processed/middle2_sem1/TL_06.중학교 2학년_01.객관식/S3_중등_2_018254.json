@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b152f2cc-6b2b-4423-9510-c71a8f77ebad",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018254",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.1,
+                            10.4,
+                            871.7,
+                            42.4
+                        ]
+                    ],
+                    "text_description" : "함수 $y=5 x(d x+4)+3$가 일차함수가 되기 위한 상수 $d$의 조건을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.5,
+                            65.42,
+                            116.5,
+                            95.42
+                        ]
+                    ],
+                    "text_description" : "① $d=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.5,
+                            106,
+                            140.5,
+                            263
+                        ]
+                    ],
+                    "text_description" : "② $d=1$ ③ $d=-1$ ④ $d=2$ ⑤ $d=-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.54,
+                            457.52,
+                            641.1,
+                            530.56
+                        ]
+                    ],
+                    "text_description" : "일차함수는 $x^{2}$ 항이 없어야 하므로, $5 d=0$ 이어야 합니다. 따라서,"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.5,
+                            288,
+                            311.5,
+                            441
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}y=5 x(d x+4)+3 \\\\ y=5 x \\cdot d x+5 x \\cdot 4+3 \\\\ y=5 d x^{2}+20 x+3\\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            420.02,
+                            563.56,
+                            675.38,
+                            590.08
+                        ]
+                    ],
+                    "text_description" : "$5 d=0 \\quad \\Rightarrow \\quad d=0$"
+                }
+            ]
+        }
+    ]
+}

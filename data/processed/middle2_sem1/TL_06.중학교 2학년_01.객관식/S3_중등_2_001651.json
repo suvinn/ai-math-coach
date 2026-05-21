@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "66aa5686-95cf-4320-8213-eeab6547048a",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001651",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.12,
+                            -0.51,
+                            451.52,
+                            65.69
+                        ]
+                    ],
+                    "text_description" : "다음 중 부등식 $\\frac{1}{6}<x \\leq \\frac{1}{2}$을 만족시키는 것은 모두 몇 개인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            102.52,
+                            83.92,
+                            394.52,
+                            121.52
+                        ]
+                    ],
+                    "text_description" : "$0. \\dot{1}, \\quad 0. 1 \\dot{9}, \\quad 0. \\dot{3}, \\quad 0. \\dot{4}, \\quad 0. 4 \\dot{5}, \\quad 0. \\dot{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            309.72,
+                            136.72,
+                            368.12,
+                            161.52
+                        ]
+                    ],
+                    "text_description" : "③ 4 개"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.72,
+                            133.52,
+                            237.72,
+                            190.32
+                        ]
+                    ],
+                    "text_description" : "① 2 개 ② 3 개 ④ 5 개 ⑤ 6 개"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.72,
+                            195.92,
+                            379.32,
+                            247.12
+                        ]
+                    ],
+                    "text_description" : "$\\frac{1}{6}<x \\leq \\frac{1}{2}$에서 $0. 166 \\cdots<x \\leq 0. 5$ 이므로 부등식을 만족시키는 $x$는 $0. 1\\dot{9}, 0. \\dot{3}, 0. \\dot{4}, 0. 4 \\dot{5}$의 4개이다."
+                }
+            ]
+        }
+    ]
+}

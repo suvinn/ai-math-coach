@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "752bf155-201d-4e8d-9d7c-27e92b0cfb1f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015356",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.63,
+                            67.3,
+                            649.63,
+                            203.05
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오. \\[ \\frac{9 x^{2} y^{3}-12 x y^{4}}{3 x y^{2}} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.88,
+                            228.75,
+                            164.63,
+                            265
+                        ]
+                    ],
+                    "text_description" : "① $3 x-4 y^{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.13,
+                            313.75,
+                            210.88,
+                            433.75
+                        ]
+                    ],
+                    "text_description" : "③ $3 x y^{3}-4 x^{2} y$ ④ $3 x y^{2}-4 y^{3}$ ⑤ $3 x-4 x y^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.63,
+                            599.75,
+                            754.63,
+                            743.75
+                        ]
+                    ],
+                    "text_description" : "\\[ \\frac{9 x^{2} y^{3}}{3 x y^{2}}=3 x, \\quad \\frac{-12 x y^{4}}{3 x y^{2}}=-4 x y^{2} \\] 따라서 $3 x^{2}-4 x y^{2}$."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.13,
+                            271.25,
+                            193.38,
+                            307.5
+                        ]
+                    ],
+                    "text_description" : "② $3 x^{2}-4 x y^{2}$"
+                }
+            ]
+        }
+    ]
+}

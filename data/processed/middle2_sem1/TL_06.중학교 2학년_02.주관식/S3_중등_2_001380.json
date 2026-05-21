@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4a1f9734-e9b3-4263-ba39-b2f7ee98133b",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001380",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49,
+                            46.7,
+                            564,
+                            105.7
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림의 $\\triangle \\mathrm{ABC}$에서이 삼각형의 둘레의 길이는 변 AB의 길이의 몇 배인지 구하시오. (단, 순환소수로 나타낸다.)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            569,
+                            48.7,
+                            750,
+                            187.7
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 삼각형 ABC를 보여주고 있습니다. 점 A에서 B까지의 길이는 9cm, A에서 C까지의 길이는 13cm, B에서 C까지의 길이는 12cm입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67,
+                            162.7,
+                            102,
+                            185.7
+                        ]
+                    ],
+                    "text_description" : "$3. \\dot{7}$ 배"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53,
+                            109.7,
+                            324,
+                            161.7
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\triangle \\mathrm{ABC} \\text { 의 둘레의 길이는 } 9+12+13=34(\\mathrm{~cm}) \\\\ \\overline{\\mathrm{AB}}=9 \\mathrm{~cm} \\text { 이므로 } \\frac{34}{9}=3. 777 \\cdots=3. \\dot{7} \\text { (배) }\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

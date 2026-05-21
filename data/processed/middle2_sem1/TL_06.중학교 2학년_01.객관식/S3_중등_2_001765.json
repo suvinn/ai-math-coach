@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "75a1873e-9b8b-4283-8a2f-7f59961e9a1b",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001765",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.44,
+                            155.6,
+                            310.74,
+                            317.44
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같은 직사각 형 ABCD에서 점 P는 점 C를 출발하여 점 B의 방향으로 매초 1cm 씩 $\\overline{\\mathrm{BC}}$ 위를 움 직인다. 점 P가 점 C를 출발"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.42,
+                            324.07,
+                            536,
+                            389.63
+                        ]
+                    ],
+                    "text_description" : "한 지 $x$ 초 후의 $\\triangle \\mathrm{DBP}$의 넓이를 $y \\mathrm{~cm}^{2}$라고 할 때, 다 음 중 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            325.68,
+                            160.63,
+                            535.12,
+                            297.88
+                        ]
+                    ],
+                    "text_description" : "가로 15cm, , 세로 10cm인 직사각형 ABCD가 있다. 점 P는 점 C를 출발하여 점 B의 방향으로 매초 1cm씩 $\\overline{\\mathrm{BC}}$ 위를 움직이고 있는 상태를 나타낸다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.87,
+                            509.35,
+                            458.3,
+                            536.6
+                        ]
+                    ],
+                    "text_description" : "③ 8초 후의 $\\triangle \\mathrm{DBP}$의 넓이는 $40 \\mathrm{~cm}^{2}$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.74,
+                            408.1,
+                            442.24,
+                            502.79
+                        ]
+                    ],
+                    "text_description" : "① $x$와 $y$ 사이의 관계를 식으로 나타내면 $y=75-5 x$ 이다. ② $x$의 값이 증가하면 $y$의 값은 감소한다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.18,
+                            545.85,
+                            535.87,
+                            659.72
+                        ]
+                    ],
+                    "text_description" : "④ $\\triangle \\mathrm{DBP}$의 넓이가 $\\triangle \\mathrm{DBC}$의 넓이의 $\\frac{1}{2}$ 배가 되는 것은 7. 5초 후이다. ⑤ $\\overline{\\mathrm{BP}}$의 길이는 $(15-x) \\mathrm{cm}$로 표현할 수 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.37,
+                            8.54,
+                            384.43,
+                            124.1
+                        ]
+                    ],
+                    "text_description" : "$\\overline{\\mathrm{CP}}=x(\\mathrm{~cm})$ 이므로 $\\overline{\\mathrm{BP}}=15-x(\\mathrm{~cm})$ 이다. $\\triangle \\mathrm{DBP}=\\frac{1}{2} \\times \\overline{\\mathrm{BP}} \\times \\overline{\\mathrm{DC}}=\\frac{1}{2} \\times(15-x) \\times 10$ 즉, $y=75-5 x$ 이다. ③ $x=8$을 $y=75-5 x$에 대입하면 $y=75-5 \\times 8=35$ 따라서 8초 후의 $\\triangle \\mathrm{DBP}$의 넓이는 $35 \\mathrm{~cm}^{2}$이다."
+                }
+            ]
+        }
+    ]
+}

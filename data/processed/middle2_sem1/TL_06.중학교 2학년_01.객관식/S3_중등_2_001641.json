@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "34bda266-9bd2-409b-b46d-40504df631d6",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001641",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.6,
+                            16.34,
+                            525,
+                            53.94
+                        ]
+                    ],
+                    "text_description" : "다음 분수를 소수로 나타낼 때, 유한소수가 아닌 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.2,
+                            193.6,
+                            497.8,
+                            328.8
+                        ]
+                    ],
+                    "text_description" : "기약분수의 분모의 소인수가 2 나 5 뿐이면 유한소수이다. ① $\\frac{12}{2^{3} \\times 3}=\\frac{1}{2}$, 유한소수 ② $\\frac{51}{5^{2} \\times 17}=\\frac{3}{5^{2}}$, 유한소수 ③ $\\frac{18}{3^{3} \\times 5}=\\frac{2}{3 \\times 5}$, 무한소수 ④ $\\frac{39}{2^{2} \\times 5 \\times 13}=\\frac{2}{2^{2} \\times 5}$, 유한소수 ⑤ $\\frac{28}{2 \\times 5^{2} \\times 7}=\\frac{2}{5^{2}}$ 유한소수"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.32,
+                            68.39,
+                            347.06,
+                            184.03
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{12}{2^{3} \\times 3}$\n② $\\frac{51}{5^{2} \\times 17}$\n \n④ $\\frac{39}{2^{2} \\times 5 \\times 13}$\n⑤ $\\frac{28}{2 \\times 5^{2} \\times 7}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            416.0,
+                            68.0,
+                            484.0,
+                            120.0
+                        ]
+                    ],
+                    "text_description" : "$\\frac{18}{3^{3} \\times 5}$"
+                }
+            ]
+        }
+    ]
+}

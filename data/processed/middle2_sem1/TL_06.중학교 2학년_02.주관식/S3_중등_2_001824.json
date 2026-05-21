@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "99d3ca98-c7ad-45b1-84da-1f7da1e44a91",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001824",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.28,
+                            22.68,
+                            536.28,
+                            158.68
+                        ]
+                    ],
+                    "text_description" : "다음 표와 같이 지면에서 10km까지는 높이가 100m 씩 높아질 때마다 기온이 $0. 6^{\\circ} \\mathrm{C}$ 씩 내려간다고 한다. 지 면으로부터의 높이가 $x \\mathrm{~m}$ 인 지점의 기온을 $y{ }^{\\circ} \\mathrm{C}$라고 할 때, $x$와 $y$ 사이의 관계를 식으로 나타내시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.4,
+                            172.1,
+                            538,
+                            248.9
+                        ]
+                    ],
+                    "text_description" : "\\begin{tabular}{|c|c|c|c|c|c|c|c} \\hline 높이 $(\\mathrm{m})$ & 0 & 100 & 200 & 300 & 400 & 500 & 600 \\\\ \\hline 기온 $\\left({ }^{\\circ} \\mathrm{C}\\right)$ & 24 & 23. 4 & 22. 8 & 22. 2 & 21. 6 & 21 & 20. 4 \\\\ \\hline \\end{tabular}"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            32.28,
+                            477.22,
+                            177.28,
+                            506.22
+                        ]
+                    ],
+                    "text_description" : "$y=24-0. 006 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.28,
+                            285.22,
+                            534.28,
+                            453.22
+                        ]
+                    ],
+                    "text_description" : "높이가 100m 씩 높아질 때마다 기온이 $0. 6^{\\circ} \\mathrm{C}$ 씩 내려가므로 높이가 1m 씩 증가함에 따라 기온은 $0. 006{ }^{\\circ} \\mathrm{C}$ 씩 내려간다. 지상의 기온이 $24^{\\circ} \\mathrm{C}$ 이므로 $y$를 $x$에 대한 식으로 나타내면 \\[ y=24-0. 006 x \\text { 이다. } \\]"
+                }
+            ]
+        }
+    ]
+}

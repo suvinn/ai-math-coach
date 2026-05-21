@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "488563b3-fef1-4788-b7b2-1121e41c127a",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001607",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44,
+                            8.92,
+                            655,
+                            65.92
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=2 x-3$의 그래프와 평행하고, $y$ 절편이 6 인 일차함수의 그래프가 있다. 이 그래프와 $x$ 축, $y$ 축으로 둘러싸인 도형의 넓이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42,
+                            109.5,
+                            82,
+                            130.5
+                        ]
+                    ],
+                    "text_description" : "④ 9"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            243,
+                            109.5,
+                            293,
+                            131.5
+                        ]
+                    ],
+                    "text_description" : "⑤ 10"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42,
+                            82.5,
+                            486,
+                            102.5
+                        ]
+                    ],
+                    "text_description" : "① 6 ② 7 ③ 8"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            40,
+                            138.5,
+                            472,
+                            216.5
+                        ]
+                    ],
+                    "text_description" : "평행한 두 직선의 기울기는 서로 같으므로 기울기가 2 이다. $y$ 절편이 6 이므로 구하는 일차함수의 식은 $y=2 x+6$ 이다. $x$ 절편은 $y=0$ 일 때 $x$의 값이므로 $x=-3$ 이고, $y$ 절편은 6 이다. 따라서 그래프를 그리면 오른쪽 그림과 같으므로 구하는 도형의 넓이는 $\\frac{1}{2} \\times 3 \\times 6=9$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            562,
+                            138.5,
+                            654,
+                            221.5
+                        ]
+                    ],
+                    "text_description" : "좌표평면이 있고, x축과 y축이 표시되어 있으며, y = 2x + 3의 직선이 그려져 있다. x축의 범위는 -3에서 6까지이고, y축의 범위는 0에서 6까지이다."
+                }
+            ]
+        }
+    ]
+}

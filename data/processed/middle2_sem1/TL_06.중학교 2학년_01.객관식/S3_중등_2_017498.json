@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f52fdf86-4a99-4508-b1a1-d54fda0b17ce",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017498",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.72,
+                            12.18,
+                            267.08,
+                            87.06
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오. \\[ 5m(3 n-4m+2) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.72,
+                            108.18,
+                            325.68,
+                            138.26
+                        ]
+                    ],
+                    "text_description" : "① $15m n-20m^{2}+10m$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.72,
+                            149.78,
+                            347.72,
+                            307.86
+                        ]
+                    ],
+                    "text_description" : "② $-15m n+20m^{2}-10m$ ③ $15m n+20m^{2}-10m$ ④ $15m n-20m^{2}-10m$ ⑤ $-15m n-20m^{2}+10m$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.48,
+                            340.92,
+                            709.32,
+                            429.24
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}5m(3 n-4m+2)=5m \\times 3 n+5m \\times(-4m)+5m \\times 2 \\\\ =15m n-20m^{2}+10m\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "752dbfd8-7ae6-4892-9528-be1b2c7a7e89",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018338",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.84,
+                            2.97,
+                            1072.34,
+                            75.47
+                        ]
+                    ],
+                    "text_description" : "\"컵의 무게 $x \\mathrm{~kg}$에 액체의 무게 4kg을 더하면 9kg보다 가볍다. \"를 부등식으로 나타낸 것 중 옳은 것을 고르세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            98.33,
+                            174,
+                            136.33
+                        ]
+                    ],
+                    "text_description" : "① $x+4<9$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16,
+                            141.33,
+                            174,
+                            305.33
+                        ]
+                    ],
+                    "text_description" : "② $x+4>9$ ③ $x+4=9$ ④ $x+4 \\leq 9$ ⑤ $x+4 \\geq 9$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.34,
+                            313.76,
+                            1079.34,
+                            388.76
+                        ]
+                    ],
+                    "text_description" : "컵의 무게와 액체의 무게를 합친 값이 9kg보다 가볍다는 조건을 부등식으로 나타내면 다음과 같습 니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            478.09,
+                            413.76,
+                            615.59,
+                            457.51
+                        ]
+                    ],
+                    "text_description" : "$x+4<9$"
+                }
+            ]
+        }
+    ]
+}

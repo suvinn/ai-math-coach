@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9f23c4d2-c3ef-44d4-a6bc-8da9b155d860",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001688",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.5,
+                            21.74,
+                            349.1,
+                            183.34
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림은 밑면이 직각삼각형이고, 부피가 $15 a^{2} b^{3}-3 a^{4} b$ 인 삼각 기둥이다. 밑면에서 직각을 낀 두 변의 길이가 각각 $a, 6 b$ 일 때, 이 삼각기둥의 높이를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            363.9,
+                            19.2,
+                            529.5,
+                            203.2
+                        ]
+                    ],
+                    "text_description" : "밑면이 직각삼각형인 삼각 기둥이다. 밑면에서 직각을 낀 두 변의 길이가 각각 $a, 6 b$이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.94,
+                            261.78,
+                            128.62,
+                            279.06
+                        ]
+                    ],
+                    "text_description" : "$5 a b^{2}-a^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.9,
+                            189.6,
+                            331.1,
+                            260
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { (삼각기둥의 밑넓이) }=\\frac{1}{2} \\times a \\times 6 b=3 a b \\text { 이므로 } \\\\ 15 a^{2} b^{3}-3 a^{4} b=3 a b \\times \\text { (높이) } \\\\ (\\text { 높이 })=\\left(15 a^{2} b^{3}-3 a^{4} b\\right) \\div 3 a b=5 a b^{2}-a^{3}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

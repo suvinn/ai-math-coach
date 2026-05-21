@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "df10e021-28be-48a6-b28c-fac62fd2af38",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017378",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.37,
+                            13.28,
+                            299.12,
+                            49.53
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.37,
+                            50.78,
+                            177.87,
+                            93.28
+                        ]
+                    ],
+                    "text_description" : "$a^{7} \\times a^{5} \\div a^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.87,
+                            106.5,
+                            84.12,
+                            145.25
+                        ]
+                    ],
+                    "text_description" : "① $a^{9}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.87,
+                            147.75,
+                            91.62,
+                            315.25
+                        ]
+                    ],
+                    "text_description" : "② $a^{10}$ ③ $a^{8}$ ④ $a^{11}$ ⑤ $a^{7}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.37,
+                            325.25,
+                            282.87,
+                            415.25
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}a^{7} \\times a^{5}=a^{7+5}=a^{12} \\\\ a^{12} \\div a^{3}=a^{12-3}=a^{9}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

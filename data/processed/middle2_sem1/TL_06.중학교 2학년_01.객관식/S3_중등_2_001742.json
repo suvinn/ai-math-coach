@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d3820370-6481-4203-a955-336ade9ea16b",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001742",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71.1,
+                            15.16,
+                            685.5,
+                            118.78
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-\\frac{2}{5} x+2$의 그래프와 평행하고 $y$ 절편이 -3 인 직선을 그래프로 하는 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.33,
+                            221.08,
+                            279.18,
+                            278.02
+                        ]
+                    ],
+                    "text_description" : "③ $y=-\\frac{2}{5} x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.69,
+                            332.49,
+                            509.78,
+                            416.05
+                        ]
+                    ],
+                    "text_description" : "$y=-\\frac{2}{5} x+2$의 그래프와 평행하므로 기울기는 $-\\frac{2}{5}$ 이고 $y$ 절편이 -3 이므로 구하는 식은 $y=-\\frac{2}{5} x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.02,
+                            147.74,
+                            592.39,
+                            210.13
+                        ]
+                    ],
+                    "text_description" : "① $y=-\\frac{5}{2} x-3$ ② $y=-\\frac{5}{2} x-1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            382.25,
+                            218.89,
+                            588.02,
+                            284.56
+                        ]
+                    ],
+                    "text_description" : "④ $y=-\\frac{2}{5} x-1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.12,
+                            288.94,
+                            270.6,
+                            327.25
+                        ]
+                    ],
+                    "text_description" : "⑤ $y=-3 x+2$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b4ba59eb-1717-499d-a66e-d9ccb118fefc",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018866",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.5,
+                            12,
+                            579.5,
+                            39
+                        ]
+                    ],
+                    "text_description" : "$a<0, b>0$ 일 때, 일차함수 $y=a x+b$의 그래프가 될 수 있는 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.5,
+                            472,
+                            304.5,
+                            671
+                        ]
+                    ],
+                    "text_description" : "③ 제 $1, 2, 4$분면을 지나간다 $. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.5,
+                            1135,
+                            453.5,
+                            1221
+                        ]
+                    ],
+                    "text_description" : "$a<0$ 이면 오른쪽 아래로 향하는 직선이다. 또, $b>0$ 이면 $y$ 축과 만나는 점이 $x$ 축의 위쪽에 있다. 따라서 정답은 $③$이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.5,
+                            48,
+                            306.5,
+                            465
+                        ]
+                    ],
+                    "text_description" : "① 제 $1, 3$분면을 지나간다. ② 제 $2, 3, 4$분면을 지나간다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.5,
+                            683,
+                            260.5,
+                            1090
+                        ]
+                    ],
+                    "text_description" : "④제 $1, 3, 4$분면을 지나간다. ⑤제 $1, 2, 3$분면을 지나간다."
+                }
+            ]
+        }
+    ]
+}

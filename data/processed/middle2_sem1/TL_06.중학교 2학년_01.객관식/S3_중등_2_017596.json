@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2213e7ca-ca10-449a-93b4-dcd69ca2618d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017596",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.08,
+                            11.56,
+                            718.71,
+                            47.77
+                        ]
+                    ],
+                    "text_description" : "기울기가 $2$이고 점 $(0, -3)$을 지나는 일차함수의 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.96,
+                            245.23,
+                            163.35,
+                            275.67
+                        ]
+                    ],
+                    "text_description" : "$y=2 x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : "2",
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.61,
+                            74.92,
+                            161.7,
+                            213.96
+                        ]
+                    ],
+                    "text_description" : "① $y=2 x+3$\n② $y=2 x+1$\n③ $y=2 x-1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.61,
+                            303.32,
+                            162.53,
+                            332.94
+                        ]
+                    ],
+                    "text_description" : "⑤ $y=2 x-5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.56,
+                            372.43,
+                            1033,
+                            439.9
+                        ]
+                    ],
+                    "text_description" : "기울기가 $2$이므로 일차함수의 식을 $y=2 x+b$로 놓을 수 있습니다. 이 직선이 점 $(0, -3)$을 지납니다:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.91,
+                            603.62,
+                            564.03,
+                            634.89
+                        ]
+                    ],
+                    "text_description" : "따라서 구하는 일차함수의 식은 $y=2 x-3$ 입니다."
+                }
+            ]
+        }
+    ]
+}

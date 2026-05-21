@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "cb7a2cff-810f-4f8e-95f4-26081344b9d9",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001735",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56,
+                            16.42,
+                            392,
+                            47.42
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수인 것을 모두 고르면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            210,
+                            358,
+                            230
+                        ]
+                    ],
+                    "text_description" : "일차함수는 $y=a x+b(a \\neq 0)$ 꼴이므로 ②, ④이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            322.0,
+                            68.0,
+                            463.0,
+                            154.0
+                        ]
+                    ],
+                    "text_description" : "$y=\\frac{x}{3}-4$ $y=-3(x-1)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.0,
+                            76.0,
+                            180.0,
+                            200.0
+                        ]
+                    ],
+                    "text_description" : "① $y=x^{2}-5$ ③ $y=2$ ⑤ $y=\\frac{5}{x}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "bf9e21dc-2999-484e-bab4-d4fcd293ccd0",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017386",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.75,
+                            6.78,
+                            276,
+                            80.53
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오. \\[ x^{6} \\times x^{2} \\div x^{4} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.5,
+                            136.25,
+                            76,
+                            173.75
+                        ]
+                    ],
+                    "text_description" : "② $x^{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11,
+                            93.75,
+                            76,
+                            132.5
+                        ]
+                    ],
+                    "text_description" : "① $x^{3}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11,
+                            176.25,
+                            77.75,
+                            295
+                        ]
+                    ],
+                    "text_description" : "③ $x^{5}$ ④ $x^{6}$ ⑤ $x^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.25,
+                            308,
+                            258.5,
+                            387.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}x^{6} \\times x^{2}=x^{6+2}=x^{8} \\\\ x^{8} \\div x^{4}=x^{8-4}=x^{4}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

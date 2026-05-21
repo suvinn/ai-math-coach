@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "22e4dc3d-c3d4-4983-bc08-39a0c46e5209",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018736",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.27,
+                            11.74,
+                            540.27,
+                            33.74
+                        ]
+                    ],
+                    "text_description" : "다음 중 $y$를 $x$에 관한 식으로 나타낼 때, 일차함수가 아닌 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.27,
+                            139.28,
+                            640.27,
+                            168.28
+                        ]
+                    ],
+                    "text_description" : "④ 밑변의 길이가 $x \\mathrm{~cm}$ 이고, 넓이가 $10 \\mathrm{~cm}^{2}$ 인 삼각형의 높이가 $y \\mathrm{~cm}$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.27,
+                            45.28,
+                            805.27,
+                            134.28
+                        ]
+                    ],
+                    "text_description" : "① 길이가 20cm이고 1g에 2cm 씩늘어나는 용수철에 $x \\mathrm{~g}$의 추를 달 때, 용수철의 길이가 $y \\mathrm{~cm}$ 이다. ② 가로의 길이가 5cm이고, 세로의 길이가 $x \\mathrm{~cm}$ 인 사각형의 넓이가 $y \\mathrm{~cm}^{2}$ 이다. ③ 500 원짜리 아이스크림 $x$ 개를 살 때, 물건값이 $y$ 원이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.27,
+                            175.28,
+                            449.27,
+                            199.28
+                        ]
+                    ],
+                    "text_description" : "⑤ 시속 3km로 $x$ 시간 동안 걸은 거리가 $y \\mathrm{~km}$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.27,
+                            438.28,
+                            342.27,
+                            462.28
+                        ]
+                    ],
+                    "text_description" : "따라서 일차함수가 아닌 것은 ④이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.27,
+                            263.28,
+                            379.27,
+                            436.28
+                        ]
+                    ],
+                    "text_description" : "① $y=2 x+20$ ② $y=5 x$ ③ $y=500 x$ ④ $\\frac{1}{2} \\times x \\times y=10$ $\\therefore \\quad y=\\frac{20}{x}$ ⑤ $y=3 x$"
+                }
+            ]
+        }
+    ]
+}

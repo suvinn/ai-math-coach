@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e0f98e8d-ef99-4a8a-a6e2-660edde730b4",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018969",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.5,
+                            14.4,
+                            833.5,
+                            41.4
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $a x+b y+1=0[a \\neq 0, b \\neq 0]$의 그래프가 제 2사분면을 지나지 않을 때, $a, b$의 부호는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.5,
+                            111.4,
+                            193.5,
+                            134.4
+                        ]
+                    ],
+                    "text_description" : "③ $a<0, \\quad b>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.5,
+                            47.4,
+                            193.5,
+                            103.4
+                        ]
+                    ],
+                    "text_description" : "① $a>0, \\quad b>0$ ② $a>0, \\quad b<0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.5,
+                            144.4,
+                            193.5,
+                            199.4
+                        ]
+                    ],
+                    "text_description" : "④ $a<0, \\quad b<0$ ⑤ 알 수 없다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.5,
+                            268.4,
+                            971.5,
+                            400.4
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}a x+b y+1=0, \\quad b y=-a x-1, \\text { 즉 } y=-\\frac{a}{b} x-\\frac{1}{b} \\text { 의 그래프가 제 } 2 \\text { 사분면을 지나지 않으려면 다음 그림과 같아야 하므로 } \\\\ \\text { (기 울 기 })=-\\frac{a}{b}>0, \\quad\\left(y \\text { 절 편) }=-\\frac{1}{b}<0\\right. \\\\ \\therefore \\quad a<0, \\quad b>0\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.5,
+                            410.4,
+                            192.5,
+                            522.4
+                        ]
+                    ],
+                    "text_description" : "이미지는 직교 좌표계를 나타내고 있다. x축과 y축이 있으며, 두 축은 원점 O에서 교차한다. y축은 수직 방향으로 위쪽을 향하고, x축은 수평 방향으로 오른쪽을 향한다. 선이 x축을 대각선으로 가르키며 상승하는 형태이다."
+                }
+            ]
+        }
+    ]
+}

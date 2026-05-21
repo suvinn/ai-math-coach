@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2d8c47af-901d-4231-a338-5bbdcb623511",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018289",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.38,
+                            24.46,
+                            326.4,
+                            112.64
+                        ]
+                    ],
+                    "text_description" : "다음 부등식의 해를 구하시오. \\[ 3 x+5>11 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.69,
+                            200.96,
+                            110.85,
+                            224.51
+                        ]
+                    ],
+                    "text_description" : "① $x>2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.72,
+                            235.78,
+                            110.85,
+                            373.5
+                        ]
+                    ],
+                    "text_description" : "② $x \\geq 2$ ③ $x<2$ ④ $x \\leq 2$ ⑤ $x>3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            34.05,
+                            426.75,
+                            167.17,
+                            557.31
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}3 x+5>11 \\\\ 3 x>6 \\\\ x>2\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

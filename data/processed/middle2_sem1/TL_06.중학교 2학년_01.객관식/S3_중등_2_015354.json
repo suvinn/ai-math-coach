@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9736a176-800f-456d-bf51-60b9c98c778f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015354",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.02,
+                            66.65,
+                            290.47,
+                            97.03
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            439.8,
+                            113.06,
+                            637.23,
+                            202.49
+                        ]
+                    ],
+                    "text_description" : "$\\frac{12 x^{3} y^{2}-6 x^{2} y^{4}}{3 x y^{2}}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.7,
+                            222.74,
+                            190.07,
+                            257.33
+                        ]
+                    ],
+                    "text_description" : "① $4 x^{2}-2 x y^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.7,
+                            261.55,
+                            189.23,
+                            423.54
+                        ]
+                    ],
+                    "text_description" : "② $4 x^{3}-2 x y^{2}$ ③ $4 x^{2}-2 x y^{4}$ ④ $4 x^{3}+2 x y^{2}$ ⑤ $4 x^{3}-2 x y^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.83,
+                            587.45,
+                            746.83,
+                            728.45
+                        ]
+                    ],
+                    "text_description" : "\\[ \\frac{12 x^{3} y^{2}}{3 x y^{2}}=4 x^{2}, \\quad \\frac{-6 x^{2} y^{4}}{3 x y^{2}}=-2 x y^{2} \\] 따라서 $4 x^{2}-2 x y^{2}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b9b15720-8839-4cb3-9cf6-56dc7c5275d2",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018962",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.5,
+                            12.4,
+                            465.5,
+                            36.4
+                        ]
+                    ],
+                    "text_description" : "다음 그림에서 일차방정식 $2 x+y-4=0$의 그래프는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.5,
+                            41.4,
+                            247.5,
+                            231.4
+                        ]
+                    ],
+                    "text_description" : "$xy$ 좌표 평면이며 $5$개의 직선이 서로 교차하고 있는 형태이다. $x$축으로는 $2$, $-2$가 표시되어 있고 $y$축에는 $4$, $-4$가 표시되어 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.5,
+                            250.4,
+                            82.5,
+                            267.4
+                        ]
+                    ],
+                    "text_description" : "⑤"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.12,
+                            294.3,
+                            468.02,
+                            430.44
+                        ]
+                    ],
+                    "text_description" : "$2 x+y-4=0$의 $x$ 절편은 $y$의 값이 0이므로 $2 x-4=0 \\quad \\therefore \\quad x=2$ $y$ 절편은 $x$의 값이 $0$이므로 $y-4=0 \\quad \\therefore \\quad y=4$ $x$ 절편은 $2, y$ 절편은 $x$0인 일차함수의 그래프는 ⑤이다."
+                }
+            ]
+        }
+    ]
+}

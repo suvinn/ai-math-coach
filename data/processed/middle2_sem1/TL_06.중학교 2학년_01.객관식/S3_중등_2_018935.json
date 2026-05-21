@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "27958350-8e1d-4359-acbe-7bea2cca8288",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018935",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.49,
+                            14.79,
+                            1431.99,
+                            42.29
+                        ]
+                    ],
+                    "text_description" : "다음 그림의 사다리꼴 ABCD에서 점 D가 직선 $l$ 위를 오른쪽으로 1초에 1cm 씩 움직이고 있다. $x$ 초 후의 사다리꼴의 넓이를 $y \\mathrm{~cm}^{2}$ 라 할 때, $x$와 $y$ 사이의 관계식으로 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.34,
+                            49.13,
+                            293.94,
+                            193.02
+                        ]
+                    ],
+                    "text_description" : "직선 l이있고 사디리꼴 ABCD가 있다. 선분 AD는 2cm, 선분 BC는 5cm 높이는 6cm이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            200.19,
+                            183.3,
+                            226.3
+                        ]
+                    ],
+                    "text_description" : "① $y=3 x+21$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.54,
+                            231.42,
+                            187.39,
+                            350.72
+                        ]
+                    ],
+                    "text_description" : "② $y=5 x+12$ ③ $y=3 x+6$ ④ $y=3 x+7$ ⑤ $y=3 x+15$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56,
+                            419.7,
+                            696.8,
+                            623.1
+                        ]
+                    ],
+                    "text_description" : "$($ 사다리꼴의 넓이 $)=\\frac{1}{2} \\times\\{($ 윗변의 길이 $)+($ 아랫변의 길이 $)\\} \\times$ (높이 $)$ 이다. 윗변의 길이가 $x$ 초 후에는 $x \\mathrm{~cm}$ 늘어나므로 $x$ 초 후 윗변의 길이는 $(x+2) \\mathrm{cm}$ 이다. \\[ \\begin{aligned} \\therefore \\quad y & =\\frac{1}{2} \\times\\{(x+2)+5\\} \\times 6 \\\\ y & =3 \\times(x+7) \\\\ y & =3 x+21 \\end{aligned} \\]"
+                }
+            ]
+        }
+    ]
+}

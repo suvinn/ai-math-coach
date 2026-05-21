@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "536f8a59-bf7a-4f64-a9e8-91be29589a29",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003869",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.27,
+                            21.28,
+                            713.27,
+                            108.28
+                        ]
+                    ],
+                    "text_description" : "다음 분수를 소수로 나타낼 때, 유한소수인 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            259.96,
+                            122.87,
+                            344.44,
+                            202.23
+                        ]
+                    ],
+                    "text_description" : "② $\\frac{3}{8}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -0.73,
+                            349.28,
+                            491.27,
+                            448.28
+                        ]
+                    ],
+                    "text_description" : "기약분수의 분모의 소인수가 2 나 5 뿐인 것 ② $\\frac{3}{8}=\\frac{3}{2^{3}}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "3",
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.32,
+                            127.08,
+                            176.12,
+                            294.76
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{4}{15}$\n④ $\\frac{4}{2^{3} \\times 3^{2}}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            505.08,
+                            126.44,
+                            619,
+                            197.48
+                        ]
+                    ],
+                    "text_description" : "③ $\\frac{11}{230}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            259.32,
+                            213.24,
+                            458.72,
+                            294.12
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\frac{3^{3}}{2 \\times 5 \\times 11}$"
+                }
+            ]
+        }
+    ]
+}

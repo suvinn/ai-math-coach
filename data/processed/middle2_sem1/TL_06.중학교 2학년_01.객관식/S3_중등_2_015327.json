@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "147339c0-5ee8-48d1-95ac-dadc7d62b42f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015327",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.99,
+                            45.29,
+                            570.74,
+                            124.04
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오. \\[ 6 x-\\{4 x-y-(5 x-3 y)\\} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.74,
+                            148.5,
+                            118.24,
+                            178.5
+                        ]
+                    ],
+                    "text_description" : "① $7 x-2 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.24,
+                            184.75,
+                            136.99,
+                            311
+                        ]
+                    ],
+                    "text_description" : "② $7 x+2 y$ ③ $-7 x-2 y$ ④ $-7 x+2 y$ ⑤ $6 x-y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.24,
+                            406,
+                            311.99,
+                            433.5
+                        ]
+                    ],
+                    "text_description" : "괄호를 풀고 동류항을 정리합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.99,
+                            454.75,
+                            996.99,
+                            483.5
+                        ]
+                    ],
+                    "text_description" : "$6 x-\\{4 x-y-(5 x-3 y)\\}=6 x-(4 x-y-5 x+3 y)=6 x-(-x+2 y)=6 x+x-2 y=7 x-2 y$"
+                }
+            ]
+        }
+    ]
+}

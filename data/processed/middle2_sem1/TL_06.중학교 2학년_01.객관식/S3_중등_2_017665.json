@@ -1,0 +1,149 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0fd70777-f098-4cbe-aae2-7eb345ba4753",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017665",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.78,
+                            17.73,
+                            254.78,
+                            45.73
+                        ]
+                    ],
+                    "text_description" : "다음 부등식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.78,
+                            57.27,
+                            187.78,
+                            92.27
+                        ]
+                    ],
+                    "text_description" : "$(2 x+5) \\leq 13$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.78,
+                            156.27,
+                            121.78,
+                            185.27
+                        ]
+                    ],
+                    "text_description" : "② $x \\leq 4$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.78,
+                            664.27,
+                            113.78,
+                            694.27
+                        ]
+                    ],
+                    "text_description" : "② $x \\leq 4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.78,
+                            114.27,
+                            117.78,
+                            143.27
+                        ]
+                    ],
+                    "text_description" : "① $x \\geq 4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.78,
+                            199.27,
+                            118.78,
+                            310.27
+                        ]
+                    ],
+                    "text_description" : "③ $x \\geq 3$ ④ $x \\leq 3$ ⑤ $x=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.78,
+                            344.27,
+                            177.78,
+                            628.27
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}2 x+5 \\leq 13 \\\\ 2 x \\leq 8 \\\\ \\\\ x \\leq 4\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

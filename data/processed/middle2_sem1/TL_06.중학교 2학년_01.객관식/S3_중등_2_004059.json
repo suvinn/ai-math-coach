@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "66371ac9-64d6-4a8c-a3a4-2e04138c9dfa",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004059",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.72,
+                            12.69,
+                            340.64,
+                            41.6
+                        ]
+                    ],
+                    "text_description" : "$32 a^{3} b^{7} \\div\\left(2 a b^{2}\\right)^{3}$을 간단히 하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            321.93,
+                            60.31,
+                            376.36,
+                            84.97
+                        ]
+                    ],
+                    "text_description" : "③ $4 b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.77,
+                            57.41,
+                            252.21,
+                            84.62
+                        ]
+                    ],
+                    "text_description" : "① $2 b$ ② $2 a b^{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            463.09,
+                            56.96,
+                            682.48,
+                            84.62
+                        ]
+                    ],
+                    "text_description" : "④ $4 a b^{2}$ ⑤ $4 a^{2} b^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            30.57,
+                            109.58,
+                            277.72,
+                            159.45
+                        ]
+                    ],
+                    "text_description" : "$32 a^{3} b^{7} \\div\\left(2 a b^{2}\\right)^{3}=\\frac{32 a^{3} b^{7}}{8 a^{3} h^{6}}=4 b$"
+                }
+            ]
+        }
+    ]
+}

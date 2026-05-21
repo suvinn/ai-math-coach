@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c9cf7bf5-4090-4a82-96b1-e3bab418afc4",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018806",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.88,
+                            14.01,
+                            538.04,
+                            36.41
+                        ]
+                    ],
+                    "text_description" : "다음 일차함수의 그래프 중 $y=3 x-2$의 그래프와 평행한 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            90,
+                            142.65,
+                            175.16,
+                            166.41
+                        ]
+                    ],
+                    "text_description" : "$y=3 x+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.96,
+                            261.06,
+                            646.2,
+                            315.18
+                        ]
+                    ],
+                    "text_description" : "$y=3 x-2$의 그래프와 평행한 것은 기울기가 3 이고 $y$ 절편이 -2가 아닌 것으로 ④ $y=3 x+5$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            89.72,
+                            46.38,
+                            188.6,
+                            135.42
+                        ]
+                    ],
+                    "text_description" : "$y=-2 x+3$ $y=-3 x+5$ $y=2 x+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            87.72,
+                            172.46,
+                            175.16,
+                            199.06
+                        ]
+                    ],
+                    "text_description" : "$y=2 x-3$"
+                }
+            ]
+        }
+    ]
+}

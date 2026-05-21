@@ -1,0 +1,157 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "62efdcaf-8028-4389-bf79-71d75927d66a",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003931",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : "1",
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Polygon",
+                    "Type_value" : [
+                        [
+                            7.81,
+                            21.48
+                        ],
+                        [
+                            5.86,
+                            556.64
+                        ],
+                        [
+                            730.47,
+                            558.59
+                        ],
+                        [
+                            730.47,
+                            460.94
+                        ],
+                        [
+                            423.83,
+                            453.12
+                        ],
+                        [
+                            423.83,
+                            376.95
+                        ],
+                        [
+                            298.83,
+                            376.95
+                        ],
+                        [
+                            298.83,
+                            31.25
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같이 두 일차함수 $y=2 x-2$와 $y=\\frac{2}{3} x+2$의 그래 프가 점 $\\mathrm{P}(3, 4)$에서 만난다. 원점을 지나는 일차함수 $y=\\frac{b}{a} x(a \\neq 0$, $b \\neq 0)$의 그래프가 삼각형 PQR의 넓이를 이등분할 때, $a+b$의 값을 구하시오. (단, $a, b$는 서로소)"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            309.69,
+                            28.119999999999997,
+                            738.14,
+                            370.54
+                        ]
+                    ],
+                    "text_description" : "주어진 이미지는 세 개의 직선이 그려진 그래프이다. 검은색 직선은 \\(y = \\frac{2}{3}x + 2\\)와 \\(y = 2x - 2\\)로 표현되며, 초점이 O인 점 Q와 R에서 교차한다. 초록색 직선은 \\(y = \\frac{a}{b}x \\)로, 점 P에서 다른 직선과 만난다. 그래프의 y축은 4에서 수평으로 나타나 있으며, x축은 3 방향으로 연장되어 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.37,
+                            1384.25,
+                            197.56,
+                            1410.94
+                        ]
+                    ],
+                    "text_description" : "따라서 $a+b=3+8=11$"
+                }
+            ]
+        },
+        {
+            "class_num" : "2",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.68,
+                            628.12,
+                            367.87,
+                            934.37
+                        ]
+                    ],
+                    "text_description" : "점 $\\mathrm{Q}, \\mathrm{R}$의 $x$ 좌표는 각각 $y=\\frac{2}{3} x+2$, $y=2 x-2$의 $x$ 절편이다. $0=\\frac{2}{3} x+2$에서 $\\frac{2}{3} x=-2$ 이므로 $x=-3$ 이다. $0=2 x-2$에서 $2 x=2$ 이므로 $x$0 이다. 따라서 $x$1 이므로 $x$2 일차함수 $x$3와 일차함수 $y=\\frac{2}{3} x+2$의 교점을 $x$5 라 하면"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.9299999999999997,
+                            1112.5,
+                            365.56,
+                            1382.25
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} \\triangle \\mathrm{SQO}=\\frac{1}{2} \\triangle \\mathrm{PQR} \\text { 에서 } \\\\ \\frac{1}{2} \\times 3 \\times\\left(\\frac{2}{3} p+2\\right)=4 \\text { 이므로 } p+3=4, \\text { 즉 } p=1 \\text { 이 } \\end{array} \\] 다. 따라서 $\\mathrm{S}\\left(1, \\frac{8}{3}\\right)$ 이다. 한편 점 S는 일차함수 $y=\\frac{b}{a} x$의 그래프 위에 있으므로 $\\frac{b}{a}=\\frac{8}{3}$ 이다. 그런데 $a, b$는 서로소이므로 $a=3, b=8$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.81,
+                            937.5,
+                            244.12,
+                            1112.5
+                        ]
+                    ],
+                    "text_description" : "주어진 이미지는 세 개의 직선이 그려진 그래프이다. 검은색 직선은 \\(y = \\frac{2}{3}x + 2\\)와 \\(y = 2x - 2\\)로 표현되며 두 선이 만나는 지점을 P라고 한다. 초록색 직선은 \\(y = \\frac{a}{b}x \\)이다. 그래프의 y축은 4에서 수평으로 나타나 있으며, x축은 3 방향으로 연장되어 있다. \\(y = \\frac{a}{b}x \\)의 시작점을 O, \\(y = 2x - 2\\) 시작점을 R이라고 한다. \\(y = \\frac{a}{b}x \\)와 \\(y = \\frac{2}{3}x + 2\\)가 교차하는 점을 S라고 한다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5da09f5a-deb0-416f-8bcd-81da5d358786",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001627",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.56,
+                            10.85,
+                            220.19,
+                            174.76
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림은 연립방정식 \\[ \\left\\{\\begin{array}{l} a x+y=-2 \\\\ 3 x+b y=-20 \\end{array}\\right. \\]의 해를 구하기 위하여 각 방정식을 그래"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.97,
+                            180.37,
+                            440.84,
+                            201.58
+                        ]
+                    ],
+                    "text_description" : "프로 나타낸 것이다. 이때 상수 $a, b$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            232.77,
+                            7.24,
+                            442.77,
+                            150.24
+                        ]
+                    ],
+                    "text_description" : "좌표평면위에 \\[ \\left\\{\\begin{array}{l} a x+y=-2 \\\\ 3 x+b y=-20 \\end{array}\\right. \\]의 직선이 있다. 두 직선의 교차점이 $(-4, 2)$로 표시되어있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.92,
+                            297.32,
+                            140.12,
+                            312.32
+                        ]
+                    ],
+                    "text_description" : "$a=1, b=-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.72,
+                            208.32,
+                            380.72,
+                            293.32
+                        ]
+                    ],
+                    "text_description" : "두 일차방정식의 그래프의 교점이 $(-4, 2)$ 이므로 연립방정식의 해는 $x=-4, y=2$ 이다. $x=-4, y=2$를 각 방정식에 대입하면 $-4 a+2=-2, a=1$ $-12+2 b=-20, b=-4$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c1bf9e8c-243b-461f-9f07-c89e091e8bec",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001690",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.9,
+                            25.92,
+                            371.7,
+                            50.32
+                        ]
+                    ],
+                    "text_description" : "$a=-2, b=4$ 일 때, 다음 식의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.9,
+                            71.92,
+                            526.1,
+                            150.32
+                        ]
+                    ],
+                    "text_description" : "$\\frac{3 a^{2} b^{2}-a b^{3}}{a b}-b(2 a-4 b)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            211.7,
+                            199.12,
+                            263.7,
+                            223.92
+                        ]
+                    ],
+                    "text_description" : "⑤ 40"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.7,
+                            164.72,
+                            107.7,
+                            223.92
+                        ]
+                    ],
+                    "text_description" : "① 8 ④ 32"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            211.5,
+                            165.32,
+                            419.7,
+                            189.52
+                        ]
+                    ],
+                    "text_description" : "② 16 ③ 24"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.1,
+                            225.32,
+                            276.7,
+                            286.32
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}(\\text { 주어진 식 })=3 a b-b^{2}-2 a b+4 b^{2}=a b+3 b^{2} \\\\ a b+3 b^{2} \\text { 에 } a=-2, b=4 \\text { 를 대입하면 } \\\\ a b+3 b^{2}=(-2) \\times 4+3 \\times 4^{2}=-8+48=40\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d12f88db-5263-4dce-a1a5-16333ac46b24",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001419",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71.5,
+                            69.92,
+                            388.5,
+                            110.92
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.66,
+                            131.62,
+                            238.62,
+                            164.9
+                        ]
+                    ],
+                    "text_description" : "⑥ $\\left(x^{3}\\right)^{2} \\div x^{5} \\times x^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.18,
+                            227.62,
+                            42.14,
+                            251.94
+                        ]
+                    ],
+                    "text_description" : "$=x^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -0.5,
+                            182.5,
+                            623.5,
+                            213.5
+                        ]
+                    ],
+                    "text_description" : "⑥ $\\left(x^{3}\\right)^{2} \\div x^{5} \\times x^{2}=x^{3 \\times 2} \\div x^{5} \\times x^{2}=x^{6} \\div x^{5} \\times x^{2}=x^{6-5} \\times x^{2}=x^{1+2}=x^{3}$"
+                }
+            ]
+        }
+    ]
+}

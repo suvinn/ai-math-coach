@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "49730b7f-cf70-4cec-a4c3-a325c1196ea8",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018193",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            98.11,
+                            7.03,
+                            850.31,
+                            39.88
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=-3 x+7$에 대하여 $f(c)=1$ 일 때, $c$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.100000000000001,
+                            60.4,
+                            121.11,
+                            90.79
+                        ]
+                    ],
+                    "text_description" : "① $c=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.35,
+                            269.52,
+                            327.22,
+                            526.55
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(c)=1, f(c)=-3 c+7 \\\\ -3 c+7=1 \\\\ -3 c=1-7 \\\\ -3 c=-6 \\\\ c=\\frac{-6}{-3}=2\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.28,
+                            103.11,
+                            143.28,
+                            257.66
+                        ]
+                    ],
+                    "text_description" : "$c=-2$ $c=1$ $c=-1$ $c=3$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "71cd3743-b885-48cb-a2b8-958056a798ba",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001602",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.26,
+                            9.65,
+                            284.26,
+                            137.15
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-2 x+5$의 그래프와 오른쪽 그래프가 서로 평행할 때, 오른쪽 그래프의 일차함수의 식을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            296.76,
+                            11.62,
+                            445.51,
+                            176.62
+                        ]
+                    ],
+                    "text_description" : "기울기는 $-2$ 이고, $y$절편이 2인 $y=-2 x+2$ 일차함수 그래프이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.5,
+                            215,
+                            131.5,
+                            230
+                        ]
+                    ],
+                    "text_description" : "$y=-2 x+2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.5,
+                            179,
+                            453.5,
+                            211
+                        ]
+                    ],
+                    "text_description" : "주어진 일차함수의 그래프는 일차함수 $y=-2 x+5$의 그래프와 서로 평행하므로 기울기는 $-2$ 이고, $y$절편이 2이므로 그 그래프의 식은 $y=-2 x+2$이다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "055262a3-7d78-4e8e-bae9-1a0570538538",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004087",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.6,
+                            14.33,
+                            509,
+                            39.93
+                        ]
+                    ],
+                    "text_description" : "다음 중 미지수가 2 개인 일차방정식을 모두 고르면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            227.4,
+                            52.73,
+                            348.2,
+                            111.93
+                        ]
+                    ],
+                    "text_description" : "② $x+4 y=3$ ⑤ $x-3 y=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            461.8,
+                            54,
+                            592.2,
+                            78.4
+                        ]
+                    ],
+                    "text_description" : "③ $3 x-y=3 x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            39.4,
+                            53.2,
+                            168.2,
+                            112.4
+                        ]
+                    ],
+                    "text_description" : "① $x-2 y+3$ ④ $x^{2}+5 y=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.6,
+                            147.6,
+                            494.6,
+                            209.2
+                        ]
+                    ],
+                    "text_description" : "우변의 항들을 좌변으로 이항하여 정리한 식이 $a x+b y+c=0$ (단, $a \\neq 0, b \\neq 0$)의 꼴인 것을 찾는다."
+                }
+            ]
+        }
+    ]
+}

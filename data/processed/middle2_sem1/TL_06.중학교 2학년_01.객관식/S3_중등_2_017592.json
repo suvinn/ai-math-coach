@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "38c5741e-b2c4-4107-9be8-65ac411f3050",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017592",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.5,
+                            14.4,
+                            586.1,
+                            39.2
+                        ]
+                    ],
+                    "text_description" : "기울기가 $5$이고 점 $(1, 4)$을 지나는 일차함수의 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.7,
+                            112.8,
+                            134.9,
+                            136.8
+                        ]
+                    ],
+                    "text_description" : "② $y=5 x-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.9,
+                            64.8,
+                            134.1,
+                            88.8
+                        ]
+                    ],
+                    "text_description" : "① $y=5 x+1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.7,
+                            160.8,
+                            135.7,
+                            278.4
+                        ]
+                    ],
+                    "text_description" : "③ $y=5 x+4$ ④ $y=5 x+3$ ⑤ $y=5 x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.5,
+                            307.2,
+                            876.5,
+                            364.8
+                        ]
+                    ],
+                    "text_description" : "기울기가 $5$이므로 일차함수의 식을 $y=5 x+b$로 놓을 수 있습니다. 이 직선이 점 $(1, 4)$을 지납 니다:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.7,
+                            620.8,
+                            477.3,
+                            646.4
+                        ]
+                    ],
+                    "text_description" : "따라서 구하는 일차함수의 식은 $y=5 x-1$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.3,
+                            383.2,
+                            127.7,
+                            597.6
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}4=5 \\cdot 1+b \\\\ 4=5+b \\\\ b=4-5 \\\\ b=-1\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

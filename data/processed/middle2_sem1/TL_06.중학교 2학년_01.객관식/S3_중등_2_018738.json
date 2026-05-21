@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8f96fd3e-abfd-4e6c-ad54-3aa22eb4371b",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018738",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.75,
+                            4.9,
+                            385,
+                            29.9
+                        ]
+                    ],
+                    "text_description" : "다음 <보기>중 일차함수를 모두 고른 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.22,
+                            35.91,
+                            1639.34,
+                            323.79
+                        ]
+                    ],
+                    "text_description" : "<보기> ᄀ. $y=2 x+1$ ㄴ. $y=\\frac{1}{x}+3$ ㄷ. $y=\\frac{x}{3}$ ㄹ. $3 x+2 y=5$ ㅁ. $c=6$ ㅂ. $y=x^{2}+x+1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.6,
+                            358.4,
+                            164.8,
+                            382.8
+                        ]
+                    ],
+                    "text_description" : "② ㄱ, ㄷ, ㄹ"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.8,
+                            329.6,
+                            163.2,
+                            350.2
+                        ]
+                    ],
+                    "text_description" : "① ㄱ, ㄴ, ㄷ"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68,
+                            392.4,
+                            162.4,
+                            475.8
+                        ]
+                    ],
+                    "text_description" : "③ ㄱ, ㄷ, ㅂ ④ ㄴ, ㄹ, ⑤ ㄴ, ㄹ, ㅂ"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60,
+                            550.62,
+                            975,
+                            636.87
+                        ]
+                    ],
+                    "text_description" : "$y=f(x)$에서 $y=a x+b(a, b$는 상수, $a \\neq 0)$와 같이 $y$를 $x$에 관한 일차식으로 나타낼 때, 이 함수 $f$를 일차함수라 한다. ㄴ, ㅁ, ㅂ은 $y=a x+b$의 꼴이 아니다. 따라서 일차함수는 ㄱ, ㄷ, ㄹ이다."
+                }
+            ]
+        }
+    ]
+}

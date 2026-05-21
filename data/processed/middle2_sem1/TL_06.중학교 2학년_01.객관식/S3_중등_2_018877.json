@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "984b0123-8948-4d88-9209-6ac35d76fdc7",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018877",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.83,
+                            6.82,
+                            623.83,
+                            33.82
+                        ]
+                    ],
+                    "text_description" : "기울기가 $2$ 이고 점 ($0$, $4$)를 지나는 직선을 그래프로 하는 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.83,
+                            74.82,
+                            175.83,
+                            99.82
+                        ]
+                    ],
+                    "text_description" : "② $y = 2x + 4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.83,
+                            41.82,
+                            174.83,
+                            68.82
+                        ]
+                    ],
+                    "text_description" : "① $y = 4x + 2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.83,
+                            105.45,
+                            187.83,
+                            196.45
+                        ]
+                    ],
+                    "text_description" : "③ $y = -4x - 2$ ④ $y = -2x - 4$ ⑤ $y = 2x - 4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.83,
+                            255.45,
+                            662.83,
+                            283.45
+                        ]
+                    ],
+                    "text_description" : "기울기가 $2$, $y$ 절편이 $4$인 직선을 그래프로 하는 일차함수의 식은 $y=2x+4$이다."
+                }
+            ]
+        }
+    ]
+}

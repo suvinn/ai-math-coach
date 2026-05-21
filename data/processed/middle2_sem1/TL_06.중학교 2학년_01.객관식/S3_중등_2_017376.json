@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "296f5154-3a95-4376-9cbd-8049aad1d09c",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017376",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.8,
+                            13.74,
+                            294,
+                            40.14
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.2,
+                            53.74,
+                            174.8,
+                            87.34
+                        ]
+                    ],
+                    "text_description" : "$y^{5} \\times y^{2} \\div y^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.2,
+                            107,
+                            82.8,
+                            140.6
+                        ]
+                    ],
+                    "text_description" : "① $y^{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.4,
+                            150.2,
+                            82,
+                            307.8
+                        ]
+                    ],
+                    "text_description" : "② $y^{5}$ ③ $y^{6}$ ④ $y^{7}$ ⑤ $y^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.4,
+                            339.8,
+                            264.4,
+                            415.8
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}y^{5} \\times y^{2}=y^{5+2}=y^{7} \\\\ y^{7} \\div y^{3}=y^{7-3}=y^{4}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

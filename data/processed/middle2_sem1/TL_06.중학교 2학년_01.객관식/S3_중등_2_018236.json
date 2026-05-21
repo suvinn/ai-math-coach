@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "dce5fd72-e5ea-46db-bf22-88ddaa0ea8f0",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018236",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.96,
+                            7.91,
+                            1067.77,
+                            89.16
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=f(x)$에 대하여 $f(10)-f(2)=48$ 일 때, 이 일차함수의 그래프의 기울기를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.65,
+                            195.73,
+                            69.34,
+                            227.1
+                        ]
+                    ],
+                    "text_description" : "③ 6"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.8,
+                            111.2,
+                            66.4,
+                            184.8
+                        ]
+                    ],
+                    "text_description" : "① 8 ② 7"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.6,
+                            237.6,
+                            66.4,
+                            312.8
+                        ]
+                    ],
+                    "text_description" : "④ 5 ⑤ 4"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.75,
+                            326.62,
+                            480,
+                            366.62
+                        ]
+                    ],
+                    "text_description" : "일차함수의 일반형은 $y=m x+b$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.5,
+                            377.87,
+                            657.5,
+                            660.37
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} f⑩=10m+b \\\\ f②=2m+b \\end{array} \\] 따라서, $f(10)-f(2)=(10m+b)-(2m+b)=8m$ 주어진 조건에 따라 $f(10)-f(2)=48$ 이므로, \\[ \\begin{array}{l} 8m=48 \\\\ m=\\frac{48}{8}=6 \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

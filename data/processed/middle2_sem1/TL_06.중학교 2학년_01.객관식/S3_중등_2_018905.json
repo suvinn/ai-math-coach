@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d8060724-f140-48e4-9667-f131b030dabf",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018905",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.24,
+                            11.41,
+                            643.24,
+                            38.91
+                        ]
+                    ],
+                    "text_description" : "다음 중 $x$ 절편이 $-2$이고 $y$ 절편이 $7$인 직선을 그래프로 하는 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            89.24,
+                            166.41,
+                            181.99,
+                            217.41
+                        ]
+                    ],
+                    "text_description" : "$y = \\frac{7}{2} x + 7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.24,
+                            43.38,
+                            186.99,
+                            158.38
+                        ]
+                    ],
+                    "text_description" : "① $y = 7x + 7$ ② $y = -2x + 7$ ③ $y = \\frac{7}{2}x - 7$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.74,
+                            220.88,
+                            174.49,
+                            250.88
+                        ]
+                    ],
+                    "text_description" : "⑤ $y = 2x + 7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.99,
+                            313.13,
+                            939.49,
+                            463.38
+                        ]
+                    ],
+                    "text_description" : "구하는 일차함수의 식을 $y=ax+b$라 하면 $x$ 절편이 $-2$이고, $y$ 절편이 $7$이므로 두 점 $(-2, 0), (0, 7)$을 지난다. \\[ \\therefore a=\\frac{7-0}{0-[-2]}=\\frac{7}{2}, \\quad b=7 \\] 따라서, 구하는 일차함수의 식은 $y=\\frac{7}{2}x+7$이다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "37b292b4-50b6-4f89-9005-36383ba5604e",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018733",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58,
+                            7.94,
+                            346.8,
+                            30.34
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수인 것을 모두 고르면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.84,
+                            74.24,
+                            182.96,
+                            118.4
+                        ]
+                    ],
+                    "text_description" : "② $y+3=\\frac{3}{5} x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.84,
+                            127,
+                            215.6,
+                            267.52
+                        ]
+                    ],
+                    "text_description" : "③ $y=x(x+1)$ ④ $y=\\frac{1}{x}+5$ ⑤ $y=\\frac{x}{2}+(x+1)$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.56,
+                            37.12,
+                            172.72,
+                            65.92
+                        ]
+                    ],
+                    "text_description" : "① $x y+1=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.72,
+                            591.36,
+                            289.2,
+                            616.32
+                        ]
+                    ],
+                    "text_description" : "따라서 일차함수는 ②, ⑤이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.36,
+                            328.32,
+                            178.48,
+                            587.52
+                        ]
+                    ],
+                    "text_description" : "① $y=-\\frac{1}{x}$ ② $y=\\frac{3}{5} x-3$ ③ $y=x^{2}+x$ ④ $y=\\frac{1}{x}+5$ ⑤ $y=\\frac{3}{2} x+1$"
+                }
+            ]
+        }
+    ]
+}

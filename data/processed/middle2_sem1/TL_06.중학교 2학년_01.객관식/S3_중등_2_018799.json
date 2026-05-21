@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "bc469b45-b6e8-44b0-99cf-87f0c1ac2736",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018799",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.89,
+                            10.1,
+                            333.6,
+                            34.6
+                        ]
+                    ],
+                    "text_description" : "다음 일차함수의 그래프 중 일차함수"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            388.99,
+                            9.04,
+                            844.93,
+                            34.74
+                        ]
+                    ],
+                    "text_description" : "의 그래프를 $y$ 축의 방향으로 평행이동한 그래프가 아닌 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            334.66,
+                            13.3,
+                            386.86,
+                            35.67
+                        ]
+                    ],
+                    "text_description" : "$y=3 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.21,
+                            107.49,
+                            183.39,
+                            129.86
+                        ]
+                    ],
+                    "text_description" : "③ $y=-3 x-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.21,
+                            45.26,
+                            169.55,
+                            100.65
+                        ]
+                    ],
+                    "text_description" : "① $y=3 x-1$ ② $y=3 x+1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.15,
+                            137.94,
+                            183.39,
+                            215.7
+                        ]
+                    ],
+                    "text_description" : "④ $y=3 x+7$ ⑤ $y=3 x+\\frac{1}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.02,
+                            281.75,
+                            677.68,
+                            415.97
+                        ]
+                    ],
+                    "text_description" : "$y$ 축의 방향으로 평행이동하였으므로 그래프의 기울기는 변함없고 $y$ 절편만 바뀐다. 각 보기의 기울기를 살펴보면 ①, ②, ④, ⑤ $3$ ③ $-3$ 이므로 평행이동한 그래프가 아닌 것은 ③ 이다."
+                }
+            ]
+        }
+    ]
+}

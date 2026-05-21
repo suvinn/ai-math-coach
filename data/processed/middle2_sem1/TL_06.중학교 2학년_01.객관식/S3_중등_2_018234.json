@@ -1,0 +1,173 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "27d3a60d-f89e-433d-a8e2-e1e6bf1e4ce1",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018234",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            101.49,
+                            8.87,
+                            1080.49,
+                            43.87
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=f(x)$에 대하여 $f(7)-f(3)=24$ 일 때, 이 일차함수의 그래프의 기울기를"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.49,
+                            50.87,
+                            125.49,
+                            81.87
+                        ]
+                    ],
+                    "text_description" : "구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.84,
+                            108.08,
+                            70.84,
+                            137.33
+                        ]
+                    ],
+                    "text_description" : "① 6"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.84,
+                            681.08,
+                            54.84,
+                            707.33
+                        ]
+                    ],
+                    "text_description" : "① 6"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.09,
+                            150.58,
+                            83.59,
+                            304.83
+                        ]
+                    ],
+                    "text_description" : "② 8 ③ 10 ④ 12 ⑤ 14"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.09,
+                            328.33,
+                            472.34,
+                            359.83
+                        ]
+                    ],
+                    "text_description" : "일차함수의 일반형은 $y=m x+b$입니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.59,
+                            519.83,
+                            524.84,
+                            553.58
+                        ]
+                    ],
+                    "text_description" : "주어진 조건에 따라 $f(7)-f(3)=24$이므로,"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.34,
+                            381.08,
+                            623.59,
+                            501.08
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} f⑦=7m+b \\\\ f③=3m+b \\end{array} \\] 따라서, $f(7)-f(3)=(7m+b)-(3m+b)=4m$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.59,
+                            563.58,
+                            163.59,
+                            654.83
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}4m=24 \\\\ m=\\frac{24}{4}=6\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

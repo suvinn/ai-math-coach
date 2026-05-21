@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ed0fa536-833b-4e0a-b7d4-c53130271b46",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001792",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62,
+                            23.92,
+                            336,
+                            199.92
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같이 밑면의 가로 세로의 길이가 각각 $3a \\mathrm{~cm}$, $b \\mathrm{~cm}$인 직육면체의 부피가 $\\left(12 a^{2} b-9 a^{2} b^{2}\\right) \\mathrm{cm}^{3}$ 일 때, 이 직육면체의 높이를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            343,
+                            25.5,
+                            539,
+                            203.5
+                        ]
+                    ],
+                    "text_description" : "직육면체 도형이며 밑면의 가로 세로의 길이가 각각 $3a \\mathrm{~cm}$, $b \\mathrm{~cm}$이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            33,
+                            303.5,
+                            153,
+                            331.5
+                        ]
+                    ],
+                    "text_description" : "$(4 a-3 a b) \\mathrm{cm}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            40,
+                            235.5,
+                            419,
+                            292.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}3 a \\times b \\times(\\text { 높이 })=12 a^{2} b-9 a^{2} b^{2} \\text { 이므로 } \\\\ (\\text { 높이 })=\\left(12 a^{2} b-9 a^{2} b^{2}\\right) \\div(3 a b)=4 a-3 a b(\\mathrm{~cm})\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

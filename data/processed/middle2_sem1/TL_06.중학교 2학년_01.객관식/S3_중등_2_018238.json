@@ -1,0 +1,179 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b63d6f5e-598e-4c50-8797-14ede680b154",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018238",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.22,
+                            0.02,
+                            1077.22,
+                            81.27
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=2 x-1$의 그래프의 y 절편과 일차함수 $y=x+a$의 x 절편이 서로 같을 때, $a$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.66,
+                            142.21,
+                            60.03,
+                            176.59
+                        ]
+                    ],
+                    "text_description" : "② 1"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.22,
+                            96.56,
+                            67.85,
+                            134.06
+                        ]
+                    ],
+                    "text_description" : "① -1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.78,
+                            182.5,
+                            69.41,
+                            302.81
+                        ]
+                    ],
+                    "text_description" : "③ 2 ④ 3 ⑤ -3"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.66,
+                            310.62,
+                            688.16,
+                            390.31
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=2 x-1$의 y 절편은 $x=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.91,
+                            441.87,
+                            669.41,
+                            571.56
+                        ]
+                    ],
+                    "text_description" : "따라서, y절편은 -1입니다. 일차함수 $y=x+a$의 x절편은 $y=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.66,
+                            660.62,
+                            431.91,
+                            754.37
+                        ]
+                    ],
+                    "text_description" : "따라서, x절편은 $-a$ 입니다. 두 절편이 같으므로, $-a=-1$ 이므로,"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.35,
+                            398.12,
+                            253.78,
+                            438.75
+                        ]
+                    ],
+                    "text_description" : "$y=2(0)-1=-1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.78,
+                            576.25,
+                            142.85,
+                            654.37
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}0=x+a, \\\\ x=-a. \\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.78,
+                            759.06,
+                            94.41,
+                            796.56
+                        ]
+                    ],
+                    "text_description" : "$a=1$"
+                }
+            ]
+        }
+    ]
+}

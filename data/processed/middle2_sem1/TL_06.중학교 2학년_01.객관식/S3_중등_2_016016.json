@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "108d386d-4633-4934-8793-1f67056cef4f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016016",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.99,
+                            55.88,
+                            453.24,
+                            87.13
+                        ]
+                    ],
+                    "text_description" : "다음 부등식을 풀었을 때, $x$의 범위를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            323.24,
+                            103.13,
+                            607.99,
+                            142.13
+                        ]
+                    ],
+                    "text_description" : "$-0. 3(2 x-3) \\geq 0. 5(2-x)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.6,
+                            203.2,
+                            131.6,
+                            230.8
+                        ]
+                    ],
+                    "text_description" : "$x \\leq-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26,
+                            237.6,
+                            132.4,
+                            370.4
+                        ]
+                    ],
+                    "text_description" : "② $x \\geq-1$ ③ $x \\leq 1$ ④ $x \\geq 1$ ⑤ $x \\leq 2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.99,
+                            382.13,
+                            693.24,
+                            655.38
+                        ]
+                    ],
+                    "text_description" : "1. 양변을 전개: \\[ -0. 6 x+0. 9 \\geq 1-0. 5 x \\] 2. $x$ 관련 항들을 한쪽으로 모으고 상수항을 정리: \\[ -0. 6 x+0. 5 x \\geq 1-0. 9 \\Longrightarrow-0. 1 x \\geq 0. 1 \\] 3. 양변을 -1로 나누면 부등호 방향이 바뀜: \\[ x \\leq-1 \\]"
+                }
+            ]
+        }
+    ]
+}

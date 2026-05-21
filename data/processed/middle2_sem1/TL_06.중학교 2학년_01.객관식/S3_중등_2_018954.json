@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d4d52a5a-c544-4f56-8155-1ce338617dcc",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018954",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            15.42,
+                            331,
+                            39.42
+                        ]
+                    ],
+                    "text_description" : "다음 $\\square$ 안에 알맞은 식을 써넣으면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.26,
+                            42.04,
+                            1639.59,
+                            102.72
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $3 x+y+6=0$의 그래프는 일차함수 $y=$ $\\square$의 그래프와 같다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.73,
+                            135.33,
+                            156.62,
+                            156.14
+                        ]
+                    ],
+                    "text_description" : "② $-3 x-6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.57,
+                            104.12,
+                            144.49,
+                            124.93
+                        ]
+                    ],
+                    "text_description" : "① $3 x-6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.57,
+                            166.54,
+                            157.78,
+                            251.5
+                        ]
+                    ],
+                    "text_description" : "③ $3 x+6$ ④ $-3 x+6$ ⑤ $-x-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.42,
+                            313.92,
+                            543.85,
+                            339.92
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $3 x+y+6=0$을 $y$에 관하여 풀면 $y=-3 x-6$ 이다."
+                }
+            ]
+        }
+    ]
+}

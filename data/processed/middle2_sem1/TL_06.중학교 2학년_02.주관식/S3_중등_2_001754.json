@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3f96819e-c5b4-41ae-a8c1-c603efa1154e",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001754",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.5,
+                            120.42,
+                            537.5,
+                            182.42
+                        ]
+                    ],
+                    "text_description" : "세 직선 $y=3 x+3, y=-3 x+3, y=0$으로 둘러싸인 도형의 넓이를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            320.5,
+                            93,
+                            335.5,
+                            113
+                        ]
+                    ],
+                    "text_description" : "$3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.5,
+                            20,
+                            444.5,
+                            84
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} y=3 x+3 \\text { 의 } x \\text { 절편은 }-1, y \\text { 절편은 } 3 \\text {이므로 } \\mathrm{A}(-1, 0), \\mathrm{C}(0, 3), \\\\ y=-3 x+3 \\text { 의 } x \\text { 절편은 } 1, y \\text { 절편은 } 3 \\text {이므로 } \\mathrm{B}(1, 0) \\text {이다. } \\end{array} \\] 따라서 세 직선으로 둘러싸인 도형의 넓이는"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.5,
+                            83,
+                            257.5,
+                            119
+                        ]
+                    ],
+                    "text_description" : "$\\frac{1}{2} \\times \\overline{\\mathrm{AB}} \\times \\overline{\\mathrm{CO}}=\\frac{1}{2} \\times 2 \\times 3=3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            443.5,
+                            -2,
+                            596.5,
+                            120
+                        ]
+                    ],
+                    "text_description" : "세 직선 $y=3 x+3, y=-3 x+3, y=0$를 함수로 나타냈을 때 둘러싸인 도형이 삼각형 ABC를 나타내고 있다. 점 A는 (-1, 0), B(1, 0), C(0, 3)에 찍혀있다."
+                }
+            ]
+        }
+    ]
+}

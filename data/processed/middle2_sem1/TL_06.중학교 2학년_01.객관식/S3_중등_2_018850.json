@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0eaad67d-5e29-4e83-ab77-5b07da76a5a7",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018850",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.51,
+                            10.53,
+                            748.01,
+                            60.53
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-\\frac{1}{a} x+a b$의 그래프가 다음 그림과 같을 때, 상수 $a, b$의 부호로 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.01,
+                            64.28,
+                            334.26,
+                            310.03
+                        ]
+                    ],
+                    "text_description" : "직선이 제 1, 2, 4 사분면을 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.51,
+                            338.75,
+                            198.01,
+                            370
+                        ]
+                    ],
+                    "text_description" : "② $a>0, \\quad b>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.95,
+                            373.56,
+                            194.56,
+                            459.16
+                        ]
+                    ],
+                    "text_description" : "③ $a<0, \\quad b<0$ ④ $a>0, b<0$ ⑤ $a<0, \\quad b=0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.95,
+                            311.3,
+                            195.38,
+                            334.23
+                        ]
+                    ],
+                    "text_description" : "① $a<0, \\quad b>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.39,
+                            528.93,
+                            332.6,
+                            639.61
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\text { (기울기) }=-\\frac{1}{a}<0 \\text { 이므로 } a>0 \\text { 이고 } \\\\ \\text { (} y \\text { 절편 })=a b>0 \\text { 이므로 } b>0 \\text { 이다. } \\\\ \\therefore \\quad a>0, \\quad b>0\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

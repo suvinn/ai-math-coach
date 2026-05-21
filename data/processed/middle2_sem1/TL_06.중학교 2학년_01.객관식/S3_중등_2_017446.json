@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c1c4bec9-9874-4cae-b507-4ba67af25a84",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017446",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.68,
+                            8.21,
+                            482.56,
+                            40.47
+                        ]
+                    ],
+                    "text_description" : "$3 x(2 x+4)-6 x(3 x+5)$를 계산하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.68,
+                            61.49,
+                            212.73,
+                            92.18
+                        ]
+                    ],
+                    "text_description" : "① $-12 x^{2}-18 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.22,
+                            102.98,
+                            190.2,
+                            259.09
+                        ]
+                    ],
+                    "text_description" : "② $18 x^{2}+26 x$ ③ $12 x^{2}+24 x$ ④ $6 x^{2}+10 x$ ⑤ $6 x^{2}+14 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.96,
+                            288.73,
+                            865.53,
+                            445.8
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}3 x(2 x+4)=3 x \\times 2 x+3 x \\times 4=6 x^{2}+12 x \\\\ 6 x(3 x+5)=6 x \\times 3 x+6 x \\times 5=18 x^{2}+30 x \\\\ 6 x^{2}+12 x-\\left(18 x^{2}+30 x\\right)=6 x^{2}+12 x-18 x^{2}-30 x=-12 x^{2}-18 x\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

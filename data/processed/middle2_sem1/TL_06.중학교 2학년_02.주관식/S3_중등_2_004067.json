@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "087957f3-ca83-455a-bce8-783cbc23465f",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004067",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.64,
+                            11.37,
+                            290.79,
+                            36.03
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.59,
+                            49.64,
+                            349.46,
+                            82.8
+                        ]
+                    ],
+                    "text_description" : "$x^{2}-1+\\left\\{-2 x+1-\\left(x^{2}+4 x-5\\right)\\right\\}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.03,
+                            255.93,
+                            98.61,
+                            278.03
+                        ]
+                    ],
+                    "text_description" : "$-6 x+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            31.44,
+                            108.52,
+                            309.5,
+                            232.12
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}x^{2}-1+\\left\\{-2 x+1-\\left(x^{2}+4 x-5\\right)\\right\\} \\\\ =x^{2}-1+\\left(-2 x+1-x^{2}-4 x+5\\right) \\\\ =x^{2}-1+\\left(-x^{2}-6 x+6\\right) \\\\ =x^{2}-1-x^{2}-6 x+6 \\\\ =-6 x+5\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

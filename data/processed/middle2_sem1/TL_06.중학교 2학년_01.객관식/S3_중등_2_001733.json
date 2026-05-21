@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f9e2c239-57f9-43a9-bbb3-33e6155cb5a9",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001733",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            35,
+                            0.16,
+                            285,
+                            53.91
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같은 직선을 그래프로 하는 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            290.67,
+                            5.9,
+                            432.94,
+                            151.3
+                        ]
+                    ],
+                    "text_description" : "좌표평면이 있으며, x축과 y축이 표시되어 있다. y축에 3의 위치에 점이 있고, x축에 -1의 위치에 점이 있다. 직선이 두 점을 연결하며, O점은 원점으로 표시되어 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.75,
+                            115.13,
+                            179,
+                            158.38
+                        ]
+                    ],
+                    "text_description" : "② $y=-\\frac{4}{3} x+\\frac{5}{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            39.75,
+                            70.13,
+                            173.75,
+                            112.13
+                        ]
+                    ],
+                    "text_description" : "① $y=-\\frac{4}{3} x+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            39.25,
+                            160.88,
+                            175,
+                            276.38
+                        ]
+                    ],
+                    "text_description" : "③ $y=-\\frac{4}{3} x-1$ ④ $y=-\\frac{3}{2} x+2$ ⑤ $y=-2 x+3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            189,
+                            156.63,
+                            384,
+                            288.13
+                        ]
+                    ],
+                    "text_description" : "두 점 $(-1, 3), (2, -1)$을 지나므로 (기울기) $=\\frac{-1-3}{2-(-1)}=-\\frac{4}{3}$ $y=-\\frac{4}{3} x+b$로 놓고 $y=-\\frac{4}{3} x+b$에 점 $(-1, 3)$을 대입하면 $b=\\frac{5}{3}$ 따라서 구하는 식은 $y=-\\frac{4}{3} x+\\frac{5}{3}$ 이다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7f7ad9e5-2033-4d09-8b61-9980c375643d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016046",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.88,
+                            69.12,
+                            496.12,
+                            103.68
+                        ]
+                    ],
+                    "text_description" : "다음 부등식 $2(x-5)>3(x+1)$의 해는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.88,
+                            156.8,
+                            162.04,
+                            184.68
+                        ]
+                    ],
+                    "text_description" : "② $x<-13$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.52,
+                            115.2,
+                            162.04,
+                            142.08
+                        ]
+                    ],
+                    "text_description" : "① $x>-13$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.24,
+                            198.68,
+                            162.4,
+                            310.4
+                        ]
+                    ],
+                    "text_description" : "③ $x>13$ ④ $x<13$ ⑤ $x=-13$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8,
+                            328.96,
+                            228.6,
+                            526.08
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} 2 x-10>3 x+3 \\\\ 2 x-3 x>3+10 \\\\ -x>13 \\end{array} \\] 부호를 반전 \\[ x<-13 \\]"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,203 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "93921f06-a0ad-4be1-9693-1e10c346a84c",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016150",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.99,
+                            3.28,
+                            931.99,
+                            35.78
+                        ]
+                    ],
+                    "text_description" : "두 일차방정식 $3 x+2 y=9, k x-4 y=-12$의 그래프가 서로 평행할 때, 상수 $k$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.49,
+                            42.03,
+                            84.49,
+                            75.03
+                        ]
+                    ],
+                    "text_description" : "① -6"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.49,
+                            80.25,
+                            86.99,
+                            232.75
+                        ]
+                    ],
+                    "text_description" : "② -4 ③ 4 ④ 6 ⑤ 8"
+                }
+            ]
+        },
+        {
+            "class_num" : 6,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.74,
+                            246.5,
+                            483.24,
+                            276.5
+                        ]
+                    ],
+                    "text_description" : "두 직선이 평행하려면 기울기가 같아야 합니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.24,
+                            291.5,
+                            630.74,
+                            326.5
+                        ]
+                    ],
+                    "text_description" : "- 첫 번째 직선 $3 x+2 y=9$를 $y=m x+c$ 형태로 변환:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.04,
+                            371.2,
+                            473.6,
+                            411.52
+                        ]
+                    ],
+                    "text_description" : "따라서 첫 번째 직선의 기울기 $m_{1}=-\\frac{3}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22,
+                            422,
+                            662,
+                            457
+                        ]
+                    ],
+                    "text_description" : "- 두 번째 직선 $k x-4 y=-12$를 $y=m x+c$ 형태로 변환:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.04,
+                            497.64,
+                            455.76,
+                            535.6
+                        ]
+                    ],
+                    "text_description" : "따라서 두 번째 직선의 기울기 $m_{2}=\\frac{k}{4}$."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.6,
+                            548.48,
+                            363.52,
+                            581.76
+                        ]
+                    ],
+                    "text_description" : "두 직선의 기울기가 같아야 하므로:"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.74,
+                            329,
+                            442.49,
+                            369
+                        ]
+                    ],
+                    "text_description" : "$2 y=-3 x+9 \\Longrightarrow y=-\\frac{3}{2} x+\\frac{9}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54,
+                            458,
+                            414,
+                            497
+                        ]
+                    ],
+                    "text_description" : "$4 y=k x+12 \\Longrightarrow y=\\frac{k}{4} x+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8,
+                            585,
+                            112,
+                            661
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}-\\frac{3}{2}=\\frac{k}{4} \\\\ k=-6\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

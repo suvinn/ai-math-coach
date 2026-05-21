@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c3118b4b-6387-4e61-895b-ee5025e2e15c",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018357",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.14,
+                            7.6,
+                            567.91,
+                            41.14
+                        ]
+                    ],
+                    "text_description" : "$a<-2$ 일 때, $6 a-1$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.989999999999995,
+                            63.26,
+                            228.94,
+                            92.52
+                        ]
+                    ],
+                    "text_description" : "$6 a-1<-13$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.42,
+                            106.08,
+                            227.51,
+                            258.08
+                        ]
+                    ],
+                    "text_description" : "② $6 a-1 \\geq-13$ ③ $6 a-1 \\leq-13$ ④ $6 a-1<-11$ ⑤ $6 a-1 \\geq-11$"
+                }
+            ]
+        },
+        {
+            "class_num" : "3",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            85.51,
+                            287.79,
+                            184.7,
+                            314.19
+                        ]
+                    ],
+                    "text_description" : "$a<-2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12,
+                            346.3,
+                            256.77,
+                            374.14
+                        ]
+                    ],
+                    "text_description" : "$6 a-1<6(-2)-1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.68,
+                            407.68,
+                            221.81,
+                            436.22
+                        ]
+                    ],
+                    "text_description" : "$6 a-1<-13$"
+                }
+            ]
+        }
+    ]
+}

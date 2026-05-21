@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4b4ee051-8eab-446d-a9a5-4e002f194635",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003882",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            81.4,
+                            15.64,
+                            415.8,
+                            49.84
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.2,
+                            68.64,
+                            387.8,
+                            106.84
+                        ]
+                    ],
+                    "text_description" : "$(3 a-2 b+1)-2(a-b-2)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.6,
+                            116.9,
+                            145.8,
+                            154.1
+                        ]
+                    ],
+                    "text_description" : "① $a+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            266.8,
+                            117.3,
+                            429.6,
+                            200.1
+                        ]
+                    ],
+                    "text_description" : "② $a+3$ ⑤ $a-b+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            508.6,
+                            118.7,
+                            669.2,
+                            152.5
+                        ]
+                    ],
+                    "text_description" : "③ $a+b-1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.6,
+                            166.5,
+                            155,
+                            199.7
+                        ]
+                    ],
+                    "text_description" : "④ $a-2 b$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.6,
+                            239.7,
+                            474.2,
+                            346.1
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} & (3 a-2 b+1)-2(a-b-2) \\\\ = & 3 a-2 b+1-2 a+2 b+4 \\\\ = & a+5\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f11955ac-eebd-4f47-94e2-3cff88e1ed28",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018917",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.49,
+                            7.29,
+                            1306.74,
+                            58.54
+                        ]
+                    ],
+                    "text_description" : "학교에서 3km 떨어진 집을 거쳐 다시 3km 떨어진 학원까지 가는데 학교에서 집까지는 일정한 속도로 걸어서 1시간, 집에서 학원까지는 일정 한 속도로 뛰어서 30분이 걸렸다. 학교에서 집을 거쳐 학원까지 가는데 시 간을 $x$ 시간이라하고, 이동한 거리를 $y \\mathrm{~km}$ 라 할 때, 학교를 출발하여 30분 동안 이동한 거리를 $a \\mathrm{~km}, 1$ 시간 15분 동안 이동한 거리를 $b \\mathrm{~km}$ 라 하면 $a+b$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.24,
+                            180.26,
+                            85.24,
+                            198.01
+                        ]
+                    ],
+                    "text_description" : "④ 6"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.24,
+                            65.25999999999999,
+                            93.74,
+                            171.26
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{3}{2}$ ② $4$ ③ $\\frac{9}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.12,
+                            207.14,
+                            102.89,
+                            241.79
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\frac{13}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.99,
+                            295.51,
+                            630.49,
+                            809.76
+                        ]
+                    ],
+                    "text_description" : "i) 학교에서 집까지의 거리가 3km이고, 걸어서 1시간이 걸리므로 (속 력) $=\\frac{\\text { (거리) }}{\\text { (시간 })}=\\frac{3}{1}=3$ $\\therefore y=3 x(0 \\leq x \\leq 1)$ 따라서 30분 동안 이동한 거리는 $y=3 \\times \\frac{30}{60}=\\frac{3}{2}(\\mathrm{~km})$에서 $a=\\frac{3}{2}$ ii) 집에서 학원까지의 거리가 3km이고 뛰어서 30분, 즉 $\\frac{1}{2}$ 시간이 걸리므로 (속 력 $)=\\frac{\\text { [거리 }]}{\\text { (시간 }]}=\\frac{3}{\\frac{1}{2}}=6$ $\\therefore y=3+6(x-1)\\left(1 \\leq x \\leq \\frac{3}{2}\\right)$ 따라서 1시간 15분 동안 이동한 거리는 $y=3+6\\left(1 \\frac{15}{60}-1\\right)=3+6 \\times \\frac{1}{4}=3+\\frac{3}{2}=\\frac{9}{2}(\\mathrm{~km})$에서 $b=\\frac{9}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.5,
+                            826,
+                            135.5,
+                            856
+                        ]
+                    ],
+                    "text_description" : "i), ii)에서"
+                }
+            ]
+        }
+    ]
+}

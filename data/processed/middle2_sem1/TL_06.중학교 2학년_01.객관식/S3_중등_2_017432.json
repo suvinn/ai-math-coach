@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c0ef958e-05fc-4765-9b16-6edfda81f506",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017432",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.96,
+                            10.45,
+                            248.06,
+                            83.71
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오. \\[ \\left(5 a^{2} b\\right)^{3} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.96,
+                            103.19,
+                            135.42,
+                            135.42
+                        ]
+                    ],
+                    "text_description" : "① $125 a^{6} b^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.98,
+                            144.17,
+                            135.42,
+                            302.85
+                        ]
+                    ],
+                    "text_description" : "② $125 a^{7} b^{3}$ ③ $25 a^{6} b^{3}$ ④ $125 a^{6} b^{2}$ ⑤ $25 a^{6} b^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.78,
+                            338.53,
+                            462.08,
+                            373.84
+                        ]
+                    ],
+                    "text_description" : "$\\left(5 a^{2} b\\right)^{3}=5^{3} \\times\\left(a^{2}\\right)^{3} \\times b^{3}=125 a^{6} b^{3}$"
+                }
+            ]
+        }
+    ]
+}

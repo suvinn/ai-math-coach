@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7e2bb8ac-f219-4c4b-ad0c-4cbfa190c7a3",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001525",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.58,
+                            15.69,
+                            286.06,
+                            42.57
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            74.86,
+                            277.18,
+                            101.1,
+                            289.98
+                        ]
+                    ],
+                    "text_description" : "$-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.3,
+                            128.7,
+                            295.66,
+                            274.62
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}-\\left\\{7 x-\\left(12 x^{3}-8 x^{2}\\right) \\div(-2 x)^{2}\\right\\}+4 x \\\\ =-\\left\\{7 x-\\left(12 x^{3}-8 x^{2}\\right) \\div\\left(4 x^{2}\\right)\\right\\}+4 x \\\\ =-\\left(7 x-\\frac{12 x^{3}-8 x^{2}}{4 x^{2}}\\right)+4 x \\\\ =-(7 x-3 x+2)+4 x \\\\ =-(4 x+2)+4 x \\\\ =-4 x-2+4 x=-2\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            102.0,
+                            78.0,
+                            486.0,
+                            109.0
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}-\\left\\{7 x-\\left(12 x^{3}-8 x^{2}\\right) \\div(-2 x)^{2}\\right\\}+4 x\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "58d98cc2-0813-4d58-accb-f19d6969f503",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018825",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.61,
+                            12.32,
+                            970.98,
+                            36.73
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-2 x$의 그래프를 $y$축의 방향으로 $m$만큼 평행이동하면 점 $(-2, 5), (3, n)$을 지난다고 할 때, $m+n$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.67,
+                            79.44,
+                            108.43,
+                            98.78
+                        ]
+                    ],
+                    "text_description" : "② $-4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.67,
+                            47.92,
+                            106.4,
+                            67.25
+                        ]
+                    ],
+                    "text_description" : "① $-5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.99000000000001,
+                            112.66,
+                            106.99,
+                            192.98
+                        ]
+                    ],
+                    "text_description" : "③ $-3$ ④ $-2$ ⑤ $-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.22,
+                            261.46,
+                            672.14,
+                            376.01
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-2 x$의 그래프를 $y$축의 방향으로 $m$만큼 평행이동한 그래프는 일차함수 $y=-2 x+m$의 그래프와 같으므로이 관계식에 $x=-2, \\quad y=5$를 대입하면 $5=-2 \\times(-2)+m \\quad \\therefore \\quad m=1$ 이제 $y=-2 x+1$에 $x=3, \\quad y=n$을 대입하면"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.22,
+                            384.9,
+                            365.36,
+                            441.11
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}n=(-2) \\times 3+1 \\quad \\therefore \\quad n=-5 \\\\ \\therefore \\quad m+n=1+(-5)=-4\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

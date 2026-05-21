@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b45ea2d6-83e5-4c17-96cf-192bb311da4f",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004121",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.51,
+                            6.15,
+                            561.76,
+                            171.15
+                        ]
+                    ],
+                    "text_description" : "300L의 물이 들어 있는 물통에 물을 넣기 시작한 지 10분 후에 물의 양이 400L가 되었다. 오른쪽 그래프는 물을 일정한 비율로 넣기 시작한 지 $x$ 분 후에 물의 양을 $y \\mathrm{~L}$라고 핱 때, $x, y$ 사이의 관계를 그래프로 나타낸 것이다. 다음을 알 아보시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.76,
+                            463.13,
+                            564.26,
+                            520.63
+                        ]
+                    ],
+                    "text_description" : "① 주어진 그래프가 점 $(a, 400)$을 지날 때, $a$의 값을 구하시 오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.01,
+                            180.63,
+                            185.51,
+                            460.63
+                        ]
+                    ],
+                    "text_description" : "$y$축은 $L$, $x$는 분으로 표시되어 있는 그래프로 최초 $300L$에서 $20$분 동안 $500L$까지 상승하고 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            29.26,
+                            594.88,
+                            62.76,
+                            615.63
+                        ]
+                    ],
+                    "text_description" : "$10$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.76,
+                            529.38,
+                            459.26,
+                            594.38
+                        ]
+                    ],
+                    "text_description" : "① 10분 후에 물의 양이 400L이므로 그래프는 점 $(10, 400)$을 지난다. $a=10$"
+                }
+            ]
+        }
+    ]
+}

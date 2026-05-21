@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "aca64516-f16f-4e6e-956b-cfcbee5bb446",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015315",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.7,
+                            62.400000000000006,
+                            817.9,
+                            94.4
+                        ]
+                    ],
+                    "text_description" : "어떤 식에서 $6 x y$로 나누었더니 $9 x^{3} y^{2}$가 되었습니다. 바르게 계산한 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.5,
+                            132.8,
+                            132.7,
+                            170.4
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{27}{2} x^{5} y^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.5,
+                            176.6,
+                            119.5,
+                            334.8
+                        ]
+                    ],
+                    "text_description" : "② $9 x^{3} y^{2}$ ③ $3 x^{3} y^{2}$ ④ $\\frac{3}{2} x^{2} y$ ⑤ $6 x^{2} y^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.9,
+                            553.4,
+                            257.3,
+                            584.8
+                        ]
+                    ],
+                    "text_description" : "양변에 $6 x y$를 곱하면:"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            446.9,
+                            477.8,
+                            658.5,
+                            512.4
+                        ]
+                    ],
+                    "text_description" : "$A \\div 6 x y=9 x^{3} y^{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            389.1,
+                            609.6,
+                            715.9,
+                            672
+                        ]
+                    ],
+                    "text_description" : "$A=9 x^{3} y^{2} \\cdot 6 x y=\\frac{27}{2} x^{5} y^{3}$"
+                }
+            ]
+        }
+    ]
+}

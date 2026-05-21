@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f4e065d8-94be-4521-a5e8-5727e7bca2db",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001576",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.42,
+                            8.19,
+                            415.62,
+                            34.43
+                        ]
+                    ],
+                    "text_description" : "다음 보기 중 미지수가 2개인 일차방정식의 개수는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.86,
+                            65.79,
+                            543.62,
+                            170.11
+                        ]
+                    ],
+                    "text_description" : "ㄱ. $2 x-6 y+3$ ㄴ. $2 x=8$ ㄷ. $x-2 y=7$ ㄹ. $x^{2}+3 x+2 y=x^{2}-4$ ㅁ. $2 x y-x+3=0$ ㅂ. $y=\\frac{3}{x}+2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            245.77,
+                            196.28,
+                            286.77,
+                            224.28
+                        ]
+                    ],
+                    "text_description" : "② 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.34,
+                            196.72,
+                            80.26,
+                            222.96
+                        ]
+                    ],
+                    "text_description" : "① 1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            450.18,
+                            196.08,
+                            486.02,
+                            221.04
+                        ]
+                    ],
+                    "text_description" : "③ 3"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.62,
+                            226.8,
+                            285.06,
+                            248.84
+                        ]
+                    ],
+                    "text_description" : "④ 4 ⑤ 5"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.7,
+                            256.24,
+                            330.5,
+                            324.72
+                        ]
+                    ],
+                    "text_description" : "ㄱ. 일차식 ㄴ. 미지수가 1개인 일차방정식 ㄹ. $3 x+2 y+4=0$ ㅁ. $2 x y$는 차수가 2이다. ㅂ. 분모에 미지수가 있으므로 일차방정식이 아니다. 따라서 미지수가 2개인 일차방정식의 개수는 ㄷ, ㄹ의 2이다."
+                }
+            ]
+        }
+    ]
+}

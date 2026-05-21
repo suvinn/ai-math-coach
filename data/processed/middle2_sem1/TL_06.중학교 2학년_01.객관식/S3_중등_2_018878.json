@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "76a440a3-b8c5-42d1-aa2f-c3612706b432",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018878",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.12,
+                            14.76,
+                            588.33,
+                            37.66
+                        ]
+                    ],
+                    "text_description" : "기울기가 $3$이고, $y$ 절편이 $-5$인 직선을 그래프로 하는 일차 함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.39,
+                            111.62,
+                            168.8,
+                            132.56
+                        ]
+                    ],
+                    "text_description" : "③ $y=3 x-5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.04,
+                            49.17,
+                            184.5,
+                            102.84
+                        ]
+                    ],
+                    "text_description" : "① $y=-3x+5$ ② $y=-5x+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.04,
+                            142.76,
+                            169.45,
+                            197.74
+                        ]
+                    ],
+                    "text_description" : "④ $y=3x+5$ ⑤ $y=5x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.46,
+                            261.88,
+                            696.97,
+                            283.48
+                        ]
+                    ],
+                    "text_description" : "기울기가 $3$ 이고 $y$ 절편이 $-5$ 인 직선을 그래프로 하는 일차함수의 식은 $y=3x-5$ 이다."
+                }
+            ]
+        }
+    ]
+}

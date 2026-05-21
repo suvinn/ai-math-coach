@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "65c5479d-6c47-4f0c-b5c8-3ab1d83be2a9",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018354",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.77,
+                            4.23,
+                            545.77,
+                            33.23
+                        ]
+                    ],
+                    "text_description" : "$x>2$일 때, $3 x+4$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.77,
+                            58.77,
+                            204.77,
+                            88.77
+                        ]
+                    ],
+                    "text_description" : "① $3 x+4>10$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1.77,
+                            477.77,
+                            185.77,
+                            507.77
+                        ]
+                    ],
+                    "text_description" : "① $3 x+4>10$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.77,
+                            100.77,
+                            204.77,
+                            256.77
+                        ]
+                    ],
+                    "text_description" : "② $3 x+4>11$ ③ $3 x+4 \\geq 10$ ④ $3 x+4 \\leq 10$ ⑤ $3 x+4 \\geq 11$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.77,
+                            296.77,
+                            243.77,
+                            445.77
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}x>2 \\\\ 3 x+4>3(2)+4 \\\\ 3 x+4>10\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "61acf636-78ae-4ac4-bba0-5edef90591b5",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016108",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.49,
+                            63.65,
+                            554.49,
+                            108.65
+                        ]
+                    ],
+                    "text_description" : "일차함수 $f(x)=4 x+3$에서 $f(3)-f(0)$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.99,
+                            294.9,
+                            65.74,
+                            324.9
+                        ]
+                    ],
+                    "text_description" : "④ 12"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.49,
+                            124.37,
+                            65.74,
+                            269.37
+                        ]
+                    ],
+                    "text_description" : "① 9 ② 10 ③ 11"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.49,
+                            351.87,
+                            64.49,
+                            379.37
+                        ]
+                    ],
+                    "text_description" : "⑤ 13"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.99,
+                            395.62,
+                            506.99,
+                            584.37
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(3)=4(3)+3=12+3=15 \\\\ f(0)=4(0)+3=0+3=3 \\\\ f(3)-f(0)=15-3=12\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c07152f1-c027-42e0-beef-fe658bd14576",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003924",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.4,
+                            11.44,
+                            531.4,
+                            122.64
+                        ]
+                    ],
+                    "text_description" : "두 일차방정식 $x=-1, y=2$의 그래프와 $x$ 축, $y$ 축으로 둘러싸인 사각형의 넓이를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.6,
+                            347.9,
+                            57.8,
+                            371.1
+                        ]
+                    ],
+                    "text_description" : "$2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.2,
+                            160.7,
+                            227.4,
+                            300.7
+                        ]
+                    ],
+                    "text_description" : "두 일차방정식 $x=-1$, $y=2$의 그래프와 $x$ 축, $y$ 축으로 둘러싸인 사각형은 다음과 같다. 따라서 넓이는 2이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            231.6,
+                            168.24,
+                            386.6,
+                            338.04
+                        ]
+                    ],
+                    "text_description" : "두 일차방정식 $x=-1$, $y=2$의 그래프와 $x$ 축, $y$ 축으로 둘러싸인 색칠된 사각형이 있다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d759e0d8-b1f5-4cce-9204-d69e1127d04d",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018919",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.31,
+                            13.09,
+                            1632.49,
+                            39.65
+                        ]
+                    ],
+                    "text_description" : "A지점을 출발하여 분속 300m의 속력으로 12km 떨어진 B지점까지 자전거를 타고 가는 사람이 있다. 출발하여 $x$ 분 후의이 사람의 위치를 $\\mathrm{P}, \\mathrm{P}$ 로부터 B까지의 거리를 $y \\mathrm{~km}$ 라 할 때, $x, y$ 사이의 관계식을 구하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69,
+                            172.99,
+                            220,
+                            197.99
+                        ]
+                    ],
+                    "text_description" : "⑤ $y=-0. 3 x+12$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70,
+                            46.99,
+                            223,
+                            165.99
+                        ]
+                    ],
+                    "text_description" : "① $y=300 x+12$ ② $y=-300 x+12$ ③ $y=3 x+12$ ④ $y=0. 3 x-12$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60,
+                            259.99,
+                            418,
+                            344.99
+                        ]
+                    ],
+                    "text_description" : "$x$ 분 동안 움직이는 거리는 $(0. 3 \\times x) \\mathrm{km}$ 이므로 P에서 B까지의 거리를 구하는 식은 \\[ y=12-0. 3 x=-0. 3 x+12 \\]"
+                }
+            ]
+        }
+    ]
+}

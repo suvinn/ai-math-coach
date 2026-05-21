@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ce52094e-a5dc-4c3c-9b4a-b3b3527b8ea9",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004122",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.57,
+                            7.62,
+                            565.82,
+                            168.55
+                        ]
+                    ],
+                    "text_description" : "300L의 물이 들어 있는 물통에 물을 넣기 시작한 지 10분 후에 물의 양이 400L가 되었다. 오큰쪽 그래프는 물을 일 정한 비율로 넣기 시작한 지 $x$ 분 후에 물의 양을 $y \\mathrm{~L}$라고 핱 때, $x, y$ 사이의 관계를 그래프로 나타낸 것이다. 다음을 알 아보시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            36.13,
+                            458.52,
+                            273.63,
+                            488.21
+                        ]
+                    ],
+                    "text_description" : "직선의 기울기를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -1.37,
+                            180.4,
+                            187.7,
+                            453.83
+                        ]
+                    ],
+                    "text_description" : "그래프에 수직축은 \\(y(L)\\)를 나타내며, 수평축은 \\(x(분)\\)을 나타낸다. 수직축의 값은 0에서 500까지, 수평축의 값은 0에서 20까지의 범위로 표시되어 있으며 300$L$에서 상승하고 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            29.88,
+                            571.02,
+                            65.82,
+                            599.15
+                        ]
+                    ],
+                    "text_description" : "$10$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.32,
+                            489.77,
+                            483.01,
+                            569.46
+                        ]
+                    ],
+                    "text_description" : "그래프가 점 $(0, 300)$과 $(10, 400)$을 지나므로 기울기는 $\\frac{400-300}{10-0}=10$"
+                }
+            ]
+        }
+    ]
+}

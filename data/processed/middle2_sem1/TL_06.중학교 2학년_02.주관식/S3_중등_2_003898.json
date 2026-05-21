@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ae243817-d48a-40b2-82ca-398c467671eb",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003898",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.4,
+                            17.75,
+                            603.52,
+                            91.19
+                        ]
+                    ],
+                    "text_description" : "$x<3$ 일 때, 다음 식의 값의 범위를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.32,
+                            119.16,
+                            130.36,
+                            146.04
+                        ]
+                    ],
+                    "text_description" : "$2 x+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.480000000000004,
+                            264.68,
+                            147.12,
+                            281.76
+                        ]
+                    ],
+                    "text_description" : "$2 x+5<11$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.56,
+                            179.04,
+                            525.44,
+                            238.4
+                        ]
+                    ],
+                    "text_description" : "② $x<3$의 양변에 2를 곱하면 $2 x<6, 2 x<6$의 양변에 5를 더하면 $2 x+5<11$"
+                }
+            ]
+        }
+    ]
+}

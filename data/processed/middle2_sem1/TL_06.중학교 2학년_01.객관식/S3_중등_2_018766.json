@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "468cfb0d-8593-485e-854a-3e3e95a5c853",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018766",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.43,
+                            9.36,
+                            1151.13,
+                            36.4
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프를 그리는데 기울기와 $y$ 절편의 값을 바꾸어 그렸더니 다음 그림과 같았다. 일차함수 $y=a x+b$의 그래프로 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.91,
+                            42.41,
+                            253.31,
+                            252.16
+                        ]
+                    ],
+                    "text_description" : "직선이 그래프에 표시되어 있으며, $x$축은 좌우로, $y$축은 위아래로 길게 뻗어 있다. 직선은 $y=3$에서 시작하여 아래로 내려가고, $x=1$에서 $y$축과 교차한다. $x$축은 $0$과 $2$ 사이의 점들을 포함하고, $y$축은 $-1$부터 $y$0까지의 값을 가진다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.92,
+                            692.55,
+                            238.13,
+                            902.6
+                        ]
+                    ],
+                    "text_description" : "③"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.76,
+                            1390.76,
+                            1586.64,
+                            1443.93
+                        ]
+                    ],
+                    "text_description" : "주어진 그래프는 기울기가 $-3$, $y$ 절편은 $2$ 이다. 따라서, $y=-3x+2$의 그래프를 그린 것이다. 이때, 기울기와 $y$ 절편을 바꾸어 쓰면 $y=2x-3$이 되므로 구하는 그래프는 일차함수 $y=2x-3$의 그래프이다. 따라서 정답은 ③ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.76,
+                            914.04,
+                            255.49,
+                            1328.95
+                        ]
+                    ],
+                    "text_description" : "④ ⑤"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.96,
+                            259.01,
+                            261.01,
+                            682.15
+                        ]
+                    ],
+                    "text_description" : "① ②"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "af496135-6543-4366-b6dd-1de3ef441799",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015319",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.62,
+                            62.29,
+                            696.37,
+                            159.79
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오. \\[ (4 x-5 y)-(3 x+2 y) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.87,
+                            240.51,
+                            140.12,
+                            271.76
+                        ]
+                    ],
+                    "text_description" : "② $x-7 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.62,
+                            197.76,
+                            141.37,
+                            230.51
+                        ]
+                    ],
+                    "text_description" : "① $x-3 y$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.62,
+                            281.76,
+                            163.87,
+                            399.26
+                        ]
+                    ],
+                    "text_description" : "③ $-x-7 y$ ④ $x+7 y$ ⑤ $-x+3 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.87,
+                            515.51,
+                            385.12,
+                            544.26
+                        ]
+                    ],
+                    "text_description" : "괄호를 풀고 동류항을 정리합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.62,
+                            574.26,
+                            1052.62,
+                            609.26
+                        ]
+                    ],
+                    "text_description" : "$(4 x-5 y)-(3 x+2 y)=4 x-5 y-3 x-2 y=(4 x-3 x)+(-5 y-2 y)=x-7 y$"
+                }
+            ]
+        }
+    ]
+}

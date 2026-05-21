@@ -1,0 +1,179 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "817e33b8-fe7b-4e92-882d-03a0d94ed9b9",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018249",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7,
+                            5.92,
+                            1070,
+                            76.92
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=4 x-5$의 그래프의 y 절편과 일차함수 $y=-x+b$의 $x$ 절편이 서로 같을 때, $b$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9,
+                            148.92,
+                            67,
+                            176.92
+                        ]
+                    ],
+                    "text_description" : "② -5"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10,
+                            106.5,
+                            58,
+                            135.5
+                        ]
+                    ],
+                    "text_description" : "① 5"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8,
+                            190.5,
+                            69,
+                            305.5
+                        ]
+                    ],
+                    "text_description" : "③ 4 ④ -4 ⑤ 0"
+                }
+            ]
+        },
+        {
+            "class_num" : 4,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18,
+                            319.5,
+                            697,
+                            394.5
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=4 x-5$의 y 절편은 $x=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17,
+                            447.5,
+                            299,
+                            482.5
+                        ]
+                    ],
+                    "text_description" : "따라서, $y$ 절편은 -5입니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18,
+                            500.5,
+                            697,
+                            574.5
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-x+b$의 x절편은 $y=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            669.5,
+                            337,
+                            754.5
+                        ]
+                    ],
+                    "text_description" : "따라서, $x$ 절편은 $b$ 입니다. 두 절편이 같으므로, $b=-5$."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            405.5,
+                            258,
+                            443.5
+                        ]
+                    ],
+                    "text_description" : "$y=4(0)-5=-5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14,
+                            585.5,
+                            169,
+                            658.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}0=-x+b, \\\\ x=b. \\end{array}$"
+                }
+            ]
+        }
+    ]
+}

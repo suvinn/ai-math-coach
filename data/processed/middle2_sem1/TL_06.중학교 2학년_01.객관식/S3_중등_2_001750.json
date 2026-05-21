@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "693b9a04-380c-4c52-a246-dc27a93776e0",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001750",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.7,
+                            3.95,
+                            339.47,
+                            192.3
+                        ]
+                    ],
+                    "text_description" : "연립방정식 $\\left\\{\\begin{array}{l}y=x-2 \\\\ x+2 y=5\\end{array}\\right. $의 해를 구하기 위하여 각 방정식의 그래 프를 그렸더니 오른쪽 그림과 같이 한 점 P에서 만났다. 이때 점 P의 좌표는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            347.15,
+                            14.12,
+                            535.56,
+                            194.35
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 두 개의 직선이 그려진 그래프입니다. 하나의 직선은 \\(y=x - 2 \\)의 방정식을 따르며, 다른 직선은 \\(x + 2y = 5 \\)의 방정식을 따릅니다. 이 두 직선은 점 P에서 교차합니다. 좌표축에는 x와 y 값의 눈금이 표시되어 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            208.39,
+                            225.07,
+                            295.95,
+                            254.76
+                        ]
+                    ],
+                    "text_description" : "② $(3, 1)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.21,
+                            226.6,
+                            145.42,
+                            297.77
+                        ]
+                    ],
+                    "text_description" : "① $(2, 1)$ ④ $(4, 2)$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            364.04,
+                            212.62,
+                            464.91,
+                            265.35
+                        ]
+                    ],
+                    "text_description" : "③ $\\left(3, \\frac{3}{2}\\right)$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            205.83,
+                            269.96,
+                            299.02,
+                            296.59
+                        ]
+                    ],
+                    "text_description" : "⑤ $(5, 3)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.65,
+                            303.75,
+                            470.54,
+                            386.7
+                        ]
+                    ],
+                    "text_description" : "두 그래프의 교점의 좌표는 연립방정식의 해와 같으므로 따라서 연립방정식의 해가 $x=3, y=1$ 이므로 점 P의 좌표는 $(3, 1)$ 이다."
+                }
+            ]
+        }
+    ]
+}

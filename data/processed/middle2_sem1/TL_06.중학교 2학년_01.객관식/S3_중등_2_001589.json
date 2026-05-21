@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "99d48453-f129-4cdd-a630-ab5bc1b03f56",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001589",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.5,
+                            12.92,
+                            384.5,
+                            40.92
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식 중 해가 없는 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.5,
+                            260.5,
+                            255.5,
+                            289.5
+                        ]
+                    ],
+                    "text_description" : "② $\\frac{1}{4}=\\frac{3}{12} \\neq \\frac{2}{6}$ 이므로 해가 없다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.5,
+                            63.5,
+                            218.5,
+                            259.5
+                        ]
+                    ],
+                    "text_description" : "① $\\left\\{\\begin{array}{l}x+y=3 \\\\ x-y=6\\end{array}\\right. $ ③ $\\left\\{\\begin{array}{l}2 x+y=2 \\\\ 4 x-2 y=2\\end{array}\\right. $ ⑤ $\\left\\{\\begin{array}{l}x-3 y=0 \\\\ 2 x-6 y=0\\end{array}\\right. $"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            285.5,
+                            132.5,
+                            452.5,
+                            191.5
+                        ]
+                    ],
+                    "text_description" : "④ $\\left\\{\\begin{array}{l}-x-y=1 \\\\ x+y=-1\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            321.5,
+                            60.92,
+                            463.5,
+                            123.92
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}x+3 y=2 \\\\ 4 x+12 y=6\\end{array}\\right. $"
+                }
+            ]
+        }
+    ]
+}

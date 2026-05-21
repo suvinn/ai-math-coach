@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "563ee503-1ba6-4e1d-a4fb-71c84957f003",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001378",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.72,
+                            36.09,
+                            442.24,
+                            61.05
+                        ]
+                    ],
+                    "text_description" : "다음 분수 중 순환소수로 나타낼 수 있는 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            525.44,
+                            86.73,
+                            593.92,
+                            133.37
+                        ]
+                    ],
+                    "text_description" : "③ $\\frac{9}{140}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.44,
+                            87.29,
+                            389.12,
+                            184.57
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{3}{40}$ ② $\\frac{13}{32}$ ④ $\\frac{21}{2 \\times 5^{2} \\times 7}$ ⑤ $\\frac{33}{5^{2} \\times 11}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.8,
+                            196.17,
+                            693.76,
+                            212.37
+                        ]
+                    ],
+                    "text_description" : "기약분수로 나타낸 후 분모를 소인수분해하였을 때, 분모에 2나 5이외의 소인수가 있으면 순환소수로 나타낼 수 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.44,
+                            217.85,
+                            533.12,
+                            249.85
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{3}{40}=\\frac{3}{2^{3} \\times 5}$ ② $\\frac{13}{32}=\\frac{13}{2^{5}}$ ③ $\\frac{9}{140}=\\frac{9}{2^{2} \\times 5 \\times 7}$ ④ $\\frac{3}{2 \\times 5^{2}}$ ⑤ $\\frac{3}{5^{2}}$"
+                }
+            ]
+        }
+    ]
+}

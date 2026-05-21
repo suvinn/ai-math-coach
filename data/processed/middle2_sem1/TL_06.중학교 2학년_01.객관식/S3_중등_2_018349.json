@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f9ba86c7-8222-4efe-8810-4fdce0790ae9",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018349",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19,
+                            8.92,
+                            544,
+                            44.92
+                        ]
+                    ],
+                    "text_description" : "$y \\geq 5$ 일 때, $2 y-3$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22,
+                            64.92,
+                            191,
+                            98.92
+                        ]
+                    ],
+                    "text_description" : "① $2 y-3 \\geq 7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20,
+                            105.5,
+                            191,
+                            266.5
+                        ]
+                    ],
+                    "text_description" : "② $2 y-3 \\geq 5$ ③ $2 y-3<7$ ④ $2 y-3 \\leq 7$ ⑤ $2 y-3 \\geq 9$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19,
+                            293.5,
+                            243,
+                            449.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}y \\geq 5 \\\\ 2 y-3 \\geq 2(5)-3 \\\\ 2 y-3 \\geq 7\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

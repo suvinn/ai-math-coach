@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b1e4140f-34a4-4b7c-ba80-6ee915774402",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018932",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.09,
+                            12.43,
+                            684.09,
+                            43.18
+                        ]
+                    ],
+                    "text_description" : "다음 그림의 사다리꼴의 넓이를 $y \\mathrm{~cm}^{2}$라고 할 때, $y$를 $x$에 대한 식으로 나타내면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.34,
+                            52.1,
+                            290.34,
+                            241.35
+                        ]
+                    ],
+                    "text_description" : "사다리꼴이 있습니다. 윗변은 4cm, 밑변은 $xcm$ 높이는 5cm로 표기되어 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.09,
+                            251.85,
+                            196.59,
+                            295.1
+                        ]
+                    ],
+                    "text_description" : "① $y=\\frac{5}{2} x+10$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.17,
+                            304,
+                            184.17,
+                            424
+                        ]
+                    ],
+                    "text_description" : "② $y=5 x+20$ ③ $y=4 x+10$ ④ $y=5 x+10$ ⑤ $y=20 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.77,
+                            491.55,
+                            535.37,
+                            652.95
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}y=\\{(\\text { 윗변의 길이 }+ \\text { 아랫변의 길이 })\\} \\times(\\text { 높이 }) \\times \\frac{1}{2} \\\\ =(4+x) \\times 5 \\times \\frac{1}{2} \\\\ \\therefore \\quad y=\\frac{5}{2} x+10\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

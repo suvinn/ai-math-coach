@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b8e6f5a0-c996-4b72-a208-8dbc33321e39",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018378",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.37,
+                            5.02,
+                            572.62,
+                            41.27
+                        ]
+                    ],
+                    "text_description" : "$x>-2$ 일 때, $2 x+3$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.87,
+                            60.02,
+                            218.87,
+                            93.77
+                        ]
+                    ],
+                    "text_description" : "① $2 x+3>-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.87,
+                            98.5,
+                            218.87,
+                            263.5
+                        ]
+                    ],
+                    "text_description" : "② $2 x+3 \\leq 1$ ③ $2 x+3 \\geq 1$ ④ $2 x+3<1$ ⑤ $2 x+3 \\leq-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.869999999999997,
+                            281.75,
+                            273.87,
+                            437.25
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}x>-2 \\\\ 2 x+3>2(-2)+3 \\\\ 2 x+3>-1\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

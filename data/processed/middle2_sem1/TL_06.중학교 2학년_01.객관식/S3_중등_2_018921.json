@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7e7161f1-74bf-41a9-bc36-6712cbc2a7d9",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018921",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.25,
+                            17.27,
+                            1243.75,
+                            41.52
+                        ]
+                    ],
+                    "text_description" : "분속 500m로 자전거를 타고 10km 떨어진 목적지를 향하여 달릴 때, $x$ 분 동안 달린 후에 남은 거리를 $y \\mathrm{~km}$ 라 하자. 이때, $x$와 $y$ 사이의 관계식으로 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.25,
+                            81,
+                            205,
+                            108.5
+                        ]
+                    ],
+                    "text_description" : "② $y=10-0.5 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.17,
+                            50.38,
+                            205.62,
+                            75.78
+                        ]
+                    ],
+                    "text_description" : "① $y=10-500 x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.54,
+                            113.87,
+                            207.26,
+                            201.11
+                        ]
+                    ],
+                    "text_description" : "③ $y=10+500 x$ ④ $y=0. 5 x-10$ ⑤ $y=5 x-10$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.44,
+                            262.96,
+                            355.94,
+                            405.09
+                        ]
+                    ],
+                    "text_description" : "500m=0. 5km 분속 500m로 달리면 $x$ 분 동안에 $0. 5 x \\mathrm{~km}$를 달릴 수 있다. 따라서 남은 거리는 (10-0. 5x) km이다. \\[ \\therefore \\quad y=10-0. 5 x \\]"
+                }
+            ]
+        }
+    ]
+}

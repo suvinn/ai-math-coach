@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f98f7c93-8a53-4045-9744-967b3307c419",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001717",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55.68,
+                            26.54,
+                            305.2,
+                            153.1
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그래프는 일차함수 \\[ y=-\\frac{4}{5} x+4 \\text { 의 그래프이다. } \\] 다음 중 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            357.84,
+                            26.97,
+                            530.56,
+                            196.97
+                        ]
+                    ],
+                    "text_description" : "$x$ 절편이 $5$, $y$ 절편이 $4$인 일차함수 그래프이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.76,
+                            308.13,
+                            269.16,
+                            335.65
+                        ]
+                    ],
+                    "text_description" : "⑤ 점 $(5, 4)$를 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.42,
+                            171.88,
+                            226.94,
+                            232.76
+                        ]
+                    ],
+                    "text_description" : "① $x$ 절편은 5 이다. ② $y$ 절편은 4 이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.95,
+                            238.93,
+                            437.37,
+                            304.46
+                        ]
+                    ],
+                    "text_description" : "③ $x$ 축과 만나는 점의 좌표는 $(5, 0)$ 이다. ④ $y$ 축과 만나는 점의 좌표는 $(0, 4)$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.04,
+                            339.25,
+                            377.68,
+                            370.93
+                        ]
+                    ],
+                    "text_description" : "⑤점 $(5, 4)$는 $y=-\\frac{4}{5} x+4$의 그래프 위에 있지 않다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f2a0b08d-6cf8-4cb6-b261-046a799e56fe",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001777",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.76,
+                            18.15,
+                            531.56,
+                            85.35
+                        ]
+                    ],
+                    "text_description" : "다음 두 연립방정식의 해가 같을 때, $a+b$의 값은? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.760000000000005,
+                            102.16,
+                            528.24,
+                            183.76
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}3 x-y=-2 \\\\ a x+4 y=-20\\end{array}, \\quad\\left\\{\\begin{array}{l}2 x-b y=-16 \\\\ x-y=2\\end{array}\\right. \\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.8,
+                            198.52,
+                            119.4,
+                            221.72
+                        ]
+                    ],
+                    "text_description" : "① $-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            211.36,
+                            194.52,
+                            411.24,
+                            225.24
+                        ]
+                    ],
+                    "text_description" : "② $0$ ③ $1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.32,
+                            229.72,
+                            253.8,
+                            257.88
+                        ]
+                    ],
+                    "text_description" : "④ $2$ ⑤ $3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.2,
+                            264.92,
+                            494.6,
+                            385.72
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{ll}3 x-y=-2 & \\cdots \\cdots \\cdot(7) \\\\ x-y=2 & \\cdots \\cdots \\cdot(\\mathbb{)})\\end{array}\\right. $에서 ㉠-㉡을 하면 $2 x=-4$에서 $x=-2$ 이다. $x=-2$를 ㉡에 대입하면 $-2-y=2$에서 $y=-4$ 이다. $x=-2, y=-4$를 $a x+4 y=-20$에 대입하면 $a=2$ $x=-2, y=-4$를 $2 x=-4$0에 대입하면 $2 x=-4$1 따라서 $2 x=-4$2 이다."
+                }
+            ]
+        }
+    ]
+}

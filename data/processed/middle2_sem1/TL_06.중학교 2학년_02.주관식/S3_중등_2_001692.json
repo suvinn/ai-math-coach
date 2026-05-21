@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b88cc285-7cba-442f-9344-d654811e53b2",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001692",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.97,
+                            22.8,
+                            372.99,
+                            49.01
+                        ]
+                    ],
+                    "text_description" : "다음 문장을 부등식으로 나타내시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.15,
+                            70.72,
+                            536.83,
+                            157.96
+                        ]
+                    ],
+                    "text_description" : "민성이의 15년 후의 나이는 현재 나이 $x$살의 2배 이상이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            80.94,
+                            229.08,
+                            154.26,
+                            247.51
+                        ]
+                    ],
+                    "text_description" : "$x+15 \\geq 2 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.15,
+                            167.8,
+                            329.57,
+                            225.55
+                        ]
+                    ],
+                    "text_description" : "민성이의 15년 후의 나이는 $(x+15)$살이고 현재 나이 $x$살의 2배는 $2 x$살이다. 따라서 부등식으로 나타내면 $x+15 \\geq 2 x$이다."
+                }
+            ]
+        }
+    ]
+}

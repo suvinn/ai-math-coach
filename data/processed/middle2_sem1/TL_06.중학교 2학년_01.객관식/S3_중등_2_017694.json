@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7daec2de-d0b5-423e-8a2c-55542684fdb6",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017694",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.59,
+                            3.39,
+                            934.16,
+                            73.71
+                        ]
+                    ],
+                    "text_description" : "어떤 마을에서 하루에 20 명이 모여서 대화를 나누고, 매일 5 명씩 더 참여한다고 한다. 이 마을에서 대화에 참여하는 사람이 100 명이 되려면 최소 몇 일이 지나야 하나요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8,
+                            238,
+                            86,
+                            266
+                        ]
+                    ],
+                    "text_description" : "⑤ 16일"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8,
+                            88.5,
+                            86,
+                            227.5
+                        ]
+                    ],
+                    "text_description" : "① 12 일 ② 13일 ③ 14일 ④ 15 일"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.59,
+                            271.8,
+                            927.91,
+                            338.99
+                        ]
+                    ],
+                    "text_description" : "처음 20 명이 참여하고, 매일 5 명씩 추가로 참여하므로 대화에 참여하는 사람 수는 $20+5 \\times x$로 표현됩니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.03,
+                            545.24,
+                            354.47,
+                            576.49
+                        ]
+                    ],
+                    "text_description" : "따라서, 최소 16 일이 지나야 합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            390.41,
+                            359.3,
+                            562.28,
+                            528.05
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}20+5 x \\geq 100 \\\\ 5 x \\geq 80 \\\\ x \\geq \\frac{80}{5}=16\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

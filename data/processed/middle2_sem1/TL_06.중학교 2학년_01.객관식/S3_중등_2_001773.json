@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e728eee5-8b08-4e02-ad0f-5365b0df91aa",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001773",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.79,
+                            20.99,
+                            445.47,
+                            73.73
+                        ]
+                    ],
+                    "text_description" : "$a>b$ 일 때, 다음 중 $\\square$ 안에 들어갈 부등호의 방향이 나 머지 넷과 다른 하나는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.33,
+                            218.6,
+                            246.82,
+                            243.71
+                        ]
+                    ],
+                    "text_description" : "④ $-4 a+3 \\square-4 b+3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.3,
+                            88.58,
+                            227.36,
+                            199.68
+                        ]
+                    ],
+                    "text_description" : "① $-2+a$ $\\square$ $-2+b$ ② $3+5 a$ $\\square$ $3+5 b$ ③ $\\frac{a}{4}-1$ $\\square$ $\\frac{b}{4}-1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.3,
+                            257.54,
+                            263.2,
+                            282.62
+                        ]
+                    ],
+                    "text_description" : "⑤ $-(1-a) \\square-(1-b)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.79,
+                            292.86,
+                            380.96,
+                            395.26
+                        ]
+                    ],
+                    "text_description" : "① $a>b \\Rightarrow -2+a > -2+b$ ② $a>b \\Rightarrow 5a>5b \\Rightarrow 3+5a>3+5b$ ③ $a>b \\Rightarrow \\frac{a}{4}>\\frac{b}{4} \\Rightarrow \\frac{a}{4}-1 > \\frac{b}{4}-1$ ④ $a>b \\Rightarrow -4a<-4b \\Rightarrow -4a+3 <-4b+3$ ⑤ $a>b \\Rightarrow -a<-b \\Rightarrow 1-a<1-b \\Rightarrow -(1-a)>-(1-b)$"
+                }
+            ]
+        }
+    ]
+}

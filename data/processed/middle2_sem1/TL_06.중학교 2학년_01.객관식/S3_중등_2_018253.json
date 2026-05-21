@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "6191e22a-eb6c-4194-8d24-5e3b0b14b7c9",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018253",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.92,
+                            10.84,
+                            855.12,
+                            42.2
+                        ]
+                    ],
+                    "text_description" : "함수 $y=4 x(c x+3)+1$가 일차함수가 되기 위한 상수 $c$의 조건을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.64,
+                            66.8,
+                            105.04,
+                            94.4
+                        ]
+                    ],
+                    "text_description" : "① $c=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.92,
+                            109.4,
+                            126.8,
+                            262.36
+                        ]
+                    ],
+                    "text_description" : "② $c=1$ ③ $c=-1$ ④ $c=2$ ⑤ $c=-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.4,
+                            466.02,
+                            633.6,
+                            538.62
+                        ]
+                    ],
+                    "text_description" : "일차함수는 $x^{2}$ 항이 없어야 하므로, $4 c=0$ 이어야 합니다. 따라서,"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.68,
+                            283.74,
+                            302.8,
+                            437.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}y=4 x(c x+3)+1 \\\\ y=4 x \\cdot c x+4 x \\cdot 3+1 \\\\ y=4 c x^{2}+12 x+1\\end{array}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            416.72,
+                            573.62,
+                            668.24,
+                            598.14
+                        ]
+                    ],
+                    "text_description" : "$4 c=0 \\quad \\quad c=0$"
+                }
+            ]
+        }
+    ]
+}

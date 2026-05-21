@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ac9aca40-8c03-493b-b17a-16f9f1296cea",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016136",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.66,
+                            63.73,
+                            740.14,
+                            93.17
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차방정식 $7 x-2 y+9=0$의 그래프와 같은 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.38,
+                            111.73,
+                            145.58,
+                            154.61
+                        ]
+                    ],
+                    "text_description" : "① $y=\\frac{7}{2} x+\\frac{9}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.1,
+                            165.49,
+                            173.74,
+                            372.21
+                        ]
+                    ],
+                    "text_description" : "② $y=-\\frac{7}{2} x-\\frac{9}{2}$ ③ $y=\\frac{7}{2} x-\\frac{9}{2}$ ④ $y=-\\frac{7}{2} x+\\frac{9}{2}$ ⑤ $y=\\frac{2}{7} x+\\frac{9}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.54,
+                            395.85,
+                            351.02,
+                            425.29
+                        ]
+                    ],
+                    "text_description" : "일차방정식을 $y$에 대해 정리하면:"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            224.3,
+                            466.17,
+                            746.54,
+                            519.37
+                        ]
+                    ],
+                    "text_description" : "$7 x-2 y+9=0 \\rightarrow-2 y=-7 x-9 \\rightarrow y=\\frac{7}{2} x+\\frac{9}{2}$"
+                }
+            ]
+        }
+    ]
+}

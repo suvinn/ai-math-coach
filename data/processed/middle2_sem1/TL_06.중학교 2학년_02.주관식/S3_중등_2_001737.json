@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f8392641-3fd9-46a1-80bf-85fc6574d723",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001737",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.7,
+                            23.64,
+                            696.9,
+                            106.04
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=f(x)$에서 $f(x)=a x+b$가 다음을 만족 할 때, $a$의 값을 구하시오. (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            100.5,
+                            145,
+                            671.5,
+                            315
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\frac{f(10)-f(1)}{9}+\\frac{f(9)-f(2)}{7}+\\frac{f(8)-f(3)}{5} \\\\ +\\frac{f(7)-f(4)}{3}=-12\\end{array}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            93.7,
+                            454.5,
+                            127.3,
+                            476.1
+                        ]
+                    ],
+                    "text_description" : "$-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.9,
+                            340.1,
+                            661.7,
+                            452.9
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} \\frac{f⑩-f①}{10-1}=\\frac{f⑨-f②}{9-2}=\\frac{f⑧-f③}{8-3}=\\frac{f⑦-f④}{7-4}=a \\text { 이므로 } \\\\ a+a+a+a=-12, 4 a=-12 \\end{array} \\] 따라서 $a=-3$ 이다."
+                }
+            ]
+        }
+    ]
+}

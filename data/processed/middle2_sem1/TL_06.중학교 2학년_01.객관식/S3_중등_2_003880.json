@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "aceae218-2573-4d81-88f0-f7588c01309a",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003880",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            80.9,
+                            17.439999999999998,
+                            496.1,
+                            55.84
+                        ]
+                    ],
+                    "text_description" : "$2 a b^{2} \\times\\left(3 a^{2} b\\right)^{3}$을 간단히 하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.3,
+                            184.84,
+                            149.7,
+                            222.64
+                        ]
+                    ],
+                    "text_description" : "④ $54 a^{7} b^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.5,
+                            126.7,
+                            630.9,
+                            163.5
+                        ]
+                    ],
+                    "text_description" : "① $6 a^{3} b^{3}$ ② $18 a^{6} b^{5}$ ③ $27 a^{6} b^{5}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            265.1,
+                            184.7,
+                            389.3,
+                            221.5
+                        ]
+                    ],
+                    "text_description" : "⑤ $54 a^{7} b^{6}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            75.77,
+                            289.77,
+                            614.77,
+                            331.77
+                        ]
+                    ],
+                    "text_description" : "$2 a b^{2} \\times\\left(3 a^{2} b\\right)^{3}=2 a b^{2} \\times 27 a^{6} b^{3}=54 a^{7} b^{5}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ac9115e0-5ca5-4b9e-a754-7bb1e1739e72",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018834",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.78,
+                            14.24,
+                            969.78,
+                            58.24
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=\\frac{1}{a} x$의 그래프가 다음 그림과 같이 $y$ 축과 $y=x$의 그래프 사이에 있을 때, 다음 중 $a$의 값이 될 수 있는 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.78,
+                            65.78,
+                            284.78,
+                            318.78
+                        ]
+                    ],
+                    "text_description" : "이미지에는 좌표 평면이 그려져 있다. x축과 y축이 있으며, 두 축은 원점 O에서 만난다. 두 개의 직선이 그려져 있는데, 하나는 y=x이고, 다른 하나는 $y=\\frac{1}{a} x$로 표현된다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.78,
+                            439.78,
+                            119.78,
+                            482.78
+                        ]
+                    ],
+                    "text_description" : "③ $\\frac{1}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.78,
+                            323.78,
+                            119.78,
+                            424.78
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{4}{3}$ ② $\\frac{3}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.78,
+                            495.78,
+                            119.78,
+                            573.78
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{5}{4}$ ⑤ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.78,
+                            642.78,
+                            570.78,
+                            687.78
+                        ]
+                    ],
+                    "text_description" : "$y=\\frac{1}{a} x$의 기울기 $\\frac{1}{a}$이 $\\frac{1}{a}>1$ 이고 $a$는 양수이므로 $0<a<1$ 이다."
+                }
+            ]
+        }
+    ]
+}

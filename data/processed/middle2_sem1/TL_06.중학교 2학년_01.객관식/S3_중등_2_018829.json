@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fbf8e641-c9cf-4579-9b3b-ceea317e068c",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018829",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.41,
+                            17.69,
+                            607.98,
+                            63.16
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수 $y=\\frac{3}{2} x+3$의 그래프에 대한 설명으로 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.21,
+                            160.88,
+                            216.14,
+                            185.06
+                        ]
+                    ],
+                    "text_description" : "③ $y$ 절편은 -3이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.15,
+                            76.3,
+                            416.41,
+                            154.66
+                        ]
+                    ],
+                    "text_description" : "① 일차함수 $y=\\frac{3}{2} x-3$의 그래프와 평행하다. ② $x$ 절편은 -2이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.18,
+                            193.36,
+                            380.62,
+                            247.54
+                        ]
+                    ],
+                    "text_description" : "④ 그래프는 제4사분면을 지나지 않는다. ⑤ $x$의 값이 증가하면 $y$의 값도 증가한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.28,
+                            316.2,
+                            508.32,
+                            508.76
+                        ]
+                    ],
+                    "text_description" : "① 기울기가 $\\frac{3}{2}$으로 같으므로 평행하다. ② $x$ 절편은 $y=0$ 일 때이므로 $\\frac{3}{2} x+3=0 \\quad \\therefore \\quad x=-2$ ③ $y$ 절편은 $x=0$ 일 때이므로 $y=3$ ④ 그래프는 제 4 사분면을 지나지 않는다. ⑤ $x$의 값이 증가하면 $y$의 값도 증가한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.21,
+                            517.47,
+                            250,
+                            704.2
+                        ]
+                    ],
+                    "text_description" : "$x$, $y$ 좌표 $x$ 절편에는 $-2$, $y$ 절편에는 $3$ $. $ 두 점을 가로지르는 직선이 그어져있다 $. $"
+                }
+            ]
+        }
+    ]
+}

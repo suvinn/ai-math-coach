@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a8c8469d-a7ce-474b-88e8-dabed501ef9e",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018833",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            10.9,
+                            606,
+                            35.9
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수 $y=-3 x-1$의 그래프에 대한 설명으로 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            108.9,
+                            317,
+                            129.9
+                        ]
+                    ],
+                    "text_description" : "③ 제 $1, 2, 3$ 사분면을 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            44.9,
+                            349,
+                            99.9
+                        ]
+                    ],
+                    "text_description" : "① $y=-3 x+1$의 그래프와 평행하다. ② 기울기는 -3 이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            140.9,
+                            382,
+                            195.9
+                        ]
+                    ],
+                    "text_description" : "④ $x$의 값이 증가하면 $y$의 값은 감소한다. ⑤ $y$ 절편은 -1 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58,
+                            256.9,
+                            364,
+                            312.9
+                        ]
+                    ],
+                    "text_description" : "③ $y=-3 x-1$의 그래프는 다음과 같다. 따라서 제 $2, 3, 4$ 사분면을 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60,
+                            317.9,
+                            201,
+                            543.9
+                        ]
+                    ],
+                    "text_description" : "이미지는 좌표 평면을 나타내고 있다. x축과 y축이 있으며, 원점 O가 있다. y축에서는 -1의 위치가 표시되어 있고, x축에서는 -1/3의 위치가 나타나 있다."
+                }
+            ]
+        }
+    ]
+}

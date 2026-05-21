@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0405180f-233c-4b78-8661-db43493e1761",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018847",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.28,
+                            11.24,
+                            816.28,
+                            36.24
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프가 제 3 사분면을 지나지 않을 ㄸㅐㅐ 다음 중 옳은 것은? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71.28,
+                            107.78,
+                            208.28,
+                            130.78
+                        ]
+                    ],
+                    "text_description" : "③ $a<0, \\quad b \\geq 0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.28,
+                            45.78,
+                            201.28,
+                            97.78
+                        ]
+                    ],
+                    "text_description" : "① $a>0, \\quad b>0$ ② $a>0, \\quad b \\leq 0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.28,
+                            139.78,
+                            198.28,
+                            192.78
+                        ]
+                    ],
+                    "text_description" : "④ $a<0, \\quad b<0$ ⑤ $a>0, \\quad b=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.28,
+                            256.78,
+                            650.28,
+                            281.78
+                        ]
+                    ],
+                    "text_description" : "$y=a x+b$의 그래프가 제 3 사분면을 지나지 않으려면 다음 그림과 같아야 한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.28,
+                            291.78,
+                            365.28,
+                            484.78
+                        ]
+                    ],
+                    "text_description" : "교차하는 두 직선 있음. 1. x축과 y축이 있는 일차함수 그래프 2. y축의 절편은 양수. 3. x축의 절편은 양수. [기울기] = $a<0$, [y절편]= $b \\geq 0$"
+                }
+            ]
+        }
+    ]
+}

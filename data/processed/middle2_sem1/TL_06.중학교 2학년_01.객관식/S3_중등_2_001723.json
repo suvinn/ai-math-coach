@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a33b300b-3efe-4eea-ac69-4c9a2dd39b17",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001723",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.4,
+                            10.6,
+                            442.8,
+                            54.8
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수 $y=-\\frac{3}{2} x+1$의 그래프는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            288.8,
+                            78.6,
+                            463.6,
+                            218.2
+                        ]
+                    ],
+                    "text_description" : "② $y$절편 1과 점 (2, -2)를 지나는 그래프"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55,
+                            546.5,
+                            529,
+                            653.5
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-\\frac{3}{2} x+1$ 의 그래프는 $y$ 절편이 1 이므로 점 $(0,1)$ 을 지난다. 기울기는 $-\\frac{3}{2}$ 이므로 점 $(0,1)$ 에서 $x$ 축의 방향으로 2 만큼, $y$ 축의 방향으로 -3 만큼 이동한 점 $(2,-2)$ 를 찾아 두 점을 직선으로 연결하여 그래프를 그리면\n②와 같다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56,
+                            78.5,
+                            230,
+                            544.5
+                        ]
+                    ],
+                    "text_description" : "① $y$절편 1과 점 (3, -1)를 지나는 그래프 ③ $y$절편 1과 점 (-3, -1)를 지나는 그래프 ⑤ $y$절편 $\\frac{2}{3} $와 $x$ 절편 1을 지나는 그래프"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            289,
+                            239.5,
+                            456,
+                            380.5
+                        ]
+                    ],
+                    "text_description" : "④ $y$절편 1과 점 (-2, -2)를 지나는 그래프"
+                }
+            ]
+        }
+    ]
+}

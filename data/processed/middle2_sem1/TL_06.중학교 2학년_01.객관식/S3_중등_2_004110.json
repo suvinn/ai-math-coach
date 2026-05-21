@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "14a48665-c026-45f1-b59a-4799789a7448",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004110",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 3,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.2,
+                            17.14,
+                            742.8,
+                            39.74
+                        ]
+                    ],
+                    "text_description" : "다음 보기에서 $y$를 $x$에 대한 식으로 나타냈을 때, 일차함수인 것을 모두 고른"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.6,
+                            54.74,
+                            62.400000000000006,
+                            76.54
+                        ]
+                    ],
+                    "text_description" : "것은?"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.6,
+                            95.2,
+                            739.6,
+                            320.8
+                        ]
+                    ],
+                    "text_description" : "<보기> ㄱ. 가로의 길이가 $x \\mathrm{~cm}$ 이고, 세로의 길이가 3cm인 직사각형의 넓이는 $y \\mathrm{~cm}^{2}$ 이다. ㄴ. 가로의 길이가 $x \\mathrm{~cm}$이고, 세로의 길이가 3cm 인 직사각형의 둘레의 길이는 $y \\mathrm{~cm}$ 이다. ㄷ. 가로의 길이가 $x \\mathrm{~cm}$ 이고, 넓이가 $12 \\mathrm{~cm}^{2}$ 인 직사각형의 세로의 길이는 $y \\mathrm{~cm}$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            499.8,
+                            334.2,
+                            582.8,
+                            357
+                        ]
+                    ],
+                    "text_description" : "③ ㄱ, ㄴ"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14,
+                            333.6,
+                            340,
+                            386.4
+                        ]
+                    ],
+                    "text_description" : "① ㄱ ② ㄷ ④ ㄱ, ㄷ ⑤ ㄴ, ㄷ"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            376.4,
+                            453.6,
+                            477.2,
+                            474.6
+                        ]
+                    ],
+                    "text_description" : "이므로 일차"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.4,
+                            498.4,
+                            169.2,
+                            521.6
+                        ]
+                    ],
+                    "text_description" : "함수는 ㄱ, ㄴ이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.8,
+                            447.2,
+                            375.6,
+                            485.6
+                        ]
+                    ],
+                    "text_description" : "ㄱ. $y=3 x$, ㄴ. $y=2 x+6$, ㄷ. $y=\\frac{12}{x}$"
+                }
+            ]
+        }
+    ]
+}

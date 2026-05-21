@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8e7dd469-0aec-4f70-817d-e4ac853e2658",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018975",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.9,
+                            9.6,
+                            565.9,
+                            33.6
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $a x+b y+c=0$의 그래프가 다음과 같을 때, 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.5,
+                            43.2,
+                            245.9,
+                            240.8
+                        ]
+                    ],
+                    "text_description" : "좌표평면도에 직선이 제 2, 3, 4 사분면을 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.7,
+                            276,
+                            217.9,
+                            307.2
+                        ]
+                    ],
+                    "text_description" : "② $a b>0, \\quad b c>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.7,
+                            309.6,
+                            217.9,
+                            398.4
+                        ]
+                    ],
+                    "text_description" : "③ $a b>0, \\quad b c<0$ ④ $a b<0, \\quad b c>0$ ⑤ $a b<0, \\quad b c<0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.9,
+                            246.4,
+                            205.1,
+                            272
+                        ]
+                    ],
+                    "text_description" : "① $a b<0, \\quad c<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.9,
+                            468.4,
+                            594.7,
+                            685.6
+                        ]
+                    ],
+                    "text_description" : "주어진 일차방정식을 $y$에 관하여 풀면 $y=-\\frac{a}{b} x-\\frac{c}{b}$ 즉, 주어진 그래프는 일차함수 $y=-\\frac{a}{b} x-\\frac{c}{b}$의 그래프와 같다. 직선의 기울기를 보면 $-\\frac{a}{b}<0$ 이므로 $a, b$의 부호가 같다. 즉, $a b>0$ 또, $y$ 절편을 보면 $-\\frac{c}{b}<0$ 이므로 $b, \\quad c$의 부호가 같다. 즉, $b c>0$"
+                }
+            ]
+        }
+    ]
+}

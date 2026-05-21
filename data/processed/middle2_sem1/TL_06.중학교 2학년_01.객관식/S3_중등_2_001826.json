@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8e25edc5-af42-44a2-bf31-7f9aa39596d3",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001826",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.27,
+                            25.6,
+                            318.34,
+                            156.16
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림은 일차방정식 \\[ a x+b y+c=0 \\text { 의 그래프} \\] 이다. 다음 중 상수 $a, b, c$의 부 호로 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            326.54,
+                            25.09,
+                            540.04,
+                            238.59
+                        ]
+                    ],
+                    "text_description" : "\\[ a x+b y+c=0 \\text { 의 그래프. } \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.78,
+                            177.15,
+                            257.93,
+                            203.78
+                        ]
+                    ],
+                    "text_description" : "① $a>0, b>0, c>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.96,
+                            381.56,
+                            523.14,
+                            510.98
+                        ]
+                    ],
+                    "text_description" : "$a x+b y+c=0$을 $y$에 대하여 정리하면 $y=-\\frac{a}{b} x-\\frac{c}{b}$ 이때 $-\\frac{a}{b}<0, -\\frac{c}{b}<0$ 이므로 $\\frac{a}{b}>0, \\frac{c}{b}>0$ 따라서 $a<0, b<0, c<0$ 또는 $a>0, b>0, c>0$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.32,
+                            209.92,
+                            261,
+                            341.5
+                        ]
+                    ],
+                    "text_description" : "② $a>0, b<0, c<0$ ③ $a>0, b<0, c>0$ ④ $a<0, b<0, c>0$ ⑤ $a<0, b>0, c<0$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "37987b3b-8fb4-481a-acfe-e54b29339910",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001809",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            79.5,
+                            30.92,
+                            533.5,
+                            76.92
+                        ]
+                    ],
+                    "text_description" : "다음 중 미지수가 2개인 일차방정식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.5,
+                            274.5,
+                            415.5,
+                            373.5
+                        ]
+                    ],
+                    "text_description" : "미지수가 2개인 일차방정식은 $a x+b y+c=0$ (단, $a \\neq 0, b \\neq 0$) 꼴이므로③ $x-2 y=4 x-1$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            80.5,
+                            185.5,
+                            283.5,
+                            231.5
+                        ]
+                    ],
+                    "text_description" : "⑤ $x(y-1)=1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            392.5,
+                            141.5,
+                            568.5,
+                            182.5
+                        ]
+                    ],
+                    "text_description" : "④ $x^{2}-3 y=7$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            80.5,
+                            98.5,
+                            606.5,
+                            135.5
+                        ]
+                    ],
+                    "text_description" : "① $x-x y+y=0$ ② $2 x+y=y+1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            122.0,
+                            147.0,
+                            308.0,
+                            179.0
+                        ]
+                    ],
+                    "text_description" : "$x-2y=4x-1$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "82a3b3b6-54cf-40da-9db2-e974ecf551a8",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015318",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.3,
+                            55.64,
+                            318.7,
+                            87.64
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하십시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.7,
+                            92.44,
+                            269.1,
+                            138.84
+                        ]
+                    ],
+                    "text_description" : "③ $15 x^{2} y \\div\\left(-\\frac{5}{2} x^{4}\\right)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.9,
+                            255.3,
+                            153.9,
+                            288.1
+                        ]
+                    ],
+                    "text_description" : "③ $-6 x^{-2} y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.9,
+                            168.1,
+                            138.7,
+                            248.9
+                        ]
+                    ],
+                    "text_description" : "① $-6 x^{2} y$ ② $-6 x^{3} y$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.9,
+                            296.1,
+                            151.5,
+                            373.7
+                        ]
+                    ],
+                    "text_description" : "④ $-6 x^{-3} y$ ⑤ $6 x^{3} y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            221.1,
+                            501.1,
+                            857.1,
+                            583.3
+                        ]
+                    ],
+                    "text_description" : "$15 x^{2} y \\div\\left(-\\frac{5}{2} x^{4}\\right)=15 \\cdot\\left(-\\frac{2}{5}\\right) \\cdot x^{2-4} y=-6 x^{-2} y$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "318452e2-b6bc-48ec-937d-e5052fc79476",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001831",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.5,
+                            27.92,
+                            312.5,
+                            119.91999999999999
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림에서 두 직선 $l$, $m$의 교점을 P 라고 할 때, 점 P의 좌표를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            328.5,
+                            24.5,
+                            534.5,
+                            208.5
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 좌표 평면을 나타내고 있으며, 두 직선 \\(m\\)과 \\(l\\)이 교차하는 점 \\(P\\)가 표시되어 있습니다. 좌표 축인 \\(x\\)와 \\(y\\)가 있으며, 각 축의 눈금이 적혀 있습니다. \\(O\\)는 원점으로 보이고, \\(P\\)의 위치를 나타내고 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            36.5,
+                            394.5,
+                            97.5,
+                            430.5
+                        ]
+                    ],
+                    "text_description" : "$(2, 1)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.5,
+                            245.5,
+                            534.5,
+                            376.5
+                        ]
+                    ],
+                    "text_description" : "직선 $l$의 식은 $y=x-1$, 직선 $m$의 식은 $y=-x+3$ 이다. $x-1=-x+3$에서 $2 x=4$ 이므로 $x=2$ $y=x-1$에 $x=2$를 대입하면 $y=1$ 따라서 점 P의 좌표는 $y=x-1$0 이다."
+                }
+            ]
+        }
+    ]
+}

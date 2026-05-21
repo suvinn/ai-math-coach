@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9fda93c4-bd32-456e-8ca6-d45e6646ac81",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018735",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            11.92,
+                            501,
+                            37.92
+                        ]
+                    ],
+                    "text_description" : "다음 중 $y$를 $x$에 관한 식으로 나타낼 때, 일차함수인 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            77.92,
+                            809,
+                            103.92
+                        ]
+                    ],
+                    "text_description" : "② 기본 요금이 3000 원이고 1분당 사용료가50원인 전화를 $x$ 분 사용했을 때의전화요금이 $y$ 원이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62,
+                            113.5,
+                            677,
+                            205.5
+                        ]
+                    ],
+                    "text_description" : "③ 가로의 길이가 $x \\mathrm{~cm}$, 넓이가 $10 \\mathrm{~cm}^{2}$ 인 직사각형의 세로의 길이가 $y \\mathrm{~cm}$ 이다. ④ 100km 인 거리를 움직일 때, 속력이 시속 $x \\mathrm{~km}$ 이고 걸린시간이 $y$ 시간이다. ⑤ 한 변의 길이가 $x \\mathrm{~cm}$ 인 정사각형의 넓이가 $y \\mathrm{~cm}^{2}$ 이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67,
+                            44.5,
+                            470,
+                            73.5
+                        ]
+                    ],
+                    "text_description" : "① 반지름의 길이가 $x \\mathrm{~cm}$ 인 원의 넓이가 $y \\mathrm{~cm}^{2}$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63,
+                            479.5,
+                            301,
+                            503.5
+                        ]
+                    ],
+                    "text_description" : "따라서 일차함수인 것은 ②이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57,
+                            268.5,
+                            363,
+                            476.5
+                        ]
+                    ],
+                    "text_description" : "① $y=\\pi x^{2}$ ② $y=50 x+3000$ ③ $x y=10$ $\\therefore \\quad y=\\frac{10}{x}$ ④ $x \\times y=100$ $\\therefore \\quad y=\\frac{100}{x}$ ⑤ $x \\times y=y$ $\\therefore \\quad y=x^{2}$"
+                }
+            ]
+        }
+    ]
+}

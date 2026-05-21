@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "25af7163-c01b-4273-980b-162061a2b70e",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018758",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.78,
+                            14.73,
+                            701.78,
+                            59.73
+                        ]
+                    ],
+                    "text_description" : "두 일차함수 $y=-x+2$와 $y=\\frac{1}{2} x+2$의 그래프와 $x$ 축으로 둘러싸인 부분의 넓이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.78,
+                            134.27,
+                            106.78,
+                            157.27
+                        ]
+                    ],
+                    "text_description" : "③ 6"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.78,
+                            72.27,
+                            105.78,
+                            124.27
+                        ]
+                    ],
+                    "text_description" : "① 2 ② 4"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.78,
+                            164.27,
+                            113.78,
+                            219.27
+                        ]
+                    ],
+                    "text_description" : "④ 10 ⑤ 12"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.78,
+                            288.27,
+                            764.78,
+                            391.27
+                        ]
+                    ],
+                    "text_description" : "두 일차함수 $y=-x+2$와 $y=\\frac{1}{2} x+2$의 그래프를 $x$ 절편, $y$ 절편을 이용하여 그린다. 두 일차함수 $y=-x+2$와 $y=\\frac{1}{2} x+2$의 그래프를 한 좌표평면 위에 그리면 다음 그림과 같다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.78,
+                            553.27,
+                            385.78,
+                            597.27
+                        ]
+                    ],
+                    "text_description" : "따라서 색칠한 부분의 넓이는 $\\frac{1}{2} \\times 6 \\times 2=6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.78,
+                            403.27,
+                            252.78,
+                            550.27
+                        ]
+                    ],
+                    "text_description" : "좌표 (−4, 0), (2, 0)가 이어진 일차함수와 (2, 0), (0, 2)이 이어진 일차함수가 있습니다. 삼각형이 만들어졌고 색칠되어있습니다."
+                }
+            ]
+        }
+    ]
+}

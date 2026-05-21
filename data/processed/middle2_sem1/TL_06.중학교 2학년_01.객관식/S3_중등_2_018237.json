@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "def72486-58af-463d-973c-bbc67789593a",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018237",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.4,
+                            5.79,
+                            1076.15,
+                            83.91
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=f(x)$에 대하여 $f(8)-f(4)=16$ 일 때, 이 일차함수의 그래프의 기울기를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.52,
+                            104.22,
+                            63.65,
+                            138.6
+                        ]
+                    ],
+                    "text_description" : "① 4"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7,
+                            147.5,
+                            64,
+                            306.5
+                        ]
+                    ],
+                    "text_description" : "② 3 ③ 2 ④ 1 ⑤ 5"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11,
+                            322.5,
+                            473,
+                            364.5
+                        ]
+                    ],
+                    "text_description" : "일차함수의 일반형은 $y=m x+b$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6,
+                            375.5,
+                            625,
+                            659.5
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} f⑧=8m+b \\\\ f④=4m+b \\end{array} \\] 따라서, $f(8)-f(4)=(8m+b)-(4m+b)=4m$ 주어진 조건에 따라 $f(8)-f(4)=16$ 이므로, \\[ \\begin{array}{l} 4m=16 \\\\ m=\\frac{16}{4}=4 \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

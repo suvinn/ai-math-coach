@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ca4854a7-e29a-4d14-b706-3ed2aec8046c",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003928",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            29.5,
+                            13.5,
+                            365.5,
+                            245.5
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같이 $x$ 축 위에서 만나는 두 직선 $y=\\frac{1}{5} x+2$, \\[ y=a x+b(a \\neq 0) \\text { 와 } \\]"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            32.5,
+                            251.5,
+                            729.5,
+                            337.5
+                        ]
+                    ],
+                    "text_description" : "$y$ 축으로 둘러싸인 부분의 넓이가 15 일 때, 상수 $a+b$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            382.75,
+                            13.75,
+                            752.75,
+                            247.5
+                        ]
+                    ],
+                    "text_description" : "제1 사분면 $x=-10$ 축 위에서 만나는 두 직선 $y=\\frac{1}{5} x+2$, $y=a x+b(a \\neq 0)$와 $y$ 축으로 둘러싸인 부분의 넓이가 15이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            29,
+                            355.5,
+                            128.5,
+                            426.5
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{11}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            274.25,
+                            358,
+                            619,
+                            423.75
+                        ]
+                    ],
+                    "text_description" : "② 6 ③ $\\frac{13}{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            32.25,
+                            445,
+                            373.25,
+                            514.5
+                        ]
+                    ],
+                    "text_description" : "④ 7 ⑤ $\\frac{15}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0,
+                            534.2,
+                            360,
+                            779.2
+                        ]
+                    ],
+                    "text_description" : "직선 $y=\\frac{1}{5} x+2$가 $x$ 축과 만나는 점의 좌표는 $(-10, 0)$ 이다. 또 직선 $y=a x+b(a \\neq 0)$가 $y$ 축과 만나는 점의 좌표는 $(0, b)$ 이다. 넓이가 15 이므로 $\\frac{1}{2} \\times 10 \\times(b-2)=15, b=5$ 점 $(-10, 0)$을 $y=a x+5$에 대입하면 $0=-10 a+5, a=\\frac{1}{2}$ 따라서 $x$0"
+                }
+            ]
+        }
+    ]
+}

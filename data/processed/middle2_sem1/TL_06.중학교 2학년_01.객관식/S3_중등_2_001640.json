@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2a6c7c04-70c0-4f30-8654-7fb089d65b35",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001640",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.7,
+                            0.59,
+                            304.35,
+                            25.17
+                        ]
+                    ],
+                    "text_description" : "다음 수에 대한 설명으로 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.23,
+                            40.53,
+                            437.47,
+                            106.06
+                        ]
+                    ],
+                    "text_description" : "$-\\frac{7}{20}, \\quad \\pi, \\quad 8, \\quad \\frac{4}{9}, \\quad 0, \\quad-1, \\quad 5. 123, \\quad \\frac{6}{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.21,
+                            199.55,
+                            304.35,
+                            222.59
+                        ]
+                    ],
+                    "text_description" : "④ 정수가 아닌 유리수는 3 개이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.26,
+                            114.05,
+                            208.1,
+                            194.43
+                        ]
+                    ],
+                    "text_description" : "① 정수는 3 개이다. ② 유리수는 8 개이다. ③ 자연수는 3 개이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            41.79,
+                            229.25,
+                            375.52,
+                            268.16
+                        ]
+                    ],
+                    "text_description" : "⑤ $-\\frac{7}{20}$은 소수로 나타내면 무한소수이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.88,
+                            279.94,
+                            269.02,
+                            308.61
+                        ]
+                    ],
+                    "text_description" : "④ 정수가 아닌 유리수는 $-\\frac{7}{20}, \\frac{4}{9}, 5. 123$의 3 개이다."
+                }
+            ]
+        }
+    ]
+}

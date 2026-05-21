@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8e0d7ec5-28ab-495e-9b2c-0da3f32c7d18",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018946",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            10,
+                            661,
+                            32
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $2 x-y+3=0$의 그래프에 대한 다음 설명 중 옳은 것을 모두 고르면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.69,
+                            37.62,
+                            1638.69,
+                            206.37
+                        ]
+                    ],
+                    "text_description" : "㉠ 일차함수 $y=\\frac{1}{2} x-1$의 그래프와 평행하다. ㉡ 제 4 사분면을 지나지 않는다. ㉢ $x$ 절편, $y$ 절편의 곱은 - 2 이다. ㉣ 일차함수 $y=2 x+3$의 그래프와 일치한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68,
+                            305,
+                            137,
+                            327
+                        ]
+                    ],
+                    "text_description" : "④ ㉡, ㉣"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68,
+                            212,
+                            137,
+                            296
+                        ]
+                    ],
+                    "text_description" : "① ㉠, ㉡ ② ㉠, ㉣ ③ ㉠, ㉢"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68,
+                            338,
+                            158,
+                            359
+                        ]
+                    ],
+                    "text_description" : "⑤ ㉡, ㉢, ㉣"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            424.6,
+                            737,
+                            649.6
+                        ]
+                    ],
+                    "text_description" : "$2 x-y+3=0$을 $y$에 관하여 풀어서 일차함수의 그래프의 성질을 이용한다. $2 x-y+3=0$을 $y$에 관하여 풀면 $y=2 x+3$ 이므로 일차함수 $y=2 x+3$의 그래프와 같다. ㉠ 일차함수 $y=\\frac{1}{2} x-1$의 그래프와 평행하지 않다. ㉡ 제 4 사분면을 지나지 않는다. ㉢ $x$ 절편은 $-\\frac{3}{2}, y$ 절편은 3 이므로 두 수의 곱은 $-\\frac{9}{2}$ 이다. ㉣ 일차함수 $y=2 x+3$의 그래프와 일치한다."
+                }
+            ]
+        }
+    ]
+}

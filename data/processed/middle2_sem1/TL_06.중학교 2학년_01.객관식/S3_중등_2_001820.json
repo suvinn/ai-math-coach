@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fc5b28c5-f4fb-47b0-a4ab-e694dce5863c",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001820",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47,
+                            34.16,
+                            271.75,
+                            113.16
+                        ]
+                    ],
+                    "text_description" : "어떤 일차함수의 그래프가 오른쪽 그림과 같을 때, 이 직선의 기울기는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            283.75,
+                            39.879999999999995,
+                            444.25,
+                            211.63
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 좌표평면을 나타냅니다. y축은 6까지 올라가고, x축은 -2에서 시작하는 점을 가지고 있습니다. 이 선은 원점을 지나가는 직선입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47,
+                            189.63,
+                            83.75,
+                            210.13
+                        ]
+                    ],
+                    "text_description" : "⑤ 3"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47,
+                            130.63,
+                            232.25,
+                            182.38
+                        ]
+                    ],
+                    "text_description" : "① -3 ② -2 ③ 1 ④ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.25,
+                            280.63,
+                            396.25,
+                            338.13
+                        ]
+                    ],
+                    "text_description" : "$($ 기울기 $)=\\frac{(y \\text { 의 값의 증가량 })}{(x \\text { 의 값의 증가량 })}=\\frac{+6}{+2}=3$"
+                }
+            ]
+        }
+    ]
+}

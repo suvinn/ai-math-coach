@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3614d338-a7f0-40a0-80b0-23a4938b1deb",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018922",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.25,
+                            14.5,
+                            1172.25,
+                            36
+                        ]
+                    ],
+                    "text_description" : "$30$문항의 시험에서 한 문제를 맞힐 때마다 $3$ 점씩 주고 기본 점수를 $10$ 점을 주었을 때, $x$ 문제를 맞힌 학생이 $y$ 점을 받았다면, $x$와 $y$ 사이의 관계식은 $y=3x+10$이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.2,
+                            107.93,
+                            192.64,
+                            195.13
+                        ]
+                    ],
+                    "text_description" : "③ $y = 100 - 3x$ ④ $y = 3x - 10$ ⑤ $y = 10x - 30$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            259.13,
+                            528.64,
+                            313.97
+                        ]
+                    ],
+                    "text_description" : "(학생의 점수) $=3 \\times$ (맞힌 개수) $+($ 기본 점수)이므로 $y=3 \\times x+10$ \\[ \\therefore \\quad y=3 x+10 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70.0,
+                            48.0,
+                            193.0,
+                            68.0
+                        ]
+                    ],
+                    "text_description" : "① $y = 10x + 30$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            91.0,
+                            77.0,
+                            185.0,
+                            102.0
+                        ]
+                    ],
+                    "text_description" : "$y = 3x + 10$"
+                }
+            ]
+        }
+    ]
+}

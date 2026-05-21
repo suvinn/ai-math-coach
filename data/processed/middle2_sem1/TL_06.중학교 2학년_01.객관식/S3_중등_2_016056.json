@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "98cf5456-d286-4c3f-861d-1c92e2253aaf",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016056",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            113.77,
+                            1.23,
+                            753.77,
+                            33.23
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=4 x-j$의 그래프가 점 $(3, 5)$를 지날 때, $j$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.77,
+                            57.77,
+                            59.77,
+                            81.77
+                        ]
+                    ],
+                    "text_description" : "① 7"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.77,
+                            110.77,
+                            71.77,
+                            294.77
+                        ]
+                    ],
+                    "text_description" : "② -7 ③ 3 ④ -3 ⑤ 0"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.77,
+                            325.77,
+                            143.77,
+                            565.77
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}5=4 \\cdot 3-j \\\\ j=7 \\\\ 5=4 \\cdot 3-j \\\\ j=7\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

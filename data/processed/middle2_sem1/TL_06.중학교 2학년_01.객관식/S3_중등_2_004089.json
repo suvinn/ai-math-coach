@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4c6521c3-2848-4326-aa56-61526acb3a67",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004089",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            36.38,
+                            12.15,
+                            519.58,
+                            37.75
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식 중 $x=1, y=-1$를 해로 갖는 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            227.62,
+                            48.63,
+                            346.78,
+                            96.63
+                        ]
+                    ],
+                    "text_description" : "② $\\left\\{\\begin{array}{l}2 x+y=1 \\\\ x-y=2\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            26.58,
+                            188,
+                            410.78,
+                            287.72
+                        ]
+                    ],
+                    "text_description" : "② $\\left\\{\\begin{array}{l}2 x+y=1 \\\\ x-y=2\\end{array}\\right. $에 $x=1, y=-1$를 대입하면 $\\left\\{\\begin{array}{l}2 \\times 1+(-1)=1 \\\\ 1-(-1)=2\\end{array}\\right. $이 성립한다."
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            33.18,
+                            47.08,
+                            163.74,
+                            153.32
+                        ]
+                    ],
+                    "text_description" : "① $\\left\\{\\begin{array}{l}x+y=-1 \\\\ x-y=1\\end{array}\\right. $ ④ $\\left\\{\\begin{array}{l}x=y+2 \\\\ x=2 y\\end{array}\\right. $"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            405.66,
+                            50.92,
+                            524.06,
+                            97.64
+                        ]
+                    ],
+                    "text_description" : "③ $\\left\\{\\begin{array}{l}y=x-2 \\\\ y=3 x\\end{array}\\right. $"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            229.02,
+                            101.48,
+                            353.18,
+                            152.68
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\left\\{\\begin{array}{l}3 x+y=1 \\\\ x-2 y=3\\end{array}\\right. $"
+                }
+            ]
+        }
+    ]
+}

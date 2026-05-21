@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "00a3b9a4-afd6-442d-a927-5c930ec67e52",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003914",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.75,
+                            11.66,
+                            303.5,
+                            266.66
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림에서 직선 $l$은 일차함수 $y=-x+3$의 그래프를 $y$ 축의 방향으로 2만큼 평행이동한 것이다. 두 직선과 $x$ 축, $y$ 축으로 둘러싸인 도형의 넓이를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            308.5,
+                            21.13,
+                            558.5,
+                            289.38
+                        ]
+                    ],
+                    "text_description" : "직선 $l$이 일차함수 $y=-x+3$의 그래프를 $y$ 축의 방향으로 $2$만큼 평행이동한 그래프이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.75,
+                            399.88,
+                            44.75,
+                            423.63
+                        ]
+                    ],
+                    "text_description" : "$8$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            1,
+                            308.63,
+                            329.75,
+                            393.63
+                        ]
+                    ],
+                    "text_description" : "두 직선 $y=-x+3, y=-x+5$과 $x$ 축, $y$ 축으로 둘러싸인 도형의 넓이는 \\[ \\frac{1}{2} \\times 5 \\times 5-\\frac{1}{2} \\times 3 \\times 3=8 \\]"
+                }
+            ]
+        }
+    ]
+}

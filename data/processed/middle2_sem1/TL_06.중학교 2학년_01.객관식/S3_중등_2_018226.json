@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "17cc2ab8-2b8e-4194-9585-5fcb942af025",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018226",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.2,
+                            12,
+                            1067.4,
+                            80.8
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=f(x)$에 대하여 $f(5)-f(2)=-15$일 때, 이 일차함수의 그래프의 기울기를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13,
+                            111.2,
+                            69.2,
+                            136
+                        ]
+                    ],
+                    "text_description" : "① $-5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13,
+                            152,
+                            73.8,
+                            304
+                        ]
+                    ],
+                    "text_description" : "② $-3$ ③ $3$ ④ $5$ ⑤ $10$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.4,
+                            332,
+                            469,
+                            364
+                        ]
+                    ],
+                    "text_description" : "일차함수의 일반형은 $y=m x+b$입니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.8,
+                            468.8,
+                            618.6,
+                            657.6
+                        ]
+                    ],
+                    "text_description" : "따라서, $f(5)-f(2)=(5m+b)-(2m+b)=3m$ 주어진 조건에 따라 $f(5)-f(2)=-15$이므로, \\[ \\begin{array}{l} 3m=-15 \\\\ m=\\frac{-15}{3}=-5 \\end{array} \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.8,
+                            385.6,
+                            196.2,
+                            460
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(5)=5m+b \\\\ f(2)=2m+b\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

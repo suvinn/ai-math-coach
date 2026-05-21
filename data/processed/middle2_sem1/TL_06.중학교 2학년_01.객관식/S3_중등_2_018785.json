@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "1fd50d19-b9e9-4705-8bd5-390104aad400",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018785",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.25,
+                            18,
+                            493.5,
+                            63.25
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수의 그래프의 기울기가 $-\\frac{1}{2}$ 인 그래프는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.51,
+                            77.31,
+                            383.74,
+                            1158.2
+                        ]
+                    ],
+                    "text_description" : "① 직선: 기울기 $\\frac{1}{2}$, y절편 1, x절편 -2 ② 직선: 기울기 2, y절편 -4, x절편 2 ③ 직선: 기울기 $-\\frac{1}{2}$, y절편 2 ④ 직선: 기울기 -2, y절편 4, x절편 2 ⑤ 직선: 기울기 2, y절편 -6, x절편 3"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.8,
+                            1181.4,
+                            81.8,
+                            1202.4
+                        ]
+                    ],
+                    "text_description" : "③"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.8,
+                            1222.4,
+                            366.8,
+                            1302.4
+                        ]
+                    ],
+                    "text_description" : "각 그래프의 기울기를 구하면 ① $\\frac{1}{2}$ ② 2 ③ $-\\frac{1}{2}$ ④ -2 ⑤2이다."
+                }
+            ]
+        }
+    ]
+}

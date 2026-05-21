@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8afe3460-bc47-4c28-9c3a-470bf8a7e91e",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001645",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.86,
+                            22.41,
+                            533.18,
+                            86.41
+                        ]
+                    ],
+                    "text_description" : "다음 중 순환소수를 분수로 나타내는 과정으로 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.58,
+                            292.86,
+                            346.3,
+                            371.58
+                        ]
+                    ],
+                    "text_description" : "① $0. \\dot{1}=\\frac{1}{9}$ ② $1. \\dot{5} \\dot{2}=\\frac{152-1}{99}$ ③ $0. 1 \\dot{3}=\\frac{13-1}{90}$ ④ $0. 1 \\dot{2} \\dot{3}=\\frac{123-1}{990}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.82,
+                            93.18,
+                            485.18,
+                            223.74
+                        ]
+                    ],
+                    "text_description" : "① $0. \\dot{1}=\\frac{1}{10}$ ② $1. \\dot{5} \\dot{2}=\\frac{152}{99}$ ③ $0. 1 \\dot{3}=\\frac{13-1}{9}$ ④ $0. 1 \\dot{2} \\dot{3}=\\frac{123-1}{99}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            91.0,
+                            226.0,
+                            251.0,
+                            275.0
+                        ]
+                    ],
+                    "text_description" : "$ 1.0 \\dot{6} =\\frac{106-10}{90}$"
+                }
+            ]
+        }
+    ]
+}

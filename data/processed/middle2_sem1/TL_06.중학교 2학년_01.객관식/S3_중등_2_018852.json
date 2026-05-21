@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e46a7c0d-ae66-4974-97d7-e4240787e045",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018852",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            11.9,
+                            658,
+                            36.9
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프가 다음과 같을 때, 옳은 것은? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            41.9,
+                            259,
+                            232.9
+                        ]
+                    ],
+                    "text_description" : "이미지는 x축과 y축이 있는 좌표평면을 나타냄. 두 축은 서로 직각으로 교차하며, 원점 O가 교차점에 위치함. 직선 하나가 오른쪽 위에서 왼쪽 아래로 기울어져 있고, 기울기는 음수임. 이 직선은 y축을 가로질러 x축에 닿음. 각 축은 방향을 나타내는 화살표가 있음."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            70,
+                            328.9,
+                            196,
+                            349.9
+                        ]
+                    ],
+                    "text_description" : "ㅍ④ $a<0, \\quad b<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71,
+                            234.9,
+                            197,
+                            319.9
+                        ]
+                    ],
+                    "text_description" : "① $a>0, \\quad b>0$ ② $a>0, b<0$ ③ $a<0, \\quad b>0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71,
+                            359.9,
+                            198,
+                            383.9
+                        ]
+                    ],
+                    "text_description" : "⑤ $a>0, b=0$입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            445.9,
+                            442,
+                            501.9
+                        ]
+                    ],
+                    "text_description" : "주어진 그래프가 오른쪽 아래로 향하는 직선이므로 기울기 : $a<0, \\quad y$ 절편 : $b<0$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ecb685a3-ed46-49eb-a077-622c4d56fea5",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001798",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63,
+                            20.42,
+                            512,
+                            99.42
+                        ]
+                    ],
+                    "text_description" : "어떤 식에서 $2 a+\\frac{1}{4} b+1$을 빼고 $b-5$를 더하였더니 $-a+b-7$이 되었다. 이때 어떤 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            296,
+                            175.42,
+                            430,
+                            221.42
+                        ]
+                    ],
+                    "text_description" : "④ $a+\\frac{1}{4} b-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62,
+                            120,
+                            234,
+                            275
+                        ]
+                    ],
+                    "text_description" : "① $-3 a-\\frac{3}{4} b+7$ ③ $a-\\frac{1}{4} b+1$ ⑤ $a+\\frac{1}{2} b$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            293,
+                            122,
+                            467,
+                            169
+                        ]
+                    ],
+                    "text_description" : "② $-3 a+\\frac{3}{4} b-6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            48.68,
+                            326.41,
+                            484.8,
+                            407.89
+                        ]
+                    ],
+                    "text_description" : "어떤 식을 $A$라고 하면 \\[ A-\\left(2 a+\\frac{1}{4} b+1\\right)+(b-5)=-a+b-7 \\text { 이므로 } \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.4,
+                            414.17,
+                            428.2,
+                            513.21
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} A & =-a+b-7+\\left(2 a+\\frac{1}{4} b+1\\right)-(b-5) \\\\ & =a+\\frac{1}{4} b-1\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

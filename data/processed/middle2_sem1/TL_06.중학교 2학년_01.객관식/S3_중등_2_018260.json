@@ -1,0 +1,125 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c6764e48-bfd2-4ec2-b1d9-e42cab8b31e8",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018260",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.51,
+                            8.15,
+                            607.81,
+                            40.26
+                        ]
+                    ],
+                    "text_description" : "두 점 $(1, 1), (4, 7)$을 지나는 직선의 방정식을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.230000000000004,
+                            65.24,
+                            186.78,
+                            99.64
+                        ]
+                    ],
+                    "text_description" : "$y=2 x-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.51,
+                            108.05,
+                            191.06,
+                            262.91
+                        ]
+                    ],
+                    "text_description" : "② $y=2 x+1$ ③ $y=3 x-2$ ④ $y=3 x+1$ ⑤ $y=x+3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.38,
+                            281.2,
+                            312.38,
+                            320.45
+                        ]
+                    ],
+                    "text_description" : "기울기 $m=\\frac{7-1}{4-1}=\\frac{6}{3}=2$."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.66,
+                            324.01,
+                            478.65,
+                            357.55
+                        ]
+                    ],
+                    "text_description" : "직선의 방정식은 $y-1=2(x-1)$ 입니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.95,
+                            366.12,
+                            301.67,
+                            399.66
+                        ]
+                    ],
+                    "text_description" : "따라서 $y=2 x-1$ 입니다."
+                }
+            ]
+        }
+    ]
+}

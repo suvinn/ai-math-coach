@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "574350f6-dd8e-4971-9bcb-db5190dad465",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017666",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.780000000000001,
+                            9.04,
+                            247.14,
+                            82.56
+                        ]
+                    ],
+                    "text_description" : "다음 부등식을 푸시오. \\[ (2 x+5) \\leq 13 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.5,
+                            150.4,
+                            112.1,
+                            177.28
+                        ]
+                    ],
+                    "text_description" : "② $x<4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.5,
+                            105.96,
+                            114.02,
+                            135.68
+                        ]
+                    ],
+                    "text_description" : "① $x \\geq 4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7.86,
+                            190.72,
+                            112.74,
+                            302.72
+                        ]
+                    ],
+                    "text_description" : "③ $x \\geq 3$ ④ $x \\leq 3$ ⑤ $x=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.74,
+                            337.28,
+                            170.98,
+                            368
+                        ]
+                    ],
+                    "text_description" : "$2 x+5 \\leq 13$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            50.02,
+                            464.64,
+                            138.98,
+                            492.8
+                        ]
+                    ],
+                    "text_description" : "$2 x \\leq 8$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.98,
+                            591.28,
+                            132.3,
+                            618.24
+                        ]
+                    ],
+                    "text_description" : "$x \\leq 4$"
+                }
+            ]
+        }
+    ]
+}

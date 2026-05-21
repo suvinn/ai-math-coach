@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "52a55a7b-b611-4736-be96-a6008dc65f89",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001788",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            35.75,
+                            16,
+                            289.19,
+                            33.28
+                        ]
+                    ],
+                    "text_description" : "다음 중 $\\square$ 안에 들어갈 식으로 알맞은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            34.75,
+                            46.08,
+                            350.63,
+                            103.68
+                        ]
+                    ],
+                    "text_description" : "$\\left(\\frac{4}{5} x y\\right)^{2} \\times \\square \\div\\left(\\frac{3}{5} x^{3} y\\right)=\\frac{4}{5} y^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            35.75,
+                            112.36,
+                            86.95,
+                            142.72
+                        ]
+                    ],
+                    "text_description" : "① $\\frac{3}{4} x y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            35.11,
+                            148.48,
+                            207.27,
+                            179.2
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{3}{16} x^{2} y$ ⑤ $\\frac{3}{16} x^{2} y^{2}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            139.15,
+                            112.64,
+                            299.43,
+                            142.72
+                        ]
+                    ],
+                    "text_description" : "② $\\frac{3}{4} x^{2} y$ ③ $\\frac{3}{4} x y^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.43,
+                            205.01,
+                            481.83,
+                            489.09
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\left(\\frac{4}{5} x y\\right)^{2} \\times \\square \\div\\left(\\frac{3}{5} x^{3} y\\right)=\\frac{4}{5} y^{2} \\\\ \\frac{16}{25} x^{2} y^{2} \\times \\square \\times \\frac{5}{3 x^{3} y}=\\frac{4}{5} y^{2} \\\\ \\frac{16 y}{15 x} \\times \\square=\\frac{4}{5} y^{2} \\\\ \\text { 따라서 } \\square=\\frac{4}{5} y^{2} \\times \\frac{15 x}{16 y}=\\frac{3}{4} x y \\text { 이다. }\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

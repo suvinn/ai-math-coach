@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "470dd025-9f69-40da-b854-24344150d28f",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001654",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            46.39,
+                            16.6,
+                            269.11,
+                            95.45
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같은 밑변의 길이가 $12 x^{5} y^{2}$ 이고, 높이가 $3 x^{4} y^{3}$인 삼각형의 넓이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            283.37,
+                            17.55,
+                            438.58,
+                            154.84
+                        ]
+                    ],
+                    "text_description" : "밑변의 길이가 $12 x^{5} y^{2}$ 이고, 높이가 $3 x^{4} y^{3}$ 인 삼각형이 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            177.46,
+                            111.32,
+                            253.24,
+                            136.41
+                        ]
+                    ],
+                    "text_description" : "② $18 x^{9} y^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.92,
+                            112.86,
+                            127.8,
+                            192.22
+                        ]
+                    ],
+                    "text_description" : "① $12 x^{9} y^{5}$ ③ $18 x^{20} y^{6}$ ⑤ $36 x^{20} y^{6}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            177.46,
+                            141.02,
+                            252.72,
+                            165.08
+                        ]
+                    ],
+                    "text_description" : "④ $36 x^{9} y^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.41,
+                            195.78,
+                            414.52,
+                            220.38
+                        ]
+                    ],
+                    "text_description" : "(삼각형의 넓이) $=\\frac{1}{2} \\times($ 밑변의 길이 $) \\times($ 높이 $)=\\frac{1}{2} \\times 12 x^{5} y^{2} \\times 3 x^{4} y^{3}=18 x^{9} y^{5}$"
+                }
+            ]
+        }
+    ]
+}

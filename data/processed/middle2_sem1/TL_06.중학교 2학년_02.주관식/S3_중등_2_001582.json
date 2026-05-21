@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "72d2465c-837d-4e57-8389-178521d0c914",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001582",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            75.22,
+                            21.03,
+                            397.14,
+                            59.43
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.899999999999999,
+                            72.23,
+                            307.54,
+                            154.15
+                        ]
+                    ],
+                    "text_description" : "① $\\left\\{\\begin{array}{l}y=3(x-2) \\\\ x+2(y-3)=10\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.2,
+                            307,
+                            140.4,
+                            327.48
+                        ]
+                    ],
+                    "text_description" : "① $x=4, y=6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.02,
+                            160.28,
+                            402.26,
+                            299.8
+                        ]
+                    ],
+                    "text_description" : "① \\[ \\left\\{\\begin{array} { l } { y = 3 (x - 2) } \\\\ { x + 2 (y - 3) = 1 0 } \\end{array} \\text { 에서 } \\left\\{\\begin{array}{ll} y=3 x-6 & \\cdots \\cdots \\cdot㉠ \\\\ x+2 y=16 & \\cdots \\cdots \\cdot㉡ \\end{array}\\right. \\right. \\] $y$를 없애기 위해 ㉠을 ㉡에 대입하면 \\[ x+2(3 x-6)=16, x=4 \\] $x=4$를 ㉠에 대입하면 $y=12-6, y=6$"
+                }
+            ]
+        }
+    ]
+}

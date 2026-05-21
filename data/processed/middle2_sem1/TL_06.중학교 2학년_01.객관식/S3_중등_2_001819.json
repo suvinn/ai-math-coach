@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "954ba10c-7e84-44e1-8bdc-9d095b33faf5",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001819",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "상",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            21.92,
+                            456,
+                            79.92
+                        ]
+                    ],
+                    "text_description" : "다음 보기 중 $x$와 $y$ 사이를 나타내는 식이 일차함수인 것을 모두 고르시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            77.0,
+                            112.92,
+                            441.0,
+                            337.92
+                        ]
+                    ],
+                    "text_description" : "보기 ㄱ. 시속 $x \\mathrm{~km}$로 5시간 동안 걸은 거리는 $y \\mathrm{~km}$ 이다. ㄴ. 윗변의 길이가 $x \\mathrm{~cm}$, 아랫변의 길이가 2cm, 높이가 3cm 인 사다리꼴의 넓이는 $y \\mathrm{~cm}^{2}$ 이다. ㄷ. $x$ 각형의 대각선의 개수는 $y$ 이다. ㄹ. 두 대각선의 길이가 각각 $x \\mathrm{~cm}, y \\mathrm{~cm}$ 인 마 름모의 넓이는 $30 \\mathrm{~cm}^{2}$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            55,
+                            504.5,
+                            353,
+                            533.5
+                        ]
+                    ],
+                    "text_description" : "따라서 일차함수인 것은 ㄱ, ㄴ다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.0,
+                            452.5,
+                            451.0,
+                            500.5
+                        ]
+                    ],
+                    "text_description" : "ㄷ. $y=\\frac{x(x-3)}{2} \\quad$ ㄹ. $\\frac{x y}{2}=30$, 즉 $y=\\frac{60}{x}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.0,
+                            407.0,
+                            265.0,
+                            430.0
+                        ]
+                    ],
+                    "text_description" : "ㄱ. $y=5x$ ㄴ."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            39.0,
+                            560.0,
+                            89.0,
+                            584.0
+                        ]
+                    ],
+                    "text_description" : "ㄱㄴ"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            270.0,
+                            392.0,
+                            536.0,
+                            437.0
+                        ]
+                    ],
+                    "text_description" : "$y=\\frac{1}{2}\\times(x+2)\\times3=frac{3}{2}x+3$"
+                }
+            ]
+        }
+    ]
+}

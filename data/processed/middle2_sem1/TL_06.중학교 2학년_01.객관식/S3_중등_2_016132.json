@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4d1b0044-91b8-44fc-9095-0aad253c5ac1",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016132",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            68.42,
+                            729,
+                            100.42
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차방정식 $3 x+2 y-6=0$의 그래프와 같은 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10,
+                            114.42,
+                            172,
+                            157.42
+                        ]
+                    ],
+                    "text_description" : "① $y=-\\frac{3}{2} x+3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8,
+                            165,
+                            175,
+                            369
+                        ]
+                    ],
+                    "text_description" : "② $y=\\frac{3}{2} x-3$ ③ $y=-\\frac{3}{2} x-3$ ④ $y=\\frac{3}{2} x+3$ ⑤ $y=\\frac{2}{3} x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9,
+                            396,
+                            341,
+                            427
+                        ]
+                    ],
+                    "text_description" : "일차방정식을 $y$에 대해 정리하면:"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            212,
+                            463,
+                            730,
+                            518
+                        ]
+                    ],
+                    "text_description" : "$3 x+2 y-6=0 \\rightarrow 2 y=-3 x+6 \\rightarrow y=-\\frac{3}{2} x+3$"
+                }
+            ]
+        }
+    ]
+}

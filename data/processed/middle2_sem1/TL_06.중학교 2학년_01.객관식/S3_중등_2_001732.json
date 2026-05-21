@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "58749e3e-f72b-4852-ae2e-5d9a4c758de1",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001732",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.5,
+                            14.92,
+                            344.5,
+                            114.92
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림의 직선과 평행하고, 점 $(-3, 5)$를 지나는 직선을 그 래프로하는 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            353.5,
+                            18.5,
+                            529.5,
+                            167.5
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 좌표 평면을 나타내고 있으며, y축과 x축이 있으며, 직선이 y = 2를 통과하고 x = -6에서 y축에 닿습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.5,
+                            222.5,
+                            189.5,
+                            271.5
+                        ]
+                    ],
+                    "text_description" : "③ $y=\\frac{1}{3} x+6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.5,
+                            129.5,
+                            211.5,
+                            214.5
+                        ]
+                    ],
+                    "text_description" : "① $y=-3 x-4$ ② $y=-\\frac{1}{3} x+4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.5,
+                            274.5,
+                            193.5,
+                            361.5
+                        ]
+                    ],
+                    "text_description" : "④ $y=\\frac{5}{3} x+8$ ⑤ $y=3 x+4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            216.5,
+                            180.5,
+                            563.5,
+                            341.5
+                        ]
+                    ],
+                    "text_description" : "두 점 $(-6, 0), (0, 2)$를 지나는 직선과 평행하므로 (가울기) $=\\frac{2-0}{0-(-6)}=\\frac{1}{3}$ $y=\\frac{1}{3} x+b$로 놓고 $y=\\frac{1}{3} x+b$에 점 $(-3, 5)$를 대입하면 $5=\\frac{1}{3} \\times(-3)+b$ 이므로 $b=6$ 이다. 따라서 구하는 식은 $y=\\frac{1}{3} x+6$ 이다."
+                }
+            ]
+        }
+    ]
+}

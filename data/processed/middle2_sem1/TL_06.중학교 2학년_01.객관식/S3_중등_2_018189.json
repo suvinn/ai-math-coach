@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "3e03c696-9e65-4de5-b43b-e7f37497d497",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018189",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            97.5,
+                            6.92,
+                            844.5,
+                            43.92
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=-x+7$에 대하여 $f(d)=4$ 일 때, $d$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.5,
+                            64.92,
+                            122.5,
+                            94.92
+                        ]
+                    ],
+                    "text_description" : "① $d=3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.5,
+                            104.5,
+                            123.5,
+                            265.5
+                        ]
+                    ],
+                    "text_description" : "② $d=4$ ③ $d=2$ ④ $d=1$ ⑤ $d=0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.5,
+                            282.5,
+                            322.5,
+                            531.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(d)=4, f(d)=-d+7 \\\\ -d+7=4 \\\\ -d=4-7 \\\\ -d=-3 \\\\ d=3\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

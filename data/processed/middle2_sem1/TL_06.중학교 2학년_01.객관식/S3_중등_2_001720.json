@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "45522dbb-d796-410f-9b2c-0a98695eb0fc",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001720",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.75,
+                            24.16,
+                            467.25,
+                            232.91
+                        ]
+                    ],
+                    "text_description" : "$x$ 절편과 $y$ 절편을 이용하여 일차함수 $y=-\\frac{4}{3} x-4$의 그래프를 그렸더니 오른쪽 그림과 같았다. 이때 $m+n$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            480.25,
+                            22.38,
+                            706,
+                            260.13
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-\\frac{4}{3} x-4$의 그래프를 $xy$ 좌표평면위에 그렸고 점 $(m, 0)$, 점 $(0, n)$을 지난다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            489.5,
+                            262.88,
+                            586,
+                            298.63
+                        ]
+                    ],
+                    "text_description" : "③ $-7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.5,
+                            258.13,
+                            385.75,
+                            338.13
+                        ]
+                    ],
+                    "text_description" : "① $-9$ ② $-8$ ④ $-6$ ⑤ $-5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.25,
+                            352.88,
+                            536.5,
+                            474.63
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}y=-\\frac{4}{3} x-4 \\text { 에서 } y \\text { 절편은 }-4 \\text { 이므로 } n=-4 \\\\ y=-\\frac{4}{3} x-4 \\text { 에 } y=0 \\text { 을 대입하면 } x=-3 \\text { 이므로 } m=-3 \\\\ \\text { 따라서 } m+n=-3+(-4)=-7\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

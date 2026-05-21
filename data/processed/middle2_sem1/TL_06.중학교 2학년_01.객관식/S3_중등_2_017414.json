@@ -1,0 +1,149 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "b93e09d3-9d53-4eea-b399-036bd0d5a522",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017414",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.58,
+                            11.92,
+                            267.83,
+                            40.67
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.83,
+                            52.59,
+                            295.33,
+                            88.84
+                        ]
+                    ],
+                    "text_description" : "$(3 p+4 q)+(6 p-2 q)$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.83,
+                            150.84,
+                            157.83,
+                            182.59
+                        ]
+                    ],
+                    "text_description" : "② $9 p+2 q$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.55,
+                            151.02,
+                            156.21,
+                            185.17
+                        ]
+                    ],
+                    "text_description" : "$9 p+2 q$"
+                }
+            ]
+        },
+        {
+            "class_num" : "2",
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.83,
+                            110.09,
+                            156.58,
+                            141.34
+                        ]
+                    ],
+                    "text_description" : "① $9 p+6 q$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.58,
+                            193.59,
+                            156.58,
+                            308.84
+                        ]
+                    ],
+                    "text_description" : "③ $7 p+6 q$\n④ $9 p+4 q$\n⑤ $7 p+2 q$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.08,
+                            337.59,
+                            727.83,
+                            373.84
+                        ]
+                    ],
+                    "text_description" : "$(3 p+4 q)+(6 p-2 q)=(3 p+6 p)+(4 q-2 q)=9 p+2 q$"
+                }
+            ]
+        }
+    ]
+}

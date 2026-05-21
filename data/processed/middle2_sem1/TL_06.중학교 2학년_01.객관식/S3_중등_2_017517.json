@@ -1,0 +1,161 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c961073a-50f3-450a-b2b5-e6d70bf627d8",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017517",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            457.42,
+                            20.62,
+                            642.54,
+                            104.95
+                        ]
+                    ],
+                    "text_description" : "$\\left(\\frac{3 x^{a}}{y^{4}}\\right)^{2}=\\frac{b x^{6}}{y^{c}}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.13,
+                            126.55,
+                            287.73,
+                            162.54
+                        ]
+                    ],
+                    "text_description" : "일 때, $a+b+c$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.05,
+                            310.64,
+                            73.81,
+                            341.49
+                        ]
+                    ],
+                    "text_description" : "④ $20$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.02,
+                            182.73,
+                            75.87,
+                            298.94
+                        ]
+                    ],
+                    "text_description" : "① $14$ ② $16$ ③ $18$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.11,
+                            352.42,
+                            71.75,
+                            385.33
+                        ]
+                    ],
+                    "text_description" : "⑤ $22$"
+                }
+            ]
+        },
+        {
+            "class_num" : 4,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.22,
+                            404.87,
+                            351.49,
+                            491.26
+                        ]
+                    ],
+                    "text_description" : "$\\left(\\frac{3 x^{a}}{y^{4}}\\right)^{2}=\\frac{\\left(3^{2}\\right) x^{2 a}}{y^{8}}=\\frac{9 x^{2 a}}{y^{8}}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            151.97,
+                            504.63,
+                            209.57,
+                            587.93
+                        ]
+                    ],
+                    "text_description" : "$\\frac{b x^{6}}{y^{c}}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.56,
+                            671.24,
+                            335.03,
+                            705.18
+                        ]
+                    ],
+                    "text_description" : "$b=9, \\quad 2 a=6, \\quad c=8$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.91,
+                            721.63,
+                            345.32,
+                            755.57
+                        ]
+                    ],
+                    "text_description" : "$a+b+c=3+9+8=20$"
+                }
+            ]
+        }
+    ]
+}

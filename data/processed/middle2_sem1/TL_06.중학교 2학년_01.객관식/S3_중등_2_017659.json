@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "87d1ce3d-5027-47da-b400-28cdc0e4d458",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017659",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.259999999999998,
+                            9.02,
+                            622.26,
+                            39.27
+                        ]
+                    ],
+                    "text_description" : "기울기가 4이고 점 $(2, 3)$을 지나는 일차함수의 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            36.51,
+                            111.27,
+                            150.76,
+                            138.02
+                        ]
+                    ],
+                    "text_description" : "$y=4 x-5$"
+                }
+            ]
+        },
+        {
+            "class_num" : "2",
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.51,
+                            58.5,
+                            154.26,
+                            98.5
+                        ]
+                    ],
+                    "text_description" : "① $y=4 x+3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.51,
+                            153.5,
+                            180.51,
+                            291
+                        ]
+                    ],
+                    "text_description" : "③ $y=3 x+4$\n④ $y=2 x-3$\n⑤ $y=-4 x+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.76,
+                            312.65,
+                            912.38,
+                            377.99
+                        ]
+                    ],
+                    "text_description" : "기울기가 4이므로 일차함수의 식을 $y=4 x+b$로 놓을 수 있습니다. 이 직선이 점 $(2, 3)$을 지납 니다:"
+                }
+            ]
+        }
+    ]
+}

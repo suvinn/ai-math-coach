@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c031758b-fd57-4c71-8797-89fda9f4c010",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018268",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.9,
+                            9.22,
+                            627.62,
+                            36.35
+                        ]
+                    ],
+                    "text_description" : "두 점 $(-1, -2)$, $(2, 7)$을 지나는 직선의 방정식을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.22,
+                            283.14,
+                            574.37,
+                            408.06
+                        ]
+                    ],
+                    "text_description" : "기울기 $m=\\frac{7-(-2)}{2-(-1)}=\\frac{9}{3}=3$. 직선의 방정식은 $y-(-2)=3(x-(-1))$입니다. 따라서 $y=3 x+1$입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.38,
+                            106.56,
+                            188.83,
+                            260.61
+                        ]
+                    ],
+                    "text_description" : "② $y=3 x-1$ ③ $y=5 x-1$ ④ $y=5 x+1$ ⑤ $y=5 x-3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.0,
+                            67.0,
+                            189.0,
+                            95.0
+                        ]
+                    ],
+                    "text_description" : "$y=3 x+1$"
+                }
+            ]
+        }
+    ]
+}

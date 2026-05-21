@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2103bca2-7f34-47df-a555-8c58820cacf9",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015999",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.87,
+                            63.67,
+                            660.67,
+                            155.67
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식을 푸시오. \\[ 4 x+2 \\leq 3 x+5 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.67,
+                            241.47,
+                            127.87,
+                            270.87
+                        ]
+                    ],
+                    "text_description" : "② $x \\leq 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.47,
+                            198.56,
+                            127.87,
+                            227.36
+                        ]
+                    ],
+                    "text_description" : "① $x \\geq 3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.87,
+                            283.16,
+                            129.47,
+                            396.16
+                        ]
+                    ],
+                    "text_description" : "③ $x \\geq 4$ ④ $x \\leq 4$ ⑤ $x=3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.47,
+                            433.36,
+                            411.07,
+                            464.96
+                        ]
+                    ],
+                    "text_description" : "$4 x+2 \\leq 3 x+5$에서 $\\quad x \\leq 3$"
+                }
+            ]
+        }
+    ]
+}

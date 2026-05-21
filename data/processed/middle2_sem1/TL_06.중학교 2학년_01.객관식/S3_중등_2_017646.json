@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a9f82059-8e25-4fc0-a8bf-89a3685f000d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017646",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.380000000000001,
+                            7.29,
+                            919.63,
+                            121.04
+                        ]
+                    ],
+                    "text_description" : "500 개의 알약이 들어 있는 병에서 하루에 알약을 6 개씩 먹는다. x일 동안 먹었을 때 병에 남은 알약의 개수를 $y$라고 할 때, 다음을 구하시오. $x$와 $y$ 사이의 관계식을 구하세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            30.63,
+                            145.01,
+                            167.13,
+                            170.26
+                        ]
+                    ],
+                    "text_description" : "$y=500-6 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.88,
+                            190.51,
+                            173.38,
+                            373.01
+                        ]
+                    ],
+                    "text_description" : "② $y=500+6 x$ ③ $y=500-x$ ④ $y=500+x$ ⑤ $y=500-6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.38,
+                            393.01,
+                            874.63,
+                            608.01
+                        ]
+                    ],
+                    "text_description" : "알약의 초기 개수는 500 개이며, 하루에 6 개씩 먹으므로 $x$ 일 동안 먹은 알약의 개수는 $6 x$ 개입니다. 따라서 병에 남은 알약의 개수 $y$는 초기 개수에서 $x$ 일 동안 먹은 알약의 개수를 뺀 값입니다. \\[ y=500-6 x \\]"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "95433a41-b94d-446c-ad07-625139a49f88",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018350",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.58,
+                            4.13,
+                            548.09,
+                            32.11
+                        ]
+                    ],
+                    "text_description" : "$z<-2$ 일 때, $z+6$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.3,
+                            100.04,
+                            175.3,
+                            128.02
+                        ]
+                    ],
+                    "text_description" : "$z+6<4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.58,
+                            54.94,
+                            174.15,
+                            88.05
+                        ]
+                    ],
+                    "text_description" : "① $z+6 \\geq 4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.73,
+                            144.35,
+                            177.58,
+                            253.39
+                        ]
+                    ],
+                    "text_description" : "③ $z+6 \\geq 3$ ④ $z+6>4$ ⑤ $z+6<5$"
+                }
+            ]
+        },
+        {
+            "class_num" : "3",
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.97,
+                            279.65,
+                            167.87,
+                            306.48
+                        ]
+                    ],
+                    "text_description" : "$z<-2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.15,
+                            339.03,
+                            215.83,
+                            370.42
+                        ]
+                    ],
+                    "text_description" : "$z+6<-2+6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.84,
+                            398.4,
+                            182.15,
+                            428.08
+                        ]
+                    ],
+                    "text_description" : "$z+6<4$"
+                }
+            ]
+        }
+    ]
+}

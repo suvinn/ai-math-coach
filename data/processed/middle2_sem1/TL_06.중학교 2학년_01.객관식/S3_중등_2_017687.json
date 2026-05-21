@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "55977da0-303a-4a7b-8643-ef7726b3be5c",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017687",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.88,
+                            4.02,
+                            542.13,
+                            40.27
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 풀어 $x$와 $y$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            447.13,
+                            60.27,
+                            653.38,
+                            162.77
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}3 x+4 y=17 \\\\ 2 x-y=4\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.13,
+                            185,
+                            205.88,
+                            217.5
+                        ]
+                    ],
+                    "text_description" : "① $x=3, y=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.38,
+                            227.5,
+                            207.13,
+                            392.5
+                        ]
+                    ],
+                    "text_description" : "② $x=4, y=3$ ③ $x=2, y=3$ ④ $x=3, y=4$ ⑤ $x=1, y=5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.88,
+                            416.25,
+                            665.88,
+                            640
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}2 x-y=4 \\quad \\Rightarrow \\quad y=2 x-4 \\\\ 3 x+4(2 x-4)=17 \\\\ 3 x+8 x-16=17 \\quad \\Rightarrow \\quad 11 x=33 \\quad \\Rightarrow \\quad x=3 \\\\ y=2(3)-4=2\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

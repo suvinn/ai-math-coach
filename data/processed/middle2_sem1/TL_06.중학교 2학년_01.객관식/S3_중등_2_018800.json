@@ -1,0 +1,149 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fa5c8e65-054f-42f6-b690-50b8b574e0b8",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018800",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57,
+                            10.92,
+                            452,
+                            37.92
+                        ]
+                    ],
+                    "text_description" : "다음 중 서로 평행한 두 일차함수의 그래프를 골라라."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.0,
+                            65.92,
+                            453.0,
+                            145.92
+                        ]
+                    ],
+                    "text_description" : "㉮ $y=\\frac{1}{4} x-3$ ㉯ $y=-\\frac{1}{4} x+\\frac{2}{3}$ ㉰ $y=0. 4 x+1. 5$ ㉱ $y=0. 25 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            165.5,
+                            148,
+                            197.5
+                        ]
+                    ],
+                    "text_description" : "㉮와 ㉱"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            230.68,
+                            366.72,
+                            251.8
+                        ]
+                    ],
+                    "text_description" : "평행한 그래프는 기울기가 서로 같으므로"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            617.6,
+                            229.4,
+                            748.8,
+                            253.72
+                        ]
+                    ],
+                    "text_description" : "가 서로 평행하다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            273.28,
+                            287.64,
+                            493.44,
+                            309.4
+                        ]
+                    ],
+                    "text_description" : "이므로 평행한 그래프는 없다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            368,
+                            219.16,
+                            616.32,
+                            264.6
+                        ]
+                    ],
+                    "text_description" : "$y=\\frac{1}{4} x-3$과 $y=0. 25 x=\\frac{1}{4} x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.08,
+                            275.48,
+                            272.0,
+                            320.56
+                        ]
+                    ],
+                    "text_description" : "$y=0. 4 x+1. 5=\\frac{2}{5} x+\\frac{3}{2}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "310e6ca7-eebc-48c6-b73c-da61e2767fcc",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015321",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.68,
+                            60.16,
+                            262.4,
+                            88.96
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            371.2,
+                            120.32,
+                            743.68,
+                            153.6
+                        ]
+                    ],
+                    "text_description" : "$(3 x+5 y-2)-(4 x-2 y+6)$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24,
+                            195.5,
+                            210,
+                            224.5
+                        ]
+                    ],
+                    "text_description" : "① $-x+7 y-8$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24,
+                            238.5,
+                            210,
+                            391.5
+                        ]
+                    ],
+                    "text_description" : "② $-x+7 y+8$ ③ $-x-7 y-8$ ④ $x+7 y-8$ ⑤ $-x+7 y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.11,
+                            514.0699999999999,
+                            389.16,
+                            538.27
+                        ]
+                    ],
+                    "text_description" : "괄호를 풀고 동류항을 정리합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.11,
+                            573.71,
+                            1414.6,
+                            605.73
+                        ]
+                    ],
+                    "text_description" : "$(3 x+5 y-2)-(4 x-2 y+6)=3 x+5 y-2-4 x+2 y-6=(3 x-4 x)+(5 y+2 y)+(-2-6)=-x+7 y-8$"
+                }
+            ]
+        }
+    ]
+}

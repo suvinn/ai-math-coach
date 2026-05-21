@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d6cc551b-5cef-4dc9-96f6-48871a8954e0",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004092",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            86.2,
+                            26.64,
+                            660.6,
+                            78.64
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            88.6,
+                            108.24,
+                            329.4,
+                            238.24
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{aligned} 3 x+2 y & =-4 \\\\ -x+2 y & =4\\end{aligned}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            7,
+                            419.1,
+                            166.2,
+                            446.3
+                        ]
+                    ],
+                    "text_description" : "② $x=-2, y=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.2,
+                            264.7,
+                            425.4,
+                            411.1
+                        ]
+                    ],
+                    "text_description" : "② $\\left\\{\\begin{array}{rr}3 x+2 y=-4 & \\ldots \\ldots \\text { ① } \\\\ -x+2 y=4 & \\ldots \\ldots. ②\\end{array}\\right. $ ①-②를 하면 $4 x=-8, x=-2$ $x=-2$를 ②에 대입하면 $-(-2)+2 y=4, y=1$ 따라서 구하는 해는 $x=-2, y=1$"
+                }
+            ]
+        }
+    ]
+}

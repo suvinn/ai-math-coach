@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c3b86249-ffb0-48d0-9938-1fef217a998a",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018988",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-08] 두 일차함수의 그래프와 연립일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-18] 두 일차함수의 그래프와 연립일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.74,
+                            15.2,
+                            401.94,
+                            36
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식 중 그 해가 무수히 많은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.74,
+                            415.04,
+                            727.54,
+                            611.04
+                        ]
+                    ],
+                    "text_description" : "두 직선이 일치하면 연립방정식의 해가 무수히 많다. ①, ⑤는 기울기가 다르므로 한 점에서 만나고 해가 $1$ 개이다. ②, ③은 기울기가 같고 $y$ 절편이 다르므로 해가 없다. ④ $\\left\\{\\begin{array}{l}x-2y-3=0 \\\\ 3(3-x)=-6y\\end{array} \\Rightarrow\\left\\{\\begin{array}{l}y=\\frac{1}{2}x-\\frac{3}{2} \\\\ y=\\frac{1}{2}x-\\frac{3}{2}\\end{array}\\right. \\right. $으로 두 직선이 일치하므로 해가 무수히 많다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.14,
+                            47.2,
+                            237.14,
+                            222.8
+                        ]
+                    ],
+                    "text_description" : "① $\\left\\{\\begin{array}{l}y = x \\\\ y = -2x + 2\\end{array}\\right. $ ② $\\left\\{\\begin{array}{l}3x + y = 5 \\\\ 3x + y = -5\\end{array}\\right. $ ③ $\\left\\{\\begin{array}{l}-8x + 2y + 2 = 0 \\\\ 3y = 12x - 6\\end{array}\\right. $"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.0,
+                            299.0,
+                            200.0,
+                            352.0
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\left\\{\\begin{array}{l}x + 3y = -4 \\\\ 3x + y = 3\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            90.0,
+                            229.0,
+                            229.0,
+                            290.0
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}x - 2y - 3 = 0 \\\\ 3(3 - x) = -6y\\end{array}\\right. $"
+                }
+            ]
+        }
+    ]
+}

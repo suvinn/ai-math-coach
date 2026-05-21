@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "10893ad7-5138-46bd-a2a5-1dc30235e614",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001615",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            52.5,
+                            19.65,
+                            345,
+                            157.15
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프가 오른쪽 그래프와 평행하고, 점 $(-6, 3)$을 지날 때, 이 일차함수의 식을 구하시오 (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            357.5,
+                            15.37,
+                            536.25,
+                            202.87
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 x-y좌표 평면에 그려진 직선 그래프입니다. x축과 y축이 있으며, y축은 4에서 교차하고 x축은 3에서 교차합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.5,
+                            425.37,
+                            162.5,
+                            460.37
+                        ]
+                    ],
+                    "text_description" : "$y=-\\frac{4}{3} x-5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.68,
+                            160.56,
+                            340.4,
+                            218.16
+                        ]
+                    ],
+                    "text_description" : "주어진 그래프가 두 점 $(0, 4), (3, 0)$을 지나므로 $($ 기울기 $)=\\frac{0-4}{3-0}=-\\frac{4}{3}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.68,
+                            222,
+                            437.68,
+                            422.32
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프가이 그래프와 평행하므로 $a=-\\frac{4}{3}$ 일차함수 $y=-\\frac{4}{3} x+b$의 그래프가 점 $(-6, 3)$을 지나므로 \\[ 3=-\\frac{4}{3} \\times(-6)+b, 3=8+b \\] 따라서 $b=-5$ 이다. 기을기가 $-\\frac{4}{3}, y$ 절민이 -5 이므로 일차함수의 식은 $y=-\\frac{4}{3} x-5$ 이다."
+                }
+            ]
+        }
+    ]
+}

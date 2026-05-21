@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7d18c3be-52d0-48d0-99c2-690910e4a5be",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018207",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            93.38,
+                            10.27,
+                            881.88,
+                            48.52
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=-3 x+5$에 대하여 $f(d)=-4$ 일 때, $d$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.879999999999999,
+                            65.27,
+                            122.13,
+                            99.02
+                        ]
+                    ],
+                    "text_description" : "① $d=3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.88,
+                            103.75,
+                            149.63,
+                            272.5
+                        ]
+                    ],
+                    "text_description" : "② $d=-3$ ③ $d=4$ ④ $d=-2$ ⑤ $d=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.63,
+                            280,
+                            355.88,
+                            542.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(d)=-4, f(d)=-3 d+5 \\\\ -3 d+5=-4 \\\\ -3 d=-4-5 \\\\ -3 d=-9 \\\\ d=\\frac{-9}{-3}=3\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

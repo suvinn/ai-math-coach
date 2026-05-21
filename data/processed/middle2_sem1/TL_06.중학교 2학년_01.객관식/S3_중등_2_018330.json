@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "23662cc4-be09-4cda-ac92-05ff332f54eb",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018330",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.8,
+                            8.08,
+                            1076.84,
+                            77.2
+                        ]
+                    ],
+                    "text_description" : "\"가방의 무게 $x \\mathrm{~kg}$에 짐의 무게 6kg을 더하면 13kg보다 무겁다. \"를 부등식으로 나타낸 것 중 옳은 것을 고르세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.72,
+                            106.36,
+                            183.4,
+                            134.16
+                        ]
+                    ],
+                    "text_description" : "① $x+6>13$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.44,
+                            146.96,
+                            183.12,
+                            302.48
+                        ]
+                    ],
+                    "text_description" : "② $x+6=13$ ③ $x+6<13$ ④ $x+6 \\leq 13$ ⑤ $x+6 \\geq 13$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.08,
+                            322.74,
+                            1064.04,
+                            393.14
+                        ]
+                    ],
+                    "text_description" : "가방의 무게와 짐의 무게를 합친 값이 13kg보다 무겁다는 조건을 부등식으로 나타내면 다음과 같 습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            479.08,
+                            428.78,
+                            616.04,
+                            454.58
+                        ]
+                    ],
+                    "text_description" : "$x+6>13$"
+                }
+            ]
+        }
+    ]
+}

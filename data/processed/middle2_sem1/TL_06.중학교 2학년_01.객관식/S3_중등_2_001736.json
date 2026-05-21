@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "fb50acf7-72bc-44e8-a065-ca0b6272181f",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001736",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.28,
+                            5.24,
+                            366.28,
+                            30.24
+                        ]
+                    ],
+                    "text_description" : "다음 중 일차함수 $y=-3 x+3$의 그래프는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.28,
+                            43.31,
+                            199.28,
+                            166.31
+                        ]
+                    ],
+                    "text_description" : "① $x$ 절편이 1, $y$ 절편이 3"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            226.28,
+                            33.77,
+                            402.28,
+                            322.77
+                        ]
+                    ],
+                    "text_description" : "② $x$ 절편이 3, $y$ 절편이 3 ④ $x$ 절편이 -3, $y$ 절편이 3"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            39.28,
+                            172.77,
+                            201.28,
+                            433.77
+                        ]
+                    ],
+                    "text_description" : "③ $x$ 절편이 3, $y$ 절편이 1 ⑤ $x$ 절편이 -1, $y$ 절편이 3"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.28,
+                            433.77,
+                            386.28,
+                            486.77
+                        ]
+                    ],
+                    "text_description" : "$y=-3 x+3$에 $y=0$을 대입하면 $x=1, x=0$을 대입하면 $y=3$ 따라서 $x$ 절편이 $1, y$ 절편이 3 이므로 일차함수 $y=-3 x+3$의 그래프를 그리면 ①과 같다."
+                }
+            ]
+        }
+    ]
+}

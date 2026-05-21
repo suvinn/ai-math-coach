@@ -1,0 +1,179 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "94b3e474-d955-4ae2-9307-ac4d342274a8",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017682",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.57,
+                            13.83,
+                            543.07,
+                            48.62
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 풀어 $x$와 $y$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            477.06,
+                            67.35,
+                            638.52,
+                            165.48
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}x=3 y-4 \\\\ x-y=2\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.24,
+                            320.69,
+                            209.46,
+                            350.12
+                        ]
+                    ],
+                    "text_description" : "④ $x=5, y=3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.24,
+                            195.46,
+                            208.57,
+                            309.64
+                        ]
+                    ],
+                    "text_description" : "① $x=1, y=2$ ② $x=4, y=3$ ③ $x=2, y=1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.13,
+                            361.37,
+                            207.67,
+                            394.38
+                        ]
+                    ],
+                    "text_description" : "⑤ $x=3, y=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 5,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            168.42,
+                            420.03,
+                            310.93,
+                            451.47
+                        ]
+                    ],
+                    "text_description" : "$x=3 y-4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.13,
+                            480.9,
+                            459.22,
+                            512.12
+                        ]
+                    ],
+                    "text_description" : "$x-y=2 \\quad \\Rightarrow \\quad(3 y-4)-y=2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.7,
+                            537.1,
+                            452.98,
+                            568.32
+                        ]
+                    ],
+                    "text_description" : "$3 y-y-4=2 \\quad \\Rightarrow \\quad 2 y-4=2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            106.88,
+                            599.54,
+                            369.13,
+                            631.66
+                        ]
+                    ],
+                    "text_description" : "$2 y=6 \\quad \\Rightarrow \\quad y=3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            79.22,
+                            663.77,
+                            401.24,
+                            691.42
+                        ]
+                    ],
+                    "text_description" : "$x=3(3)-4=9-4=5$"
+                }
+            ]
+        }
+    ]
+}

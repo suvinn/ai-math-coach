@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d2d118ea-8733-4428-ba8e-a484a906e392",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001604",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.3,
+                            3.74,
+                            787.7,
+                            73.34
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프가 제$1$사분면을 지나지 않을 때, $a, b$의 부호를 정하시오. (단, $a \\neq 0, b \\neq 0$)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.02,
+                            122.49,
+                            141.71,
+                            141.66
+                        ]
+                    ],
+                    "text_description" : "$a<0, b<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            49.3,
+                            77.8,
+                            550.9,
+                            120.2
+                        ]
+                    ],
+                    "text_description" : "제$1$사분면을 지나지 않는 일차함수 $y=a x+b$의 그래프는 오른쪽 그림과 같다. 이때 그래프가 오른쪽 아래를 향하므로 $a<0, y$ 축과 음의 부분에서 만나므로 $b<0$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            670.1,
+                            76.2,
+                            794.9,
+                            185
+                        ]
+                    ],
+                    "text_description" : "제 $1$사분면을 지나지 않는 일차함수 $y=a x+b$의 그래프이다."
+                }
+            ]
+        }
+    ]
+}

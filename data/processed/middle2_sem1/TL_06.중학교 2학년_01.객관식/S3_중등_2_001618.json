@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "9ee9dcd5-f1c4-4911-86df-74d47adeb022",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001618",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            36.25,
+                            4.9,
+                            451.25,
+                            98.65
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그래프는 어떤 양초에 불을 붙인 다음 $x$ 분 후에 남은 양초의 길이를 $y \\mathrm{~cm}$라고 할 때, $x$와 $y$ 사이의 관계를 나타낸 것이다. 다음 설명 중 옳지 않은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            464.25,
+                            10.620000000000001,
+                            651.25,
+                            150.62
+                        ]
+                    ],
+                    "text_description" : "이 이미지는 y축(y(cm))과 x축(x(분))이 있는 그래프를 나타내고 있습니다. y축은 cm 단위이고, x축은 분 단위입니다. 그래프는 원점(0, 0)에서 시작하여 y=10cm에서 x=20분으로 직선이 내려가는 형태입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.75,
+                            106.87,
+                            207.5,
+                            134.37
+                        ]
+                    ],
+                    "text_description" : "① $y=10-0. 2 x$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            37.5,
+                            135.62,
+                            412.5,
+                            189.37
+                        ]
+                    ],
+                    "text_description" : "② 양초가 모두 타는 데 걸리는 시간은 20분이다. ③ 8분 후의 양초의 길이는 6cm이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            37.5,
+                            191.87,
+                            520,
+                            248.12
+                        ]
+                    ],
+                    "text_description" : "④ 양초의 길이가 5cm가 되는 것은 불을 붙인 지 10분 후이다. ⑤ 불을 붙이기 전의 양초의 길이는 10cm이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            38.75,
+                            250.62,
+                            487.5,
+                            289.37
+                        ]
+                    ],
+                    "text_description" : "① 20분 동안 줄어든 양초의 길이가 10cm이므로 1분마다 0.5cm 씩 양초의 길이가 짧아진다. 따라서 $y=10-0. 5 x$"
+                }
+            ]
+        }
+    ]
+}

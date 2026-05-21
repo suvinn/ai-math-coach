@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5fbfe8a3-a979-4539-baef-07f6391412f2",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018888",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.78,
+                            19.060000000000002,
+                            1122.03,
+                            62.239999999999995
+                        ]
+                    ],
+                    "text_description" : "함수 $y=\\frac{12}{x}(x \\neq 0)$의 그래프와 점 $(-4, m)$에서 만나고, 일차함수 $y=\\frac{1}{2} x-2$의 그래프와 평행한 직선을 그래프로 하는 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.06,
+                            135.11,
+                            178.63,
+                            179.36
+                        ]
+                    ],
+                    "text_description" : "② $y=\\frac{1}{2} x-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.19,
+                            78.2,
+                            183.83,
+                            121.04
+                        ]
+                    ],
+                    "text_description" : "① $y=\\frac{1}{2} x+6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.78,
+                            192.3,
+                            182.9,
+                            328.49
+                        ]
+                    ],
+                    "text_description" : "③ $y=\\frac{1}{2} x-4$ ④ $y=\\frac{1}{2} x-3$ ⑤ $y=2 x-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.92,
+                            452.79,
+                            1189.49,
+                            583.51
+                        ]
+                    ],
+                    "text_description" : "또, $y=\\frac{1}{2} x-2$와 평행하므로 기울기는 $\\frac{1}{2}$ 이다. 따라서 구하는 일차함수의 식을 $y=\\frac{1}{2} x+b$라고 할 때, $x=-4, y=-3$을 대입하면 $-3=\\frac{1}{2} \\times(-4)+b$ \\[ \\therefore b=-1 \\] 즉, 구하는 일차함수의 식은 $y=\\frac{1}{2} x-1$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.99,
+                            394.73,
+                            561.55,
+                            438.11
+                        ]
+                    ],
+                    "text_description" : "함수 $y=\\frac{12}{x}(x \\neq 0)$의 그래프와 만나는 점의 좌표는 $(-4, -3)$ 이다."
+                }
+            ]
+        }
+    ]
+}

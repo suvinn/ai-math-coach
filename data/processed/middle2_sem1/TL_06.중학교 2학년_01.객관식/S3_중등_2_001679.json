@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2a3d69ab-6924-4ba4-92e9-09a224d60dee",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001679",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.33,
+                            8.83,
+                            257.33,
+                            32.83
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.33,
+                            55.83,
+                            524.33,
+                            108.83
+                        ]
+                    ],
+                    "text_description" : "$a^{2}-a-\\left[2 a-4-\\left\\{a(a+3)+\\left(2 a^{3}-2 a\\right) \\div a\\right\\}\\right]$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.37,
+                            155.6,
+                            147.92,
+                            182.19
+                        ]
+                    ],
+                    "text_description" : "③ $4 a^{2}+2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            53.88,
+                            121.89,
+                            170.41,
+                            148.43
+                        ]
+                    ],
+                    "text_description" : "① $-2 a^{2}+2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            288.47,
+                            121.35,
+                            450.57,
+                            182.16
+                        ]
+                    ],
+                    "text_description" : "② $-2 a^{2}-2 a-2$ ④ $4 a^{2}+2 a$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.86,
+                            189.88,
+                            193.95,
+                            216.97
+                        ]
+                    ],
+                    "text_description" : "⑤ $4 a^{2}-2 a+2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.33,
+                            234.44,
+                            320.33,
+                            294.44
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}(\\text {주어진 식}) & =a^{2}-a-\\left\\{2 a-4-\\left(a^{2}+3 a+2 a^{2}-2\\right)\\right\\} \\\\ & =a^{2}-a-\\left(-3 a^{2}-a-2\\right) \\\\ & =4 a^{2}+2\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

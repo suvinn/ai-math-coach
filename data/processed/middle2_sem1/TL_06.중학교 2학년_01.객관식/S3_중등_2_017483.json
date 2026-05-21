@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7e9649b6-ae09-4178-8e0a-38a6a175d63f",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017483",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.5,
+                            9.42,
+                            262.5,
+                            85.42
+                        ]
+                    ],
+                    "text_description" : "다음 식을 전개하시오. \\[ -2 a(3 b-4 a+6) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.5,
+                            102,
+                            279.5,
+                            136
+                        ]
+                    ],
+                    "text_description" : "① $-6 a b+8 a^{2}-12 a$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.5,
+                            143,
+                            277.5,
+                            305
+                        ]
+                    ],
+                    "text_description" : "② $6 a b-8 a^{2}+12 a$ ③ $-6 a b-8 a^{2}+12 a$ ④ $-6 a b+8 a^{2}+12 a$ ⑤ $6 a b+8 a^{2}-12 a$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.5,
+                            335,
+                            724.5,
+                            424
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned}-2 a(3 b-4 a+6) & =-2 a \\times 3 b+-2 a \\times(-4 a)+-2 a \\times 6 \\\\ & =-6 a b+8 a^{2}-12 a\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

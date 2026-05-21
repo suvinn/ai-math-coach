@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "85fc6115-4e54-43b0-a9b6-c309c7fbeda8",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001632",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.39,
+                            25.46,
+                            291.33,
+                            223.61
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림과 같은 직각삼각형 ABC에서 점 P가 점 B를 출발하여 매초 2cm의 속력으로 점 C까지 $\\overline{\\mathrm{BC}}$ 위를 움직인다. $x$초 후의 $\\triangle \\mathrm{ABP}$의 넓이를 $y \\mathrm{~cm}^{2}$라"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.76,
+                            232.16,
+                            459.76,
+                            257.4
+                        ]
+                    ],
+                    "text_description" : "고 할 때, 4초 후의 $\\triangle \\mathrm{ABP}$의 넓이를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            312.25,
+                            31.89,
+                            531,
+                            189.64
+                        ]
+                    ],
+                    "text_description" : "삼각형 $\\mathrm{ABC}$가 있습니다. 선분 $BC$의 중간엔 $P$가 있습니다. 삼각형 $\\mathrm{ABC}$의 높이는 $8cm$이고, $BC$의 길이는 $12cm$입니다. $P$와 $A$가 이어져 있고 삼각형 $\\mathrm{ABP}$가 초록색으로 색칠되어 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            75,
+                            334.37,
+                            124.25,
+                            353.62
+                        ]
+                    ],
+                    "text_description" : "$32 \\mathrm{~cm}^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.5,
+                            261.12,
+                            342.25,
+                            333.37
+                        ]
+                    ],
+                    "text_description" : "\\[ \\triangle \\mathrm{ABP}=\\frac{1}{2} \\times \\overline{\\mathrm{BP}} \\times \\overline{\\mathrm{AC}} \\text { 이므로 } y=\\frac{1}{2} \\times 2 x \\times 8 \\] 따라서 $y=8 x$에 $x=4$를 대입하면 $y=8 \\times 4=32$이다."
+                }
+            ]
+        }
+    ]
+}

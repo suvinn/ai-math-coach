@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "278d0d8b-6f18-4170-8f53-131eef799b2a",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016017",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.95,
+                            47.39,
+                            443.95,
+                            88.01
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 풀어 $x$와 $y$를 구하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.51,
+                            204.54,
+                            75.2,
+                            238.92
+                        ]
+                    ],
+                    "text_description" : "보기"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            409.57,
+                            98.95,
+                            581.45,
+                            202.08
+                        ]
+                    ],
+                    "text_description" : "$\\left\\{\\begin{array}{l}2 x+y=10 \\\\ x-y=2\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.95,
+                            292.04,
+                            203.32,
+                            323.29
+                        ]
+                    ],
+                    "text_description" : "② $x=4, y=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.07,
+                            255.98,
+                            197.07,
+                            287.35
+                        ]
+                    ],
+                    "text_description" : "① $x=3, y=4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.4,
+                            327.2,
+                            216,
+                            439.2
+                        ]
+                    ],
+                    "text_description" : "③ $x=5, y=0$ ④ $x=6, y=-2$ ⑤ $x=3, y=5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            33.01,
+                            453.12,
+                            904.26,
+                            650.62
+                        ]
+                    ],
+                    "text_description" : "1. 두 번째 식에서 $y=x-2$. 이를 첫 번째 식에 대입: \\[ 2 x+(x-2)=10 \\Longrightarrow 2 x+x-2=10 \\Longrightarrow 3 x=12 \\Longrightarrow x=4. \\] 2. $x=4$를 두 번째 식에 대입하여 $y$를 구함: \\[ y=4-2 \\Longrightarrow y=2 \\]"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8709ad8f-255c-4ce4-861d-50a059d46a04",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018912",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.83,
+                            11.33,
+                            1208.83,
+                            37.33
+                        ]
+                    ],
+                    "text_description" : "길이가 \\(30 \\, \\text{cm}\\)인 양초가 있습니다. 불을 붙이면 \\(10\\) 분마다 \\(5 \\, \\text{cm}\\) 씩 짧아진다고 합니다. 불을 붙인 지 \\(x\\) 분 후의 초의 길이를 \\(y \\, \\text{cm}\\)라고 할 때, 양초의 길이는 다음과 같은 관계식으로 나타낼 수 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            90.83,
+                            107.33,
+                            202.83,
+                            132.33
+                        ]
+                    ],
+                    "text_description" : "$y=30-0. 5x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.83,
+                            44.33,
+                            204.83,
+                            102.33
+                        ]
+                    ],
+                    "text_description" : "① $y=5-30 x$ ② $y=20-0. 4 x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.83,
+                            138.94,
+                            185.83,
+                            195.94
+                        ]
+                    ],
+                    "text_description" : "① $y = 5 - 30 x$ ② $y = 20 - 0. 4 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.83,
+                            258.94,
+                            281.83,
+                            313.94
+                        ]
+                    ],
+                    "text_description" : "$1$ 분마다 $\\mathrm{0.5cm}$ 씩 짧아지므로 $\\\\$ $y=30-0. 5 x$"
+                }
+            ]
+        }
+    ]
+}

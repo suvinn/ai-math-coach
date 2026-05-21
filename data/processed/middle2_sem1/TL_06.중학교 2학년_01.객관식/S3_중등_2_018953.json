@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0f56ad1b-a29e-4a91-bb71-1fccf30b1e04",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018953",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62,
+                            12.92,
+                            265,
+                            41.92
+                        ]
+                    ],
+                    "text_description" : "다음 $\\square$ 안에 알맞은 식은?"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73,
+                            54.92,
+                            735,
+                            86.92
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $4 x-y-5=0$의 그래프는 일차함수 $y=\\square$의 그래프와 같다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.12,
+                            134.34,
+                            162.3,
+                            251.08
+                        ]
+                    ],
+                    "text_description" : "② $5x-4$ ③ $4x+5$ ④ $5x+4$ ⑤ $-5x+4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            69.12,
+                            102.6,
+                            148.48,
+                            126.15
+                        ]
+                    ],
+                    "text_description" : "① $4x-5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            315.5,
+                            151,
+                            338.5
+                        ]
+                    ],
+                    "text_description" : "일차방정식"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            259,
+                            317.5,
+                            526,
+                            340.5
+                        ]
+                    ],
+                    "text_description" : "을 $y$에 관하여 풀면 $y=4 x-5$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            152,
+                            316.5,
+                            258,
+                            338.5
+                        ]
+                    ],
+                    "text_description" : "$4 x-y-5=0$"
+                }
+            ]
+        }
+    ]
+}

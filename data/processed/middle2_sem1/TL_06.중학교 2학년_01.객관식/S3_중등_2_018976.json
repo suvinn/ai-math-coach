@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7aa07367-983a-40c0-ae3b-db356cf69d7f",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018976",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.5,
+                            14.92,
+                            757.5,
+                            38.92
+                        ]
+                    ],
+                    "text_description" : "다음 그래프는 일차방정식 $-x+2 y-7=0$의 그래프이다. $a, b$에 알맞은 수를 각각 구하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.5,
+                            48.92,
+                            425.5,
+                            280.92
+                        ]
+                    ],
+                    "text_description" : "좌표평면에 두 직선이 표시되어 있음. 직선 $a$는 $x$축에 평행하며, 직선 $b$는 $y$축과 기울기가 있는 선이다. 원점 $O$를 기준으로 직선 $b$는 방정식 $-x + 2y - 7 = 0$으로 표현된다. $y$축은 위쪽으로, $x$축은 오른쪽으로 향하고 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.93,
+                            320.28,
+                            222.8,
+                            362.75
+                        ]
+                    ],
+                    "text_description" : "② $a=-7, \\quad b=\\frac{7}{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.54,
+                            285.47,
+                            210.27,
+                            307.75
+                        ]
+                    ],
+                    "text_description" : "① $a=-7, \\quad b=7$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68.23,
+                            375.28,
+                            236.03,
+                            483.9
+                        ]
+                    ],
+                    "text_description" : "③ $a=7, \\quad b=7$ ④ $a=-7, b=-7$ ⑤ $a=-\\frac{7}{2}, \\quad b=-7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.75,
+                            555.01,
+                            574.41,
+                            713.66
+                        ]
+                    ],
+                    "text_description" : "일차함수의 식으로 나타내면 $y=\\frac{1}{2}x+\\frac{7}{2}$ 이므로 그래프는 기울기가 $\\frac{1}{2}$ 이고 $y$ 절편이 $\\frac{7}{2}, x$ 절편이 $-7$인 직선이 된다. 따라서 $a=-7, b=\\frac{7}{2}$ $. $"
+                }
+            ]
+        }
+    ]
+}

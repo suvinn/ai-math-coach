@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ee013283-2430-43b2-be83-5278e419fe12",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018813",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60,
+                            5.4,
+                            577,
+                            30.4
+                        ]
+                    ],
+                    "text_description" : "다음 중 아래 그림의 직선과 평행하고, 제4사분면을 지나지 않는 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73,
+                            41.4,
+                            248,
+                            175.4
+                        ]
+                    ],
+                    "text_description" : "직선, 1차 함수, 기울기 존재, y-절편 -2, x-절편 3, 양의 기울기, 증가함수, 1사분면 및 2사분면에 위치."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            339.4,
+                            179,
+                            382.4
+                        ]
+                    ],
+                    "text_description" : "④ $y=\\frac{2}{3} x+1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            189.4,
+                            179,
+                            325.4
+                        ]
+                    ],
+                    "text_description" : "① $y=3 x-2$ ② $y=\\frac{3}{2} x-1$ ③ $y=\\frac{3}{2} x+1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            395.4,
+                            177,
+                            440.4
+                        ]
+                    ],
+                    "text_description" : "⑤ $y=\\frac{2}{3} x-1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61,
+                            509.4,
+                            605,
+                            615.4
+                        ]
+                    ],
+                    "text_description" : "주어진 그래프의 기울기가 $\\frac{2}{3}$ 이므로 구하는 일차함수의 기울기는 $\\frac{2}{3}$ 이다. 또 제 4 사분면을 지나지 않으려면 $y$ 절편이 양수이어야 한다. 따라서 정답은 ④이다."
+                }
+            ]
+        }
+    ]
+}

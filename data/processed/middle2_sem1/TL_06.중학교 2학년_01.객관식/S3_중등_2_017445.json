@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "f9d056c5-a3bc-49fc-99c1-09fbb0e2d63c",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017445",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.12,
+                            5.02,
+                            484.12,
+                            41.27
+                        ]
+                    ],
+                    "text_description" : "$4 x(3 x+2)-5 x(2 x+3)$를 계산하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.12,
+                            55.02,
+                            162.87,
+                            92.52
+                        ]
+                    ],
+                    "text_description" : "① $2 x^{2}-7 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.87,
+                            96.99,
+                            192.87,
+                            265.74
+                        ]
+                    ],
+                    "text_description" : "② $10 x^{2}+15 x$ ③ $12 x^{2}+9 x$ ④ $12 x^{2}+6 x$ ⑤ $14 x^{2}+5 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            28.87,
+                            290.49,
+                            839.12,
+                            451.99
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}4 x(3 x+2)=4 x \\times 3 x+4 x \\times 2=12 x^{2}+8 x \\\\ 5 x(2 x+3)=5 x \\times 2 x+5 x \\times 3=10 x^{2}+15 x \\\\ 12 x^{2}+8 x-\\left(10 x^{2}+15 x\\right)=12 x^{2}+8 x-10 x^{2}-15 x=2 x^{2}-7 x\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

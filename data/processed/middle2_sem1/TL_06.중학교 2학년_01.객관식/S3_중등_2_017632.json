@@ -1,0 +1,161 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "8663b54a-16b1-444b-9bb5-01ee2835362a",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017632",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.6,
+                            14.18,
+                            973.6,
+                            50.43
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $3 x+y-7=0$의 그래프가 점 $(2, a+1)$를 지날 때, $a$의 값은 무엇입니까?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.85,
+                            189.85,
+                            66.1,
+                            216.1
+                        ]
+                    ],
+                    "text_description" : "③ 0"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.6,
+                            686.1,
+                            56.1,
+                            714.85
+                        ]
+                    ],
+                    "text_description" : "③ 0"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.85,
+                            75.6,
+                            74.85,
+                            159.85
+                        ]
+                    ],
+                    "text_description" : "① -2 ② -1"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.85,
+                            248.6,
+                            64.85,
+                            329.85
+                        ]
+                    ],
+                    "text_description" : "④ 1 ⑤ 2"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.85,
+                            359.85,
+                            1046.1,
+                            433.6
+                        ]
+                    ],
+                    "text_description" : "주어진 일차방정식 $3 x+y-7=0$에 점 $(2, a+1)$를 대입합니다. 즉, $x=2$이고 $y=a+1$입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            403.6,
+                            474.85,
+                            654.85,
+                            506.1
+                        ]
+                    ],
+                    "text_description" : "$3 \\cdot 2+(a+1)-7=0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.35,
+                            537.35,
+                            219.85,
+                            642.35
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}6+a+1-7=0 \\\\ a=0\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

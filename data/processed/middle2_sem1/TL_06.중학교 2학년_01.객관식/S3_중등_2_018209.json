@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c1fff881-497c-4dd1-9574-37bca157850e",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018209",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            99.3,
+                            10.24,
+                            845.54,
+                            42.24
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=3 x-7$에 대하여 $f(a)=11$ 일 때, $a$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.82,
+                            66.56,
+                            118.5,
+                            93.44
+                        ]
+                    ],
+                    "text_description" : "① $a=6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.18,
+                            108.8,
+                            118.5,
+                            262.4
+                        ]
+                    ],
+                    "text_description" : "② $a=5$ ③ $a=4$ ④ $a=7$ ⑤ $a=8$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.54,
+                            280.1,
+                            326.5,
+                            532.9
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}f(a)=11, f(a)=3 a-7 \\\\ 3 a-7=11 \\\\ 3 a=11+7 \\\\ 3 a=18 \\\\ a=\\frac{18}{3}=6\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

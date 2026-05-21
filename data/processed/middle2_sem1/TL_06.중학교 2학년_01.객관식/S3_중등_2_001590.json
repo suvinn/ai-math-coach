@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4614c68d-4da5-49e6-a830-c410e4e77dfb",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001590",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.5,
+                            9.42,
+                            354.5,
+                            31.42
+                        ]
+                    ],
+                    "text_description" : "다음 중 미지수가 2개인 연립일차방정식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            44.77,
+                            78.68,
+                            162.77,
+                            127.68
+                        ]
+                    ],
+                    "text_description" : "④ $\\left\\{\\begin{array}{l}2 x+y=3 \\\\ x-5 y=1\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 4,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            42.77,
+                            50.22,
+                            160.77,
+                            70.22
+                        ]
+                    ],
+                    "text_description" : "① $3 x-2 y=5$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            246.77,
+                            49.22,
+                            366.77,
+                            70.22
+                        ]
+                    ],
+                    "text_description" : "②$x+y-z=1$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            449.77,
+                            48.22,
+                            551.77,
+                            70.22
+                        ]
+                    ],
+                    "text_description" : "③ $x^{2}+y^{2}=0$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            246.77,
+                            76.22,
+                            389.77,
+                            125.22
+                        ]
+                    ],
+                    "text_description" : "⑤ $\\left\\{\\begin{array}{l}x+y=0 \\\\ x^{2}-y+2=1\\end{array}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            43.77,
+                            132.22,
+                            400.77,
+                            166.22
+                        ]
+                    ],
+                    "text_description" : "① 미지수가 2 개인 일차방정식이다. ② 미지수가 3 개인 일챠방정식이다. ③미자수가 2 개인 이차방정식이다. ⑤ 차수가 2 이다."
+                }
+            ]
+        }
+    ]
+}

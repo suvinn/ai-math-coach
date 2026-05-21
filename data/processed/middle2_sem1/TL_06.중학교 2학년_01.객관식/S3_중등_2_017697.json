@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e2f402f0-0fc2-44cf-b3aa-01c96a902959",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017697",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.6,
+                            4.22,
+                            995.29,
+                            37.04
+                        ]
+                    ],
+                    "text_description" : "어떤 자연수를 3배하여 4를 더했더니 40보다 작다고 한다. 이 자연수 중에서 가장 큰 수는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.6,
+                            102.66,
+                            79.66,
+                            132.35
+                        ]
+                    ],
+                    "text_description" : "② 11"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14,
+                            142,
+                            83,
+                            258
+                        ]
+                    ],
+                    "text_description" : "③ 12 ④ 13 ⑤ 14"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            58,
+                            83,
+                            93
+                        ]
+                    ],
+                    "text_description" : "① 10"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.37,
+                            641.99,
+                            718.87,
+                            678.24
+                        ]
+                    ],
+                    "text_description" : "따라서 $x$는 12보다 작은 자연수여야 하므로 최대 $x=11$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.62,
+                            289.49,
+                            180.12,
+                            613.24
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}3 x+4<40 \\\\ \\\\ 3 x<36 \\\\ \\\\ x<12\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

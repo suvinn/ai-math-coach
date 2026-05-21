@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7d5ab394-b148-4faa-a912-37a9b4113b25",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_003889",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            73.1,
+                            10.84,
+                            397.9,
+                            46.04
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.7,
+                            57.24,
+                            359.5,
+                            165.24
+                        ]
+                    ],
+                    "text_description" : "$\\left(-a^{4} b^{3}\\right)^{2} \\times\\left(\\frac{a^{2}}{b}\\right)^{2} \\times\\left(\\frac{b}{a^{3}}\\right)^{3}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.3,
+                            228.1,
+                            113.1,
+                            273.7
+                        ]
+                    ],
+                    "text_description" : "④ $a^{3} b^{7}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            249.9,
+                            170.5,
+                            342.7,
+                            272.1
+                        ]
+                    ],
+                    "text_description" : "② $a^{2} b^{3}$ ⑤ $a^{5} b^{3}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            483.5,
+                            168.9,
+                            575.5,
+                            216.9
+                        ]
+                    ],
+                    "text_description" : "③ $a^{3} b^{5}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.7,
+                            176.1,
+                            91.5,
+                            218.5
+                        ]
+                    ],
+                    "text_description" : "① $a b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            54.7,
+                            313.1,
+                            352.3,
+                            493.7
+                        ]
+                    ],
+                    "text_description" : "$\\begin{aligned} & \\left(-a^{4} b^{3}\\right)^{2} \\times\\left(\\frac{a^{2}}{b}\\right)^{2} \\times\\left(\\frac{b}{a^{3}}\\right)^{3} \\\\ = & a^{8} b^{6} \\times \\frac{a^{4}}{b^{2}} \\times \\frac{b^{3}}{a^{9}} \\\\ = & a^{3} b^{7}\\end{aligned}$"
+                }
+            ]
+        }
+    ]
+}

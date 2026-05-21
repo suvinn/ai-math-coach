@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a8b4b7e0-8045-4d1d-ba1d-2af7d8d5285d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017648",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.87,
+                            13.38,
+                            915.34,
+                            129.16
+                        ]
+                    ],
+                    "text_description" : "600 개의 알약이 들어 있는 병에서 하루에 알약을 8 개씩 먹는다. $x$ 일 동안 먹었을 때 병에 남은 알약의 개수를 $y$라고 할 때, 다음을 구하시오. $x$와 $y$ 사이의 관계식을 구하세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            34.16,
+                            150.52,
+                            170.9,
+                            178.69
+                        ]
+                    ],
+                    "text_description" : "$y=600-8 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.51,
+                            199.79,
+                            166.43,
+                            373.87
+                        ]
+                    ],
+                    "text_description" : "② $y=600+8 x$ ③ $y=600-x$ ④ $y=600+x$ ⑤ $y=600-8$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.23,
+                            394.42,
+                            866.89,
+                            600.25
+                        ]
+                    ],
+                    "text_description" : "알약의 초기 개수는 600 개이며, 하루에 8 개씩 먹으므로 $x$ 일 동안 먹은 알약의 개수는 $8 x$ 개입니다. 따라서 병에 남은 알약의 개수 $y$는 초기 개수에서 $x$ 일 동안 먹은 알약의 개수를 뺀 값입니 다. \\[ y=600-8 x \\]"
+                }
+            ]
+        }
+    ]
+}

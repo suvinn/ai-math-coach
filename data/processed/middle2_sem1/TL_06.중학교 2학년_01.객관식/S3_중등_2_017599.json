@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5e9dfad3-c9bc-4964-841e-2e7ea336295d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017599",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.33,
+                            4.94,
+                            711.8,
+                            39.49
+                        ]
+                    ],
+                    "text_description" : "기울기가 $2$이고 점 $(4, 1)$을 지나는 일차함수의 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            47.870000000000005,
+                            66.64,
+                            168.78,
+                            97.73
+                        ]
+                    ],
+                    "text_description" : "$y=2 x-7$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.51,
+                            124.24,
+                            172.07,
+                            322.52
+                        ]
+                    ],
+                    "text_description" : "② $y=2 x+1$ ③ $y=2 x+3$ ④ $y=2 x-4$ ⑤ $y=2 x+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.7,
+                            357.35,
+                            1046.66,
+                            428.93
+                        ]
+                    ],
+                    "text_description" : "기울기가 $2$이므로 일차함수의 식을 $y=2 x+b$로 놓을 수 있습니다. 이 직선이 점 $(4, 1)$을 지납니다:"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.88,
+                            739.1,
+                            569.46,
+                            768.72
+                        ]
+                    ],
+                    "text_description" : "따라서 구하는 일차함수의 식은 $y=2 x-7$ 입니다."
+                }
+            ]
+        }
+    ]
+}

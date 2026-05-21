@@ -1,0 +1,143 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "78f5c18b-2c0c-4950-a006-8209dc31c645",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017643",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.19,
+                            13.31,
+                            986.11,
+                            82.94
+                        ]
+                    ],
+                    "text_description" : "한 개에 250원인 초콜릿을 $x$ 개 구매하려고 한다. 초콜릿의 총 가격을 $y$ 원이라고 할 때, $x$와 계를 나타내는 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.7,
+                            110.59,
+                            156.16,
+                            141.31
+                        ]
+                    ],
+                    "text_description" : "① $y=250 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.19,
+                            154.14,
+                            206.31,
+                            308.22
+                        ]
+                    ],
+                    "text_description" : "② $y=25 x$ ③ $y=250 x+5$ ④ $y=250 x-5$ ⑤ $y=500 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.82,
+                            331.14,
+                            645.12,
+                            361.86
+                        ]
+                    ],
+                    "text_description" : "초콜릿 한 개의 가격이 250원이므로, 초콜릿의 총 가격 $y$는"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.31,
+                            444.8,
+                            170.5,
+                            474.5
+                        ]
+                    ],
+                    "text_description" : "이를 정리하면,"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            445.44,
+                            392.06,
+                            599.04,
+                            423.3
+                        ]
+                    ],
+                    "text_description" : "$y=250 \\times x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            464.8,
+                            507.26,
+                            580.1,
+                            539.03
+                        ]
+                    ],
+                    "text_description" : "$y=250 x$"
+                }
+            ]
+        }
+    ]
+}

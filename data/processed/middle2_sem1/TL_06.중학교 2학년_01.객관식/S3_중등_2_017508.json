@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "a35ff694-f11e-44a6-8793-14953090ef00",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017508",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.46,
+                            12.8,
+                            716.27,
+                            105.47
+                        ]
+                    ],
+                    "text_description" : "다음 식을 계산한 후, 결과를 고르시오. \\[ \\left(16 x^{4} y^{2}-8 x^{3} y^{3}\\right) \\div\\left(4 x^{2} y\\right) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.46,
+                            137.24,
+                            202.22,
+                            169.98
+                        ]
+                    ],
+                    "text_description" : "① $4 x^{2} y-2 x y^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.44,
+                            179.2,
+                            204.27,
+                            338.43
+                        ]
+                    ],
+                    "text_description" : "② $4 x^{2}-2 x y^{2}$ ③ $4 x^{3} y^{2}-2 x y$ ④ $4 x^{3} y-2 x y^{2}$ ⑤ $4 x^{2} y^{2}-2 x y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.56,
+                            362.86,
+                            590.32,
+                            491.52
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}\\left(16 x^{4} y^{2}-8 x^{3} y^{3}\\right) \\div\\left(4 x^{2} y\\right)=\\frac{16 x^{4} y^{2}}{4 x^{2} y}-\\frac{8 x^{3} y^{3}}{4 x^{2} y} \\\\ =4 x^{2} y-2 x y^{2}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "cf63068c-4421-41eb-a5a2-efe6ce9edf36",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001778",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.75,
+                            165.2,
+                            517.63,
+                            189.44
+                        ]
+                    ],
+                    "text_description" : "다음 보기 중 $y$가 $x$의 일차함수인 것을 모두 고르시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            76.64,
+                            138.4,
+                            130.24,
+                            155.2
+                        ]
+                    ],
+                    "text_description" : "ㄱ, ㄷ, ㄹ"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            58.24,
+                            115.2,
+                            329.44,
+                            135.2
+                        ]
+                    ],
+                    "text_description" : "따라서 $y$가 $x$의 일차함수인 것은 ㄱ, ㄷ, ㄹ이다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.84,
+                            11.0,
+                            272.64,
+                            112.8
+                        ]
+                    ],
+                    "text_description" : "ㄱ. $y=900 x$ ㄴ. $y=x^{2}$ ㄷ. $500+3 x=y$, 즉 $y=3 x+500$ ㄹ. $100=2 x+y$, 즉 $y=-2 x+100$ ㅁ. $(시간)=\\frac{\\text { (거리) }}{(\\text { 속력 })}$이므로 $y=\\frac{150}{x}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57.84,
+                            232.84,
+                            532.64,
+                            623.84
+                        ]
+                    ],
+                    "text_description" : "보기라고 쓰여져 있는 네모상자에 다음과 같은 내용이 들어 있다. ㄱ. 한 사람의 버스 요금이 $900$원일 때, $x$명의 버스 요금은 $y$원이다. ㄴ. 한 변의 길이가 $x \\mathrm{~cm}$인 정사각형의 넓이는 $y \\mathrm{~cm}^{2}$이다. ㄷ. $500$원짜리 연필 한 자루와 $x$원짜리 지우개 $3$ 개의 값의 합은 $y$원이다. ㄹ. $100$개의 영양제를 하루에 $x$0개씩 $x$일 동안 먹고 남은 양은 $y$개이다. ㅁ. $x$3km의 거리를 시속 $x$4로 달린 시간은 $y$시간이다."
+                }
+            ]
+        }
+    ]
+}

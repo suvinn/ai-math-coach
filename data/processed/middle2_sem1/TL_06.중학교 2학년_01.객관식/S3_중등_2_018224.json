@@ -1,0 +1,119 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "99b4c1dc-b27b-4f2b-b444-0ebaf8cf6880",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018224",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.37,
+                            3.42,
+                            1079.77,
+                            83.5
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=f(x)$에 대하여 $f(4)-f(1)=15$ 일 때, 이 일차함수의 그래프의 기울기를 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            103.22,
+                            70,
+                            141.22
+                        ]
+                    ],
+                    "text_description" : "① 5"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            150,
+                            90,
+                            308
+                        ]
+                    ],
+                    "text_description" : "② 10 ③ 15 ④ 20 ⑤ 25"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13,
+                            319,
+                            470,
+                            359
+                        ]
+                    ],
+                    "text_description" : "일차함수의 일반형은 $y=m x+b$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3,
+                            367,
+                            605,
+                            650
+                        ]
+                    ],
+                    "text_description" : "\\[ \\begin{array}{l} f④=4m+b \\\\ f①=m+b \\end{array} \\] 따라서, $f(4)-f(1)=(4m+b)-(m+b)=3m$ 주어진 조건에 따라 $f(4)-f(1)=15$ 이므로, \\[ \\begin{array}{l} 3m=15 \\\\ m=\\frac{15}{3}=5 \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

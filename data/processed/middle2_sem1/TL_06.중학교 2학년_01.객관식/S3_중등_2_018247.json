@@ -1,0 +1,167 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ce88711b-7e8f-46cc-98b8-0208511716ed",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018247",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.4,
+                            3.59,
+                            1075.71,
+                            77.03
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=2 x+6$의 그래프의 y 절편과 일차함수 $y=-x+t$의 x 절편이 서로 같을 때, $t$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.08,
+                            100.46,
+                            69.46,
+                            134.84
+                        ]
+                    ],
+                    "text_description" : "① 6"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.32,
+                            144,
+                            83.2,
+                            303.36
+                        ]
+                    ],
+                    "text_description" : "② -6 ③ 2 ④ -2 ⑤ 0"
+                }
+            ]
+        },
+        {
+            "class_num" : 4,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.75,
+                            312.62,
+                            693.75,
+                            388.87
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=2 x+6$의 $y$ 절편은 $x=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20,
+                            443.87,
+                            292.5,
+                            476.37
+                        ]
+                    ],
+                    "text_description" : "따라서, $y$ 절편은 6입니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.25,
+                            491.37,
+                            697.5,
+                            570.12
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=-x+t$의 x절편은 $y=0$ 일 때의 함수값이므로, 대입하면 다음과 같습니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.25,
+                            662.62,
+                            317.5,
+                            757.62
+                        ]
+                    ],
+                    "text_description" : "따라서, x절편은 $t$ 입니다. 두 절편이 같으므로, $t=6$."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15,
+                            397.62,
+                            238.75,
+                            440.12
+                        ]
+                    ],
+                    "text_description" : "$y=2(0)+6=6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.5,
+                            580.12,
+                            170,
+                            654.87
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}0=-x+t \\\\ x=t. \\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "89ed6032-7b18-451e-9284-eb50e3bcb3e9",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001648",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수01-06] 순환소수의 뜻을 알고, 유리수와 순환소수의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            63.51,
+                            24.96,
+                            533.91,
+                            85.12
+                        ]
+                    ],
+                    "text_description" : "다음 보기 중 순환소수 $x=0. 2999 \\cdots$에 대한 설명으로 옳은 것을 모두 고르면?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.23,
+                            94.54,
+                            534.55,
+                            274.82
+                        ]
+                    ],
+                    "text_description" : "ㄱ. $x=0. 2+0. \\dot{0} \\dot{9}$이다. ㄴ. 순환마디는 9이다. ㄷ. $x=0. \\dot{2} \\dot{9}$로 나타낸다. ㄹ. 분수로 고칠 때, 식 $100 x-10 x$가 편리하다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            219.03,
+                            327.38,
+                            300.95,
+                            352.9
+                        ]
+                    ],
+                    "text_description" : "⑤ ㄴ, ㄹ"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64.50999999999999,
+                            293.38,
+                            144.79,
+                            352.9
+                        ]
+                    ],
+                    "text_description" : "① ㄱ, ㄴ ④ ㄴ, ㄷ"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            218.39,
+                            293.1,
+                            475.03,
+                            318.62
+                        ]
+                    ],
+                    "text_description" : "② ㄱ, ㄷ ③ ㄱ, ㄹ"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65.43,
+                            360.86,
+                            204.95,
+                            401.54
+                        ]
+                    ],
+                    "text_description" : "ㄱ. $x=0. 2+0. 0\\dot{9}$ ㄷ. $x=0. 2 \\dot{9}$로 나타낸다."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "58e338a9-2671-46a4-abd2-70e6ba9ca834",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018362",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.04,
+                            4.1,
+                            570.73,
+                            40.04
+                        ]
+                    ],
+                    "text_description" : "$a>-3$ 일 때, $5 a+4$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.6,
+                            57.23,
+                            230.1,
+                            93.16
+                        ]
+                    ],
+                    "text_description" : "① $5 a+4>-11$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.29,
+                            99.07,
+                            231.67,
+                            264.7
+                        ]
+                    ],
+                    "text_description" : "② $5 a+4 \\geq-11$ ③ $5 a+4<-11$ ④ $5 a+4 \\geq-9$ ⑤ $5 a+4>-9$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.04,
+                            285.01,
+                            275.42,
+                            450.63
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}a>-3 \\\\ 5 a+4>5(-3)+4 \\\\ 5 a+4>-11\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

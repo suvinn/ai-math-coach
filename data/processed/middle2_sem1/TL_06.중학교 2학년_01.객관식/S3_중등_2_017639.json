@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "54a5695b-bbb1-4669-85e6-858e22a80a5d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017639",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.25,
+                            5.53,
+                            974,
+                            73.03
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $a x-2 y-6=0$의 그래프와 함수 $y=2 x-3$의 그래프가 일치할 때, $a-1$의 값을 구하세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.25,
+                            206.78,
+                            64,
+                            237.53
+                        ]
+                    ],
+                    "text_description" : "④ 3"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9,
+                            89,
+                            62.75,
+                            199
+                        ]
+                    ],
+                    "text_description" : "① 0 ② 1 ③ 2"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.5,
+                            244,
+                            61.5,
+                            277.75
+                        ]
+                    ],
+                    "text_description" : "⑤ 4"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6,
+                            290.5,
+                            337,
+                            453.5
+                        ]
+                    ],
+                    "text_description" : "방정식을 $y$에 대하여 정리합니다. \\[ y=\\frac{a}{2} x-3 \\] 기울기는 $\\frac{a}{2}, y$ 절편은 -3 입니다. 함수 $y=2 x-3$와 비교합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3,
+                            454.5,
+                            236,
+                            528.5
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\frac{a}{2}=2 \\quad \\Rightarrow \\quad a=4 \\\\ a-1=4-1=3\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

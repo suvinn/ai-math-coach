@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "00b7fa91-125a-4d69-8498-f24725da275d",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016039",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            9.75,
+                            61.78,
+                            471,
+                            102.03
+                        ]
+                    ],
+                    "text_description" : "다음 부등식 $5 x-7 \\geq 3(x+1)$의 해는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11,
+                            105.78,
+                            122.25,
+                            143.28
+                        ]
+                    ],
+                    "text_description" : "① $x \\geq 5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.5,
+                            149.76,
+                            146,
+                            311.76
+                        ]
+                    ],
+                    "text_description" : "② $x \\leq 5$ ③ $x=5$ ④ $x \\leq-5$ ⑤ $x \\geq-5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.5,
+                            323.01,
+                            231,
+                            600.51
+                        ]
+                    ],
+                    "text_description" : "\\[ 5 x-7 \\geq 3 x+3 \\] $x$ 정리: \\[ \\begin{array}{l} 5 x-3 x \\geq 3+7 \\\\ 2 x \\geq 10 \\end{array} \\] 양변을 2로 나누기: \\[ x \\geq 5 \\]"
+                }
+            ]
+        }
+    ]
+}

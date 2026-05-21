@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "c233b0d3-d02b-43c1-8ab0-6896417d1533",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001674",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            78.42,
+                            28.19,
+                            713.62,
+                            113.79
+                        ]
+                    ],
+                    "text_description" : "어떤 다항식에 $3 a$를 곱해야 할 것을 잘못하여 나누었더니 $-2 a+3 b$가 되었다. 바르게 계산한 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            396.82,
+                            184.62,
+                            625.62,
+                            223.82
+                        ]
+                    ],
+                    "text_description" : "④ $-18 a^{3}+27 a^{2} b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            83.22,
+                            139.02,
+                            285.62,
+                            267.82
+                        ]
+                    ],
+                    "text_description" : "① $-6 a^{2}+9 a b$ ③ $-6 a^{3}+9 a^{2} b$ ⑤ $18 a^{3}-27 a^{2} b$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            395.22,
+                            137.42,
+                            591.22,
+                            176.62
+                        ]
+                    ],
+                    "text_description" : "② $18 a^{2}-27 a b$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            84.82,
+                            278.22,
+                            619.22,
+                            331.02
+                        ]
+                    ],
+                    "text_description" : "어떤 다항식을 $A$라고 하면 $A \\div(3 a)=-2 a+3 b, A=-6 a^{2}+9 a b$ 바르게 계산하면 $\\left(-6 a^{2}+9 a b\\right) \\times 3 a=-18 a^{3}+27 a^{2} b$"
+                }
+            ]
+        }
+    ]
+}

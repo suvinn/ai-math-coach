@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7bd8ecd9-ef6b-4a4e-90fb-3e002c5c1293",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001584",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            72.85,
+                            13.21,
+                            395.41,
+                            63.77
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 푸시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.57,
+                            81.87,
+                            322.06,
+                            158.15
+                        ]
+                    ],
+                    "text_description" : "① $\\left\\{\\begin{aligned} 0. 2 x+0. 1 y & =0. 3 \\\\ 0. 2 x-0. 3 y & =-0. 1\\end{aligned}\\right. $"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            30.729999999999997,
+                            396.27,
+                            151.57,
+                            419.95
+                        ]
+                    ],
+                    "text_description" : "①$x=1, y=1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.6,
+                            168.39,
+                            408.59,
+                            393.67
+                        ]
+                    ],
+                    "text_description" : "① $\\left\\{\\begin{aligned} 0. 2 x+0. 1 y & =0. 3\\cdots㉠ \\\\ 0. 2 x-0. 3 y & =-0. 1\\cdots㉡\\end{aligned}\\right. $ $\\qquad \\\\ $ ① ㉠, ㉡의 앙변에 각각 $10$을 곱하면 $\\left\\{\\begin{array}{ll}2 x+y=3 & \\text { …. . ㉢ } \\\\ 2 x-3 y=-1 & \\text { …. . ㉣ }\\end{array}\\right. \\\\$ $x$를 없애기 위해 ㉢—㉣을 하면 $y=1$ $y=1$을 ㉢에 대입하면 $x=1$"
+                }
+            ]
+        }
+    ]
+}

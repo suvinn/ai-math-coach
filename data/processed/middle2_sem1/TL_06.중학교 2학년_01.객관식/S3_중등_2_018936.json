@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "69373151-a5eb-42ff-92ec-17ad02911016",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018936",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            62.5,
+                            15.42,
+                            796.5,
+                            41.42
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $2 x+y-4=0$의 그래프를 지나는 점의 $x$ 좌표와 $y$ 좌표가 모두 자연수인 점의 개수는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.5,
+                            81.42,
+                            120.5,
+                            105.42
+                        ]
+                    ],
+                    "text_description" : "② 1 개"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.5,
+                            112,
+                            123.5,
+                            201
+                        ]
+                    ],
+                    "text_description" : "③ 2 개 ④ 3 개 ⑤ 4 개"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66.5,
+                            49,
+                            124.5,
+                            75
+                        ]
+                    ],
+                    "text_description" : "① 0 개"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            61.5,
+                            258,
+                            571.5,
+                            417
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $2 x+y-4=0$를 $y$에 관하여 풀면 $y=-2 x+4$ 이다. $x=1, 2, 3, \\cdots$을 대입하면 \\begin{tabular}{|l|l|l|l|l|} \\hline$x$ & 1 & 2 & 3 & $\\cdots$ \\\\ \\hline$y$ & 2 & 0 & -2 & $\\cdots$ \\\\ \\hline \\end{tabular} 따라서 $x$ 좌표와 $y$ 좌표가 모두 자연수인 점은 $y$0로 1 개이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            67.5,
+                            421,
+                            273.5,
+                            632
+                        ]
+                    ],
+                    "text_description" : "좌표평면도에 좌표가(1, 2)가 표시되어 있고 직선으로 (0, 4)와 (2, 0)을 지난다."
+                }
+            ]
+        }
+    ]
+}

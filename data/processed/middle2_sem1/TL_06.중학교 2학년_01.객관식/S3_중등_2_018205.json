@@ -1,0 +1,149 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "02c83161-dc5f-4b3f-9a7a-525654e6a72c",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018205",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-05] 일차함수의 의미를 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-15] 일차함수의 개념을 이해하고, 그 그래프를 그릴 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            102.41,
+                            7.45,
+                            844.57,
+                            40.13
+                        ]
+                    ],
+                    "text_description" : "함수 $f(x)=2 x+6$에 대하여 $f(e)=16$ 일 때, $e$의 값을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.63,
+                            65.52,
+                            119.54,
+                            94.77
+                        ]
+                    ],
+                    "text_description" : "① $e=5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.2,
+                            108.33,
+                            122.39,
+                            259.62
+                        ]
+                    ],
+                    "text_description" : "② $e=6$\n③ $e=4$\n④ $e=3$\n⑤ $e=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 5,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.5,
+                            286.47,
+                            322.21,
+                            319.3
+                        ]
+                    ],
+                    "text_description" : "$f(e)=16, f(e)=2 e+6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.92,
+                            341.42,
+                            160.21,
+                            371.39
+                        ]
+                    ],
+                    "text_description" : "$2 e+6=16$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.21,
+                            397.08,
+                            162.36,
+                            425.63
+                        ]
+                    ],
+                    "text_description" : "$2 e=16-6$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.5,
+                            448.46,
+                            110.97,
+                            479.15
+                        ]
+                    ],
+                    "text_description" : "$2 e=10$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.35,
+                            502.7,
+                            149.51,
+                            539.09
+                        ]
+                    ],
+                    "text_description" : "$e=\\frac{10}{2}=5$"
+                }
+            ]
+        }
+    ]
+}

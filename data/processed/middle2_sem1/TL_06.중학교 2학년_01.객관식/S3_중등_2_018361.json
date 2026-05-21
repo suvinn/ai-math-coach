@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "0a035500-acb6-4a53-bbc6-f1b27c194350",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018361",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-09] 부등식과 그 해의 의미를 알고, 부등식의 성질을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-11] 부등식과 그 해의 뜻을 알고, 부등식의 성질을 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.08,
+                            6.8,
+                            528.72,
+                            35.6
+                        ]
+                    ],
+                    "text_description" : "$t \\leq 5$ 일 때, $4 t+2$의 값의 범위는 무엇인가요?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.64,
+                            61.2,
+                            194.64,
+                            90
+                        ]
+                    ],
+                    "text_description" : "① $4 t+2 \\leq 22$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.64,
+                            103.44,
+                            195.92,
+                            258.96
+                        ]
+                    ],
+                    "text_description" : "② $4 t+2<22$ ③ $4 t+2 \\geq 22$ ④ $4 t+2<18$ ⑤ $4 t+2 \\leq 18$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.08,
+                            293.58,
+                            238.8,
+                            443.7
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}t \\leq 5 \\\\ 4 t+2 \\leq 4(5)+2 \\\\ 4 t+2 \\leq 22\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

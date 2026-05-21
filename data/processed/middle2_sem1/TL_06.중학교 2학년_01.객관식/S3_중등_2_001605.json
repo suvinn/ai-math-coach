@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "ebba7b8c-41bf-4d3f-8161-3fa3f781a2cb",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001605",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            35.51,
+                            -0.35,
+                            649.26,
+                            52.15
+                        ]
+                    ],
+                    "text_description" : "다음 중 $x$의 값이 $4$만큼 증가할 때 $y$의 값이 $3$만큼 증가하고, $y$ 절편이 $-2$인 직선을 그래프로 하는 일차함수의 식은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            39.26,
+                            159.12,
+                            521.76,
+                            189.62
+                        ]
+                    ],
+                    "text_description" : "$(기울기)=\\frac{(y \\text { 의 값의 증가량) }}{(x \\text { 의 값의 증가량 })}=\\frac{3}{4}$ 이고 $y$ 절편이 $-2$ 이므로 구하는 일차함수의 식은 $y=\\frac{3}{4} x-2$ 이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            37.0,
+                            66.0,
+                            377.0,
+                            150.0
+                        ]
+                    ],
+                    "text_description" : "① $y=\\frac{4}{3} x-2$ ② $y=\\frac{4}{3} x+2$  ④ $y=\\frac{3}{4} x+2$ ⑤ $y=-2 x+\\frac{3}{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            462.0,
+                            70.0,
+                            559.0,
+                            105.0
+                        ]
+                    ],
+                    "text_description" : "$y=\\frac{3}{4} x-2$"
+                }
+            ]
+        }
+    ]
+}

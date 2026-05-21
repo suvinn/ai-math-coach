@@ -1,0 +1,101 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "4eac2702-b852-4de5-8cca-bb1f44712e54",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001521",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-08] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-10] ‘(단항식)×(다항식)’, ‘(다항식)÷(단항식)’과 같은 곱셈과 나눗셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            75.02,
+                            27.55,
+                            379.02,
+                            60.35
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -0.38,
+                            75.55,
+                            275.82,
+                            128.15
+                        ]
+                    ],
+                    "text_description" : "③ $\\frac{-10 a^{2}+8 a}{4 a}+\\frac{3 a^{2}+6 a}{2 a}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.42,
+                            209.58,
+                            67.82,
+                            223.18
+                        ]
+                    ],
+                    "text_description" : "$-a+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.620000000000001,
+                            129.18,
+                            395.82,
+                            203.18
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}\\frac{-10 a^{2}+8 a}{4 a}+\\frac{3 a^{2}+6 a}{2 a} \\\\ =\\frac{-10 a^{2}}{4 a}+\\frac{8 a}{4 a}+\\frac{3 a^{2}}{2 a}+\\frac{6 a}{2 a}=-\\frac{5}{2} a+2+\\frac{3}{2} a+3=-a+5\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

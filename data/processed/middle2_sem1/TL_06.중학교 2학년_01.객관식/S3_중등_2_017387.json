@@ -1,0 +1,137 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "bdd826a6-a48b-49bb-94f4-e6590a141558",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017387",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.77,
+                            12.24,
+                            287.77,
+                            42.24
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.77,
+                            50.78,
+                            166.77,
+                            82.78
+                        ]
+                    ],
+                    "text_description" : "$z^{7} \\times z^{5} \\div z^{4}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.77,
+                            105.78,
+                            73.77,
+                            138.78
+                        ]
+                    ],
+                    "text_description" : "① $z^{8}$"
+                }
+            ]
+        },
+        {
+            "class_num" : "1",
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.77,
+                            431.78,
+                            65.77,
+                            463.78
+                        ]
+                    ],
+                    "text_description" : "① $z^{8}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.77,
+                            147.78,
+                            83.77,
+                            306.78
+                        ]
+                    ],
+                    "text_description" : "② $z^{10}$ ③ $z^{6}$ ④ $z^{7}$ ⑤ $z^{9}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.77,
+                            325.78,
+                            276.77,
+                            400.78
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}z^{7} \\times z^{5}=z^{7+5}=z^{12} \\\\ z^{12} \\div z^{4}=z^{12-4}=z^{8}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

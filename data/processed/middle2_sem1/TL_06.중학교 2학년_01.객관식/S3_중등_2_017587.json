@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2d294d6d-7b6d-4ff2-9a48-bef08790dfd6",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017587",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.88,
+                            9.49,
+                            556.81,
+                            35.09
+                        ]
+                    ],
+                    "text_description" : "세 점 $(1, -2), (3, 4), (5, k)$가 한 직선 위에 있을 때, $k$의 값은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.34,
+                            157.45,
+                            47.88,
+                            176.91
+                        ]
+                    ],
+                    "text_description" : "③ 10"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.32,
+                            61.71,
+                            37.64,
+                            129.29
+                        ]
+                    ],
+                    "text_description" : "① 6 ② 8"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.34,
+                            205.58,
+                            46.86,
+                            274.19
+                        ]
+                    ],
+                    "text_description" : "④ 12 ⑤ 14"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.78,
+                            298.52,
+                            257.8,
+                            387.68
+                        ]
+                    ],
+                    "text_description" : "\\[ \\text { 기울기 } m=\\frac{4-(-2)}{3-1}=\\frac{6}{2}=3 \\] 직선 방정식: $y=3 x-5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            -0.76,
+                            410.69,
+                            105.74,
+                            466.52
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}k=15-5 \\\\ k=10\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

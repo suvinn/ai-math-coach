@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "648607e1-f796-456a-9dfd-2b8be51f3705",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015333",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-07] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-09] 다항식의 덧셈과 뺄셈의 원리를 이해하고, 그 계산을 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.41,
+                            44.53,
+                            197.65,
+                            75.8
+                        ]
+                    ],
+                    "text_description" : "다음 중 옳은 것은?"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.46,
+                            85.54,
+                            390,
+                            114.65
+                        ]
+                    ],
+                    "text_description" : "① $(3 x+4 y)+(2 x-y)=5 x+3 y$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.41,
+                            228.36,
+                            399.47,
+                            257.73
+                        ]
+                    ],
+                    "text_description" : "⑤ $-(-3 x+1)+(4 x+2)=7 x+1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.36,
+                            119.49,
+                            421.27,
+                            220.93
+                        ]
+                    ],
+                    "text_description" : "② $(2 x-3 y)-(4 x-2 y)=-2 x-5 y$ ③ $-(4 x-2)+(x+5)=-3 x+3$ ④ $(4 x-1)-(2 x+5)=-2 x+6$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.93,
+                            386.59,
+                            446.85,
+                            417.86
+                        ]
+                    ],
+                    "text_description" : "각 항목을 계산하여 옳은 식을 확인합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.41,
+                            439.66,
+                            499.91,
+                            874.57
+                        ]
+                    ],
+                    "text_description" : "1. \\[ \\begin{array}{l} (3 x+4 y)+(2 x-y)=5 x+3 y \\\\ =3 x+4 y+2 x-y=5 x+3 y, \\text { 참 } \\end{array} \\] 2. \\[ \\begin{array}{l} (2 x-3 y)-(4 x-2 y) \\\\ =2 x-3 y-4 x+2 y=-2 x-y, \\text { 거짓 } \\end{array} \\] 3. \\[ \\begin{array}{l} -(4 x-2)+(x+5) \\\\ =-4 x+2+x+5=-3 x+7, \\text { 거짓 } \\end{array} \\] 4. \\[ \\begin{array}{l} (4 x-1)-(2 x+5) \\\\ =4 x-1-2 x-5=2 x-6, \\text { 거짓 } \\end{array} \\] 5. \\[ \\begin{array}{l} -(-3 x+1)+(4 x+2) \\\\ =3 x-1+4 x+2=7 x+1 \\text {, 참 } \\end{array} \\]"
+                }
+            ]
+        }
+    ]
+}

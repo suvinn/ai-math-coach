@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "cb792024-3697-4374-a337-20fc8f557d36",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017635",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.78,
+                            4.13,
+                            954.77,
+                            43.55
+                        ]
+                    ],
+                    "text_description" : "다음 점 $(a, 3)$과 $(2 a-6, 5)$를 지나는 직선이 $y$ 축에 평행할 때, $a$의 값은 무엇입니까?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            16.99,
+                            178.22,
+                            61.34,
+                            209.42
+                        ]
+                    ],
+                    "text_description" : "③ 6"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.78,
+                            64.9,
+                            59.7,
+                            150.33
+                        ]
+                    ],
+                    "text_description" : "① 2 ② 4"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.89,
+                            237.34,
+                            72.01,
+                            323.57
+                        ]
+                    ],
+                    "text_description" : "④ 8 ⑤ 10"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.78,
+                            350.38,
+                            1050.03,
+                            421
+                        ]
+                    ],
+                    "text_description" : "주어진 두 점 $(a, 3)$과 $(2 a-6, 5)$를 지나는 직선이 $y$ 축에 평행하므로, 두 점의 $x$ 좌표가 같아야 합니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.64,
+                            440.71,
+                            176.3,
+                            709.23
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}a=2 a-6 \\\\ a-2 a=-6 \\\\ -a=-6 \\\\ a=6\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

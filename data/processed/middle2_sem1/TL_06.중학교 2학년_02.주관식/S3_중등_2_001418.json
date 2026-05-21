@@ -1,0 +1,95 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "96d8f3b7-8fa3-4170-a696-d17711cf3112",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001418",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "주관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 2,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            71.5,
+                            71.42,
+                            388.5,
+                            107.42
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            51.0,
+                            125.0,
+                            156.0,
+                            196.0
+                        ]
+                    ],
+                    "text_description" : "${(\\frac{2 y^{2}}{x^{3}})}^{2}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            0.5,
+                            270.0,
+                            63.5,
+                            323.0
+                        ]
+                    ],
+                    "text_description" : "$=\\frac{4 y^{4}}{x^{6}}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            27.5,
+                            207.0,
+                            255.5,
+                            263.0
+                        ]
+                    ],
+                    "text_description" : "$\\left(\\frac{2 y^{2}}{x^{3}}\\right)^{2}=\\frac{2^{2} \\times y^{2 \\times 2}}{x^{3 \\times 2}}=\\frac{4 y^{4}}{x^{6}}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5d27685a-b9c1-4a1f-b23c-17396feb3687",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015350",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            17.6,
+                            65.05,
+                            617.6,
+                            185.85
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오. \\[ \\frac{5 a^{2} b^{4}}{a^{2} b} \\times\\left(-4 a^{3} b^{3}\\right) \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.6,
+                            331.1,
+                            145.6,
+                            361.9
+                        ]
+                    ],
+                    "text_description" : "④ $-20 a^{4} b^{6}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            18.4,
+                            211.9,
+                            147.2,
+                            321.5
+                        ]
+                    ],
+                    "text_description" : "① $-20 a^{5} b^{6}$ ② $-20 a^{4} b^{7}$ ③ $-20 a^{5} b^{7}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20,
+                            367.9,
+                            145.6,
+                            401.5
+                        ]
+                    ],
+                    "text_description" : "⑤ $-20 a^{3} b^{7}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            266.87,
+                            550.24,
+                            750.37,
+                            619.49
+                        ]
+                    ],
+                    "text_description" : "$\\frac{5 a^{2} b^{4}}{a^{2} b}=5 b^{3}, \\quad 5 b^{3} \\times\\left(-4 a^{3} b^{3}\\right)=-20 a^{4} b^{6}$"
+                }
+            ]
+        }
+    ]
+}

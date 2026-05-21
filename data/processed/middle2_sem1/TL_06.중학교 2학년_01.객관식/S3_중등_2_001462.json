@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "22078ed1-df45-4275-bf2b-395bc2795a6f",
+        "date" : "2024-08-27",
+        "publisher" : "교학사",
+        "publication_year" : "2015-05-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_001462",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.82,
+                            11.99,
+                            513.82,
+                            97.59
+                        ]
+                    ],
+                    "text_description" : "오른쪽 그림은 밑면이 직각삼각형이고, 부피가 $20 a^{6} b^{9}$ 인 삼각기 둥이다. 밑면의 직각삼각형에서 직각을 낀 두 변의 길이가 각각 $4 a^{2} b, 2 a^{2}$ 일 때, 이 삼각기둥의 높이는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            523.42,
+                            6.02,
+                            660.22,
+                            154.02
+                        ]
+                    ],
+                    "text_description" : "밑면이 직각삼각형인 삼각기둥 입체도형. 도형의 밑 면에는 \\(4a^2b\\)라는 수식이 있고, 다른 면에는 \\(2a^3\\)라는 수식이 있습니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.02,
+                            115.62,
+                            113.02,
+                            146.02
+                        ]
+                    ],
+                    "text_description" : "① $5 a b^{8}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            195.42,
+                            108.42,
+                            425.02,
+                            157.22
+                        ]
+                    ],
+                    "text_description" : "② $15 a b^{8}$ ③ $\\frac{15 b^{8}}{a}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            45.82,
+                            154.82,
+                            281.82,
+                            201.22
+                        ]
+                    ],
+                    "text_description" : "④ $\\frac{15 b^{8}}{2 a}$ ⑤ $15 a^{11} b^{10}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            2.62,
+                            209.22,
+                            278.62,
+                            254.02
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{l}20 a^{9} b^{9}=\\left(\\frac{1}{2} \\times 4 a^{2} b \\times 2 a^{3}\\right) \\times(\\text { 높이 }) \\\\ 20 a^{9} b^{9}=4 a^{9} b \\times(\\text { 높이 }), (\\text { (높 } 01)=20 a^{9} b^{9} \\div\\left(4 a^{5} b\\right)=5 a b^{8}\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "2fdfcb21-41c8-493d-b308-f59adc143b04",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018257",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            97.23,
+                            11.75,
+                            703.44,
+                            40.96
+                        ]
+                    ],
+                    "text_description" : "두 점 $(2, -3), (4, -7)$을 지나는 직선의 방정식을 구하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            11.22,
+                            68.12,
+                            201.68,
+                            97.28
+                        ]
+                    ],
+                    "text_description" : "① $y=-2 x+1$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            10.7,
+                            109.59,
+                            202.19,
+                            264.19
+                        ]
+                    ],
+                    "text_description" : "② $y=-2 x-1$ ③ $y=-x-1$ ④ $y=-2 x-3$ ⑤ $y=-x-2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 3,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.1,
+                            279.94,
+                            567.76,
+                            309.63
+                        ]
+                    ],
+                    "text_description" : "기울기 $m$은 두 점 $(2, -3), (4, -7)$에 대해 계산합니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.14,
+                            427.39,
+                            834.51,
+                            458.62
+                        ]
+                    ],
+                    "text_description" : "이제 y 절편을 구합니다. 직선 방정식 $y=m x+b$에 점 $(2, -3)$을 대입합니다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.14,
+                            555.86,
+                            508.88,
+                            586.11
+                        ]
+                    ],
+                    "text_description" : "따라서 직선의 방정식은 $y=-2 x+1$ 입니다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            229.3,
+                            337.82,
+                            726.48,
+                            403.84
+                        ]
+                    ],
+                    "text_description" : "$m=\\frac{-7-(-3)}{4-2}=\\frac{-7+3}{2}=\\frac{-4}{2}=-2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            250.78,
+                            488.83,
+                            834,
+                            520.58
+                        ]
+                    ],
+                    "text_description" : "$-3=-2(2)+b \\Longrightarrow-3=-4+b \\Longrightarrow b=1$"
+                }
+            ]
+        }
+    ]
+}

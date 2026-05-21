@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "7fb44491-fdd1-40ff-b3dc-4e509663f843",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018968",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-07] 일차함수와 미지수가 2개인 일차방정식의 관계를 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-17] 일차함수와 미지수가 2개인 일차방정식의 관계를 설명할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            57,
+                            13.42,
+                            822,
+                            39.42
+                        ]
+                    ],
+                    "text_description" : "일차방정식 $x+a y+b=0\\left(a \\neq 0, \\quad b^{\\neq}\\right. $0)의 그래프가 제 3 사분면을 지나지 않을 때, $a, b$의 부호는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            66,
+                            77.42,
+                            194,
+                            102.42
+                        ]
+                    ],
+                    "text_description" : "② $a>0, \\quad b<0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            109,
+                            193,
+                            199
+                        ]
+                    ],
+                    "text_description" : "③ $a<0, \\quad b>0$ ④ $a<0, b<0$ ⑤ 알 수 없다."
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            64,
+                            45,
+                            193,
+                            73
+                        ]
+                    ],
+                    "text_description" : "① $a>0, \\quad b>0$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            65,
+                            258,
+                            950,
+                            394
+                        ]
+                    ],
+                    "text_description" : "$x+a y+b=0, \\quad a y=-x-b$, 즉 $y=-\\frac{1}{a} x-\\frac{b}{a}$의 그래프가 제 3 사분면을 지나지 않으려면 다음 그림과 같아야 하므로 (기 울 기 $)=-\\frac{1}{a}<0, (y$ 절 편 $)=-\\frac{b}{a}>0$ \\[ \\therefore \\quad a>0, \\quad b<0 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            68,
+                            401,
+                            197,
+                            517
+                        ]
+                    ],
+                    "text_description" : "좌표평면도에 제 1, 2, 4분면을 통과하는 직선이 있다."
+                }
+            ]
+        }
+    ]
+}

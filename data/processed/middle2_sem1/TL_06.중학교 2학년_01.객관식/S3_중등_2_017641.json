@@ -1,0 +1,155 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "5d17ebbf-b287-4086-bb61-2161e7ec0cce",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017641",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-04] 함수의 개념을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-14] 함수의 개념을 이해하고, 함숫값을 구할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.76,
+                            7.71,
+                            1066.26,
+                            82.71
+                        ]
+                    ],
+                    "text_description" : "하나에 600원인 사과를 $x$ 개 구매하려고 한다. 사과의 총 가격을 $y$ 원이라고 할 때, $x$와 $y$의 관계를 나타내는 식은 무엇인가?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            8.45,
+                            188.96,
+                            166.26,
+                            223.34
+                        ]
+                    ],
+                    "text_description" : "③ $y=600 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.88,
+                            102.37,
+                            219.38,
+                            180.49
+                        ]
+                    ],
+                    "text_description" : "① $y=600 x+2$ ② $y=600 x-2$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6.88,
+                            230.49,
+                            152.2,
+                            307.06
+                        ]
+                    ],
+                    "text_description" : "④ $y=6 x$ ⑤ $y=60 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            5.32,
+                            319.56,
+                            767.82,
+                            367.99
+                        ]
+                    ],
+                    "text_description" : "문제에 따르면, 사과 한 개의 가격이 600 원이므로, 사과의 총 가격 $y$는"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.76,
+                            437.87,
+                            167.63,
+                            475.81
+                        ]
+                    ],
+                    "text_description" : "이를 정리하면,"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            433.45,
+                            383.62,
+                            597.51,
+                            425.81
+                        ]
+                    ],
+                    "text_description" : "$y=600 \\times x$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            449.07,
+                            497.68,
+                            580.32,
+                            538.31
+                        ]
+                    ],
+                    "text_description" : "$y=600 x$"
+                }
+            ]
+        }
+    ]
+}

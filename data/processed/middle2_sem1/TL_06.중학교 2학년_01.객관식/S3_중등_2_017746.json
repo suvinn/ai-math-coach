@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d4cc90d0-33e2-49a4-bba4-250579a09c91",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_017746",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-10] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-12] 일차부등식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            12.54,
+                            8.32,
+                            561.66,
+                            38.4
+                        ]
+                    ],
+                    "text_description" : "다음 일차부등식을 만족하는 $x$의 범위를 구하세요."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            445.18,
+                            68.48,
+                            653.18,
+                            99.84
+                        ]
+                    ],
+                    "text_description" : "$3 x+2 \\leq 2 x+5$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.82,
+                            221.44,
+                            119.42,
+                            247.04
+                        ]
+                    ],
+                    "text_description" : "③ $x \\leq 3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            14.46,
+                            136.32,
+                            142.46,
+                            207.36
+                        ]
+                    ],
+                    "text_description" : "① $x \\leq-3$ ② $x \\geq 3$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            13.18,
+                            263.04,
+                            141.82,
+                            331.52
+                        ]
+                    ],
+                    "text_description" : "④ $x \\geq-3$ ⑤ $x=3$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.22,
+                            358.4,
+                            228.22,
+                            510.72
+                        ]
+                    ],
+                    "text_description" : "$\\begin{array}{c}3 x+2 \\leq 2 x+5 \\\\ 3 x-2 x \\leq 5-2 \\\\ x \\leq 3\\end{array}$"
+                }
+            ]
+        }
+    ]
+}

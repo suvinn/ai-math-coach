@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "109ccd17-3d2e-499e-b42a-52621b96d60a",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_016018",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-11] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-13] 미지수가 2개인 연립일차방정식을 풀 수 있고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.17,
+                            45.57,
+                            519.97,
+                            139.17
+                        ]
+                    ],
+                    "text_description" : "다음 연립방정식을 풀어 $x$와 $y$를 구하시오. \\[ \\frac{x-y}{3}=\\frac{2 x+y}{6}=1 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.97,
+                            196.77,
+                            157.57,
+                            220.77
+                        ]
+                    ],
+                    "text_description" : "① $x=3, y=2$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            15.17,
+                            228.46,
+                            159.17,
+                            350.06
+                        ]
+                    ],
+                    "text_description" : "② $x=4, y=1$ ③ $x=5, y=0$ ④ $x=2, y=3$ ⑤ $x=1, y=4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            23.97,
+                            380.46,
+                            479.97,
+                            489.26
+                        ]
+                    ],
+                    "text_description" : "1. 첫 번째 방정식: $\\frac{x-y}{3}=1 \\quad x-y=3$. 2. 두 번째 방정식: $\\frac{2 x+y}{6}=1 \\quad 2 x+y=6$. 3. 첫 번째 식에서 $x=y+3$. 이를 두 번째 식에 대입"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.17,
+                            553.86,
+                            547.17,
+                            622.06
+                        ]
+                    ],
+                    "text_description" : "4. $y=0$를 첫 번째 식에 대입하여 $x$를 구함: \\[ x-0=3 \\quad x=3 \\]"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.17,
+                            511.66,
+                            822.37,
+                            536.46
+                        ]
+                    ],
+                    "text_description" : "$2(y+3)+y=6 \\quad 2 y+6+y=6 \\quad 3 y+6=6 \\quad 3 y=0 \\quad y=0$"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "e3411472-ebc7-42ba-86bc-60c946847de2",
+        "date" : "2024-09-06",
+        "publisher" : "교학사",
+        "publication_year" : "2015-03-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "공통",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_004119",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            6,
+                            8.4,
+                            517.25,
+                            77.15
+                        ]
+                    ],
+                    "text_description" : "다음 중 오른쪽 그래프와 평행한 일차함수의 그래프는?"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            521,
+                            10.65,
+                            734,
+                            225.9
+                        ]
+                    ],
+                    "text_description" : "좌표 평면이 있고, x축과 y축이 있으며, y축의 최댓값은 4, x축의 최댓값은 4이다. 직선이 원점을 지나며 상승하는 형태로 (0, -4), (2, 0)을 지나고 있다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            4.75,
+                            81.62,
+                            96,
+                            110.37
+                        ]
+                    ],
+                    "text_description" : "① $y=2 x$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            171,
+                            79.12,
+                            447.25,
+                            140.37
+                        ]
+                    ],
+                    "text_description" : "② $y=x+2$ ③ $y=x+4$ ⑤ $y=-2 x-4$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.5,
+                            111.62,
+                            142.25,
+                            142.87
+                        ]
+                    ],
+                    "text_description" : "④ $y=-2 x+4$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            3.5,
+                            252.62,
+                            489.5,
+                            339.12
+                        ]
+                    ],
+                    "text_description" : "$3(0, -4), (2, 0)$을 지나므로 기울기는 $\\frac{0-(-4)}{2-0}=2$ 이고 평행한 그래프는 기울기가 같으므로 ①이다."
+                }
+            ]
+        }
+    ]
+}

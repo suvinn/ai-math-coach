@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "dbcae169-0c10-4af2-a39e-0179da024ef7",
+        "date" : "2024-11-29",
+        "publisher" : "2차 저작",
+        "publication_year" : "2020-08-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_018864",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수03-06] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-16] 일차함수의 그래프의 성질을 이해하고, 이를 활용하여 문제를 해결할 수 있다."
+        ],
+        "level_of_difficulty" : "중",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            60.77,
+                            12.42,
+                            880.45,
+                            38.29
+                        ]
+                    ],
+                    "text_description" : "일차함수 $y=a x+b$의 그래프가 아래와 같을 때, 다음 중 일차함수 $y=b x-a$의 그래프는? (단, $a, b$는 상수)"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            56.63,
+                            41.4,
+                            230.5,
+                            211.13
+                        ]
+                    ],
+                    "text_description" : "$x$, $y$ 좌표에 $2, 3, 4$분면을 지나가는 직선이다."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            25.41,
+                            378.72,
+                            219.12,
+                            543.35
+                        ]
+                    ],
+                    "text_description" : "②음의 기울기 직선이 제2, 4사분면을 지남"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            59.74,
+                            1102.22,
+                            751.08,
+                            1156.04
+                        ]
+                    ],
+                    "text_description" : "주어진 $y=a x+b$의 그래프에서 $a<0, b<0$ 이다. 따라서 $y=b x-a$의 그래프에서 기울기는 $b<0, y$ 절편은 $-a>0$ 이므로 그래프는 ②와 같다."
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.55,
+                            214.24,
+                            217.05,
+                            373.62
+                        ]
+                    ],
+                    "text_description" : "①양의 기울기를 가진 직선이 제1, 3사분면을 지나고 있음"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            24.65,
+                            545.49,
+                            218.08,
+                            1044.27
+                        ]
+                    ],
+                    "text_description" : "③양의 기울기로, 1, 3사분면을 지나는 직선 ④음의 기울기를 가진 직선이 2, 4사분면을 통과 ⑤원점을 지나지 않는 음의 기울기 직선"
+                }
+            ]
+        }
+    ]
+}

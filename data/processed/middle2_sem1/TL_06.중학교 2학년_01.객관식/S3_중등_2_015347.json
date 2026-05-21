@@ -1,0 +1,131 @@
+{
+    "raw_data_info" : {
+        "raw_data_name" : "d2df4e3a-4430-43c7-ab49-08df3178b997",
+        "date" : "2024-11-08",
+        "publisher" : "2차 저작",
+        "publication_year" : "2024-11-01",
+        "school" : "중학교",
+        "grade" : "2학년",
+        "semester" : "1학기",
+        "subject" : "수학",
+        "revision_year" : "2015"
+    },
+    "source_data_info" : {
+        "source_data_name" : "S3_중등_2_015347",
+        "2009_achievement_standard" : [
+            " "
+        ],
+        "2015_achievement_standard" : [
+            "[9수02-06] 지수법칙을 이해한다."
+        ],
+        "2022_achievement_standard" : [
+            "[9수02-08] 지수법칙을 이해하고, 이를 이용하여 식을 간단히 할 수 있다."
+        ],
+        "level_of_difficulty" : "하",
+        "types_of_problems" : "객관식"
+    },
+    "learning_data_info" : [
+        {
+            "class_num" : 1,
+            "class_name" : "문항(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            19.13,
+                            64.84,
+                            283.27,
+                            95.66
+                        ]
+                    ],
+                    "text_description" : "다음 식을 간단히 하시오."
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "문항(이미지)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            444.3,
+                            118.52,
+                            614.9,
+                            193.98
+                        ]
+                    ],
+                    "text_description" : "$\\frac{8 x^{4} y^{5}}{4 x^{2} y^{2}} \\times 2 x^{3} y$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "정답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            22.32,
+                            302.93,
+                            120.64,
+                            334.82
+                        ]
+                    ],
+                    "text_description" : "③ $4 x^{5} y^{6}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 2,
+            "class_name" : "오답(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            20.38,
+                            219.49,
+                            120.11,
+                            296.02
+                        ]
+                    ],
+                    "text_description" : "① $4 x^{5} y^{4}$ ② $2 x^{5} y^{6}$"
+                },
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            21.26,
+                            343.32,
+                            117.98,
+                            414.01
+                        ]
+                    ],
+                    "text_description" : "④ $2 x^{6} y^{5}$ ⑤ $2 x^{5} y^{5}$"
+                }
+            ]
+        },
+        {
+            "class_num" : 1,
+            "class_name" : "해설(텍스트)",
+            "class_info_list" : [
+                {
+                    "Type" : "Bounding_Box",
+                    "Type_value" : [
+                        [
+                            284.86,
+                            576.64,
+                            763.18,
+                            657.95
+                        ]
+                    ],
+                    "text_description" : "$\\frac{8 x^{4} y^{5}}{4 x^{2} y^{2}}=2 x^{2} y^{3}, \\quad 2 x^{2} y^{3} \\times 2 x^{3} y=4 x^{5} y^{6}$"
+                }
+            ]
+        }
+    ]
+}
