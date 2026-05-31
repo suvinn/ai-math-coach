@@ -73,6 +73,9 @@ REST_FRAMEWORK = {
     ],
 }
 
+# 개발 중 Postman 테스트용 — 배포 전 제거할 것!!!
+CSRF_TRUSTED_ORIGINS = ['http://localhost:5173', 'http://localhost:3000']
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
