@@ -1,7 +1,11 @@
-# models.py
-
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
+from django.conf import settings
+
+
+class User(AbstractUser):
+    class Meta:
+        db_table = 'user'
 
 
 class Problem(models.Model):
@@ -28,7 +32,7 @@ class QuizSession(models.Model):
         ('completed', 'Completed'),
     ]
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     chapter_major = models.CharField(max_length=50)
     chapter_middle = models.CharField(max_length=50)
     chapter_minor = models.CharField(max_length=50, null=True, blank=True)
