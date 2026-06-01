@@ -83,3 +83,67 @@ class MeView(APIView):
                 'name': request.user.first_name,
             }
         })
+
+
+class ChapterListView(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request):
+        # DB에서 챕터 정보 distinct로 추출
+        problems = Problem.objects.values(
+            'chapter_major', 'chapter_middle', 'chapter_minor'
+        ).distinct().order_by('chapter_major', 'chapter_middle', 'chapter_minor')
+
+        # 중첩 구조로 가공
+        result = {}
+        for p in problems:
+            major = p['chapter_major']
+            middle = p['chapter_middle']
+            minor = p['chapter_minor']
+
+            if major not in result:
+                result[major] = {}
+            if middle not in result[major]:
+                result[major][middle] = []
+            result[major][middle].append(minor)
+
+        data = [
+            {
+                'chapter_major': major,
+                'chapter_middles': [
+                    {
+                        'chapter_middle': middle,
+                        'chapter_minors': minors
+                    }
+                    for middle, minors in middles.items()
+                ]
+            }
+            for major, middles in result.items()
+        ]
+
+        return Response({'status': 'success', 'data': data})
+
+
+class ChapterProblemCountView(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request):
+        from django.db.models import Count
+
+        rows = Problem.objects.values(
+            'chapter_major', 'chapter_middle', 'chapter_minor'
+        ).annotate(count=Count('id')).order_by(
+            'chapter_major', 'chapter_middle', 'chapter_minor'
+        )
+
+        data = [
+            {
+                'chapter_major':  r['chapter_major'],
+                'chapter_middle': r['chapter_middle'],
+                'chapter_minor':  r['chapter_minor'],
+                'count':          r['count'],
+            }
+            for r in rows
+        ]
+
+        return Response({'status': 'success', 'data': data})
