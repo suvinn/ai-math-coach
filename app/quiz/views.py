@@ -6,7 +6,9 @@ from rest_framework import status
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from .serializers import RegisterSerializer, UserSerializer
-from .models import Problem
+from .models import Problem, QuizSession, SessionProblem
+import random
+
 
 User = get_user_model()
 
@@ -147,3 +149,71 @@ class ChapterProblemCountView(APIView):
         ]
 
         return Response({'status': 'success', 'data': data})
+
+
+class QuizSessionCreateView(APIView):
+
+    def post(self, request):
+        chapter_major  = request.data.get('chapter_major')
+        chapter_middle = request.data.get('chapter_middle')
+        chapter_minor  = request.data.get('chapter_minor')
+        problem_count  = request.data.get('problem_count')
+
+        if not chapter_major or not chapter_middle or not problem_count:
+            return Response(
+                {'status': 'error', 'message': 'chapter_major, chapter_middle, problem_count는 필수입니다.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        try:
+            problem_count = int(problem_count)
+            if problem_count < 1:
+                raise ValueError
+        except (ValueError, TypeError):
+            return Response(
+                {'status': 'error', 'message': 'problem_count는 1 이상의 정수여야 합니다.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        problems = Problem.objects.filter(
+            chapter_major=chapter_major,
+            chapter_middle=chapter_middle,
+        )
+        if chapter_minor:
+            problems = problems.filter(chapter_minor=chapter_minor)
+
+        if not problems.exists():
+            return Response(
+                {'status': 'error', 'message': '해당 범위에 문제가 없습니다.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        problem_list = list(problems)
+        actual_count = min(problem_count, len(problem_list))  # 요청한 수보다 실제 문제가 적으면 있는 만큼만
+        selected     = random.sample(problem_list, actual_count)
+
+        session = QuizSession.objects.create(
+            user=request.user,
+            chapter_major=chapter_major,
+            chapter_middle=chapter_middle,
+            chapter_minor=chapter_minor or '',
+            problem_count=actual_count,
+        )
+
+        for idx, problem in enumerate(selected):
+            SessionProblem.objects.create(
+                session=session,
+                problem=problem,
+                order_index=idx + 1
+            )
+
+        return Response({
+            'status': 'success',
+            'data': {
+                'session_id':      session.id,
+                'status':          session.status,
+                'requested_count': problem_count,
+                'actual_count':    actual_count,
+                'created_at':      session.created_at,
+            }
+        }, status=status.HTTP_201_CREATED)
