@@ -217,3 +217,48 @@ class QuizSessionCreateView(APIView):
                 'created_at':      session.created_at,
             }
         }, status=status.HTTP_201_CREATED)
+
+
+class QuizSessionProblemsView(APIView):
+
+    def get(self, request, session_id):
+        try:
+            session = QuizSession.objects.get(id=session_id)
+        except QuizSession.DoesNotExist:
+            return Response(
+                {'status': 'error', 'message': '세션을 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        if session.user != request.user:
+            return Response(
+                {'status': 'error', 'message': '접근 권한이 없습니다.'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+
+        session_problems = SessionProblem.objects.filter(
+            session=session
+        ).select_related('problem').order_by('order_index')
+
+        problems = []
+        for sp in session_problems:
+            p = sp.problem
+            problems.append({
+                'order':                sp.order_index,
+                'problem_id':           p.id,
+                'difficulty':           p.difficulty,
+                'problem_subtype':      p.problem_subtype,
+                'question_text':        p.question_text,
+                'question_with_options': p.question_with_options,
+                'question_image_bbox':  p.question_image_bbox,
+            })
+
+        return Response({
+            'status': 'success',
+            'data': {
+                'session_id': session.id,
+                'status':     session.status,
+                'total':      len(problems),
+                'problems':   problems,
+            }
+        })

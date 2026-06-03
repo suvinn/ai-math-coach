@@ -14,4 +14,5 @@ urlpatterns = [
 
     # 퀴즈 세션
     path('quiz/sessions', views.QuizSessionCreateView.as_view()),
+    path('quiz/sessions/<int:session_id>/problems', views.QuizSessionProblemsView.as_view()),
 ]
