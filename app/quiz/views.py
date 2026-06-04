@@ -6,7 +6,7 @@ from rest_framework import status
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from .serializers import RegisterSerializer, UserSerializer
-from .models import Problem, QuizSession, SessionProblem
+from .models import Problem, QuizSession, SessionProblem, SessionResult
 import random
 
 
@@ -178,6 +178,7 @@ class QuizSessionCreateView(APIView):
         problems = Problem.objects.filter(
             chapter_major=chapter_major,
             chapter_middle=chapter_middle,
+            is_quizable=True,
         )
         if chapter_minor:
             problems = problems.filter(chapter_minor=chapter_minor)
@@ -260,5 +261,90 @@ class QuizSessionProblemsView(APIView):
                 'status':     session.status,
                 'total':      len(problems),
                 'problems':   problems,
+            }
+        })
+
+
+class QuizSessionSubmitView(APIView):
+
+    def post(self, request, session_id):
+        try:
+            session = QuizSession.objects.get(id=session_id)
+        except QuizSession.DoesNotExist:
+            return Response(
+                {'status': 'error', 'message': '세션을 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        if session.user != request.user:
+            return Response(
+                {'status': 'error', 'message': '접근 권한이 없습니다.'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+
+        if session.status == 'completed':
+            return Response(
+                {'status': 'error', 'message': '이미 제출된 세션입니다.'},
+                status=status.HTTP_409_CONFLICT
+            )
+
+        answers = request.data.get('answers', [])
+        if not answers:
+            return Response(
+                {'status': 'error', 'message': 'answers가 비어있습니다.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        session_problems = SessionProblem.objects.filter(
+            session=session
+        ).select_related('problem')
+
+        problem_map = {sp.problem.id: sp.problem for sp in session_problems}
+
+        results = []
+        score = 0
+
+        for answer in answers:
+            problem_id  = answer.get('problem_id')
+            user_answer = answer.get('user_answer', '').strip()
+
+            if problem_id not in problem_map:
+                continue
+
+            problem    = problem_map[problem_id]
+            is_correct = (user_answer == problem.answer.strip())
+
+            if is_correct:
+                score += 1
+
+            SessionResult.objects.create(
+                session=session,
+                problem=problem,
+                student_answer=user_answer,
+                is_correct=is_correct,
+            )
+
+            results.append({
+                'problem_id':      problem_id,
+                'user_answer':     user_answer,
+                'correct_answer':  problem.answer,
+                'is_correct':      is_correct,
+                'explanation':     problem.explanation,
+                'problem_subtype': problem.problem_subtype,
+                'difficulty':      problem.difficulty,
+            })
+
+        session.status = 'completed'
+        session.score  = score
+        session.save()
+
+        return Response({
+            'status': 'success',
+            'data': {
+                'session_id': session.id,
+                'score':      score,
+                'total':      len(results),
+                'accuracy':   round(score / len(results), 2) if results else 0,
+                'results':    results,
             }
         })
