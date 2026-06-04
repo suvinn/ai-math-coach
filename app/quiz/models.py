@@ -21,6 +21,7 @@ class Problem(models.Model):
     question_image_bbox = models.JSONField(default=list)
     answer = models.CharField(max_length=200)
     explanation = models.TextField()
+    is_quizable = models.BooleanField(default=False)
 
     class Meta:
         db_table = 'problem'
