@@ -348,3 +348,56 @@ class QuizSessionSubmitView(APIView):
                 'results':    results,
             }
         })
+
+
+class QuizSessionWrongAnswersView(APIView):
+
+    def get(self, request, session_id):
+        try:
+            session = QuizSession.objects.get(id=session_id)
+        except QuizSession.DoesNotExist:
+            return Response(
+                {'status': 'error', 'message': '세션을 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        if session.user != request.user:
+            return Response(
+                {'status': 'error', 'message': '접근 권한이 없습니다.'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+
+        if session.status != 'completed':
+            return Response(
+                {'status': 'error', 'message': '아직 제출되지 않은 세션입니다.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        wrong_results = SessionResult.objects.filter(
+            session=session,
+            is_correct=False
+        ).select_related('problem')
+
+        wrong_problems = []
+        for result in wrong_results:
+            p = result.problem
+            wrong_problems.append({
+                'problem_id':            p.id,
+                'user_answer':           result.student_answer,
+                'correct_answer':        p.answer,
+                'explanation':           p.explanation,
+                'problem_subtype':       p.problem_subtype,
+                'difficulty':            p.difficulty,
+                'question_text':         p.question_text,
+                'question_with_options': p.question_with_options,
+                'question_image_bbox':   p.question_image_bbox,
+            })
+
+        return Response({
+            'status': 'success',
+            'data': {
+                'session_id':    session.id,
+                'wrong_count':   len(wrong_problems),
+                'wrong_problems': wrong_problems,
+            }
+        })
