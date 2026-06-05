@@ -401,3 +401,82 @@ class QuizSessionWrongAnswersView(APIView):
                 'wrong_problems': wrong_problems,
             }
         })
+
+
+class QuizSessionAnalysisView(APIView):
+
+    def get(self, request, session_id):
+        try:
+            session = QuizSession.objects.get(id=session_id)
+        except QuizSession.DoesNotExist:
+            return Response(
+                {'status': 'error', 'message': '세션을 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        if session.user != request.user:
+            return Response(
+                {'status': 'error', 'message': '접근 권한이 없습니다.'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+
+        if session.status != 'completed':
+            return Response(
+                {'status': 'error', 'message': '아직 제출되지 않은 세션입니다.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        results = SessionResult.objects.filter(
+            session=session
+        ).select_related('problem')
+
+        total = results.count()
+        score = results.filter(is_correct=True).count()
+
+        wrong_results = results.filter(is_correct=False)
+        if not wrong_results.exists():
+            return Response({
+                'status': 'success',
+                'data': {
+                    'session_id':   session.id,
+                    'score':        score,
+                    'total':        total,
+                    'accuracy':     1.0,
+                    'all_correct':  True,
+                    'weak_subtypes': [],
+                }
+            })
+
+        # subtype별 집계 (최대 3개)
+        from collections import Counter
+        subtype_counter = Counter(
+            r.problem.problem_subtype for r in wrong_results
+        )
+        top3 = subtype_counter.most_common(3)
+
+        weak_subtypes = []
+        for rank, (subtype, wrong_count) in enumerate(top3, start=1):
+            total_in_subtype = results.filter(
+                problem__problem_subtype=subtype
+            ).count()
+            weak_subtypes.append({
+                'rank':            rank,
+                'problem_subtype': subtype,
+                'wrong_count':     wrong_count,
+                'total_count':     total_in_subtype,
+                'accuracy':        round(
+                    (total_in_subtype - wrong_count) / total_in_subtype, 2
+                ),
+            })
+
+        return Response({
+            'status': 'success',
+            'data': {
+                'session_id':    session.id,
+                'score':         score,
+                'total':         total,
+                'accuracy':      round(score / total, 2),
+                'all_correct':   False,
+                'weak_subtypes': weak_subtypes,
+            }
+        })
