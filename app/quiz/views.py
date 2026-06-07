@@ -480,3 +480,29 @@ class QuizSessionAnalysisView(APIView):
                 'weak_subtypes': weak_subtypes,
             }
         })
+
+
+class UserHistoryView(APIView):
+
+    def get(self, request):
+        sessions = QuizSession.objects.filter(
+            user=request.user,
+            status='completed'        # 제출 완료된 세션만
+        ).order_by('-created_at')     # 최신순 정렬
+
+        data = []
+        for session in sessions:
+            data.append({
+                'session_id':     session.id,
+                'status':         session.status,
+                'chapter_major':  session.chapter_major,
+                'chapter_middle': session.chapter_middle,
+                'chapter_minor':  session.chapter_minor or None,
+                'score':          session.score,
+                'total':          session.problem_count,
+                'accuracy':       round(session.score / session.problem_count, 2)
+                                  if session.score is not None else None,
+                'created_at':     session.created_at,
+            })
+
+        return Response({'status': 'success', 'data': data})
