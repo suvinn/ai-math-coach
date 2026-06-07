@@ -506,3 +506,30 @@ class UserHistoryView(APIView):
             })
 
         return Response({'status': 'success', 'data': data})
+    
+
+class ProblemDetailView(APIView):
+
+    def get(self, request, problem_id):
+        try:
+            problem = Problem.objects.get(id=problem_id)
+        except Problem.DoesNotExist:
+            return Response(
+                {'status': 'error', 'message': '문제를 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        return Response({
+            'status': 'success',
+            'data': {
+                'problem_id':            problem.id,
+                'difficulty':            problem.difficulty,
+                'chapter_major':         problem.chapter_major,
+                'chapter_middle':        problem.chapter_middle,
+                'chapter_minor':         problem.chapter_minor,
+                'problem_subtype':       problem.problem_subtype,
+                'question_text':         problem.question_text,
+                'question_with_options': problem.question_with_options,
+                'question_image_bbox':   problem.question_image_bbox,
+            }
+        })
