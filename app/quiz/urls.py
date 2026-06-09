@@ -18,6 +18,7 @@ urlpatterns = [
     path('quiz/sessions/<int:session_id>/submit',   views.QuizSessionSubmitView.as_view()),
     path('quiz/sessions/<int:session_id>/wrong-answers', views.QuizSessionWrongAnswersView.as_view()),
     path('quiz/sessions/<int:session_id>/analysis', views.QuizSessionAnalysisView.as_view()),
+    path('quiz/sessions/<int:session_id>/recommendations', views.QuizSessionRecommendationsView.as_view()),
     path('users/me/history',                        views.UserHistoryView.as_view()),
     path('problems/<str:problem_id>',               views.ProblemDetailView.as_view()),
 ]

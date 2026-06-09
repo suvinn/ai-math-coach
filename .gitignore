@@ -10,3 +10,7 @@ data/extracted/
 *.pt
 *.bin
 *.ckpt
+.DS_Store
+
+chroma_db/
+db.sqlite3

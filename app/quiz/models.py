@@ -32,6 +32,11 @@ class QuizSession(models.Model):
         ('in_progress', 'In Progress'),
         ('completed', 'Completed'),
     ]
+    SESSION_TYPE_CHOICES = [
+        ('normal',   '일반 세션'),
+        ('review_1', '1차 오답 보완'),
+        ('review_2', '2차 오답 보완'),
+    ]
 
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     chapter_major = models.CharField(max_length=50)
@@ -42,6 +47,17 @@ class QuizSession(models.Model):
     score = models.IntegerField(null=True, blank=True)
     ai_feedback = models.TextField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    session_type   = models.CharField(
+        max_length=20,
+        choices=SESSION_TYPE_CHOICES,
+        default='normal'
+    )
+    parent_session = models.ForeignKey(
+        'self',
+        null=True, blank=True,
+        on_delete=models.SET_NULL,
+        related_name='child_sessions'
+    )
 
     class Meta:
         db_table = 'quiz_session'

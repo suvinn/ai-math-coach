@@ -6,8 +6,11 @@ from rest_framework import status
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from .serializers import RegisterSerializer, UserSerializer
-from .models import Problem, QuizSession, SessionProblem, SessionResult
+from .models import Problem, QuizSession, SessionProblem, SessionResult, WeaknessReport, WeakSubtype, Recommendation
 import random
+from openai import OpenAI
+import chromadb
+from django.conf import settings
 
 
 User = get_user_model()
@@ -154,10 +157,11 @@ class ChapterProblemCountView(APIView):
 class QuizSessionCreateView(APIView):
 
     def post(self, request):
-        chapter_major  = request.data.get('chapter_major')
-        chapter_middle = request.data.get('chapter_middle')
-        chapter_minor  = request.data.get('chapter_minor')
-        problem_count  = request.data.get('problem_count')
+        chapter_major     = request.data.get('chapter_major')
+        chapter_middle    = request.data.get('chapter_middle')
+        chapter_minor     = request.data.get('chapter_minor')
+        problem_count     = request.data.get('problem_count')
+        parent_session_id = request.data.get('parent_session_id')  # optional
 
         if not chapter_major or not chapter_middle or not problem_count:
             return Response(
@@ -175,23 +179,116 @@ class QuizSessionCreateView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-        problems = Problem.objects.filter(
+        session_type   = 'normal'
+        parent_session = None
+
+        if parent_session_id:
+            try:
+                parent_session = QuizSession.objects.get(
+                    id=parent_session_id,
+                    user=request.user
+                )
+            except QuizSession.DoesNotExist:
+                return Response(
+                    {'status': 'error', 'message': '부모 세션을 찾을 수 없습니다.'},
+                    status=status.HTTP_404_NOT_FOUND
+                )
+
+            if parent_session.session_type == 'normal':
+                session_type = 'review_1'
+            elif parent_session.session_type == 'review_1':
+                session_type = 'review_2'
+            elif parent_session.session_type == 'review_2':
+                # 3회차 초과 → 세션 생성 없이 해설만 반환
+                wrong_results = SessionResult.objects.filter(
+                    session=parent_session,
+                    is_correct=False
+                ).select_related('problem')
+
+                explanations = [
+                    {
+                        'problem_id':     r.problem.id,
+                        'question_text':  r.problem.question_text,
+                        'user_answer':    r.student_answer,
+                        'correct_answer': r.problem.answer,
+                        'explanation':    r.problem.explanation,
+                        'problem_subtype': r.problem.problem_subtype,
+                    }
+                    for r in wrong_results
+                ]
+                return Response({
+                    'status': 'success',
+                    'data': {
+                        'session_created':  False,
+                        'show_explanation': True,
+                        'message':          '이 유형은 해설을 꼼꼼히 읽고 다음에 다시 도전해봐요!',
+                        'explanations':     explanations,
+                    }
+                })
+
+        base_filter = dict(
             chapter_major=chapter_major,
             chapter_middle=chapter_middle,
             is_quizable=True,
         )
         if chapter_minor:
-            problems = problems.filter(chapter_minor=chapter_minor)
+            base_filter['chapter_minor'] = chapter_minor
 
-        if not problems.exists():
+        if session_type == 'normal':
+            # 첫 세션: 하 70% + 중 30%, 상 제외
+            problems_low = list(Problem.objects.filter(**base_filter, difficulty='하'))
+            problems_mid = list(Problem.objects.filter(**base_filter, difficulty='중'))
+
+            if not problems_low and not problems_mid:
+                return Response(
+                    {'status': 'error', 'message': '해당 범위에 문제가 없습니다.'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+
+            low_count = round(problem_count * 0.7)
+            mid_count = problem_count - low_count
+
+            selected_low = random.sample(problems_low, min(low_count, len(problems_low)))
+            selected_mid = random.sample(problems_mid, min(mid_count, len(problems_mid)))
+            selected     = selected_low + selected_mid
+            random.shuffle(selected)
+
+        elif session_type == 'review_1':
+            # 1차 오답 보완: 취약 subtype 유사 문제, 하 위주
+            weak_subtypes = _get_weak_subtypes(parent_session)
+            problems = list(Problem.objects.filter(
+                **base_filter,
+                problem_subtype__in=weak_subtypes,
+                difficulty__in=['하', '중'],
+            ))
+            if not problems:
+                problems = list(Problem.objects.filter(**base_filter, difficulty__in=['하', '중']))
+
+            actual_count = min(problem_count, len(problems))
+            selected     = random.sample(problems, actual_count)
+
+        else:  # review_2
+            # 2차 오답 보완: 취약 subtype, 하 난이도만
+            weak_subtypes = _get_weak_subtypes(parent_session)
+            problems = list(Problem.objects.filter(
+                **base_filter,
+                problem_subtype__in=weak_subtypes,
+                difficulty='하',
+            ))
+            if not problems:
+                problems = list(Problem.objects.filter(**base_filter, difficulty='하'))
+
+            actual_count = min(problem_count, len(problems))
+            selected     = random.sample(problems, actual_count)
+
+        # 6. 문제가 0개면 에러
+        if not selected:
             return Response(
-                {'status': 'error', 'message': '해당 범위에 문제가 없습니다.'},
+                {'status': 'error', 'message': '해당 범위에 출제 가능한 문제가 없습니다.'},
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-        problem_list = list(problems)
-        actual_count = min(problem_count, len(problem_list))  # 요청한 수보다 실제 문제가 적으면 있는 만큼만
-        selected     = random.sample(problem_list, actual_count)
+        actual_count = len(selected)
 
         session = QuizSession.objects.create(
             user=request.user,
@@ -199,25 +296,40 @@ class QuizSessionCreateView(APIView):
             chapter_middle=chapter_middle,
             chapter_minor=chapter_minor or '',
             problem_count=actual_count,
+            session_type=session_type,
+            parent_session=parent_session,
         )
 
         for idx, problem in enumerate(selected):
             SessionProblem.objects.create(
                 session=session,
                 problem=problem,
-                order_index=idx + 1
+                order_index=idx + 1,
             )
 
         return Response({
             'status': 'success',
             'data': {
                 'session_id':      session.id,
+                'session_type':    session.session_type,
                 'status':          session.status,
                 'requested_count': problem_count,
                 'actual_count':    actual_count,
                 'created_at':      session.created_at,
             }
         }, status=status.HTTP_201_CREATED)
+
+
+def _get_weak_subtypes(session):
+    """세션의 오답 문제에서 취약 subtype 목록 추출"""
+    from collections import Counter
+    wrong_results = SessionResult.objects.filter(
+        session=session,
+        is_correct=False
+    ).select_related('problem')
+
+    counter = Counter(r.problem.problem_subtype for r in wrong_results)
+    return [subtype for subtype, _ in counter.most_common(3)]
 
 
 class QuizSessionProblemsView(APIView):
@@ -533,3 +645,266 @@ class ProblemDetailView(APIView):
                 'question_image_bbox':   problem.question_image_bbox,
             }
         })
+
+
+class QuizSessionRecommendationsView(APIView):
+
+    def get(self, request, session_id):
+        # 세션 확인
+        try:
+            session = QuizSession.objects.get(id=session_id)
+        except QuizSession.DoesNotExist:
+            return Response(
+                {'status': 'error', 'message': '세션을 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        if session.user != request.user:
+            return Response(
+                {'status': 'error', 'message': '접근 권한이 없습니다.'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+
+        if session.status != 'completed':
+            return Response(
+                {'status': 'error', 'message': '아직 제출되지 않은 세션입니다.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        # 이미 생성된 리포트면 DB에서 바로 반환 (LLM 재호출 방지)
+        try:
+            report = session.weakness_report
+            return Response({'status': 'success', 'data': _serialize_report(report)})
+        except WeaknessReport.DoesNotExist:
+            pass
+
+        # 전체 결과 조회
+        results      = SessionResult.objects.filter(session=session).select_related('problem')
+        wrong_results = results.filter(is_correct=False)
+        total        = results.count()
+        score        = results.filter(is_correct=True).count()
+        solved_ids   = list(results.values_list('problem__id', flat=True))
+
+        # 전부 맞은 경우
+        if not wrong_results.exists():
+            report = WeaknessReport.objects.create(
+                session=session,
+                all_correct=True,
+                ai_feedback='모든 문제를 맞혔어요! 더 어려운 문제에 도전해보세요.',
+            )
+            _recommend_harder(report, session, solved_ids)
+            return Response({'status': 'success', 'data': _serialize_report(report)})
+
+        # 취약 유형 Top 3 집계
+        from collections import Counter
+        subtype_counter = Counter(
+            r.problem.problem_subtype for r in wrong_results
+        )
+        top3 = subtype_counter.most_common(3)
+
+        # LLM 피드백 생성
+        ai_feedback = _generate_feedback(top3)
+
+        # WeaknessReport 생성
+        report = WeaknessReport.objects.create(
+            session=session,
+            all_correct=False,
+            ai_feedback=ai_feedback,
+        )
+
+        # WeakSubtype + RAG 추천
+        for rank, (subtype, wrong_count) in enumerate(top3, start=1):
+            total_in_subtype = results.filter(
+                problem__problem_subtype=subtype
+            ).count()
+            weak = WeakSubtype.objects.create(
+                report=report,
+                problem_subtype=subtype,
+                wrong_count=wrong_count,
+                total_count=total_in_subtype,
+                rank=rank,
+            )
+            sample_wrong = wrong_results.filter(
+                problem__problem_subtype=subtype
+            ).first()
+            _recommend_similar(report, weak, sample_wrong.problem, solved_ids, session)
+
+        return Response({'status': 'success', 'data': _serialize_report(report)})
+
+
+def _generate_feedback(top3):
+    """LLM으로 취약 유형 자연어 피드백 생성"""
+    client = OpenAI(
+        api_key=settings.GMS_KEY,
+        base_url=settings.GMS_URL
+    )
+
+    subtype_text = '\n'.join(
+        f'{rank}. {subtype} ({wrong_count}개 틀림)'
+        for rank, (subtype, wrong_count) in enumerate(top3, start=1)
+    )
+
+    response = client.chat.completions.create(
+        model='gpt-4o-mini',
+        messages=[
+            {
+                'role': 'system',
+                'content': (
+                    '당신은 중학교 수학 학습 코치입니다. '
+                    '학생의 취약 유형을 분석해서 따뜻하고 구체적인 피드백을 제공해주세요. '
+                    '3문장 이내로 간결하게 작성해주세요.'
+                )
+            },
+            {
+                'role': 'user',
+                'content': f'학생이 다음 유형에서 틀렸습니다:\n{subtype_text}'
+            }
+        ],
+        max_tokens=300,
+    )
+    return response.choices[0].message.content
+
+
+def _recommend_similar(report, weak, sample_problem, solved_ids, session):
+    """RAG로 유사 문제 추천 — 난이도 하 우선 → 없으면 전체"""
+    client        = OpenAI(
+        api_key=settings.GMS_KEY,
+        base_url=settings.GMS_URL
+    )
+    chroma_client = chromadb.PersistentClient(path='./chroma_db')
+    collection    = chroma_client.get_collection('problems')
+
+    # 오답 문제 question_text로 임베딩 쿼리
+    query_embedding = client.embeddings.create(
+        model='text-embedding-3-small',
+        input=[sample_problem.question_text],
+    ).data[0].embedding
+
+    def _query(where_filter):
+        return collection.query(
+            query_embeddings=[query_embedding],
+            n_results=10,
+            where=where_filter,
+        )
+
+    # 1순위: 같은 subtype + 하 난이도
+    results = _query({
+        '$and': [
+            {'problem_subtype': {'$eq': weak.problem_subtype}},
+            {'difficulty':      {'$eq': '하'}},
+            {'is_quizable':     {'$eq': 'True'}},
+        ]
+    })
+    recommended_ids = [
+        pid for pid in results['ids'][0] if pid not in solved_ids
+    ][:3]
+
+    # 2순위: 같은 subtype (난이도 무관)
+    if not recommended_ids:
+        results = _query({
+            '$and': [
+                {'problem_subtype': {'$eq': weak.problem_subtype}},
+                {'is_quizable':     {'$eq': 'True'}},
+            ]
+        })
+        recommended_ids = [
+            pid for pid in results['ids'][0] if pid not in solved_ids
+        ][:3]
+
+    # 3순위: 같은 chapter_minor (subtype 폴백)
+    if not recommended_ids:
+        results = _query({
+            '$and': [
+                {'chapter_minor': {'$eq': sample_problem.chapter_minor}},
+                {'is_quizable':   {'$eq': 'True'}},
+            ]
+        })
+        recommended_ids = [
+            pid for pid in results['ids'][0] if pid not in solved_ids
+        ][:3]
+
+    # Recommendation 저장
+    for idx, problem_id in enumerate(recommended_ids):
+        try:
+            problem = Problem.objects.get(id=problem_id)
+        except Problem.DoesNotExist:
+            continue
+
+        Recommendation.objects.create(
+            report=report,
+            weak_subtype=weak,
+            problem=problem,
+            similarity_score=None,
+            order_index=idx + 1,
+            reason=f'{weak.problem_subtype} 유형 유사 문제 (난이도: {problem.difficulty})',
+        )
+
+
+def _recommend_harder(report, session, solved_ids):
+    """전부 맞았을 때 현재 세션보다 높은 난이도 문제 추천"""
+    # session_type에 따라 다음 난이도 결정
+    if session.session_type in ['normal', 'review_1']:
+        next_difficulties = ['중', '상']
+    else:
+        next_difficulties = ['상']
+
+    harder_problems = Problem.objects.filter(
+        chapter_middle=session.chapter_middle,
+        difficulty__in=next_difficulties,
+        is_quizable=True,
+    ).exclude(id__in=solved_ids)[:3]
+
+    for idx, problem in enumerate(harder_problems):
+        Recommendation.objects.create(
+            report=report,
+            weak_subtype=None,
+            problem=problem,
+            similarity_score=None,
+            order_index=idx + 1,
+            reason=f'현재 수준보다 높은 난이도 도전 문제 (난이도: {problem.difficulty})',
+        )
+
+
+def _serialize_report(report):
+    """WeaknessReport → 응답 딕셔너리 변환"""
+    if report.all_correct:
+        return {
+            'all_correct':   True,
+            'ai_feedback':   report.ai_feedback,
+            'weak_subtypes': [],
+            'recommendations': [
+                {
+                    'problem_id':      r.problem.id,
+                    'difficulty':      r.problem.difficulty,
+                    'problem_subtype': r.problem.problem_subtype,
+                    'question_text':   r.problem.question_text,
+                    'reason':          r.reason,
+                }
+                for r in report.recommendations.select_related('problem').all()
+            ],
+        }
+
+    weak_subtypes = []
+    for weak in report.weak_subtypes.all():
+        weak_subtypes.append({
+            'rank':            weak.rank,
+            'problem_subtype': weak.problem_subtype,
+            'wrong_count':     weak.wrong_count,
+            'total_count':     weak.total_count,
+            'recommendations': [
+                {
+                    'problem_id':      r.problem.id,
+                    'difficulty':      r.problem.difficulty,
+                    'problem_subtype': r.problem.problem_subtype,
+                    'question_text':   r.problem.question_text,
+                    'reason':          r.reason,
+                }
+                for r in weak.recommendations.select_related('problem').all()
+            ],
+        })
+
+    return {
+        'all_correct':   False,
+        'ai_feedback':   report.ai_feedback,
+        'weak_subtypes': weak_subtypes,
+    }
