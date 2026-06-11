@@ -1,4 +1,5 @@
 from django.contrib.auth import authenticate, login, logout, get_user_model
+from django.middleware.csrf import get_token
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -908,3 +909,16 @@ def _serialize_report(report):
         'ai_feedback':   report.ai_feedback,
         'weak_subtypes': weak_subtypes,
     }
+
+class CSRFTokenView(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request):
+        token = get_token(request)
+        return Response({
+            "status": "success",
+            "data": {
+                "csrfToken": token
+            }
+        })
+    
