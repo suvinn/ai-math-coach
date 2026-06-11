@@ -294,3 +294,139 @@ code {
     border-right-color: var(--border);
   }
 }
+
+
+# 여기서부터 새로 추가 (6/11)
+
+.page-header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.description {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.form-group select {
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: white;
+  font-size: 15px;
+}
+
+.form-group select:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+}
+
+.count-options {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.count-options button {
+  min-width: 100px;
+  height: 44px;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  background: white;
+  color: #374151;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.count-options button.active {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: white;
+}
+
+.summary-box {
+  padding: 20px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.summary-box h2 {
+  margin: 0 0 16px;
+  font-size: 18px;
+}
+
+.summary-box p {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 10px 0;
+  color: #4b5563;
+}
+
+.summary-box strong {
+  color: #111827;
+  text-align: right;
+}
+
+.primary-button {
+  height: 52px;
+  border: 0;
+  border-radius: 14px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primary-button:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.helper-text {
+  margin: -12px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.notice {
+  padding: 20px;
+  border-radius: 14px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.notice.error {
+  background: #fef2f2;
+  color: #dc2626;
+}
