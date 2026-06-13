@@ -107,6 +107,10 @@
       <p v-if="startErrorMessage" class="form-error">
         {{ startErrorMessage }}
       </p>
+
+      <p v-if="!canStartQuiz" class="helper-text">
+        대단원과 중단원을 선택하면 퀴즈를 시작할 수 있어요.
+      </p>
     </div>
   </section>
 </template>

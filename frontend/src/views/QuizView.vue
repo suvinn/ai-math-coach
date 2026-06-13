@@ -74,6 +74,15 @@
         />
       </div>
 
+      <div class="answer-summary">
+        <span>답안 입력 현황</span>
+        <strong>{{ answeredCount }} / {{ problems.length }}</strong>
+      </div>
+
+      <p v-if="submitErrorMessage" class="form-error">
+        {{ submitErrorMessage }}
+      </p>
+
       <div class="quiz-actions">
         <button
           class="secondary-button"
@@ -97,23 +106,21 @@
           v-else
           class="primary-button"
           type="button"
-          @click="handleTempFinish"
+          :disabled="isSubmitting"
+          @click="handleSubmit"
         >
-          답안 확인
+          {{ isSubmitting ? '제출 중...' : '답안 제출하기' }}
         </button>
       </div>
-
-      <p class="helper-text">
-        현재 단계에서는 문제 조회와 답안 선택까지만 연결했습니다. 제출 API는 다음 단계에서 연결합니다.
-      </p>
     </div>
   </section>
 </template>
 
 <script setup>
 import { computed, onMounted, ref, watch } from 'vue'
+import { useRouter } from 'vue-router'
 
-import { fetchQuizProblems } from '../api/quiz'
+import { fetchQuizProblems, submitQuizAnswers } from '../api/quiz'
 
 const props = defineProps({
   sessionId: {
@@ -122,10 +129,14 @@ const props = defineProps({
   },
 })
 
+const router = useRouter()
+
 const problems = ref([])
 const answers = ref({})
 const isLoading = ref(false)
+const isSubmitting = ref(false)
 const errorMessage = ref('')
+const submitErrorMessage = ref('')
 const currentIndex = ref(0)
 const manualAnswer = ref('')
 
@@ -143,8 +154,13 @@ const isLastProblem = computed(() => {
   return currentIndex.value === problems.value.length - 1
 })
 
+const answeredCount = computed(() => {
+  return Object.values(answers.value).filter(Boolean).length
+})
+
 watch(currentIndex, () => {
   manualAnswer.value = currentAnswer.value
+  submitErrorMessage.value = ''
 })
 
 const loadProblems = async () => {
@@ -158,6 +174,11 @@ const loadProblems = async () => {
     console.error(error)
 
     const data = error.response?.data
+
+    if (error.response?.status === 401 || error.response?.status === 403) {
+      errorMessage.value = '로그인이 필요합니다. 다시 로그인해주세요.'
+      return
+    }
 
     errorMessage.value =
       data?.message ||
@@ -190,13 +211,58 @@ const goNext = () => {
   }
 }
 
-const handleTempFinish = () => {
-  const answerCount = Object.values(answers.value).filter(Boolean).length
+const handleSubmit = async () => {
+  submitErrorMessage.value = ''
 
-  alert(
-    `현재 선택한 답안 수: ${answerCount}/${problems.value.length}\n` +
-    `다음 단계에서 제출 API를 연결할 예정입니다.`
+  const unansweredProblems = problems.value.filter(
+    problem => !answers.value[problem.problem_id]
   )
+
+  if (unansweredProblems.length > 0) {
+    const firstUnansweredIndex = problems.value.findIndex(
+      problem => !answers.value[problem.problem_id]
+    )
+
+    currentIndex.value = firstUnansweredIndex
+    submitErrorMessage.value = '아직 답을 선택하지 않은 문제가 있습니다.'
+    return
+  }
+
+  const answerPayload = problems.value.map(problem => ({
+    problem_id: problem.problem_id,
+    user_answer: answers.value[problem.problem_id],
+  }))
+
+  isSubmitting.value = true
+
+  try {
+    const result = await submitQuizAnswers(props.sessionId, answerPayload)
+
+    sessionStorage.setItem(
+      `quiz-result-${props.sessionId}`,
+      JSON.stringify(result)
+    )
+
+    router.push(`/result/${props.sessionId}`)
+  } catch (error) {
+    console.error(error)
+
+    const data = error.response?.data
+
+    if (error.response?.status === 409) {
+      submitErrorMessage.value = '이미 제출 완료된 퀴즈입니다.'
+      router.push(`/result/${props.sessionId}`)
+      return
+    }
+
+    submitErrorMessage.value =
+      data?.message ||
+      data?.detail ||
+      data?.error ||
+      '답안 제출에 실패했습니다.'
+  } finally {
+    isSubmitting.value = false
+  }
 }
 
 onMounted(() => {

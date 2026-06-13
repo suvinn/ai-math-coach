@@ -26,3 +26,13 @@ export const fetchQuizProblems = async (sessionId) => {
   const response = await api.get(`/quiz/sessions/${sessionId}/problems`)
   return response.data.data
 }
+
+export const submitQuizAnswers = async (sessionId, answers) => {
+  await getCsrfToken()
+
+  const response = await api.post(`/quiz/sessions/${sessionId}/submit`, {
+    answers,
+  })
+
+  return response.data.data
+}
