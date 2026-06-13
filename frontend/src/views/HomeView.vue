@@ -98,14 +98,14 @@
       <button
         class="primary-button"
         type="button"
-        :disabled="!canStartQuiz"
+        :disabled="!canStartQuiz || isStarting"
         @click="handleStartQuiz"
       >
-        퀴즈 시작하기
+        {{ isStarting ? '퀴즈 생성 중...' : '퀴즈 시작하기' }}
       </button>
 
-      <p v-if="!canStartQuiz" class="helper-text">
-        대단원과 중단원을 선택하면 퀴즈를 시작할 수 있어요.
+      <p v-if="startErrorMessage" class="form-error">
+        {{ startErrorMessage }}
       </p>
     </div>
   </section>
@@ -113,11 +113,18 @@
 
 <script setup>
 import { computed, onMounted, ref, watch } from 'vue'
+import { useRouter } from 'vue-router'
+
 import { fetchChapters } from '../api/chapters'
+import { createQuizSession } from '../api/quiz'
+
+const router = useRouter()
 
 const chapters = ref([])
 const isLoading = ref(false)
 const errorMessage = ref('')
+const startErrorMessage = ref('')
+const isStarting = ref(false)
 
 const selectedMajor = ref('')
 const selectedMiddle = ref('')
@@ -153,10 +160,12 @@ const canStartQuiz = computed(() => {
 watch(selectedMajor, () => {
   selectedMiddle.value = ''
   selectedMinor.value = ''
+  startErrorMessage.value = ''
 })
 
 watch(selectedMiddle, () => {
   selectedMinor.value = ''
+  startErrorMessage.value = ''
 })
 
 const loadChapters = async () => {
@@ -173,14 +182,40 @@ const loadChapters = async () => {
   }
 }
 
-const handleStartQuiz = () => {
-  alert(
-    `선택 완료\n` +
-    `대단원: ${selectedMajor.value}\n` +
-    `중단원: ${selectedMiddle.value}\n` +
-    `소단원: ${selectedMinor.value || '전체'}\n` +
-    `문제 수: ${selectedProblemCount.value}`
-  )
+const handleStartQuiz = async () => {
+  if (!canStartQuiz.value) return
+
+  startErrorMessage.value = ''
+  isStarting.value = true
+
+  try {
+    const session = await createQuizSession({
+      chapter_major: selectedMajor.value,
+      chapter_middle: selectedMiddle.value,
+      chapter_minor: selectedMinor.value || null,
+      problem_count: selectedProblemCount.value,
+    })
+
+    router.push(`/quiz/${session.session_id}`)
+  } catch (error) {
+    console.error(error)
+
+    const data = error.response?.data
+
+    if (error.response?.status === 401 || error.response?.status === 403) {
+      startErrorMessage.value = '로그인이 필요합니다. 다시 로그인해주세요.'
+      router.push('/login')
+      return
+    }
+
+    startErrorMessage.value =
+      data?.message ||
+      data?.detail ||
+      data?.error ||
+      '퀴즈 세션을 생성하지 못했습니다.'
+  } finally {
+    isStarting.value = false
+  }
 }
 
 onMounted(() => {
