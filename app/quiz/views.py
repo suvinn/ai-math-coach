@@ -690,15 +690,17 @@ class QuizSessionAnalysisView(APIView):
 class UserHistoryView(APIView):
 
     def get(self, request):
+        # 1. 기존 세션 목록 (최신순)
         sessions = QuizSession.objects.filter(
             user=request.user,
-            status='completed'        # 제출 완료된 세션만
-        ).order_by('-created_at')     # 최신순 정렬
+            status='completed'
+        ).order_by('-created_at')
 
-        data = []
+        session_list = []
         for session in sessions:
-            data.append({
+            session_list.append({
                 'session_id':     session.id,
+                'session_type':   session.session_type,
                 'status':         session.status,
                 'chapter_major':  session.chapter_major,
                 'chapter_middle': session.chapter_middle,
@@ -710,7 +712,52 @@ class UserHistoryView(APIView):
                 'created_at':     session.created_at,
             })
 
-        return Response({'status': 'success', 'data': data})
+        # 2. 유형별 마스터 현황
+        masteries = SubtypeMastery.objects.filter(
+            user=request.user
+        ).order_by('-updated_at')
+
+        subtype_mastery = []
+        for m in masteries:
+            accuracy = (
+                round(m.correct_count / m.total_attempts, 2)
+                if m.total_attempts > 0 else 0
+            )
+
+            # 마스터한 유형 → 다음 도전 난이도 결정
+            next_difficulty = None
+            if m.mastered:
+                next_difficulty = '상' if accuracy >= 0.95 else '중'
+
+            # 레벨 판정
+            if m.mastered:
+                level = '숙달'
+            elif accuracy >= 0.6:
+                level = '연습 중'
+            else:
+                level = '보완 필요'
+
+            subtype_mastery.append({
+                'problem_subtype':  m.problem_subtype,
+                'mastered':         m.mastered,
+                'level':            level,
+                'accuracy':         round(accuracy * 100),       # 퍼센트로
+                'accuracy_before':  round(m.accuracy_before * 100)
+                                    if m.accuracy_before else None,
+                'accuracy_after':   round(m.accuracy_after * 100)
+                                    if m.accuracy_after else None,
+                'total_attempts':   m.total_attempts,
+                'next_difficulty':  next_difficulty,             # 마스터 시에만
+                'updated_at':       m.updated_at,
+            })
+
+        return Response({
+            'status': 'success',
+            'data': {
+                'sessions':       session_list,
+                'subtype_mastery': subtype_mastery,
+            }
+        })
     
 
 class ProblemDetailView(APIView):
