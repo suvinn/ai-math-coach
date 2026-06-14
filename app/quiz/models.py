@@ -4,6 +4,11 @@ from django.conf import settings
 
 
 class User(AbstractUser):
+    grade = models.CharField(max_length=10, default='중2')
+    streak = models.IntegerField(default=0)
+    last_active_date = models.DateField(null=True, blank=True)
+    total_solved = models.IntegerField(default=0)
+
     class Meta:
         db_table = 'user'
 
@@ -131,3 +136,23 @@ class Recommendation(models.Model):
     class Meta:
         db_table = 'recommendation'
         ordering = ['order_index']
+
+
+class SubtypeMastery(models.Model):
+    """유저별 유형 마스터 현황 — submit 시마다 갱신"""
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name='subtype_masteries'
+    )
+    problem_subtype  = models.CharField(max_length=100)
+    mastered         = models.BooleanField(default=False)
+    accuracy_before  = models.FloatField(null=True, blank=True)  # 마스터 직전 정답률
+    accuracy_after   = models.FloatField(null=True, blank=True)  # 마스터 직후 정답률
+    total_attempts   = models.IntegerField(default=0)            # 해당 유형 총 출제 수
+    correct_count    = models.IntegerField(default=0)            # 해당 유형 총 정답 수
+    updated_at       = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        db_table = 'subtype_mastery'
+        unique_together = ('user', 'problem_subtype')  # 유저+유형 조합은 1개만
