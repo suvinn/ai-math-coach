@@ -1135,3 +1135,107 @@ class UserDashboardView(APIView):
                 'latest_session':  latest_session_data,
             }
         })
+
+
+class TodayRecommendationView(APIView):
+
+    def get(self, request):
+        user = request.user
+
+        # 1. 보완 필요한 subtype 우선 (mastered=False, 오답률 높은 순)
+        weak_masteries = SubtypeMastery.objects.filter(
+            user=user,
+            mastered=False,
+        ).order_by('correct_count')  # 정답 수 적은 순 = 취약한 순
+
+        if weak_masteries.exists():
+            # 가장 취약한 subtype
+            target = weak_masteries.first()
+            reason = f'{target.problem_subtype} 유형에서 아직 보완이 필요해요'
+            mode   = 'review'
+
+        else:
+            # 전부 마스터했으면 → 가장 최근 마스터한 유형의 난이도 업
+            latest_mastered = SubtypeMastery.objects.filter(
+                user=user,
+                mastered=True,
+            ).order_by('-updated_at').first()
+
+            if not latest_mastered:
+                # 아직 아무 기록 없음
+                return Response({
+                    'status': 'success',
+                    'data': {
+                        'has_recommendation': False,
+                        'message': '퀴즈를 풀면 맞춤 추천을 드려요!',
+                    }
+                })
+
+            target = latest_mastered
+            reason = f'{target.problem_subtype} 유형을 마스터했어요! 더 어려운 문제에 도전해봐요'
+            mode   = 'challenge'
+
+        # 2. 해당 subtype의 문제가 속한 챕터 정보 조회
+        sample_problem = Problem.objects.filter(
+            problem_subtype=target.problem_subtype,
+            is_quizable=True,
+        ).first()
+
+        if not sample_problem:
+            return Response({
+                'status': 'success',
+                'data': {
+                    'has_recommendation': False,
+                    'message': '추천할 문제가 없어요.',
+                }
+            })
+
+        # 3. 추천 문제 미리보기 (최대 3개)
+        if mode == 'review':
+            preview_problems = Problem.objects.filter(
+                problem_subtype=target.problem_subtype,
+                is_quizable=True,
+                difficulty='하',
+            )[:3]
+        else:
+            accuracy = (
+                target.correct_count / target.total_attempts
+                if target.total_attempts > 0 else 0
+            )
+            next_difficulty = '상' if accuracy >= 0.95 else '중'
+            preview_problems = Problem.objects.filter(
+                problem_subtype=target.problem_subtype,
+                is_quizable=True,
+                difficulty=next_difficulty,
+            )[:3]
+
+        problems_data = [
+            {
+                'problem_id':      p.id,
+                'problem_subtype': p.problem_subtype,
+                'difficulty':      p.difficulty,
+                'question_text':   p.question_text,
+            }
+            for p in preview_problems
+        ]
+
+        # 4. C6 퀴즈 만들기 프리필 데이터
+        prefill = {
+            'chapter_major':   sample_problem.chapter_major,
+            'chapter_middle':  sample_problem.chapter_middle,
+            'chapter_minor':   sample_problem.chapter_minor,
+            'problem_subtype': target.problem_subtype,
+            'suggested_count': 10,
+        }
+
+        return Response({
+            'status': 'success',
+            'data': {
+                'has_recommendation':  True,
+                'mode':                mode,           # 'review' | 'challenge'
+                'recommended_subtype': target.problem_subtype,
+                'reason':              reason,
+                'problems':            problems_data,
+                'prefill':             prefill,
+            }
+        })
