@@ -1017,23 +1017,30 @@ def _recommend_harder(report, session, solved_ids):
 
 def _serialize_report(report):
     """WeaknessReport → 응답 딕셔너리 변환"""
+
     if report.all_correct:
+        # 전부 맞은 경우 — 기존과 동일
+        recommendations = [
+            {
+                'problem_id':      r.problem.id,
+                'difficulty':      r.problem.difficulty,
+                'problem_subtype': r.problem.problem_subtype,
+                'chapter_major':   r.problem.chapter_major,
+                'chapter_middle':  r.problem.chapter_middle,
+                'chapter_minor':   r.problem.chapter_minor,
+                'question_text':   r.problem.question_text,
+                'reason':          r.reason,
+            }
+            for r in report.recommendations.select_related('problem').all()
+        ]
         return {
-            'all_correct':   True,
-            'ai_feedback':   report.ai_feedback,
-            'weak_subtypes': [],
-            'recommendations': [
-                {
-                    'problem_id':      r.problem.id,
-                    'difficulty':      r.problem.difficulty,
-                    'problem_subtype': r.problem.problem_subtype,
-                    'question_text':   r.problem.question_text,
-                    'reason':          r.reason,
-                }
-                for r in report.recommendations.select_related('problem').all()
-            ],
+            'all_correct':     True,
+            'ai_feedback':     report.ai_feedback,
+            'weak_subtypes':   [],
+            'recommendations': recommendations,
         }
 
+    # 취약 유형별 데이터
     weak_subtypes = []
     for weak in report.weak_subtypes.all():
         weak_subtypes.append({
@@ -1041,22 +1048,33 @@ def _serialize_report(report):
             'problem_subtype': weak.problem_subtype,
             'wrong_count':     weak.wrong_count,
             'total_count':     weak.total_count,
-            'recommendations': [
-                {
-                    'problem_id':      r.problem.id,
-                    'difficulty':      r.problem.difficulty,
-                    'problem_subtype': r.problem.problem_subtype,
-                    'question_text':   r.problem.question_text,
-                    'reason':          r.reason,
-                }
-                for r in weak.recommendations.select_related('problem').all()
-            ],
         })
 
+    # 추천 문제 — 평탄한 리스트로 변환 ← 핵심 변경
+    all_recommendations = report.recommendations.select_related(
+        'problem', 'weak_subtype'
+    ).all()
+
+    recommendations = [
+        {
+            'problem_id':      r.problem.id,
+            'difficulty':      r.problem.difficulty,
+            'problem_subtype': r.problem.problem_subtype,
+            'chapter_major':   r.problem.chapter_major,    # ← review_1 세션 생성용
+            'chapter_middle':  r.problem.chapter_middle,   # ← review_1 세션 생성용
+            'chapter_minor':   r.problem.chapter_minor,    # ← review_1 세션 생성용
+            'question_text':   r.problem.question_text,
+            'reason':          r.reason,
+            'rank':            r.weak_subtype.rank if r.weak_subtype else None,
+        }
+        for r in all_recommendations
+    ]
+
     return {
-        'all_correct':   False,
-        'ai_feedback':   report.ai_feedback,
-        'weak_subtypes': weak_subtypes,
+        'all_correct':     False,
+        'ai_feedback':     report.ai_feedback,
+        'weak_subtypes':   weak_subtypes,   # 취약 유형 요약 (rank, subtype, 오답수)
+        'recommendations': recommendations, # 추천 문제 평탄 리스트
     }
 
 
