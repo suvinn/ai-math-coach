@@ -8,7 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 from .serializers import RegisterSerializer, UserSerializer
 from .models import Problem, QuizSession, SessionProblem, SessionResult, WeaknessReport, WeakSubtype, Recommendation, SubtypeMastery
 import random
-from datetime import date
+from datetime import date, timedelta
 from collections import defaultdict
 from openai import OpenAI
 import chromadb
@@ -1011,3 +1011,80 @@ def _serialize_report(report):
         'ai_feedback':   report.ai_feedback,
         'weak_subtypes': weak_subtypes,
     }
+
+
+class UserDashboardView(APIView):
+
+    def get(self, request):
+        user = request.user
+
+        # 1. 주간 학습 활동 (월~일)
+        today = date.today()
+        monday = today - timedelta(days=today.weekday())
+        week_days = [monday + timedelta(days=i) for i in range(7)]
+
+        # 이번 주에 completed 세션이 있는 날짜 목록
+        active_dates = set(
+            QuizSession.objects.filter(
+                user=user,
+                status='completed',
+                created_at__date__gte=monday,
+                created_at__date__lte=today,
+            ).values_list('created_at__date', flat=True)
+        )
+        weekly_activity = [d in active_dates for d in week_days]
+
+        # 2. 유형별 마스터 진척 (상위 3개)
+        masteries = SubtypeMastery.objects.filter(user=user).order_by('-updated_at')[:3]
+        subtype_mastery = []
+        for m in masteries:
+            accuracy = (
+                m.correct_count / m.total_attempts
+                if m.total_attempts > 0 else 0
+            )
+            # 레벨 판정
+            if m.mastered:
+                level = '숙달'
+            elif accuracy >= 0.6:
+                level = '연습 중'
+            else:
+                level = '보완 필요'
+
+            subtype_mastery.append({
+                'problem_subtype': m.problem_subtype,
+                'level':           level,
+                'pct':             round(accuracy * 100),
+                'mastered':        m.mastered,
+            })
+
+        # 3. 최근 세션
+        latest_session = QuizSession.objects.filter(
+            user=user,
+            status='completed'
+        ).order_by('-created_at').first()
+
+        latest_session_data = None
+        if latest_session:
+            latest_session_data = {
+                'session_id':      latest_session.id,
+                'chapter_middle':  latest_session.chapter_middle,
+                'accuracy':        round(latest_session.score / latest_session.problem_count, 2)
+                                   if latest_session.score is not None else None,
+                'created_at':      latest_session.created_at.strftime('%Y-%m-%d'),
+            }
+
+        return Response({
+            'status': 'success',
+            'data': {
+                'user': {
+                    'name':        user.first_name or user.username,
+                    'grade':       user.grade,
+                    'joined_days': (date.today() - user.date_joined.date()).days + 1,
+                },
+                'streak':          user.streak,
+                'total_solved':    user.total_solved,
+                'weekly_activity': weekly_activity,   # [True, True, False, ...] 월~일
+                'subtype_mastery': subtype_mastery,
+                'latest_session':  latest_session_data,
+            }
+        })
