@@ -1257,3 +1257,86 @@ class TodayRecommendationView(APIView):
                 'prefill':             prefill,
             }
         })
+
+
+class QuizSessionChatView(APIView):
+
+    def post(self, request, session_id):
+        # 1. 세션 확인
+        try:
+            session = QuizSession.objects.get(id=session_id)
+        except QuizSession.DoesNotExist:
+            return Response(
+                {'status': 'error', 'message': '세션을 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        if session.user != request.user:
+            return Response(
+                {'status': 'error', 'message': '접근 권한이 없습니다.'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+
+        # 2. 요청 데이터
+        problem_id = request.data.get('problem_id')
+        question   = request.data.get('question', '').strip()
+
+        if not problem_id or not question:
+            return Response(
+                {'status': 'error', 'message': 'problem_id와 question은 필수입니다.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        # 3. 문제 조회
+        try:
+            problem = Problem.objects.get(id=problem_id)
+        except Problem.DoesNotExist:
+            return Response(
+                {'status': 'error', 'message': '문제를 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        # 4. LLM 호출
+        answer = _generate_chat_answer(problem, question)
+
+        return Response({
+            'status': 'success',
+            'data': {
+                'question': question,
+                'answer':   answer,
+            }
+        })
+
+
+def _generate_chat_answer(problem, question):
+    """문제 해설 AI 챗봇 — 문제 컨텍스트 포함해서 LLM 호출"""
+    client = OpenAI(
+        api_key=settings.GMS_KEY,
+        base_url=settings.GMS_URL
+    )
+
+    response = client.chat.completions.create(
+        model='gpt-4o-mini',
+        messages=[
+            {
+                'role': 'system',
+                'content': (
+                    '당신은 중학교 수학 해설 튜터입니다. '
+                    '학생이 문제를 이해할 수 있도록 친절하고 단계적으로 설명해주세요. '
+                    '수식은 LaTeX 형식($...$)으로 작성해주세요. '
+                    '3문장 이내로 핵심만 간결하게 답해주세요.'
+                )
+            },
+            {
+                'role': 'user',
+                'content': (
+                    f'[문제]\n{problem.question_text}\n\n'
+                    f'[정답]\n{problem.answer}\n\n'
+                    f'[해설]\n{problem.explanation}\n\n'
+                    f'[학생 질문]\n{question}'
+                )
+            }
+        ],
+        max_tokens=300,
+    )
+    return response.choices[0].message.content
