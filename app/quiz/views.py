@@ -9,6 +9,7 @@ from .serializers import RegisterSerializer, UserSerializer
 from .models import Problem, QuizSession, SessionProblem, SessionResult, WeaknessReport, WeakSubtype, Recommendation, SubtypeMastery
 import random
 from datetime import date
+from collections import defaultdict
 from openai import OpenAI
 import chromadb
 from django.conf import settings
@@ -484,8 +485,6 @@ def _update_subtype_mastery(user, results):
     채점 결과를 SubtypeMastery에 반영.
     subtype별로 맞은 수 / 총 수를 누적하고 마스터 여부를 판정.
     """
-    from collections import defaultdict
-
     # 이번 세션 결과를 subtype별로 집계
     subtype_stats = defaultdict(lambda: {'correct': 0, 'total': 0})
     for r in results:
@@ -647,25 +646,32 @@ class QuizSessionAnalysisView(APIView):
             })
 
         # subtype별 집계 (최대 3개)
-        from collections import Counter
-        subtype_counter = Counter(
-            r.problem.problem_subtype for r in wrong_results
-        )
-        top3 = subtype_counter.most_common(3)
+        subtype_stats = defaultdict(lambda: {'wrong': 0, 'total': 0})
+        for r in results:
+            subtype = r.problem.problem_subtype
+            subtype_stats[subtype]['total'] += 1
+            if not r.is_correct:
+                subtype_stats[subtype]['wrong'] += 1
+
+        # 틀린 문제가 있는 subtype만 필터링 후 accuracy 낮은 순 정렬
+        weak_list = [
+            (subtype, stats)
+            for subtype, stats in subtype_stats.items()
+            if stats['wrong'] > 0
+        ]
+        weak_list.sort(key=lambda x: x[1]['wrong'] / x[1]['total'], reverse=True)  # accuracy 낮은 순
+
+        top3 = weak_list[:3]
 
         weak_subtypes = []
-        for rank, (subtype, wrong_count) in enumerate(top3, start=1):
-            total_in_subtype = results.filter(
-                problem__problem_subtype=subtype
-            ).count()
+        for rank, (subtype, stats) in enumerate(top3, start=1):
+            accuracy = round((stats['total'] - stats['wrong']) / stats['total'], 2)
             weak_subtypes.append({
                 'rank':            rank,
                 'problem_subtype': subtype,
-                'wrong_count':     wrong_count,
-                'total_count':     total_in_subtype,
-                'accuracy':        round(
-                    (total_in_subtype - wrong_count) / total_in_subtype, 2
-                ),
+                'wrong_count':     stats['wrong'],
+                'total_count':     stats['total'],
+                'accuracy':        accuracy,
             })
 
         return Response({
@@ -783,11 +789,21 @@ class QuizSessionRecommendationsView(APIView):
             return Response({'status': 'success', 'data': _serialize_report(report)})
 
         # 취약 유형 Top 3 집계
-        from collections import Counter
-        subtype_counter = Counter(
-            r.problem.problem_subtype for r in wrong_results
-        )
-        top3 = subtype_counter.most_common(3)
+        subtype_stats = defaultdict(lambda: {'wrong': 0, 'total': 0})
+        for r in results:
+            subtype = r.problem.problem_subtype
+            subtype_stats[subtype]['total'] += 1
+            if not r.is_correct:
+                subtype_stats[subtype]['wrong'] += 1
+
+        weak_list = [
+            (subtype, stats)
+            for subtype, stats in subtype_stats.items()
+            if stats['wrong'] > 0
+        ]
+        weak_list.sort(key=lambda x: x[1]['wrong'] / x[1]['total'], reverse=True)
+
+        top3 = [(subtype, stats['wrong']) for subtype, stats in weak_list[:3]]
 
         # LLM 피드백 생성
         ai_feedback = _generate_feedback(top3)
