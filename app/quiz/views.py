@@ -6,8 +6,9 @@ from rest_framework import status
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from .serializers import RegisterSerializer, UserSerializer
-from .models import Problem, QuizSession, SessionProblem, SessionResult, WeaknessReport, WeakSubtype, Recommendation
+from .models import Problem, QuizSession, SessionProblem, SessionResult, WeaknessReport, WeakSubtype, Recommendation, SubtypeMastery
 import random
+from datetime import date
 from openai import OpenAI
 import chromadb
 from django.conf import settings
@@ -380,6 +381,7 @@ class QuizSessionProblemsView(APIView):
 class QuizSessionSubmitView(APIView):
 
     def post(self, request, session_id):
+        # 1. 세션 존재 여부 확인
         try:
             session = QuizSession.objects.get(id=session_id)
         except QuizSession.DoesNotExist:
@@ -388,18 +390,21 @@ class QuizSessionSubmitView(APIView):
                 status=status.HTTP_404_NOT_FOUND
             )
 
+        # 2. 본인 세션인지 확인
         if session.user != request.user:
             return Response(
                 {'status': 'error', 'message': '접근 권한이 없습니다.'},
                 status=status.HTTP_403_FORBIDDEN
             )
 
+        # 3. 이미 제출된 세션인지 확인
         if session.status == 'completed':
             return Response(
                 {'status': 'error', 'message': '이미 제출된 세션입니다.'},
                 status=status.HTTP_409_CONFLICT
             )
 
+        # 4. 답안 데이터 꺼내기
         answers = request.data.get('answers', [])
         if not answers:
             return Response(
@@ -407,12 +412,15 @@ class QuizSessionSubmitView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
+        # 5. 이 세션에 출제된 문제 목록 (정답 확인용)
         session_problems = SessionProblem.objects.filter(
             session=session
         ).select_related('problem')
 
+        # problem_id → Problem 객체 딕셔너리로 변환 (빠른 조회용)
         problem_map = {sp.problem.id: sp.problem for sp in session_problems}
 
+        # 6. 채점
         results = []
         score = 0
 
@@ -420,6 +428,7 @@ class QuizSessionSubmitView(APIView):
             problem_id  = answer.get('problem_id')
             user_answer = answer.get('user_answer', '').strip()
 
+            # 세션에 없는 문제 ID가 들어오면 무시
             if problem_id not in problem_map:
                 continue
 
@@ -429,6 +438,7 @@ class QuizSessionSubmitView(APIView):
             if is_correct:
                 score += 1
 
+            # SessionResult 저장
             SessionResult.objects.create(
                 session=session,
                 problem=problem,
@@ -446,9 +456,16 @@ class QuizSessionSubmitView(APIView):
                 'difficulty':      problem.difficulty,
             })
 
+        # 7. 세션 상태 업데이트
         session.status = 'completed'
         session.score  = score
         session.save()
+
+        # 8. SubtypeMastery 갱신 ← 추가
+        _update_subtype_mastery(request.user, results)
+
+        # 9. 유저 통계 갱신 (streak, total_solved) ← 추가
+        _update_user_stats(request.user, len(results))
 
         return Response({
             'status': 'success',
@@ -460,6 +477,76 @@ class QuizSessionSubmitView(APIView):
                 'results':    results,
             }
         })
+
+
+def _update_subtype_mastery(user, results):
+    """
+    채점 결과를 SubtypeMastery에 반영.
+    subtype별로 맞은 수 / 총 수를 누적하고 마스터 여부를 판정.
+    """
+    from collections import defaultdict
+
+    # 이번 세션 결과를 subtype별로 집계
+    subtype_stats = defaultdict(lambda: {'correct': 0, 'total': 0})
+    for r in results:
+        subtype = r['problem_subtype']
+        subtype_stats[subtype]['total']   += 1
+        subtype_stats[subtype]['correct'] += 1 if r['is_correct'] else 0
+
+    for subtype, stats in subtype_stats.items():
+        mastery, _ = SubtypeMastery.objects.get_or_create(
+            user=user,
+            problem_subtype=subtype,
+            defaults={'total_attempts': 0, 'correct_count': 0}
+        )
+
+        prev_accuracy = (
+            mastery.correct_count / mastery.total_attempts
+            if mastery.total_attempts > 0 else None
+        )
+
+        # 누적값 업데이트
+        mastery.total_attempts += stats['total']
+        mastery.correct_count  += stats['correct']
+
+        new_accuracy = mastery.correct_count / mastery.total_attempts
+
+        # 마스터 판정: 누적 정답률 80% 이상 + 최소 3문제 이상 풀었을 때
+        was_mastered = mastery.mastered
+        if not was_mastered and new_accuracy >= 0.8 and mastery.total_attempts >= 3:
+            mastery.mastered        = True
+            mastery.accuracy_before = round(prev_accuracy, 2) if prev_accuracy else None
+            mastery.accuracy_after  = round(new_accuracy, 2)
+
+        mastery.save()
+
+
+def _update_user_stats(user, solved_count):
+    """
+    streak(연속 학습일)과 total_solved(누적 푼 문제 수) 업데이트.
+    오늘 이미 학습했으면 streak 중복 증가 방지.
+    """
+    today = date.today()
+
+    # total_solved 누적
+    user.total_solved += solved_count
+
+    # streak 계산
+    if user.last_active_date is None:
+        # 첫 학습
+        user.streak = 1
+    elif user.last_active_date == today:
+        # 오늘 이미 학습함 → streak 변경 없음
+        pass
+    elif (today - user.last_active_date).days == 1:
+        # 어제 학습 → 연속
+        user.streak += 1
+    else:
+        # 하루 이상 공백 → streak 초기화
+        user.streak = 1
+
+    user.last_active_date = today
+    user.save()
 
 
 class QuizSessionWrongAnswersView(APIView):
