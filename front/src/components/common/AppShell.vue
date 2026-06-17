@@ -18,13 +18,6 @@ const hasFoot = computed(() => !!slots.foot)
 
 <template>
   <div class="ph ph--live">
-    <StatusBar />
-    <Toast :toast="toast" />
     <slot />
-    <div v-if="hasFoot" class="ph-foot">
-      <slot name="foot" />
-    </div>
-    <TabBar v-if="tab" :active="tab" />
-    <div v-else class="ph-home-ind" />
   </div>
 </template>

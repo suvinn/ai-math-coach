@@ -1,45 +1,27 @@
-// 📄 src/router/index.js
-import { createRouter, createWebHistory } from 'vue-router'
-import { useAuthStore } from '@/stores/auth'
+// 📄 src/api/index.js
+import axios from 'axios'
 
-const routes = [
-  { path: '/login', name: 'login', component: () => import('@/views/auth/LoginView.vue'), meta: { public: true } },
-  { path: '/register', name: 'register', component: () => import('@/views/auth/RegisterView.vue'), meta: { public: true } },
-
-  { path: '/', name: 'home', component: () => import('@/views/home/HomeView.vue') },
-  { path: '/quiz/setup', name: 'quiz-setup', component: () => import('@/views/quiz/QuizSetupView.vue') },
-  { path: '/quiz/play', name: 'quiz-play', component: () => import('@/views/quiz/QuizPlayView.vue') },
-  { path: '/quiz/result', name: 'quiz-result', component: () => import('@/views/quiz/QuizResultView.vue') },
-  { path: '/quiz/coaching', name: 'quiz-coaching', component: () => import('@/views/quiz/CoachingView.vue') },
-
-  { path: '/review/play', name: 'review-play', component: () => import('@/views/review/ReviewPlayView.vue') },
-  { path: '/review/explain', name: 'review-explain', component: () => import('@/views/review/ExplainView.vue') },
-  { path: '/review/redo', name: 'review-redo', component: () => import('@/views/review/RedoView.vue') },
-  { path: '/review/master', name: 'review-master', component: () => import('@/views/review/MasterView.vue') },
-  { path: '/review/chat', name: 'review-chat', component: () => import('@/views/review/ChatView.vue') },
-
-  { path: '/my', name: 'my-dashboard', component: () => import('@/views/my/DashboardView.vue') },
-  { path: '/my/history', name: 'my-history', component: () => import('@/views/my/HistoryView.vue') },
-
-  { path: '/:pathMatch(.*)*', redirect: '/' },
-]
-
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
+const api = axios.create({
+  baseURL: 'http://localhost:8000/api/v1',
+  withCredentials: true,
 })
 
-router.beforeEach(async (to) => {
-  const auth = useAuthStore()
-  if (!auth.checked) {
-    await auth.fetchMe()
+function getCookie(name) {
+  const match = document.cookie.match(new RegExp('(^|;\\s*)' + name + '=([^;]*)'))
+  return match ? decodeURIComponent(match[2]) : null
+}
+
+api.interceptors.request.use((config) => {
+  const method = (config.method || 'get').toLowerCase()
+  if (['post', 'put', 'patch', 'delete'].includes(method)) {
+    const token = getCookie('csrftoken')
+    if (token) config.headers['X-CSRFToken'] = token
   }
-  if (!to.meta.public && !auth.isLoggedIn) {
-    return { name: 'login' }
-  }
-  if (to.meta.public && auth.isLoggedIn) {
-    return { name: 'home' }
-  }
+  return config
 })
 
-export default router
+export function unwrap(res) {
+  return res.data?.data ?? res.data
+}
+
+export default api
