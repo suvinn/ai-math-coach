@@ -6,12 +6,14 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const scale = ref(1)
 
 function fit() {
+  // 폰(360×820)을 현재 창에 '온전히' 들어가도록 축소 비율 계산.
+  // 세로·가로 중 더 빡빡한 쪽에 맞춰 잘림 없이 표시.
+  const margin = 24
   const s = Math.min(
-    1,
-    (window.innerHeight - 36) / 820,
-    (window.innerWidth - 24) / 360,
+    (window.innerHeight - margin) / 820,
+    (window.innerWidth - margin) / 360,
   )
-  scale.value = s
+  scale.value = Math.min(1, s)
 }
 
 onMounted(() => {

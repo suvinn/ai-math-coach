@@ -42,6 +42,7 @@
 
   /* ── 색상 스케일 (옅은 배경용) ── */
   --blue-99: #f0f4ff;
+  --blue-95: #dde7ff;
   --blue-90: #c9d8ff;
   --green-99: #e9faf2;
   --green-90: #bff0d8;
@@ -59,4 +60,35 @@
   /* ── 앱 강조색 별칭 (App.vue에서 덮어쓸 수 있음) ── */
   --suql-accent: var(--primary-normal);
   --suql-accent-strong: var(--primary-strong);
+}
+
+/* ── WDS 타이포그래피 클래스 ──
+   프로토타입이 쓰던 WDS 타이포 유틸. 표준 스케일로 정의.        */
+.wds-headline-1 {
+  font: var(--weight-bold) 24px/1.4 var(--font-sans);
+  letter-spacing: -0.02em;
+}
+.wds-headline-2 {
+  font: var(--weight-bold) 20px/1.4 var(--font-sans);
+  letter-spacing: -0.02em;
+}
+.wds-label-1 {
+  font: var(--weight-medium) 16px/1.5 var(--font-sans);
+  letter-spacing: -0.01em;
+}
+.wds-label-2 {
+  font: var(--weight-medium) 14px/1.5 var(--font-sans);
+  letter-spacing: -0.01em;
+}
+.wds-body-2 {
+  font: var(--weight-regular) 14px/1.6 var(--font-sans);
+  letter-spacing: -0.01em;
+}
+.wds-caption-1 {
+  font: var(--weight-medium) 12px/1.4 var(--font-sans);
+  letter-spacing: 0;
+}
+.wds-caption-2 {
+  font: var(--weight-regular) 11px/1.4 var(--font-sans);
+  letter-spacing: 0;
 }
