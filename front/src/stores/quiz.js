@@ -1,6 +1,7 @@
 // 📄 src/stores/quiz.js
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
+import api, { unwrap } from '@/api'
 
 // 퀴즈 흐름 동안 화면 간 공유하는 상태.
 // QuizPlay → Result → Coaching, 그리고 Review 루프에서 사용.
@@ -21,6 +22,30 @@ export const useQuizStore = defineStore('quiz', () => {
     submitResult.value = null
   }
 
+  // 세션 생성 → 문제 목록 로드까지 한 번에.
+  // payload: { chapter_major, chapter_middle, chapter_minor?, problem_count, parent_session_id? }
+  // 반환: { sessionId, sessionType, actualCount, problems }
+  async function createAndLoad(payload) {
+    const created = unwrap(await api.post('/quiz/sessions', payload))
+    const sid = created.session_id
+
+    const loaded = unwrap(await api.get(`/quiz/sessions/${sid}/problems`))
+    const list = loaded.problems || []
+
+    startSession({
+      id: sid,
+      type: created.session_type || 'normal',
+      problemList: list,
+    })
+
+    return {
+      sessionId: sid,
+      sessionType: created.session_type || 'normal',
+      actualCount: created.actual_count ?? list.length,
+      problems: list,
+    }
+  }
+
   function setAnswer(problemId, userAnswer) {
     answers.value = { ...answers.value, [problemId]: userAnswer }
   }
@@ -31,6 +56,17 @@ export const useQuizStore = defineStore('quiz', () => {
       problem_id: p.problem_id,
       user_answer: answers.value[p.problem_id] ?? '',
     }))
+  }
+
+  // 답안 제출 → 채점 결과 저장
+  async function submit() {
+    const data = unwrap(
+      await api.post(`/quiz/sessions/${sessionId.value}/submit`, {
+        answers: buildAnswersPayload(),
+      }),
+    )
+    submitResult.value = data
+    return data
   }
 
   function setSubmitResult(data) {
@@ -47,6 +83,7 @@ export const useQuizStore = defineStore('quiz', () => {
 
   return {
     sessionId, sessionType, problems, answers, submitResult, total,
-    startSession, setAnswer, buildAnswersPayload, setSubmitResult, reset,
+    startSession, createAndLoad, setAnswer, buildAnswersPayload,
+    submit, setSubmitResult, reset,
   }
 })
