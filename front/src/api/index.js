@@ -1,32 +1,45 @@
-// 📄 src/api/index.js
-import axios from 'axios'
+// 📄 src/router/index.js
+import { createRouter, createWebHistory } from 'vue-router'
+import { useAuthStore } from '@/stores/auth'
 
-// 세션 쿠키 기반 인증 → withCredentials 필수
-const api = axios.create({
-  baseURL: 'http://localhost:8000/api/v1',
-  withCredentials: true,
+const routes = [
+  { path: '/login', name: 'login', component: () => import('@/views/auth/LoginView.vue'), meta: { public: true } },
+  { path: '/register', name: 'register', component: () => import('@/views/auth/RegisterView.vue'), meta: { public: true } },
+
+  { path: '/', name: 'home', component: () => import('@/views/home/HomeView.vue') },
+  { path: '/quiz/setup', name: 'quiz-setup', component: () => import('@/views/quiz/QuizSetupView.vue') },
+  { path: '/quiz/play', name: 'quiz-play', component: () => import('@/views/quiz/QuizPlayView.vue') },
+  { path: '/quiz/result', name: 'quiz-result', component: () => import('@/views/quiz/QuizResultView.vue') },
+  { path: '/quiz/coaching', name: 'quiz-coaching', component: () => import('@/views/quiz/CoachingView.vue') },
+
+  { path: '/review/play', name: 'review-play', component: () => import('@/views/review/ReviewPlayView.vue') },
+  { path: '/review/explain', name: 'review-explain', component: () => import('@/views/review/ExplainView.vue') },
+  { path: '/review/redo', name: 'review-redo', component: () => import('@/views/review/RedoView.vue') },
+  { path: '/review/master', name: 'review-master', component: () => import('@/views/review/MasterView.vue') },
+  { path: '/review/chat', name: 'review-chat', component: () => import('@/views/review/ChatView.vue') },
+
+  { path: '/my', name: 'my-dashboard', component: () => import('@/views/my/DashboardView.vue') },
+  { path: '/my/history', name: 'my-history', component: () => import('@/views/my/HistoryView.vue') },
+
+  { path: '/:pathMatch(.*)*', redirect: '/' },
+]
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
 })
 
-// 쿠키에서 값 읽기 (Django csrftoken 쿠키용)
-function getCookie(name) {
-  const match = document.cookie.match(new RegExp('(^|;\\s*)' + name + '=([^;]*)'))
-  return match ? decodeURIComponent(match[2]) : null
-}
-
-// 변경 요청(POST/PUT/PATCH/DELETE)에 CSRF 토큰 헤더 부착.
-// Django가 발급한 csrftoken 쿠키를 그대로 헤더로 넘긴다.
-api.interceptors.request.use((config) => {
-  const method = (config.method || 'get').toLowerCase()
-  if (['post', 'put', 'patch', 'delete'].includes(method)) {
-    const token = getCookie('csrftoken')
-    if (token) config.headers['X-CSRFToken'] = token
+router.beforeEach(async (to) => {
+  const auth = useAuthStore()
+  if (!auth.checked) {
+    await auth.fetchMe()
   }
-  return config
+  if (!to.meta.public && !auth.isLoggedIn) {
+    return { name: 'login' }
+  }
+  if (to.meta.public && auth.isLoggedIn) {
+    return { name: 'home' }
+  }
 })
 
-// 응답은 모두 { status, data } 형태 → data만 꺼내 쓰기 편하게 unwrap 헬퍼 제공
-export function unwrap(res) {
-  return res.data?.data ?? res.data
-}
-
-export default api
+export default router
