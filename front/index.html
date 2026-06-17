@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>수클</title>
 
-    <!-- Wanted Design System 토큰 -->
+    <!-- Pretendard (WDS 기본 폰트 대용) -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@wanteddev/wds-tokens@latest/dist/index.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@wanteddev/wds-tokens@latest/dist/semantic.css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
     />
 
     <!-- KaTeX -->
@@ -24,6 +20,9 @@
       defer
       src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
     ></script>
+
+    <!-- WDS 아이콘 스프라이트 (public/wds-icons.js, body에 SVG 주입) -->
+    <script src="/wds-icons.js"></script>
   </head>
   <body>
     <div id="app"></div>
