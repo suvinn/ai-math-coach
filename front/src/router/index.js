@@ -7,10 +7,10 @@ const routes = [
   { path: '/register', name: 'register', component: () => import('@/views/auth/RegisterView.vue'), meta: { public: true, shell: 'web' } },
 
   { path: '/', name: 'home', component: () => import('@/views/home/HomeView.vue'), meta: { shell: 'web' } },
-  { path: '/quiz/setup', name: 'quiz-setup', component: () => import('@/views/quiz/QuizSetupView.vue') },
-  { path: '/quiz/play', name: 'quiz-play', component: () => import('@/views/quiz/QuizPlayView.vue') },
-  { path: '/quiz/result', name: 'quiz-result', component: () => import('@/views/quiz/QuizResultView.vue') },
-  { path: '/quiz/coaching', name: 'quiz-coaching', component: () => import('@/views/quiz/CoachingView.vue') },
+  { path: '/quiz/setup', name: 'quiz-setup', component: () => import('@/views/quiz/QuizSetupView.vue'), meta: { shell: 'web' } },
+  { path: '/quiz/play', name: 'quiz-play', component: () => import('@/views/quiz/QuizPlayView.vue'), meta: { shell: 'web' } },
+  { path: '/quiz/result', name: 'quiz-result', component: () => import('@/views/quiz/QuizResultView.vue'), meta: { shell: 'web' } },
+  { path: '/quiz/coaching', name: 'quiz-coaching', component: () => import('@/views/quiz/CoachingView.vue'), meta: { shell: 'web' } },
 
   { path: '/review/play', name: 'review-play', component: () => import('@/views/review/ReviewPlayView.vue') },
   { path: '/review/explain', name: 'review-explain', component: () => import('@/views/review/ExplainView.vue') },

@@ -1,14 +1,10 @@
 <!-- 📄 src/views/quiz/QuizResultView.vue (임시 placeholder — 다음 커밋에서 구현) -->
 <script setup>
-import AppShell from '@/components/common/AppShell.vue'
-import AppBar from '@/components/common/AppBar.vue'
+import FocusShell from '@/components/common/FocusShell.vue'
 </script>
 
 <template>
-  <AppShell>
-    <AppBar title="결과" />
-    <div class="ph-body" style="align-items:center;justify-content:center;">
-      <p class="assistive">결과 — 구현 예정</p>
-    </div>
-  </AppShell>
+  <FocusShell title="결과">
+    <p class="assistive">결과 — 구현 예정</p>
+  </FocusShell>
 </template>

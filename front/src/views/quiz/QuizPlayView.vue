@@ -4,10 +4,9 @@ import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useQuizStore } from '@/stores/quiz'
 import { useToast } from '@/composables/useToast'
-import AppShell from '@/components/common/AppShell.vue'
-import AppBar from '@/components/common/AppBar.vue'
-import ProgressBar from '@/components/common/ProgressBar.vue'
+import FocusShell from '@/components/common/FocusShell.vue'
 import QuizStem from '@/components/quiz/QuizStem.vue'
+import OptionsBox from '@/components/common/OptionsBox.vue'
 import WdsButton from '@/components/common/WdsButton.vue'
 import WdsField from '@/components/common/WdsField.vue'
 
@@ -27,6 +26,7 @@ const submitting = ref(false)
 const total = computed(() => quiz.problems.length)
 const current = computed(() => quiz.problems[idx.value] || null)
 const isLast = computed(() => idx.value + 1 >= total.value)
+const pct = computed(() => (total.value ? Math.round(((idx.value + 1) / total.value) * 100) : 0))
 
 function next() {
   if (!answer.value.trim()) {
@@ -69,18 +69,13 @@ async function finish() {
 </script>
 
 <template>
-  <AppShell :toast="toast">
-    <AppBar title="퀴즈" back @back="router.push('/')">
-      <template #action>
-        <span class="wds-label-2 assistive" style="padding-right: 8px">
-          {{ idx + 1 }} / {{ total }}
-        </span>
-      </template>
-    </AppBar>
+  <FocusShell title="퀴즈" :toast="toast" @back="router.push('/')">
+    <template #topbar>
+      <div class="prog"><i :style="{ width: pct + '%' }" /></div>
+      <span class="count">{{ idx + 1 }} / {{ total }}</span>
+    </template>
 
-    <div v-if="current" class="ph-body play-body">
-      <ProgressBar :value="idx + 1" :total="total" />
-
+    <div v-if="current" class="play-body">
       <div class="row" style="gap: 6px; flex-wrap: wrap">
         <span class="play-badge play-badge--type">{{ current.problem_subtype }}</span>
         <span
@@ -95,7 +90,7 @@ async function finish() {
 
       <!-- 보기가 이미지로 들어간 경우 안내 (bbox 있을 때) -->
       <div v-if="current.question_with_options" class="play-options">
-        {{ current.question_with_options }}
+        <OptionsBox :text="current.question_with_options" />
       </div>
 
       <!-- 답 입력 (선택지가 비정형이라 직접 입력) -->
@@ -130,12 +125,13 @@ async function finish() {
         </WdsButton>
       </div>
     </template>
-  </AppShell>
+  </FocusShell>
 </template>
 
 <style scoped>
 .play-body {
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   gap: 18px;
 }
 .play-badge {

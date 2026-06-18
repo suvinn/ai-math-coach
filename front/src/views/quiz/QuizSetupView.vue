@@ -5,8 +5,7 @@ import { useRoute, useRouter } from 'vue-router'
 import api, { unwrap } from '@/api'
 import { useQuizStore } from '@/stores/quiz'
 import { useToast } from '@/composables/useToast'
-import AppShell from '@/components/common/AppShell.vue'
-import AppBar from '@/components/common/AppBar.vue'
+import FocusShell from '@/components/common/FocusShell.vue'
 import WdsButton from '@/components/common/WdsButton.vue'
 import WdsIcon from '@/components/common/WdsIcon.vue'
 
@@ -109,10 +108,8 @@ async function start() {
 </script>
 
 <template>
-  <AppShell :toast="toast">
-    <AppBar :title="title" back @back="router.push('/')" />
-
-    <div class="ph-body setup-body">
+  <FocusShell :title="title" :toast="toast" @back="router.push('/')">
+    <div class="setup-body">
       <div v-if="loading" class="setup-loading">
         <p class="assistive">단원을 불러오는 중…</p>
       </div>
@@ -189,12 +186,13 @@ async function start() {
         {{ creating ? '준비 중…' : '시작하기' }}
       </WdsButton>
     </template>
-  </AppShell>
+  </FocusShell>
 </template>
 
 <style scoped>
 .setup-body {
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   gap: 22px;
 }
 .setup-loading {

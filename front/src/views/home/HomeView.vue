@@ -51,21 +51,21 @@ function goTodayRec() {
         </div>
       </div>
 
-      <div class="stack-16" style="max-width: 560px">
+      <div class="stack-16">
         <!-- 진단 추천 — 가장 강조 -->
         <div class="diag-card">
           <div class="diag-glow" />
-          <div class="row" style="gap: 6px; margin-bottom: 10px">
-            <WdsIcon name="sparkle" :size="18" color="#fff" />
-            <span class="diag-eyebrow">AI 빠른 진단</span>
+          <div class="diag-card-text">
+            <div class="row" style="gap: 6px; margin-bottom: 10px">
+              <WdsIcon name="sparkle" :size="18" color="#fff" />
+              <span class="diag-eyebrow">AI 빠른 진단</span>
+            </div>
+            <div class="diag-title">10문제로 내 취약 유형 찾기</div>
+            <div class="wds-body-2 diag-sub">5분이면 충분해요</div>
           </div>
-          <div class="diag-title">10문제로 내 취약 유형 찾기</div>
-          <div class="wds-body-2 diag-sub">5분이면 충분해요</div>
-          <div style="margin-top: 16px; position: relative">
-            <WdsButton variant="primary" size="large" block icon-right="arrow-right" @click="startDiagnosis">
-              진단 시작하기
-            </WdsButton>
-          </div>
+          <WdsButton variant="primary" size="large" icon-right="arrow-right" @click="startDiagnosis">
+            진단 시작하기
+          </WdsButton>
         </div>
 
         <!-- 오늘의 추천 진입점 -->
@@ -91,24 +91,30 @@ function goTodayRec() {
   margin-top: 2px;
 }
 
-/* 진단 카드 */
+/* 진단 카드 — 가로로 트인 웹 히어로 (폰 카드의 박스 느낌 제거) */
 .diag-card {
   border-radius: 20px;
-  padding: 20px;
+  padding: 32px 40px;
   background: var(--label-normal);
   color: #fff;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 .diag-glow {
   position: absolute;
-  right: -24px;
-  top: -24px;
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
+  right: -40px;
+  top: -40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
   background: rgba(91, 132, 255, 0.25);
 }
+.diag-card-text { position: relative; }
 .diag-eyebrow {
   font: var(--weight-bold) 12px/1 var(--font-sans);
   letter-spacing: 0.06em;
@@ -116,14 +122,12 @@ function goTodayRec() {
   white-space: nowrap;
 }
 .diag-title {
-  font: var(--weight-bold) 20px/1.4 var(--font-sans);
+  font: var(--weight-bold) 22px/1.4 var(--font-sans);
   letter-spacing: -0.02em;
-  position: relative;
 }
 .diag-sub {
   opacity: 0.7;
   margin-top: 8px;
-  position: relative;
 }
 
 /* 오늘의 추천 행 */
