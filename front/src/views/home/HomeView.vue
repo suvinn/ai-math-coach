@@ -4,8 +4,7 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import api, { unwrap } from '@/api'
 import { useAuthStore } from '@/stores/auth'
-import AppShell from '@/components/common/AppShell.vue'
-import Logo from '@/components/common/Logo.vue'
+import SidebarShell from '@/components/common/SidebarShell.vue'
 import WdsIcon from '@/components/common/WdsIcon.vue'
 import WdsButton from '@/components/common/WdsButton.vue'
 
@@ -36,66 +35,56 @@ function goTodayRec() {
 </script>
 
 <template>
-  <AppShell tab="home">
-    <div class="ph-appbar">
-      <Logo />
-      <span class="spacer" />
-      <button class="ph-iconbtn" aria-label="알림" style="position: relative">
+  <SidebarShell tab="home">
+    <template #actions>
+      <button class="app-iconbtn" aria-label="알림">
         <WdsIcon name="bell" :size="22" />
-        <span class="bell-dot" />
+        <span class="dot" />
       </button>
-    </div>
+    </template>
 
-    <div class="ph-body">
-      <div>
+    <div class="page">
+      <div class="page-head">
         <div class="wds-body-2 assistive">안녕하세요, {{ userName || '학생' }}님</div>
-        <div class="home-headline">
-          오늘은 <span style="color: var(--suql-accent)">내 약점</span>부터<br />찾아볼까요?
+        <div class="title home-headline">
+          오늘은 <span style="color: var(--suql-accent)">내 약점</span>부터 찾아볼까요?
         </div>
       </div>
 
-      <!-- 진단 추천 — 가장 강조 -->
-      <div class="diag-card">
-        <div class="diag-glow" />
-        <div class="row" style="gap: 6px; margin-bottom: 10px">
-          <WdsIcon name="sparkle" :size="18" color="#fff" />
-          <span class="diag-eyebrow">AI 빠른 진단</span>
+      <div class="stack-16" style="max-width: 560px">
+        <!-- 진단 추천 — 가장 강조 -->
+        <div class="diag-card">
+          <div class="diag-glow" />
+          <div class="row" style="gap: 6px; margin-bottom: 10px">
+            <WdsIcon name="sparkle" :size="18" color="#fff" />
+            <span class="diag-eyebrow">AI 빠른 진단</span>
+          </div>
+          <div class="diag-title">10문제로 내 취약 유형 찾기</div>
+          <div class="wds-body-2 diag-sub">5분이면 충분해요</div>
+          <div style="margin-top: 16px; position: relative">
+            <WdsButton variant="primary" size="large" block icon-right="arrow-right" @click="startDiagnosis">
+              진단 시작하기
+            </WdsButton>
+          </div>
         </div>
-        <div class="diag-title">10문제로 내 취약 유형 찾기</div>
-        <div class="wds-body-2 diag-sub">5분이면 충분해요</div>
-        <div style="margin-top: 16px; position: relative">
-          <WdsButton variant="primary" size="large" block icon-right="arrow-right" @click="startDiagnosis">
-            진단 시작하기
-          </WdsButton>
-        </div>
-      </div>
 
-      <!-- 오늘의 추천 진입점 -->
-      <button class="tap-row today-row" @click="goTodayRec">
-        <span class="today-ico">
-          <WdsIcon name="sparkle" :size="20" color="var(--suql-accent)" />
-        </span>
-        <div style="flex: 1">
-          <div class="wds-label-1" style="font-weight: 700">오늘의 추천 학습</div>
-          <div class="wds-caption-1 assistive" style="margin-top: 2px">정체된 유형부터 짧게 풀어보기</div>
-        </div>
-        <WdsIcon name="chevron-right" :size="20" color="var(--label-assistive)" />
-      </button>
+        <!-- 오늘의 추천 진입점 -->
+        <button class="tap-row today-row" @click="goTodayRec">
+          <span class="today-ico">
+            <WdsIcon name="sparkle" :size="20" color="var(--suql-accent)" />
+          </span>
+          <div style="flex: 1">
+            <div class="wds-label-1" style="font-weight: 700">오늘의 추천 학습</div>
+            <div class="wds-caption-1 assistive" style="margin-top: 2px">정체된 유형부터 짧게 풀어보기</div>
+          </div>
+          <WdsIcon name="chevron-right" :size="20" color="var(--label-assistive)" />
+        </button>
+      </div>
     </div>
-  </AppShell>
+  </SidebarShell>
 </template>
 
 <style scoped>
-.bell-dot {
-  position: absolute;
-  top: 9px;
-  right: 10px;
-  width: 7px;
-  height: 7px;
-  border-radius: 4px;
-  background: var(--status-negative);
-  box-shadow: 0 0 0 2px var(--background-normal-normal);
-}
 .home-headline {
   font: var(--weight-bold) 23px/1.35 var(--font-sans);
   letter-spacing: -0.02em;

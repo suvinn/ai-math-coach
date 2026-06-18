@@ -6,7 +6,7 @@ const routes = [
   { path: '/login', name: 'login', component: () => import('@/views/auth/LoginView.vue'), meta: { public: true } },
   { path: '/register', name: 'register', component: () => import('@/views/auth/RegisterView.vue'), meta: { public: true } },
 
-  { path: '/', name: 'home', component: () => import('@/views/home/HomeView.vue') },
+  { path: '/', name: 'home', component: () => import('@/views/home/HomeView.vue'), meta: { shell: 'web' } },
   { path: '/quiz/setup', name: 'quiz-setup', component: () => import('@/views/quiz/QuizSetupView.vue') },
   { path: '/quiz/play', name: 'quiz-play', component: () => import('@/views/quiz/QuizPlayView.vue') },
   { path: '/quiz/result', name: 'quiz-result', component: () => import('@/views/quiz/QuizResultView.vue') },

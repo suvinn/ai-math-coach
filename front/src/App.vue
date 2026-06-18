@@ -1,8 +1,12 @@
 <!-- 📄 src/App.vue -->
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useRoute } from 'vue-router'
 
 // 프로토타입과 동일하게 360×820 폰을 뷰포트에 맞춰 스케일.
+// route.meta.shell === 'web' 인 화면은 폰 프레임 없이 일반 웹 레이아웃으로 렌더링.
+const route = useRoute()
+const isWeb = computed(() => route.meta.shell === 'web')
 const scale = ref(1)
 
 function fit() {
@@ -31,7 +35,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="stage">
+  <router-view v-if="isWeb" />
+
+  <div v-else class="stage">
     <div class="stagescale" :style="{ transform: `scale(${scale})` }">
       <router-view v-slot="{ Component }">
         <transition name="screen" mode="out-in">
