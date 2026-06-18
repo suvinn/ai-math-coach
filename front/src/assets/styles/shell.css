@@ -189,7 +189,13 @@
   background: var(--background-normal-alternative);
   font-family: var(--font-sans);
 }
-.auth-card { width: 100%; max-width: 420px; }
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
 
 /* ── 반응형: 좁아지면 사이드바를 아이콘 레일로 ───────────────── */
 @media (max-width: 960px) {

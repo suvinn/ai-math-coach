@@ -3,8 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 
 const routes = [
-  { path: '/login', name: 'login', component: () => import('@/views/auth/LoginView.vue'), meta: { public: true } },
-  { path: '/register', name: 'register', component: () => import('@/views/auth/RegisterView.vue'), meta: { public: true } },
+  { path: '/login', name: 'login', component: () => import('@/views/auth/LoginView.vue'), meta: { public: true, shell: 'web' } },
+  { path: '/register', name: 'register', component: () => import('@/views/auth/RegisterView.vue'), meta: { public: true, shell: 'web' } },
 
   { path: '/', name: 'home', component: () => import('@/views/home/HomeView.vue'), meta: { shell: 'web' } },
   { path: '/quiz/setup', name: 'quiz-setup', component: () => import('@/views/quiz/QuizSetupView.vue') },

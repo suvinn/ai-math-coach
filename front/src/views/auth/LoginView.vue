@@ -4,7 +4,7 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import { useToast } from '@/composables/useToast'
-import AppShell from '@/components/common/AppShell.vue'
+import AuthShell from '@/components/common/AuthShell.vue'
 import Logo from '@/components/common/Logo.vue'
 import WdsField from '@/components/common/WdsField.vue'
 import WdsButton from '@/components/common/WdsButton.vue'
@@ -36,48 +36,42 @@ async function onLogin() {
 </script>
 
 <template>
-  <AppShell :toast="toast">
-    <div class="ph-body auth-body">
-      <div class="auth-hero">
-        <Logo :size="40" />
-        <p class="auth-tagline">중2 수학, 약점부터 잡아드려요</p>
-      </div>
-
-      <div class="stack-16 auth-form">
-        <WdsField
-          v-model="username"
-          label="아이디"
-          placeholder="아이디를 입력하세요"
-          autocomplete="username"
-          @enter="onLogin"
-        />
-        <WdsField
-          v-model="password"
-          label="비밀번호"
-          type="password"
-          placeholder="비밀번호를 입력하세요"
-          autocomplete="current-password"
-          @enter="onLogin"
-        />
-      </div>
-
-      <div class="stack-12 auth-actions">
-        <WdsButton variant="primary" size="large" block :disabled="loading" @click="onLogin">
-          {{ loading ? '로그인 중…' : '로그인' }}
-        </WdsButton>
-        <WdsButton variant="text" size="large" block @click="router.push('/register')">
-          회원가입
-        </WdsButton>
-      </div>
+  <AuthShell :toast="toast">
+    <div class="auth-hero">
+      <Logo :size="40" />
+      <p class="auth-tagline">중2 수학, 약점부터 잡아드려요</p>
     </div>
-  </AppShell>
+
+    <div class="stack-16 auth-form">
+      <WdsField
+        v-model="username"
+        label="아이디"
+        placeholder="아이디를 입력하세요"
+        autocomplete="username"
+        @enter="onLogin"
+      />
+      <WdsField
+        v-model="password"
+        label="비밀번호"
+        type="password"
+        placeholder="비밀번호를 입력하세요"
+        autocomplete="current-password"
+        @enter="onLogin"
+      />
+    </div>
+
+    <div class="stack-12 auth-actions">
+      <WdsButton variant="primary" size="large" block :disabled="loading" @click="onLogin">
+        {{ loading ? '로그인 중…' : '로그인' }}
+      </WdsButton>
+      <WdsButton variant="text" size="large" block @click="router.push('/register')">
+        회원가입
+      </WdsButton>
+    </div>
+  </AuthShell>
 </template>
 
 <style scoped>
-.auth-body {
-  justify-content: center;
-  gap: 28px;
-}
 .auth-hero {
   display: flex;
   flex-direction: column;
