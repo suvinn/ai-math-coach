@@ -2,7 +2,6 @@
 <script setup>
 import WdsIcon from './WdsIcon.vue'
 
-// 프로토타입 PhoneLive의 토스트. AppShell 안에서 렌더됨.
 // toast: { text, tone, icon, k } | null
 const props = defineProps({
   toast: { type: Object, default: null },

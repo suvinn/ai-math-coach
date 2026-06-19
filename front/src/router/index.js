@@ -12,14 +12,14 @@ const routes = [
   { path: '/quiz/result', name: 'quiz-result', component: () => import('@/views/quiz/QuizResultView.vue'), meta: { shell: 'web' } },
   { path: '/quiz/coaching', name: 'quiz-coaching', component: () => import('@/views/quiz/CoachingView.vue'), meta: { shell: 'web' } },
 
-  { path: '/review/play', name: 'review-play', component: () => import('@/views/review/ReviewPlayView.vue') },
-  { path: '/review/explain', name: 'review-explain', component: () => import('@/views/review/ExplainView.vue') },
-  { path: '/review/redo', name: 'review-redo', component: () => import('@/views/review/RedoView.vue') },
-  { path: '/review/master', name: 'review-master', component: () => import('@/views/review/MasterView.vue') },
-  { path: '/review/chat', name: 'review-chat', component: () => import('@/views/review/ChatView.vue') },
+  { path: '/review/play', name: 'review-play', component: () => import('@/views/review/ReviewPlayView.vue'), meta: { shell: 'web' } },
+  { path: '/review/explain', name: 'review-explain', component: () => import('@/views/review/ExplainView.vue'), meta: { shell: 'web' } },
+  { path: '/review/redo', name: 'review-redo', component: () => import('@/views/review/RedoView.vue'), meta: { shell: 'web' } },
+  { path: '/review/master', name: 'review-master', component: () => import('@/views/review/MasterView.vue'), meta: { shell: 'web' } },
+  { path: '/review/chat', name: 'review-chat', component: () => import('@/views/review/ChatView.vue'), meta: { shell: 'web' } },
 
-  { path: '/my', name: 'my-dashboard', component: () => import('@/views/my/DashboardView.vue') },
-  { path: '/my/history', name: 'my-history', component: () => import('@/views/my/HistoryView.vue') },
+  { path: '/my', name: 'my-dashboard', component: () => import('@/views/my/DashboardView.vue'), meta: { shell: 'web' } },
+  { path: '/my/history', name: 'my-history', component: () => import('@/views/my/HistoryView.vue'), meta: { shell: 'web' } },
 
   { path: '/:pathMatch(.*)*', redirect: '/' },
 ]
