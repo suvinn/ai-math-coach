@@ -4,7 +4,6 @@ from rest_framework.response import Response
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework import status
 from django.utils.decorators import method_decorator
-from django.views.decorators.csrf import csrf_exempt
 from .serializers import RegisterSerializer, UserSerializer
 from .models import Problem, QuizSession, SessionProblem, SessionResult, WeaknessReport, WeakSubtype, Recommendation, SubtypeMastery
 import random
@@ -15,9 +14,27 @@ import chromadb
 from django.conf import settings
 
 
+def _serialize_assets(problem, request=None):
+    """option_type='mixed_with_image'인 문제의 보기 이미지 목록을 응답용 dict 리스트로 변환."""
+    if problem.option_type != 'mixed_with_image':
+        return []
+ 
+    out = []
+    for asset in problem.assets.all():  # prefetch_related 안 해두면 view마다 N+1 발생 -> 아래 3) 참고
+        url = settings.MEDIA_URL.rstrip('/') + '/' + asset.image_path.lstrip('/')
+        if request is not None:
+            url = request.build_absolute_uri(url)
+        out.append({
+            'asset_role': asset.asset_role,
+            'image_url': url,
+            'bbox': [asset.bbox_x1, asset.bbox_y1, asset.bbox_x2, asset.bbox_y2],
+        })
+    return out
+
+
 User = get_user_model()
 
-@method_decorator(csrf_exempt, name='dispatch')
+
 class RegisterView(APIView):
     permission_classes = [AllowAny]
 
@@ -42,7 +59,7 @@ class RegisterView(APIView):
             }
         }, status=status.HTTP_201_CREATED)
 
-@method_decorator(csrf_exempt, name='dispatch')
+
 class LoginView(APIView):
     permission_classes = [AllowAny]
 
@@ -69,7 +86,7 @@ class LoginView(APIView):
             }
         })
 
-@method_decorator(csrf_exempt, name='dispatch')
+
 class LogoutView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -77,7 +94,7 @@ class LogoutView(APIView):
         logout(request)
         return Response({'status': 'success', 'message': '로그아웃 되었습니다.'})
 
-@method_decorator(csrf_exempt, name='dispatch')
+
 class MeView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -353,7 +370,7 @@ class QuizSessionProblemsView(APIView):
 
         session_problems = SessionProblem.objects.filter(
             session=session
-        ).select_related('problem').order_by('order_index')
+        ).select_related('problem').prefetch_related('problem__assets').order_by('order_index')
 
         problems = []
         for sp in session_problems:
@@ -366,6 +383,9 @@ class QuizSessionProblemsView(APIView):
                 'question_text':        p.question_text,
                 'question_with_options': p.question_with_options,
                 'question_image_bbox':  p.question_image_bbox,
+                'option_type':          p.option_type,
+                'assets':               _serialize_assets(p, request),
+                'is_multi_answer':      p.is_multi_answer,
             })
 
         return Response({
@@ -434,7 +454,13 @@ class QuizSessionSubmitView(APIView):
                 continue
 
             problem    = problem_map[problem_id]
-            is_correct = (user_answer == problem.answer.strip())
+            correct_label = problem.grading_answer or problem.answer.strip()
+            if problem.is_multi_answer:
+                submitted = set(s.strip() for s in user_answer.split(','))
+                correct   = set(correct_label.split(','))
+                is_correct = (submitted == correct)
+            else:
+                is_correct = (user_answer == correct_label)
 
             if is_correct:
                 score += 1
@@ -574,7 +600,7 @@ class QuizSessionWrongAnswersView(APIView):
         wrong_results = SessionResult.objects.filter(
             session=session,
             is_correct=False
-        ).select_related('problem')
+        ).select_related('problem').prefetch_related('problem__assets')
 
         wrong_problems = []
         for result in wrong_results:
@@ -589,6 +615,9 @@ class QuizSessionWrongAnswersView(APIView):
                 'question_text':         p.question_text,
                 'question_with_options': p.question_with_options,
                 'question_image_bbox':   p.question_image_bbox,
+                'option_type':           p.option_type,
+                'assets':                _serialize_assets(p, request),
+                'is_multi_answer':       p.is_multi_answer,
             })
 
         return Response({
@@ -783,6 +812,9 @@ class ProblemDetailView(APIView):
                 'question_text':         problem.question_text,
                 'question_with_options': problem.question_with_options,
                 'question_image_bbox':   problem.question_image_bbox,
+                'option_type':           problem.option_type,
+                'assets':                _serialize_assets(problem, request),
+                'is_multi_answer':       problem.is_multi_answer,
             }
         })
 
