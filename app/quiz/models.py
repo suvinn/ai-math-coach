@@ -27,9 +27,49 @@ class Problem(models.Model):
     answer = models.CharField(max_length=200)
     explanation = models.TextField()
     is_quizable = models.BooleanField(default=False)
+    grading_answer = models.CharField(max_length=10, null=True, blank=True)
+    is_multi_answer = models.BooleanField(default=False)
+    option_type = models.CharField(
+        max_length=20,
+        choices=[("text", "text"), ("mixed_with_image", "mixed_with_image")],
+        null=True,
+        blank=True,
+    )
+    extraction_status = models.CharField(
+        max_length=30,
+        null=True,
+        blank=True,
+        help_text="recovered / recovered_needs_review / missing_raw_json / no_option_items_in_raw / original(처음부터 정상이었음)",
+    )
+    recovered_answer = models.TextField(null=True, blank=True)
+    answer_match = models.BooleanField(null=True, blank=True)
+    backfilled_at = models.DateTimeField(null=True, blank=True)
 
     class Meta:
         db_table = 'problem'
+
+
+class ProblemAsset(models.Model):
+    """
+    그래프/도형 등 텍스트로 표현 불가능한 보기(선택지) 이미지.
+    option_type='mixed_with_image' 인 Problem에 한해 1개 이상 존재.
+    """
+    problem = models.ForeignKey(
+        Problem, on_delete=models.CASCADE, related_name="assets",
+    )
+    asset_role = models.CharField(
+        max_length=30,
+        help_text="원본 class_name 그대로 저장: 정답(이미지) / 오답(이미지) 등",
+    )
+    image_path = models.CharField(max_length=500)  # 또는 ImageField로 바꿔도 됨
+    bbox_x1 = models.FloatField()
+    bbox_y1 = models.FloatField()
+    bbox_x2 = models.FloatField()
+    bbox_y2 = models.FloatField()
+    created_at = models.DateTimeField(auto_now_add=True)
+ 
+    class Meta:
+        indexes = [models.Index(fields=["problem"])]
 
 
 class QuizSession(models.Model):
