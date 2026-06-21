@@ -152,9 +152,10 @@ async function finish() {
         </div>
         <div class="answer-box">
           <div class="field-label">정답 입력</div>
+          <div v-if="isMulti" class="wds-caption-1 assistive">정답이 여러 개예요 — 콤마로 구분해서 입력하세요 (예: ①,④)</div>
           <WdsField
             v-model="answer"
-            placeholder="답을 입력하세요 (예: ㄹ, ②, 3)"
+            :placeholder="isMulti ? '예: ①,④' : '답을 입력하세요 (예: ㄹ, ②, 3)'"
             @enter="next"
           />
         </div>
