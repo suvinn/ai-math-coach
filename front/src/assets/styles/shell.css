@@ -69,7 +69,8 @@
   box-shadow: 0 0 0 2px var(--background-normal-normal);
 }
 
-/* 사이드바 */
+/* 사이드바 — 스크롤 영역(app-nav-scroll)과 항상 보이는 하단 프로필을 구조적으로 분리.
+   (프로필을 sticky로 띄우는 방식은 flex 스크롤 컨테이너 안에서 불안정해서 분리함) */
 .app-sidebar {
   grid-area: sidebar;
   display: flex; flex-direction: column;
@@ -81,12 +82,19 @@
   top: var(--topbar-h);
   align-self: start;
   height: calc(100vh - var(--topbar-h));
+  box-sizing: border-box;
+}
+.app-nav-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
 }
 .app-nav { display: flex; flex-direction: column; gap: 2px; }
 .app-nav-item {
   display: flex; align-items: center; gap: 12px;
   width: 100%;
   padding: 10px 12px;
+  box-sizing: border-box;
   border: 0; background: transparent;
   border-radius: 10px;
   color: var(--label-alternative);
@@ -97,13 +105,14 @@
 .app-nav-item:hover { background: var(--fill-alternative); color: var(--label-normal); }
 .app-nav-item[data-active="true"] { background: var(--blue-99); color: var(--suql-accent); }
 .app-nav-item .ico { flex: none; display: flex; align-items: center; }
-.app-nav-spacer { flex: 1; }
 
-/* 하단 프로필 행 */
+/* 하단 프로필 행 — app-nav-scroll 바깥에 있어서 항상 그 자리에 보임 */
 .app-nav-profile {
   display: flex; align-items: center; gap: 10px;
   padding: 10px 12px; border-radius: 12px;
-  border: 0; background: transparent; cursor: pointer; width: 100%; text-align: left;
+  box-sizing: border-box;
+  border: 0; background: var(--background-normal-normal); cursor: pointer; width: 100%; text-align: left;
+  flex: none;
 }
 .app-nav-profile:hover { background: var(--fill-alternative); }
 .app-nav-profile .avatar {

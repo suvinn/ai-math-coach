@@ -33,19 +33,20 @@ const initial = computed(() => (auth.user?.name || '학생').slice(0, 1))
     </header>
 
     <aside class="app-sidebar">
-      <nav class="app-nav">
-        <router-link
-          v-for="item in navItems"
-          :key="item.id"
-          :to="item.to"
-          class="app-nav-item"
-          :data-active="item.id === tab"
-        >
-          <span class="ico"><WdsIcon :name="item.icon" :size="20" /></span>
-          <span class="label">{{ item.label }}</span>
-        </router-link>
-      </nav>
-      <span class="app-nav-spacer" />
+      <div class="app-nav-scroll">
+        <nav class="app-nav">
+          <router-link
+            v-for="item in navItems"
+            :key="item.id"
+            :to="item.to"
+            class="app-nav-item"
+            :data-active="item.id === tab"
+          >
+            <span class="ico"><WdsIcon :name="item.icon" :size="20" /></span>
+            <span class="label">{{ item.label }}</span>
+          </router-link>
+        </nav>
+      </div>
       <button class="app-nav-profile">
         <span class="avatar">{{ initial }}</span>
         <span class="meta">
