@@ -3,6 +3,7 @@ from openai import OpenAI
 import chromadb
 from django.conf import settings
 from .models import Problem
+from langgraph.graph import StateGraph, END
 
 
 class CoachingState(TypedDict):
@@ -157,3 +158,27 @@ def route_after_analyze(state: CoachingState) -> str:
     if state['all_correct']:
         return 'harder'
     return 'feedback'
+
+
+def build_coaching_graph():
+    graph = StateGraph(CoachingState)
+
+    graph.add_node('analyze',  analyze_node)
+    graph.add_node('feedback', feedback_node)
+    graph.add_node('rag',      rag_node)
+    graph.add_node('harder',   harder_node)
+
+    graph.set_entry_point('analyze')
+
+    graph.add_conditional_edges(
+        'analyze',
+        route_after_analyze,
+        {'feedback': 'feedback', 'harder': 'harder'}
+    )
+    graph.add_edge('feedback', 'rag')
+    graph.add_edge('rag', END)
+    graph.add_edge('harder', END)
+
+    return graph.compile()
+
+coaching_graph = build_coaching_graph()
