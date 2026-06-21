@@ -6,7 +6,7 @@ from quiz.models import Problem
 
 
 class Command(BaseCommand):
-    help = 'CSV 파일에서 객관식 문제만 Problem 테이블에 적재'
+    help = 'CSV 파일에서 객관식 문제만 Problem 테이블에 적재 (merged_problems_fixed.csv 기준)'
 
     def add_arguments(self, parser):
         parser.add_argument('csv_path', type=str)
@@ -46,6 +46,10 @@ class Command(BaseCommand):
                         'answer':                 answer,
                         'explanation':            row['explanation'],
                         'is_quizable':            is_quizable,
+                        'option_type':            row.get('option_type') or None,
+                        'extraction_status':      row.get('extraction_status') or 'original',
+                        'recovered_answer':       row.get('recovered_answer') or None,
+                        'answer_match':           _parse_bool(row.get('answer_match')),
                     }
                 )
                 created += 1
@@ -59,3 +63,9 @@ def _is_quizable(question_with_options, answer):
     answer = answer.strip()
     # answer가 ①②③④⑤ 로 시작하면 퀴즈 출제 가능
     return bool(re.match(r'^[①②③④⑤]', answer))
+
+
+def _parse_bool(raw):
+    if raw in (None, '', 'nan', 'NaN'):
+        return None
+    return str(raw).strip().lower() in ('true', '1', 'yes')
