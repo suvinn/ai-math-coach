@@ -5,17 +5,19 @@ import WdsIcon from './WdsIcon.vue'
 
 // 프로토타입 Option: 번호 + 본문(tex 또는 슬롯) + 상태 아이콘.
 // state: '' | 'selected' | 'correct' | 'wrong'
+// label이 있으면 그걸 그대로 표시(①②③ 등 — 채점용 원본 라벨), 없으면 index+1.
 const props = defineProps({
   index: { type: Number, required: true },
   state: { type: String, default: '' },
   tex: { type: String, default: '' },
+  label: { type: String, default: '' },
 })
 const emit = defineEmits(['click'])
 </script>
 
 <template>
   <button class="opt" :data-state="state || ''" @click="emit('click')">
-    <span class="num">{{ index + 1 }}</span>
+    <span class="num">{{ label || index + 1 }}</span>
     <span style="flex: 1">
       <KatexRenderer v-if="tex" :tex="tex" />
       <slot v-else />

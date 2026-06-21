@@ -7,8 +7,11 @@ import { useToast } from '@/composables/useToast'
 import FocusShell from '@/components/common/FocusShell.vue'
 import QuizStem from '@/components/quiz/QuizStem.vue'
 import OptionsBox from '@/components/common/OptionsBox.vue'
+import QuizOption from '@/components/common/QuizOption.vue'
+import InlineTex from '@/components/common/InlineTex.vue'
 import WdsButton from '@/components/common/WdsButton.vue'
 import WdsField from '@/components/common/WdsField.vue'
+import { parseCircledOptions } from '@/utils/circledOptions'
 
 const router = useRouter()
 const quiz = useQuizStore()
@@ -21,12 +24,44 @@ if (!quiz.problems.length) {
 
 const idx = ref(0)
 const answer = ref('')
+const selectedLabels = ref([]) // 복수정답(체크박스) 모드에서 선택된 라벨들
 const submitting = ref(false)
 
 const total = computed(() => quiz.problems.length)
 const current = computed(() => quiz.problems[idx.value] || null)
 const isLast = computed(() => idx.value + 1 >= total.value)
 const pct = computed(() => (total.value ? Math.round(((idx.value + 1) / total.value) * 100) : 0))
+
+// question_with_options에 ①②③... 객관식 선택지가 있으면 클릭형 UI로 전환
+const mcOptions = computed(() => current.value ? parseCircledOptions(current.value.question_with_options) : null)
+const isMulti = computed(() => !!current.value?.is_multi_answer)
+
+function isSelected(label) {
+  return isMulti.value ? selectedLabels.value.includes(label) : answer.value === label
+}
+
+function selectOption(label) {
+  if (isMulti.value) {
+    const i = selectedLabels.value.indexOf(label)
+    if (i >= 0) selectedLabels.value.splice(i, 1)
+    else selectedLabels.value.push(label)
+    // 채점은 순서 안 가리지만, 화면엔 보기 순서대로 보여주는 게 자연스러움
+    const order = mcOptions.value.map((o) => o.label)
+    answer.value = selectedLabels.value
+      .slice()
+      .sort((a, b) => order.indexOf(a) - order.indexOf(b))
+      .join(',')
+  } else {
+    answer.value = label
+  }
+}
+
+// 문제 이동 시 답 상태(텍스트 입력값 + 체크박스 선택값) 복원
+function restoreAnswer(problemId) {
+  const saved = quiz.answers[problemId] || ''
+  answer.value = saved
+  selectedLabels.value = saved ? saved.split(',').map((s) => s.trim()).filter(Boolean) : []
+}
 
 function next() {
   if (!answer.value.trim()) {
@@ -40,8 +75,7 @@ function next() {
     finish()
   } else {
     idx.value += 1
-    // 다음 문제에 기존 답 있으면 복원
-    answer.value = quiz.answers[quiz.problems[idx.value].problem_id] || ''
+    restoreAnswer(quiz.problems[idx.value].problem_id)
   }
 }
 
@@ -52,7 +86,7 @@ function prev() {
     quiz.setAnswer(current.value.problem_id, answer.value.trim())
   }
   idx.value -= 1
-  answer.value = quiz.answers[quiz.problems[idx.value].problem_id] || ''
+  restoreAnswer(quiz.problems[idx.value].problem_id)
 }
 
 async function finish() {
@@ -88,20 +122,43 @@ async function finish() {
 
       <QuizStem :q="current" />
 
-      <!-- 보기가 이미지로 들어간 경우 안내 (bbox 있을 때) -->
-      <div v-if="current.question_with_options" class="play-options">
-        <OptionsBox :text="current.question_with_options" />
+      <!-- 보기 중 일부가 이미지로 제공되는 경우 (option_type=mixed_with_image) -->
+      <div v-if="current.assets && current.assets.length" class="play-assets">
+        <div v-for="(asset, i) in current.assets" :key="i" class="play-asset">
+          <span class="wds-caption-1 assistive">{{ asset.asset_role }}</span>
+          <img :src="asset.image_url" :alt="asset.asset_role" />
+        </div>
       </div>
 
-      <!-- 답 입력 (선택지가 비정형이라 직접 입력) -->
-      <div class="answer-box">
-        <div class="field-label">정답 입력</div>
-        <WdsField
-          v-model="answer"
-          placeholder="답을 입력하세요 (예: ㄹ, ②, 3)"
-          @enter="next"
-        />
+      <!-- 객관식: ①②③... 선택지가 있으면 클릭형으로 -->
+      <div v-if="mcOptions" class="stack-8">
+        <div v-if="isMulti" class="wds-caption-1 assistive">정답을 모두 고르세요 (복수 선택)</div>
+        <QuizOption
+          v-for="(opt, i) in mcOptions"
+          :key="opt.label"
+          :index="i"
+          :label="opt.label"
+          :state="isSelected(opt.label) ? 'selected' : ''"
+          @click="selectOption(opt.label)"
+        >
+          <InlineTex :text="opt.text" />
+        </QuizOption>
       </div>
+
+      <!-- 객관식 선택지가 없을 때: 참고용 보기(있으면) + 직접 입력 -->
+      <template v-else>
+        <div v-if="current.question_with_options" class="play-options">
+          <OptionsBox :text="current.question_with_options" />
+        </div>
+        <div class="answer-box">
+          <div class="field-label">정답 입력</div>
+          <WdsField
+            v-model="answer"
+            placeholder="답을 입력하세요 (예: ㄹ, ②, 3)"
+            @enter="next"
+          />
+        </div>
+      </template>
     </div>
 
     <template #foot>
@@ -148,6 +205,21 @@ async function finish() {
 .play-badge[data-tone='positive'] {
   background: var(--green-99);
   color: var(--status-positive);
+}
+.play-assets {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.play-asset {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.play-asset img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 1px var(--line-normal-normal);
 }
 .play-options {
   background: var(--fill-alternative);
