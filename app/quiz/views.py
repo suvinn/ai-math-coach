@@ -244,6 +244,10 @@ class QuizSessionCreateView(APIView):
         chapter_minor     = request.data.get('chapter_minor')
         problem_count     = request.data.get('problem_count')
         parent_session_id = request.data.get('parent_session_id')   # optional
+        # 보완 단계 구분: 's1'(보완1·하), 's1mid'(보완1·중), 's2'(보완2·하)
+        review_step       = request.data.get('review_step')         # optional
+        # 보완 세션에서 제외할 문제 ID 목록 (이미 푼 문제 재출제 방지)
+        exclude_ids       = request.data.get('exclude_ids', [])
 
         if not chapter_major or not chapter_middle or not problem_count:
             return Response(
@@ -282,33 +286,7 @@ class QuizSessionCreateView(APIView):
                 session_type = 'review_1'
             elif parent_type == 'review_1':
                 session_type = 'review_2'
-            elif parent_type == 'review_2':
-                # 3회차 초과 → 해설 반환
-                wrong_results = SessionResult.objects.filter(
-                    session=parent_session,
-                    is_correct=False
-                ).select_related('problem')
-
-                explanations = [
-                    {
-                        'problem_id':      r.problem.id,
-                        'question_text':   r.problem.question_text,
-                        'user_answer':     r.student_answer,
-                        'correct_answer':  r.problem.answer,
-                        'explanation':     r.problem.explanation,
-                        'problem_subtype': r.problem.problem_subtype,
-                    }
-                    for r in wrong_results
-                ]
-                return Response({
-                    'status': 'success',
-                    'data': {
-                        'session_created':  False,
-                        'show_explanation': True,
-                        'message':          '이 유형은 해설을 꼼꼼히 읽고 다음에 다시 도전해봐요!',
-                        'explanations':     explanations,
-                    }
-                })
+            # review_2 이후는 프론트에서 explain → redo 로 직접 처리 (세션 생성 없음)
 
         base_filter = dict(
             chapter_major  = chapter_major,
@@ -335,31 +313,41 @@ class QuizSessionCreateView(APIView):
             selected     = selected_low + selected_mid
             random.shuffle(selected)
 
-        elif session_type == 'review_1':
-            weak_subtypes = _get_weak_subtypes(parent_session)
-            problems = list(Problem.objects.filter(
-                **base_filter,
-                problem_subtype__in=weak_subtypes,
-                difficulty__in=['하', '중'],
-            ))
+        elif session_type in ('review_1', 'review_2'):
+            # 취약 subtype 1개에서 1문제만 출제. 단계별 난이도:
+            #   s1    → 하  (보완 1단계 첫 문제)
+            #   s1mid → 중  (s1 정답 시 난이도 업)
+            #   s2    → 하  (보완 2단계, s1 오답 시)
+            if review_step == 's1mid':
+                target_difficulty = '중'
+            else:
+                target_difficulty = '하'  # s1, s2 모두 하
+
+            weak_subtypes  = _get_weak_subtypes(parent_session)
+            target_subtype = weak_subtypes[0] if weak_subtypes else None
+
+            q_filter = {**base_filter, 'difficulty': target_difficulty}
+            if target_subtype:
+                q_filter['problem_subtype'] = target_subtype
+
+            problems = list(
+                Problem.objects.filter(**q_filter).exclude(id__in=exclude_ids)
+            )
+            # subtype 필터로 문제 없으면 난이도만으로 폴백
+            if not problems and target_subtype:
+                problems = list(
+                    Problem.objects.filter(**base_filter, difficulty=target_difficulty)
+                    .exclude(id__in=exclude_ids)
+                )
+
             if not problems:
-                problems = list(Problem.objects.filter(**base_filter, difficulty__in=['하', '중']))
+                return Response(
+                    {'status': 'error', 'message': '출제 가능한 보완 문제가 없습니다.'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
 
-            actual_count = min(problem_count, len(problems))
-            selected     = random.sample(problems, actual_count)
-
-        else:  # review_2
-            weak_subtypes = _get_weak_subtypes(parent_session)
-            problems = list(Problem.objects.filter(
-                **base_filter,
-                problem_subtype__in=weak_subtypes,
-                difficulty='하',
-            ))
-            if not problems:
-                problems = list(Problem.objects.filter(**base_filter, difficulty='하'))
-
-            actual_count = min(problem_count, len(problems))
-            selected     = random.sample(problems, actual_count)
+            # 보완 세션은 항상 1문제
+            selected = [random.choice(problems)]
 
         if not selected:
             return Response(
@@ -391,6 +379,7 @@ class QuizSessionCreateView(APIView):
             'data': {
                 'session_id':      session.id,
                 'session_type':    session.session_type,
+                'review_step':     review_step or ('s1' if session_type == 'review_1' else None),
                 'status':          session.status,
                 'requested_count': problem_count,
                 'actual_count':    actual_count,
@@ -1142,6 +1131,67 @@ class TodayRecommendationView(APIView):
                 'reason':              reason,
                 'problems':            problems_data,
                 'prefill':             prefill,
+            }
+        })
+
+
+class ReviewProblemView(APIView):
+    """
+    재도전(Redo)용: 처음 틀렸던 원본 문제 1개를 세션 생성 없이 반환.
+    GET /quiz/sessions/<session_id>/redo-problem?problem_id=<id>
+
+    - session_id: 원본(normal/diagnosis) 세션 ID — 본인 세션 검증용
+    - problem_id: 재도전할 문제 ID (원본 세션의 오답 중 1개)
+    """
+
+    def get(self, request, session_id):
+        problem_id = request.query_params.get('problem_id')
+        if not problem_id:
+            return Response(
+                {'status': 'error', 'message': 'problem_id가 필요합니다.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        try:
+            session = QuizSession.objects.get(id=session_id, user=request.user)
+        except QuizSession.DoesNotExist:
+            return Response(
+                {'status': 'error', 'message': '세션을 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        is_wrong = SessionResult.objects.filter(
+            session    = session,
+            problem_id = problem_id,
+            is_correct = False,
+        ).exists()
+        if not is_wrong:
+            return Response(
+                {'status': 'error', 'message': '해당 세션의 오답 문제가 아닙니다.'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+
+        try:
+            problem = Problem.objects.prefetch_related('assets').get(id=problem_id)
+        except Problem.DoesNotExist:
+            return Response(
+                {'status': 'error', 'message': '문제를 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        return Response({
+            'status': 'success',
+            'data': {
+                'problem_id':            problem.id,
+                'difficulty':            problem.difficulty,
+                'problem_subtype':       problem.problem_subtype,
+                'question_text':         problem.question_text,
+                'question_with_options': problem.question_with_options,
+                'question_image_bbox':   problem.question_image_bbox,
+                'option_type':           problem.option_type,
+                'assets':                _serialize_assets(problem, request),
+                'is_multi_answer':       problem.is_multi_answer,
+                'correct_answer':        problem.answer,
             }
         })
 
