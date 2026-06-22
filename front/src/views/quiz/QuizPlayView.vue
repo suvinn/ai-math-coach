@@ -12,6 +12,7 @@ import InlineTex from '@/components/common/InlineTex.vue'
 import WdsButton from '@/components/common/WdsButton.vue'
 import WdsField from '@/components/common/WdsField.vue'
 import { parseCircledOptions } from '@/utils/circledOptions'
+import { difficultyTone } from '@/utils/difficulty'
 
 const router = useRouter()
 const quiz = useQuizStore()
@@ -112,10 +113,7 @@ async function finish() {
     <div v-if="current" class="play-body">
       <div class="row" style="gap: 6px; flex-wrap: wrap">
         <span class="play-badge play-badge--type">{{ current.problem_subtype }}</span>
-        <span
-          class="play-badge"
-          :data-tone="current.difficulty === '하' ? 'positive' : 'neutral'"
-        >
+        <span class="play-badge" :data-tone="difficultyTone(current.difficulty)">
           난이도 {{ current.difficulty }}
         </span>
       </div>
@@ -206,6 +204,14 @@ async function finish() {
 .play-badge[data-tone='positive'] {
   background: var(--green-99);
   color: var(--status-positive);
+}
+.play-badge[data-tone='cautionary'] {
+  background: var(--orange-99);
+  color: var(--status-cautionary);
+}
+.play-badge[data-tone='negative'] {
+  background: var(--red-99);
+  color: var(--status-negative);
 }
 .play-assets {
   display: flex;

@@ -16,6 +16,7 @@ import WdsButton from '@/components/common/WdsButton.vue'
 import WdsField from '@/components/common/WdsField.vue'
 import WdsIcon from '@/components/common/WdsIcon.vue'
 import { parseCircledOptions } from '@/utils/circledOptions'
+import { difficultyTone } from '@/utils/difficulty'
 
 const router = useRouter()
 const quiz   = useQuizStore()
@@ -159,7 +160,7 @@ const isCorrectNow = computed(() => {
 
       <div class="row" style="gap:6px; flex-wrap:wrap">
         <span class="play-badge play-badge--type">{{ current.problem_subtype }}</span>
-        <span class="play-badge" :data-tone="current.difficulty === '하' ? 'positive' : 'neutral'">
+        <span class="play-badge" :data-tone="difficultyTone(current.difficulty)">
           난이도 {{ current.difficulty }}
         </span>
       </div>
@@ -233,6 +234,8 @@ const isCorrectNow = computed(() => {
 }
 .play-badge--type { background:var(--blue-99); color:var(--suql-accent); }
 .play-badge[data-tone='positive'] { background:var(--green-99); color:var(--status-positive); }
+.play-badge[data-tone='cautionary'] { background:var(--orange-99); color:var(--status-cautionary); }
+.play-badge[data-tone='negative'] { background:var(--red-99); color:var(--status-negative); }
 .answer-box { display:flex; flex-direction:column; gap:8px; }
 .field-label { font:var(--weight-semibold) 13px/1 var(--font-sans); color:var(--label-alternative); }
 .play-foot { display:flex; gap:10px; }
