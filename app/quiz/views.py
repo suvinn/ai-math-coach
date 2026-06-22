@@ -17,22 +17,78 @@ def _serialize_assets(problem, request=None):
     """option_type='mixed_with_image'인 문제의 보기 이미지 목록을 응답용 dict 리스트로 변환."""
     if problem.option_type != 'mixed_with_image':
         return []
- 
+
     out = []
-    for asset in problem.assets.all():  # prefetch_related 안 해두면 view마다 N+1 발생 -> 아래 3) 참고
+    for asset in problem.assets.all():
         url = settings.MEDIA_URL.rstrip('/') + '/' + asset.image_path.lstrip('/')
         if request is not None:
             url = request.build_absolute_uri(url)
         out.append({
             'asset_role': asset.asset_role,
-            'image_url': url,
-            'bbox': [asset.bbox_x1, asset.bbox_y1, asset.bbox_x2, asset.bbox_y2],
+            'image_url':  url,
+            'bbox':       [asset.bbox_x1, asset.bbox_y1, asset.bbox_x2, asset.bbox_y2],
         })
     return out
 
 
+def _create_diagnosis_session(user):
+    """
+    회원가입 직후 빠른 진단 세션을 자동 생성한다.
+    - user.current_chapter_major / current_chapter_middle 기준
+    - 하 70% + 중 30%, 최대 10문제
+    - 문제가 없으면 None 반환 (가입 자체는 막지 않음)
+    """
+    if not user.current_chapter_major or not user.current_chapter_middle:
+        return None
+
+    base_filter = dict(
+        chapter_major  = user.current_chapter_major,
+        chapter_middle = user.current_chapter_middle,
+        is_quizable    = True,
+    )
+    problem_count = 10
+
+    problems_low = list(Problem.objects.filter(**base_filter, difficulty='하'))
+    problems_mid = list(Problem.objects.filter(**base_filter, difficulty='중'))
+
+    if not problems_low and not problems_mid:
+        return None
+
+    low_count    = round(problem_count * 0.7)
+    mid_count    = problem_count - low_count
+    selected_low = random.sample(problems_low, min(low_count, len(problems_low)))
+    selected_mid = random.sample(problems_mid, min(mid_count, len(problems_mid)))
+    selected     = selected_low + selected_mid
+    random.shuffle(selected)
+
+    if not selected:
+        return None
+
+    session = QuizSession.objects.create(
+        user           = user,
+        chapter_major  = user.current_chapter_major,
+        chapter_middle = user.current_chapter_middle,
+        chapter_minor  = '',
+        problem_count  = len(selected),
+        session_type   = 'diagnosis',
+    )
+
+    for idx, problem in enumerate(selected):
+        SessionProblem.objects.create(
+            session     = session,
+            problem     = problem,
+            order_index = idx + 1,
+        )
+
+    return session
+
+
 User = get_user_model()
 
+
+# ─────────────────────────────────────────────
+# 인증
+# ─────────────────────────────────────────────
 
 class RegisterView(APIView):
     permission_classes = [AllowAny]
@@ -43,20 +99,24 @@ class RegisterView(APIView):
             return Response({'status': 'error', 'message': serializer.errors},
                             status=status.HTTP_400_BAD_REQUEST)
 
-        # username 중복 체크
         if User.objects.filter(username=serializer.validated_data['username']).exists():
             return Response({'status': 'error', 'message': '이미 존재하는 아이디입니다.'},
                             status=status.HTTP_409_CONFLICT)
 
         user = serializer.save()
-        return Response({
-            'status': 'success',
-            'data': {
-                # 'user_id': user.id,
-                'username': user.username,
-                'name': user.first_name,
-            }
-        }, status=status.HTTP_201_CREATED)
+
+        # 빠른 진단 세션 자동 생성 (진도 입력한 경우에만)
+        diagnosis_session = _create_diagnosis_session(user)
+
+        response_data = {
+            'username': user.username,
+            'name':     user.first_name,
+        }
+        if diagnosis_session:
+            response_data['diagnosis_session_id'] = diagnosis_session.id
+
+        return Response({'status': 'success', 'data': response_data},
+                        status=status.HTTP_201_CREATED)
 
 
 class LoginView(APIView):
@@ -79,9 +139,8 @@ class LoginView(APIView):
         return Response({
             'status': 'success',
             'data': {
-                # 'user_id': user.id,
                 'username': user.username,
-                'name': user.first_name,
+                'name':     user.first_name,
             }
         })
 
@@ -98,32 +157,36 @@ class MeView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
+        u = request.user
         return Response({
             'status': 'success',
             'data': {
-                # 'user_id': request.user.id,
-                'username': request.user.username,
-                'name': request.user.first_name,
+                'username':               u.username,
+                'name':                   u.first_name,
+                'grade':                  u.grade,
+                'current_chapter_major':  u.current_chapter_major,
+                'current_chapter_middle': u.current_chapter_middle,
             }
         })
 
+
+# ─────────────────────────────────────────────
+# 챕터
+# ─────────────────────────────────────────────
 
 class ChapterListView(APIView):
     permission_classes = [AllowAny]
 
     def get(self, request):
-        # DB에서 챕터 정보 distinct로 추출
         problems = Problem.objects.values(
             'chapter_major', 'chapter_middle', 'chapter_minor'
         ).distinct().order_by('chapter_major', 'chapter_middle', 'chapter_minor')
 
-        # 중첩 구조로 가공
         result = {}
         for p in problems:
-            major = p['chapter_major']
+            major  = p['chapter_major']
             middle = p['chapter_middle']
-            minor = p['chapter_minor']
-
+            minor  = p['chapter_minor']
             if major not in result:
                 result[major] = {}
             if middle not in result[major]:
@@ -132,12 +195,9 @@ class ChapterListView(APIView):
 
         data = [
             {
-                'chapter_major': major,
+                'chapter_major':   major,
                 'chapter_middles': [
-                    {
-                        'chapter_middle': middle,
-                        'chapter_minors': minors
-                    }
+                    {'chapter_middle': middle, 'chapter_minors': minors}
                     for middle, minors in middles.items()
                 ]
             }
@@ -172,6 +232,10 @@ class ChapterProblemCountView(APIView):
         return Response({'status': 'success', 'data': data})
 
 
+# ─────────────────────────────────────────────
+# 퀴즈 세션
+# ─────────────────────────────────────────────
+
 class QuizSessionCreateView(APIView):
 
     def post(self, request):
@@ -179,7 +243,7 @@ class QuizSessionCreateView(APIView):
         chapter_middle    = request.data.get('chapter_middle')
         chapter_minor     = request.data.get('chapter_minor')
         problem_count     = request.data.get('problem_count')
-        parent_session_id = request.data.get('parent_session_id')  # optional
+        parent_session_id = request.data.get('parent_session_id')   # optional
 
         if not chapter_major or not chapter_middle or not problem_count:
             return Response(
@@ -212,12 +276,14 @@ class QuizSessionCreateView(APIView):
                     status=status.HTTP_404_NOT_FOUND
                 )
 
-            if parent_session.session_type == 'normal':
+            # diagnosis → review_1 → review_2 → 해설만
+            parent_type = parent_session.session_type
+            if parent_type in ('normal', 'diagnosis'):
                 session_type = 'review_1'
-            elif parent_session.session_type == 'review_1':
+            elif parent_type == 'review_1':
                 session_type = 'review_2'
-            elif parent_session.session_type == 'review_2':
-                # 3회차 초과 → 세션 생성 없이 해설만 반환
+            elif parent_type == 'review_2':
+                # 3회차 초과 → 해설 반환
                 wrong_results = SessionResult.objects.filter(
                     session=parent_session,
                     is_correct=False
@@ -225,11 +291,11 @@ class QuizSessionCreateView(APIView):
 
                 explanations = [
                     {
-                        'problem_id':     r.problem.id,
-                        'question_text':  r.problem.question_text,
-                        'user_answer':    r.student_answer,
-                        'correct_answer': r.problem.answer,
-                        'explanation':    r.problem.explanation,
+                        'problem_id':      r.problem.id,
+                        'question_text':   r.problem.question_text,
+                        'user_answer':     r.student_answer,
+                        'correct_answer':  r.problem.answer,
+                        'explanation':     r.problem.explanation,
                         'problem_subtype': r.problem.problem_subtype,
                     }
                     for r in wrong_results
@@ -245,15 +311,14 @@ class QuizSessionCreateView(APIView):
                 })
 
         base_filter = dict(
-            chapter_major=chapter_major,
-            chapter_middle=chapter_middle,
-            is_quizable=True,
+            chapter_major  = chapter_major,
+            chapter_middle = chapter_middle,
+            is_quizable    = True,
         )
         if chapter_minor:
             base_filter['chapter_minor'] = chapter_minor
 
         if session_type == 'normal':
-            # 첫 세션: 하 70% + 중 30%, 상 제외
             problems_low = list(Problem.objects.filter(**base_filter, difficulty='하'))
             problems_mid = list(Problem.objects.filter(**base_filter, difficulty='중'))
 
@@ -263,16 +328,14 @@ class QuizSessionCreateView(APIView):
                     status=status.HTTP_400_BAD_REQUEST
                 )
 
-            low_count = round(problem_count * 0.7)
-            mid_count = problem_count - low_count
-
+            low_count    = round(problem_count * 0.7)
+            mid_count    = problem_count - low_count
             selected_low = random.sample(problems_low, min(low_count, len(problems_low)))
             selected_mid = random.sample(problems_mid, min(mid_count, len(problems_mid)))
             selected     = selected_low + selected_mid
             random.shuffle(selected)
 
         elif session_type == 'review_1':
-            # 1차 오답 보완: 취약 subtype 유사 문제, 하 위주
             weak_subtypes = _get_weak_subtypes(parent_session)
             problems = list(Problem.objects.filter(
                 **base_filter,
@@ -286,7 +349,6 @@ class QuizSessionCreateView(APIView):
             selected     = random.sample(problems, actual_count)
 
         else:  # review_2
-            # 2차 오답 보완: 취약 subtype, 하 난이도만
             weak_subtypes = _get_weak_subtypes(parent_session)
             problems = list(Problem.objects.filter(
                 **base_filter,
@@ -299,7 +361,6 @@ class QuizSessionCreateView(APIView):
             actual_count = min(problem_count, len(problems))
             selected     = random.sample(problems, actual_count)
 
-        # 6. 문제가 0개면 에러
         if not selected:
             return Response(
                 {'status': 'error', 'message': '해당 범위에 출제 가능한 문제가 없습니다.'},
@@ -309,20 +370,20 @@ class QuizSessionCreateView(APIView):
         actual_count = len(selected)
 
         session = QuizSession.objects.create(
-            user=request.user,
-            chapter_major=chapter_major,
-            chapter_middle=chapter_middle,
-            chapter_minor=chapter_minor or '',
-            problem_count=actual_count,
-            session_type=session_type,
-            parent_session=parent_session,
+            user           = request.user,
+            chapter_major  = chapter_major,
+            chapter_middle = chapter_middle,
+            chapter_minor  = chapter_minor or '',
+            problem_count  = actual_count,
+            session_type   = session_type,
+            parent_session = parent_session,
         )
 
         for idx, problem in enumerate(selected):
             SessionProblem.objects.create(
-                session=session,
-                problem=problem,
-                order_index=idx + 1,
+                session     = session,
+                problem     = problem,
+                order_index = idx + 1,
             )
 
         return Response({
@@ -342,8 +403,8 @@ def _get_weak_subtypes(session):
     """세션의 오답 문제에서 취약 subtype 목록 추출"""
     from collections import Counter
     wrong_results = SessionResult.objects.filter(
-        session=session,
-        is_correct=False
+        session    = session,
+        is_correct = False,
     ).select_related('problem')
 
     counter = Counter(r.problem.problem_subtype for r in wrong_results)
@@ -375,25 +436,26 @@ class QuizSessionProblemsView(APIView):
         for sp in session_problems:
             p = sp.problem
             problems.append({
-                'order':                sp.order_index,
-                'problem_id':           p.id,
-                'difficulty':           p.difficulty,
-                'problem_subtype':      p.problem_subtype,
-                'question_text':        p.question_text,
+                'order':                 sp.order_index,
+                'problem_id':            p.id,
+                'difficulty':            p.difficulty,
+                'problem_subtype':       p.problem_subtype,
+                'question_text':         p.question_text,
                 'question_with_options': p.question_with_options,
-                'question_image_bbox':  p.question_image_bbox,
-                'option_type':          p.option_type,
-                'assets':               _serialize_assets(p, request),
-                'is_multi_answer':      p.is_multi_answer,
+                'question_image_bbox':   p.question_image_bbox,
+                'option_type':           p.option_type,
+                'assets':                _serialize_assets(p, request),
+                'is_multi_answer':       p.is_multi_answer,
             })
 
         return Response({
             'status': 'success',
             'data': {
-                'session_id': session.id,
-                'status':     session.status,
-                'total':      len(problems),
-                'problems':   problems,
+                'session_id':   session.id,
+                'session_type': session.session_type,
+                'status':       session.status,
+                'total':        len(problems),
+                'problems':     problems,
             }
         })
 
@@ -401,7 +463,6 @@ class QuizSessionProblemsView(APIView):
 class QuizSessionSubmitView(APIView):
 
     def post(self, request, session_id):
-        # 1. 세션 존재 여부 확인
         try:
             session = QuizSession.objects.get(id=session_id)
         except QuizSession.DoesNotExist:
@@ -410,21 +471,18 @@ class QuizSessionSubmitView(APIView):
                 status=status.HTTP_404_NOT_FOUND
             )
 
-        # 2. 본인 세션인지 확인
         if session.user != request.user:
             return Response(
                 {'status': 'error', 'message': '접근 권한이 없습니다.'},
                 status=status.HTTP_403_FORBIDDEN
             )
 
-        # 3. 이미 제출된 세션인지 확인
         if session.status == 'completed':
             return Response(
                 {'status': 'error', 'message': '이미 제출된 세션입니다.'},
                 status=status.HTTP_409_CONFLICT
             )
 
-        # 4. 답안 데이터 꺼내기
         answers = request.data.get('answers', [])
         if not answers:
             return Response(
@@ -432,31 +490,28 @@ class QuizSessionSubmitView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-        # 5. 이 세션에 출제된 문제 목록 (정답 확인용)
         session_problems = SessionProblem.objects.filter(
             session=session
         ).select_related('problem')
 
-        # problem_id → Problem 객체 딕셔너리로 변환 (빠른 조회용)
         problem_map = {sp.problem.id: sp.problem for sp in session_problems}
 
-        # 6. 채점
         results = []
-        score = 0
+        score   = 0
 
         for answer in answers:
             problem_id  = answer.get('problem_id')
             user_answer = answer.get('user_answer', '').strip()
 
-            # 세션에 없는 문제 ID가 들어오면 무시
             if problem_id not in problem_map:
                 continue
 
-            problem    = problem_map[problem_id]
+            problem       = problem_map[problem_id]
             correct_label = problem.grading_answer or problem.answer.strip()
+
             if problem.is_multi_answer:
-                submitted = set(s.strip() for s in user_answer.split(','))
-                correct   = set(correct_label.split(','))
+                submitted  = set(s.strip() for s in user_answer.split(','))
+                correct    = set(correct_label.split(','))
                 is_correct = (submitted == correct)
             else:
                 is_correct = (user_answer == correct_label)
@@ -464,12 +519,11 @@ class QuizSessionSubmitView(APIView):
             if is_correct:
                 score += 1
 
-            # SessionResult 저장
             SessionResult.objects.create(
-                session=session,
-                problem=problem,
-                student_answer=user_answer,
-                is_correct=is_correct,
+                session        = session,
+                problem        = problem,
+                student_answer = user_answer,
+                is_correct     = is_correct,
             )
 
             results.append({
@@ -482,35 +536,27 @@ class QuizSessionSubmitView(APIView):
                 'difficulty':      problem.difficulty,
             })
 
-        # 7. 세션 상태 업데이트
         session.status = 'completed'
         session.score  = score
         session.save()
 
-        # 8. SubtypeMastery 갱신 ← 추가
         _update_subtype_mastery(request.user, results)
-
-        # 9. 유저 통계 갱신 (streak, total_solved) ← 추가
         _update_user_stats(request.user, len(results))
 
         return Response({
             'status': 'success',
             'data': {
-                'session_id': session.id,
-                'score':      score,
-                'total':      len(results),
-                'accuracy':   round(score / len(results), 2) if results else 0,
-                'results':    results,
+                'session_id':   session.id,
+                'session_type': session.session_type,
+                'score':        score,
+                'total':        len(results),
+                'accuracy':     round(score / len(results), 2) if results else 0,
+                'results':      results,
             }
         })
 
 
 def _update_subtype_mastery(user, results):
-    """
-    채점 결과를 SubtypeMastery에 반영.
-    subtype별로 맞은 수 / 총 수를 누적하고 마스터 여부를 판정.
-    """
-    # 이번 세션 결과를 subtype별로 집계
     subtype_stats = defaultdict(lambda: {'correct': 0, 'total': 0})
     for r in results:
         subtype = r['problem_subtype']
@@ -519,9 +565,9 @@ def _update_subtype_mastery(user, results):
 
     for subtype, stats in subtype_stats.items():
         mastery, _ = SubtypeMastery.objects.get_or_create(
-            user=user,
-            problem_subtype=subtype,
-            defaults={'total_attempts': 0, 'correct_count': 0}
+            user            = user,
+            problem_subtype = subtype,
+            defaults        = {'total_attempts': 0, 'correct_count': 0}
         )
 
         prev_accuracy = (
@@ -529,14 +575,12 @@ def _update_subtype_mastery(user, results):
             if mastery.total_attempts > 0 else None
         )
 
-        # 누적값 업데이트
         mastery.total_attempts += stats['total']
         mastery.correct_count  += stats['correct']
 
-        new_accuracy = mastery.correct_count / mastery.total_attempts
+        new_accuracy  = mastery.correct_count / mastery.total_attempts
+        was_mastered  = mastery.mastered
 
-        # 마스터 판정: 누적 정답률 80% 이상 + 최소 3문제 이상 풀었을 때
-        was_mastered = mastery.mastered
         if not was_mastered and new_accuracy >= 0.8 and mastery.total_attempts >= 3:
             mastery.mastered        = True
             mastery.accuracy_before = round(prev_accuracy, 2) if prev_accuracy else None
@@ -546,27 +590,16 @@ def _update_subtype_mastery(user, results):
 
 
 def _update_user_stats(user, solved_count):
-    """
-    streak(연속 학습일)과 total_solved(누적 푼 문제 수) 업데이트.
-    오늘 이미 학습했으면 streak 중복 증가 방지.
-    """
     today = date.today()
-
-    # total_solved 누적
     user.total_solved += solved_count
 
-    # streak 계산
     if user.last_active_date is None:
-        # 첫 학습
         user.streak = 1
     elif user.last_active_date == today:
-        # 오늘 이미 학습함 → streak 변경 없음
         pass
     elif (today - user.last_active_date).days == 1:
-        # 어제 학습 → 연속
         user.streak += 1
     else:
-        # 하루 이상 공백 → streak 초기화
         user.streak = 1
 
     user.last_active_date = today
@@ -597,8 +630,8 @@ class QuizSessionWrongAnswersView(APIView):
             )
 
         wrong_results = SessionResult.objects.filter(
-            session=session,
-            is_correct=False
+            session    = session,
+            is_correct = False,
         ).select_related('problem').prefetch_related('problem__assets')
 
         wrong_problems = []
@@ -622,8 +655,9 @@ class QuizSessionWrongAnswersView(APIView):
         return Response({
             'status': 'success',
             'data': {
-                'session_id':    session.id,
-                'wrong_count':   len(wrong_problems),
+                'session_id':     session.id,
+                'session_type':   session.session_type,
+                'wrong_count':    len(wrong_problems),
                 'wrong_problems': wrong_problems,
             }
         })
@@ -652,28 +686,25 @@ class QuizSessionAnalysisView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-        results = SessionResult.objects.filter(
-            session=session
-        ).select_related('problem')
-
-        total = results.count()
-        score = results.filter(is_correct=True).count()
+        results = SessionResult.objects.filter(session=session).select_related('problem')
+        total   = results.count()
+        score   = results.filter(is_correct=True).count()
 
         wrong_results = results.filter(is_correct=False)
         if not wrong_results.exists():
             return Response({
                 'status': 'success',
                 'data': {
-                    'session_id':   session.id,
-                    'score':        score,
-                    'total':        total,
-                    'accuracy':     1.0,
-                    'all_correct':  True,
+                    'session_id':    session.id,
+                    'session_type':  session.session_type,
+                    'score':         score,
+                    'total':         total,
+                    'accuracy':      1.0,
+                    'all_correct':   True,
                     'weak_subtypes': [],
                 }
             })
 
-        # subtype별 집계 (최대 3개)
         subtype_stats = defaultdict(lambda: {'wrong': 0, 'total': 0})
         for r in results:
             subtype = r.problem.problem_subtype
@@ -681,13 +712,12 @@ class QuizSessionAnalysisView(APIView):
             if not r.is_correct:
                 subtype_stats[subtype]['wrong'] += 1
 
-        # 틀린 문제가 있는 subtype만 필터링 후 accuracy 낮은 순 정렬
         weak_list = [
             (subtype, stats)
             for subtype, stats in subtype_stats.items()
             if stats['wrong'] > 0
         ]
-        weak_list.sort(key=lambda x: x[1]['wrong'] / x[1]['total'], reverse=True)  # accuracy 낮은 순
+        weak_list.sort(key=lambda x: x[1]['wrong'] / x[1]['total'], reverse=True)
 
         top3 = weak_list[:3]
 
@@ -706,6 +736,7 @@ class QuizSessionAnalysisView(APIView):
             'status': 'success',
             'data': {
                 'session_id':    session.id,
+                'session_type':  session.session_type,
                 'score':         score,
                 'total':         total,
                 'accuracy':      round(score / total, 2),
@@ -718,10 +749,9 @@ class QuizSessionAnalysisView(APIView):
 class UserHistoryView(APIView):
 
     def get(self, request):
-        # 1. 기존 세션 목록 (최신순)
         sessions = QuizSession.objects.filter(
-            user=request.user,
-            status='completed'
+            user   = request.user,
+            status = 'completed',
         ).order_by('-created_at')
 
         session_list = []
@@ -740,10 +770,7 @@ class UserHistoryView(APIView):
                 'created_at':     session.created_at,
             })
 
-        # 2. 유형별 마스터 현황
-        masteries = SubtypeMastery.objects.filter(
-            user=request.user
-        ).order_by('-updated_at')
+        masteries = SubtypeMastery.objects.filter(user=request.user).order_by('-updated_at')
 
         subtype_mastery = []
         for m in masteries:
@@ -751,13 +778,10 @@ class UserHistoryView(APIView):
                 round(m.correct_count / m.total_attempts, 2)
                 if m.total_attempts > 0 else 0
             )
-
-            # 마스터한 유형 → 다음 도전 난이도 결정
             next_difficulty = None
             if m.mastered:
                 next_difficulty = '상' if accuracy >= 0.95 else '중'
 
-            # 레벨 판정
             if m.mastered:
                 level = '숙달'
             elif accuracy >= 0.6:
@@ -769,24 +793,22 @@ class UserHistoryView(APIView):
                 'problem_subtype':  m.problem_subtype,
                 'mastered':         m.mastered,
                 'level':            level,
-                'accuracy':         round(accuracy * 100),       # 퍼센트로
-                'accuracy_before':  round(m.accuracy_before * 100)
-                                    if m.accuracy_before else None,
-                'accuracy_after':   round(m.accuracy_after * 100)
-                                    if m.accuracy_after else None,
+                'accuracy':         round(accuracy * 100),
+                'accuracy_before':  round(m.accuracy_before * 100) if m.accuracy_before else None,
+                'accuracy_after':   round(m.accuracy_after  * 100) if m.accuracy_after  else None,
                 'total_attempts':   m.total_attempts,
-                'next_difficulty':  next_difficulty,             # 마스터 시에만
+                'next_difficulty':  next_difficulty,
                 'updated_at':       m.updated_at,
             })
 
         return Response({
             'status': 'success',
             'data': {
-                'sessions':       session_list,
+                'sessions':        session_list,
                 'subtype_mastery': subtype_mastery,
             }
         })
-    
+
 
 class ProblemDetailView(APIView):
 
@@ -857,58 +879,55 @@ class QuizSessionRecommendationsView(APIView):
         ]
 
         result = coaching_graph.invoke({
-            'session_id':      session.id,
-            'chapter_middle':  session.chapter_middle,
-            'session_type':    session.session_type,
-            'solved_ids':      solved_ids,
-            'wrong_problems':  wrong_problems,
-            'all_correct':     all_correct,
+            'session_id':     session.id,
+            'chapter_middle': session.chapter_middle,
+            'session_type':   session.session_type,
+            'solved_ids':     solved_ids,
+            'wrong_problems': wrong_problems,
+            'all_correct':    all_correct,
         })
 
         report = WeaknessReport.objects.create(
-            session=session,
-            all_correct=all_correct,
-            ai_feedback=result['ai_feedback'],
+            session     = session,
+            all_correct = all_correct,
+            ai_feedback = result['ai_feedback'],
         )
 
         if all_correct:
             for idx, rec in enumerate(result['harder_recommendations']):
                 Recommendation.objects.create(
-                    report=report,
-                    weak_subtype=None,
-                    problem_id=rec['problem_id'],
-                    order_index=idx + 1,
-                    reason=rec['reason'],
+                    report      = report,
+                    weak_subtype= None,
+                    problem_id  = rec['problem_id'],
+                    order_index = idx + 1,
+                    reason      = rec['reason'],
                 )
         else:
             for weak_data in result['weak_subtypes_data']:
                 weak = WeakSubtype.objects.create(
-                    report=report,
-                    problem_subtype=weak_data['problem_subtype'],
-                    wrong_count=weak_data['wrong_count'],
-                    total_count=next(
+                    report          = report,
+                    problem_subtype = weak_data['problem_subtype'],
+                    wrong_count     = weak_data['wrong_count'],
+                    total_count     = next(
                         wp['total_in_subtype'] for wp in wrong_problems
                         if wp['problem_subtype'] == weak_data['problem_subtype']
                     ),
-                    rank=weak_data['rank'],
+                    rank = weak_data['rank'],
                 )
                 for idx, pid in enumerate(weak_data['recommended_problem_ids']):
                     Recommendation.objects.create(
-                        report=report,
-                        weak_subtype=weak,
-                        problem_id=pid,
-                        order_index=idx + 1,
-                        reason=f"{weak_data['problem_subtype']} 유형 유사 문제",
+                        report      = report,
+                        weak_subtype= weak,
+                        problem_id  = pid,
+                        order_index = idx + 1,
+                        reason      = f"{weak_data['problem_subtype']} 유형 유사 문제",
                     )
 
         return Response({'status': 'success', 'data': _serialize_report(report)})
 
 
 def _serialize_report(report):
-    """WeaknessReport → 응답 딕셔너리 변환"""
-
     if report.all_correct:
-        # 전부 맞은 경우 — 기존과 동일
         recommendations = [
             {
                 'problem_id':      r.problem.id,
@@ -929,7 +948,6 @@ def _serialize_report(report):
             'recommendations': recommendations,
         }
 
-    # 취약 유형별 데이터
     weak_subtypes = []
     for weak in report.weak_subtypes.all():
         weak_subtypes.append({
@@ -939,19 +957,16 @@ def _serialize_report(report):
             'total_count':     weak.total_count,
         })
 
-    # 추천 문제 — 평탄한 리스트로 변환
-    all_recommendations = report.recommendations.select_related(
-        'problem', 'weak_subtype'
-    ).all()
+    all_recommendations = report.recommendations.select_related('problem', 'weak_subtype').all()
 
     recommendations = [
         {
             'problem_id':      r.problem.id,
             'difficulty':      r.problem.difficulty,
             'problem_subtype': r.problem.problem_subtype,
-            'chapter_major':   r.problem.chapter_major,    # ← review_1 세션 생성용
-            'chapter_middle':  r.problem.chapter_middle,   # ← review_1 세션 생성용
-            'chapter_minor':   r.problem.chapter_minor,    # ← review_1 세션 생성용
+            'chapter_major':   r.problem.chapter_major,
+            'chapter_middle':  r.problem.chapter_middle,
+            'chapter_minor':   r.problem.chapter_minor,
             'question_text':   r.problem.question_text,
             'reason':          r.reason,
             'rank':            r.weak_subtype.rank if r.weak_subtype else None,
@@ -962,41 +977,34 @@ def _serialize_report(report):
     return {
         'all_correct':     False,
         'ai_feedback':     report.ai_feedback,
-        'weak_subtypes':   weak_subtypes,   # 취약 유형 요약 (rank, subtype, 오답수)
-        'recommendations': recommendations, # 추천 문제 평탄 리스트
+        'weak_subtypes':   weak_subtypes,
+        'recommendations': recommendations,
     }
 
 
 class UserDashboardView(APIView):
 
     def get(self, request):
-        user = request.user
-
-        # 1. 주간 학습 활동 (월~일)
+        user  = request.user
         today = date.today()
-        monday = today - timedelta(days=today.weekday())
+
+        monday    = today - timedelta(days=today.weekday())
         week_days = [monday + timedelta(days=i) for i in range(7)]
 
-        # 이번 주에 completed 세션이 있는 날짜 목록
         active_dates = set(
             QuizSession.objects.filter(
-                user=user,
-                status='completed',
-                created_at__date__gte=monday,
-                created_at__date__lte=today,
+                user   = user,
+                status = 'completed',
+                created_at__date__gte = monday,
+                created_at__date__lte = today,
             ).values_list('created_at__date', flat=True)
         )
         weekly_activity = [d in active_dates for d in week_days]
 
-        # 2. 유형별 마스터 진척 (상위 3개)
         masteries = SubtypeMastery.objects.filter(user=user).order_by('-updated_at')[:3]
         subtype_mastery = []
         for m in masteries:
-            accuracy = (
-                m.correct_count / m.total_attempts
-                if m.total_attempts > 0 else 0
-            )
-            # 레벨 판정
+            accuracy = m.correct_count / m.total_attempts if m.total_attempts > 0 else 0
             if m.mastered:
                 level = '숙달'
             elif accuracy >= 0.6:
@@ -1011,20 +1019,18 @@ class UserDashboardView(APIView):
                 'mastered':        m.mastered,
             })
 
-        # 3. 최근 세션
         latest_session = QuizSession.objects.filter(
-            user=user,
-            status='completed'
+            user=user, status='completed'
         ).order_by('-created_at').first()
 
         latest_session_data = None
         if latest_session:
             latest_session_data = {
-                'session_id':      latest_session.id,
-                'chapter_middle':  latest_session.chapter_middle,
-                'accuracy':        round(latest_session.score / latest_session.problem_count, 2)
-                                   if latest_session.score is not None else None,
-                'created_at':      latest_session.created_at.strftime('%Y-%m-%d'),
+                'session_id':     latest_session.id,
+                'chapter_middle': latest_session.chapter_middle,
+                'accuracy':       round(latest_session.score / latest_session.problem_count, 2)
+                                  if latest_session.score is not None else None,
+                'created_at':     latest_session.created_at.strftime('%Y-%m-%d'),
             }
 
         return Response({
@@ -1037,7 +1043,7 @@ class UserDashboardView(APIView):
                 },
                 'streak':          user.streak,
                 'total_solved':    user.total_solved,
-                'weekly_activity': weekly_activity,   # [True, True, False, ...] 월~일
+                'weekly_activity': weekly_activity,
                 'subtype_mastery': subtype_mastery,
                 'latest_session':  latest_session_data,
             }
@@ -1049,27 +1055,22 @@ class TodayRecommendationView(APIView):
     def get(self, request):
         user = request.user
 
-        # 1. 보완 필요한 subtype 우선 (mastered=False, 오답률 높은 순)
         weak_masteries = SubtypeMastery.objects.filter(
-            user=user,
-            mastered=False,
-        ).order_by('correct_count')  # 정답 수 적은 순 = 취약한 순
+            user    = user,
+            mastered= False,
+        ).order_by('correct_count')
 
         if weak_masteries.exists():
-            # 가장 취약한 subtype
             target = weak_masteries.first()
             reason = f'{target.problem_subtype} 유형에서 아직 보완이 필요해요'
             mode   = 'review'
-
         else:
-            # 전부 마스터했으면 → 가장 최근 마스터한 유형의 난이도 업
             latest_mastered = SubtypeMastery.objects.filter(
-                user=user,
-                mastered=True,
+                user    = user,
+                mastered= True,
             ).order_by('-updated_at').first()
 
             if not latest_mastered:
-                # 아직 아무 기록 없음
                 return Response({
                     'status': 'success',
                     'data': {
@@ -1082,10 +1083,9 @@ class TodayRecommendationView(APIView):
             reason = f'{target.problem_subtype} 유형을 마스터했어요! 더 어려운 문제에 도전해봐요'
             mode   = 'challenge'
 
-        # 2. 해당 subtype의 문제가 속한 챕터 정보 조회
         sample_problem = Problem.objects.filter(
-            problem_subtype=target.problem_subtype,
-            is_quizable=True,
+            problem_subtype = target.problem_subtype,
+            is_quizable     = True,
         ).first()
 
         if not sample_problem:
@@ -1097,23 +1097,22 @@ class TodayRecommendationView(APIView):
                 }
             })
 
-        # 3. 추천 문제 미리보기 (최대 3개)
         if mode == 'review':
             preview_problems = Problem.objects.filter(
-                problem_subtype=target.problem_subtype,
-                is_quizable=True,
-                difficulty='하',
+                problem_subtype = target.problem_subtype,
+                is_quizable     = True,
+                difficulty      = '하',
             )[:3]
         else:
             accuracy = (
                 target.correct_count / target.total_attempts
                 if target.total_attempts > 0 else 0
             )
-            next_difficulty = '상' if accuracy >= 0.95 else '중'
+            next_difficulty  = '상' if accuracy >= 0.95 else '중'
             preview_problems = Problem.objects.filter(
-                problem_subtype=target.problem_subtype,
-                is_quizable=True,
-                difficulty=next_difficulty,
+                problem_subtype = target.problem_subtype,
+                is_quizable     = True,
+                difficulty      = next_difficulty,
             )[:3]
 
         problems_data = [
@@ -1126,7 +1125,6 @@ class TodayRecommendationView(APIView):
             for p in preview_problems
         ]
 
-        # 4. C6 퀴즈 만들기 프리필 데이터
         prefill = {
             'chapter_major':   sample_problem.chapter_major,
             'chapter_middle':  sample_problem.chapter_middle,
@@ -1139,7 +1137,7 @@ class TodayRecommendationView(APIView):
             'status': 'success',
             'data': {
                 'has_recommendation':  True,
-                'mode':                mode,           # 'review' | 'challenge'
+                'mode':                mode,
                 'recommended_subtype': target.problem_subtype,
                 'reason':              reason,
                 'problems':            problems_data,
@@ -1151,7 +1149,6 @@ class TodayRecommendationView(APIView):
 class QuizSessionChatView(APIView):
 
     def post(self, request, session_id):
-        # 1. 세션 확인
         try:
             session = QuizSession.objects.get(id=session_id)
         except QuizSession.DoesNotExist:
@@ -1166,7 +1163,6 @@ class QuizSessionChatView(APIView):
                 status=status.HTTP_403_FORBIDDEN
             )
 
-        # 2. 요청 데이터
         problem_id = request.data.get('problem_id')
         question   = request.data.get('question', '').strip()
 
@@ -1176,7 +1172,6 @@ class QuizSessionChatView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-        # 3. 문제 조회
         try:
             problem = Problem.objects.get(id=problem_id)
         except Problem.DoesNotExist:
@@ -1185,7 +1180,6 @@ class QuizSessionChatView(APIView):
                 status=status.HTTP_404_NOT_FOUND
             )
 
-        # 4. LLM 호출
         answer = _generate_chat_answer(problem, question)
 
         return Response({
@@ -1198,15 +1192,14 @@ class QuizSessionChatView(APIView):
 
 
 def _generate_chat_answer(problem, question):
-    """문제 해설 AI 챗봇 — 문제 컨텍스트 포함해서 LLM 호출"""
     client = OpenAI(
-        api_key=settings.GMS_KEY,
-        base_url=settings.GMS_URL
+        api_key  = settings.GMS_KEY,
+        base_url = settings.GMS_URL,
     )
 
     response = client.chat.completions.create(
-        model='gpt-4o-mini',
-        messages=[
+        model    = 'gpt-4o-mini',
+        messages = [
             {
                 'role': 'system',
                 'content': (
@@ -1226,6 +1219,6 @@ def _generate_chat_answer(problem, question):
                 )
             }
         ],
-        max_tokens=300,
+        max_tokens = 300,
     )
     return response.choices[0].message.content

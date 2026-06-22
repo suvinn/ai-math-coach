@@ -8,6 +8,9 @@ class User(AbstractUser):
     streak = models.IntegerField(default=0)
     last_active_date = models.DateField(null=True, blank=True)
     total_solved = models.IntegerField(default=0)
+    # 회원가입 시 입력한 현재 진도 — 빠른 진단 세션 자동 생성에 사용
+    current_chapter_major  = models.CharField(max_length=50, blank=True, default='')
+    current_chapter_middle = models.CharField(max_length=50, blank=True, default='')
 
     class Meta:
         db_table = 'user'
@@ -15,7 +18,7 @@ class User(AbstractUser):
 
 class Problem(models.Model):
     id = models.CharField(max_length=50, primary_key=True)
-    
+
     difficulty = models.CharField(max_length=5)
     chapter_major = models.CharField(max_length=50)
     chapter_middle = models.CharField(max_length=50)
@@ -61,13 +64,13 @@ class ProblemAsset(models.Model):
         max_length=30,
         help_text="원본 class_name 그대로 저장: 정답(이미지) / 오답(이미지) 등",
     )
-    image_path = models.CharField(max_length=500)  # 또는 ImageField로 바꿔도 됨
+    image_path = models.CharField(max_length=500)
     bbox_x1 = models.FloatField()
     bbox_y1 = models.FloatField()
     bbox_x2 = models.FloatField()
     bbox_y2 = models.FloatField()
     created_at = models.DateTimeField(auto_now_add=True)
- 
+
     class Meta:
         indexes = [models.Index(fields=["problem"])]
 
@@ -75,33 +78,34 @@ class ProblemAsset(models.Model):
 class QuizSession(models.Model):
     STATUS_CHOICES = [
         ('in_progress', 'In Progress'),
-        ('completed', 'Completed'),
+        ('completed',   'Completed'),
     ]
     SESSION_TYPE_CHOICES = [
-        ('normal',   '일반 세션'),
-        ('review_1', '1차 오답 보완'),
-        ('review_2', '2차 오답 보완'),
+        ('normal',    '일반 세션'),
+        ('diagnosis', '빠른 진단'),   # ← 신규: 회원가입 직후 자동 생성
+        ('review_1',  '1차 오답 보완'),
+        ('review_2',  '2차 오답 보완'),
     ]
 
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    chapter_major = models.CharField(max_length=50)
+    chapter_major  = models.CharField(max_length=50)
     chapter_middle = models.CharField(max_length=50)
-    chapter_minor = models.CharField(max_length=50, null=True, blank=True)
-    problem_count = models.IntegerField()
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='in_progress')
-    score = models.IntegerField(null=True, blank=True)
-    ai_feedback = models.TextField(null=True, blank=True)
-    created_at = models.DateTimeField(auto_now_add=True)
+    chapter_minor  = models.CharField(max_length=50, null=True, blank=True)
+    problem_count  = models.IntegerField()
+    status         = models.CharField(max_length=20, choices=STATUS_CHOICES, default='in_progress')
+    score          = models.IntegerField(null=True, blank=True)
+    ai_feedback    = models.TextField(null=True, blank=True)
+    created_at     = models.DateTimeField(auto_now_add=True)
     session_type   = models.CharField(
         max_length=20,
         choices=SESSION_TYPE_CHOICES,
-        default='normal'
+        default='normal',
     )
     parent_session = models.ForeignKey(
         'self',
         null=True, blank=True,
         on_delete=models.SET_NULL,
-        related_name='child_sessions'
+        related_name='child_sessions',
     )
 
     class Meta:
@@ -110,35 +114,33 @@ class QuizSession(models.Model):
 
 class SessionProblem(models.Model):
     """세션에 출제된 문제 목록 + 순서"""
-    session = models.ForeignKey(QuizSession, on_delete=models.CASCADE, related_name='session_problems')
-    problem = models.ForeignKey(Problem, on_delete=models.PROTECT)  # 문제는 삭제 방지
+    session  = models.ForeignKey(QuizSession, on_delete=models.CASCADE, related_name='session_problems')
+    problem  = models.ForeignKey(Problem, on_delete=models.PROTECT)
     order_index = models.IntegerField()
 
     class Meta:
         db_table = 'session_problem'
-        unique_together = ('session', 'order_index')  # 같은 세션에서 순서 중복 방지
+        unique_together = ('session', 'order_index')
 
 
 class SessionResult(models.Model):
     """제출 후 채점 결과"""
-    session = models.ForeignKey(QuizSession, on_delete=models.CASCADE, related_name='results')
-    problem = models.ForeignKey(Problem, on_delete=models.PROTECT)
+    session        = models.ForeignKey(QuizSession, on_delete=models.CASCADE, related_name='results')
+    problem        = models.ForeignKey(Problem, on_delete=models.PROTECT)
     student_answer = models.CharField(max_length=200)
-    is_correct = models.BooleanField()
+    is_correct     = models.BooleanField()
 
     class Meta:
         db_table = 'session_result'
-        unique_together = ('session', 'problem')  # 같은 세션에서 같은 문제 중복 방지
+        unique_together = ('session', 'problem')
 
 
 class WeaknessReport(models.Model):
     """세션당 1개 생성되는 분석 리포트"""
-    session = models.OneToOneField(
-        QuizSession, on_delete=models.CASCADE, related_name='weakness_report'
-    )
-    ai_feedback = models.TextField(null=True, blank=True)  # 세션 전체 피드백
-    all_correct = models.BooleanField(default=False)       # 전부 맞았을 때 True
-    created_at = models.DateTimeField(auto_now_add=True)
+    session     = models.OneToOneField(QuizSession, on_delete=models.CASCADE, related_name='weakness_report')
+    ai_feedback = models.TextField(null=True, blank=True)
+    all_correct = models.BooleanField(default=False)
+    created_at  = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         db_table = 'weakness_report'
@@ -146,13 +148,11 @@ class WeaknessReport(models.Model):
 
 class WeakSubtype(models.Model):
     """취약 유형 Top N (최대 3개)"""
-    report = models.ForeignKey(
-        WeaknessReport, on_delete=models.CASCADE, related_name='weak_subtypes'
-    )
+    report          = models.ForeignKey(WeaknessReport, on_delete=models.CASCADE, related_name='weak_subtypes')
     problem_subtype = models.CharField(max_length=100)
-    wrong_count = models.IntegerField()
-    total_count = models.IntegerField()
-    rank = models.IntegerField()   # 1 = 가장 취약
+    wrong_count     = models.IntegerField()
+    total_count     = models.IntegerField()
+    rank            = models.IntegerField()
 
     class Meta:
         db_table = 'weak_subtype'
@@ -161,17 +161,12 @@ class WeakSubtype(models.Model):
 
 
 class Recommendation(models.Model):
-    report = models.ForeignKey(
-        WeaknessReport, on_delete=models.CASCADE, related_name='recommendations'
-    )
-    weak_subtype = models.ForeignKey(
-        WeakSubtype, on_delete=models.CASCADE, related_name='recommendations',
-        null=True, blank=True   # all_correct일 때는 null
-    )
-    problem = models.ForeignKey(Problem, on_delete=models.PROTECT)
-    similarity_score = models.FloatField(null=True, blank=True)  # 난이도 추천은 null
-    order_index = models.IntegerField()
-    reason = models.CharField(max_length=200, null=True, blank=True)
+    report       = models.ForeignKey(WeaknessReport, on_delete=models.CASCADE, related_name='recommendations')
+    weak_subtype = models.ForeignKey(WeakSubtype, on_delete=models.CASCADE, related_name='recommendations', null=True, blank=True)
+    problem      = models.ForeignKey(Problem, on_delete=models.PROTECT)
+    similarity_score = models.FloatField(null=True, blank=True)
+    order_index  = models.IntegerField()
+    reason       = models.CharField(max_length=200, null=True, blank=True)
 
     class Meta:
         db_table = 'recommendation'
@@ -180,19 +175,15 @@ class Recommendation(models.Model):
 
 class SubtypeMastery(models.Model):
     """유저별 유형 마스터 현황 — submit 시마다 갱신"""
-    user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        related_name='subtype_masteries'
-    )
-    problem_subtype  = models.CharField(max_length=100)
-    mastered         = models.BooleanField(default=False)
-    accuracy_before  = models.FloatField(null=True, blank=True)  # 마스터 직전 정답률
-    accuracy_after   = models.FloatField(null=True, blank=True)  # 마스터 직후 정답률
-    total_attempts   = models.IntegerField(default=0)            # 해당 유형 총 출제 수
-    correct_count    = models.IntegerField(default=0)            # 해당 유형 총 정답 수
-    updated_at       = models.DateTimeField(auto_now=True)
+    user            = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='subtype_masteries')
+    problem_subtype = models.CharField(max_length=100)
+    mastered        = models.BooleanField(default=False)
+    accuracy_before = models.FloatField(null=True, blank=True)
+    accuracy_after  = models.FloatField(null=True, blank=True)
+    total_attempts  = models.IntegerField(default=0)
+    correct_count   = models.IntegerField(default=0)
+    updated_at      = models.DateTimeField(auto_now=True)
 
     class Meta:
         db_table = 'subtype_mastery'
-        unique_together = ('user', 'problem_subtype')  # 유저+유형 조합은 1개만
+        unique_together = ('user', 'problem_subtype')
