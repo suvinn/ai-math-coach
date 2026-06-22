@@ -1,6 +1,7 @@
 <!-- 📄 src/components/common/SidebarShell.vue -->
 <script setup>
-import { computed } from 'vue'
+import { computed, ref, onMounted, onUnmounted } from 'vue'
+import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import Logo from './Logo.vue'
 import WdsIcon from './WdsIcon.vue'
@@ -10,6 +11,7 @@ const props = defineProps({
   tab: { type: String, default: 'home' }, // home | learn | report | my
 })
 
+const router = useRouter()
 const auth = useAuthStore()
 
 const navItems = [
@@ -20,6 +22,23 @@ const navItems = [
 ]
 
 const initial = computed(() => (auth.user?.name || '학생').slice(0, 1))
+
+// 프로필 클릭 시 로그아웃 메뉴 토글 (바깥 클릭하면 닫힘)
+const profileMenuOpen = ref(false)
+function toggleProfileMenu() {
+  profileMenuOpen.value = !profileMenuOpen.value
+}
+function closeProfileMenu(e) {
+  if (!e.target.closest('.app-nav-profile-wrap')) profileMenuOpen.value = false
+}
+onMounted(() => document.addEventListener('click', closeProfileMenu))
+onUnmounted(() => document.removeEventListener('click', closeProfileMenu))
+
+async function handleLogout() {
+  profileMenuOpen.value = false
+  await auth.logout()
+  router.push('/login')
+}
 </script>
 
 <template>
@@ -47,12 +66,20 @@ const initial = computed(() => (auth.user?.name || '학생').slice(0, 1))
           </router-link>
         </nav>
       </div>
-      <button class="app-nav-profile">
-        <span class="avatar">{{ initial }}</span>
-        <span class="meta">
-          <div class="name">{{ auth.user?.name || '학생' }}</div>
-        </span>
-      </button>
+      <div class="app-nav-profile-wrap">
+        <div v-if="profileMenuOpen" class="app-nav-profile-menu">
+          <button class="app-nav-profile-menu-item" @click="handleLogout">
+            <WdsIcon name="close" :size="16" />
+            로그아웃
+          </button>
+        </div>
+        <button class="app-nav-profile" @click="toggleProfileMenu">
+          <span class="avatar">{{ initial }}</span>
+          <span class="meta">
+            <div class="name">{{ auth.user?.name || '학생' }}</div>
+          </span>
+        </button>
+      </div>
     </aside>
 
     <main class="app-main">

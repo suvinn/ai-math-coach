@@ -107,6 +107,26 @@
 .app-nav-item .ico { flex: none; display: flex; align-items: center; }
 
 /* 하단 프로필 행 — app-nav-scroll 바깥에 있어서 항상 그 자리에 보임 */
+.app-nav-profile-wrap { position: relative; flex: none; }
+.app-nav-profile-menu {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 0; right: 0;
+  background: var(--background-normal-normal);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12), inset 0 0 0 1px var(--line-normal-normal);
+  padding: 4px;
+  z-index: 10;
+}
+.app-nav-profile-menu-item {
+  display: flex; align-items: center; gap: 8px;
+  width: 100%; box-sizing: border-box;
+  padding: 9px 10px; border-radius: 8px;
+  border: 0; background: transparent; cursor: pointer; text-align: left;
+  color: var(--status-negative);
+  font: var(--weight-medium) 14px/1 var(--font-sans);
+}
+.app-nav-profile-menu-item:hover { background: var(--fill-alternative); }
 .app-nav-profile {
   display: flex; align-items: center; gap: 10px;
   padding: 10px 12px; border-radius: 12px;
