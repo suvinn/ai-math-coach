@@ -177,13 +177,14 @@ class ChapterProblemCountView(APIView):
 class QuizSessionCreateView(APIView):
 
     def post(self, request):
+        is_diagnosis      = request.data.get('mode') == 'diagnosis'
         chapter_major     = request.data.get('chapter_major')
         chapter_middle    = request.data.get('chapter_middle')
         chapter_minor     = request.data.get('chapter_minor')
         problem_count     = request.data.get('problem_count')
         parent_session_id = request.data.get('parent_session_id')  # optional
 
-        if not chapter_major or not chapter_middle or not problem_count:
+        if not is_diagnosis and (not chapter_major or not chapter_middle or not problem_count):
             return Response(
                 {'status': 'error', 'message': 'chapter_major, chapter_middle, problem_count는 필수입니다.'},
                 status=status.HTTP_400_BAD_REQUEST
@@ -198,6 +199,42 @@ class QuizSessionCreateView(APIView):
                 {'status': 'error', 'message': 'problem_count는 1 이상의 정수여야 합니다.'},
                 status=status.HTTP_400_BAD_REQUEST
             )
+
+        # 빠른 진단: 전체 단원에서 골고루 랜덤 추출, 단원 선택 없이 바로 시작
+        if is_diagnosis:
+            selected = _select_diagnosis_problems(problem_count)
+            if not selected:
+                return Response(
+                    {'status': 'error', 'message': '출제 가능한 문제가 없습니다.'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+
+            session = QuizSession.objects.create(
+                user=request.user,
+                chapter_major='전체 진단',
+                chapter_middle='전체 진단',
+                chapter_minor='',
+                problem_count=len(selected),
+                session_type='normal',
+            )
+            for idx, problem in enumerate(selected):
+                SessionProblem.objects.create(
+                    session=session,
+                    problem=problem,
+                    order_index=idx + 1,
+                )
+
+            return Response({
+                'status': 'success',
+                'data': {
+                    'session_id':      session.id,
+                    'session_type':    session.session_type,
+                    'status':          session.status,
+                    'requested_count': problem_count,
+                    'actual_count':    len(selected),
+                    'created_at':      session.created_at,
+                }
+            }, status=status.HTTP_201_CREATED)
 
         session_type   = 'normal'
         parent_session = None
@@ -338,6 +375,44 @@ class QuizSessionCreateView(APIView):
                 'created_at':      session.created_at,
             }
         }, status=status.HTTP_201_CREATED)
+
+
+def _select_diagnosis_problems(total_count):
+    """대단원별로 골고루 랜덤 추출 (특정 단원에 쏠리지 않게). 단원 내 난이도는 가리지 않음."""
+    majors = list(
+        Problem.objects.filter(is_quizable=True)
+        .values_list('chapter_major', flat=True)
+        .distinct()
+    )
+    if not majors:
+        return []
+    random.shuffle(majors)
+
+    n = len(majors)
+    base = total_count // n
+    remainder = total_count % n
+    quotas = {m: base + (1 if i < remainder else 0) for i, m in enumerate(majors)}
+
+    pools = {m: list(Problem.objects.filter(is_quizable=True, chapter_major=m)) for m in majors}
+
+    selected = []
+    shortfall = 0
+    for m in majors:
+        pool = pools[m]
+        take = min(quotas[m], len(pool))
+        if take:
+            selected.extend(random.sample(pool, take))
+        shortfall += quotas[m] - take
+
+    if shortfall > 0:
+        chosen_ids = {p.id for p in selected}
+        remaining_pool = [p for m in majors for p in pools[m] if p.id not in chosen_ids]
+        extra = min(shortfall, len(remaining_pool))
+        if extra:
+            selected.extend(random.sample(remaining_pool, extra))
+
+    random.shuffle(selected)
+    return selected
 
 
 def _get_weak_subtypes(session):

@@ -14,7 +14,7 @@ const router = useRouter()
 const quiz = useQuizStore()
 const { toast, showToast } = useToast()
 
-// mode: diag(빠른 진단) | today(오늘의 추천) | undefined(학습 탭)
+// mode: today(오늘의 추천) | undefined(학습 탭)
 const mode = route.query.mode
 
 const chapters = ref([])          // [{ chapter_major, chapter_middles: [{ chapter_middle, chapter_minors }] }]
@@ -82,7 +82,7 @@ const canStart = computed(
   () => selectedMajor.value && selectedMiddle.value && !creating.value,
 )
 
-const title = computed(() => (mode === 'diag' ? '빠른 진단' : '퀴즈 설정'))
+const title = '퀴즈 설정'
 
 async function start() {
   if (!canStart.value) return

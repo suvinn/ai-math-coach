@@ -4,14 +4,20 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import api, { unwrap } from '@/api'
 import { useAuthStore } from '@/stores/auth'
+import { useQuizStore } from '@/stores/quiz'
+import { useToast } from '@/composables/useToast'
 import SidebarShell from '@/components/common/SidebarShell.vue'
 import WdsIcon from '@/components/common/WdsIcon.vue'
 import WdsButton from '@/components/common/WdsButton.vue'
+import Toast from '@/components/common/Toast.vue'
 
 const router = useRouter()
 const auth = useAuthStore()
+const quiz = useQuizStore()
+const { toast, showToast } = useToast()
 
 const userName = ref(auth.user?.name || '')
+const diagnosing = ref(false)
 
 onMounted(async () => {
   // 대시보드에서 유저 이름 가져오기 (이미 있으면 그대로 사용)
@@ -23,9 +29,22 @@ onMounted(async () => {
   }
 })
 
-// 빠른 진단 시작 → 퀴즈 설정으로 (진단 모드)
-function startDiagnosis() {
-  router.push({ path: '/quiz/setup', query: { mode: 'diag' } })
+// 빠른 진단 — 단원 선택 없이 전체 단원에서 골고루 20문제를 뽑아 바로 풀이 화면으로
+async function startDiagnosis() {
+  if (diagnosing.value) return
+  diagnosing.value = true
+  try {
+    const res = await quiz.createAndLoad({ mode: 'diagnosis', problem_count: 20 })
+    if (!res.problems.length) {
+      showToast('출제 가능한 문제가 없어요', 'negative', 'circle-exclamation')
+      diagnosing.value = false
+      return
+    }
+    router.push('/quiz/play')
+  } catch (e) {
+    showToast('진단을 시작하지 못했어요', 'negative', 'circle-exclamation')
+    diagnosing.value = false
+  }
 }
 
 // 오늘의 추천 학습 → 퀴즈 설정으로 (추천 prefill 모드)
@@ -43,6 +62,8 @@ function goTodayRec() {
       </button>
     </template>
 
+    <Toast :toast="toast" />
+
     <div class="page">
       <div class="page-head">
         <div class="wds-body-2 assistive">안녕하세요, {{ userName || '학생' }}님</div>
@@ -54,17 +75,22 @@ function goTodayRec() {
       <div class="stack-16">
         <!-- 진단 추천 — 가장 강조 -->
         <div class="diag-card">
-          <div class="diag-glow" />
           <div class="diag-card-text">
             <div class="row" style="gap: 6px; margin-bottom: 10px">
               <WdsIcon name="sparkle" :size="18" color="#fff" />
               <span class="diag-eyebrow">AI 빠른 진단</span>
             </div>
-            <div class="diag-title">10문제로 내 취약 유형 찾기</div>
-            <div class="wds-body-2 diag-sub">5분이면 충분해요</div>
+            <div class="diag-title">20문제로 내 취약 유형 찾기</div>
+            <div class="wds-body-2 diag-sub">전체 단원에서 골고루 출제돼요</div>
           </div>
-          <WdsButton variant="primary" size="large" icon-right="arrow-right" @click="startDiagnosis">
-            진단 시작하기
+          <WdsButton
+            variant="primary"
+            size="large"
+            icon-right="arrow-right"
+            :disabled="diagnosing"
+            @click="startDiagnosis"
+          >
+            {{ diagnosing ? '준비 중…' : '진단 시작하기' }}
           </WdsButton>
         </div>
 
@@ -104,15 +130,6 @@ function goTodayRec() {
   justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
-}
-.diag-glow {
-  position: absolute;
-  right: -40px;
-  top: -40px;
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  background: rgba(91, 132, 255, 0.25);
 }
 .diag-card-text { position: relative; }
 .diag-eyebrow {
