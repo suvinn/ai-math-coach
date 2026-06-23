@@ -1,0 +1,96 @@
+/* 📄 src/assets/tokens.css
+   원티드 디자인 시스템(WDS) 시맨틱 토큰을 자체 정의한 파일.
+   프로토타입은 _ds/tokens/*.css 를 로드했지만 비공개 패키지라,
+   app.css가 실제 참조하는 토큰만 표준값으로 채워 넣음. (라이트 테마)            */
+
+:root {
+  /* ── 폰트 ── */
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ── 라벨(텍스트) ── */
+  --label-normal: #2b2d36;        /* 본문 기본 */
+  --label-alternative: #5c5f6b;   /* 보조 텍스트 */
+  --label-assistive: #9296a1;     /* 약한 텍스트 / 비활성 */
+
+  /* ── 배경 ── */
+  --background-normal-normal: #ffffff;
+  --background-normal-alternative: #f7f8fa;
+
+  /* ── fill (옅은 채움 면) ── */
+  --fill-normal: #f1f2f4;
+  --fill-alternative: #f7f8fa;
+
+  /* ── line (경계선) ── */
+  --line-normal-normal: rgba(0, 0, 0, 0.08);
+  --line-normal-alternative: rgba(0, 0, 0, 0.05);
+  --line-normal-strong: rgba(0, 0, 0, 0.16);
+
+  /* ── primary (원티드 블루) ── */
+  --primary-normal: #3366ff;
+  --primary-strong: #2456e6;
+
+  /* ── 상태 색 ── */
+  --status-positive: #00c471;     /* 정답 / 성공 */
+  --status-negative: #f5495d;     /* 오답 / 실패 */
+  --status-cautionary: #ff9500;   /* 주의 */
+
+  /* ── 색상 스케일 (옅은 배경용) ── */
+  --blue-99: #f0f4ff;
+  --blue-95: #dde7ff;
+  --blue-90: #c9d8ff;
+  --green-99: #e9faf2;
+  --green-90: #bff0d8;
+  --red-99: #fef0f1;
+  --red-90: #fcd2d7;
+  --orange-99: #fff4e5;
+  --orange-90: #ffdfb0;
+  --orange-50: #ff9500;
+
+  /* ── 모서리 ── */
+  --radius-full: 9999px;
+
+  /* ── 이징 ── */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ── 앱 강조색 별칭 (App.vue에서 덮어쓸 수 있음) ── */
+  --suql-accent: var(--primary-normal);
+  --suql-accent-strong: var(--primary-strong);
+}
+
+/* ── WDS 타이포그래피 클래스 ──
+   프로토타입이 쓰던 WDS 타이포 유틸. 표준 스케일로 정의.        */
+.wds-headline-1 {
+  font: var(--weight-bold) 24px/1.4 var(--font-sans);
+  letter-spacing: -0.02em;
+}
+.wds-headline-2 {
+  font: var(--weight-bold) 20px/1.4 var(--font-sans);
+  letter-spacing: -0.02em;
+}
+.wds-label-1 {
+  font: var(--weight-medium) 16px/1.5 var(--font-sans);
+  letter-spacing: -0.01em;
+}
+.wds-label-2 {
+  font: var(--weight-medium) 14px/1.5 var(--font-sans);
+  letter-spacing: -0.01em;
+}
+.wds-body-2 {
+  font: var(--weight-regular) 14px/1.6 var(--font-sans);
+  letter-spacing: -0.01em;
+}
+.wds-caption-1 {
+  font: var(--weight-medium) 12px/1.4 var(--font-sans);
+  letter-spacing: 0;
+}
+.wds-caption-2 {
+  font: var(--weight-regular) 11px/1.4 var(--font-sans);
+  letter-spacing: 0;
+}

@@ -367,6 +367,46 @@ class QuizSessionCreateView(APIView):
                 }
             }, status=status.HTTP_201_CREATED)
 
+        # 보완 풀이: AI 코칭이 추천한 문제 id 그대로 세션 구성 (단원 필터 없이, 순서 유지)
+        if problem_ids:
+            pool = Problem.objects.filter(id__in=problem_ids, is_quizable=True)
+            by_id = {p.id: p for p in pool}
+            selected = [by_id[pid] for pid in problem_ids if pid in by_id]
+
+            if not selected:
+                return Response(
+                    {'status': 'error', 'message': '추천된 문제를 찾을 수 없습니다.'},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+
+            session = QuizSession.objects.create(
+                user=request.user,
+                chapter_major=parent_session.chapter_major,
+                chapter_middle=parent_session.chapter_middle,
+                chapter_minor=parent_session.chapter_minor or '',
+                problem_count=len(selected),
+                session_type=session_type,
+                parent_session=parent_session,
+            )
+            for idx, problem in enumerate(selected):
+                SessionProblem.objects.create(
+                    session=session,
+                    problem=problem,
+                    order_index=idx + 1,
+                )
+
+            return Response({
+                'status': 'success',
+                'data': {
+                    'session_id':      session.id,
+                    'session_type':    session.session_type,
+                    'status':          session.status,
+                    'requested_count': len(problem_ids),
+                    'actual_count':    len(selected),
+                    'created_at':      session.created_at,
+                }
+            }, status=status.HTTP_201_CREATED)
+
         base_filter = dict(
             chapter_major=chapter_major,
             chapter_middle=chapter_middle,

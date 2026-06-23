@@ -1,0 +1,238 @@
+/* 📄 src/assets/styles/shell.css
+   수클 — 데스크톱 웹 셸 레이아웃
+   기존 app.css(DS 토큰 + 콘텐츠 스타일) 위에 얹는 레이아웃 레이어.
+   main.js 등에서 app.css 다음에 import 한다.
+   - SidebarShell : 전역 상단바 + 좌측 사이드바 + 메인 (홈/이력/마스터/결과/코칭)
+   - FocusShell   : 상단 슬림바 + 좁은 컬럼 + 하단 CTA (문제 풀이)
+   - AuthShell    : 가운데 정렬 카드 (로그인/회원가입)
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --sidebar-w: 240px;
+  --sidebar-w-rail: 68px;
+  --topbar-h: 56px;
+  --page-max: 1120px;
+  --page-max-narrow: 720px;
+  --shell-bp: 960px; /* 이 폭 미만이면 사이드바 → 아이콘 레일 */
+}
+
+/* word-break는 폰 프레임(.ph)에서 콘텐츠 컨테이너로 승계 */
+.app-main,
+.focus-body,
+.auth-shell { word-break: keep-all; line-break: strict; }
+
+/* ── SidebarShell ────────────────────────────────────────────── */
+.app-shell {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  grid-template-rows: var(--topbar-h) 1fr;
+  grid-template-areas:
+    "topbar  topbar"
+    "sidebar main";
+  min-height: 100vh;
+  background: var(--background-normal-normal);
+  color: var(--label-normal);
+  font-family: var(--font-sans);
+}
+
+/* 전역 상단바 */
+.app-topbar {
+  grid-area: topbar;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px;
+  background: var(--background-normal-normal);
+  box-shadow: inset 0 -1px 0 var(--line-normal-normal);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+.app-topbar .brand {
+  display: flex; align-items: center; gap: 8px;
+  font: var(--weight-bold) 18px/1 var(--font-sans);
+  letter-spacing: -0.01em;
+}
+.app-topbar .spacer { flex: 1; }
+.app-topbar .actions { display: flex; align-items: center; gap: 4px; }
+.app-iconbtn {
+  width: 40px; height: 40px; border-radius: var(--radius-full);
+  display: flex; align-items: center; justify-content: center;
+  border: 0; background: transparent; color: var(--label-normal); cursor: pointer;
+  position: relative;
+}
+.app-iconbtn:hover { background: var(--fill-alternative); }
+.app-iconbtn .dot {
+  position: absolute; top: 9px; right: 10px;
+  width: 7px; height: 7px; border-radius: 4px;
+  background: var(--status-negative);
+  box-shadow: 0 0 0 2px var(--background-normal-normal);
+}
+
+/* 사이드바 — 스크롤 영역(app-nav-scroll)과 항상 보이는 하단 프로필을 구조적으로 분리.
+   (프로필을 sticky로 띄우는 방식은 flex 스크롤 컨테이너 안에서 불안정해서 분리함) */
+.app-sidebar {
+  grid-area: sidebar;
+  display: flex; flex-direction: column;
+  padding: 16px 12px;
+  gap: 4px;
+  background: var(--background-normal-normal);
+  box-shadow: inset -1px 0 0 var(--line-normal-normal);
+  position: sticky;
+  top: var(--topbar-h);
+  align-self: start;
+  height: calc(100vh - var(--topbar-h));
+  box-sizing: border-box;
+}
+.app-nav-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+.app-nav { display: flex; flex-direction: column; gap: 2px; }
+.app-nav-item {
+  display: flex; align-items: center; gap: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  border: 0; background: transparent;
+  border-radius: 10px;
+  color: var(--label-alternative);
+  font: var(--weight-medium) 15px/1 var(--font-sans);
+  text-align: left; cursor: pointer; text-decoration: none;
+  transition: background .12s var(--ease-standard), color .12s var(--ease-standard);
+}
+.app-nav-item:hover { background: var(--fill-alternative); color: var(--label-normal); }
+.app-nav-item[data-active="true"] { background: var(--blue-99); color: var(--suql-accent); }
+.app-nav-item .ico { flex: none; display: flex; align-items: center; }
+
+/* 하단 프로필 행 — app-nav-scroll 바깥에 있어서 항상 그 자리에 보임 */
+.app-nav-profile-wrap { position: relative; flex: none; }
+.app-nav-profile-menu {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 0; right: 0;
+  background: var(--background-normal-normal);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12), inset 0 0 0 1px var(--line-normal-normal);
+  padding: 4px;
+  z-index: 10;
+}
+.app-nav-profile-menu-item {
+  display: flex; align-items: center; gap: 8px;
+  width: 100%; box-sizing: border-box;
+  padding: 9px 10px; border-radius: 8px;
+  border: 0; background: transparent; cursor: pointer; text-align: left;
+  color: var(--status-negative);
+  font: var(--weight-medium) 14px/1 var(--font-sans);
+}
+.app-nav-profile-menu-item:hover { background: var(--fill-alternative); }
+.app-nav-profile {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px; border-radius: 12px;
+  box-sizing: border-box;
+  border: 0; background: var(--background-normal-normal); cursor: pointer; width: 100%; text-align: left;
+  flex: none;
+}
+.app-nav-profile:hover { background: var(--fill-alternative); }
+.app-nav-profile .avatar {
+  width: 34px; height: 34px; border-radius: var(--radius-full); flex: none;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--blue-95); color: var(--suql-accent);
+  font: var(--weight-bold) 13px/1 var(--font-sans);
+}
+.app-nav-profile .meta { min-width: 0; }
+.app-nav-profile .name {
+  font: var(--weight-semibold) 14px/1.2 var(--font-sans);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+/* 메인 */
+.app-main { grid-area: main; min-width: 0; overflow-x: hidden; }
+
+/* ── 공통 페이지 컨테이너 ─────────────────────────────────────── */
+.page {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 28px 32px 64px;
+}
+.page--narrow { max-width: var(--page-max-narrow); }
+.page--wide   { max-width: var(--page-max); }
+
+.page-head { margin-bottom: 24px; }
+.page-head .title {
+  font: var(--weight-bold) 24px/1.3 var(--font-sans); letter-spacing: -0.02em;
+}
+.page-head .sub { color: var(--label-alternative); margin-top: 4px; }
+
+/* auto-fit 카드 그리드 (대시보드/추천/이력) */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+.card-grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+/* ── FocusShell (문제 풀이 전용) ──────────────────────────────── */
+.focus-shell {
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  background: var(--background-normal-normal);
+  color: var(--label-normal);
+  font-family: var(--font-sans);
+}
+.focus-topbar {
+  flex: none; height: var(--topbar-h);
+  display: flex; align-items: center; gap: 16px;
+  padding: 0 20px;
+  box-shadow: inset 0 -1px 0 var(--line-normal-normal);
+}
+.focus-topbar .back {
+  width: 40px; height: 40px; border-radius: var(--radius-full);
+  display: flex; align-items: center; justify-content: center;
+  border: 0; background: transparent; color: var(--label-normal); cursor: pointer; flex: none;
+}
+.focus-topbar .back:hover { background: var(--fill-alternative); }
+.focus-topbar .title { font: var(--weight-bold) 16px/1 var(--font-sans); flex: none; }
+.focus-topbar .prog { flex: 1; max-width: 520px; } /* app.css의 .prog 재사용 */
+.focus-topbar .count { font: var(--weight-medium) 14px/1 var(--font-sans); color: var(--label-assistive); flex: none; }
+
+.focus-body { flex: 1; overflow-y: auto; }
+.focus-body .page { padding-top: 24px; }
+
+.focus-foot {
+  flex: none;
+  box-shadow: inset 0 1px 0 var(--line-normal-normal);
+  background: var(--background-normal-normal);
+}
+.focus-foot .page {
+  display: flex; flex-direction: column; gap: 8px;
+  padding-top: 14px; padding-bottom: 14px;
+}
+
+/* ── AuthShell (로그인/회원가입) ──────────────────────────────── */
+.auth-shell {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+  background: var(--background-normal-alternative);
+  font-family: var(--font-sans);
+}
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ── 반응형: 좁아지면 사이드바를 아이콘 레일로 ───────────────── */
+@media (max-width: 960px) {
+  .app-shell { grid-template-columns: var(--sidebar-w-rail) 1fr; }
+  .app-nav-item { justify-content: center; gap: 0; padding: 12px 0; }
+  .app-nav-item .label,
+  .app-nav-profile .meta,
+  .app-topbar .brand .label { display: none; }
+  .app-nav-profile { justify-content: center; padding: 10px 0; }
+  .page { padding-left: 20px; padding-right: 20px; }
+}
