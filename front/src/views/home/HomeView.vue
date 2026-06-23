@@ -10,6 +10,7 @@ import SidebarShell from '@/components/common/SidebarShell.vue'
 import WdsIcon from '@/components/common/WdsIcon.vue'
 import WdsButton from '@/components/common/WdsButton.vue'
 import Toast from '@/components/common/Toast.vue'
+import ReviewResumeBanner from '@/components/review/ReviewResumeBanner.vue'
 
 const router = useRouter()
 const auth = useAuthStore()
@@ -105,6 +106,9 @@ function goTodayRec() {
           </div>
           <WdsIcon name="chevron-right" :size="20" color="var(--label-assistive)" />
         </button>
+
+        <!-- 이어하기 배너 — localStorage에 저장된 경우에만 표시 -->
+        <ReviewResumeBanner />
       </div>
     </div>
   </SidebarShell>
