@@ -1,6 +1,6 @@
 <!-- 📄 src/views/my/HistoryView.vue -->
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import api, { unwrap } from '@/api'
 import SidebarShell from '@/components/common/SidebarShell.vue'
 import WdsIcon from '@/components/common/WdsIcon.vue'
@@ -14,10 +14,59 @@ const SESSION_TYPE_LABEL = {
   review_2: '보완 2차',
 }
 
-// created_at은 ISO datetime 문자열로 내려오므로 날짜만 잘라서 표시
 function formatDate(iso) {
   return iso ? iso.slice(0, 10) : ''
 }
+
+// 필터 상태
+const selectedMajor = ref(null)  // null = 전체
+const selectedMiddle = ref(null)
+
+// 대단원 목록 (중복 제거, 오름차순)
+const majorList = computed(() => {
+  if (!data.value) return []
+  const set = new Set(data.value.subtype_mastery.map(m => m.chapter_major).filter(Boolean))
+  return [...set].sort()
+})
+
+// 선택된 대단원 기준 소단원 목록
+const middleList = computed(() => {
+  if (!data.value) return []
+  const set = new Set(
+    data.value.subtype_mastery
+      .filter(m => !selectedMajor.value || m.chapter_major === selectedMajor.value)
+      .map(m => m.chapter_middle)
+      .filter(Boolean)
+  )
+  return [...set].sort()
+})
+
+// 대단원 선택 시 소단원 초기화
+function selectMajor(major) {
+  selectedMajor.value = major
+  selectedMiddle.value = null
+}
+
+// 필터 + 정렬 적용된 목록
+const filteredMastery = computed(() => {
+  if (!data.value) return []
+  return data.value.subtype_mastery
+    .filter(m => {
+      if (selectedMajor.value && m.chapter_major !== selectedMajor.value) return false
+      if (selectedMiddle.value && m.chapter_middle !== selectedMiddle.value) return false
+      return true
+    })
+    .slice()
+    .sort((a, b) => {
+      const ma = a.chapter_major || ''
+      const mb = b.chapter_major || ''
+      if (ma !== mb) return ma.localeCompare(mb, 'ko')
+      const ca = a.chapter_middle || ''
+      const cb = b.chapter_middle || ''
+      if (ca !== cb) return ca.localeCompare(cb, 'ko')
+      return (a.problem_subtype || '').localeCompare(b.problem_subtype || '', 'ko')
+    })
+})
 
 onMounted(async () => {
   try {
@@ -41,26 +90,50 @@ onMounted(async () => {
         <div class="stack-12" style="margin-bottom: 32px">
           <div class="wds-label-1" style="font-weight: 700">유형별 마스터 현황</div>
           <div v-if="!data.subtype_mastery.length" class="assistive wds-body-2">아직 학습 기록이 없어요.</div>
-          <div v-else class="card-grid cols-3">
-            <div v-for="m in data.subtype_mastery" :key="m.problem_subtype" class="mastery-card">
-              <span class="master-badge" :data-on="m.mastered">
-                <WdsIcon v-if="m.mastered" name="crown" :size="13" color="#fff" />
-                {{ m.level }}
-              </span>
-              <div class="wds-label-1" style="font-weight: 700; margin-top: 10px">{{ m.problem_subtype }}</div>
-              <div class="row" style="margin-top: 6px; gap: 8px">
-                <template v-if="m.accuracy_before != null && m.accuracy_after != null">
-                  <span class="rate-jump">
-                    <span class="was">{{ m.accuracy_before }}%</span>
-                    <WdsIcon name="arrow-right" :size="14" color="var(--label-assistive)" />
-                    <span class="now">{{ m.accuracy_after }}%</span>
-                  </span>
-                </template>
-                <span v-else class="wds-body-2 assistive">정답률 {{ m.accuracy }}%</span>
-              </div>
-              <div class="wds-caption-2 assistive" style="margin-top: 6px">{{ m.total_attempts }}문제 시도</div>
+          <template v-else>
+            <!-- 대단원 필터 -->
+            <div class="filter-row">
+              <button class="filter-chip" :data-active="selectedMajor === null" @click="selectMajor(null)">전체</button>
+              <button
+                v-for="major in majorList" :key="major"
+                class="filter-chip" :data-active="selectedMajor === major"
+                @click="selectMajor(major)">{{ major }}</button>
             </div>
-          </div>
+            <!-- 소단원 필터 (대단원 선택 시에만 표시) -->
+            <div v-if="selectedMajor" class="filter-row">
+              <button class="filter-chip filter-chip--sub" :data-active="selectedMiddle === null" @click="selectedMiddle = null">전체</button>
+              <button
+                v-for="middle in middleList" :key="middle"
+                class="filter-chip filter-chip--sub" :data-active="selectedMiddle === middle"
+                @click="selectedMiddle = middle">{{ middle }}</button>
+            </div>
+            <!-- 카드 목록 -->
+            <div class="card-grid cols-3">
+              <div v-for="m in filteredMastery" :key="m.problem_subtype" class="mastery-card">
+                <div class="between" style="align-items: center">
+                  <span class="master-badge" :data-on="m.mastered" :data-level="m.level">
+                    <WdsIcon v-if="m.level === '숙달'" name="crown" :size="13" color="currentColor" />
+                    <WdsIcon v-else-if="m.level === '연습 중'" name="fire" :size="13" color="currentColor" />
+                    <WdsIcon v-else name="bulb" :size="13" color="currentColor" />
+                    {{ m.level }}
+                  </span>
+                  <template v-if="m.accuracy_before != null && m.accuracy_after != null">
+                    <span class="rate-jump">
+                      <span class="was">{{ m.accuracy_before }}%</span>
+                      <WdsIcon name="arrow-right" :size="14" color="var(--label-assistive)" />
+                      <span class="now">{{ m.accuracy_after }}%</span>
+                    </span>
+                  </template>
+                  <span v-else class="wds-caption-1" style="color: var(--suql-accent); font-weight: 600">정답률 {{ m.accuracy }}%</span>
+                </div>
+                <div class="wds-caption-1 assistive" style="margin-top: 10px">
+                  {{ m.chapter_major }}<template v-if="m.chapter_middle"> › {{ m.chapter_middle }}</template>
+                </div>
+                <div class="wds-label-1" style="font-weight: 700; margin-top: 2px">{{ m.problem_subtype }}</div>
+                <div class="wds-caption-1 assistive" style="margin-top: 6px">{{ m.total_attempts }} / {{ m.total_in_subtype }}문제 시도</div>
+              </div>
+            </div>
+          </template>
         </div>
 
         <div class="stack-12">
@@ -108,5 +181,36 @@ onMounted(async () => {
   font: var(--weight-bold) 15px/1 var(--font-sans);
   color: var(--suql-accent);
   flex: none;
+}
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filter-chip {
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  border: 0;
+  background: var(--fill-alternative);
+  color: var(--label-alternative);
+  font: var(--weight-medium) 13px/1 var(--font-sans);
+  cursor: pointer;
+  transition: background .12s, color .12s;
+}
+.filter-chip:hover {
+  background: var(--fill-normal);
+}
+.filter-chip[data-active="true"] {
+  background: var(--suql-accent);
+  color: #fff;
+}
+.filter-chip--sub {
+  font-size: 12px;
+  padding: 5px 12px;
+  background: var(--background-normal-alternative);
+}
+.filter-chip--sub[data-active="true"] {
+  background: var(--blue-90);
+  color: var(--suql-accent);
 }
 </style>
