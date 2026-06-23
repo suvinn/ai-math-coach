@@ -12,10 +12,8 @@ const routes = [
   { path: '/quiz/result', name: 'quiz-result',component: () => import('@/views/quiz/QuizResultView.vue'),   meta: { shell: 'web' } },
   { path: '/quiz/coaching',name:'quiz-coaching',component:() => import('@/views/quiz/CoachingView.vue'),    meta: { shell: 'web' } },
 
-  // 오답 루프: 보완 풀이(B1) → 해설(B2) → 재도전(B4) → 완료(A6)
+  // 오답 루프: 약점 유형별로 보완1→보완2→재도전을 도는 스텝퍼(ReviewPlayView) → 완료(MasterView)
   { path: '/review/play',    name: 'review-play',    component: () => import('@/views/review/ReviewPlayView.vue'), meta: { shell: 'web' } },
-  { path: '/review/explain', name: 'review-explain', component: () => import('@/views/review/ExplainView.vue'),    meta: { shell: 'web' } },
-  { path: '/review/redo',    name: 'review-redo',    component: () => import('@/views/review/RedoView.vue'),       meta: { shell: 'web' } },
   { path: '/review/master',  name: 'review-master',  component: () => import('@/views/review/MasterView.vue'),    meta: { shell: 'web' } },
   { path: '/review/chat',    name: 'review-chat',    component: () => import('@/views/review/ChatView.vue'),       meta: { shell: 'web' } },
 

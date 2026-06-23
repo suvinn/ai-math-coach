@@ -11,9 +11,33 @@ export const useQuizStore = defineStore('quiz', () => {
   const submitResult   = ref(null)       // submit 응답 data
 
   // 오답 루프용 추가 상태
-  const parentSessionId = ref(null)      // 오답 루프 출발점 세션 ID (RedoView에서 원본 오답 조회용)
-  const masteredSubtype = ref(null)      // MasterView 축하 메시지용 subtype 이름
+  const parentSessionId = ref(null)      // 오답 루프 출발점 세션 ID (재도전 시 원본 오답 조회용)
   const chatContext     = ref(null)      // ChatView용 { sessionId, problem }
+
+  // 약점 유형 Top3를 유형별로 순서대로 도는 오답 루프 진행 상태.
+  // reviewSubtypes[i] = { rank, problemSubtype, originalProblemId, s1, mid, s2 }
+  // s1/mid/s2 = { problem_id, difficulty } | null (추천 문제가 부족하면 null일 수 있음)
+  const reviewSubtypes    = ref([])
+  const reviewSubtypeIdx  = ref(0)
+
+  // CoachingView에서 받은 recommendations 응답으로 유형별 보완1/보완2 후보를 구성.
+  // 후보 선정 규칙: 첫 문제=s1, 난이도 '중'인 것=mid, 남는 것=s2 (데이터 부족하면 null)
+  function setupReviewLoop(report) {
+    reviewSubtypes.value = report.weak_subtypes.map((weak) => {
+      // 백엔드가 이미 order_index 순으로 줌
+      const items = report.recommendations.filter((r) => r.rank === weak.rank)
+      const s1  = items[0] || null
+      const mid = items.slice(1).find((r) => r.difficulty === '중') || null
+      const s2  = items.find((r) => r !== s1 && r !== mid) || null
+      return {
+        rank:              weak.rank,
+        problemSubtype:    weak.problem_subtype,
+        originalProblemId: weak.original_problem_id,
+        s1, mid, s2,
+      }
+    })
+    reviewSubtypeIdx.value = 0
+  }
 
   const total = computed(() => problems.value.length)
 
@@ -78,13 +102,15 @@ export const useQuizStore = defineStore('quiz', () => {
     answers.value        = {}
     submitResult.value   = null
     parentSessionId.value = null
-    masteredSubtype.value = null
     chatContext.value     = null
+    reviewSubtypes.value   = []
+    reviewSubtypeIdx.value = 0
   }
 
   return {
     sessionId, sessionType, problems, answers, submitResult, total,
-    parentSessionId, masteredSubtype, chatContext,
+    parentSessionId, chatContext,
+    reviewSubtypes, reviewSubtypeIdx, setupReviewLoop,
     startSession, createAndLoad, setAnswer, buildAnswersPayload,
     submit, setSubmitResult, reset,
   }

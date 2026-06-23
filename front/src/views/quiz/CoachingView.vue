@@ -17,7 +17,6 @@ const { toast, showToast } = useToast()
 if (!quiz.sessionId) router.replace('/')
 
 const loading  = ref(true)
-const starting = ref(false)
 const report   = ref(null)
 
 onMounted(async () => {
@@ -43,33 +42,14 @@ const groupedRecs = computed(() => {
     .map(([rank, items]) => ({ rank, items }))
 })
 
-const firstRec = computed(() => report.value?.recommendations?.[0] || null)
+const hasWeakSubtypes = computed(() => !!report.value?.weak_subtypes?.length)
 
-async function startReview() {
-  if (!firstRec.value) return
-  starting.value = true
-  try {
-    // 현재 sessionId를 parentSessionId로 보존 → RedoView에서 원본 오답 조회에 사용
-    quiz.parentSessionId = quiz.sessionId
-    quiz.masteredSubtype = firstRec.value.problem_subtype || null
-
-    const res = await quiz.createAndLoad({
-      chapter_major:     firstRec.value.chapter_major,
-      chapter_middle:    firstRec.value.chapter_middle,
-      chapter_minor:     firstRec.value.chapter_minor,
-      problem_count:     10,
-      parent_session_id: quiz.sessionId,
-    })
-    if (!res.problems.length) {
-      showToast('보완 풀이할 문제가 없어요', 'negative', 'circle-exclamation')
-      starting.value = false
-      return
-    }
-    router.push('/review/play')
-  } catch {
-    showToast('보완 풀이를 시작하지 못했어요', 'negative', 'circle-exclamation')
-    starting.value = false
-  }
+function startReview() {
+  if (!report.value?.weak_subtypes?.length) return
+  // 원본 세션 id 보존(재도전 시 오답 조회용) + 약점 유형 Top3를 순서대로 도는 오답 루프 상태 구성
+  quiz.parentSessionId = quiz.sessionId
+  quiz.setupReviewLoop(report.value)
+  router.push('/review/play')
 }
 </script>
 
@@ -101,12 +81,11 @@ async function startReview() {
 
     <template #foot>
       <WdsButton
-        v-if="firstRec"
+        v-if="hasWeakSubtypes"
         variant="primary" size="large" block icon-right="arrow-right"
-        :disabled="starting"
         @click="startReview"
       >
-        {{ starting ? '준비 중…' : '보완 풀이 시작하기' }}
+        보완 풀이 시작하기
       </WdsButton>
       <WdsButton v-else variant="secondary" size="large" block @click="router.push('/')">
         홈으로

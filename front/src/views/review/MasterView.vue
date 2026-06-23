@@ -22,8 +22,8 @@ function goHistory() {
   router.push('/my/history')
 }
 
-// 보완 풀이 + 재도전을 거친 subtype 이름 (CoachingView에서 저장해두면 표시)
-const subtypeName = computed(() => quiz.masteredSubtype || null)
+// 보완 풀이 + 재도전을 거친 약점 유형들 (CoachingView → setupReviewLoop로 저장됨)
+const subtypeNames = computed(() => quiz.reviewSubtypes.map((s) => s.problemSubtype))
 </script>
 
 <template>
@@ -32,14 +32,14 @@ const subtypeName = computed(() => quiz.masteredSubtype || null)
       <!-- 축하 일러스트 영역 -->
       <div class="confetti-wrap">
         <div class="confetti-ring">
-          <WdsIcon name="check-circle" :size="52" color="var(--status-positive)" />
+          <WdsIcon name="circle-check" :size="52" color="var(--status-positive)" />
         </div>
       </div>
 
       <div class="stack-8 center">
         <div class="wds-headline-1 master-title">완료!</div>
-        <div v-if="subtypeName" class="wds-body-1 master-sub">
-          <span style="color:var(--suql-accent); font-weight:700">{{ subtypeName }}</span> 유형을<br />
+        <div v-if="subtypeNames.length" class="wds-body-1 master-sub">
+          <span style="color:var(--suql-accent); font-weight:700">{{ subtypeNames.join(', ') }}</span> 유형을<br />
           보완 학습과 재도전까지 마쳤어요 🎉
         </div>
         <div v-else class="wds-body-1 master-sub">

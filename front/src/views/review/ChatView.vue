@@ -17,7 +17,7 @@ const quiz   = useQuizStore()
 const { toast, showToast } = useToast()
 
 const ctx = quiz.chatContext  // { sessionId, problem }
-if (!ctx) router.replace('/review/explain')
+if (!ctx) router.replace('/review/play')
 
 const messages   = ref([])   // [{ who: 'ai'|'user', text: string }]
 const inputText  = ref('')
@@ -63,7 +63,7 @@ async function scrollBottom() {
 </script>
 
 <template>
-  <FocusShell title="해설 챗봇" :toast="toast" @back="router.push('/review/explain')">
+  <FocusShell title="해설 챗봇" :toast="toast" @back="router.push('/review/play')">
     <div class="chat-wrap">
       <!-- 메시지 목록 -->
       <div class="chat-messages">
