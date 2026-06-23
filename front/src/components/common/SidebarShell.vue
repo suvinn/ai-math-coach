@@ -5,6 +5,7 @@ import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import Logo from './Logo.vue'
 import WdsIcon from './WdsIcon.vue'
+import NotificationBell from './NotificationBell.vue'   // ← 추가
 
 // 데스크톱 웹 셸: 상단바 + 좌측 사이드바 + 메인. shell.css의 .app-shell 레이아웃을 사용.
 const props = defineProps({
@@ -15,10 +16,10 @@ const router = useRouter()
 const auth = useAuthStore()
 
 const navItems = [
-  { id: 'home', label: '홈', icon: 'home', to: '/' },
-  { id: 'learn', label: '학습', icon: 'write', to: '/quiz/setup' },
-  { id: 'report', label: '분석', icon: 'sparkle', to: '/my/history' },
-  { id: 'my', label: '마이', icon: 'nav-mypage', to: '/my' },
+  { id: 'home',   label: '홈',   icon: 'home',        to: '/' },
+  { id: 'learn',  label: '학습', icon: 'write',       to: '/quiz/setup' },
+  { id: 'report', label: '분석', icon: 'sparkle',     to: '/my/history' },
+  { id: 'my',     label: '마이', icon: 'nav-mypage',  to: '/my' },
 ]
 
 const initial = computed(() => (auth.user?.name || '학생').slice(0, 1))
@@ -47,7 +48,8 @@ async function handleLogout() {
       <Logo />
       <span class="spacer" />
       <div class="actions">
-        <slot name="actions" />
+        <!-- 알림 벨 버튼 -->
+        <NotificationBell />                            <!-- ← 추가 -->
       </div>
     </header>
 
