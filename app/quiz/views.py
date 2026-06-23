@@ -106,6 +106,7 @@ class MeView(APIView):
                 # 'user_id': request.user.id,
                 'username': request.user.username,
                 'name': request.user.first_name,
+                'streak':   request.user.streak,
             }
         })
 
