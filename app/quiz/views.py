@@ -471,7 +471,7 @@ class QuizSessionCreateView(APIView):
                     ).first() if target_subtype else None
 
                     if weak_obj:
-                        rec = weak_obj.recommendations.filter(
+                        rec = weak_obj.rec_problems.filter(
                             order_index=rec_order_index
                         ).select_related('problem').first()
 

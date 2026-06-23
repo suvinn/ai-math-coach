@@ -42,7 +42,7 @@ class Problem(models.Model):
         max_length=30,
         null=True,
         blank=True,
-        help_text="recovered / recovered_needs_review / missing_raw_json / no_option_items_in_raw / original(처음부터 정상이었음)",
+        help_text="recovered / recovered_needs_review",
     )
     recovered_answer = models.TextField(null=True, blank=True)
     answer_match = models.BooleanField(null=True, blank=True)
@@ -50,6 +50,12 @@ class Problem(models.Model):
 
     class Meta:
         db_table = 'problem'
+        indexes = [
+            models.Index(fields=['is_quizable']),
+            models.Index(fields=['problem_subtype']),
+            models.Index(fields=['is_quizable', 'difficulty']),      # 세션 생성 시 복합 필터
+            models.Index(fields=['is_quizable', 'chapter_middle']),  # 단원 필터링
+        ]
 
 
 class ProblemAsset(models.Model):
@@ -94,7 +100,6 @@ class QuizSession(models.Model):
     problem_count  = models.IntegerField()
     status         = models.CharField(max_length=20, choices=STATUS_CHOICES, default='in_progress')
     score          = models.IntegerField(null=True, blank=True)
-    ai_feedback    = models.TextField(null=True, blank=True)
     created_at     = models.DateTimeField(auto_now_add=True)
     session_type   = models.CharField(
         max_length=20,
@@ -162,7 +167,7 @@ class WeakSubtype(models.Model):
 
 class Recommendation(models.Model):
     report       = models.ForeignKey(WeaknessReport, on_delete=models.CASCADE, related_name='recommendations')
-    weak_subtype = models.ForeignKey(WeakSubtype, on_delete=models.CASCADE, related_name='recommendations', null=True, blank=True)
+    weak_subtype = models.ForeignKey(WeakSubtype, on_delete=models.CASCADE, related_name='rec_problems', null=True, blank=True)
     problem      = models.ForeignKey(Problem, on_delete=models.PROTECT)
     similarity_score = models.FloatField(null=True, blank=True)
     order_index  = models.IntegerField()
