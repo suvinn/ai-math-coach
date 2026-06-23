@@ -88,8 +88,24 @@ class ProblemPublicSerializer(serializers.ModelSerializer):
             obj.assets.all(), many=True, context=self.context
         ).data
 
+    def to_representation(self, instance):
+        """context에 extra_fields가 있으면 직렬화 결과에 병합한다.
+
+        사용 예시 — SessionProblem의 order_index 같이 내보내기:
+            serializer = ProblemPublicSerializer(
+                problem,
+                context={'request': request, 'extra_fields': {'order': sp.order_index}},
+            )
+        """
+        data = super().to_representation(instance)
+        for key, value in self.context.get("extra_fields", {}).items():
+            data[key] = value
+        return data
+
 
 class ProblemWithAnswerSerializer(ProblemPublicSerializer):
-    """채점/오답 조회용 — answer, explanation 포함"""
+    """채점/오답 조회용 — answer, explanation, grading_answer 포함"""
     class Meta(ProblemPublicSerializer.Meta):
-        fields = ProblemPublicSerializer.Meta.fields + ["answer", "explanation"]
+        fields = ProblemPublicSerializer.Meta.fields + [
+            "answer", "grading_answer", "explanation",
+        ]

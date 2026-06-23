@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework import status
 from django.utils.decorators import method_decorator
-from .serializers import RegisterSerializer, UserSerializer
+from .serializers import RegisterSerializer, UserSerializer, ProblemPublicSerializer, ProblemWithAnswerSerializer
 from .models import Problem, QuizSession, SessionProblem, SessionResult, WeaknessReport, WeakSubtype, Recommendation, SubtypeMastery
 import random
 from datetime import date, timedelta
@@ -15,22 +15,24 @@ import chromadb
 from django.conf import settings
 
 
-def _serialize_assets(problem, request=None):
-    """option_type='mixed_with_image'인 문제의 보기 이미지 목록을 응답용 dict 리스트로 변환."""
-    if problem.option_type != 'mixed_with_image':
-        return []
- 
-    out = []
-    for asset in problem.assets.all():  # prefetch_related 안 해두면 view마다 N+1 발생 -> 아래 3) 참고
-        url = settings.MEDIA_URL.rstrip('/') + '/' + asset.image_path.lstrip('/')
-        if request is not None:
-            url = request.build_absolute_uri(url)
-        out.append({
-            'asset_role': asset.asset_role,
-            'image_url': url,
-            'bbox': [asset.bbox_x1, asset.bbox_y1, asset.bbox_x2, asset.bbox_y2],
-        })
-    return out
+def _serialize_problem(problem, request, extra_fields=None):
+    """Problem 객체를 퀴즈 풀이용 dict로 변환한다.
+
+    - ProblemPublicSerializer를 단일 진입점으로 사용해 assets 직렬화 중복을 제거한다.
+    - extra_fields: {'order': sp.order_index} 처럼 Problem 모델 밖의 필드를 병합할 때 사용.
+    """
+    context = {'request': request}
+    if extra_fields:
+        context['extra_fields'] = extra_fields
+    return ProblemPublicSerializer(problem, context=context).data
+
+
+def _serialize_problem_with_answer(problem, request, extra_fields=None):
+    """오답/채점 조회용 — answer, grading_answer, explanation 포함."""
+    context = {'request': request}
+    if extra_fields:
+        context['extra_fields'] = extra_fields
+    return ProblemWithAnswerSerializer(problem, context=context).data
 
 
 def _create_diagnosis_session(user):
@@ -610,21 +612,10 @@ class QuizSessionProblemsView(APIView):
             session=session
         ).select_related('problem').prefetch_related('problem__assets').order_by('order_index')
 
-        problems = []
-        for sp in session_problems:
-            p = sp.problem
-            problems.append({
-                'order':                sp.order_index,
-                'problem_id':           p.id,
-                'difficulty':           p.difficulty,
-                'problem_subtype':      p.problem_subtype,
-                'question_text':        p.question_text,
-                'question_with_options': p.question_with_options,
-                'question_image_bbox':  p.question_image_bbox,
-                'option_type':          p.option_type,
-                'assets':               _serialize_assets(p, request),
-                'is_multi_answer':      p.is_multi_answer,
-            })
+        problems = [
+            _serialize_problem(sp.problem, request, extra_fields={'order': sp.order_index})
+            for sp in session_problems
+        ]
 
         return Response({
             'status': 'success',
@@ -841,24 +832,13 @@ class QuizSessionWrongAnswersView(APIView):
             is_correct=False
         ).select_related('problem').prefetch_related('problem__assets')
 
-        wrong_problems = []
-        for result in wrong_results:
-            p = result.problem
-            wrong_problems.append({
-                'problem_id':            p.id,
-                'user_answer':           result.student_answer,
-                'correct_answer':        p.answer,
-                'grading_answer':        p.grading_answer,  # 채점용 깨끗한 라벨 — 재도전 클라이언트 채점에 사용
-                'explanation':           p.explanation,
-                'problem_subtype':       p.problem_subtype,
-                'difficulty':            p.difficulty,
-                'question_text':         p.question_text,
-                'question_with_options': p.question_with_options,
-                'question_image_bbox':   p.question_image_bbox,
-                'option_type':           p.option_type,
-                'assets':                _serialize_assets(p, request),
-                'is_multi_answer':       p.is_multi_answer,
-            })
+        wrong_problems = [
+            _serialize_problem_with_answer(
+                result.problem, request,
+                extra_fields={'user_answer': result.student_answer},
+            )
+            for result in wrong_results
+        ]
 
         return Response({
             'status': 'success',
@@ -1042,20 +1022,7 @@ class ProblemDetailView(APIView):
 
         return Response({
             'status': 'success',
-            'data': {
-                'problem_id':            problem.id,
-                'difficulty':            problem.difficulty,
-                'chapter_major':         problem.chapter_major,
-                'chapter_middle':        problem.chapter_middle,
-                'chapter_minor':         problem.chapter_minor,
-                'problem_subtype':       problem.problem_subtype,
-                'question_text':         problem.question_text,
-                'question_with_options': problem.question_with_options,
-                'question_image_bbox':   problem.question_image_bbox,
-                'option_type':           problem.option_type,
-                'assets':                _serialize_assets(problem, request),
-                'is_multi_answer':       problem.is_multi_answer,
-            }
+            'data': _serialize_problem(problem, request),
         })
 
 
@@ -1597,18 +1564,7 @@ class ReviewProblemView(APIView):
 
         return Response({
             'status': 'success',
-            'data': {
-                'problem_id':            problem.id,
-                'difficulty':            problem.difficulty,
-                'problem_subtype':       problem.problem_subtype,
-                'question_text':         problem.question_text,
-                'question_with_options': problem.question_with_options,
-                'question_image_bbox':   problem.question_image_bbox,
-                'option_type':           problem.option_type,
-                'assets':                _serialize_assets(problem, request),
-                'is_multi_answer':       problem.is_multi_answer,
-                'correct_answer':        problem.answer,
-            }
+            'data': _serialize_problem_with_answer(problem, request),
         })
 
 
