@@ -21,16 +21,14 @@ const userName = ref(auth.user?.name || '')
 const diagnosing = ref(false)
 
 onMounted(async () => {
-  // 대시보드에서 유저 이름 가져오기 (이미 있으면 그대로 사용)
   try {
     const data = unwrap(await api.get('/users/me/dashboard'))
     userName.value = data?.user?.name || userName.value
   } catch {
-    // 실패해도 화면은 그대로 (이름만 비거나 기존값 유지)
+    // 실패해도 화면은 그대로
   }
 })
 
-// 빠른 진단 — 단원 선택 없이 전체 단원에서 골고루 20문제를 뽑아 바로 풀이 화면으로
 async function startDiagnosis() {
   if (diagnosing.value) return
   diagnosing.value = true
@@ -48,7 +46,6 @@ async function startDiagnosis() {
   }
 }
 
-// 오늘의 추천 학습 → 퀴즈 설정으로 (추천 prefill 모드)
 function goTodayRec() {
   router.push({ path: '/quiz/setup', query: { mode: 'today' } })
 }
@@ -56,13 +53,6 @@ function goTodayRec() {
 
 <template>
   <SidebarShell tab="home">
-    <template #actions>
-      <button class="app-iconbtn" aria-label="알림">
-        <WdsIcon name="bell" :size="22" />
-        <span class="dot" />
-      </button>
-    </template>
-
     <Toast :toast="toast" />
 
     <div class="page">
@@ -74,40 +64,44 @@ function goTodayRec() {
       </div>
 
       <div class="stack-16">
-        <!-- 진단 추천 — 가장 강조 -->
+        <!-- 진단 추천 -->
         <div class="diag-card">
           <div class="diag-card-text">
             <div class="row" style="gap: 6px; margin-bottom: 10px">
-              <WdsIcon name="sparkle" :size="18" color="#fff" />
+              <WdsIcon name="sparkle" :size="18" color="rgba(255,255,255,0.7)" />
               <span class="diag-eyebrow">AI 빠른 진단</span>
             </div>
             <div class="diag-title">20문제로 내 취약 유형 찾기</div>
             <div class="wds-body-2 diag-sub">전체 단원에서 골고루 출제돼요</div>
           </div>
-          <WdsButton
-            variant="primary"
-            size="large"
-            icon-right="arrow-right"
+          <!-- 흰색 outlined 버튼 — 검정 배경과 대비 -->
+          <button
+            class="diag-btn"
             :disabled="diagnosing"
             @click="startDiagnosis"
           >
             {{ diagnosing ? '준비 중…' : '진단 시작하기' }}
-          </WdsButton>
+            <WdsIcon name="arrow-right" :size="16" color="var(--label-normal)" />
+          </button>
         </div>
 
         <!-- 오늘의 추천 진입점 -->
-        <button class="tap-row today-row" @click="goTodayRec">
-          <span class="today-ico">
-            <WdsIcon name="sparkle" :size="20" color="var(--suql-accent)" />
-          </span>
-          <div style="flex: 1">
-            <div class="wds-label-1" style="font-weight: 700">오늘의 추천 학습</div>
-            <div class="wds-caption-1 assistive" style="margin-top: 2px">정체된 유형부터 짧게 풀어보기</div>
+        <button class="today-row" @click="goTodayRec">
+          <div class="today-row-text">
+            <span class="today-ico">
+              <WdsIcon name="sparkle" :size="20" color="var(--suql-accent)" />
+            </span>
+            <div>
+              <div class="today-title">오늘의 추천 학습</div>
+              <div class="wds-body-2 assistive" style="margin-top: 4px">단원을 골라 바로 퀴즈 시작하기</div>
+            </div>
           </div>
-          <WdsIcon name="chevron-right" :size="20" color="var(--label-assistive)" />
+          <WdsButton variant="outlined" size="large" icon-right="arrow-right" @click.stop="goTodayRec">
+            퀴즈 설정하기
+          </WdsButton>
         </button>
 
-        <!-- 이어하기 배너 — localStorage에 저장된 경우에만 표시 -->
+        <!-- 이어하기 배너 -->
         <ReviewResumeBanner />
       </div>
     </div>
@@ -121,7 +115,7 @@ function goTodayRec() {
   margin-top: 2px;
 }
 
-/* 진단 카드 — 가로로 트인 웹 히어로 (폰 카드의 박스 느낌 제거) */
+/* 진단 카드 */
 .diag-card {
   border-radius: 20px;
   padding: 32px 40px;
@@ -139,7 +133,7 @@ function goTodayRec() {
 .diag-eyebrow {
   font: var(--weight-bold) 12px/1 var(--font-sans);
   letter-spacing: 0.06em;
-  opacity: 0.85;
+  opacity: 0.75;
   white-space: nowrap;
 }
 .diag-title {
@@ -147,24 +141,60 @@ function goTodayRec() {
   letter-spacing: -0.02em;
 }
 .diag-sub {
-  opacity: 0.7;
+  opacity: 0.6;
   margin-top: 8px;
 }
 
+/* 진단 버튼 — 흰색 배경, 검정 텍스트 */
+.diag-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  border: none;
+  background: #fff;
+  color: var(--label-normal);
+  font: var(--weight-bold) 15px/1 var(--font-sans);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: opacity 0.15s;
+}
+.diag-btn:hover { opacity: 0.88; }
+.diag-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
 /* 오늘의 추천 행 */
 .today-row {
-  padding: 14px;
+  padding: 32px 40px;
   margin: 0;
-  border-radius: 16px;
-  box-shadow: inset 0 0 0 1px var(--line-normal-normal);
+  border-radius: 20px;
+  border: 2px solid var(--label-normal);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.12s;
 }
-.today-row:hover {
-  background: var(--fill-alternative);
+.today-row:hover { background: var(--fill-alternative); }
+.today-row-text {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.today-title {
+  font: var(--weight-bold) 22px/1.4 var(--font-sans);
+  letter-spacing: -0.02em;
+  color: var(--label-normal);
 }
 .today-ico {
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
   flex: none;
   background: var(--blue-95);
   display: flex;

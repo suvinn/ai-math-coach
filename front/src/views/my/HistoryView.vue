@@ -124,13 +124,13 @@ onMounted(async () => {
                       <span class="now">{{ m.accuracy_after }}%</span>
                     </span>
                   </template>
-                  <span v-else class="wds-caption-1" style="color: var(--suql-accent); font-weight: 600; font-size: 15px">정답률 {{ m.accuracy }}%</span>
+                  <span v-else class="wds-caption-1" style="color: var(--suql-accent); font-weight: 600; font-size: 14px">정답률 {{ m.accuracy }}%</span>
                 </div>
                 <div class="wds-caption-1 assistive" style="margin-top: 10px; font-size: 14px">
                   {{ m.chapter_major }}<template v-if="m.chapter_middle"> › {{ m.chapter_middle }}</template>
                 </div>
-                <div class="wds-label-1" style="font-weight: 700; margin-top: 2px; font-size: 18px">{{ m.problem_subtype }}</div>
-                <div class="wds-caption-1 assistive" style="margin-top: 6px; font-size: 14px">{{ m.total_attempts }} / {{ m.total_in_subtype }}문제 시도</div>
+                <div class="wds-label-1" style="font-weight: 700; margin-top: 2px; font-size: 16px">{{ m.problem_subtype }}</div>
+                <div class="wds-caption-1 assistive" style="margin-top: 6px; font-size: 13px">{{ m.total_attempts }} / {{ m.total_in_subtype }}문제 시도</div>
               </div>
             </div>
           </template>
