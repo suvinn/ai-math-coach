@@ -644,6 +644,16 @@ def _update_subtype_mastery(user, results):
         subtype_stats[subtype]['total']   += 1
         subtype_stats[subtype]['correct'] += 1 if r['is_correct'] else 0
 
+    # subtype별 전체 문제 수 한 번에 조회
+    from django.db.models import Count
+    subtype_names = list(subtype_stats.keys())
+    total_map = {
+        r['problem_subtype']: r['count']
+        for r in Problem.objects.filter(
+            problem_subtype__in=subtype_names
+        ).values('problem_subtype').annotate(count=Count('id'))
+    }
+
     for subtype, stats in subtype_stats.items():
         mastery, _ = SubtypeMastery.objects.get_or_create(
             user=user,
@@ -662,11 +672,15 @@ def _update_subtype_mastery(user, results):
 
         new_accuracy = mastery.correct_count / mastery.total_attempts
 
-        # 마스터 판정: 누적 정답률 80% 이상 + 최소 3문제 이상 풀었을 때
+        # 마스터 판정: 전체 문제를 모두 풀고 정답률 100%일 때
+        total_in_subtype = total_map.get(subtype, 0)
         was_mastered = mastery.mastered
-        if not was_mastered and new_accuracy >= 0.8 and mastery.total_attempts >= 3:
+        if (not was_mastered
+                and total_in_subtype > 0
+                and mastery.total_attempts >= total_in_subtype
+                and new_accuracy == 1.0):
             mastery.mastered        = True
-            mastery.accuracy_before = round(prev_accuracy, 2) if prev_accuracy else None
+            mastery.accuracy_before = round(prev_accuracy, 2) if prev_accuracy is not None else None
             mastery.accuracy_after  = round(new_accuracy, 2)
 
         mastery.save()
@@ -873,6 +887,26 @@ class UserHistoryView(APIView):
             user=request.user
         ).order_by('-updated_at')
 
+        # subtype → chapter 매핑 + 전체 문제 수 (Problem 테이블에서 한 번에 조회)
+        from django.db.models import Count
+        subtype_names = [m.problem_subtype for m in masteries]
+        chapter_map = {}
+        for p in Problem.objects.filter(
+            problem_subtype__in=subtype_names
+        ).values('problem_subtype', 'chapter_major', 'chapter_middle').distinct():
+            if p['problem_subtype'] not in chapter_map:
+                chapter_map[p['problem_subtype']] = {
+                    'chapter_major':  p['chapter_major'],
+                    'chapter_middle': p['chapter_middle'],
+                }
+
+        total_map = {
+            r['problem_subtype']: r['count']
+            for r in Problem.objects.filter(
+                problem_subtype__in=subtype_names
+            ).values('problem_subtype').annotate(count=Count('id'))
+        }
+
         subtype_mastery = []
         for m in masteries:
             accuracy = (
@@ -893,17 +927,22 @@ class UserHistoryView(APIView):
             else:
                 level = '보완 필요'
 
+            chapter = chapter_map.get(m.problem_subtype, {})
+
             subtype_mastery.append({
                 'problem_subtype':  m.problem_subtype,
+                'chapter_major':    chapter.get('chapter_major'),
+                'chapter_middle':   chapter.get('chapter_middle'),
                 'mastered':         m.mastered,
                 'level':            level,
-                'accuracy':         round(accuracy * 100),       # 퍼센트로
+                'accuracy':         round(accuracy * 100),
                 'accuracy_before':  round(m.accuracy_before * 100)
                                     if m.accuracy_before else None,
                 'accuracy_after':   round(m.accuracy_after * 100)
                                     if m.accuracy_after else None,
                 'total_attempts':   m.total_attempts,
-                'next_difficulty':  next_difficulty,             # 마스터 시에만
+                'total_in_subtype': total_map.get(m.problem_subtype, 0),
+                'next_difficulty':  next_difficulty,
                 'updated_at':       m.updated_at,
             })
 
