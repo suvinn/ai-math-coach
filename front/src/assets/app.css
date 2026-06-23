@@ -266,7 +266,7 @@ body[data-accent] {
 .master-badge {
   display: inline-flex; align-items: center; gap: 5px;
   padding: 5px 10px 5px 8px; border-radius: var(--radius-full);
-  font: var(--weight-bold) 12px/1 var(--font-sans); letter-spacing: -0.01em;
+  font: var(--weight-bold) 13px/1 var(--font-sans); letter-spacing: -0.01em;
   flex: none; white-space: nowrap;
 }
 .master-badge[data-on="true"],
