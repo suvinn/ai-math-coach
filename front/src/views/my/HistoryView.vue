@@ -88,7 +88,7 @@ onMounted(async () => {
 
       <template v-else-if="data">
         <div class="stack-12" style="margin-bottom: 32px">
-          <div class="wds-label-1" style="font-weight: 700">유형별 마스터 현황</div>
+          <div class="wds-label-1" style="font-weight: 700; font-size: 22px;">유형별 마스터 현황</div>
           <div v-if="!data.subtype_mastery.length" class="assistive wds-body-2">아직 학습 기록이 없어요.</div>
           <template v-else>
             <!-- 대단원 필터 -->
@@ -124,20 +124,20 @@ onMounted(async () => {
                       <span class="now">{{ m.accuracy_after }}%</span>
                     </span>
                   </template>
-                  <span v-else class="wds-caption-1" style="color: var(--suql-accent); font-weight: 600">정답률 {{ m.accuracy }}%</span>
+                  <span v-else class="wds-caption-1" style="color: var(--suql-accent); font-weight: 600; font-size: 15px">정답률 {{ m.accuracy }}%</span>
                 </div>
-                <div class="wds-caption-1 assistive" style="margin-top: 10px">
+                <div class="wds-caption-1 assistive" style="margin-top: 10px; font-size: 14px">
                   {{ m.chapter_major }}<template v-if="m.chapter_middle"> › {{ m.chapter_middle }}</template>
                 </div>
-                <div class="wds-label-1" style="font-weight: 700; margin-top: 2px">{{ m.problem_subtype }}</div>
-                <div class="wds-caption-1 assistive" style="margin-top: 6px">{{ m.total_attempts }} / {{ m.total_in_subtype }}문제 시도</div>
+                <div class="wds-label-1" style="font-weight: 700; margin-top: 2px; font-size: 18px">{{ m.problem_subtype }}</div>
+                <div class="wds-caption-1 assistive" style="margin-top: 6px; font-size: 14px">{{ m.total_attempts }} / {{ m.total_in_subtype }}문제 시도</div>
               </div>
             </div>
           </template>
         </div>
 
         <div class="stack-12">
-          <div class="wds-label-1" style="font-weight: 700">퀴즈 기록</div>
+          <div class="wds-label-1" style="font-weight: 700; font-size: 22px">퀴즈 기록</div>
           <div v-if="!data.sessions.length" class="assistive wds-body-2">아직 풀어본 퀴즈가 없어요.</div>
           <div v-else class="stack-8">
             <div v-for="s in data.sessions" :key="s.session_id" class="session-row">
@@ -193,7 +193,7 @@ onMounted(async () => {
   border: 0;
   background: var(--fill-alternative);
   color: var(--label-alternative);
-  font: var(--weight-medium) 13px/1 var(--font-sans);
+  font: var(--weight-medium) 15px/1 var(--font-sans);
   cursor: pointer;
   transition: background .12s, color .12s;
 }
@@ -205,7 +205,7 @@ onMounted(async () => {
   color: #fff;
 }
 .filter-chip--sub {
-  font-size: 12px;
+  font-size: 15px;
   padding: 5px 12px;
   background: var(--background-normal-alternative);
 }
