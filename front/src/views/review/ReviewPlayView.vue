@@ -21,6 +21,7 @@ import { parseCircledOptions } from '@/utils/circledOptions'
 import { difficultyTone } from '@/utils/difficulty'
 
 const STEP_LABEL = { s1: '보완 1단계', mid: '보완 2단계', s2: '보완 2단계', redo: '재도전' }
+const RESUME_KEY = 'reviewLoop_resume'
 
 const router = useRouter()
 const quiz   = useQuizStore()
@@ -48,6 +49,31 @@ const mcOptions = computed(() =>
   currentProblem.value ? parseCircledOptions(currentProblem.value.question_with_options) : null
 )
 const isMulti = computed(() => !!currentProblem.value?.is_multi_answer)
+
+// ─── 이어하기 저장 ────────────────────────────────────────────────
+// subtypeDone 인터스티셔에서 "홈으로" 누를 때 호출.
+// 다음 유형 인덱스와 원본 세션 정보를 localStorage에 저장해둔다.
+function saveResume() {
+  const nextIdx = quiz.reviewSubtypeIdx + 1
+  if (nextIdx >= quiz.reviewSubtypes.length) {
+    // 마지막 유형이면 저장할 필요 없음
+    localStorage.removeItem(RESUME_KEY)
+    return
+  }
+  const payload = {
+    parentSessionId: quiz.parentSessionId,
+    reviewSubtypes:  quiz.reviewSubtypes,
+    resumeFromIdx:   nextIdx,
+  }
+  localStorage.setItem(RESUME_KEY, JSON.stringify(payload))
+}
+
+function goHomeWithSave() {
+  saveResume()
+  quiz.reset()
+  router.push('/')
+}
+// ─────────────────────────────────────────────────────────────────
 
 onMounted(async () => {
   try {
@@ -202,6 +228,8 @@ function advance() {
 }
 
 function continueToNextSubtype() {
+  // 이어하기 데이터가 있었다면 이 유형을 완료했으므로 갱신
+  localStorage.removeItem(RESUME_KEY)
   if (isLastSubtype.value) {
     router.push('/review/master')
   } else {
@@ -299,7 +327,16 @@ function goChat() {
     </div>
 
     <template #foot>
+      <!-- 유형 완료 인터스티셔: 다음 유형으로 + 홈으로 나란히 -->
       <div v-if="subtypeDone" class="play-foot">
+        <WdsButton
+          v-if="!isLastSubtype"
+          variant="secondary"
+          size="large"
+          @click="goHomeWithSave"
+        >
+          홈으로
+        </WdsButton>
         <WdsButton variant="primary" size="large" block icon-right="arrow-right" @click="continueToNextSubtype">
           {{ isLastSubtype ? '결과 보기' : '다음 유형으로' }}
         </WdsButton>
