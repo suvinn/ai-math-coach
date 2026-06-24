@@ -4,7 +4,7 @@
            → 보완2 결과 무관하게 → 재도전(원래 틀린 문제) → 해설(틀렸을 때만) → 유형 완료
      CoachingView에서 quiz.setupReviewLoop()로 reviewSubtypes를 채우고 진입해야 한다. -->
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useRouter } from 'vue-router'
 import { useQuizStore } from '@/stores/quiz'
 import { useToast } from '@/composables/useToast'
@@ -17,7 +17,7 @@ import InlineTex from '@/components/common/InlineTex.vue'
 import WdsButton from '@/components/common/WdsButton.vue'
 import WdsField from '@/components/common/WdsField.vue'
 import WdsIcon from '@/components/common/WdsIcon.vue'
-import { parseCircledOptions } from '@/utils/circledOptions'
+import { parseCircledOptions, parseOptionPreamble } from '@/utils/circledOptions'
 import { difficultyTone } from '@/utils/difficulty'
 
 const STEP_LABEL = { s1: '보완 1단계', mid: '보완 2단계', s2: '보완 2단계', redo: '재도전' }
@@ -48,6 +48,11 @@ const isLastSubtype = computed(() => quiz.reviewSubtypeIdx >= subtypeCount.value
 const mcOptions = computed(() =>
   currentProblem.value ? parseCircledOptions(currentProblem.value.question_with_options) : null
 )
+const optionPreamble = computed(() =>
+  currentProblem.value
+    ? parseOptionPreamble(currentProblem.value.question_with_options, currentProblem.value.question_text)
+    : null
+)
 const isMulti = computed(() => !!currentProblem.value?.is_multi_answer)
 
 // ─── 이어하기 저장 ────────────────────────────────────────────────
@@ -73,6 +78,22 @@ function goHomeWithSave() {
   quiz.reset()
   router.push('/')
 }
+
+// 어떤 방식으로 나가든 (뒤로가기, 탭 닫기 등) 현재 진행 상태 저장
+// 단, 챗봇 페이지로 이동 시엔 reviewReturnState가 설정되므로 저장 불필요
+onBeforeUnmount(() => {
+  if (quiz.reviewReturnState) return           // 챗봇으로 이동 중 → 저장 생략
+  if (!quiz.reviewSubtypes.length) return
+  if (subtypeDone.value && isLastSubtype.value) return  // 전부 완료 → 저장 불필요
+  const payload = {
+    parentSessionId: quiz.parentSessionId,
+    reviewSubtypes:  quiz.reviewSubtypes,
+    resumeFromIdx:   subtypeDone.value
+      ? quiz.reviewSubtypeIdx + 1   // 이 유형은 끝났으므로 다음 유형부터
+      : quiz.reviewSubtypeIdx,      // 이 유형 처음부터
+  }
+  localStorage.setItem(RESUME_KEY, JSON.stringify(payload))
+})
 // ─────────────────────────────────────────────────────────────────
 
 onMounted(async () => {
@@ -84,6 +105,21 @@ onMounted(async () => {
   } catch {
     showToast('원본 오답 정보를 불러오지 못했어요', 'negative', 'circle-exclamation')
   }
+
+  // 챗봇에서 돌아온 경우: 이전 단계 상태를 그대로 복원
+  if (quiz.reviewReturnState) {
+    const { stepKey, problem, result } = quiz.reviewReturnState
+    quiz.reviewReturnState = null
+    currentStepKey.value  = stepKey
+    currentProblem.value  = problem
+    loadingProblem.value  = false
+    if (result) {
+      lastResult.value = result
+      revealed.value   = true
+    }
+    return
+  }
+
   await startSubtype()
 })
 
@@ -93,7 +129,7 @@ async function startSubtype() {
   if (s?.s1) {
     await loadStep('s1', s.s1.problem_id)
   } else {
-    loadRedoStep()
+    await loadRedoStep()
   }
 }
 
@@ -110,7 +146,7 @@ async function loadStep(stepKey, problemId) {
       parent_session_id: quiz.parentSessionId,
     })
     currentProblem.value = res.problems[0] || null
-    if (!currentProblem.value) loadRedoStep()
+    if (!currentProblem.value) await loadRedoStep()
   } catch {
     showToast('문제를 불러오지 못했어요', 'negative', 'circle-exclamation')
   } finally {
@@ -118,15 +154,31 @@ async function loadStep(stepKey, problemId) {
   }
 }
 
-function loadRedoStep() {
+async function loadRedoStep() {
   currentStepKey.value  = 'redo'
   revealed.value        = false
   lastResult.value      = null
   answer.value          = ''
   selectedLabels.value  = []
-  loadingProblem.value  = false
-  currentProblem.value  = originalWrongMap.value[subtype.value?.originalProblemId] || null
-  if (!currentProblem.value) subtypeDone.value = true  // 재도전할 원본 문제가 없으면 그냥 완료 처리
+  loadingProblem.value  = true
+
+  const problemId = subtype.value?.originalProblemId
+  currentProblem.value = (problemId && originalWrongMap.value[problemId]) || null
+
+  if (!currentProblem.value && problemId) {
+    // originalWrongMap 캐시 미스 → API로 직접 조회
+    try {
+      const data = unwrap(
+        await api.get(`/quiz/sessions/${quiz.parentSessionId}/redo-problem?problem_id=${encodeURIComponent(problemId)}`)
+      )
+      currentProblem.value = data
+    } catch {
+      // API 조회 실패 → 유형 완료 처리
+    }
+  }
+
+  loadingProblem.value = false
+  if (!currentProblem.value) subtypeDone.value = true
 }
 
 function isSelected(label) {
@@ -179,8 +231,8 @@ async function submitCurrent() {
       correctText:  r.correct_answer,
       explanation:  r.explanation,
     }
-    if (r.is_correct) advance()
-    else revealed.value = true
+    // 정답/오답 모두 revealed 상태로 — 정답 피드백 확인 후 "다음" 클릭 시 advance()
+    revealed.value = true
   } catch (e) {
     showToast(e?.response?.data?.message || '제출에 실패했어요', 'negative', 'circle-exclamation')
   } finally {
@@ -190,7 +242,8 @@ async function submitCurrent() {
 
 function submitRedo() {
   const p = currentProblem.value
-  const correctLabel = (p.grading_answer || p.correct_answer || '').trim()
+  // originalWrongMap의 문제는 ProblemWithAnswerSerializer → answer 필드 사용 (correct_answer 없음)
+  const correctLabel = (p.grading_answer || p.answer || '').trim()
   let isCorrect
   if (p.is_multi_answer) {
     const submitted = new Set(answer.value.split(',').map((s) => s.trim()))
@@ -199,7 +252,7 @@ function submitRedo() {
   } else {
     isCorrect = answer.value.trim() === correctLabel
   }
-  lastResult.value = { isCorrect, correctLabel, correctText: p.correct_answer, explanation: p.explanation }
+  lastResult.value = { isCorrect, correctLabel, correctText: p.answer, explanation: p.explanation }
   revealed.value = true
 }
 
@@ -210,20 +263,24 @@ function advance() {
 
   if (currentStepKey.value === 's1') {
     if (wasCorrect) {
-      if (s.mid) return loadStep('mid', s.mid.problem_id)
-      if (s.s2)  return loadStep('s2', s.s2.problem_id)
+      // 정답 → 난이도 높은 보완2(mid) 우선, 없으면 s2 폴백
+      const next = s.mid || s.s2
+      if (next) return loadStep('mid', next.problem_id)
+      return loadRedoStep()
     } else {
-      if (s.s2)  return loadStep('s2', s.s2.problem_id)
-      if (s.mid) return loadStep('mid', s.mid.problem_id)
+      // 오답 → 난이도 하 보완2(s2) 우선, 없으면 mid 폴백
+      const next = s.s2 || s.mid
+      if (next) return loadStep('s2', next.problem_id)
+      return loadRedoStep()
     }
-    return loadRedoStep()
   }
 
   if (currentStepKey.value === 'mid' || currentStepKey.value === 's2') {
-    return loadRedoStep()  // 결과 무관하게 재도전으로
+    // 정답/오답 무관하게 재도전으로
+    return loadRedoStep()
   }
 
-  // redo
+  // redo — 정답/오답 무관하게 유형 완료
   subtypeDone.value = true
 }
 
@@ -239,6 +296,12 @@ function continueToNextSubtype() {
 }
 
 function goChat() {
+  // 챗봇에서 돌아올 때 현재 단계를 그대로 복원하기 위해 상태 저장
+  quiz.reviewReturnState = {
+    stepKey: currentStepKey.value,
+    problem: currentProblem.value,
+    result:  lastResult.value,
+  }
   quiz.chatContext = {
     sessionId: currentStepKey.value === 'redo' ? quiz.parentSessionId : quiz.sessionId,
     problem:   currentProblem.value,
@@ -267,7 +330,7 @@ function goChat() {
         <span class="wds-label-1" style="font-weight:700">
           {{ lastResult.isCorrect ? '정답이에요!' : '아쉽지만 틀렸어요' }}
         </span>
-        <span v-if="!lastResult.isCorrect" class="wds-caption-1">정답: {{ lastResult.correctText }}</span>
+        <span v-if="!lastResult.isCorrect" class="wds-caption-1">정답: <InlineTex :text="lastResult.correctLabel" /></span>
       </div>
 
       <div class="row" style="gap:6px; flex-wrap:wrap">
@@ -281,13 +344,17 @@ function goChat() {
 
       <div v-if="currentProblem.assets?.length" class="play-assets">
         <div v-for="(asset, i) in currentProblem.assets" :key="i" class="play-asset">
-          <span class="wds-caption-1 assistive">{{ asset.asset_role }}</span>
-          <img :src="asset.image_url" :alt="asset.asset_role" />
+          <img
+            :src="asset.image_url"
+            :alt="asset.asset_role"
+            @error="$event.target.closest('.play-asset').style.display='none'"
+          />
         </div>
       </div>
 
       <div v-if="mcOptions" class="stack-8">
         <div v-if="isMulti" class="wds-caption-1 assistive">정답을 모두 고르세요 (복수 선택)</div>
+        <div v-if="optionPreamble" class="option-preamble"><InlineTex :text="optionPreamble" /></div>
         <QuizOption
           v-for="(opt, i) in mcOptions"
           :key="opt.label"
@@ -381,6 +448,12 @@ function goChat() {
 .play-badge[data-tone='positive']   { background: var(--green-99);  color: var(--status-positive); }
 .play-badge[data-tone='cautionary'] { background: var(--orange-99); color: var(--status-cautionary); }
 .play-badge[data-tone='negative']   { background: var(--red-99);    color: var(--status-negative); }
+.option-preamble {
+  text-align: center;
+  font: var(--weight-regular) 15px/1.6 var(--font-sans);
+  color: var(--label-normal);
+  padding: 4px 0;
+}
 .play-assets { display: flex; flex-direction: column; gap: 10px; }
 .play-asset { display: flex; flex-direction: column; gap: 6px; }
 .play-asset img { max-width: 100%; border-radius: 12px; box-shadow: inset 0 0 0 1px var(--line-normal-normal); }

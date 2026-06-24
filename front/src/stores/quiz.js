@@ -11,8 +11,9 @@ export const useQuizStore = defineStore('quiz', () => {
   const submitResult   = ref(null)       // submit 응답 data
 
   // 오답 루프용 추가 상태
-  const parentSessionId = ref(null)      // 오답 루프 출발점 세션 ID (재도전 시 원본 오답 조회용)
-  const chatContext     = ref(null)      // ChatView용 { sessionId, problem }
+  const parentSessionId   = ref(null)   // 오답 루프 출발점 세션 ID (재도전 시 원본 오답 조회용)
+  const chatContext       = ref(null)   // ChatView용 { sessionId, problem }
+  const reviewReturnState = ref(null)   // 챗봇 이동 전 단계 복귀용 { stepKey, problem, result }
 
   // 약점 유형 Top3를 유형별로 순서대로 도는 오답 루프 진행 상태.
   // reviewSubtypes[i] = { rank, problemSubtype, originalProblemId, s1, mid, s2 }
@@ -101,15 +102,16 @@ export const useQuizStore = defineStore('quiz', () => {
     problems.value       = []
     answers.value        = {}
     submitResult.value   = null
-    parentSessionId.value = null
-    chatContext.value     = null
-    reviewSubtypes.value   = []
-    reviewSubtypeIdx.value = 0
+    parentSessionId.value   = null
+    chatContext.value       = null
+    reviewReturnState.value = null
+    reviewSubtypes.value    = []
+    reviewSubtypeIdx.value  = 0
   }
 
   return {
     sessionId, sessionType, problems, answers, submitResult, total,
-    parentSessionId, chatContext,
+    parentSessionId, chatContext, reviewReturnState,
     reviewSubtypes, reviewSubtypeIdx, setupReviewLoop,
     startSession, createAndLoad, setAnswer, buildAnswersPayload,
     submit, setSubmitResult, reset,
