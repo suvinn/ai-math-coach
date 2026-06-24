@@ -30,7 +30,8 @@ class Command(BaseCommand):
                 # is_quizable 판별
                 question_with_options = row.get('question_with_options') or ''
                 answer = row.get('answer', '').strip()
-                is_quizable = _is_quizable(question_with_options, answer)
+                option_type = row.get('option_type') or None
+                is_quizable = _is_quizable(question_with_options, answer, option_type)
 
                 Problem.objects.update_or_create(
                     id=row['source_data_name'],
@@ -59,10 +60,15 @@ class Command(BaseCommand):
         )
 
 
-def _is_quizable(question_with_options, answer):
+def _is_quizable(question_with_options, answer, option_type):
     answer = answer.strip()
-    # answer가 ①②③④⑤ 로 시작하면 퀴즈 출제 가능
-    return bool(re.match(r'^[①②③④⑤]', answer))
+    # ①②③④⑤로 시작하는 정답이어야 하고
+    # option_type이 있어야 함 (선택지 텍스트/이미지가 있는 문제만)
+    if not re.match(r'^[①②③④⑤]', answer):
+        return False
+    if not option_type:  # null이면 선택지 추출 실패 → 출제 불가
+        return False
+    return True
 
 
 def _parse_bool(raw):
