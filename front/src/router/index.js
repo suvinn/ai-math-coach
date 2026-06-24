@@ -21,7 +21,14 @@ const routes = [
   { path: '/my/history', name: 'my-history',   component: () => import('@/views/my/HistoryView.vue'),   meta: { shell: 'web' } },
 
   { path: '/:pathMatch(.*)*', redirect: '/' },
-]
+
+  {
+    path: '/problems/:problem_id/comments',
+    name: 'comments',
+    component: () => import('@/views/community/CommentView.vue'),
+    meta: { shell: 'web' }
+  }
+  ]
 
 const router = createRouter({
   history: createWebHistory(),
