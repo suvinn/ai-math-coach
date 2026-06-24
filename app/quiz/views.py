@@ -35,43 +35,63 @@ def _serialize_problem_with_answer(problem, request, extra_fields=None):
     return ProblemWithAnswerSerializer(problem, context=context).data
 
 
+def _make_warning(requested, actual):
+    """요청 문제 수보다 실제 출제 수가 적을 때 안내 메시지 반환. 같으면 None."""
+    if actual < requested:
+        return (
+            f'해당 범위에 문제가 {actual}개밖에 없어서 '
+            f'{actual}문제로 시작해요.'
+        )
+    return None
+
+
 def _create_diagnosis_session(user):
     """
     회원가입 직후 빠른 진단 세션을 자동 생성한다.
-    - user.current_chapter_major / current_chapter_middle 기준
-    - 하 70% + 중 30%, 최대 10문제
-    - 문제가 없으면 None 반환 (가입 자체는 막지 않음)
+    - 진도 입력 O → current_chapter_middle 범위에서 하 70% + 중 30%, 10문제
+    - 진도 입력 X → 전체 단원에서 대단원별 균등 추출, 10문제
+    - 문제가 부족하면 실제 출제 가능한 수와 안내 메시지를 함께 반환
+    - 반환값: {'session': QuizSession | None, 'warning': str | None}
     """
-    if not user.current_chapter_major or not user.current_chapter_middle:
-        return None
+    DIAGNOSIS_COUNT = 10
+    has_chapter = bool(user.current_chapter_major and user.current_chapter_middle)
 
-    base_filter = dict(
-        chapter_major  = user.current_chapter_major,
-        chapter_middle = user.current_chapter_middle,
-        is_quizable    = True,
-    )
-    problem_count = 10
+    if has_chapter:
+        # 진도 입력 O — 해당 중단원에서 하 70% + 중 30%
+        base_filter = dict(
+            chapter_major  = user.current_chapter_major,
+            chapter_middle = user.current_chapter_middle,
+            is_quizable    = True,
+        )
+        problems_low = list(Problem.objects.filter(**base_filter, difficulty='하'))
+        problems_mid = list(Problem.objects.filter(**base_filter, difficulty='중'))
 
-    problems_low = list(Problem.objects.filter(**base_filter, difficulty='하'))
-    problems_mid = list(Problem.objects.filter(**base_filter, difficulty='중'))
+        low_count    = round(DIAGNOSIS_COUNT * 0.7)
+        mid_count    = DIAGNOSIS_COUNT - low_count
+        selected_low = random.sample(problems_low, min(low_count, len(problems_low)))
+        selected_mid = random.sample(problems_mid, min(mid_count, len(problems_mid)))
+        selected     = selected_low + selected_mid
+        random.shuffle(selected)
 
-    if not problems_low and not problems_mid:
-        return None
+        chapter_major  = user.current_chapter_major
+        chapter_middle = user.current_chapter_middle
 
-    low_count    = round(problem_count * 0.7)
-    mid_count    = problem_count - low_count
-    selected_low = random.sample(problems_low, min(low_count, len(problems_low)))
-    selected_mid = random.sample(problems_mid, min(mid_count, len(problems_mid)))
-    selected     = selected_low + selected_mid
-    random.shuffle(selected)
+    else:
+        # 진도 입력 X — 전체 단원에서 대단원별 균등 추출
+        selected       = _select_diagnosis_problems(DIAGNOSIS_COUNT)
+        chapter_major  = '전체 진단'
+        chapter_middle = '전체 진단'
 
     if not selected:
-        return None
+        return {'session': None, 'warning': None}
+
+    # 문제 수 부족 경고 메시지
+    warning = _make_warning(DIAGNOSIS_COUNT, len(selected))
 
     session = QuizSession.objects.create(
         user           = user,
-        chapter_major  = user.current_chapter_major,
-        chapter_middle = user.current_chapter_middle,
+        chapter_major  = chapter_major,
+        chapter_middle = chapter_middle,
         chapter_minor  = '',
         problem_count  = len(selected),
         session_type   = 'diagnosis',
@@ -82,7 +102,7 @@ def _create_diagnosis_session(user):
             problem     = problem,
             order_index = idx + 1,
         )
-    return session
+    return {'session': session, 'warning': warning}
 
 
 User = get_user_model()
@@ -104,8 +124,10 @@ class RegisterView(APIView):
 
         user = serializer.save()
 
-        # 빠른 진단 세션 자동 생성 (진도 입력한 경우에만)
-        diagnosis_session = _create_diagnosis_session(user)
+        # 빠른 진단 세션 자동 생성 (진도 입력 여부와 무관하게 항상 시도)
+        result = _create_diagnosis_session(user)
+        diagnosis_session = result['session']
+        warning           = result['warning']
 
         response_data = {
             'username': user.username,
@@ -113,6 +135,8 @@ class RegisterView(APIView):
         }
         if diagnosis_session:
             response_data['diagnosis_session_id'] = diagnosis_session.id
+        if warning:
+            response_data['warning'] = warning
 
         return Response({'status': 'success', 'data': response_data},
                         status=status.HTTP_201_CREATED)
@@ -161,10 +185,8 @@ class MeView(APIView):
         return Response({
             'status': 'success',
             'data': {
-                # 'user_id': request.user.id,
-                'username': request.user.username,
-                'name': request.user.first_name,
-                'streak':   request.user.streak,
+                'username':               u.username,
+                'name':                   u.first_name,
                 'grade':                  u.grade,
                 'current_chapter_major':  u.current_chapter_major,
                 'current_chapter_middle': u.current_chapter_middle,
@@ -298,17 +320,19 @@ class QuizSessionCreateView(APIView):
                     order_index=idx + 1,
                 )
 
-            return Response({
-                'status': 'success',
-                'data': {
-                    'session_id':      session.id,
-                    'session_type':    session.session_type,
-                    'status':          session.status,
-                    'requested_count': problem_count,
-                    'actual_count':    len(selected),
-                    'created_at':      session.created_at,
-                }
-            }, status=status.HTTP_201_CREATED)
+            warning = _make_warning(problem_count, len(selected))
+            resp = {
+                'session_id':      session.id,
+                'session_type':    session.session_type,
+                'status':          session.status,
+                'requested_count': problem_count,
+                'actual_count':    len(selected),
+                'created_at':      session.created_at,
+            }
+            if warning:
+                resp['warning'] = warning
+            return Response({'status': 'success', 'data': resp},
+                            status=status.HTTP_201_CREATED)
 
         session_type   = 'normal'
         parent_session = None
@@ -359,17 +383,19 @@ class QuizSessionCreateView(APIView):
                     order_index=idx + 1,
                 )
 
-            return Response({
-                'status': 'success',
-                'data': {
-                    'session_id':      session.id,
-                    'session_type':    session.session_type,
-                    'status':          session.status,
-                    'requested_count': len(problem_ids),
-                    'actual_count':    len(selected),
-                    'created_at':      session.created_at,
-                }
-            }, status=status.HTTP_201_CREATED)
+            warning = _make_warning(len(problem_ids), len(selected))
+            resp = {
+                'session_id':      session.id,
+                'session_type':    session.session_type,
+                'status':          session.status,
+                'requested_count': len(problem_ids),
+                'actual_count':    len(selected),
+                'created_at':      session.created_at,
+            }
+            if warning:
+                resp['warning'] = warning
+            return Response({'status': 'success', 'data': resp},
+                            status=status.HTTP_201_CREATED)
 
         # 보완 풀이: AI 코칭이 추천한 문제 id 그대로 세션 구성 (단원 필터 없이, 순서 유지)
         if problem_ids:
@@ -471,7 +497,7 @@ class QuizSessionCreateView(APIView):
                     ).first() if target_subtype else None
 
                     if weak_obj:
-                        rec = weak_obj.rec_problems.filter(
+                        rec = weak_obj.recommendations.filter(
                             order_index=rec_order_index
                         ).select_related('problem').first()
 
@@ -529,18 +555,20 @@ class QuizSessionCreateView(APIView):
                 order_index=idx + 1,
             )
 
-        return Response({
-            'status': 'success',
-            'data': {
-                'session_id':      session.id,
-                'session_type':    session.session_type,
-                'review_step':     review_step or ('s1' if session_type == 'review_1' else None),
-                'status':          session.status,
-                'requested_count': problem_count,
-                'actual_count':    actual_count,
-                'created_at':      session.created_at,
-            }
-        }, status=status.HTTP_201_CREATED)
+        warning = _make_warning(problem_count, actual_count)
+        resp = {
+            'session_id':      session.id,
+            'session_type':    session.session_type,
+            'review_step':     review_step or ('s1' if session_type == 'review_1' else None),
+            'status':          session.status,
+            'requested_count': problem_count,
+            'actual_count':    actual_count,
+            'created_at':      session.created_at,
+        }
+        if warning:
+            resp['warning'] = warning
+        return Response({'status': 'success', 'data': resp},
+                        status=status.HTTP_201_CREATED)
 
 
 def _select_diagnosis_problems(total_count):
@@ -750,16 +778,6 @@ def _update_subtype_mastery(user, results):
         subtype_stats[subtype]['total']   += 1
         subtype_stats[subtype]['correct'] += 1 if r['is_correct'] else 0
 
-    # subtype별 전체 문제 수 한 번에 조회
-    from django.db.models import Count
-    subtype_names = list(subtype_stats.keys())
-    total_map = {
-        r['problem_subtype']: r['count']
-        for r in Problem.objects.filter(
-            problem_subtype__in=subtype_names
-        ).values('problem_subtype').annotate(count=Count('id'))
-    }
-
     for subtype, stats in subtype_stats.items():
         mastery, _ = SubtypeMastery.objects.get_or_create(
             user=user,
@@ -778,15 +796,11 @@ def _update_subtype_mastery(user, results):
 
         new_accuracy = mastery.correct_count / mastery.total_attempts
 
-        # 마스터 판정: 전체 문제를 모두 풀고 정답률 100%일 때
-        total_in_subtype = total_map.get(subtype, 0)
+        # 마스터 판정: 누적 정답률 80% 이상 + 최소 3문제 이상 풀었을 때
         was_mastered = mastery.mastered
-        if (not was_mastered
-                and total_in_subtype > 0
-                and mastery.total_attempts >= total_in_subtype
-                and new_accuracy == 1.0):
+        if not was_mastered and new_accuracy >= 0.8 and mastery.total_attempts >= 3:
             mastery.mastered        = True
-            mastery.accuracy_before = round(prev_accuracy, 2) if prev_accuracy is not None else None
+            mastery.accuracy_before = round(prev_accuracy, 2) if prev_accuracy else None
             mastery.accuracy_after  = round(new_accuracy, 2)
 
         mastery.save()
@@ -982,26 +996,6 @@ class UserHistoryView(APIView):
             user=request.user
         ).order_by('-updated_at')
 
-        # subtype → chapter 매핑 + 전체 문제 수 (Problem 테이블에서 한 번에 조회)
-        from django.db.models import Count
-        subtype_names = [m.problem_subtype for m in masteries]
-        chapter_map = {}
-        for p in Problem.objects.filter(
-            problem_subtype__in=subtype_names
-        ).values('problem_subtype', 'chapter_major', 'chapter_middle').distinct():
-            if p['problem_subtype'] not in chapter_map:
-                chapter_map[p['problem_subtype']] = {
-                    'chapter_major':  p['chapter_major'],
-                    'chapter_middle': p['chapter_middle'],
-                }
-
-        total_map = {
-            r['problem_subtype']: r['count']
-            for r in Problem.objects.filter(
-                problem_subtype__in=subtype_names
-            ).values('problem_subtype').annotate(count=Count('id'))
-        }
-
         subtype_mastery = []
         for m in masteries:
             accuracy = (
@@ -1022,22 +1016,17 @@ class UserHistoryView(APIView):
             else:
                 level = '보완 필요'
 
-            chapter = chapter_map.get(m.problem_subtype, {})
-
             subtype_mastery.append({
                 'problem_subtype':  m.problem_subtype,
-                'chapter_major':    chapter.get('chapter_major'),
-                'chapter_middle':   chapter.get('chapter_middle'),
                 'mastered':         m.mastered,
                 'level':            level,
-                'accuracy':         round(accuracy * 100),
+                'accuracy':         round(accuracy * 100),       # 퍼센트로
                 'accuracy_before':  round(m.accuracy_before * 100)
                                     if m.accuracy_before else None,
                 'accuracy_after':   round(m.accuracy_after * 100)
                                     if m.accuracy_after else None,
                 'total_attempts':   m.total_attempts,
-                'total_in_subtype': total_map.get(m.problem_subtype, 0),
-                'next_difficulty':  next_difficulty,
+                'next_difficulty':  next_difficulty,             # 마스터 시에만
                 'updated_at':       m.updated_at,
             })
 
