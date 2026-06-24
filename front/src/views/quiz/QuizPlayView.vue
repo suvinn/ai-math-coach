@@ -11,7 +11,7 @@ import QuizOption from '@/components/common/QuizOption.vue'
 import InlineTex from '@/components/common/InlineTex.vue'
 import WdsButton from '@/components/common/WdsButton.vue'
 import WdsField from '@/components/common/WdsField.vue'
-import { parseCircledOptions } from '@/utils/circledOptions'
+import { parseCircledOptions, parseOptionPreamble } from '@/utils/circledOptions'
 import { difficultyTone } from '@/utils/difficulty'
 
 const router = useRouter()
@@ -35,6 +35,9 @@ const pct = computed(() => (total.value ? Math.round(((idx.value + 1) / total.va
 
 // question_with_options에 ①②③... 객관식 선택지가 있으면 클릭형 UI로 전환
 const mcOptions = computed(() => current.value ? parseCircledOptions(current.value.question_with_options) : null)
+const optionPreamble = computed(() =>
+  current.value ? parseOptionPreamble(current.value.question_with_options, current.value.question_text) : null
+)
 const isMulti = computed(() => !!current.value?.is_multi_answer)
 
 function isSelected(label) {
@@ -123,14 +126,19 @@ async function finish() {
       <!-- 보기 중 일부가 이미지로 제공되는 경우 (option_type=mixed_with_image) -->
       <div v-if="current.assets && current.assets.length" class="play-assets">
         <div v-for="(asset, i) in current.assets" :key="i" class="play-asset">
-          <span class="wds-caption-1 assistive">{{ asset.asset_role }}</span>
-          <img :src="asset.image_url" :alt="asset.asset_role" />
+          <img
+            :src="asset.image_url"
+            :alt="`보기 이미지 ${i + 1}`"
+            @error="$event.target.closest('.play-asset').style.display='none'"
+          />
         </div>
       </div>
 
       <!-- 객관식: ①②③... 선택지가 있으면 클릭형으로 -->
       <div v-if="mcOptions" class="stack-8">
         <div v-if="isMulti" class="wds-caption-1 assistive">정답을 모두 고르세요 (복수 선택)</div>
+        <!-- 선택지 앞 수식·조건 (question_with_options 에서 ① 이전 텍스트) -->
+        <div v-if="optionPreamble" class="option-preamble"><InlineTex :text="optionPreamble" /></div>
         <QuizOption
           v-for="(opt, i) in mcOptions"
           :key="opt.label"
@@ -244,6 +252,12 @@ async function finish() {
 .field-label {
   font: var(--weight-semibold) 13px/1 var(--font-sans);
   color: var(--label-alternative);
+}
+.option-preamble {
+  text-align: center;
+  font: var(--weight-regular) 15px/1.6 var(--font-sans);
+  color: var(--label-normal);
+  padding: 4px 0;
 }
 .play-foot {
   display: flex;
