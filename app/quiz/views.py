@@ -45,66 +45,6 @@ def _make_warning(requested, actual):
     return None
 
 
-def _create_diagnosis_session(user):
-    """
-    회원가입 직후 빠른 진단 세션을 자동 생성한다.
-    - 진도 입력 O → current_chapter_middle 범위에서 하 70% + 중 30%, 10문제
-    - 진도 입력 X → 전체 단원에서 대단원별 균등 추출, 10문제
-    - 문제가 부족하면 실제 출제 가능한 수와 안내 메시지를 함께 반환
-    - 반환값: {'session': QuizSession | None, 'warning': str | None}
-    """
-    DIAGNOSIS_COUNT = 10
-    has_chapter = bool(user.current_chapter_major and user.current_chapter_middle)
-
-    if has_chapter:
-        # 진도 입력 O — 해당 중단원에서 하 70% + 중 30%
-        base_filter = dict(
-            chapter_major  = user.current_chapter_major,
-            chapter_middle = user.current_chapter_middle,
-            is_quizable    = True,
-        )
-        problems_low = list(Problem.objects.filter(**base_filter, difficulty='하'))
-        problems_mid = list(Problem.objects.filter(**base_filter, difficulty='중'))
-
-        low_count    = round(DIAGNOSIS_COUNT * 0.7)
-        mid_count    = DIAGNOSIS_COUNT - low_count
-        selected_low = random.sample(problems_low, min(low_count, len(problems_low)))
-        selected_mid = random.sample(problems_mid, min(mid_count, len(problems_mid)))
-        selected     = selected_low + selected_mid
-        random.shuffle(selected)
-
-        chapter_major  = user.current_chapter_major
-        chapter_middle = user.current_chapter_middle
-
-    else:
-        # 진도 입력 X — 전체 단원에서 대단원별 균등 추출
-        selected       = _select_diagnosis_problems(DIAGNOSIS_COUNT)
-        chapter_major  = '전체 진단'
-        chapter_middle = '전체 진단'
-
-    if not selected:
-        return {'session': None, 'warning': None}
-
-    # 문제 수 부족 경고 메시지
-    warning = _make_warning(DIAGNOSIS_COUNT, len(selected))
-
-    session = QuizSession.objects.create(
-        user           = user,
-        chapter_major  = chapter_major,
-        chapter_middle = chapter_middle,
-        chapter_minor  = '',
-        problem_count  = len(selected),
-        session_type   = 'diagnosis',
-    )
-    for idx, problem in enumerate(selected):
-        SessionProblem.objects.create(
-            session     = session,
-            problem     = problem,
-            order_index = idx + 1,
-        )
-    return {'session': session, 'warning': warning}
-
-
 User = get_user_model()
 
 
@@ -124,19 +64,10 @@ class RegisterView(APIView):
 
         user = serializer.save()
 
-        # 빠른 진단 세션 자동 생성 (진도 입력 여부와 무관하게 항상 시도)
-        result = _create_diagnosis_session(user)
-        diagnosis_session = result['session']
-        warning           = result['warning']
-
         response_data = {
             'username': user.username,
             'name':     user.first_name,
         }
-        if diagnosis_session:
-            response_data['diagnosis_session_id'] = diagnosis_session.id
-        if warning:
-            response_data['warning'] = warning
 
         return Response({'status': 'success', 'data': response_data},
                         status=status.HTTP_201_CREATED)
@@ -296,9 +227,39 @@ class QuizSessionCreateView(APIView):
                     status=status.HTTP_400_BAD_REQUEST
                 )
 
-        # 빠른 진단: 전체 단원에서 골고루 랜덤 추출, 단원 선택 없이 바로 시작
+        # 빠른 진단: 단원 선택 없이 바로 시작
+        # - 진도 입력 O → current_chapter_middle 범위에서 하 70% + 중 30%, 10문제
+        # - 진도 입력 X → 전체 단원에서 대단원별 균등 추출, 10문제
+        # - 문제가 부족하면 실제 출제 가능한 수와 안내 메시지를 함께 반환
         if is_diagnosis:
-            selected = _select_diagnosis_problems(problem_count)
+            has_chapter = bool(
+                request.user.current_chapter_major and
+                request.user.current_chapter_middle
+            )
+            if has_chapter:
+                # 진도 입력 O → 해당 중단원에서 하 70% + 중 30%
+                base_filter = dict(
+                    chapter_major  = request.user.current_chapter_major,
+                    chapter_middle = request.user.current_chapter_middle,
+                    is_quizable    = True,
+                )
+                DIAGNOSIS_COUNT = problem_count
+                problems_low = list(Problem.objects.filter(**base_filter, difficulty='하'))
+                problems_mid = list(Problem.objects.filter(**base_filter, difficulty='중'))
+                low_count    = round(DIAGNOSIS_COUNT * 0.7)
+                mid_count    = DIAGNOSIS_COUNT - low_count
+                selected_low = random.sample(problems_low, min(low_count, len(problems_low)))
+                selected_mid = random.sample(problems_mid, min(mid_count, len(problems_mid)))
+                selected     = selected_low + selected_mid
+                random.shuffle(selected)
+                chapter_major  = request.user.current_chapter_major
+                chapter_middle = request.user.current_chapter_middle
+            else:
+                # 진도 입력 X → 전체 단원 균등 추출
+                selected       = _select_diagnosis_problems(problem_count)
+                chapter_major  = '전체 진단'
+                chapter_middle = '전체 진단'
+
             if not selected:
                 return Response(
                     {'status': 'error', 'message': '출제 가능한 문제가 없습니다.'},
@@ -307,8 +268,8 @@ class QuizSessionCreateView(APIView):
 
             session = QuizSession.objects.create(
                 user=request.user,
-                chapter_major='전체 진단',
-                chapter_middle='전체 진단',
+                chapter_major=chapter_major,
+                chapter_middle=chapter_middle,
                 chapter_minor='',
                 problem_count=len(selected),
                 session_type='normal',
@@ -333,7 +294,7 @@ class QuizSessionCreateView(APIView):
                 resp['warning'] = warning
             return Response({'status': 'success', 'data': resp},
                             status=status.HTTP_201_CREATED)
-
+        
         session_type   = 'normal'
         parent_session = None
 
@@ -396,46 +357,6 @@ class QuizSessionCreateView(APIView):
                 resp['warning'] = warning
             return Response({'status': 'success', 'data': resp},
                             status=status.HTTP_201_CREATED)
-
-        # 보완 풀이: AI 코칭이 추천한 문제 id 그대로 세션 구성 (단원 필터 없이, 순서 유지)
-        if problem_ids:
-            pool = Problem.objects.filter(id__in=problem_ids, is_quizable=True)
-            by_id = {p.id: p for p in pool}
-            selected = [by_id[pid] for pid in problem_ids if pid in by_id]
-
-            if not selected:
-                return Response(
-                    {'status': 'error', 'message': '추천된 문제를 찾을 수 없습니다.'},
-                    status=status.HTTP_400_BAD_REQUEST
-                )
-
-            session = QuizSession.objects.create(
-                user=request.user,
-                chapter_major=parent_session.chapter_major,
-                chapter_middle=parent_session.chapter_middle,
-                chapter_minor=parent_session.chapter_minor or '',
-                problem_count=len(selected),
-                session_type=session_type,
-                parent_session=parent_session,
-            )
-            for idx, problem in enumerate(selected):
-                SessionProblem.objects.create(
-                    session=session,
-                    problem=problem,
-                    order_index=idx + 1,
-                )
-
-            return Response({
-                'status': 'success',
-                'data': {
-                    'session_id':      session.id,
-                    'session_type':    session.session_type,
-                    'status':          session.status,
-                    'requested_count': len(problem_ids),
-                    'actual_count':    len(selected),
-                    'created_at':      session.created_at,
-                }
-            }, status=status.HTTP_201_CREATED)
 
         base_filter = dict(
             chapter_major=chapter_major,
@@ -1226,7 +1147,9 @@ def _recommend_similar(report, weak, sample_problem, solved_ids, session):
         api_key=settings.GMS_KEY,
         base_url=settings.GMS_URL
     )
-    chroma_client = chromadb.PersistentClient(path='./chroma_db')
+    import os
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    chroma_client = chromadb.PersistentClient(path=os.path.join(BASE_DIR, 'chroma_db'))
     collection    = chroma_client.get_collection('problems')
 
     # 오답 문제 question_text로 임베딩 쿼리
