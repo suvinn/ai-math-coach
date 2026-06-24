@@ -137,10 +137,9 @@ function goResume() {
                 10문제로 내 취약 유형 찾기<br>
                 전체 단원에서 골고루 출제해 약점을 분석해요.
               </div>
-              <button class="diag-btn" :disabled="diagnosing" @click="startDiagnosis">
+              <WdsButton class="diag-btn" variant="outlined" size="medium" icon-right="arrow-right" :style="{ width: '135px', background: '#fff', color: '#2563eb', borderColor: '#fff' }" :disabled="diagnosing" @click="startDiagnosis">
                 {{ diagnosing ? '준비 중…' : '진단 시작하기' }}
-                <WdsIcon name="arrow-right" :size="15" color="currentColor" />
-              </button>
+              </WdsButton>
             </div>
             <!-- SVG 일러스트 -->
             <svg class="diag-illust" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -194,7 +193,7 @@ function goResume() {
                 <div class="side-title">오늘의 추천 학습</div>
                 <div class="side-sub">단원을 골라 바로 퀴즈를 시작해요.</div>
               </div>
-              <WdsButton class="side-btn" variant="primary" size="medium" icon-right="arrow-right" @click="goTodayRec">
+              <WdsButton class="side-btn" variant="primary" size="medium" icon-right="arrow-right" :style="{ width: '135px' }" @click="goTodayRec">
                 퀴즈 설정하기
               </WdsButton>
             </div>
@@ -216,7 +215,7 @@ function goResume() {
                   {{ resumeData.reviewSubtypes[resumeData.resumeFromIdx]?.problemSubtype }} 외 {{ resumeData.reviewSubtypes.length - resumeData.resumeFromIdx }}개 남음
                 </div>
               </div>
-              <WdsButton class="side-btn" variant="primary" size="medium" icon-right="arrow-right" @click="goResume">
+              <WdsButton class="side-btn" variant="primary" size="medium" icon-right="arrow-right" :style="{ width: '135px' }" @click="goResume">
                 이어서 풀기
               </WdsButton>
             </div>
@@ -251,7 +250,7 @@ function goResume() {
   font-size: 20px;
 }
 .home-headline {
-  font: var(--weight-bold) 28px/1.3 var(--font-sans);
+  font: var(--weight-bold) 34px/1.3 var(--font-sans);
   letter-spacing: -0.025em;
   margin-top: 4px;
 }
@@ -297,37 +296,17 @@ function goResume() {
 }
 .diag-inner { flex: 1; }
 .diag-title {
-  font: var(--weight-bold) 22px/1.3 var(--font-sans);
+  font: var(--weight-bold) 28px/1.3 var(--font-sans);
   letter-spacing: -0.02em;
   margin-bottom: 10px;
 }
 .diag-body {
-  font-size: 15px;
+  font-size: 17px;
   opacity: 0.88;
   line-height: 1.6;
   margin-bottom: 20px;
 }
-.diag-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  align-self: flex-start;
-  height: 44px;
-  padding: 0 16px;
-  border-radius: 14px;
-  border: none;
-  background: #fff;
-  color: #2563eb;
-  font-size: 14px;
-  font-weight: var(--weight-semibold);
-  letter-spacing: -0.01em;
-  cursor: pointer;
-  transition: opacity 0.15s;
-  white-space: nowrap;
-}
-.diag-btn:hover { opacity: 0.9; }
-.diag-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
 .diag-meta {
   display: flex;
   align-items: center;
