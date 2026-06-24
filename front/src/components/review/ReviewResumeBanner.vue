@@ -1,6 +1,4 @@
 <!-- 📄 src/components/review/ReviewResumeBanner.vue -->
-<!-- 오답 루프 도중 홈으로 나간 경우, 홈 화면 상단에 표시되는 이어하기 배너.
-     localStorage에 reviewLoop_resume 키가 있을 때만 렌더링된다. -->
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
@@ -24,13 +22,11 @@ onMounted(() => {
   }
 })
 
-// 남은 유형 수 계산
 const remainingCount = computed(() => {
   if (!resumeData.value) return 0
   return resumeData.value.reviewSubtypes.length - resumeData.value.resumeFromIdx
 })
 
-// 다음 유형 이름
 const nextSubtypeName = computed(() => {
   if (!resumeData.value) return ''
   return resumeData.value.reviewSubtypes[resumeData.value.resumeFromIdx]?.problemSubtype || ''
@@ -38,11 +34,9 @@ const nextSubtypeName = computed(() => {
 
 function resume() {
   const d = resumeData.value
-  // store에 저장된 상태 복원
   quiz.parentSessionId   = d.parentSessionId
   quiz.reviewSubtypes    = d.reviewSubtypes
   quiz.reviewSubtypeIdx  = d.resumeFromIdx
-  // localStorage는 ReviewPlayView의 continueToNextSubtype에서 지워짐
   router.push('/review/play')
 }
 
@@ -55,14 +49,10 @@ function dismiss() {
 <template>
   <div v-if="resumeData" class="resume-banner">
     <div class="resume-left">
-      <div class="resume-icon">
-        <WdsIcon name="circle-check" :size="24" color="#fff" />
-      </div>
       <div class="resume-text">
-        <div class="wds-label-1 resume-title">오답 루프 이어서 풀기</div>
+        <div class="resume-title">오답 이어풀기</div>
         <div class="wds-body-2 resume-sub">
-          <span style="font-weight: 600">{{ nextSubtypeName }}</span>
-          유형 외 {{ remainingCount }}개 남음
+          {{ nextSubtypeName }} 외 {{ remainingCount }}개 남음
         </div>
       </div>
     </div>
@@ -70,7 +60,7 @@ function dismiss() {
       <button class="dismiss-btn" @click="dismiss">
         <WdsIcon name="xmark" :size="14" color="var(--label-assistive)" />
       </button>
-      <WdsButton variant="primary" size="large" icon-right="arrow-right" @click="resume">
+      <WdsButton class="resume-btn" variant="primary" size="large" icon-right="arrow-right" @click="resume">
         이어서 풀기
       </WdsButton>
     </div>
@@ -84,28 +74,16 @@ function dismiss() {
   justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
-  padding: 32px 40px;
-  border-radius: 20px;
-  background: var(--blue-99, #f0f4ff);
-  border: 1.5px solid var(--suql-accent);
+  padding: 28px 32px;
+  border-radius: 16px;
+  background: linear-gradient(105deg, #ddeeff 0%, #ffffff 100%);
+  border: 1px solid #d0e8f9;
 }
 .resume-left {
   display: flex;
   align-items: center;
-  gap: 12px;
   min-width: 0;
 }
-.resume-icon {
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: var(--suql-accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.resume-icon :deep(svg) { color: #fff; }
 .resume-text {
   display: flex;
   flex-direction: column;
@@ -113,7 +91,7 @@ function dismiss() {
   min-width: 0;
 }
 .resume-title {
-  font: var(--weight-bold) 22px/1.4 var(--font-sans);
+  font: var(--weight-bold) 20px/1.4 var(--font-sans);
   letter-spacing: -0.02em;
   color: var(--label-normal);
 }
@@ -133,5 +111,6 @@ function dismiss() {
   border-radius: 6px;
 }
 .dismiss-btn:hover { background: var(--fill-normal); }
-.resume-sub { opacity: 0.6; margin-top: 2px; }
+.resume-sub { color: var(--label-assistive); margin-top: 2px; }
+.resume-btn { min-width: 148px; }
 </style>

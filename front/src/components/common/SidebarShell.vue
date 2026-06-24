@@ -3,13 +3,13 @@
 import { computed, ref, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
+import api, { unwrap } from '@/api'
 import Logo from './Logo.vue'
 import WdsIcon from './WdsIcon.vue'
-import NotificationBell from './NotificationBell.vue'   // ← 추가
+import NotificationBell from './NotificationBell.vue'
 
-// 데스크톱 웹 셸: 상단바 + 좌측 사이드바 + 메인. shell.css의 .app-shell 레이아웃을 사용.
 const props = defineProps({
-  tab: { type: String, default: 'home' }, // home | learn | report | my
+  tab: { type: String, default: 'home' },
 })
 
 const router = useRouter()
@@ -24,7 +24,22 @@ const navItems = [
 
 const initial = computed(() => (auth.user?.name || '학생').slice(0, 1))
 
-// 프로필 클릭 시 로그아웃 메뉴 토글 (바깥 클릭하면 닫힘)
+// 사이드바 통계
+const streak = ref(0)
+const todaySolved = ref(0)  // 임시 하드코딩, API 연결 시 교체
+
+onMounted(async () => {
+  try {
+    const data = unwrap(await api.get('/users/me/dashboard'))
+    streak.value = data?.streak ?? 0
+    // todaySolved.value = data?.today_solved ?? 0  // API 필드 생기면 주석 해제
+    todaySolved.value = 13  // 임시
+  } catch {
+    // 실패해도 그대로
+  }
+})
+
+// 프로필 메뉴
 const profileMenuOpen = ref(false)
 function toggleProfileMenu() {
   profileMenuOpen.value = !profileMenuOpen.value
@@ -48,8 +63,7 @@ async function handleLogout() {
       <Logo />
       <span class="spacer" />
       <div class="actions">
-        <!-- 알림 벨 버튼 -->
-        <NotificationBell />                            <!-- ← 추가 -->
+        <NotificationBell />
       </div>
     </header>
 
@@ -68,6 +82,26 @@ async function handleLogout() {
           </router-link>
         </nav>
       </div>
+
+      <!-- 프로필 위 통계 -->
+      <div class="sidebar-stats">
+        <div class="sidebar-stat">
+          <div class="sidebar-stat-top">
+            <WdsIcon name="fire" :size="13" color="var(--status-cautionary)" />
+            <span class="sidebar-stat-label">연속 학습</span>
+          </div>
+          <span class="sidebar-stat-val">{{ streak }}일</span>
+        </div>
+        <div class="sidebar-stat-divider" />
+        <div class="sidebar-stat">
+          <div class="sidebar-stat-top">
+            <WdsIcon name="document" :size="13" color="var(--suql-accent)" />
+            <span class="sidebar-stat-label">오늘 푼 문제</span>
+          </div>
+          <span class="sidebar-stat-val">{{ todaySolved }}문제</span>
+        </div>
+      </div>
+
       <div class="app-nav-profile-wrap">
         <div v-if="profileMenuOpen" class="app-nav-profile-menu">
           <button class="app-nav-profile-menu-item" @click="handleLogout">
@@ -89,3 +123,39 @@ async function handleLogout() {
     </main>
   </div>
 </template>
+
+<style scoped>
+.sidebar-stats {
+  padding: 12px 14px;
+  margin: 0 8px 8px;
+  border-radius: 12px;
+  background: var(--fill-alternative, #f5f5f5);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.sidebar-stat-top {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sidebar-stat-label {
+  font-size: 11px;
+  color: var(--label-assistive);
+}
+.sidebar-stat-val {
+  font-size: 16px;
+  font-weight: var(--weight-bold);
+  color: var(--label-normal);
+  letter-spacing: -0.02em;
+}
+.sidebar-stat-divider {
+  height: 1px;
+  background: var(--line-normal, #e2e2e2);
+}
+</style>
