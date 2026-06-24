@@ -5,6 +5,28 @@
 const CIRCLED_MARKER = /[①②③④⑤⑥⑦⑧⑨⑩]/g
 const CANON_ORDER = '①②③④⑤⑥⑦⑧⑨⑩'
 
+/**
+ * ① 이전에 나오는 수식·조건 텍스트를 추출. 없거나 중복이면 null.
+ * questionText를 넘기면 두 가지 중복을 방어한다:
+ *   1) questionText에 display math($$, \[)가 있으면 수식이 QuizStem에서 이미 보임 → null
+ *   2) 프리앰블이 questionText로 시작하면 그 부분을 제거해 순수 수식만 반환
+ */
+export function parseOptionPreamble(text, questionText = '') {
+  if (!text) return null
+  // question_text에 display math가 있으면 수식이 이미 렌더링됨 → 중복 방지
+  if (questionText && (/\$\$/.test(questionText) || /\\\[/.test(questionText))) return null
+  const m = text.match(/[①②③④⑤⑥⑦⑧⑨⑩]/)
+  if (!m || m.index === 0) return null
+  let preamble = text.slice(0, m.index).trim()
+  if (!preamble) return null
+  // question_text와 동일한 앞부분 제거 (question_with_options가 question_text를 포함하는 경우)
+  const qt = questionText.trim()
+  if (qt && preamble.startsWith(qt)) {
+    preamble = preamble.slice(qt.length).trim()
+  }
+  return preamble || null
+}
+
 export function parseCircledOptions(text) {
   if (!text) return null
 

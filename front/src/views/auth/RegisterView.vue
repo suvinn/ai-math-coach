@@ -81,21 +81,7 @@ async function onRegister(skip = false) {
     // 자동 로그인
     await auth.login(username.value, password.value)
 
-    // 진단 세션이 백엔드에서 생성됐으면 → 바로 퀴즈 풀이로
-    if (!skip && registerData.diagnosis_session_id) {
-      const sid = registerData.diagnosis_session_id
-      const loaded = unwrap(await api.get(`/quiz/sessions/${sid}/problems`))
-      quiz.startSession({
-        id:          sid,
-        type:        'diagnosis',
-        problemList: loaded.problems || [],
-      })
-      if (loaded.problems?.length) {
-        router.push('/quiz/play')
-        return
-      }
-    }
-
+    // 가입 완료되면 항상 홈으로
     router.push('/')
   } catch (e) {
     const status = e?.response?.status
@@ -212,16 +198,7 @@ async function onRegister(skip = false) {
           :disabled="loading"
           @click="onRegister(false)"
         >
-          {{ loading ? '가입 중…' : '가입하고 진단 시작하기' }}
-        </WdsButton>
-        <WdsButton
-          variant="text"
-          size="large"
-          block
-          :disabled="loading"
-          @click="onRegister(true)"
-        >
-          건너뛰고 시작하기
+          {{ loading ? '가입 중…' : '가입하기' }}
         </WdsButton>
       </div>
     </template>
