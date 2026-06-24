@@ -35,7 +35,6 @@ onMounted(async () => {
     chapters.value = chData || []
     counts.value = cntData || []
 
-    // today 모드: 추천 prefill로 대단원/중단원 자동 선택
     if (mode === 'today') {
       try {
         const rec = unwrap(await api.get('/users/me/today-recommendation'))
@@ -45,9 +44,18 @@ onMounted(async () => {
           problemCount.value = rec.prefill.suggested_count || 10
         }
       } catch {
-        // 추천 없으면 그냥 수동 선택
+        // 추천 실패 시 첫 번째 대단원으로 폴백
       }
     }
+
+    // today 모드 prefill이 없거나, 일반 진입 시 → 첫 번째 대단원 기본 선택
+    if (!selectedMajor.value && chapters.value.length) {
+      selectedMajor.value = chapters.value[0].chapter_major
+    }
+    if (!selectedMiddle.value && chapters.value[0]?.chapter_middles?.length) {
+      selectedMiddle.value = chapters.value[0].chapter_middles[0].chapter_middle
+    }
+
   } catch {
     showToast('단원 정보를 불러오지 못했어요', 'negative', 'circle-exclamation')
   } finally {
