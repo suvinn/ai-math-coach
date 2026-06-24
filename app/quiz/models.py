@@ -192,3 +192,15 @@ class SubtypeMastery(models.Model):
     class Meta:
         db_table = 'subtype_mastery'
         unique_together = ('user', 'problem_subtype')
+
+class Comment(models.Model):
+    """문제별 공개 Q&A 댓글 — 커뮤니티 기능"""
+    problem    = models.ForeignKey(Problem, on_delete=models.CASCADE, related_name='comments')
+    user       = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='comments')
+    content    = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        db_table = 'comment'
+        ordering = ['created_at']

@@ -1639,3 +1639,98 @@ def _generate_chat_answer(problem, question):
         max_tokens=300,
     )
     return response.choices[0].message.content
+
+class ProblemCommentView(APIView):
+    """
+    문제별 공개 Q&A 댓글 (커뮤니티)
+    GET    /problems/{problem_id}/comments              — 댓글 목록 (비로그인 가능)
+    POST   /problems/{problem_id}/comments              — 댓글 작성 (로그인 필요)
+    DELETE /problems/{problem_id}/comments/{comment_id} — 본인 댓글 삭제
+    """
+    from .models import Comment
+    from .serializers import CommentSerializer
+
+    def _get_problem_or_404(self, problem_id):
+        try:
+            return Problem.objects.get(id=problem_id)
+        except Problem.DoesNotExist:
+            return None
+
+    def get(self, request, problem_id):
+        problem = self._get_problem_or_404(problem_id)
+        if not problem:
+            return Response(
+                {'status': 'error', 'message': '문제를 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        from .models import Comment
+        from .serializers import CommentSerializer
+        comments = problem.comments.select_related('user').all()
+        serializer = CommentSerializer(comments, many=True)
+        return Response({
+            'status': 'success',
+            'data': {
+                'problem_id':    problem_id,
+                'comment_count': comments.count(),
+                'comments':      serializer.data,
+            }
+        })
+
+    def post(self, request, problem_id):
+        if not request.user.is_authenticated:
+            return Response(
+                {'status': 'error', 'message': '로그인이 필요합니다.'},
+                status=status.HTTP_401_UNAUTHORIZED
+            )
+
+        problem = self._get_problem_or_404(problem_id)
+        if not problem:
+            return Response(
+                {'status': 'error', 'message': '문제를 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        content = request.data.get('content', '').strip()
+        if not content:
+            return Response(
+                {'status': 'error', 'message': '댓글 내용을 입력해주세요.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        from .models import Comment
+        from .serializers import CommentSerializer
+        comment = Comment.objects.create(
+            problem=problem,
+            user=request.user,
+            content=content,
+        )
+        return Response(
+            {'status': 'success', 'data': CommentSerializer(comment).data},
+            status=status.HTTP_201_CREATED
+        )
+
+    def delete(self, request, problem_id, comment_id=None):
+        if not request.user.is_authenticated:
+            return Response(
+                {'status': 'error', 'message': '로그인이 필요합니다.'},
+                status=status.HTTP_401_UNAUTHORIZED
+            )
+
+        from .models import Comment
+        try:
+            comment = Comment.objects.get(id=comment_id, problem_id=problem_id)
+        except Comment.DoesNotExist:
+            return Response(
+                {'status': 'error', 'message': '댓글을 찾을 수 없습니다.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        if comment.user != request.user:
+            return Response(
+                {'status': 'error', 'message': '본인 댓글만 삭제할 수 있습니다.'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+
+        comment.delete()
+        return Response({'status': 'success', 'message': '삭제되었습니다.'})

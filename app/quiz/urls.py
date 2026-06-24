@@ -26,4 +26,8 @@ urlpatterns = [
     path('users/me/dashboard',            views.UserDashboardView.as_view()),
     path('users/me/today-recommendation', views.TodayRecommendationView.as_view()),
     path('problems/<str:problem_id>',     views.ProblemDetailView.as_view()),
+
+    # 커뮤니티 — 문제별 댓글
+    path('problems/<str:problem_id>/comments',                    views.ProblemCommentView.as_view()),
+    path('problems/<str:problem_id>/comments/<int:comment_id>',   views.ProblemCommentView.as_view()),
 ]

@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from django.conf import settings
-from .models import Problem, ProblemAsset
+from .models import Problem, ProblemAsset, Comment
 
 User = get_user_model()
 
@@ -109,3 +109,14 @@ class ProblemWithAnswerSerializer(ProblemPublicSerializer):
         fields = ProblemPublicSerializer.Meta.fields + [
             "answer", "grading_answer", "explanation",
         ]
+
+
+class CommentSerializer(serializers.ModelSerializer):
+    """문제별 댓글 직렬화"""
+    username = serializers.CharField(source='user.username', read_only=True)
+    name     = serializers.CharField(source='user.first_name', read_only=True)
+
+    class Meta:
+        model  = Comment
+        fields = ['id', 'username', 'name', 'content', 'created_at', 'updated_at']
+        read_only_fields = ['id', 'username', 'name', 'created_at', 'updated_at']
