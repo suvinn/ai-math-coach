@@ -1,12 +1,41 @@
 <!-- 📄 src/views/my/HistoryView.vue -->
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
+import { useQuizStore } from '@/stores/quiz'
 import api, { unwrap } from '@/api'
 import SidebarShell from '@/components/common/SidebarShell.vue'
 import WdsIcon from '@/components/common/WdsIcon.vue'
 
+const router = useRouter()
+const quiz   = useQuizStore()
+
 const loading = ref(true)
-const data = ref(null)
+const data    = ref(null)
+
+// ── 이어하기 ─────────────────────────────────────────
+const RESUME_KEY = 'reviewLoop_resume'
+
+const resumeData = computed(() => {
+  try {
+    const raw = localStorage.getItem(RESUME_KEY)
+    return raw ? JSON.parse(raw) : null
+  } catch { return null }
+})
+
+function canResume(sessionId) {
+  return resumeData.value?.parentSessionId === sessionId
+}
+
+function resumeSession(sessionId) {
+  const d = resumeData.value
+  if (!d || d.parentSessionId !== sessionId) return
+  quiz.parentSessionId  = d.parentSessionId
+  quiz.reviewSubtypes   = d.reviewSubtypes
+  quiz.reviewSubtypeIdx = d.resumeFromIdx
+  router.push('/review/play')
+}
+// ─────────────────────────────────────────────────────
 
 const SESSION_TYPE_LABEL = {
   normal: '1차 풀이',
@@ -140,7 +169,11 @@ onMounted(async () => {
           <div class="wds-label-1" style="font-weight: 700; font-size: 22px">퀴즈 기록</div>
           <div v-if="!data.sessions.length" class="assistive wds-body-2">아직 풀어본 퀴즈가 없어요.</div>
           <div v-else class="stack-8">
-            <div v-for="s in data.sessions" :key="s.session_id" class="session-row">
+            <div
+              v-for="s in data.sessions" :key="s.session_id"
+              class="session-row"
+              :class="{ 'session-row--resumable': canResume(s.session_id) }"
+            >
               <span class="play-badge play-badge--type">{{ SESSION_TYPE_LABEL[s.session_type] || s.session_type }}</span>
               <div style="flex: 1; min-width: 0">
                 <div class="wds-label-1" style="font-weight: 600">
@@ -148,7 +181,16 @@ onMounted(async () => {
                 </div>
                 <div class="wds-caption-1 assistive" style="margin-top: 2px">{{ formatDate(s.created_at) }}</div>
               </div>
-              <div class="session-score">{{ s.score }} / {{ s.total }}</div>
+              <div style="display: flex; align-items: center; gap: 10px; flex: none">
+                <button
+                  v-if="canResume(s.session_id)"
+                  class="resume-chip"
+                  @click="resumeSession(s.session_id)"
+                >
+                  오답 루프 이어하기 →
+                </button>
+                <div class="session-score">{{ s.score }} / {{ s.total }}</div>
+              </div>
             </div>
           </div>
         </div>
@@ -158,6 +200,22 @@ onMounted(async () => {
 </template>
 
 <style scoped>
+.resume-chip {
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--suql-accent);
+  background: var(--blue-99);
+  color: var(--suql-accent);
+  font: var(--weight-semibold) 12px/1 var(--font-sans);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .12s;
+}
+.resume-chip:hover { background: var(--blue-95, #e8f0ff); }
+.session-row--resumable {
+  border-color: var(--suql-accent);
+  box-shadow: inset 0 0 0 1.5px var(--suql-accent);
+}
 .hist-loading {
   display: flex;
   align-items: center;
