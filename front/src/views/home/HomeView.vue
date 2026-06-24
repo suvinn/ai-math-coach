@@ -33,7 +33,7 @@ async function startDiagnosis() {
   if (diagnosing.value) return
   diagnosing.value = true
   try {
-    const res = await quiz.createAndLoad({ mode: 'diagnosis', problem_count: 20 })
+    const res = await quiz.createAndLoad({ mode: 'diagnosis', problem_count: 10 })
     if (!res.problems.length) {
       showToast('출제 가능한 문제가 없어요', 'negative', 'circle-exclamation')
       diagnosing.value = false
@@ -71,7 +71,7 @@ function goTodayRec() {
               <WdsIcon name="sparkle" :size="18" color="rgba(255,255,255,0.7)" />
               <span class="diag-eyebrow">AI 빠른 진단</span>
             </div>
-            <div class="diag-title">20문제로 내 취약 유형 찾기</div>
+            <div class="diag-title">10문제로 내 취약 유형 찾기</div>
             <div class="wds-body-2 diag-sub">전체 단원에서 골고루 출제돼요</div>
           </div>
           <!-- 흰색 outlined 버튼 — 검정 배경과 대비 -->
