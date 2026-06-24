@@ -1,3 +1,15 @@
+# LangGraph 기반 AI 코칭 파이프라인.
+# views.py의 QuizSessionRecommendationsView에서 coaching_graph.invoke()로 호출.
+#
+# 그래프 흐름:
+#   analyze ──(all_correct?)──▶ harder ──▶ END
+#            └──(has_wrong)──▶ feedback ──▶ rag ──▶ END
+#
+# invoke() 반환값(state)에서 views.py가 꺼내 쓰는 키:
+#   all_correct, ai_feedback,
+#   weak_subtypes_data  (오답 있을 때)
+#   harder_problem_ids  (전부 맞았을 때)
+
 from typing import TypedDict, List, Optional, Tuple
 from openai import OpenAI
 import chromadb
@@ -7,26 +19,90 @@ from langgraph.graph import StateGraph, END
 
 
 class CoachingState(TypedDict):
-    session_id: int
+    # ── 입력 (views.py가 채워줌) ──────────────
+    session_id:     int
     chapter_middle: str
-    session_type: str
-    solved_ids: List[str]
-    wrong_problems: List[dict]   # [{problem_id, problem_subtype, question_text, chapter_minor}, ...]
-    all_correct: bool
+    session_type:   str
+    solved_ids:     List[str]
+    all_correct:    bool
 
-    top3: List[Tuple[str, int]]           # [(subtype, wrong_count), ...]
+    # wrong_problems: 오답 문제 목록
+    # [{ problem_id, problem_subtype, question_text, chapter_minor, total_in_subtype }]
+    wrong_problems: List[dict]
+
+    # ── 노드 간 중간값 ────────────────────────
+    # [(subtype, wrong_count), ...]  — analyze_node가 채움
+    top3: List[Tuple[str, int]]
+
+    # ── 출력 (views.py가 읽어 DB 저장) ───────
     ai_feedback: Optional[str]
-    weak_subtypes_data: List[dict]        # [{subtype, wrong_count, total_count, recommendations}, ...]
-    harder_recommendations: List[dict]
 
+    # 오답 있을 때: 취약 유형별 추천 문제 데이터
+    # [{
+    #   rank, problem_subtype, wrong_count,
+    #   s1_ids:  [str]  — 하 난이도, 최대 2개 (index 0 = s1용, index 1 = s2용)
+    #   mid_ids: [str]  — 중 난이도, 최대 1개 (s1mid용)
+    # }]
+    weak_subtypes_data: List[dict]
+
+    # 전부 맞았을 때: 더 어려운 문제 ID 목록
+    # [{ problem_id, difficulty, reason }]
+    harder_problem_ids: List[dict]
+
+
+def _get_client():
+    return OpenAI(api_key=settings.GMS_KEY, base_url=settings.GMS_URL)
+
+
+def _get_collection():
+    chroma_client = chromadb.PersistentClient(path='./chroma_db')
+    return chroma_client.get_collection('problems')
+
+
+def _backfill_ids(collection, query_embedding, problem_subtype,
+                  chapter_minor, exclude_ids, limit, preferred_difficulty):
+    """
+    ChromaDB에서 유사 문제 ID를 limit개까지 단계적으로 채운다.
+    1티어: subtype + preferred_difficulty
+    2티어: subtype (난이도 무관)
+    — subtype이 다른 문제로는 절대 채우지 않음 (보완 문제는 같은 유형이어야 하므로)
+    """
+    exclude = set(exclude_ids)
+
+    def _query(where_filter, already):
+        result = collection.query(
+            query_embeddings=[query_embedding],
+            n_results=20,
+            where=where_filter,
+        )
+        return [pid for pid in result['ids'][0]
+                if pid not in exclude and pid not in already]
+
+    chosen = []
+    tiers = [
+        {'$and': [
+            {'problem_subtype': {'$eq': problem_subtype}},
+            {'difficulty':      {'$eq': preferred_difficulty}},
+            {'is_quizable':     {'$eq': 'True'}},
+        ]},
+        {'$and': [
+            {'problem_subtype': {'$eq': problem_subtype}},
+            {'is_quizable':     {'$eq': 'True'}},
+        ]},
+    ]
+    for tier in tiers:
+        if len(chosen) >= limit:
+            break
+        chosen.extend(_query(tier, chosen)[:limit - len(chosen)])
+    return chosen
 
 
 def analyze_node(state: CoachingState) -> dict:
-    """wrong_problems를 subtype별로 집계해서 top3 산출"""
+    """오답을 subtype별로 집계해 top3 산출. all_correct면 아무것도 안 함."""
     if state['all_correct']:
-        return {}  # 분기에서 처리하므로 여기선 별도 계산 없음
+        return {}
 
-    from collections import Counter, defaultdict
+    from collections import defaultdict
 
     subtype_stats = defaultdict(lambda: {'wrong': 0, 'total': 0})
     for wp in state['wrong_problems']:
@@ -37,15 +113,15 @@ def analyze_node(state: CoachingState) -> dict:
     weak_list = sorted(
         subtype_stats.items(),
         key=lambda x: x[1]['wrong'] / x[1]['total'],
-        reverse=True
+        reverse=True,
     )
     top3 = [(subtype, stats['wrong']) for subtype, stats in weak_list[:3]]
-
     return {'top3': top3}
 
 
 def feedback_node(state: CoachingState) -> dict:
-    client = OpenAI(api_key=settings.GMS_KEY, base_url=settings.GMS_URL)
+    """취약 유형 Top3를 바탕으로 LLM 피드백 생성."""
+    client = _get_client()
 
     subtype_text = '\n'.join(
         f'{rank}. {subtype} ({wrong_count}개 틀림)'
@@ -55,109 +131,114 @@ def feedback_node(state: CoachingState) -> dict:
     response = client.chat.completions.create(
         model='gpt-4o-mini',
         messages=[
-            {'role': 'system', 'content': (
-                '당신은 중학교 수학 학습 코치입니다. '
-                '학생의 취약 유형을 분석해서 따뜻하고 구체적인 피드백을 제공해주세요. '
-                '3문장 이내로 간결하게 작성해주세요.'
-            )},
-            {'role': 'user', 'content': f'학생이 다음 유형에서 틀렸습니다:\n{subtype_text}'}
+            {
+                'role': 'system',
+                'content': (
+                    '당신은 중학교 수학 학습 코치입니다. '
+                    '학생의 취약 유형을 분석해서 따뜻하고 구체적인 피드백을 제공해주세요. '
+                    '3문장 이내로 간결하게 작성해주세요.'
+                ),
+            },
+            {
+                'role': 'user',
+                'content': f'학생이 다음 유형에서 틀렸습니다:\n{subtype_text}',
+            },
         ],
         max_tokens=300,
     )
-
-    # state를 직접 바꾸지 않고, "바뀐 부분만" dict로 반환
     return {'ai_feedback': response.choices[0].message.content}
 
 
 def rag_node(state: CoachingState) -> dict:
-    client        = OpenAI(api_key=settings.GMS_KEY, base_url=settings.GMS_URL)
-    chroma_client = chromadb.PersistentClient(path='./chroma_db')
-    collection    = chroma_client.get_collection('problems')
+    """
+    취약 유형별로 보완 학습용 문제를 RAG로 추천.
+    유형당 출력:
+      s1_ids:  하 난이도 최대 2개 [s1용, s2용]
+      mid_ids: 중 난이도 최대 1개 [s1mid용]
+    views.py가 이 ID들로 Recommendation 레코드를 생성하고
+    order_index를 s1(1) → mid(2) → s2(3) 순으로 저장한다.
+    """
+    client     = _get_client()
+    collection = _get_collection()
 
     weak_subtypes_data = []
 
     for rank, (subtype, wrong_count) in enumerate(state['top3'], start=1):
-        # 이 subtype에 해당하는 오답 문제 하나를 쿼리 샘플로 사용
         sample = next(
-            (wp for wp in state['wrong_problems'] if wp['problem_subtype'] == subtype),
-            None
+            (wp for wp in state['wrong_problems']
+             if wp['problem_subtype'] == subtype),
+            None,
         )
         if sample is None:
             continue
 
+        # 오답 문제 텍스트로 임베딩 생성
         query_embedding = client.embeddings.create(
             model='text-embedding-3-small',
             input=[sample['question_text']],
         ).data[0].embedding
 
-        def _query(where_filter):
-            return collection.query(
-                query_embeddings=[query_embedding], n_results=10, where=where_filter,
-            )
+        chapter_minor = sample.get('chapter_minor', '')
 
-        results = _query({'$and': [
-            {'problem_subtype': {'$eq': subtype}},
-            {'difficulty':      {'$eq': '하'}},
-            {'is_quizable':     {'$eq': 'True'}},
-        ]})
-        recommended_ids = [pid for pid in results['ids'][0] if pid not in state['solved_ids']][:3]
+        # 하 난이도 2개 (s1용 + s2용)
+        s1_ids = _backfill_ids(
+            collection, query_embedding, subtype, chapter_minor,
+            exclude_ids=state['solved_ids'],
+            limit=2,
+            preferred_difficulty='하',
+        )
 
-        if not recommended_ids:
-            results = _query({'$and': [
-                {'problem_subtype': {'$eq': subtype}},
-                {'is_quizable':     {'$eq': 'True'}},
-            ]})
-            recommended_ids = [pid for pid in results['ids'][0] if pid not in state['solved_ids']][:3]
-
-        if not recommended_ids:
-            results = _query({'$and': [
-                {'chapter_minor': {'$eq': sample['chapter_minor']}},
-                {'is_quizable':   {'$eq': 'True'}},
-            ]})
-            recommended_ids = [pid for pid in results['ids'][0] if pid not in state['solved_ids']][:3]
+        # 중 난이도 1개 (s1mid용) — 하 추천 문제도 제외
+        mid_ids = _backfill_ids(
+            collection, query_embedding, subtype, chapter_minor,
+            exclude_ids=list(set(state['solved_ids']) | set(s1_ids)),
+            limit=1,
+            preferred_difficulty='중',
+        )
 
         weak_subtypes_data.append({
-            'rank': rank,
+            'rank':            rank,
             'problem_subtype': subtype,
-            'wrong_count': wrong_count,
-            'recommended_problem_ids': recommended_ids,  # ← DB 객체 아닌 ID 리스트만
+            'wrong_count':     wrong_count,
+            's1_ids':          s1_ids,   # [s1용, s2용]
+            'mid_ids':         mid_ids,  # [s1mid용]
         })
 
     return {'weak_subtypes_data': weak_subtypes_data}
 
 
 def harder_node(state: CoachingState) -> dict:
-    if state['session_type'] in ['normal', 'review_1']:
+    """전부 맞았을 때 더 어려운 문제 3개 추천."""
+    if state['session_type'] in ('normal', 'review_1'):
         next_difficulties = ['중', '상']
     else:
         next_difficulties = ['상']
 
-    harder_problems = list(Problem.objects.filter(
-        chapter_middle=state['chapter_middle'],
-        difficulty__in=next_difficulties,
-        is_quizable=True,
-    ).exclude(id__in=state['solved_ids'])[:3])
+    harder_problems = list(
+        Problem.objects.filter(
+            chapter_middle=state['chapter_middle'],
+            difficulty__in=next_difficulties,
+            is_quizable=True,
+        ).exclude(id__in=state['solved_ids'])[:3]
+    )
 
-    recommendations = [
+    harder_problem_ids = [
         {
             'problem_id': p.id,
             'difficulty': p.difficulty,
-            'reason': f'현재 수준보다 높은 난이도 도전 문제 (난이도: {p.difficulty})',
+            'reason':     f'현재 수준보다 높은 난이도 도전 문제 (난이도: {p.difficulty})',
         }
         for p in harder_problems
     ]
 
     return {
-        'ai_feedback': '모든 문제를 맞혔어요! 더 어려운 문제에 도전해보세요.',
-        'harder_recommendations': recommendations,
+        'ai_feedback':       '모든 문제를 맞혔어요! 더 어려운 문제에 도전해보세요.',
+        'harder_problem_ids': harder_problem_ids,
     }
 
 
 def route_after_analyze(state: CoachingState) -> str:
-    """다음 노드를 문자열로 반환 — 그래프가 이 반환값으로 분기"""
-    if state['all_correct']:
-        return 'harder'
-    return 'feedback'
+    return 'harder' if state['all_correct'] else 'feedback'
 
 
 def build_coaching_graph():
@@ -173,11 +254,11 @@ def build_coaching_graph():
     graph.add_conditional_edges(
         'analyze',
         route_after_analyze,
-        {'feedback': 'feedback', 'harder': 'harder'}
+        {'feedback': 'feedback', 'harder': 'harder'},
     )
     graph.add_edge('feedback', 'rag')
-    graph.add_edge('rag', END)
-    graph.add_edge('harder', END)
+    graph.add_edge('rag',      END)
+    graph.add_edge('harder',   END)
 
     return graph.compile()
 

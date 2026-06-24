@@ -1022,7 +1022,10 @@ class QuizSessionRecommendationsView(APIView):
                 all_correct=True,
                 ai_feedback='모든 문제를 맞혔어요! 더 어려운 문제에 도전해보세요.',
             )
-            _recommend_harder(report, session, solved_ids)
+            try:
+                _recommend_harder(report, session, solved_ids)
+            except Exception:
+                pass
             return Response({'status': 'success', 'data': _serialize_report(report)})
 
         # 취약 유형 Top 3 집계
@@ -1042,8 +1045,11 @@ class QuizSessionRecommendationsView(APIView):
 
         top3 = [(subtype, stats['wrong']) for subtype, stats in weak_list[:3]]
 
-        # LLM 피드백 생성
-        ai_feedback = _generate_feedback(top3)
+        # LLM 피드백 생성 — API 키 미설정 / 네트워크 오류 시 기본 메시지로 대체
+        try:
+            ai_feedback = _generate_feedback(top3)
+        except Exception:
+            ai_feedback = '취약 유형을 집중적으로 보완해 보세요!'
 
         # WeaknessReport 생성
         report = WeaknessReport.objects.create(
@@ -1052,7 +1058,7 @@ class QuizSessionRecommendationsView(APIView):
             ai_feedback=ai_feedback,
         )
 
-        # WeakSubtype + RAG 추천
+        # WeakSubtype + RAG 추천 — ChromaDB / 임베딩 실패 시 추천 없이 진행
         for rank, (subtype, wrong_count) in enumerate(top3, start=1):
             total_in_subtype = results.filter(
                 problem__problem_subtype=subtype
@@ -1067,7 +1073,10 @@ class QuizSessionRecommendationsView(APIView):
             sample_wrong = wrong_results.filter(
                 problem__problem_subtype=subtype
             ).first()
-            _recommend_similar(report, weak, sample_wrong.problem, solved_ids, session)
+            try:
+                _recommend_similar(report, weak, sample_wrong.problem, solved_ids, session)
+            except Exception:
+                pass  # RAG 실패 시 해당 유형 추천 생략하고 계속
 
         return Response({'status': 'success', 'data': _serialize_report(report)})
 
@@ -1140,33 +1149,61 @@ def _backfill_similar_ids(collection, query_embedding, problem_subtype, chapter_
 
 
 def _recommend_similar(report, weak, sample_problem, solved_ids, session):
-    """RAG로 보완 학습용 문제 추천 — 오답 루프(1문제씩 단계별 진행)에서 쓸 후보를 준비.
+    """RAG로 보완 학습용 문제 추천 — RAG 실패 또는 결과 부족 시 DB 랜덤 폴백.
     하 난이도 2개(보완1용 + 보완1 오답 시 보완2용) + 중 난이도 1개(보완1 정답 시 보완2용)를 구해서
-    난이도로 구분해 저장한다 (프론트는 difficulty로 s1/s1mid/s2 역할을 가른다)."""
-    client        = OpenAI(
-        api_key=settings.GMS_KEY,
-        base_url=settings.GMS_URL
-    )
-    import os
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    chroma_client = chromadb.PersistentClient(path=os.path.join(BASE_DIR, 'chroma_db'))
-    collection    = chroma_client.get_collection('problems')
+    저장한다 (프론트는 difficulty로 s1/mid/s2 역할을 가른다)."""
+    easy_ids = []
+    mid_ids  = []
 
-    # 오답 문제 question_text로 임베딩 쿼리
-    query_embedding = client.embeddings.create(
-        model='text-embedding-3-small',
-        input=[sample_problem.question_text],
-    ).data[0].embedding
+    try:
+        client = OpenAI(
+            api_key=settings.GMS_KEY,
+            base_url=settings.GMS_URL
+        )
+        import os
+        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        chroma_client = chromadb.PersistentClient(path=os.path.join(BASE_DIR, 'chroma_db'))
+        collection    = chroma_client.get_collection('problems')
 
-    easy_ids = _backfill_similar_ids(
-        collection, query_embedding, weak.problem_subtype, sample_problem.chapter_minor, solved_ids,
-        limit=2, preferred_difficulty='하', allow_cross_subtype_fallback=False,
-    )
-    mid_exclude = set(solved_ids) | set(easy_ids)
-    mid_ids = _backfill_similar_ids(
-        collection, query_embedding, weak.problem_subtype, sample_problem.chapter_minor, mid_exclude,
-        limit=1, preferred_difficulty='중', allow_cross_subtype_fallback=False,
-    )
+        query_embedding = client.embeddings.create(
+            model='text-embedding-3-small',
+            input=[sample_problem.question_text],
+        ).data[0].embedding
+
+        easy_ids = _backfill_similar_ids(
+            collection, query_embedding, weak.problem_subtype, sample_problem.chapter_minor, solved_ids,
+            limit=2, preferred_difficulty='하', allow_cross_subtype_fallback=False,
+        )
+        mid_exclude = set(solved_ids) | set(easy_ids)
+        mid_ids = _backfill_similar_ids(
+            collection, query_embedding, weak.problem_subtype, sample_problem.chapter_minor, mid_exclude,
+            limit=1, preferred_difficulty='중', allow_cross_subtype_fallback=False,
+        )
+    except Exception:
+        pass  # RAG 실패 → DB 폴백으로 채움
+
+    # DB 폴백: RAG 결과 부족 시 같은 유형에서 랜덤 보충
+    base_exclude = set(solved_ids) | {sample_problem.id}
+
+    if len(easy_ids) < 2:
+        db_easy = list(
+            Problem.objects.filter(
+                problem_subtype=weak.problem_subtype,
+                difficulty='하',
+                is_quizable=True,
+            ).exclude(id__in=base_exclude | set(easy_ids)).order_by('?')[:2 - len(easy_ids)]
+        )
+        easy_ids += [p.id for p in db_easy]
+
+    if len(mid_ids) < 1:
+        db_mid = list(
+            Problem.objects.filter(
+                problem_subtype=weak.problem_subtype,
+                difficulty='중',
+                is_quizable=True,
+            ).exclude(id__in=base_exclude | set(easy_ids)).order_by('?')[:1]
+        )
+        mid_ids += [p.id for p in db_mid]
 
     # Recommendation 저장 (순서: 보완1용 하, 중 난이도, 보완1 오답 시용 하)
     ordered_ids = easy_ids[:1] + mid_ids + easy_ids[1:2]
