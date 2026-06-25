@@ -23,11 +23,17 @@ const routes = [
   { path: '/:pathMatch(.*)*', redirect: '/' },
 
   {
-    path: '/problems/:problem_id/comments',
-    name: 'comments',
-    component: () => import('@/views/community/CommentView.vue'),
+    path: '/problems/:problem_id/posts',
+    name: 'post-list',
+    component: () => import('@/views/community/PostListView.vue'),
     meta: { shell: 'web' }
-  }
+  },
+  {
+    path: '/problems/:problem_id/posts/:post_id',
+    name: 'post-detail',
+    component: () => import('@/views/community/PostDetailView.vue'),
+    meta: { shell: 'web' }
+  },
   ]
 
 const router = createRouter({

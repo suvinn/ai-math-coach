@@ -6,7 +6,7 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework import status
 from django.utils.decorators import method_decorator
 from .serializers import RegisterSerializer, UserSerializer, ProblemPublicSerializer, ProblemWithAnswerSerializer
-from .models import Problem, QuizSession, SessionProblem, SessionResult, WeaknessReport, WeakSubtype, Recommendation, SubtypeMastery
+from .models import Problem, QuizSession, SessionProblem, SessionResult, WeaknessReport, WeakSubtype, Recommendation, SubtypeMastery, Post, Comment
 import random
 from datetime import date, timedelta
 from collections import defaultdict
@@ -917,6 +917,34 @@ class UserHistoryView(APIView):
             user=request.user
         ).order_by('-updated_at')
 
+        # subtype → chapter 매핑 + 전체 문제 수 (Problem 테이블에서 한 번에 조회)
+        from django.db.models import Count
+        subtype_names = [m.problem_subtype for m in masteries]
+        chapter_map = {}
+        for p in Problem.objects.filter(
+            problem_subtype__in=subtype_names
+        ).values('problem_subtype', 'chapter_major', 'chapter_middle').distinct():
+            if p['problem_subtype'] not in chapter_map:
+                chapter_map[p['problem_subtype']] = {
+                    'chapter_major':  p['chapter_major'],
+                    'chapter_middle': p['chapter_middle'],
+                }
+
+        total_map = {
+            r['problem_subtype']: r['count']
+            for r in Problem.objects.filter(
+                problem_subtype__in=subtype_names
+            ).values('problem_subtype').annotate(count=Count('id'))
+        }
+
+        # 유저가 실제로 푼 고유 문제 수 (중복 제거)
+        attempted_map = {}
+        for subtype in subtype_names:
+            attempted_map[subtype] = SessionProblem.objects.filter(
+                session__user=request.user,
+                problem__problem_subtype=subtype
+            ).values('problem_id').distinct().count()
+
         subtype_mastery = []
         for m in masteries:
             accuracy = (
@@ -937,17 +965,22 @@ class UserHistoryView(APIView):
             else:
                 level = '보완 필요'
 
+            chapter = chapter_map.get(m.problem_subtype, {})
+
             subtype_mastery.append({
                 'problem_subtype':  m.problem_subtype,
+                'chapter_major':    chapter.get('chapter_major'),
+                'chapter_middle':   chapter.get('chapter_middle'),
                 'mastered':         m.mastered,
                 'level':            level,
-                'accuracy':         round(accuracy * 100),       # 퍼센트로
+                'accuracy':         round(accuracy * 100),
                 'accuracy_before':  round(m.accuracy_before * 100)
                                     if m.accuracy_before else None,
                 'accuracy_after':   round(m.accuracy_after * 100)
                                     if m.accuracy_after else None,
-                'total_attempts':   m.total_attempts,
-                'next_difficulty':  next_difficulty,             # 마스터 시에만
+                'total_attempts':   attempted_map.get(m.problem_subtype, 0),
+                'total_in_subtype': total_map.get(m.problem_subtype, 0),
+                'next_difficulty':  next_difficulty,
                 'updated_at':       m.updated_at,
             })
 
@@ -1640,97 +1673,121 @@ def _generate_chat_answer(problem, question):
     )
     return response.choices[0].message.content
 
-class ProblemCommentView(APIView):
+class PostListView(APIView):
     """
-    문제별 공개 Q&A 댓글 (커뮤니티)
-    GET    /problems/{problem_id}/comments              — 댓글 목록 (비로그인 가능)
-    POST   /problems/{problem_id}/comments              — 댓글 작성 (로그인 필요)
-    DELETE /problems/{problem_id}/comments/{comment_id} — 본인 댓글 삭제
+    GET  /problems/{problem_id}/posts  — 게시글 목록
+    POST /problems/{problem_id}/posts  — 게시글 작성 (로그인 필요)
     """
-    from .models import Comment
-    from .serializers import CommentSerializer
-
-    def _get_problem_or_404(self, problem_id):
-        try:
-            return Problem.objects.get(id=problem_id)
-        except Problem.DoesNotExist:
-            return None
+    from .models import Post
+    from .serializers import PostSerializer
 
     def get(self, request, problem_id):
-        problem = self._get_problem_or_404(problem_id)
-        if not problem:
-            return Response(
-                {'status': 'error', 'message': '문제를 찾을 수 없습니다.'},
-                status=status.HTTP_404_NOT_FOUND
-            )
+        try:
+            problem = Problem.objects.get(id=problem_id)
+        except Problem.DoesNotExist:
+            return Response({'status': 'error', 'message': '문제를 찾을 수 없습니다.'}, status=404)
 
-        from .models import Comment
-        from .serializers import CommentSerializer
-        comments = problem.comments.select_related('user').all()
-        serializer = CommentSerializer(comments, many=True)
+        from .models import Post
+        from .serializers import PostSerializer
+        posts = problem.posts.select_related('user').prefetch_related('comments').all()
+        serializer = PostSerializer(posts, many=True)
         return Response({
             'status': 'success',
             'data': {
-                'problem_id':    problem_id,
-                'comment_count': comments.count(),
-                'comments':      serializer.data,
+                'problem_id': problem_id,
+                'post_count': posts.count(),
+                'posts':      serializer.data,
             }
         })
 
     def post(self, request, problem_id):
         if not request.user.is_authenticated:
-            return Response(
-                {'status': 'error', 'message': '로그인이 필요합니다.'},
-                status=status.HTTP_401_UNAUTHORIZED
-            )
+            return Response({'status': 'error', 'message': '로그인이 필요합니다.'}, status=401)
 
-        problem = self._get_problem_or_404(problem_id)
-        if not problem:
-            return Response(
-                {'status': 'error', 'message': '문제를 찾을 수 없습니다.'},
-                status=status.HTTP_404_NOT_FOUND
-            )
+        try:
+            problem = Problem.objects.get(id=problem_id)
+        except Problem.DoesNotExist:
+            return Response({'status': 'error', 'message': '문제를 찾을 수 없습니다.'}, status=404)
+
+        title   = request.data.get('title', '').strip()
+        content = request.data.get('content', '').strip()
+        if not title or not content:
+            return Response({'status': 'error', 'message': '제목과 내용을 입력해주세요.'}, status=400)
+
+        from .models import Post
+        from .serializers import PostSerializer
+        post = Post.objects.create(problem=problem, user=request.user, title=title, content=content)
+        return Response({'status': 'success', 'data': PostSerializer(post).data}, status=201)
+
+
+class PostDetailView(APIView):
+    """
+    GET    /problems/{problem_id}/posts/{post_id}  — 게시글 상세 + 댓글 목록
+    DELETE /problems/{problem_id}/posts/{post_id}  — 게시글 삭제 (본인만)
+    """
+    def get(self, request, problem_id, post_id):
+        from .models import Post
+        from .serializers import PostDetailSerializer
+        try:
+            post = Post.objects.prefetch_related('comments__user').get(id=post_id, problem_id=problem_id)
+        except Post.DoesNotExist:
+            return Response({'status': 'error', 'message': '게시글을 찾을 수 없습니다.'}, status=404)
+
+        return Response({'status': 'success', 'data': PostDetailSerializer(post).data})
+
+    def delete(self, request, problem_id, post_id):
+        if not request.user.is_authenticated:
+            return Response({'status': 'error', 'message': '로그인이 필요합니다.'}, status=401)
+
+        from .models import Post
+        try:
+            post = Post.objects.get(id=post_id, problem_id=problem_id)
+        except Post.DoesNotExist:
+            return Response({'status': 'error', 'message': '게시글을 찾을 수 없습니다.'}, status=404)
+
+        if post.user != request.user:
+            return Response({'status': 'error', 'message': '본인 게시글만 삭제할 수 있습니다.'}, status=403)
+
+        post.delete()
+        return Response({'status': 'success', 'message': '삭제되었습니다.'})
+
+
+class PostCommentView(APIView):
+    """
+    POST   /problems/{problem_id}/posts/{post_id}/comments              — 댓글 작성
+    DELETE /problems/{problem_id}/posts/{post_id}/comments/{comment_id} — 댓글 삭제
+    """
+    def post(self, request, problem_id, post_id):
+        if not request.user.is_authenticated:
+            return Response({'status': 'error', 'message': '로그인이 필요합니다.'}, status=401)
+
+        from .models import Post
+        from .serializers import CommentSerializer
+        try:
+            post = Post.objects.get(id=post_id, problem_id=problem_id)
+        except Post.DoesNotExist:
+            return Response({'status': 'error', 'message': '게시글을 찾을 수 없습니다.'}, status=404)
 
         content = request.data.get('content', '').strip()
         if not content:
-            return Response(
-                {'status': 'error', 'message': '댓글 내용을 입력해주세요.'},
-                status=status.HTTP_400_BAD_REQUEST
-            )
+            return Response({'status': 'error', 'message': '댓글 내용을 입력해주세요.'}, status=400)
 
         from .models import Comment
-        from .serializers import CommentSerializer
-        comment = Comment.objects.create(
-            problem=problem,
-            user=request.user,
-            content=content,
-        )
-        return Response(
-            {'status': 'success', 'data': CommentSerializer(comment).data},
-            status=status.HTTP_201_CREATED
-        )
+        comment = Comment.objects.create(post=post, user=request.user, content=content)
+        return Response({'status': 'success', 'data': CommentSerializer(comment).data}, status=201)
 
-    def delete(self, request, problem_id, comment_id=None):
+    def delete(self, request, problem_id, post_id, comment_id=None):
         if not request.user.is_authenticated:
-            return Response(
-                {'status': 'error', 'message': '로그인이 필요합니다.'},
-                status=status.HTTP_401_UNAUTHORIZED
-            )
+            return Response({'status': 'error', 'message': '로그인이 필요합니다.'}, status=401)
 
         from .models import Comment
         try:
-            comment = Comment.objects.get(id=comment_id, problem_id=problem_id)
+            comment = Comment.objects.get(id=comment_id, post_id=post_id)
         except Comment.DoesNotExist:
-            return Response(
-                {'status': 'error', 'message': '댓글을 찾을 수 없습니다.'},
-                status=status.HTTP_404_NOT_FOUND
-            )
+            return Response({'status': 'error', 'message': '댓글을 찾을 수 없습니다.'}, status=404)
 
         if comment.user != request.user:
-            return Response(
-                {'status': 'error', 'message': '본인 댓글만 삭제할 수 있습니다.'},
-                status=status.HTTP_403_FORBIDDEN
-            )
+            return Response({'status': 'error', 'message': '본인 댓글만 삭제할 수 있습니다.'}, status=403)
 
         comment.delete()
         return Response({'status': 'success', 'message': '삭제되었습니다.'})

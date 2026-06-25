@@ -193,7 +193,7 @@
   border: 0; background: transparent; color: var(--label-normal); cursor: pointer; flex: none;
 }
 .focus-topbar .back:hover { background: var(--fill-alternative); }
-.focus-topbar .title { font: var(--weight-bold) 16px/1 var(--font-sans); flex: none; }
+.focus-topbar .title { font: var(--weight-bold) 20px/1 var(--font-sans); flex: none; }
 .focus-topbar .prog { flex: 1; max-width: 520px; } /* app.css의 .prog 재사용 */
 .focus-topbar .count { font: var(--weight-medium) 14px/1 var(--font-sans); color: var(--label-assistive); flex: none; }
 

@@ -126,15 +126,21 @@ async function start() {
         <!-- 대단원 -->
         <div class="setup-section">
           <div class="field-label">대단원</div>
-          <div class="chiprow setup-chips">
+          <div class="stack-8">
             <button
               v-for="c in chapters"
               :key="c.chapter_major"
-              class="setup-chip"
+              class="middle-row tap-row"
               :data-on="selectedMajor === c.chapter_major"
               @click="selectMajor(c.chapter_major)"
             >
-              {{ c.chapter_major }}
+              <span class="middle-name">{{ c.chapter_major }}</span>
+              <WdsIcon
+                v-if="selectedMajor === c.chapter_major"
+                name="circle-check"
+                :size="20"
+                color="var(--suql-accent)"
+              />
             </button>
           </div>
         </div>
@@ -201,7 +207,7 @@ async function start() {
 .setup-body {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 30px;
 }
 .setup-loading {
   flex: 1;
@@ -215,31 +221,12 @@ async function start() {
   gap: 10px;
 }
 .field-label {
-  font: var(--weight-semibold) 13px/1 var(--font-sans);
-  color: var(--label-alternative);
+  font: var(--weight-semibold) 20px/1 var(--font-sans);
+  color: var(--suql-accent);
   letter-spacing: -0.01em;
 }
 
 /* 대단원 칩 */
-.setup-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.setup-chip {
-  border: none;
-  cursor: pointer;
-  padding: 9px 14px;
-  border-radius: var(--radius-full);
-  background: var(--fill-normal);
-  color: var(--label-alternative);
-  font: var(--weight-semibold) 13px/1 var(--font-sans);
-  transition: background 0.12s, color 0.12s;
-}
-.setup-chip[data-on='true'] {
-  background: var(--suql-accent);
-  color: #fff;
-}
 
 /* 중단원 행 */
 .middle-row {

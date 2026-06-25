@@ -193,9 +193,23 @@ class SubtypeMastery(models.Model):
         db_table = 'subtype_mastery'
         unique_together = ('user', 'problem_subtype')
 
+class Post(models.Model):
+    """문제별 토론 게시글"""
+    problem    = models.ForeignKey(Problem, on_delete=models.CASCADE, related_name='posts')
+    user       = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='posts')
+    title      = models.CharField(max_length=200)
+    content    = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        db_table = 'post'
+        ordering = ['-created_at']
+
+
 class Comment(models.Model):
-    """문제별 공개 Q&A 댓글 — 커뮤니티 기능"""
-    problem    = models.ForeignKey(Problem, on_delete=models.CASCADE, related_name='comments')
+    """게시글 댓글"""
+    post       = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
     user       = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='comments')
     content    = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
