@@ -26,9 +26,10 @@ const props = defineProps({
     <span
       style="
         font: var(--weight-bold) 19px/1 var(--font-sans);
-        letter-spacing: -0.02em;
+        letter-spacing: -0.01em;
+        white-space: nowrap;
       "
-      >수클</span
+      >WIDN Math</span
     >
   </span>
 </template>
