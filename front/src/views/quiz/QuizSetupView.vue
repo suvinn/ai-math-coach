@@ -306,7 +306,7 @@ async function start() {
 }
 .field-label {
   font: var(--weight-semibold) 20px/1 var(--font-sans);
-  color: var(--suql-accent);
+  color: var(--label-normal);
   letter-spacing: -0.01em;
 }
 .field-hint {
