@@ -52,8 +52,10 @@ function formatDate(iso) {
 // ── 유형 필터 ─────────────────────────────────────────
 const selectedMajor  = ref(null)
 const selectedMiddle = ref(null)
+const selectedLevel  = ref(null)
 const masteryExpanded = ref(false)
 const MASTERY_LIMIT = 12
+const LEVEL_OPTIONS = ['풀이 필요', '풀이 중', '풀이 완료', '숙달 완료']
 
 const majorList = computed(() => {
   if (!data.value) return []
@@ -83,12 +85,18 @@ function selectMiddle(middle) {
   masteryExpanded.value = false
 }
 
+function selectLevel(level) {
+  selectedLevel.value = level
+  masteryExpanded.value = false
+}
+
 const filteredMastery = computed(() => {
   if (!data.value) return []
   return data.value.subtype_mastery
     .filter(m => {
       if (selectedMajor.value  && m.chapter_major  !== selectedMajor.value)  return false
       if (selectedMiddle.value && m.chapter_middle !== selectedMiddle.value) return false
+      if (selectedLevel.value  && m.level          !== selectedLevel.value)  return false
       return true
     })
     .slice()
@@ -174,7 +182,7 @@ onMounted(async () => {
       <template v-else-if="data">
         <!-- ── 유형별 마스터 현황 ── -->
         <div class="stack-12" style="margin-bottom: 32px">
-          <div class="wds-label-1" style="font-weight: 700; font-size: 22px;">유형별 마스터 현황</div>
+          <div class="wds-label-1" style="font-weight: 700; font-size: 24px;">유형별 마스터 현황</div>
           <div v-if="!data.subtype_mastery.length" class="assistive wds-body-2">아직 학습 기록이 없어요.</div>
           <template v-else>
             <!-- 단원 선택 박스 -->
@@ -204,30 +212,43 @@ onMounted(async () => {
               </div>
             </div>
 
+            <!-- 진행 상태 선택 -->
+            <div class="filter-box">
+              <div class="filter-section-label" style="margin-top: 0; font-size: 17px">진행 상태 선택</div>
+              <div class="filter-row">
+                <button class="filter-chip" :data-active="selectedLevel === null" @click="selectLevel(null)">전체</button>
+                <button
+                  v-for="level in LEVEL_OPTIONS" :key="level"
+                  class="filter-chip" :data-active="selectedLevel === level"
+                  @click="selectLevel(level)">{{ level }}</button>
+              </div>
+            </div>
+
             <!-- 카드 목록 -->
             <div class="card-grid cols-4">
               <div v-for="m in visibleMastery" :key="m.problem_subtype" class="mastery-card">
                 <div class="between" style="align-items: center">
-                  <span class="master-badge" :data-on="m.mastered" :data-level="m.level">
-                    <WdsIcon v-if="m.level === '숙달'" name="crown" :size="13" color="currentColor" />
-                    <WdsIcon v-else-if="m.level === '연습 중'" name="fire" :size="13" color="currentColor" />
-                    <WdsIcon v-else name="bulb" :size="13" color="currentColor" />
+                  <span class="master-badge" :data-level="m.level">
+                    <WdsIcon v-if="m.level === '숙달 완료'" name="crown" :size="15" color="currentColor" />
+                    <WdsIcon v-else-if="m.level === '풀이 완료'" name="bulb" :size="15" color="currentColor" />
+                    <WdsIcon v-else-if="m.level === '풀이 중'" name="fire" :size="15" color="currentColor" />
+                    <WdsIcon v-else name="circle-check" :size="15" color="currentColor" />
                     {{ m.level }}
                   </span>
                   <template v-if="m.accuracy_before != null && m.accuracy_after != null">
                     <span class="rate-jump">
                       <span class="was">{{ m.accuracy_before }}%</span>
-                      <WdsIcon name="arrow-right" :size="14" color="var(--label-assistive)" />
+                      <WdsIcon name="arrow-right" :size="16" color="var(--label-assistive)" />
                       <span class="now">{{ m.accuracy_after }}%</span>
                     </span>
                   </template>
-                  <span v-else class="wds-caption-1" style="color: var(--suql-accent); font-weight: 600; font-size: 14px">정답률 {{ m.accuracy }}%</span>
+                  <span v-else class="wds-caption-1" style="color: var(--suql-accent); font-weight: 600; font-size: 16px">정답률 {{ m.accuracy }}%</span>
                 </div>
-                <div class="wds-caption-1 assistive" style="margin-top: 10px; font-size: 14px">
+                <div class="wds-caption-1 assistive" style="margin-top: 10px; font-size: 16px">
                   {{ m.chapter_major }}<template v-if="m.chapter_middle"> › {{ m.chapter_middle }}</template>
                 </div>
-                <div class="wds-label-1" style="font-weight: 700; margin-top: 2px; font-size: 16px">{{ m.problem_subtype }}</div>
-                <div class="wds-caption-1 assistive" style="margin-top: 6px; font-size: 13px">{{ m.total_attempts }} / {{ m.total_in_subtype }}문제 시도</div>
+                <div class="wds-label-1" style="font-weight: 700; margin-top: 2px; font-size: 18px">{{ m.problem_subtype }}</div>
+                <div class="wds-caption-1 assistive" style="margin-top: 6px; font-size: 15px">{{ m.total_attempts }} / {{ m.total_in_subtype }}문제 시도</div>
               </div>
             </div>
 
@@ -243,7 +264,7 @@ onMounted(async () => {
         <!-- ── 퀴즈 기록 ── -->
         <div class="stack-12">
           <div class="between" style="align-items: center">
-            <div class="wds-label-1" style="font-weight: 700; font-size: 22px">퀴즈 기록</div>
+            <div class="wds-label-1" style="font-weight: 700; font-size: 24px">퀴즈 기록</div>
             <div class="order-toggle">
               <button :data-active="sessionOrder === 'desc'" @click="setSessionOrder('desc')">최신순</button>
               <button :data-active="sessionOrder === 'asc'"  @click="setSessionOrder('asc')">과거순</button>
@@ -290,6 +311,8 @@ onMounted(async () => {
   display: flex; align-items: center; justify-content: center; padding: 80px 0;
 }
 
+.page-head .title { font-size: 32px; }
+
 /* ── 단원 선택 박스 ── */
 .filter-box {
   display: flex; flex-direction: column; gap: 12px;
@@ -335,6 +358,9 @@ onMounted(async () => {
   padding: 18px; border-radius: 16px;
   box-shadow: inset 0 0 0 1px var(--line-normal-normal);
 }
+.mastery-card .master-badge { font-size: 15px; }
+.mastery-card .rate-jump .was { font-size: 16px; }
+.mastery-card .rate-jump .now { font-size: 19px; }
 .more-btn {
   padding: 8px 24px; border-radius: var(--radius-full); border: 0;
   background: var(--fill-alternative); color: var(--label-alternative);
