@@ -917,6 +917,34 @@ class UserHistoryView(APIView):
             user=request.user
         ).order_by('-updated_at')
 
+        # subtype → chapter 매핑 + 전체 문제 수 (Problem 테이블에서 한 번에 조회)
+        from django.db.models import Count
+        subtype_names = [m.problem_subtype for m in masteries]
+        chapter_map = {}
+        for p in Problem.objects.filter(
+            problem_subtype__in=subtype_names
+        ).values('problem_subtype', 'chapter_major', 'chapter_middle').distinct():
+            if p['problem_subtype'] not in chapter_map:
+                chapter_map[p['problem_subtype']] = {
+                    'chapter_major':  p['chapter_major'],
+                    'chapter_middle': p['chapter_middle'],
+                }
+
+        total_map = {
+            r['problem_subtype']: r['count']
+            for r in Problem.objects.filter(
+                problem_subtype__in=subtype_names
+            ).values('problem_subtype').annotate(count=Count('id'))
+        }
+
+        # 유저가 실제로 푼 고유 문제 수 (중복 제거)
+        attempted_map = {}
+        for subtype in subtype_names:
+            attempted_map[subtype] = SessionProblem.objects.filter(
+                session__user=request.user,
+                problem__problem_subtype=subtype
+            ).values('problem_id').distinct().count()
+
         subtype_mastery = []
         for m in masteries:
             accuracy = (
@@ -937,17 +965,22 @@ class UserHistoryView(APIView):
             else:
                 level = '보완 필요'
 
+            chapter = chapter_map.get(m.problem_subtype, {})
+
             subtype_mastery.append({
                 'problem_subtype':  m.problem_subtype,
+                'chapter_major':    chapter.get('chapter_major'),
+                'chapter_middle':   chapter.get('chapter_middle'),
                 'mastered':         m.mastered,
                 'level':            level,
-                'accuracy':         round(accuracy * 100),       # 퍼센트로
+                'accuracy':         round(accuracy * 100),
                 'accuracy_before':  round(m.accuracy_before * 100)
                                     if m.accuracy_before else None,
                 'accuracy_after':   round(m.accuracy_after * 100)
                                     if m.accuracy_after else None,
-                'total_attempts':   m.total_attempts,
-                'next_difficulty':  next_difficulty,             # 마스터 시에만
+                'total_attempts':   attempted_map.get(m.problem_subtype, 0),
+                'total_in_subtype': total_map.get(m.problem_subtype, 0),
+                'next_difficulty':  next_difficulty,
                 'updated_at':       m.updated_at,
             })
 
