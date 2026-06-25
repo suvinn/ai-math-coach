@@ -170,7 +170,10 @@ class ChapterProblemCountView(APIView):
     def get(self, request):
         from django.db.models import Count
 
-        rows = Problem.objects.values(
+        # 퀴즈 세션 생성 시 실제로 뽑히는 풀과 맞춰서 출제 가능(is_quizable)한 문제만 카운트
+        rows = Problem.objects.filter(
+            is_quizable=True
+        ).values(
             'chapter_major', 'chapter_middle', 'chapter_minor'
         ).annotate(count=Count('id')).order_by(
             'chapter_major', 'chapter_middle', 'chapter_minor'
@@ -189,6 +192,34 @@ class ChapterProblemCountView(APIView):
         return Response({'status': 'success', 'data': data})
 
 
+class ChapterSubtypeCountView(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request):
+        from django.db.models import Count
+
+        # ChapterProblemCountView와 동일한 기준(is_quizable)으로 카운트
+        rows = Problem.objects.filter(
+            is_quizable=True
+        ).values(
+            'chapter_major', 'chapter_middle', 'problem_subtype'
+        ).annotate(count=Count('id')).order_by(
+            'chapter_major', 'chapter_middle', 'problem_subtype'
+        )
+
+        data = [
+            {
+                'chapter_major':    r['chapter_major'],
+                'chapter_middle':   r['chapter_middle'],
+                'problem_subtype':  r['problem_subtype'],
+                'count':            r['count'],
+            }
+            for r in rows
+        ]
+
+        return Response({'status': 'success', 'data': data})
+
+
 class QuizSessionCreateView(APIView):
 
     def post(self, request):
@@ -197,6 +228,7 @@ class QuizSessionCreateView(APIView):
         chapter_major     = request.data.get('chapter_major')
         chapter_middle    = request.data.get('chapter_middle')
         chapter_minor     = request.data.get('chapter_minor')
+        problem_subtype   = request.data.get('problem_subtype')  # optional: 유형 선택 (전체면 미지정)
         problem_count     = request.data.get('problem_count')
         parent_session_id = request.data.get('parent_session_id')  # optional
         # 보완 단계 구분: 's1'(보완1·하), 's1mid'(보완1·중), 's2'(보완2·하)
@@ -365,25 +397,20 @@ class QuizSessionCreateView(APIView):
         )
         if chapter_minor:
             base_filter['chapter_minor'] = chapter_minor
+        if problem_subtype:
+            base_filter['problem_subtype'] = problem_subtype
 
         if session_type == 'normal':
-            # 첫 세션: 하 70% + 중 30%, 상 제외
-            problems_low = list(Problem.objects.filter(**base_filter, difficulty='하'))
-            problems_mid = list(Problem.objects.filter(**base_filter, difficulty='중'))
+            # 첫 세션: 난이도 제한 없이, 출제 가능한 문제 중에서 요청한 수만큼 랜덤 출제
+            problems = list(Problem.objects.filter(**base_filter))
 
-            if not problems_low and not problems_mid:
+            if not problems:
                 return Response(
                     {'status': 'error', 'message': '해당 범위에 문제가 없습니다.'},
                     status=status.HTTP_400_BAD_REQUEST
                 )
 
-            low_count = round(problem_count * 0.7)
-            mid_count = problem_count - low_count
-
-            selected_low = random.sample(problems_low, min(low_count, len(problems_low)))
-            selected_mid = random.sample(problems_mid, min(mid_count, len(problems_mid)))
-            selected     = selected_low + selected_mid
-            random.shuffle(selected)
+            selected = random.sample(problems, min(problem_count, len(problems)))
 
         elif session_type in ('review_1', 'review_2'):
             # 취약 subtype 1개에서 1문제만 출제. 단계별 난이도:
