@@ -40,24 +40,29 @@ function goHistory() {
 
         <div class="card-grid cols-3" style="margin-bottom: 24px">
           <div class="dash-stat">
-            <WdsIcon name="fire" :size="20" color="var(--status-cautionary)" />
+            <WdsIcon name="calendar" :size="20" color="#8b5cf6" />
             <div class="dash-stat-num">{{ data.streak }}<span class="unit">일</span></div>
             <div class="wds-caption-1 assistive">연속 학습</div>
           </div>
           <div class="dash-stat">
             <WdsIcon name="document" :size="20" color="var(--suql-accent)" />
-            <div class="dash-stat-num">{{ data.total_solved }}<span class="unit">개</span></div>
+            <div class="dash-stat-num">{{ data.total_solved }}<span class="unit">개 / {{ data.total_problem_count }}개</span></div>
             <div class="wds-caption-1 assistive">누적 푼 문제</div>
           </div>
           <div class="dash-stat">
+            <WdsIcon name="fire" :size="20" color="#d4700a" />
+            <div class="dash-stat-num">{{ data.solving_count }}<span class="unit">개 / {{ data.total_subtype_count }}개</span></div>
+            <div class="wds-caption-1 assistive">풀이 중인 유형</div>
+          </div>
+          <div class="dash-stat">
             <WdsIcon name="medal" :size="20" color="var(--status-positive)" />
-            <div class="dash-stat-num">{{ data.subtype_mastery.filter((m) => m.mastered).length }}<span class="unit">개</span></div>
-            <div class="wds-caption-1 assistive">마스터한 유형</div>
+            <div class="dash-stat-num">{{ data.mastered_count }}<span class="unit">개 / {{ data.total_subtype_count }}개</span></div>
+            <div class="wds-caption-1 assistive">숙달 완료한 유형</div>
           </div>
         </div>
 
         <div class="stack-12" style="margin-bottom: 24px">
-          <div class="wds-label-1" style="font-weight: 700">이번 주 학습</div>
+          <div class="wds-label-1" style="font-weight: 700; font-size: 24px">이번 주 학습</div>
           <div class="week-row">
             <div v-for="(active, i) in data.weekly_activity" :key="i" class="week-day">
               <span class="week-dot" :data-on="active" />
@@ -68,7 +73,7 @@ function goHistory() {
 
         <div class="stack-12" style="margin-bottom: 24px">
           <div class="between">
-            <div class="wds-label-1" style="font-weight: 700">유형별 마스터 진척</div>
+            <div class="wds-label-1" style="font-weight: 700; font-size: 24px">유형별 마스터 진척</div>
             <button class="wds-caption-1 assistive" style="border:0;background:transparent;cursor:pointer" @click="goHistory">
               전체 보기 ›
             </button>
@@ -107,6 +112,10 @@ function goHistory() {
   justify-content: center;
   padding: 80px 0;
 }
+.page-head .title { font-size: 32px; }
+.page-head .sub { font-size: 16px; }
+.dash-stat .wds-caption-1 { font-size: 14px; }
+.week-day .wds-caption-2 { font-size: 13px; }
 .dash-stat {
   display: flex;
   flex-direction: column;

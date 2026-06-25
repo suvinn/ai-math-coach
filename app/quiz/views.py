@@ -887,6 +887,99 @@ class QuizSessionAnalysisView(APIView):
         })
 
 
+def _build_subtype_mastery_list(user):
+    """유저의 전체 subtype별 마스터 현황 (안 푼 유형 포함) 계산.
+    레벨: 안 푼 유형 → 풀이 필요 / 일부만 푼 상태 → 풀이 중 /
+    전체 다 풀었지만 정답률 100% 아님 → 풀이 완료 / 전체 다 풀고 정답률 100% → 숙달 완료
+    History 페이지와 Dashboard 페이지가 동일한 기준을 쓰도록 공유한다."""
+    from django.db.models import Count
+
+    masteries = SubtypeMastery.objects.filter(user=user).order_by('-updated_at')
+
+    # 전체 subtype 목록 (안 푼 유형 포함)
+    all_subtypes_qs = Problem.objects.filter(
+        is_quizable=True
+    ).values('problem_subtype', 'chapter_major', 'chapter_middle').distinct()
+
+    chapter_map = {}
+    for p in all_subtypes_qs:
+        subtype = p['problem_subtype']
+        if subtype not in chapter_map:
+            chapter_map[subtype] = {
+                'chapter_major':  p['chapter_major'],
+                'chapter_middle': p['chapter_middle'],
+            }
+
+    total_map = {
+        r['problem_subtype']: r['count']
+        for r in Problem.objects.filter(is_quizable=True).values('problem_subtype').annotate(count=Count('id'))
+    }
+
+    mastery_map = {m.problem_subtype: m for m in masteries}
+    all_subtype_names = list(chapter_map.keys())
+
+    # 유저가 실제로 푼 고유 문제 수 (중복 제거)
+    attempted_map = {}
+    for subtype in all_subtype_names:
+        attempted_map[subtype] = SessionProblem.objects.filter(
+            session__user=user,
+            problem__problem_subtype=subtype
+        ).values('problem_id').distinct().count()
+
+    subtype_mastery = []
+    for subtype in all_subtype_names:
+        m = mastery_map.get(subtype)
+        if m:
+            accuracy = (
+                round(m.correct_count / m.total_attempts, 2)
+                if m.total_attempts > 0 else 0
+            )
+            mastered        = m.mastered
+            accuracy_before = round(m.accuracy_before * 100) if m.accuracy_before else None
+            accuracy_after  = round(m.accuracy_after * 100)  if m.accuracy_after  else None
+            next_difficulty = None
+            if mastered:
+                next_difficulty = '상' if accuracy >= 0.95 else '중'
+            updated_at = m.updated_at
+        else:
+            accuracy        = 0
+            mastered        = False
+            accuracy_before = None
+            accuracy_after  = None
+            next_difficulty = None
+            updated_at      = None
+
+        attempted_count = attempted_map.get(subtype, 0)
+        total_count     = total_map.get(subtype, 0)
+        if attempted_count == 0:
+            level = '풀이 필요'
+        elif attempted_count < total_count:
+            level = '풀이 중'
+        elif m and m.total_attempts > 0 and m.correct_count == m.total_attempts:
+            level = '숙달 완료'
+        else:
+            level = '풀이 완료'
+
+        chapter = chapter_map.get(subtype, {})
+
+        subtype_mastery.append({
+            'problem_subtype':  subtype,
+            'chapter_major':    chapter.get('chapter_major'),
+            'chapter_middle':   chapter.get('chapter_middle'),
+            'mastered':         mastered,
+            'level':            level,
+            'accuracy':         round(accuracy * 100),
+            'accuracy_before':  accuracy_before,
+            'accuracy_after':   accuracy_after,
+            'total_attempts':   attempted_count,
+            'total_in_subtype': total_count,
+            'next_difficulty':  next_difficulty,
+            'updated_at':       updated_at,
+        })
+
+    return subtype_mastery
+
+
 class UserHistoryView(APIView):
 
     def get(self, request):
@@ -913,94 +1006,7 @@ class UserHistoryView(APIView):
             })
 
         # 2. 유형별 마스터 현황
-        masteries = SubtypeMastery.objects.filter(
-            user=request.user
-        ).order_by('-updated_at')
-
-        from django.db.models import Count
-
-        # 전체 subtype 목록 (안 푼 유형 포함)
-        all_subtypes_qs = Problem.objects.filter(
-            is_quizable=True
-        ).values('problem_subtype', 'chapter_major', 'chapter_middle').distinct()
-
-        chapter_map = {}
-        for p in all_subtypes_qs:
-            subtype = p['problem_subtype']
-            if subtype not in chapter_map:
-                chapter_map[subtype] = {
-                    'chapter_major':  p['chapter_major'],
-                    'chapter_middle': p['chapter_middle'],
-                }
-
-        total_map = {
-            r['problem_subtype']: r['count']
-            for r in Problem.objects.filter(is_quizable=True).values('problem_subtype').annotate(count=Count('id'))
-        }
-
-        mastery_map = {m.problem_subtype: m for m in masteries}
-        all_subtype_names = list(chapter_map.keys())
-
-        # 유저가 실제로 푼 고유 문제 수 (중복 제거)
-        attempted_map = {}
-        for subtype in all_subtype_names:
-            attempted_map[subtype] = SessionProblem.objects.filter(
-                session__user=request.user,
-                problem__problem_subtype=subtype
-            ).values('problem_id').distinct().count()
-
-        subtype_mastery = []
-        for subtype in all_subtype_names:
-            m = mastery_map.get(subtype)
-            if m:
-                accuracy = (
-                    round(m.correct_count / m.total_attempts, 2)
-                    if m.total_attempts > 0 else 0
-                )
-                mastered        = m.mastered
-                accuracy_before = round(m.accuracy_before * 100) if m.accuracy_before else None
-                accuracy_after  = round(m.accuracy_after * 100)  if m.accuracy_after  else None
-                next_difficulty = None
-                if mastered:
-                    next_difficulty = '상' if accuracy >= 0.95 else '중'
-                updated_at = m.updated_at
-            else:
-                accuracy        = 0
-                mastered        = False
-                accuracy_before = None
-                accuracy_after  = None
-                next_difficulty = None
-                updated_at      = None
-
-            # 레벨 판정: 안 푼 유형 → 풀이 필요 / 일부만 푼 상태 → 풀이 중 /
-            # 전체 다 풀었지만 정답률 100% 아님 → 풀이 완료 / 전체 다 풀고 정답률 100% → 숙달 완료
-            attempted_count = attempted_map.get(subtype, 0)
-            total_count     = total_map.get(subtype, 0)
-            if attempted_count == 0:
-                level = '풀이 필요'
-            elif attempted_count < total_count:
-                level = '풀이 중'
-            elif m and m.total_attempts > 0 and m.correct_count == m.total_attempts:
-                level = '숙달 완료'
-            else:
-                level = '풀이 완료'
-
-            chapter = chapter_map.get(subtype, {})
-
-            subtype_mastery.append({
-                'problem_subtype':  subtype,
-                'chapter_major':    chapter.get('chapter_major'),
-                'chapter_middle':   chapter.get('chapter_middle'),
-                'mastered':         mastered,
-                'level':            level,
-                'accuracy':         round(accuracy * 100),
-                'accuracy_before':  accuracy_before,
-                'accuracy_after':   accuracy_after,
-                'total_attempts':   attempted_map.get(subtype, 0),
-                'total_in_subtype': total_map.get(subtype, 0),
-                'next_difficulty':  next_difficulty,
-                'updated_at':       updated_at,
-            })
+        subtype_mastery = _build_subtype_mastery_list(request.user)
 
         return Response({
             'status': 'success',
@@ -1402,28 +1408,27 @@ class UserDashboardView(APIView):
         )
         weekly_activity = [d in active_dates for d in week_days]
 
-        # 2. 유형별 마스터 진척 (상위 3개)
-        masteries = SubtypeMastery.objects.filter(user=user).order_by('-updated_at')[:3]
-        subtype_mastery = []
-        for m in masteries:
-            accuracy = (
-                m.correct_count / m.total_attempts
-                if m.total_attempts > 0 else 0
-            )
-            # 레벨 판정
-            if m.mastered:
-                level = '숙달'
-            elif accuracy >= 0.6:
-                level = '연습 중'
-            else:
-                level = '보완 필요'
+        # 2. 유형별 마스터 진척 (전체 subtype 기준, History 페이지와 동일한 레벨 산정 공유)
+        full_mastery_list = _build_subtype_mastery_list(user)
 
-            subtype_mastery.append({
-                'problem_subtype': m.problem_subtype,
-                'level':           level,
-                'pct':             round(accuracy * 100),
-                'mastered':        m.mastered,
-            })
+        mastered_count       = sum(1 for m in full_mastery_list if m['level'] == '숙달 완료')
+        solving_count        = sum(1 for m in full_mastery_list if m['level'] == '풀이 중')
+        total_subtype_count  = len(full_mastery_list)
+        total_problem_count  = Problem.objects.filter(is_quizable=True).count()
+
+        # 최근 업데이트된(한 번이라도 푼) 유형 상위 3개만 미리보기로 노출
+        recently_updated = [m for m in full_mastery_list if m['updated_at']]
+        recently_updated.sort(key=lambda m: m['updated_at'], reverse=True)
+
+        subtype_mastery = [
+            {
+                'problem_subtype': m['problem_subtype'],
+                'level':           m['level'],
+                'pct':             m['accuracy'],
+                'mastered':        m['mastered'],
+            }
+            for m in recently_updated[:3]
+        ]
 
         # 3. 최근 세션
         latest_session = QuizSession.objects.filter(
@@ -1449,9 +1454,13 @@ class UserDashboardView(APIView):
                     'grade':       user.grade,
                     'joined_days': (date.today() - user.date_joined.date()).days + 1,
                 },
-                'streak':          user.streak,
-                'total_solved':    user.total_solved,
-                'weekly_activity': weekly_activity,   # [True, True, False, ...] 월~일
+                'streak':              user.streak,
+                'total_solved':        user.total_solved,
+                'total_problem_count': total_problem_count,  # 전체 풀이 가능 문제 수
+                'mastered_count':      mastered_count,        # 숙달 완료한 유형 개수
+                'solving_count':       solving_count,         # 풀이 중인 유형 개수
+                'total_subtype_count': total_subtype_count,   # 전체 유형 개수
+                'weekly_activity':     weekly_activity,   # [True, True, False, ...] 월~일
                 'subtype_mastery': subtype_mastery,
                 'latest_session':  latest_session_data,
             }

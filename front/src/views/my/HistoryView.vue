@@ -229,10 +229,10 @@ onMounted(async () => {
               <div v-for="m in visibleMastery" :key="m.problem_subtype" class="mastery-card">
                 <div class="between" style="align-items: center">
                   <span class="master-badge" :data-level="m.level">
-                    <WdsIcon v-if="m.level === '숙달 완료'" name="crown" :size="15" color="currentColor" />
-                    <WdsIcon v-else-if="m.level === '풀이 완료'" name="bulb" :size="15" color="currentColor" />
-                    <WdsIcon v-else-if="m.level === '풀이 중'" name="fire" :size="15" color="currentColor" />
-                    <WdsIcon v-else name="circle-check" :size="15" color="currentColor" />
+                    <WdsIcon v-if="m.level === '숙달 완료'" name="medal" :size="15" color="currentColor" />
+                    <WdsIcon v-else-if="m.level === '풀이 완료'" name="circle-check" :size="15" color="currentColor" />
+                    <WdsIcon v-else-if="m.level === '풀이 중'" name="bulb" :size="15" color="currentColor" />
+                    <WdsIcon v-else name="fire" :size="15" color="currentColor" />
                     {{ m.level }}
                   </span>
                   <template v-if="m.accuracy_before != null && m.accuracy_after != null">
