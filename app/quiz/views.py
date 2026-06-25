@@ -950,6 +950,8 @@ def _build_subtype_mastery_list(user):
     for subtype in all_subtype_names:
         attempted_map[subtype] = SessionProblem.objects.filter(
             session__user=user,
+            session__status='completed',
+            problem__is_quizable=True,
             problem__problem_subtype=subtype
         ).values('problem_id').distinct().count()
 
@@ -978,6 +980,11 @@ def _build_subtype_mastery_list(user):
 
         attempted_count = attempted_map.get(subtype, 0)
         total_count     = total_map.get(subtype, 0)
+
+        # 데이터 정리 과정에서 과거 풀이 기록이 현재 문제 풀과 어긋나도
+        # 화면에는 전체 문제 수를 넘지 않게 방어한다.
+        attempted_count = min(attempted_count, total_count)
+        
         if attempted_count == 0:
             level = '풀이 필요'
         elif attempted_count < total_count:
