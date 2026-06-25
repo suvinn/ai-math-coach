@@ -27,7 +27,9 @@ urlpatterns = [
     path('users/me/today-recommendation', views.TodayRecommendationView.as_view()),
     path('problems/<str:problem_id>',     views.ProblemDetailView.as_view()),
 
-    # 커뮤니티 — 문제별 댓글
-    path('problems/<str:problem_id>/comments',                    views.ProblemCommentView.as_view()),
-    path('problems/<str:problem_id>/comments/<int:comment_id>',   views.ProblemCommentView.as_view()),
+    # 커뮤니티 — 문제별 토론
+    path('problems/<str:problem_id>/posts',                       views.PostListView.as_view()),
+    path('problems/<str:problem_id>/posts/<int:post_id>',         views.PostDetailView.as_view()),
+    path('problems/<str:problem_id>/posts/<int:post_id>/comments',views.PostCommentView.as_view()),
+    path('problems/<str:problem_id>/posts/<int:post_id>/comments/<int:comment_id>', views.PostCommentView.as_view()),
 ]

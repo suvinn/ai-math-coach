@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from django.conf import settings
-from .models import Problem, ProblemAsset, Comment
+from .models import Problem, ProblemAsset, Comment, Post
 
 User = get_user_model()
 
@@ -112,7 +112,6 @@ class ProblemWithAnswerSerializer(ProblemPublicSerializer):
 
 
 class CommentSerializer(serializers.ModelSerializer):
-    """문제별 댓글 직렬화"""
     username = serializers.CharField(source='user.username', read_only=True)
     name     = serializers.CharField(source='user.first_name', read_only=True)
 
@@ -120,3 +119,21 @@ class CommentSerializer(serializers.ModelSerializer):
         model  = Comment
         fields = ['id', 'username', 'name', 'content', 'created_at', 'updated_at']
         read_only_fields = ['id', 'username', 'name', 'created_at', 'updated_at']
+
+
+class PostSerializer(serializers.ModelSerializer):
+    username      = serializers.CharField(source='user.username', read_only=True)
+    name          = serializers.CharField(source='user.first_name', read_only=True)
+    comment_count = serializers.IntegerField(source='comments.count', read_only=True)
+
+    class Meta:
+        model  = Post
+        fields = ['id', 'username', 'name', 'title', 'content', 'comment_count', 'created_at', 'updated_at']
+        read_only_fields = ['id', 'username', 'name', 'comment_count', 'created_at', 'updated_at']
+
+
+class PostDetailSerializer(PostSerializer):
+    comments = CommentSerializer(many=True, read_only=True)
+
+    class Meta(PostSerializer.Meta):
+        fields = PostSerializer.Meta.fields + ['comments']

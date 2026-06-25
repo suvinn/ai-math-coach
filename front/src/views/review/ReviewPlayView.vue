@@ -390,6 +390,10 @@ function goChat() {
           <WdsIcon name="sparkle" :size="15" color="var(--suql-accent)" />
           <span class="wds-caption-1" style="color:var(--suql-accent); font-weight:600">AI에게 질문하기</span>
         </button>
+        <button class="chat-btn" @click="router.push(`/problems/${currentProblem.problem_id}/posts`)">
+          <WdsIcon name="message" :size="15" color="var(--suql-accent)" />
+          <span class="wds-caption-1" style="color:var(--suql-accent); font-weight:600">토론</span>
+        </button>
       </div>
     </div>
 
