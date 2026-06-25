@@ -20,9 +20,9 @@ import WdsField from '@/components/common/WdsField.vue'
 import WdsIcon from '@/components/common/WdsIcon.vue'
 import { parseCircledOptions, parseOptionPreamble } from '@/utils/circledOptions'
 import { difficultyTone } from '@/utils/difficulty'
+import { resumeKey } from '@/utils/reviewResume'
 
 const STEP_LABEL = { s1: '보완 1단계', mid: '보완 2단계', s2: '보완 2단계', redo: '재도전' }
-const RESUME_KEY = 'reviewLoop_resume'
 
 const router = useRouter()
 const quiz   = useQuizStore()
@@ -59,18 +59,18 @@ const isMulti = computed(() => !!currentProblem.value?.is_multi_answer)
 
 // ─── 이어하기 저장 ────────────────────────────────────────────────
 function saveResume() {
+  if (!auth.user?.id) return
   const nextIdx = quiz.reviewSubtypeIdx + 1
   if (nextIdx >= quiz.reviewSubtypes.length) {
-    localStorage.removeItem(RESUME_KEY)
+    localStorage.removeItem(resumeKey(auth.user.id))
     return
   }
   const payload = {
-    userId:          auth.user?.id,
     parentSessionId: quiz.parentSessionId,
     reviewSubtypes:  quiz.reviewSubtypes,
     resumeFromIdx:   nextIdx,
   }
-  localStorage.setItem(RESUME_KEY, JSON.stringify(payload))
+  localStorage.setItem(resumeKey(auth.user.id), JSON.stringify(payload))
 }
 
 function goHomeWithSave() {
@@ -83,16 +83,15 @@ onBeforeUnmount(() => {
   if (quiz.reviewReturnState) return
   if (!quiz.reviewSubtypes.length) return
   if (subtypeDone.value && isLastSubtype.value) return
-  if (!auth.user?.username) return  // 로그아웃 중이면 저장 생략
+  if (!auth.user?.id) return  // 로그아웃 중이면 저장 생략
   const payload = {
-    userId:          auth.user?.id,
     parentSessionId: quiz.parentSessionId,
     reviewSubtypes:  quiz.reviewSubtypes,
     resumeFromIdx:   subtypeDone.value
       ? quiz.reviewSubtypeIdx + 1
       : quiz.reviewSubtypeIdx,
   }
-  localStorage.setItem(RESUME_KEY, JSON.stringify(payload))
+  localStorage.setItem(resumeKey(auth.user.id), JSON.stringify(payload))
 })
 // ─────────────────────────────────────────────────────────────────
 
@@ -274,7 +273,7 @@ function advance() {
 }
 
 function continueToNextSubtype() {
-  localStorage.removeItem(RESUME_KEY)
+  if (auth.user?.id) localStorage.removeItem(resumeKey(auth.user.id))
   if (isLastSubtype.value) {
     router.push('/review/master')
   } else {

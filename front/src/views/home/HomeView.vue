@@ -10,7 +10,7 @@ import SidebarShell from '@/components/common/SidebarShell.vue'
 import WdsIcon from '@/components/common/WdsIcon.vue'
 import WdsButton from '@/components/common/WdsButton.vue'
 import Toast from '@/components/common/Toast.vue'
-import ReviewResumeBanner from '@/components/review/ReviewResumeBanner.vue'
+import { resumeKey } from '@/utils/reviewResume'
 
 const router = useRouter()
 const auth = useAuthStore()
@@ -53,13 +53,10 @@ const recommendedSubtype = computed(() => {
 
 // 오답 이어풀기 진행률
 const resumeData = computed(() => {
+  if (!auth.user?.id) return null
   try {
-    const raw = localStorage.getItem('reviewLoop_resume')
-    if (!raw) return null
-    const data = JSON.parse(raw)
-    // userId가 없거나 현재 유저와 다르면 무시
-    if (!data.userId || data.userId !== auth.user?.username) return null
-    return data
+    const raw = localStorage.getItem(resumeKey(auth.user.id))
+    return raw ? JSON.parse(raw) : null
   } catch { return null }
 })
 const resumeProgress = computed(() => {
@@ -359,7 +356,7 @@ function goResume() {
 }
 .side-card-empty {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 14px;
   opacity: 0.55;
 }

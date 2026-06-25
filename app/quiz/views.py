@@ -93,7 +93,7 @@ class LoginView(APIView):
         return Response({
             'status': 'success',
             'data': {
-                # 'user_id': user.id,
+                'id': user.id,
                 'username': user.username,
                 'name': user.first_name,
             }
@@ -116,6 +116,7 @@ class MeView(APIView):
         return Response({
             'status': 'success',
             'data': {
+                'id':                     u.id,
                 'username':               u.username,
                 'name':                   u.first_name,
                 'grade':                  u.grade,

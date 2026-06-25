@@ -2,23 +2,25 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { useAuthStore } from '@/stores/auth'
 import { useQuizStore } from '@/stores/quiz'
 import api, { unwrap } from '@/api'
 import SidebarShell from '@/components/common/SidebarShell.vue'
 import WdsIcon from '@/components/common/WdsIcon.vue'
+import { resumeKey } from '@/utils/reviewResume'
 
 const router = useRouter()
+const auth   = useAuthStore()
 const quiz   = useQuizStore()
 
 const loading = ref(true)
 const data    = ref(null)
 
 // ── 이어하기 ─────────────────────────────────────────
-const RESUME_KEY = 'reviewLoop_resume'
-
 const resumeData = computed(() => {
+  if (!auth.user?.id) return null
   try {
-    const raw = localStorage.getItem(RESUME_KEY)
+    const raw = localStorage.getItem(resumeKey(auth.user.id))
     return raw ? JSON.parse(raw) : null
   } catch { return null }
 })
