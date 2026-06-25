@@ -53,9 +53,15 @@ function formatDate(iso) {
 const selectedMajor  = ref(null)
 const selectedMiddle = ref(null)
 const selectedLevel  = ref(null)
-const masteryExpanded = ref(false)
-const MASTERY_LIMIT = 12
-const LEVEL_OPTIONS = ['풀이 필요', '풀이 중', '풀이 완료', '숙달 완료']
+const MASTERY_PAGE_SIZE = 8
+const masteryPage = ref(1)
+
+const LEVEL_OPTIONS = [
+  { label: '풀이 필요', icon: 'bulb' },
+  { label: '풀이 중',   icon: 'fire' },
+  { label: '풀이 완료', icon: 'circle-check' },
+  { label: '숙달 완료', icon: 'medal' },
+]
 
 const majorList = computed(() => {
   if (!data.value) return []
@@ -77,17 +83,17 @@ const middleList = computed(() => {
 function selectMajor(major) {
   selectedMajor.value  = major
   selectedMiddle.value = null
-  masteryExpanded.value = false
+  masteryPage.value = 1
 }
 
 function selectMiddle(middle) {
   selectedMiddle.value = middle
-  masteryExpanded.value = false
+  masteryPage.value = 1
 }
 
 function selectLevel(level) {
   selectedLevel.value = level
-  masteryExpanded.value = false
+  masteryPage.value = 1
 }
 
 const filteredMastery = computed(() => {
@@ -109,9 +115,14 @@ const filteredMastery = computed(() => {
     })
 })
 
-const visibleMastery = computed(() =>
-  masteryExpanded.value ? filteredMastery.value : filteredMastery.value.slice(0, MASTERY_LIMIT)
+const totalMasteryPages = computed(() =>
+  Math.ceil(filteredMastery.value.length / MASTERY_PAGE_SIZE)
 )
+
+const visibleMastery = computed(() => {
+  const start = (masteryPage.value - 1) * MASTERY_PAGE_SIZE
+  return filteredMastery.value.slice(start, start + MASTERY_PAGE_SIZE)
+})
 
 // ── 퀴즈 기록 정렬 + 페이지네이션 ──────────────────────
 const SESSION_PAGE_SIZE = 6
@@ -140,27 +151,6 @@ function setSessionOrder(order) {
   sessionPage.value  = 1
 }
 
-// 1차 풀이 session_id → 해당 보완 세션들 묶기
-const sessionTree = computed(() => {
-  const sessions = pagedSessions.value
-  const roots = []
-  const childMap = {}
-
-  sessions.forEach(s => {
-    if (s.session_type === 'normal') {
-      roots.push({ ...s, children: [] })
-    } else {
-      if (!childMap[s.parent_session_id]) childMap[s.parent_session_id] = []
-      childMap[s.parent_session_id].push(s)
-    }
-  })
-
-  return roots.map(r => ({
-    ...r,
-    children: childMap[r.session_id] || [],
-  }))
-})
-
 onMounted(async () => {
   try {
     data.value = unwrap(await api.get('/users/me/history'))
@@ -173,23 +163,22 @@ onMounted(async () => {
 <template>
   <SidebarShell tab="report">
     <div class="page">
-      <div class="page-head"><div class="title">학습 이력</div></div>
+      <div class="page-head"><div class="title">학습 이력 분석</div></div>
 
       <div v-if="loading" class="hist-loading">
         <p class="assistive">불러오는 중…</p>
       </div>
 
       <template v-else-if="data">
-        <!-- ── 유형별 마스터 현황 ── -->
+        <!-- ── 유형별 진행 현황 ── -->
         <div class="stack-12" style="margin-bottom: 32px">
-          <div class="wds-label-1" style="font-weight: 700; font-size: 24px;">유형별 마스터 현황</div>
+          <div class="wds-label-1" style="font-weight: 700; font-size: 24px;">유형별 진행 현황</div>
           <div v-if="!data.subtype_mastery.length" class="assistive wds-body-2">아직 학습 기록이 없어요.</div>
           <template v-else>
-            <!-- 단원 선택 박스 -->
+            <!-- 단원 + 진행 상태 통합 박스 -->
             <div class="filter-box">
-              <div class="filter-section-label" style="margin-top: 0; font-size: 17px">단원 선택</div>
-
-              <!-- 대단원 필터 -->
+              <!-- 단원 선택 -->
+              <div class="filter-section-label">단원 선택</div>
               <div class="filter-row">
                 <span class="filter-label">대단원</span>
                 <button class="filter-chip" :data-active="selectedMajor === null" @click="selectMajor(null)">전체</button>
@@ -198,29 +187,31 @@ onMounted(async () => {
                   class="filter-chip" :data-active="selectedMajor === major"
                   @click="selectMajor(major)">{{ major }}</button>
               </div>
-
-              <!-- 중단원 필터 (항상 표시, 대단원 선택 시 목록 생김) -->
               <div class="filter-row">
                 <span class="filter-label">중단원</span>
-                <button class="filter-chip filter-chip--sub" :data-active="selectedMiddle === null" @click="selectMiddle(null)">전체</button>
+                <button class="filter-chip" :data-active="selectedMiddle === null" @click="selectMiddle(null)">전체</button>
                 <template v-if="selectedMajor">
                   <button
                     v-for="middle in middleList" :key="middle"
-                    class="filter-chip filter-chip--sub" :data-active="selectedMiddle === middle"
+                    class="filter-chip" :data-active="selectedMiddle === middle"
                     @click="selectMiddle(middle)">{{ middle }}</button>
                 </template>
               </div>
-            </div>
 
-            <!-- 진행 상태 선택 -->
-            <div class="filter-box">
-              <div class="filter-section-label" style="margin-top: 0; font-size: 17px">진행 상태 선택</div>
+              <!-- 구분선 -->
+              <div class="filter-divider" />
+
+              <!-- 진행 상태 선택 -->
+              <div class="filter-section-label">진행 상태</div>
               <div class="filter-row">
                 <button class="filter-chip" :data-active="selectedLevel === null" @click="selectLevel(null)">전체</button>
                 <button
-                  v-for="level in LEVEL_OPTIONS" :key="level"
-                  class="filter-chip" :data-active="selectedLevel === level"
-                  @click="selectLevel(level)">{{ level }}</button>
+                  v-for="opt in LEVEL_OPTIONS" :key="opt.label"
+                  class="filter-chip" :data-active="selectedLevel === opt.label"
+                  @click="selectLevel(opt.label)">
+                  <WdsIcon :name="opt.icon" :size="14" color="var(--label-assistive)" style="margin-right: 4px" />
+                  {{ opt.label }}
+                </button>
               </div>
             </div>
 
@@ -231,8 +222,8 @@ onMounted(async () => {
                   <span class="master-badge" :data-level="m.level">
                     <WdsIcon v-if="m.level === '숙달 완료'" name="medal" :size="15" color="currentColor" />
                     <WdsIcon v-else-if="m.level === '풀이 완료'" name="circle-check" :size="15" color="currentColor" />
-                    <WdsIcon v-else-if="m.level === '풀이 중'" name="bulb" :size="15" color="currentColor" />
-                    <WdsIcon v-else name="fire" :size="15" color="currentColor" />
+                    <WdsIcon v-else-if="m.level === '풀이 중'" name="fire" :size="15" color="currentColor" />
+                    <WdsIcon v-else name="bulb" :size="15" color="currentColor" />
                     {{ m.level }}
                   </span>
                   <template v-if="m.accuracy_before != null && m.accuracy_after != null">
@@ -244,19 +235,19 @@ onMounted(async () => {
                   </template>
                   <span v-else class="wds-caption-1" style="color: var(--suql-accent); font-weight: 600; font-size: 16px">정답률 {{ m.accuracy }}%</span>
                 </div>
-                <div class="wds-caption-1 assistive" style="margin-top: 10px; font-size: 16px">
+                <div class="wds-caption-1 assistive" style="margin-top: 10px; font-size: 14px">
                   {{ m.chapter_major }}<template v-if="m.chapter_middle"> › {{ m.chapter_middle }}</template>
                 </div>
-                <div class="wds-label-1" style="font-weight: 700; margin-top: 2px; font-size: 18px">{{ m.problem_subtype }}</div>
+                <div class="wds-label-1" style="font-weight: 700; margin-top: 2px; font-size: 16px">{{ m.problem_subtype }}</div>
                 <div class="wds-caption-1 assistive" style="margin-top: 6px; font-size: 15px">{{ m.total_attempts }} / {{ m.total_in_subtype }}문제 시도</div>
               </div>
             </div>
 
-            <!-- 더보기 버튼 -->
-            <div v-if="filteredMastery.length > MASTERY_LIMIT" style="text-align: center; margin-top: 4px">
-              <button class="more-btn" @click="masteryExpanded = !masteryExpanded">
-                {{ masteryExpanded ? '접기 ▲' : `더보기 (${filteredMastery.length - MASTERY_LIMIT}개 더) ▼` }}
-              </button>
+            <!-- 유형 카드 페이지네이션 -->
+            <div v-if="totalMasteryPages > 1" class="pagination">
+              <button :disabled="masteryPage === 1" @click="masteryPage--">← 이전</button>
+              <span class="page-info">{{ masteryPage }} / {{ totalMasteryPages }}</span>
+              <button :disabled="masteryPage === totalMasteryPages" @click="masteryPage++">다음 →</button>
             </div>
           </template>
         </div>
@@ -310,24 +301,24 @@ onMounted(async () => {
 .hist-loading {
   display: flex; align-items: center; justify-content: center; padding: 80px 0;
 }
-
 .page-head .title { font-size: 32px; }
 
-/* ── 단원 선택 박스 ── */
+/* ── 통합 필터 박스 ── */
 .filter-box {
   display: flex; flex-direction: column; gap: 12px;
   padding: 16px 20px;
   border-radius: 16px;
   border: 1px solid #bfdbfe;
   background: #eff6ff;
-  margin-bottom: 4px;
 }
-
-/* ── 유형 필터 ── */
+.filter-divider {
+  border: none;
+  border-top: 1px solid #bfdbfe;
+  margin: 4px 0;
+}
 .filter-section-label {
   font: var(--weight-semibold) 15px/1 var(--font-sans);
   color: var(--label-alternative);
-  margin-bottom: -4px;
 }
 .filter-row {
   display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
@@ -338,29 +329,23 @@ onMounted(async () => {
   white-space: nowrap;
   margin-right: 2px;
 }
+/* 모든 칩 동일한 크기 */
 .filter-chip {
+  display: inline-flex; align-items: center;
   padding: 6px 14px; border-radius: var(--radius-full);
   border: 1px solid #bfdbfe;
   background: #fff; color: var(--label-alternative);
-  font: var(--weight-medium) 15px/1 var(--font-sans);
+  font: var(--weight-medium) 14px/1 var(--font-sans);
   cursor: pointer; transition: background .12s, color .12s;
 }
 .filter-chip:hover { background: #dbeafe; }
 .filter-chip[data-active="true"] { background: var(--suql-accent); color: #fff; border-color: var(--suql-accent); }
-.filter-chip--sub {
-  font-size: 15px; padding: 5px 12px;
-  background: #fff; border: 1px solid #bfdbfe;
-}
-.filter-chip--sub[data-active="true"] { background: var(--suql-accent); color: #fff; border-color: var(--suql-accent); }
 
 /* ── 마스터 카드 ── */
 .mastery-card {
   padding: 18px; border-radius: 16px;
   box-shadow: inset 0 0 0 1px var(--line-normal-normal);
 }
-.mastery-card .master-badge { font-size: 15px; }
-.mastery-card .rate-jump .was { font-size: 16px; }
-.mastery-card .rate-jump .now { font-size: 19px; }
 .more-btn {
   padding: 8px 24px; border-radius: var(--radius-full); border: 0;
   background: var(--fill-alternative); color: var(--label-alternative);
@@ -389,10 +374,7 @@ onMounted(async () => {
   display: flex; align-items: center; gap: 12px; padding: 14px;
   border-radius: 14px; box-shadow: inset 0 0 0 1px var(--line-normal-normal);
 }
-.session-row--resumable {
-  box-shadow: inset 0 0 0 1.5px var(--suql-accent);
-}
-.session-row--child { background: var(--background-normal-alternative); }
+.session-row--resumable { box-shadow: inset 0 0 0 1.5px var(--suql-accent); }
 .session-score {
   font: var(--weight-bold) 15px/1 var(--font-sans);
   color: var(--suql-accent); flex: none;
@@ -405,16 +387,6 @@ onMounted(async () => {
   cursor: pointer; white-space: nowrap; transition: background .12s;
 }
 .resume-chip:hover { background: var(--blue-95, #e8f0ff); }
-
-/* ── 보완 세션 들여쓰기 ── */
-.review-group {
-  display: flex; gap: 0; margin-left: 20px;
-}
-.review-line {
-  width: 2px; background: var(--line-normal-normal);
-  border-radius: 2px; margin-right: 12px; flex: none;
-}
-.review-children { display: flex; flex-direction: column; gap: 8px; flex: 1; }
 
 /* ── 페이지네이션 ── */
 .pagination {
