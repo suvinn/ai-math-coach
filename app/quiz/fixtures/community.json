@@ -1,0 +1,58 @@
+[
+{
+  "model": "quiz.post",
+  "pk": 1,
+  "fields": {
+    "problem": "S3_중등_2_004075",
+    "user": 3,
+    "title": "안녕하세요",
+    "content": "이 문제 어떻게 푸나요",
+    "created_at": "2026-06-25T19:57:54.395Z",
+    "updated_at": "2026-06-25T19:57:54.395Z"
+  }
+},
+{
+  "model": "quiz.comment",
+  "pk": 1,
+  "fields": {
+    "post": 1,
+    "user": 3,
+    "content": "이것도 모르냐?",
+    "created_at": "2026-06-25T20:01:17.152Z",
+    "updated_at": "2026-06-25T20:01:17.152Z"
+  }
+},
+{
+  "model": "quiz.comment",
+  "pk": 2,
+  "fields": {
+    "post": 1,
+    "user": 3,
+    "content": "이건 이렇게 푸는거에요!",
+    "created_at": "2026-06-25T21:18:19.491Z",
+    "updated_at": "2026-06-25T21:18:19.491Z"
+  }
+},
+{
+  "model": "quiz.comment",
+  "pk": 3,
+  "fields": {
+    "post": 1,
+    "user": 3,
+    "content": "저도 잘 모르겠어요ㅠㅠ 고수님들 도와주세요!",
+    "created_at": "2026-06-25T21:18:32.103Z",
+    "updated_at": "2026-06-25T21:18:32.103Z"
+  }
+},
+{
+  "model": "quiz.comment",
+  "pk": 4,
+  "fields": {
+    "post": 1,
+    "user": 3,
+    "content": "아하~",
+    "created_at": "2026-06-25T21:18:39.175Z",
+    "updated_at": "2026-06-25T21:18:39.175Z"
+  }
+}
+]
