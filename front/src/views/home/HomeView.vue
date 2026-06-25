@@ -239,7 +239,7 @@ function goResume() {
           <div v-else class="side-card side-card-empty">
             <div class="empty-text">
               <div class="side-title">오답 이어풀기</div>
-              <div class="wds-caption-1 assistive">진행 중인 오답 루프가 없어요.</div>
+              <div class="side-sub">진행 중인 오답 루프가 없어요.</div>
             </div>
           </div>
         </div>
@@ -248,7 +248,7 @@ function goResume() {
       <!-- 학습 팁 -->
       <div class="tip-row">
         <WdsIcon name="bulb" :size="16" color="var(--suql-accent)" />
-        <span class="wds-caption-1 tip-text"><strong>학습 팁</strong>&nbsp;&nbsp;{{ todayTip }}</span>
+        <span class="wds-caption-1 tip-text"><strong class="tip-label">학습 팁</strong>&nbsp;&nbsp;<span class="tip-message">{{ todayTip }}</span></span>
       </div>
     </div>
   </SidebarShell>
@@ -305,12 +305,12 @@ function goResume() {
 }
 .diag-inner { flex: 1; }
 .diag-title {
-  font: var(--weight-bold) 22px/1.3 var(--font-sans);
+  font: var(--weight-bold) 24px/1.3 var(--font-sans);
   letter-spacing: -0.02em;
   margin-bottom: 10px;
 }
 .diag-body {
-  font-size: 15px;
+  font-size: 17px;
   opacity: 0.88;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -324,7 +324,7 @@ function goResume() {
   margin-top: 20px;
   padding-top: 16px;
   border-top: 1px solid rgba(255,255,255,0.25);
-  font-size: 14px;
+  font-size: 16px;
   opacity: 0.88;
 }
 .diag-meta-item {
@@ -335,7 +335,7 @@ function goResume() {
 }
 .diag-meta-sep {
   opacity: 0.4;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /* 오른쪽 카드들 */
@@ -376,7 +376,7 @@ function goResume() {
   flex-shrink: 0;
 }
 .side-title {
-  font: var(--weight-bold) 17px/1.4 var(--font-sans);
+  font: var(--weight-bold) 19px/1.4 var(--font-sans);
   color: #1e3a8a;
   margin-bottom: 3px;
 }
@@ -398,7 +398,7 @@ function goResume() {
 }
 .rec-label { white-space: nowrap; }
 .rec-name {
-  font: var(--weight-bold) 13px/1.4 var(--font-sans);
+  font: var(--weight-bold) 15px/1.4 var(--font-sans);
   color: #3b82f6;
   flex: 1;
 }
@@ -411,9 +411,12 @@ function goResume() {
   min-width: 0;
 }
 .side-sub {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--label-assistive);
   margin-top: 2px;
+}
+.side-card .wds-caption-1 {
+  font-size: 14px;
 }
 
 /* 진행률 바 */
@@ -449,8 +452,13 @@ function goResume() {
   margin-top: 20px;
 }
 .tip-text {
-  color: #1e40af;
-  font-size: 13px;
+  font-size: 17px;
   line-height: 1.5;
+}
+.tip-label {
+  color: #1e40af;
+}
+.tip-message {
+  color: var(--label-assistive);
 }
 </style>
