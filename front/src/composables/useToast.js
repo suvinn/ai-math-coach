@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 // proto-core.jsx의 useToast 훅을 Vue composable로 변환.
-// showToast(text, tone, icon) → 1.7초 후 자동 사라짐.
+// showToast(text, tone, icon) → 2초 후 자동 사라짐.
 export function useToast() {
   const toast = ref(null)
   let seq = 0
@@ -10,9 +10,12 @@ export function useToast() {
   function showToast(text, tone, icon) {
     const k = ++seq
     toast.value = { text, tone, icon, k }
+
     setTimeout(() => {
-      if (toast.value && toast.value.k === k) toast.value = null
-    }, 1700)
+      if (toast.value && toast.value.k === k) {
+        toast.value = null
+      }
+    }, 2000)
   }
 
   return { toast, showToast }

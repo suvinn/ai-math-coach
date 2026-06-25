@@ -53,7 +53,7 @@ function formatDate(iso) {
 const selectedMajor  = ref(null)
 const selectedMiddle = ref(null)
 const selectedLevel  = ref(null)
-const MASTERY_PAGE_SIZE = 8
+const MASTERY_PAGE_SIZE = 6
 const masteryPage = ref(1)
 
 const LEVEL_OPTIONS = [
@@ -177,46 +177,64 @@ onMounted(async () => {
           <template v-else>
             <!-- 단원 + 진행 상태 통합 박스 -->
             <div class="filter-box">
-              <!-- 단원 선택 -->
-              <div class="filter-section-label">단원 선택</div>
-              <div class="filter-row">
-                <span class="filter-label">대단원</span>
-                <button class="filter-chip" :data-active="selectedMajor === null" @click="selectMajor(null)">전체</button>
-                <button
-                  v-for="major in majorList" :key="major"
-                  class="filter-chip" :data-active="selectedMajor === major"
-                  @click="selectMajor(major)">{{ major }}</button>
-              </div>
-              <div class="filter-row">
-                <span class="filter-label">중단원</span>
-                <button class="filter-chip" :data-active="selectedMiddle === null" @click="selectMiddle(null)">전체</button>
-                <template v-if="selectedMajor">
+              <!-- 왼쪽: 단원 선택 -->
+              <div class="filter-group filter-group--chapter">
+                <div class="filter-section-label">단원 선택</div>
+
+                <div class="filter-row">
+                  <span class="filter-label">대단원</span>
+                  <button class="filter-chip" :data-active="selectedMajor === null" @click="selectMajor(null)">전체</button>
                   <button
-                    v-for="middle in middleList" :key="middle"
-                    class="filter-chip" :data-active="selectedMiddle === middle"
-                    @click="selectMiddle(middle)">{{ middle }}</button>
-                </template>
+                    v-for="major in majorList" :key="major"
+                    class="filter-chip" :data-active="selectedMajor === major"
+                    @click="selectMajor(major)"
+                  >
+                    {{ major }}
+                  </button>
+                </div>
+
+                <div class="filter-row">
+                  <span class="filter-label">중단원</span>
+                  <button class="filter-chip" :data-active="selectedMiddle === null" @click="selectMiddle(null)">전체</button>
+                  <template v-if="selectedMajor">
+                    <button
+                      v-for="middle in middleList" :key="middle"
+                      class="filter-chip" :data-active="selectedMiddle === middle"
+                      @click="selectMiddle(middle)"
+                    >
+                      {{ middle }}
+                    </button>
+                  </template>
+                </div>
               </div>
 
-              <!-- 구분선 -->
-              <div class="filter-divider" />
+              <!-- 가운데 짧은 세로선 -->
+              <div class="filter-vertical-divider" />
 
-              <!-- 진행 상태 선택 -->
-              <div class="filter-section-label">진행 상태</div>
-              <div class="filter-row">
-                <button class="filter-chip" :data-active="selectedLevel === null" @click="selectLevel(null)">전체</button>
-                <button
-                  v-for="opt in LEVEL_OPTIONS" :key="opt.label"
-                  class="filter-chip" :data-active="selectedLevel === opt.label"
-                  @click="selectLevel(opt.label)">
-                  <WdsIcon :name="opt.icon" :size="14" color="var(--label-assistive)" style="margin-right: 4px" />
-                  {{ opt.label }}
-                </button>
+              <!-- 오른쪽: 진행 상태 -->
+              <div class="filter-group filter-group--status">
+                <div class="filter-section-label">진행 상태</div>
+
+                <div class="filter-row status-filter-row">
+                  <button class="filter-chip" :data-active="selectedLevel === null" @click="selectLevel(null)">전체</button>
+
+                  <div class="status-chip-grid">
+                    <button
+                      v-for="opt in LEVEL_OPTIONS" :key="opt.label"
+                      class="filter-chip"
+                      :data-active="selectedLevel === opt.label"
+                      @click="selectLevel(opt.label)"
+                    >
+                      <WdsIcon :name="opt.icon" :size="14" color="currentColor" style="margin-right: 4px" />
+                      {{ opt.label }}
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
 
             <!-- 카드 목록 -->
-            <div class="card-grid cols-4">
+            <div class="card-grid mastery-grid">
               <div v-for="m in visibleMastery" :key="m.problem_subtype" class="mastery-card">
                 <div class="between" style="align-items: center">
                   <span class="master-badge" :data-level="m.level">
@@ -305,51 +323,110 @@ onMounted(async () => {
 
 /* ── 통합 필터 박스 ── */
 .filter-box {
-  display: flex; flex-direction: column; gap: 12px;
-  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 16px 22px;
   border-radius: 16px;
   border: 1px solid #bfdbfe;
   background: #eff6ff;
 }
-.filter-divider {
-  border: none;
-  border-top: 1px solid #bfdbfe;
-  margin: 4px 0;
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
 }
+
+.filter-group--chapter {
+  flex: 1.2;
+}
+
+.filter-group--status {
+  flex: 0.8;
+}
+
+.filter-vertical-divider {
+  width: 1px;
+  height: 72px;
+  background: #bfdbfe;
+  flex: none;
+}
+
 .filter-section-label {
   font: var(--weight-semibold) 15px/1 var(--font-sans);
   color: var(--label-alternative);
 }
+
 .filter-row {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
 }
+
+.status-filter-row {
+  align-items: flex-start;
+}
+
+.status-chip-grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 8px;
+}
+
 .filter-label {
   font: var(--weight-semibold) 13px/1 var(--font-sans);
   color: var(--label-assistive);
   white-space: nowrap;
   margin-right: 2px;
 }
+
 /* 모든 칩 동일한 크기 */
 .filter-chip {
-  display: inline-flex; align-items: center;
-  padding: 6px 14px; border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
   border: 1px solid #bfdbfe;
-  background: #fff; color: var(--label-alternative);
+  background: #fff;
+  color: var(--label-alternative);
   font: var(--weight-medium) 14px/1 var(--font-sans);
-  cursor: pointer; transition: background .12s, color .12s;
+  cursor: pointer;
+  transition: background .12s, color .12s, border-color .12s;
 }
-.filter-chip:hover { background: #dbeafe; }
-.filter-chip[data-active="true"] { background: var(--suql-accent); color: #fff; border-color: var(--suql-accent); }
+
+.filter-chip:hover {
+  background: #dbeafe;
+}
+
+.filter-chip[data-active="true"] {
+  background: var(--suql-accent);
+  color: #fff;
+  border-color: var(--suql-accent);
+}
 
 /* ── 마스터 카드 ── */
+.card-grid.mastery-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .mastery-card {
-  padding: 18px; border-radius: 16px;
+  padding: 18px;
+  border-radius: 16px;
   box-shadow: inset 0 0 0 1px var(--line-normal-normal);
 }
+
 .more-btn {
-  padding: 8px 24px; border-radius: var(--radius-full); border: 0;
-  background: var(--fill-alternative); color: var(--label-alternative);
-  font: var(--weight-medium) 14px/1 var(--font-sans); cursor: pointer;
+  padding: 8px 24px;
+  border-radius: var(--radius-full);
+  border: 0;
+  background: var(--fill-alternative);
+  color: var(--label-alternative);
+  font: var(--weight-medium) 14px/1 var(--font-sans);
+  cursor: pointer;
   transition: background .12s;
 }
 .more-btn:hover { background: var(--fill-normal); }
@@ -404,5 +481,29 @@ onMounted(async () => {
 .page-info {
   font: var(--weight-medium) 14px/1 var(--font-sans);
   color: var(--label-alternative);
+}
+
+@media (max-width: 960px) {
+  .filter-box {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .filter-vertical-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .filter-group--chapter,
+  .filter-group--status {
+    flex: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .card-grid.mastery-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
