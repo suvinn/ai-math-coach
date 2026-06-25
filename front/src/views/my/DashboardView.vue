@@ -55,7 +55,6 @@ function goStudy() {
 
         <section class="hero-card">
           <div class="hero-copy">
-            <div class="hero-eyebrow">오늘의 학습 리포트</div>
             <h2>이번 주도 차근차근 잘 이어가고 있어요!</h2>
             <p>
               지금까지 {{ data.total_solved }}문제를 풀었고,
@@ -250,18 +249,6 @@ function goStudy() {
   min-width: 0;
 }
 
-.hero-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  height: 28px;
-  padding: 0 12px;
-  margin-bottom: 12px;
-  border-radius: var(--radius-full);
-  background: rgba(59, 99, 246, 0.1);
-  color: var(--suql-accent);
-  font-size: 13px;
-  font-weight: 800;
-}
 
 .hero-copy h2 {
   margin: 0;
