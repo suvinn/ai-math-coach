@@ -1,6 +1,6 @@
 <!-- 📄 src/views/quiz/QuizSetupView.vue -->
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import api, { unwrap } from '@/api'
 import { useQuizStore } from '@/stores/quiz'
@@ -14,11 +14,8 @@ const router = useRouter()
 const quiz = useQuizStore()
 const { toast, showToast } = useToast()
 
-// mode: today(오늘의 추천) | undefined(학습 탭)
-const mode = route.query.mode
-
-const chapters = ref([])          // [{ chapter_major, chapter_middles: [{ chapter_middle, chapter_minors }] }]
-const counts = ref([])            // [{ chapter_major, chapter_middle, chapter_minor, count }]
+const chapters = ref([])
+const counts = ref([])
 const loading = ref(true)
 const creating = ref(false)
 
@@ -26,7 +23,14 @@ const selectedMajor = ref(null)
 const selectedMiddle = ref(null)
 const problemCount = ref(10)
 
-onMounted(async () => {
+async function init() {
+  loading.value = true
+  selectedMajor.value = null
+  selectedMiddle.value = null
+  problemCount.value = 10
+
+  const mode = route.query.mode
+
   try {
     const [chData, cntData] = await Promise.all([
       api.get('/chapters').then(unwrap),
@@ -36,19 +40,26 @@ onMounted(async () => {
     counts.value = cntData || []
 
     if (mode === 'today') {
-      try {
-        const rec = unwrap(await api.get('/users/me/today-recommendation'))
-        if (rec?.has_recommendation && rec.prefill) {
-          selectedMajor.value = rec.prefill.chapter_major
-          selectedMiddle.value = rec.prefill.chapter_middle
-          problemCount.value = rec.prefill.suggested_count || 10
+      // 홈화면에서 넘겨준 추천 단원 우선 사용
+      const qMajor = route.query.major
+      const qMiddle = route.query.middle
+      if (qMajor && qMiddle) {
+        selectedMajor.value = qMajor
+        selectedMiddle.value = qMiddle
+      } else {
+        try {
+          const rec = unwrap(await api.get('/users/me/today-recommendation'))
+          if (rec?.has_recommendation && rec.prefill) {
+            selectedMajor.value = rec.prefill.chapter_major
+            selectedMiddle.value = rec.prefill.chapter_middle
+            problemCount.value = rec.prefill.suggested_count || 10
+          }
+        } catch {
+          // 추천 실패 시 첫 번째 대단원으로 폴백
         }
-      } catch {
-        // 추천 실패 시 첫 번째 대단원으로 폴백
       }
     }
 
-    // today 모드 prefill이 없거나, 일반 진입 시 → 첫 번째 대단원 기본 선택
     if (!selectedMajor.value && chapters.value.length) {
       selectedMajor.value = chapters.value[0].chapter_major
     }
@@ -61,15 +72,16 @@ onMounted(async () => {
   } finally {
     loading.value = false
   }
-})
+}
 
-// 현재 선택된 대단원의 중단원 목록
+onMounted(init)
+watch(() => route.query.mode, init)
+
 const middles = computed(() => {
   const major = chapters.value.find((c) => c.chapter_major === selectedMajor.value)
   return major ? major.chapter_middles : []
 })
 
-// 선택된 중단원의 문제 수 (소단원 합산)
 const selectedCount = computed(() => {
   if (!selectedMajor.value || !selectedMiddle.value) return 0
   return counts.value
@@ -83,7 +95,7 @@ const selectedCount = computed(() => {
 
 function selectMajor(major) {
   selectedMajor.value = major
-  selectedMiddle.value = null // 대단원 바뀌면 중단원 초기화
+  selectedMiddle.value = null
 }
 
 const canStart = computed(
@@ -225,10 +237,6 @@ async function start() {
   color: var(--suql-accent);
   letter-spacing: -0.01em;
 }
-
-/* 대단원 칩 */
-
-/* 중단원 행 */
 .middle-row {
   padding: 14px;
   margin: 0;
@@ -244,8 +252,6 @@ async function start() {
   font: var(--weight-semibold) 15px/1.3 var(--font-sans);
   color: var(--label-normal);
 }
-
-/* 문제 수 */
 .count-row {
   display: flex;
   gap: 8px;

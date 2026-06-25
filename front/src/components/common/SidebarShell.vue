@@ -17,23 +17,30 @@ const auth = useAuthStore()
 
 const navItems = [
   { id: 'home',   label: '홈',   icon: 'home',        to: '/' },
-  { id: 'learn',  label: '학습', icon: 'write',       to: '/quiz/setup' },
+  { id: 'learn',  label: '학습', icon: 'write',       to: null },
   { id: 'report', label: '분석', icon: 'sparkle',     to: '/my/history' },
   { id: 'my',     label: '마이', icon: 'nav-mypage',  to: '/my' },
 ]
+
+function handleNavClick(item) {
+  if (item.id === 'learn') {
+    router.push({ path: '/quiz/setup', query: { t: Date.now() } })
+  } else {
+    router.push(item.to)
+  }
+}
 
 const initial = computed(() => (auth.user?.name || '학생').slice(0, 1))
 
 // 사이드바 통계
 const streak = ref(0)
-const todaySolved = ref(0)  // 임시 하드코딩, API 연결 시 교체
+const solvingCount = ref(0)
 
 onMounted(async () => {
   try {
     const data = unwrap(await api.get('/users/me/dashboard'))
     streak.value = data?.streak ?? 0
-    // todaySolved.value = data?.today_solved ?? 0  // API 필드 생기면 주석 해제
-    todaySolved.value = 13  // 임시
+    solvingCount.value = data?.solving_count ?? 0
   } catch {
     // 실패해도 그대로
   }
@@ -70,35 +77,31 @@ async function handleLogout() {
     <aside class="app-sidebar">
       <div class="app-nav-scroll">
         <nav class="app-nav">
-          <router-link
+          <button
             v-for="item in navItems"
             :key="item.id"
-            :to="item.to"
             class="app-nav-item"
             :data-active="item.id === tab"
+            @click="handleNavClick(item)"
           >
             <span class="ico"><WdsIcon :name="item.icon" :size="20" /></span>
             <span class="label">{{ item.label }}</span>
-          </router-link>
+          </button>
         </nav>
       </div>
 
       <!-- 프로필 위 통계 -->
       <div class="sidebar-stats">
         <div class="sidebar-stat">
-          <div class="sidebar-stat-top">
-            <WdsIcon name="fire" :size="13" color="var(--status-cautionary)" />
-            <span class="sidebar-stat-label">연속 학습</span>
-          </div>
+          <WdsIcon name="calendar" :size="13" color="#8b5cf6" />
+          <span class="sidebar-stat-label">연속 학습</span>
           <span class="sidebar-stat-val">{{ streak }}일</span>
         </div>
         <div class="sidebar-stat-divider" />
         <div class="sidebar-stat">
-          <div class="sidebar-stat-top">
-            <WdsIcon name="document" :size="13" color="var(--suql-accent)" />
-            <span class="sidebar-stat-label">오늘 푼 문제</span>
-          </div>
-          <span class="sidebar-stat-val">{{ todaySolved }}문제</span>
+          <WdsIcon name="fire" :size="13" color="#d4700a" />
+          <span class="sidebar-stat-label">풀이 중인 유형</span>
+          <span class="sidebar-stat-val">{{ solvingCount }}개</span>
         </div>
       </div>
 
@@ -132,24 +135,20 @@ async function handleLogout() {
   background: var(--fill-alternative, #f5f5f5);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 .sidebar-stat {
   display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-.sidebar-stat-top {
-  display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
 }
 .sidebar-stat-label {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--label-assistive);
+  flex: 1;
 }
 .sidebar-stat-val {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: var(--weight-bold);
   color: var(--label-normal);
   letter-spacing: -0.02em;
@@ -158,4 +157,6 @@ async function handleLogout() {
   height: 1px;
   background: var(--line-normal, #e2e2e2);
 }
+.app-nav-profile .avatar { font-size: 17px; }
+.app-nav-profile .name { font-size: 18px; }
 </style>

@@ -269,8 +269,7 @@ body[data-accent] {
   font: var(--weight-bold) 13px/1 var(--font-sans); letter-spacing: -0.01em;
   flex: none; white-space: nowrap;
 }
-.master-badge[data-on="true"],
-.master-badge[data-level="숙달"] {
+.master-badge[data-on="true"] {
   background: #fff1e0;
   color: #d4700a;
 }
@@ -279,14 +278,24 @@ body[data-accent] {
   box-shadow: inset 0 0 0 1px var(--line-normal-strong);
   color: var(--label-assistive);
 }
-.master-badge[data-level="연습 중"] {
-  background: #ffe5e5;
-  color: #d63030;
-  box-shadow: none;
-}
-.master-badge[data-level="보완 필요"] {
+.master-badge[data-level="숙달 완료"] {
   background: #e6f9e0;
   color: #2e8f1a;
+  box-shadow: none;
+}
+.master-badge[data-level="풀이 완료"] {
+  background: #fff3c4;
+  color: #92660b;
+  box-shadow: none;
+}
+.master-badge[data-level="풀이 중"] {
+  background: #fff1e0;
+  color: #d4700a;
+  box-shadow: none;
+}
+.master-badge[data-level="풀이 필요"] {
+  background: #ffe5e5;
+  color: #d63030;
   box-shadow: none;
 }
 .rate-jump { display: inline-flex; align-items: center; gap: 7px; }

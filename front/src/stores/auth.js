@@ -4,7 +4,7 @@ import { ref, computed } from 'vue'
 import api, { unwrap } from '@/api'
 
 export const useAuthStore = defineStore('auth', () => {
-  const user = ref(null)      // { username, name, grade, current_chapter_major, current_chapter_middle }
+  const user = ref(null)      // { id, username, name, grade, current_chapter_major, current_chapter_middle }
   const checked = ref(false)  // 최초 /auth/me 확인 완료 여부
 
   const isLoggedIn = computed(() => !!user.value)
