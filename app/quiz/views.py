@@ -1032,7 +1032,7 @@ class ProblemCommentView(APIView):
         except Problem.DoesNotExist:
             return None
 
-    def get(self, request, problem_id):
+    def get(self, request, problem_id, post_id=None):
         problem = self._get_problem_or_404(problem_id)
         if not problem:
             return Response({'status': 'error', 'message': '문제를 찾을 수 없습니다.'}, status=status.HTTP_404_NOT_FOUND)
@@ -1042,7 +1042,7 @@ class ProblemCommentView(APIView):
         serializer = CommentSerializer(comments, many=True)
         return Response({'status': 'success', 'data': {'problem_id': problem_id, 'comment_count': comments.count(), 'comments': serializer.data}})
 
-    def post(self, request, problem_id):
+    def post(self, request, problem_id, post_id=None):
         if not request.user.is_authenticated:
             return Response({'status': 'error', 'message': '로그인이 필요합니다.'}, status=status.HTTP_401_UNAUTHORIZED)
         problem = self._get_problem_or_404(problem_id)
@@ -1053,10 +1053,10 @@ class ProblemCommentView(APIView):
             return Response({'status': 'error', 'message': '댓글 내용을 입력해주세요.'}, status=status.HTTP_400_BAD_REQUEST)
         from .models import Comment
         from .serializers import CommentSerializer
-        comment = Comment.objects.create(problem=problem, user=request.user, content=content)
+        comment = Comment.objects.create(post_id=post_id, user=request.user, content=content)
         return Response({'status': 'success', 'data': CommentSerializer(comment).data}, status=status.HTTP_201_CREATED)
 
-    def delete(self, request, problem_id, comment_id=None):
+    def delete(self, request, problem_id, post_id=None, comment_id=None):
         if not request.user.is_authenticated:
             return Response({'status': 'error', 'message': '로그인이 필요합니다.'}, status=status.HTTP_401_UNAUTHORIZED)
         from .models import Comment
@@ -1082,7 +1082,7 @@ class PostListView(APIView):
         serializer = PostSerializer(posts, many=True)
         return Response({'status': 'success', 'data': {'problem_id': problem_id, 'post_count': posts.count(), 'posts': serializer.data}})
 
-    def post(self, request, problem_id):
+    def post(self, request, problem_id, post_id=None):
         if not request.user.is_authenticated:
             return Response({'status': 'error', 'message': '로그인이 필요합니다.'}, status=401)
         try:
