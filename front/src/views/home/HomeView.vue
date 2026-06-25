@@ -55,7 +55,11 @@ const recommendedSubtype = computed(() => {
 const resumeData = computed(() => {
   try {
     const raw = localStorage.getItem('reviewLoop_resume')
-    return raw ? JSON.parse(raw) : null
+    if (!raw) return null
+    const data = JSON.parse(raw)
+    // userId가 없거나 현재 유저와 다르면 무시
+    if (!data.userId || data.userId !== auth.user?.username) return null
+    return data
   } catch { return null }
 })
 const resumeProgress = computed(() => {
@@ -99,7 +103,15 @@ async function startDiagnosis() {
 }
 
 function goTodayRec() {
-  router.push({ path: '/quiz/setup', query: { mode: 'today' } })
+  const rec = recommendedSubtype.value
+  router.push({
+    path: '/quiz/setup',
+    query: {
+      mode: 'today',
+      t: Date.now(),
+      ...(rec && { major: rec.chapter_major, middle: rec.chapter_middle }),
+    }
+  })
 }
 
 function goResume() {
@@ -191,7 +203,7 @@ function goResume() {
             <div class="side-card-head">
               <div class="side-card-texts">
                 <div class="side-title">오늘의 추천 학습</div>
-                <div class="side-sub">단원을 골라 바로 퀴즈를 시작해요.</div>
+                <div class="side-sub">추천된 단원으로 바로 퀴즈를 시작해요.</div>
               </div>
               <WdsButton class="side-btn" variant="primary" size="medium" icon-right="arrow-right" :style="{ width: '135px' }" @click="goTodayRec">
                 퀴즈 설정하기
@@ -238,7 +250,7 @@ function goResume() {
 
       <!-- 학습 팁 -->
       <div class="tip-row">
-        <WdsIcon name="sparkle" :size="16" color="var(--suql-accent)" />
+        <WdsIcon name="bulb" :size="16" color="var(--suql-accent)" />
         <span class="wds-caption-1 tip-text"><strong>학습 팁</strong>&nbsp;&nbsp;{{ todayTip }}</span>
       </div>
     </div>
@@ -250,7 +262,7 @@ function goResume() {
   font-size: 20px;
 }
 .home-headline {
-  font: var(--weight-bold) 34px/1.3 var(--font-sans);
+  font: var(--weight-bold) 28px/1.3 var(--font-sans);
   letter-spacing: -0.025em;
   margin-top: 4px;
 }
@@ -296,12 +308,12 @@ function goResume() {
 }
 .diag-inner { flex: 1; }
 .diag-title {
-  font: var(--weight-bold) 28px/1.3 var(--font-sans);
+  font: var(--weight-bold) 22px/1.3 var(--font-sans);
   letter-spacing: -0.02em;
   margin-bottom: 10px;
 }
 .diag-body {
-  font-size: 17px;
+  font-size: 15px;
   opacity: 0.88;
   line-height: 1.6;
   margin-bottom: 20px;

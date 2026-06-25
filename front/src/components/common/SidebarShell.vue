@@ -17,10 +17,18 @@ const auth = useAuthStore()
 
 const navItems = [
   { id: 'home',   label: '홈',   icon: 'home',        to: '/' },
-  { id: 'learn',  label: '학습', icon: 'write',       to: '/quiz/setup' },
+  { id: 'learn',  label: '학습', icon: 'write',       to: null },
   { id: 'report', label: '분석', icon: 'sparkle',     to: '/my/history' },
   { id: 'my',     label: '마이', icon: 'nav-mypage',  to: '/my' },
 ]
+
+function handleNavClick(item) {
+  if (item.id === 'learn') {
+    router.push({ path: '/quiz/setup', query: { t: Date.now() } })
+  } else {
+    router.push(item.to)
+  }
+}
 
 const initial = computed(() => (auth.user?.name || '학생').slice(0, 1))
 
@@ -70,34 +78,30 @@ async function handleLogout() {
     <aside class="app-sidebar">
       <div class="app-nav-scroll">
         <nav class="app-nav">
-          <router-link
+          <button
             v-for="item in navItems"
             :key="item.id"
-            :to="item.to"
             class="app-nav-item"
             :data-active="item.id === tab"
+            @click="handleNavClick(item)"
           >
             <span class="ico"><WdsIcon :name="item.icon" :size="20" /></span>
             <span class="label">{{ item.label }}</span>
-          </router-link>
+          </button>
         </nav>
       </div>
 
       <!-- 프로필 위 통계 -->
       <div class="sidebar-stats">
         <div class="sidebar-stat">
-          <div class="sidebar-stat-top">
-            <WdsIcon name="fire" :size="13" color="var(--status-cautionary)" />
-            <span class="sidebar-stat-label">연속 학습</span>
-          </div>
+          <WdsIcon name="fire" :size="13" color="var(--status-cautionary)" />
+          <span class="sidebar-stat-label">연속 학습</span>
           <span class="sidebar-stat-val">{{ streak }}일</span>
         </div>
         <div class="sidebar-stat-divider" />
         <div class="sidebar-stat">
-          <div class="sidebar-stat-top">
-            <WdsIcon name="document" :size="13" color="var(--suql-accent)" />
-            <span class="sidebar-stat-label">오늘 푼 문제</span>
-          </div>
+          <WdsIcon name="write" :size="13" color="var(--suql-accent)" />
+          <span class="sidebar-stat-label">오늘 푼 문제</span>
           <span class="sidebar-stat-val">{{ todaySolved }}문제</span>
         </div>
       </div>
@@ -132,24 +136,20 @@ async function handleLogout() {
   background: var(--fill-alternative, #f5f5f5);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 .sidebar-stat {
   display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-.sidebar-stat-top {
-  display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
 }
 .sidebar-stat-label {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--label-assistive);
+  flex: 1;
 }
 .sidebar-stat-val {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: var(--weight-bold);
   color: var(--label-normal);
   letter-spacing: -0.02em;

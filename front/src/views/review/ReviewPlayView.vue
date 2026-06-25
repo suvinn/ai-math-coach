@@ -6,6 +6,7 @@
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useRouter } from 'vue-router'
+import { useAuthStore } from '@/stores/auth'
 import { useQuizStore } from '@/stores/quiz'
 import { useToast } from '@/composables/useToast'
 import api, { unwrap } from '@/api'
@@ -25,21 +26,22 @@ const RESUME_KEY = 'reviewLoop_resume'
 
 const router = useRouter()
 const quiz   = useQuizStore()
+const auth   = useAuthStore()
 const { toast, showToast } = useToast()
 
 if (!quiz.reviewSubtypes.length) router.replace('/quiz/coaching')
 
 const loadingProblem = ref(true)
 const submitting     = ref(false)
-const originalWrongMap = ref({})  // problem_id → 원본 세션의 오답 상세 (재도전용)
+const originalWrongMap = ref({})
 
-const currentStepKey = ref('s1')   // s1 | mid | s2 | redo
+const currentStepKey = ref('s1')
 const currentProblem = ref(null)
 const answer          = ref('')
 const selectedLabels  = ref([])
-const revealed         = ref(false)  // 제출 후 정오답/해설 표시 중인지
-const lastResult       = ref(null)   // { isCorrect, correctLabel, correctText, explanation }
-const subtypeDone      = ref(false)  // "이 유형 보완 학습 완료" 인터스티셔
+const revealed         = ref(false)
+const lastResult       = ref(null)
+const subtypeDone      = ref(false)
 
 const subtype = computed(() => quiz.reviewSubtypes[quiz.reviewSubtypeIdx])
 const subtypeCount = computed(() => quiz.reviewSubtypes.length)
@@ -56,16 +58,14 @@ const optionPreamble = computed(() =>
 const isMulti = computed(() => !!currentProblem.value?.is_multi_answer)
 
 // ─── 이어하기 저장 ────────────────────────────────────────────────
-// subtypeDone 인터스티셔에서 "홈으로" 누를 때 호출.
-// 다음 유형 인덱스와 원본 세션 정보를 localStorage에 저장해둔다.
 function saveResume() {
   const nextIdx = quiz.reviewSubtypeIdx + 1
   if (nextIdx >= quiz.reviewSubtypes.length) {
-    // 마지막 유형이면 저장할 필요 없음
     localStorage.removeItem(RESUME_KEY)
     return
   }
   const payload = {
+    userId:          auth.user?.id,
     parentSessionId: quiz.parentSessionId,
     reviewSubtypes:  quiz.reviewSubtypes,
     resumeFromIdx:   nextIdx,
@@ -79,18 +79,18 @@ function goHomeWithSave() {
   router.push('/')
 }
 
-// 어떤 방식으로 나가든 (뒤로가기, 탭 닫기 등) 현재 진행 상태 저장
-// 단, 챗봇 페이지로 이동 시엔 reviewReturnState가 설정되므로 저장 불필요
 onBeforeUnmount(() => {
-  if (quiz.reviewReturnState) return           // 챗봇으로 이동 중 → 저장 생략
+  if (quiz.reviewReturnState) return
   if (!quiz.reviewSubtypes.length) return
-  if (subtypeDone.value && isLastSubtype.value) return  // 전부 완료 → 저장 불필요
+  if (subtypeDone.value && isLastSubtype.value) return
+  if (!auth.user?.username) return  // 로그아웃 중이면 저장 생략
   const payload = {
+    userId:          auth.user?.id,
     parentSessionId: quiz.parentSessionId,
     reviewSubtypes:  quiz.reviewSubtypes,
     resumeFromIdx:   subtypeDone.value
-      ? quiz.reviewSubtypeIdx + 1   // 이 유형은 끝났으므로 다음 유형부터
-      : quiz.reviewSubtypeIdx,      // 이 유형 처음부터
+      ? quiz.reviewSubtypeIdx + 1
+      : quiz.reviewSubtypeIdx,
   }
   localStorage.setItem(RESUME_KEY, JSON.stringify(payload))
 })
@@ -106,7 +106,6 @@ onMounted(async () => {
     showToast('원본 오답 정보를 불러오지 못했어요', 'negative', 'circle-exclamation')
   }
 
-  // 챗봇에서 돌아온 경우: 이전 단계 상태를 그대로 복원
   if (quiz.reviewReturnState) {
     const { stepKey, problem, result } = quiz.reviewReturnState
     quiz.reviewReturnState = null
@@ -166,7 +165,6 @@ async function loadRedoStep() {
   currentProblem.value = (problemId && originalWrongMap.value[problemId]) || null
 
   if (!currentProblem.value && problemId) {
-    // originalWrongMap 캐시 미스 → API로 직접 조회
     try {
       const data = unwrap(
         await api.get(`/quiz/sessions/${quiz.parentSessionId}/redo-problem?problem_id=${encodeURIComponent(problemId)}`)
@@ -201,8 +199,6 @@ function selectOption(label) {
   }
 }
 
-// revealed 상태에서 보기 시각 상태 (재도전 단계에서 정답/오답 표시용)
-// correctLabel은 채점용 깨끗한 라벨(①②③ 등) — correct_answer(전체 텍스트)와 비교하면 절대 안 맞음
 function optionState(label) {
   if (!revealed.value) return isSelected(label) ? 'selected' : ''
   const correctLabels = (lastResult.value?.correctLabel || '').split(',').map((s) => s.trim())
@@ -231,7 +227,6 @@ async function submitCurrent() {
       correctText:  r.correct_answer,
       explanation:  r.explanation,
     }
-    // 정답/오답 모두 revealed 상태로 — 정답 피드백 확인 후 "다음" 클릭 시 advance()
     revealed.value = true
   } catch (e) {
     showToast(e?.response?.data?.message || '제출에 실패했어요', 'negative', 'circle-exclamation')
@@ -242,7 +237,6 @@ async function submitCurrent() {
 
 function submitRedo() {
   const p = currentProblem.value
-  // originalWrongMap의 문제는 ProblemWithAnswerSerializer → answer 필드 사용 (correct_answer 없음)
   const correctLabel = (p.grading_answer || p.answer || '').trim()
   let isCorrect
   if (p.is_multi_answer) {
@@ -256,19 +250,16 @@ function submitRedo() {
   revealed.value = true
 }
 
-// 정답이면 바로, 오답이면 해설 패널의 "다음" 클릭 시 호출 — 유형 안에서 다음 단계로 진행
 function advance() {
   const s = subtype.value
   const wasCorrect = lastResult.value?.isCorrect
 
   if (currentStepKey.value === 's1') {
     if (wasCorrect) {
-      // 정답 → 난이도 높은 보완2(mid) 우선, 없으면 s2 폴백
       const next = s.mid || s.s2
       if (next) return loadStep('mid', next.problem_id)
       return loadRedoStep()
     } else {
-      // 오답 → 난이도 하 보완2(s2) 우선, 없으면 mid 폴백
       const next = s.s2 || s.mid
       if (next) return loadStep('s2', next.problem_id)
       return loadRedoStep()
@@ -276,16 +267,13 @@ function advance() {
   }
 
   if (currentStepKey.value === 'mid' || currentStepKey.value === 's2') {
-    // 정답/오답 무관하게 재도전으로
     return loadRedoStep()
   }
 
-  // redo — 정답/오답 무관하게 유형 완료
   subtypeDone.value = true
 }
 
 function continueToNextSubtype() {
-  // 이어하기 데이터가 있었다면 이 유형을 완료했으므로 갱신
   localStorage.removeItem(RESUME_KEY)
   if (isLastSubtype.value) {
     router.push('/review/master')
@@ -296,7 +284,6 @@ function continueToNextSubtype() {
 }
 
 function goChat() {
-  // 챗봇에서 돌아올 때 현재 단계를 그대로 복원하기 위해 상태 저장
   quiz.reviewReturnState = {
     stepKey: currentStepKey.value,
     problem: currentProblem.value,
@@ -382,23 +369,23 @@ function goChat() {
         </div>
       </template>
 
-      <!-- 오답일 때만: 해설 + 챗봇 -->
       <div v-if="revealed && !lastResult.isCorrect" class="explain-box stack-12">
         <div class="wds-label-1" style="font-weight:700">해설</div>
         <div class="explain-text wds-body-2"><InlineTex :text="lastResult.explanation" /></div>
-        <button class="chat-btn" @click="goChat">
-          <WdsIcon name="sparkle" :size="15" color="var(--suql-accent)" />
-          <span class="wds-caption-1" style="color:var(--suql-accent); font-weight:600">AI에게 질문하기</span>
-        </button>
-        <button class="chat-btn" @click="router.push(`/problems/${currentProblem.problem_id}/posts`)">
-          <WdsIcon name="message" :size="15" color="var(--suql-accent)" />
-          <span class="wds-caption-1" style="color:var(--suql-accent); font-weight:600">토론</span>
-        </button>
+        <div class="chat-btn-row">
+          <button class="chat-btn" @click="goChat">
+            <WdsIcon name="sparkle" :size="15" color="var(--suql-accent)" />
+            <span class="wds-caption-1" style="color:var(--suql-accent); font-weight:600">AI에게 질문하기</span>
+          </button>
+          <button class="chat-btn" @click="router.push(`/problems/${currentProblem.problem_id}/posts`)">
+            <WdsIcon name="message" :size="15" color="var(--suql-accent)" />
+            <span class="wds-caption-1" style="color:var(--suql-accent); font-weight:600">토론</span>
+          </button>
+        </div>
       </div>
     </div>
 
     <template #foot>
-      <!-- 유형 완료 인터스티셔: 다음 유형으로 + 홈으로 나란히 -->
       <div v-if="subtypeDone" class="play-foot">
         <WdsButton
           v-if="!isLastSubtype"
@@ -481,5 +468,6 @@ function goChat() {
   cursor: pointer; align-self: flex-start;
 }
 .chat-btn:hover { background: var(--blue-95, #e8f0ff); }
+.chat-btn-row { display: flex; gap: 8px; }
 .play-foot { display: flex; gap: 10px; }
 </style>

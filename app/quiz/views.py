@@ -1370,6 +1370,16 @@ class UserDashboardView(APIView):
 
         # 1. 주간 학습 활동 (월~일)
         today = date.today()
+
+        # streak 유효성 체크
+        if user.last_active_date is None:
+            effective_streak = 0
+        elif user.last_active_date == today:
+            effective_streak = user.streak
+        elif (today - user.last_active_date).days == 1:
+            effective_streak = user.streak
+        else:
+            effective_streak = 0
         monday = today - timedelta(days=today.weekday())
         week_days = [monday + timedelta(days=i) for i in range(7)]
 
@@ -1431,7 +1441,7 @@ class UserDashboardView(APIView):
                     'grade':       user.grade,
                     'joined_days': (date.today() - user.date_joined.date()).days + 1,
                 },
-                'streak':          user.streak,
+                'streak':          effective_streak,
                 'total_solved':    user.total_solved,
                 'weekly_activity': weekly_activity,   # [True, True, False, ...] 월~일
                 'subtype_mastery': subtype_mastery,
