@@ -1,6 +1,6 @@
 <!-- 📄 src/views/auth/LoginView.vue -->
 <script setup>
-import { ref } from 'vue'
+import { computed, ref, unref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import { useToast } from '@/composables/useToast'
@@ -10,11 +10,16 @@ import loginSkyBg from '@/assets/images/login-sky-bg.png'
 
 const router = useRouter()
 const auth = useAuthStore()
-const { showToast } = useToast()
+const { toast, showToast } = useToast()
 
 const username = ref('')
 const password = ref('')
 const loading = ref(false)
+
+const currentToast = computed(() => unref(toast))
+const isToastVisible = computed(() => Boolean(currentToast.value))
+const toastMessage = computed(() => currentToast.value?.text || '')
+const toastTypeClass = computed(() => `login-toast--${currentToast.value?.tone || 'info'}`)
 
 async function onLogin() {
   if (!username.value || !password.value) {
@@ -98,11 +103,21 @@ async function onLogin() {
         </div>
       </section>
     </div>
+
+    <Transition name="toast-fade">
+      <div
+        v-if="isToastVisible"
+        class="login-toast"
+        :class="toastTypeClass"
+        role="alert"
+      >
+        {{ toastMessage }}
+      </div>
+    </Transition>
   </main>
 </template>
 
 <style scoped>
-
 :global(html),
 :global(body),
 :global(#app) {
@@ -223,7 +238,6 @@ async function onLogin() {
   color: rgba(15, 42, 95, 0.84);
 }
 
-
 .login-card {
   position: relative;
   z-index: 4;
@@ -280,6 +294,52 @@ async function onLogin() {
   font: var(--weight-medium) 13px/1 var(--font-sans);
   font-style: normal;
   color: var(--label-assistive);
+}
+
+.login-toast {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  z-index: 9999;
+  min-width: 280px;
+  max-width: min(420px, calc(100vw - 32px));
+  padding: 14px 18px;
+  border-radius: 14px;
+  font: var(--weight-bold) 14px/1.45 var(--font-sans);
+  text-align: center;
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.16);
+  transform: translateX(-50%);
+}
+
+.login-toast--negative {
+  color: #dc2626;
+  border: 1px solid rgba(239, 68, 68, 0.22);
+  background: rgba(254, 242, 242, 0.96);
+}
+
+.login-toast--positive {
+  color: #2563eb;
+  border: 1px solid rgba(37, 99, 235, 0.22);
+  background: rgba(239, 246, 255, 0.96);
+}
+
+.login-toast--info {
+  color: #1f2937;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.toast-fade-enter-active,
+.toast-fade-leave-active {
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.toast-fade-enter-from,
+.toast-fade-leave-to {
+  opacity: 0;
+  transform: translate(-50%, -8px);
 }
 
 @media (max-width: 1180px) {
