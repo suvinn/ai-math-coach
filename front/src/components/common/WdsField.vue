@@ -33,7 +33,7 @@ const emit = defineEmits(['update:modelValue', 'enter'])
   gap: 7px;
 }
 .field-label {
-  font: var(--weight-semibold) 13px/1 var(--font-sans);
+  font: var(--weight-semibold) 14px/1 var(--font-sans);
   color: var(--label-alternative);
   letter-spacing: -0.01em;
 }
