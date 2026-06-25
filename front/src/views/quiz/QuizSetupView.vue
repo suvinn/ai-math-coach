@@ -16,28 +16,33 @@ const { toast, showToast } = useToast()
 
 const chapters = ref([])
 const counts = ref([])
+const subtypeCounts = ref([])
 const loading = ref(true)
 const creating = ref(false)
 
 const selectedMajor = ref(null)
 const selectedMiddle = ref(null)
+const selectedSubtype = ref(null)
 const problemCount = ref(10)
 
 async function init() {
   loading.value = true
   selectedMajor.value = null
   selectedMiddle.value = null
+  selectedSubtype.value = null
   problemCount.value = 10
 
   const mode = route.query.mode
 
   try {
-    const [chData, cntData] = await Promise.all([
+    const [chData, cntData, subData] = await Promise.all([
       api.get('/chapters').then(unwrap),
       api.get('/chapters/problem-counts').then(unwrap),
+      api.get('/chapters/subtype-counts').then(unwrap),
     ])
     chapters.value = chData || []
     counts.value = cntData || []
+    subtypeCounts.value = subData || []
 
     if (mode === 'today') {
       // 홈화면에서 넘겨준 추천 단원 우선 사용
@@ -82,8 +87,32 @@ const middles = computed(() => {
   return major ? major.chapter_middles : []
 })
 
+const subtypes = computed(() => {
+  if (!selectedMajor.value || !selectedMiddle.value) return []
+  const set = new Set(
+    subtypeCounts.value
+      .filter(
+        (r) =>
+          r.chapter_major === selectedMajor.value &&
+          r.chapter_middle === selectedMiddle.value,
+      )
+      .map((r) => r.problem_subtype),
+  )
+  return [...set]
+})
+
 const selectedCount = computed(() => {
   if (!selectedMajor.value || !selectedMiddle.value) return 0
+  if (selectedSubtype.value) {
+    return subtypeCounts.value
+      .filter(
+        (r) =>
+          r.chapter_major === selectedMajor.value &&
+          r.chapter_middle === selectedMiddle.value &&
+          r.problem_subtype === selectedSubtype.value,
+      )
+      .reduce((sum, r) => sum + r.count, 0)
+  }
   return counts.value
     .filter(
       (r) =>
@@ -96,6 +125,12 @@ const selectedCount = computed(() => {
 function selectMajor(major) {
   selectedMajor.value = major
   selectedMiddle.value = null
+  selectedSubtype.value = null
+}
+
+function selectMiddle(middle) {
+  selectedMiddle.value = middle
+  selectedSubtype.value = null
 }
 
 const canStart = computed(
@@ -111,6 +146,7 @@ async function start() {
     const res = await quiz.createAndLoad({
       chapter_major: selectedMajor.value,
       chapter_middle: selectedMiddle.value,
+      problem_subtype: selectedSubtype.value || undefined,
       problem_count: problemCount.value,
     })
     if (!res.problems.length) {
@@ -166,7 +202,7 @@ async function start() {
               :key="m.chapter_middle"
               class="middle-row tap-row"
               :data-on="selectedMiddle === m.chapter_middle"
-              @click="selectedMiddle = m.chapter_middle"
+              @click="selectMiddle(m.chapter_middle)"
             >
               <span class="middle-name">{{ m.chapter_middle }}</span>
               <WdsIcon
@@ -179,11 +215,46 @@ async function start() {
           </div>
         </div>
 
+        <!-- 유형 -->
+        <div v-if="selectedMiddle && subtypes.length" class="setup-section">
+          <div class="field-label">유형</div>
+          <div class="stack-8">
+            <button
+              class="middle-row tap-row"
+              :data-on="selectedSubtype === null"
+              @click="selectedSubtype = null"
+            >
+              <span class="middle-name">전체</span>
+              <WdsIcon
+                v-if="selectedSubtype === null"
+                name="circle-check"
+                :size="20"
+                color="var(--suql-accent)"
+              />
+            </button>
+            <button
+              v-for="s in subtypes"
+              :key="s"
+              class="middle-row tap-row"
+              :data-on="selectedSubtype === s"
+              @click="selectedSubtype = s"
+            >
+              <span class="middle-name">{{ s }}</span>
+              <WdsIcon
+                v-if="selectedSubtype === s"
+                name="circle-check"
+                :size="20"
+                color="var(--suql-accent)"
+              />
+            </button>
+          </div>
+        </div>
+
         <!-- 문제 수 -->
         <div v-if="selectedMiddle" class="setup-section">
           <div class="field-label">
             문제 수
-            <span class="assistive" style="font-weight: 400">· 이 범위 {{ selectedCount }}문제</span>
+            <span class="assistive" style="font-weight: 400; font-size: 18px">· 이 범위 {{ selectedCount }}문제</span>
           </div>
           <div class="count-row">
             <button

@@ -13,6 +13,7 @@ urlpatterns = [
     # 챕터
     path('chapters',                views.ChapterListView.as_view()),
     path('chapters/problem-counts', views.ChapterProblemCountView.as_view()),
+    path('chapters/subtype-counts', views.ChapterSubtypeCountView.as_view()),
 
     # 퀴즈 세션
     path('quiz/sessions', views.QuizSessionCreateView.as_view()),
