@@ -16,10 +16,10 @@ const router = useRouter()
 const auth = useAuthStore()
 
 const navItems = [
-  { id: 'home',   label: '홈',   icon: 'home',        to: '/' },
-  { id: 'learn',  label: '학습', icon: 'write',       to: null },
-  { id: 'report', label: '분석', icon: 'sparkle',     to: '/my/history' },
-  { id: 'my',     label: '마이', icon: 'nav-mypage',  to: '/my' },
+  { id: 'home', label: '홈', icon: 'home', to: '/' },
+  { id: 'learn', label: '학습', icon: 'write', to: null },
+  { id: 'report', label: '분석', icon: 'sparkle', to: '/my/history' },
+  { id: 'my', label: '마이', icon: 'nav-mypage', to: '/my' },
 ]
 
 function handleNavClick(item) {
@@ -48,12 +48,15 @@ onMounted(async () => {
 
 // 프로필 메뉴
 const profileMenuOpen = ref(false)
+
 function toggleProfileMenu() {
   profileMenuOpen.value = !profileMenuOpen.value
 }
+
 function closeProfileMenu(e) {
   if (!e.target.closest('.app-nav-profile-wrap')) profileMenuOpen.value = false
 }
+
 onMounted(() => document.addEventListener('click', closeProfileMenu))
 onUnmounted(() => document.removeEventListener('click', closeProfileMenu))
 
@@ -84,7 +87,9 @@ async function handleLogout() {
             :data-active="item.id === tab"
             @click="handleNavClick(item)"
           >
-            <span class="ico"><WdsIcon :name="item.icon" :size="20" /></span>
+            <span class="ico">
+              <WdsIcon :name="item.icon" :size="20" />
+            </span>
             <span class="label">{{ item.label }}</span>
           </button>
         </nav>
@@ -112,6 +117,7 @@ async function handleLogout() {
             로그아웃
           </button>
         </div>
+
         <button class="app-nav-profile" @click="toggleProfileMenu">
           <span class="avatar">{{ initial }}</span>
           <span class="meta">
@@ -128,6 +134,10 @@ async function handleLogout() {
 </template>
 
 <style scoped>
+.app-sidebar {
+  container-type: inline-size;
+}
+
 .sidebar-stats {
   padding: 12px 14px;
   margin: 0 8px 8px;
@@ -137,26 +147,43 @@ async function handleLogout() {
   flex-direction: column;
   gap: 8px;
 }
+
 .sidebar-stat {
   display: flex;
   align-items: center;
   gap: 6px;
 }
+
 .sidebar-stat-label {
   font-size: 14px;
   color: var(--label-assistive);
   flex: 1;
 }
+
 .sidebar-stat-val {
   font-size: 17px;
   font-weight: var(--weight-bold);
   color: var(--label-normal);
   letter-spacing: -0.02em;
 }
+
 .sidebar-stat-divider {
   height: 1px;
   background: var(--line-normal, #e2e2e2);
 }
-.app-nav-profile .avatar { font-size: 17px; }
-.app-nav-profile .name { font-size: 18px; }
+
+.app-nav-profile .avatar {
+  font-size: 17px;
+}
+
+.app-nav-profile .name {
+  font-size: 18px;
+}
+
+/* 사이드바가 접혀서 아이콘만 남는 너비에서는 통계 박스 숨김 */
+@container (max-width: 120px) {
+  .sidebar-stats {
+    display: none;
+  }
+}
 </style>

@@ -317,6 +317,7 @@ async function start() {
 .middle-row {
   padding: 14px;
   margin: 0;
+  height: 52px;
   border-radius: 14px;
   box-shadow: inset 0 0 0 1px var(--line-normal-normal);
   justify-content: space-between;

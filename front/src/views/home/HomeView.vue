@@ -28,8 +28,8 @@ const chapters = ref([])
 const recommendedUnit = ref(null)
 
 const tips = [
-  '매일 30분, 꾸준한 학습이 성적 향상의 지름길이에요!',
-  '오답 유형을 반복 풀면 실수가 확 줄어들어요.',
+  '매일 30분, 꾸준한 학습이 성적 향상의 지름길이에요.',
+  '오답 유형을 반복해서 풀면 실수가 확 줄어들어요.',
   '취약 유형부터 집중 공략하면 점수가 빠르게 올라요.',
   '퀴즈 후 틀린 문제를 꼭 다시 확인해 보세요.',
 ]
@@ -237,8 +237,7 @@ function goResume() {
             <div class="action-content">
               <h3>오늘의 추천 학습</h3>
               <p>
-                풀이 중인 유형을 기준으로<br />
-                바로 퀴즈를 시작해 보세요.
+                추천된 단원으로 바로 퀴즈를 시작해 보세요.
               </p>
             </div>
 
@@ -315,8 +314,9 @@ function goResume() {
 <style scoped>
 .home-page {
   max-width: 1120px;
+  min-width: 760px;
   margin: 0 auto;
-  padding: 28px 0 48px;
+  padding: 36px 36px 36px;
 }
 
 .home-hero {
@@ -335,6 +335,10 @@ function goResume() {
   box-shadow: 0 20px 45px rgba(37, 99, 235, 0.08);
 }
 
+.hero-copy {
+  min-width: max-content;
+}
+
 .hero-greeting {
   margin: 0;
   font: var(--weight-medium) 16px/1.45 var(--font-sans);
@@ -346,6 +350,7 @@ function goResume() {
   font: var(--weight-bold) 31px/1.35 var(--font-sans);
   letter-spacing: -0.035em;
   color: #172554;
+  white-space: nowrap;
 }
 
 .hero-subtitle {
@@ -697,7 +702,8 @@ function goResume() {
   color: #1e40af;
 }
 
-@media (max-width: 1180px) {
+/* 화면이 애매하게 줄어들기 전에 홈 메인 카드 영역을 1열로 전환 */
+@media (max-width: 1440px) {
   .home-page {
     max-width: 920px;
   }
@@ -709,72 +715,21 @@ function goResume() {
   .home-main-grid {
     grid-template-columns: 1fr;
   }
+
+  .diagnosis-card {
+    min-height: 300px;
+  }
+
+  .recommend-box strong {
+    overflow: visible;
+    text-overflow: initial;
+    white-space: normal;
+  }
 }
 
 @media (max-width: 760px) {
   .home-page {
-    padding: 22px 0 36px;
-  }
-
-  .home-hero {
-    grid-template-columns: 1fr;
-    padding: 28px 24px;
-  }
-
-  .hero-mascot {
-    display: none;
-  }
-
-  .hero-title {
-    font-size: 24px;
-  }
-
-  .diagnosis-main {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .diagnosis-card {
-    min-height: auto;
-  }
-
-  .diagnosis-visual {
-    display: none;
-  }
-
-  .diagnosis-meta {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
-  .action-card {
-    grid-template-columns: 1fr;
-    align-items: flex-start;
-  }
-
-  .action-card-primary {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'content'
-      'button'
-      'recommend';
-  }
-
-  .action-card-primary .action-button {
-    transform: none;
-  }
-
-  .action-button {
-    width: 100%;
-  }
-
-  .recommend-box {
-    grid-template-columns: 1fr;
-    gap: 5px;
-  }
-
-  .recommend-box strong {
-    white-space: normal;
+    padding: 36px 36px 36px;
   }
 }
 </style>
